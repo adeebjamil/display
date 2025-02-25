@@ -145,7 +145,6 @@ const highlights = [
           software: false
         }
       }">
-      </section>
         <div class="flex flex-col lg:flex-row gap-8">
           <!-- Sidebar Menu -->
           <div class="w-full lg:w-64 flex-shrink-0">
@@ -153,47 +152,38 @@ const highlights = [
               <h3 class="text-xl font-semibold mb-4">Interactive Display</h3>
               
               <!-- Instahub Category -->
-              <div class="mb-4">
-                <button 
-                  class="flex items-center justify-between w-full text-left font-medium p-2 hover:bg-gray-50 rounded"
-                  @click="categories.instahub = !categories.instahub"
-                >
-                  <span>Instahub</span>
-                  <svg 
-                    class="w-4 h-4 transform transition-transform duration-300"
-                    :class="categories.instahub ? 'rotate-90' : ''"
-                    fill="none" 
-                    stroke="currentColor" 
-                    viewBox="0 0 24 24"
-                  >
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                  </svg>
-                </button>
-                
-                <div x-show="categories.instahub" 
-                     x-transition
-                     class="pl-4 mt-2 space-y-2">
-                  <label class="flex items-center space-x-2 cursor-pointer">
-                    <input 
-                      type="radio" 
-                      name="filter" 
-                      value="all" 
-                      x-model="activeFilter"
-                      class="form-radio text-blue-600"
+              <div class="mb-4" x-data="{ categories: { instahub: true, education: false, accessories: false, software: false }}">
+                <!-- Category Button Template -->
+                <template x-for="(isOpen, category) in categories" :key="category">
+                  <div>
+                    <button 
+                      class="flex items-center justify-between w-full text-left font-medium p-2 hover:bg-gray-50 rounded"
+                      @click="categories[category] = !categories[category]"
                     >
-                    <span>All</span>
-                  </label>
-                  <label class="flex items-center space-x-2 cursor-pointer">
-                    <input 
-                      type="radio" 
-                      name="filter" 
-                      value="u-e" 
-                      x-model="activeFilter"
-                      class="form-radio text-blue-600"
+                      <span x-text="category.charAt(0).toUpperCase() + category.slice(1)"></span>
+                      <svg 
+                        class="w-4 h-4 transform transition-transform duration-300"
+                        :class="categories[category] ? 'rotate-90' : ''"
+                        fill="none" 
+                        stroke="currentColor" 
+                        viewBox="0 0 24 24"
+                      >
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                      </svg>
+                    </button>
+                    
+                    <div 
+                      x-show="categories[category]" 
+                      x-transition
+                      class="pl-4 mt-2 space-y-2"
                     >
-                    <span>U-E</span>
-                  </label>
-                </div>
+                      <!-- Category specific content goes here -->
+                      <div class="text-sm text-gray-600">
+                        <!-- Add subcategory items here -->
+                      </div>
+                    </div>
+                  </div>
+                </template>
               </div>
 
               <!-- Other Categories -->
@@ -201,12 +191,12 @@ const highlights = [
                 <div class="mb-4">
                   <button 
                     class="flex items-center justify-between w-full text-left font-medium p-2 hover:bg-gray-50 rounded"
-                    @click="categories.${category.toLowerCase()} = !categories.${category.toLowerCase()}"
+                    @click={`categories['${category.toLowerCase()}'] = !categories['${category.toLowerCase()}']`}
                   >
                     <span>{category}</span>
                     <svg 
                       class="w-4 h-4 transform transition-transform duration-300"
-                      :class="categories[category.toLowerCase()] ? 'rotate-90' : ''"
+                      :class={`categories['${category.toLowerCase()}'] ? 'rotate-90' : ''`}
                       fill="none" 
                       stroke="currentColor" 
                       viewBox="0 0 24 24"
