@@ -1,0 +1,491 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const highlights = [
+  {
+    id: "01",
+    title: "Collaboration in work",
+    content: "Transform your workspace into a collaborative hub with our interactive displays. Multiple users can contribute simultaneously, annotate in real-time, and share ideas effortlessly.",
+    image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2070&auto=format&fit=crop"
+  },
+  {
+    id: "02",
+    title: "Inspiration in teaching",
+    content: "Enhance classroom engagement with interactive lessons, multimedia content integration, and dynamic teaching tools that inspire learning.",
+    image: "https://images.unsplash.com/photo-1573166364524-748b14835b1b?q=80&w=2069&auto=format&fit=crop"
+  },
+  {
+    id: "03",
+    title: "Real writing",
+    content: "Experience natural writing feel with ultra-low latency and precise touch detection, making digital writing as intuitive as pen on paper.",
+    image: "https://images.unsplash.com/photo-1616587226960-4a03badbe8bf?q=80&w=2070&auto=format&fit=crop"
+  },
+  {
+    id: "04",
+    title: "Spark ideas",
+    content: "Foster creativity with an infinite canvas for brainstorming, mind mapping, and visual collaboration tools.",
+    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070&auto=format&fit=crop"
+  },
+  {
+    id: "05",
+    title: "Get started easily",
+    content: "Plug-and-play functionality with intuitive interface ensures quick setup and seamless integration into your workflow.",
+    image: "https://images.unsplash.com/photo-1531403009284-440f080d1e12?q=80&w=2070&auto=format&fit=crop"
+  },
+  {
+    id: "06",
+    title: "Tap to share content",
+    content: "Instantly share content across devices with wireless screen mirroring and one-touch sharing capabilities.",
+    image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop"
+  },
+  {
+    id: "07",
+    title: "Captivating audiovisuals",
+    content: "Crystal-clear 4K display with premium audio delivers immersive presentation experiences.",
+    image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2070&auto=format&fit=crop"
+  },
+  {
+    id: "08",
+    title: "Elegant design",
+    content: "Sleek, modern aesthetics complement any space while maintaining professional sophistication.",
+    image: "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop"
+  },
+  {
+    id: "09",
+    title: "MDM software",
+    content: "Comprehensive device management software for remote administration, updates, and security control.",
+    image: "https://images.unsplash.com/photo-1551651653-c5186a1fbba2?q=80&w=2070&auto=format&fit=crop"
+  }
+];
+---
+
+<Layout title="Interactive Displays - Dahua Saudi">
+  <div class="bg-white" x-data="{ activeSection: '01' }">
+    <!-- Header Image -->
+    <div class="relative h-[60vh] overflow-hidden">
+      <img
+        src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2070&auto=format&fit=crop"
+        alt="Interactive Display Header"
+        class="w-full h-full object-cover"
+      />
+      <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+        <h1 class="text-5xl font-bold text-white text-center">
+          Interactive Displays
+          <span class="block text-2xl mt-4 font-normal">Transform the way you collaborate and communicate</span>
+        </h1>
+      </div>
+    </div>
+
+    <!-- Highlights Section -->
+    <div class="max-w-7xl mx-auto px-4 py-16">
+      <h2 class="text-3xl font-bold text-center mb-16 relative">
+        Highlights
+      </h2>
+
+      <div class="flex flex-col lg:flex-row gap-8">
+        <!-- Sidebar Navigation -->
+        <div class="lg:w-1/4">
+          <div class="sticky top-8">
+            <nav class="space-y-2">
+              {highlights.map((item) => (
+                <button
+                  class="w-full text-left px-4 py-3 rounded-lg hover:bg-gray-100 transition-colors duration-200"
+                  id={`nav-${item.id}`}
+                  data-section={item.id}
+                >
+                  <span class="text-blue-600 font-semibold">{item.id}</span>
+                  <span class="ml-2 text-gray-700">{item.title}</span>
+                </button>
+              ))}
+            </nav>
+          </div>
+        </div>
+
+        <!-- Content Section - Only shows active content -->
+        <div class="lg:w-3/4">
+          {highlights.map((item) => (
+            <div 
+              id={`content-${item.id}`} 
+              class="hidden opacity-0 transition-opacity duration-300"
+              style={item.id === "01" ? "display: block; opacity: 1;" : ""}
+            >
+              <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div class="order-2 md:order-1">
+                  <span class="text-blue-600 text-lg font-semibold">{item.id}</span>
+                  <h3 class="text-2xl font-bold text-gray-900 mt-2 mb-4">{item.title}</h3>
+                  <p class="text-gray-600 leading-relaxed">{item.content}</p>
+                </div>
+                <div class="order-1 md:order-2">
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    class="rounded-xl shadow-lg w-full h-64 object-cover"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+
+    <!-- Products Section -->
+    <div class="max-w-7xl mx-auto px-4 py-16 bg-gray-50">
+      <h2 class="text-3xl font-bold text-center mb-16">
+        Our Products
+      </h2>
+
+      <section class="interactive-display-section" x-data="{
+        activeFilter: 'all',
+        categories: {
+          instahub: true,
+          education: false,
+          accessories: false,
+          software: false
+        }
+      }">
+      </section>
+        <div class="flex flex-col lg:flex-row gap-8">
+          <!-- Sidebar Menu -->
+          <div class="w-full lg:w-64 flex-shrink-0">
+            <div class="bg-white rounded-lg shadow-md p-4 sticky top-8">
+              <h3 class="text-xl font-semibold mb-4">Interactive Display</h3>
+              
+              <!-- Instahub Category -->
+              <div class="mb-4">
+                <button 
+                  class="flex items-center justify-between w-full text-left font-medium p-2 hover:bg-gray-50 rounded"
+                  @click="categories.instahub = !categories.instahub"
+                >
+                  <span>Instahub</span>
+                  <svg 
+                    class="w-4 h-4 transform transition-transform duration-300"
+                    :class="categories.instahub ? 'rotate-90' : ''"
+                    fill="none" 
+                    stroke="currentColor" 
+                    viewBox="0 0 24 24"
+                  >
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                  </svg>
+                </button>
+                
+                <div x-show="categories.instahub" 
+                     x-transition
+                     class="pl-4 mt-2 space-y-2">
+                  <label class="flex items-center space-x-2 cursor-pointer">
+                    <input 
+                      type="radio" 
+                      name="filter" 
+                      value="all" 
+                      x-model="activeFilter"
+                      class="form-radio text-blue-600"
+                    >
+                    <span>All</span>
+                  </label>
+                  <label class="flex items-center space-x-2 cursor-pointer">
+                    <input 
+                      type="radio" 
+                      name="filter" 
+                      value="u-e" 
+                      x-model="activeFilter"
+                      class="form-radio text-blue-600"
+                    >
+                    <span>U-E</span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Other Categories -->
+              {['Education', 'Accessories', 'Software'].map(category => (
+                <div class="mb-4">
+                  <button 
+                    class="flex items-center justify-between w-full text-left font-medium p-2 hover:bg-gray-50 rounded"
+                    @click="categories.${category.toLowerCase()} = !categories.${category.toLowerCase()}"
+                  >
+                    <span>{category}</span>
+                    <svg 
+                      class="w-4 h-4 transform transition-transform duration-300"
+                      :class="categories[category.toLowerCase()] ? 'rotate-90' : ''"
+                      fill="none" 
+                      stroke="currentColor" 
+                      viewBox="0 0 24 24"
+                    >
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                    </svg>
+                  </button>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <!-- Product Grid -->
+          <div class="flex-1">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {[
+                {
+                  name: "U-E Series 65\"",
+                  description: "Smart Interactive Display with 4K Resolution",
+                  image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800",
+                  category: "u-e",
+                  slug: "u-e-series-65",
+                  features: ["4K UHD", "20-Point Touch", "Wireless Casting", "Smart Whiteboard"],
+                  price: "$4,999"
+                },
+                {
+                  name: "DeepHub 75\"",
+                  description: "Professional Collaboration Display",
+                  image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800",
+                  category: "u-e",
+                  slug: "deephub-75",
+                  features: ["4K UHD", "20-Point Touch", "Wireless Casting", "Smart Whiteboard"],
+                  price: "$5,999"
+                },
+                {
+                  name: "Interactive Panel 86\"",
+                  description: "Enterprise Interactive Solution",
+                  image: "https://images.unsplash.com/photo-1533522573553-5ea77fa5ed52?w=800",
+                  category: "u-e",
+                  slug: "interactive-panel-86",
+                  features: ["4K UHD", "20-Point Touch", "Wireless Casting", "Smart Whiteboard"],
+                  price: "$6,999"
+                }
+              ].map(product => (
+                <div 
+                  x-show="activeFilter === 'all' || activeFilter === product.category"
+                  x-transition:enter="transition ease-out duration-300"
+                  x-transition:enter-start="opacity-0 transform translate-y-4"
+                  x-transition:enter-end="opacity-100 transform translate-y-0"
+                  class="group relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden border border-gray-100"
+                >
+                  <!-- New Badge -->
+                  <div class="absolute top-4 left-4 z-20">
+                    <span class="px-3 py-1 bg-blue-600 text-white text-sm font-semibold rounded-full shadow-lg">
+                      New
+                    </span>
+                  </div>
+
+                  <!-- Price Tag -->
+                  <div class="absolute top-4 right-4 z-20">
+                    <div class="bg-white/90 backdrop-blur-sm text-blue-600 px-4 py-2 rounded-full font-bold shadow-lg border border-blue-100">
+                      {product.price}
+                    </div>
+                  </div>
+
+                  <!-- Image Section -->
+                  <div class="relative h-72 overflow-hidden group-hover:h-64 transition-all duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"></div>
+                    <img 
+                      src={product.image}
+                      alt={product.name}
+                      class="w-full h-full object-cover transform group-hover:scale-110 transition-all duration-700"
+                      loading="lazy"
+                    />
+                  </div>
+
+                  <!-- Content Section -->
+                  <div class="relative p-6 bg-white group-hover:bg-gray-50 transition-colors duration-300">
+                    <!-- Title and Description -->
+                    <div class="mb-4">
+                      <h3 class="text-2xl font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors duration-300">
+                        {product.name}
+                      </h3>
+                      <p class="text-gray-600 line-clamp-2 group-hover:text-gray-700 transition-colors duration-300">
+                        {product.description}
+                      </p>
+                    </div>
+
+                    <!-- Features List -->
+                    <div class="mb-6 flex flex-wrap gap-2">
+                      {product.features.map(feature => (
+                        <span class="inline-flex items-center px-3 py-1 bg-blue-50 text-blue-600 rounded-full text-sm font-medium group-hover:bg-blue-100 transition-colors duration-300">
+                          <svg class="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                          </svg>
+                          {feature}
+                        </span>
+                      ))}
+                    </div>
+
+                    <!-- Action Button -->
+                    <div class="relative">
+                      <a 
+                        href={`/interactive-displays/products/${product.slug}`}
+                        class="group/btn flex items-center justify-between w-full px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-800 text-white rounded-xl hover:from-blue-700 hover:to-blue-900 transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-xl"
+                      >
+                        <span class="font-semibold">Explore Details</span>
+                        <span class="flex items-center space-x-2">
+                          <span class="text-sm opacity-0 group-hover/btn:opacity-100 -translate-x-4 group-hover/btn:translate-x-0 transition-all duration-300">
+                            View More
+                          </span>
+                          <svg 
+                            class="w-5 h-5 transform group-hover/btn:translate-x-2 transition-transform duration-300" 
+                            viewBox="0 0 24 24" 
+                            fill="none" 
+                            stroke="currentColor"
+                          >
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                          </svg>
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+  </div>
+</Layout>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const buttons = document.querySelectorAll('[data-section]');
+    const sections = document.querySelectorAll('[id^="content-"]');
+    
+    // Add click handlers to all buttons
+    buttons.forEach(button => {
+      button.addEventListener('click', () => {
+        const sectionId = button.getAttribute('data-section');
+        switchSection(sectionId);
+      });
+    });
+
+    function switchSection(id: string | null) {
+      // First, fade out all sections
+      sections.forEach(section => {
+        if (section instanceof HTMLElement) {
+          section.style.opacity = '0';
+        }
+      });
+
+      // Remove active class from all buttons
+      buttons.forEach(btn => {
+        btn.classList.remove('bg-blue-50');
+      });
+
+      // After fade out, hide all sections and show the selected one
+      setTimeout(() => {
+        sections.forEach(section => {
+          if (section instanceof HTMLElement) {
+            section.style.display = 'none';
+          }
+        });
+
+        const selectedSection = document.getElementById(`content-${id}`);
+        const selectedButton = document.querySelector(`[data-section="${id}"]`);
+
+        if (selectedSection instanceof HTMLElement) {
+          selectedSection.style.display = 'block';
+          // Force reflow
+          selectedSection.offsetHeight;
+          selectedSection.style.opacity = '1';
+        }
+
+        if (selectedButton) {
+          selectedButton.classList.add('bg-blue-50');
+        }
+      }, 300);
+    }
+
+    // Show first section by default
+    const firstButton = document.querySelector('[data-section="01"]');
+    if (firstButton) {
+      firstButton.classList.add('bg-blue-50');
+    }
+  });
+</script>
+
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+
+  .fade-content {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  [id^="content-"] {
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .bg-blue-50 {
+    background-color: rgb(239 246 255);
+  }
+
+  .aspect-w-16 {
+    position: relative;
+    padding-bottom: 56.25%;
+    background-color: #f8fafc;
+  }
+
+  .aspect-w-16 img {
+    object-fit: contain;
+    background-color: white;
+  }
+
+  .form-radio {
+    appearance: none;
+    border-radius: 50%;
+    width: 1rem;
+    height: 1rem;
+    border: 2px solid #cbd5e0;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .form-radio:checked {
+    border-color: #2563eb;
+    background-color: #2563eb;
+  }
+
+  .form-radio:focus {
+    outline: none;
+    ring: 2px solid #93c5fd;
+  }
+
+  .section-title {
+    position: relative;
+    padding-bottom: 1rem;
+  }
+
+  .section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -0.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: #e5e7eb;
+    border-radius: 3px;
+  }
+
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .backdrop-blur-sm {
+    backdrop-filter: blur(4px);
+  }
+
+  .group:hover .group-hover\:h-64 {
+    height: 16rem;
+  }
+
+  @keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+  }
+
+  .group:hover .group-hover\:animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+</style>

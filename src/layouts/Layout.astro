@@ -2,35 +2,37 @@
 import Navbar from '../components/Navbar.astro';
 import Footer from '../components/Footer.astro';
 import { SEO } from 'astro-seo';
+import LoadingBar from '../components/LoadingBar.astro';
+import EquiryButton from '../components/EquiryButton.astro';
 
 export interface Props {
-	title: string;
-	publishedTime?: string;
-	site?: string;
+    title: string;
+    publishedTime?: string;
+    site?: string;
   meta?:string;
-	sd?: object;
-	ogTitle?: string;
-	siteName?: string;
-	description?: string;
+    sd?: object;
+    ogTitle?: string;
+    siteName?: string;
+    description?: string;
   lang?:string;
-	image?: {
-		url: string;
-		alt: string;
-	};
-	disableIndexing?: boolean;
+    image?: {
+        url: string;
+        alt: string;
+    };
+    disableIndexing?: boolean;
 }
 
 const {
-	title,
+    title,
   meta,
   lang="en",
-	siteName,
-	publishedTime,
-	description,
-	site,
-	sd,
-	image,
-	disableIndexing = false,
+    siteName,
+    publishedTime,
+    description,
+    site,
+    sd,
+    image,
+    disableIndexing = false,
 } = Astro.props;
 
 ---
@@ -39,14 +41,14 @@ const {
 <html lang={lang}>
   <head>
     {
-			sd && (
-				<script
-					is:inline
-					type="application/ld+json"
-					set:html={JSON.stringify(sd)}
-				/>
-			)
-		}
+            sd && (
+                <script
+                    is:inline
+                    type="application/ld+json"
+                    set:html={JSON.stringify(sd)}
+                />
+            )
+        }
     <SEO
     title={title ?? "Dahua-Saudi - Top-Rated Authorized CCTV Camera Dealer in Saudi"}
     description={description ?? "Dahua-Saudi, the leading authorized dealer of CCTV cameras in Saudi Arabia. Offering top-rated security and video surveillance solutions including AI and IP cameras for homes and businesses."}
@@ -90,7 +92,9 @@ const {
     <title>{title ?? "Dahua-Saudi - Leading Authorized CCTV Camera Dealer in Saudi"}</title>
   </head>
   <body>
+    <LoadingBar />
     <Navbar />
+    <EquiryButton />
     <main>
       <slot />
     </main>

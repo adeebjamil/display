@@ -1,0 +1,235 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const highlights = [
+  {
+    id: "01",
+    title: "Face-detection auto focus technology",
+    content: "Advanced AI-powered face detection ensures crystal clear focus on meeting participants.",
+    image: "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800&auto=format&fit=crop"
+  },
+  {
+    id: "02",
+    title: "Light automated correction",
+    content: "Support multiple image algorithm includes HDR, images can automatically adopt to various scenarios. Even in the backlighting scene, we can still ensure the attendees have natural complexion.",
+    image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800&auto=format&fit=crop"
+  },
+  {
+    id: "03",
+    title: "AI noise cancelling",
+    content: "Intelligent noise reduction technology for crystal clear audio transmission.",
+    image: "https://images.unsplash.com/photo-1540575339264-569259387a45?w=800&auto=format&fit=crop"
+  },
+  {
+    id: "04",
+    title: "Face to face communication experience",
+    content: "Lifelike video quality creates an immersive meeting experience.",
+    image: "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800&auto=format&fit=crop"
+  },
+  {
+    id: "05",
+    title: "Unimagined pickup range",
+    content: "Wide-angle coverage ensures all participants are captured clearly.",
+    image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800&auto=format&fit=crop"
+  },
+  {
+    id: "06",
+    title: "Easy-to-use",
+    content: "Intuitive interface for simple setup and operation.",
+    image: "https://images.unsplash.com/photo-1540575339264-569259387a45?w=800&auto=format&fit=crop"
+  },
+  {
+    id: "07",
+    title: "Intelligent tracking",
+    content: "Smart speaker tracking for dynamic meeting environments.",
+    image: "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800&auto=format&fit=crop"
+  }
+];
+
+const products = [
+  {
+    id: 'unear-a20',
+    name: 'Unear A20',
+    description: 'All-In-One Video Conference Camera',
+    features: [
+      'AI Face Detection',
+      'HDR Technology',
+      'Noise Cancellation',
+      '4K Resolution'
+    ],
+    image: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800'
+  }
+];
+---
+
+<Layout title="Video Conferencing - Dahua Saudi">
+  <div class="bg-white" x-data="{ activeSection: '01' }">
+    <!-- Header Section -->
+    <div class="relative h-[60vh] overflow-hidden">
+      <img
+        src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2070&auto=format&fit=crop"
+        alt="Video Conferencing Header"
+        class="w-full h-full object-cover"
+      />
+      <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+        <h1 class="text-5xl font-bold text-white text-center">
+          Video Conferencing Products
+          <span class="block text-2xl mt-4 font-normal">Advanced solutions for modern collaboration</span>
+        </h1>
+      </div>
+    </div>
+
+    <!-- Highlights Section -->
+    <div class="max-w-7xl mx-auto px-4 py-16">
+      <div class="flex flex-col lg:flex-row gap-8">
+        <!-- Sidebar Navigation -->
+        <div class="lg:w-1/4">
+          <div class="sticky top-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Highlights</h2>
+            <nav class="space-y-2">
+              {highlights.map((item) => (
+                <button
+                  class="w-full text-left px-4 py-3 rounded-lg hover:bg-gray-100 transition-colors duration-200"
+                  id={`nav-${item.id}`}
+                  data-section={item.id}
+                >
+                  <span class="text-blue-600 font-semibold">{item.id}</span>
+                  <span class="ml-2 text-gray-700">{item.title}</span>
+                </button>
+              ))}
+            </nav>
+          </div>
+        </div>
+
+        <!-- Content Section -->
+        <div class="lg:w-3/4">
+          {highlights.map((item) => (
+            <div 
+              id={`content-${item.id}`} 
+              class="hidden opacity-0 transition-opacity duration-300"
+              style={item.id === "01" ? "display: block; opacity: 1;" : ""}
+            >
+              <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                <div class="relative h-96">
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+                <div class="p-8">
+                  <h3 class="text-2xl font-bold text-gray-900 mb-4">{item.title}</h3>
+                  <p class="text-gray-600 leading-relaxed">{item.content}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+
+    <!-- Products Section -->
+    <div class="max-w-7xl mx-auto px-4 py-16 bg-gray-50">
+      <h2 class="text-3xl font-bold text-center mb-16">
+        Products
+        <span class="block text-lg font-normal text-gray-600 mt-2">Video Conferencing Products</span>
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {products.map(product => (
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:-translate-y-1">
+            <div class="relative h-48 overflow-hidden">
+              <img 
+                src={product.image} 
+                alt={product.name}
+                class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-900 mb-2">{product.name}</h3>
+              <p class="text-gray-600 mb-4">{product.description}</p>
+              
+              <div class="flex flex-wrap gap-2 mb-6">
+                {product.features.map(feature => (
+                  <span class="px-3 py-1 text-xs bg-blue-50 text-blue-600 rounded-full font-medium">
+                    {feature}
+                  </span>
+                ))}
+              </div>
+              
+              <a 
+                href={`/products/conferencing/${product.id}`}
+                class="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors group"
+              >
+                Read More
+                <svg class="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const buttons = document.querySelectorAll('[data-section]');
+    const sections = document.querySelectorAll('[id^="content-"]');
+    
+    function switchSection(id: string) {
+      sections.forEach(section => {
+        if (section instanceof HTMLElement) {
+          section.style.opacity = '0';
+          section.style.display = 'none';
+        }
+      });
+
+      buttons.forEach(btn => {
+        btn.classList.remove('bg-blue-50');
+      });
+
+      const selectedSection = document.getElementById(`content-${id}`);
+      const selectedButton = document.querySelector(`[data-section="${id}"]`);
+
+      if (selectedSection instanceof HTMLElement) {
+        selectedSection.style.display = 'block';
+        setTimeout(() => {
+          selectedSection.style.opacity = '1';
+        }, 10);
+      }
+
+      if (selectedButton) {
+        selectedButton.classList.add('bg-blue-50');
+      }
+    }
+
+    buttons.forEach(button => {
+      button.addEventListener('click', () => {
+        const sectionId = button.getAttribute('data-section');
+        if (sectionId) switchSection(sectionId);
+      });
+    });
+
+    // Show first section by default
+    const firstButton = document.querySelector('[data-section="01"]');
+    if (firstButton) {
+      firstButton.classList.add('bg-blue-50');
+    }
+  });
+</script>
+
+<style>
+  .transition-all {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+  }
+
+  [id^="content-"] {
+    transition: opacity 0.3s ease-in-out;
+  }
+</style>

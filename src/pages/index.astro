@@ -1,15 +1,22 @@
 ---
 import Carousel from '../components/Carousel.astro';
 import Layout from '../layouts/Layout.astro';
-import Solution from '../components/Solution.astro';
+
 import NewProducts from '../components/NewProducts.astro';
 import NewsAndEvents from '../components/NewsAndEvents.astro';
 import Footer from '../components/Footer.astro';
+import FAQS from '../components/FAQS.astro';
+import Gallery from '../components/Gallery.astro';
+import LogoCloud from '../components/LogoCloud.astro';
+import TeamComponent from '../components/TeamComponent.astro';
 ---
 
-<Layout>
+<Layout title="Your Title Here">
   <Carousel />
-  <Solution />
   <NewProducts />
+  <Gallery />
+  <FAQS />
+  <TeamComponent />
   <NewsAndEvents />
+  <LogoCloud />
 </Layout>

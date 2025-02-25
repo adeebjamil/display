@@ -1,0 +1,186 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Control Room Solutions | Lovosis">
+  <main class="overflow-hidden">
+    <!-- Hero Section with Parallax -->
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <div class="absolute inset-0 z-0">
+        <div class="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-purple-900/90 mix-blend-multiply"></div>
+        <img 
+          src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?ixlib=rb-4.0.3" 
+          alt="Control Room Hero"
+          class="w-full h-full object-cover scale-110 animate-ken-burns"
+        />
+      </div>
+      
+      <div class="relative z-10 text-center text-white px-4 max-w-5xl mx-auto">
+        <h1 class="text-5xl md:text-7xl font-bold mb-6 animate-slide-up">
+          Control Room Solutions
+        </h1>
+        <p class="text-xl md:text-2xl mb-12 animate-slide-up-delayed opacity-90">
+          Empower your command center with next-generation visualization technology
+        </p>
+        <a href="#solutions" class="inline-flex items-center gap-2 px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full hover:bg-white/20 transition-all duration-300 animate-fade-in">
+          Explore Solutions
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- Features Grid -->
+    <section class="py-20 bg-gradient-to-b from-gray-900 to-gray-800">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Feature 1 -->
+          <div class="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 border border-gray-700/50 hover:border-blue-500/50 transition-all duration-300">
+            <div class="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-white mb-2">Real-time Monitoring</h3>
+            <p class="text-gray-400">Advanced visualization systems for continuous operational oversight</p>
+          </div>
+
+          <!-- Feature 2 -->
+          <div class="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 border border-gray-700/50 hover:border-purple-500/50 transition-all duration-300">
+            <div class="w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-white mb-2">Quick Response</h3>
+            <p class="text-gray-400">Immediate action capabilities through integrated control systems</p>
+          </div>
+
+          <!-- Feature 3 -->
+          <div class="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 border border-gray-700/50 hover:border-green-500/50 transition-all duration-300">
+            <div class="w-12 h-12 bg-green-500/20 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-white mb-2">Enhanced Security</h3>
+            <p class="text-gray-400">Advanced protection protocols with multi-layer security systems</p>
+          </div>
+
+          <!-- Feature 4 -->
+          <div class="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 border border-gray-700/50 hover:border-red-500/50 transition-all duration-300">
+            <div class="w-12 h-12 bg-red-500/20 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-white mb-2">Data Analytics</h3>
+            <p class="text-gray-400">Intelligent analysis tools for informed decision making</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Solutions Showcase -->
+    <section id="solutions" class="py-20 bg-gray-900">
+      <div class="container mx-auto px-4">
+        <h2 class="text-4xl md:text-5xl font-bold text-center text-white mb-16">Our Solutions</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Solution 1 -->
+          <div class="group relative overflow-hidden rounded-2xl">
+            <img 
+              src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?ixlib=rb-4.0.3" 
+              alt="Command Center Display"
+              class="w-full h-80 object-cover transform group-hover:scale-110 transition-transform duration-500"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent">
+              <div class="absolute bottom-0 left-0 right-0 p-8">
+                <h3 class="text-2xl font-bold text-white mb-4">Command Center Displays</h3>
+                <p class="text-gray-300 mb-4">Ultra-high resolution displays with seamless splicing for comprehensive monitoring</p>
+                <a href="#" class="inline-flex items-center text-blue-400 hover:text-blue-300 transition-colors">
+                  Learn More
+                  <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Solution 2 -->
+          <div class="group relative overflow-hidden rounded-2xl">
+            <img 
+              src="https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-4.0.3" 
+              alt="Control Room Integration"
+              class="w-full h-80 object-cover transform group-hover:scale-110 transition-transform duration-500"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent">
+              <div class="absolute bottom-0 left-0 right-0 p-8">
+                <h3 class="text-2xl font-bold text-white mb-4">Integrated Control Systems</h3>
+                <p class="text-gray-300 mb-4">Unified control interface for seamless operation management</p>
+                <a href="#" class="inline-flex items-center text-blue-400 hover:text-blue-300 transition-colors">
+                  Learn More
+                  <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Catalog Download Section -->
+    <section class="py-20 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-8">Download Our Catalog</h2>
+        <p class="text-xl mb-12 max-w-2xl mx-auto">
+          Get detailed information about our control room solutions and products in our comprehensive catalog.
+        </p>
+        <a 
+          href="/catalogs/control-room-solutions.pdf" 
+          class="inline-flex items-center px-8 py-4 bg-white text-blue-600 rounded-full font-semibold hover:bg-gray-100 transition-colors"
+          download
+        >
+          <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+          </svg>
+          Download Catalog
+        </a>
+      </div>
+    </section>
+  </main>
+</Layout>
+
+<style>
+  .animate-ken-burns {
+    animation: kenBurns 20s ease infinite alternate;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 1s ease-out;
+  }
+
+  .animate-slide-up-delayed {
+    animation: slideUp 1s ease-out 0.3s both;
+  }
+
+  @keyframes kenBurns {
+    from { transform: scale(1); }
+    to { transform: scale(1.1); }
+  }
+
+  @keyframes slideUp {
+    from { 
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to { 
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>

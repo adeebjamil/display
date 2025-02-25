@@ -8,61 +8,40 @@ interface Product {
 }
 
 const products: Product[] = [
-{
+  {
     id: 1,
-    title: "DH-IPC-HDBW8242XN-Z4FR",
-    description: "2MP AI IR Dome Network Camera with Starlight+, Face Recognition, and 4.8-120mm motorized lens",
-    image: "/src/assets/products/img1.png",
-    link: "/products/dome-camera"
+    title: "Video Conferencing",
+    description: "Video Conferencing Products",
+    image: "https://images.unsplash.com/photo-1598425237654-4fc758e50a93?q=80&w=2069&auto=format&fit=crop",
+    link: "/products/video-conferencing"
   },
   {
     id: 2,
-    title: "DH-IPC-HFW71242H-Z",
-    description: "12MP IR Bullet Network Camera with Starlight technology, 4.1-16.4mm motorized lens, and AI analytics",
-    image: "/src/assets/products/img2.png",
-    link: "/products/bullet-camera"
+    title: "LED Display",
+    description: "0.9mm pixel pitch mini LED",
+    image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2070&auto=format&fit=crop",
+    link: "/products/led-display"
   },
   {
     id: 3,
-    title: "DH-PTZ1C203UE-GN",
-    description: "2MP 3x Starlight IR PTZ Network Camera with intelligent tracking and auto-focus",
-    image: "/src/assets/products/img3.png",
-    link: "/products/ptz-camera"
+    title: "LCD Video Wall",
+    description: "Ultra Narrow Bezel Video Wall",
+    image: "https://img.freepik.com/free-photo/video-wall-display-panel-exhibition_53876-97173.jpg?w=1380&t=st=1708610436",
+    link: "/products/lcd-video-wall"
   },
   {
     id: 4,
-    title: "DH-IPC-PFW8840-A180",
-    description: "4x2MP Multi-Sensor Panoramic Network IR Bullet Camera with 180° coverage",
-    image: "/src/assets/products/img4.png",
-    link: "/products/panoramic-camera"
+    title: "Monitors",
+    description: "LED Monitor",
+    image: "https://images.unsplash.com/photo-1547119957-637f8679db1e?q=80&w=2064&auto=format&fit=crop",
+    link: "/products/monitors"
   },
   {
     id: 5,
-    title: "DH-TPC-BF5401",
-    description: "Thermal Network Bullet Camera with 400x300 VOx sensor and fire detection analytics",
-    image: "/src/assets/products/img5.png",
-    link: "/products/thermal-camera"
-  },
-  {
-    id: 6,
-    title: "DHI-NVR5864-I",
-    description: "64 Channel AI Network Video Recorder with face recognition and perimeter protection",
-    image: "/src/assets/products/img6.png",
-    link: "/products/nvr"
-  },
-  {
-    id: 7,
-    title: "DH-IPC-HFW7442H-Z4",
-    description: "4MP WizMind IR Bullet Camera with AI analytics, Starlight+ and 8-32mm motorized lens",
-    image: "/src/assets/products/img7.png",
-    link: "/products/wizmind-camera"
-  },
-  {
-    id: 8,
-    title: "DHI-ASI7213X-T1",
-    description: "Face Recognition Access Controller with temperature monitoring and mask detection",
-    image: "/src/assets/products/img8.png",
-    link: "/products/access-control"
+    title: "Controller",
+    description: "Professional Video Wall Controller",
+    image: "https://img.freepik.com/free-photo/control-room-power-plant_1359-366.jpg?w=1380&t=st=1708610436",
+    link: "/products/controller"
   }
 ];
 ---
@@ -71,6 +50,7 @@ const products: Product[] = [
   <div class="max-w-7xl mx-auto px-4">
     <h2 class="text-4xl font-bold text-center text-gray-900 mb-12">
       Our Latest Products
+      <span class="block w-24 h-1 bg-gradient-to-r from-blue-500 to-blue-700 mx-auto mt-4"></span>
     </h2>
 
     <div class="flex overflow-x-hidden">
@@ -83,6 +63,7 @@ const products: Product[] = [
                   src={product.image} 
                   alt={product.title}
                   class="w-full h-64 object-cover transform transition-transform duration-500 group-hover:scale-110"
+                  loading="lazy"
                 />
                 <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
@@ -92,9 +73,12 @@ const products: Product[] = [
                 <p class="text-gray-600 mb-4">{product.description}</p>
                 <a 
                   href={product.link}
-                  class="inline-block px-6 py-2 bg-gradient-to-r from-yellow-400 to-blue-600 text-white rounded-lg transform transition-all duration-300 hover:from-yellow-500 hover:to-blue-700 hover:scale-105"
+                  class="inline-flex items-center px-6 py-2 bg-gradient-to-r from-blue-600 to-blue-800 text-white rounded-lg transform transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/25"
                 >
-                  View Details
+                  Read More
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
                 </a>
               </div>
             </div>
@@ -119,9 +103,12 @@ const products: Product[] = [
                 <p class="text-gray-600 mb-4">{product.description}</p>
                 <a 
                   href={product.link}
-                  class="inline-block px-6 py-2 bg-gradient-to-r from-yellow-400 to-blue-600 text-white rounded-lg transform transition-all duration-300 hover:from-yellow-500 hover:to-blue-700 hover:scale-105"
+                  class="inline-flex items-center px-6 py-2 bg-gradient-to-r from-blue-600 to-blue-800 text-white rounded-lg transform transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/25"
                 >
-                  View Details
+                  Read More
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
                 </a>
               </div>
             </div>

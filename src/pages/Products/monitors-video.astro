@@ -1,0 +1,384 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const highlights = [
+  {
+    id: "01",
+    title: "CCTV Monitor",
+    content: "Professional grade monitors designed specifically for surveillance applications, offering 24/7 reliability and superior image quality.",
+    image: "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800&auto=format&fit=crop"
+  },
+  {
+    id: "02",
+    title: "IT Monitor",
+    content: "High-performance IT monitors for office and home use, delivering crystal clear visuals and ergonomic design.",
+    image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800&auto=format&fit=crop"
+  }
+];
+
+const products = [
+  // CCTV Entry Products
+  {
+    id: 'mw3224-v',
+    name: 'MW3224-V',
+    description: '24" LED FHD Monitor',
+    category: 'cctv',
+    subcategory: 'entry',
+    image: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800'
+  },
+  {
+    id: 'mw3243-f-v2',
+    name: 'MW3243-F-V2',
+    description: '43" 4K LED Monitor',
+    category: 'cctv',
+    subcategory: 'entry',
+    image: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800'
+  },
+  {
+    id: 'mw3255-f-v2',
+    name: 'MW3255-F-V2',
+    description: '55" 4K LED Monitor',
+    category: 'cctv',
+    subcategory: 'entry',
+    image: 'https://images.unsplash.com/photo-1540575339264-569259387a45?w=800'
+  },
+  {
+    id: 'mw3222-v-dt',
+    name: 'MW3222-V-DT',
+    description: 'LED FHD Monitor',
+    category: 'cctv',
+    subcategory: 'entry',
+    image: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800'
+  },
+  {
+    id: 'mw3232-v-k2',
+    name: 'MW3232-V-K2',
+    description: '32 Inches Plastic Case LCD Monitor',
+    category: 'cctv',
+    subcategory: 'entry',
+    image: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800'
+  },
+
+  // CCTV Pro Products
+  {
+    id: 'mw3232-e',
+    name: 'MW3232-E',
+    description: '32 inch LED FHD Monitor',
+    category: 'cctv',
+    subcategory: 'pro',
+    image: 'https://images.unsplash.com/photo-1540575339264-569259387a45?w=800'
+  },
+  {
+    id: 'mw3243-e',
+    name: 'MW3243-E',
+    description: '43 inch LED FHD Monitor',
+    category: 'cctv',
+    subcategory: 'pro',
+    image: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800'
+  },
+
+  // Home & Office Products
+  {
+    id: 'mw-lc24',
+    name: 'MW-LC24',
+    description: '24" IT Monitor',
+    category: 'homeoffice',
+    image: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800'
+  },
+  {
+    id: 'mw-lc22',
+    name: 'MW-LC22',
+    description: '22 Inch Plastic Shell IT Monitor',
+    category: 'homeoffice',
+    image: 'https://images.unsplash.com/photo-1540575339264-569259387a45?w=800'
+  },
+  {
+    id: 'mw-lc22-e',
+    name: 'MW-LC22-E',
+    description: '22 inches IT Monitor',
+    category: 'homeoffice',
+    image: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800'
+  },
+  {
+    id: 'mw-lc24-e',
+    name: 'MW-LC24-E',
+    description: '24 inches IT Monitor',
+    category: 'homeoffice',
+    image: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800'
+  },
+  {
+    id: 'mw-lc27-b',
+    name: 'MW-LC27-B',
+    description: '27 inches IT Monitor',
+    category: 'homeoffice',
+    image: 'https://images.unsplash.com/photo-1540575339264-569259387a45?w=800'
+  },
+  {
+    id: 'mw-lc27-e',
+    name: 'MW-LC27-E',
+    description: '27 inches IT Monitor',
+    category: 'homeoffice',
+    image: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800'
+  },
+
+  // Bracket Products
+  {
+    id: 'hb-5043-h',
+    name: 'HB-5043-H',
+    description: '4K Monitor Base Bracket',
+    category: 'bracket',
+    image: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800'
+  },
+  {
+    id: 'hb-5055-h',
+    name: 'HB-5055-H',
+    description: '4K Monitor Base Bracket',
+    category: 'bracket',
+    image: 'https://images.unsplash.com/photo-1540575339264-569259387a45?w=800'
+  },
+  {
+    id: 'hb-4022-e',
+    name: 'HB-4022-E',
+    description: '22" Wall-hanging Mounts',
+    category: 'bracket',
+    image: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800'
+  },
+  {
+    id: 'hb-4032-e',
+    name: 'HB-4032-E',
+    description: '32"-55" Wall-hanging Mounts',
+    category: 'bracket',
+    image: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800'
+  },
+  {
+    id: 'hb-5032-e',
+    name: 'HB-5032-E',
+    description: '32" Desk Mechanical Mounts',
+    category: 'bracket',
+    image: 'https://images.unsplash.com/photo-1540575339264-569259387a45?w=800'
+  },
+  {
+    id: 'hb-5043-e',
+    name: 'HB-5043-E',
+    description: '43" Desk Mechanical Mounts',
+    category: 'bracket',
+    image: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800'
+  }
+];
+
+const categories = [
+  { id: 'all', name: 'ALL' },
+  { 
+    id: 'cctv', 
+    name: 'CCTV',
+    subcategories: ['entry', 'pro']
+  },
+  { id: 'homeoffice', name: 'Home&Office' },
+  { id: 'bracket', name: 'Bracket' }
+];
+---
+
+<Layout title="Monitors - Dahua Saudi">
+  <div class="bg-white">
+    <!-- Header Section -->
+    <div class="relative h-[60vh] overflow-hidden">
+      <img
+        src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2070&auto=format&fit=crop"
+        alt="Monitors Header"
+        class="w-full h-full object-cover"
+      />
+      <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+        <h1 class="text-5xl font-bold text-white text-center">
+          Monitors
+          <span class="block text-2xl mt-4 font-normal">Professional display solutions for every need</span>
+        </h1>
+      </div>
+    </div>
+
+    <!-- Highlights Section -->
+    <div class="max-w-7xl mx-auto px-4 py-16">
+      <h2 class="text-3xl font-bold text-center mb-16">
+        Highlights
+        <span class="block w-24 h-1 bg-gradient-to-r from-blue-600 to-blue-800 mx-auto mt-4"></span>
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        {highlights.map((item) => (
+          <div class="group">
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300">
+              <div class="relative h-64 overflow-hidden">
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </div>
+              <div class="p-8">
+                <div class="flex items-center gap-3 mb-4">
+                  <span class="text-blue-600 text-lg font-bold">{item.id}</span>
+                  <h3 class="text-2xl font-bold text-gray-900">{item.title}</h3>
+                </div>
+                <p class="text-gray-600 leading-relaxed">{item.content}</p>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <!-- Products Section -->
+    <div class="max-w-7xl mx-auto px-4 py-16 bg-gray-50">
+      <h2 class="text-3xl font-bold text-center mb-16">
+        Products
+        <span class="block text-lg font-normal text-gray-600 mt-2">Monitors</span>
+      </h2>
+
+      <!-- Product Filters -->
+      <div class="flex flex-col items-center gap-4 mb-12">
+        <div class="inline-flex rounded-md shadow-sm">
+          {categories.map(category => (
+            <button 
+              class="px-6 py-2 text-sm font-medium border transition-colors
+              first:rounded-l-lg last:rounded-r-lg
+              data-[active=true]:bg-blue-600 data-[active=true]:text-white data-[active=true]:border-blue-600
+              data-[active=false]:bg-white data-[active=false]:text-gray-600 hover:bg-blue-600 hover:text-white hover:border-blue-600"
+              data-filter={category.id}
+              data-active={category.id === 'all'}
+            >
+              {category.name}
+            </button>
+          ))}
+        </div>
+
+        <!-- Subcategories for CCTV -->
+        <div id="subcategories" class="hidden">
+          <div class="inline-flex rounded-md shadow-sm">
+            <button
+              class="px-4 py-1 text-sm font-medium border rounded-l-lg transition-colors"
+              data-subfilter="entry"
+            >
+              Entry
+            </button>
+            <button
+              class="px-4 py-1 text-sm font-medium border-t border-b border-r rounded-r-lg transition-colors"
+              data-subfilter="pro"
+            >
+              Pro
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {products.map(product => (
+          <div 
+            class="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:-translate-y-1"
+            data-category={product.category}
+            data-subcategory={product.subcategory}
+          >
+            <div class="relative h-48 overflow-hidden">
+              <img 
+                src={product.image} 
+                alt={product.name}
+                class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-900 mb-2">{product.name}</h3>
+              <p class="text-gray-600 mb-6">{product.description}</p>
+              
+              <a 
+                href={`/products/monitors/${product.id}`}
+                class="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors group"
+              >
+                Read More
+                <svg class="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<script>
+  const filterButtons = document.querySelectorAll('[data-filter]');
+  const subfilterButtons = document.querySelectorAll('[data-subfilter]');
+  const productCards = document.querySelectorAll('[data-category]');
+  const subcategoriesDiv = document.getElementById('subcategories');
+
+  function filterProducts(category: string | undefined, subcategory: string | null = null) {
+    // Update button states
+    filterButtons.forEach(btn => {
+      if (btn instanceof HTMLElement) {
+        const isActive = btn.dataset.filter === category;
+        btn.dataset.active = isActive.toString();
+      }
+    });
+
+    // Show/hide subcategories
+    if (subcategoriesDiv) {
+      subcategoriesDiv.style.display = category === 'cctv' ? 'block' : 'none';
+    }
+
+    // Filter products
+    productCards.forEach(card => {
+      if (card instanceof HTMLElement) {
+        const showCard = category === 'all' || 
+          (card.dataset.category === category && 
+           (!subcategory || card.dataset.subcategory === subcategory));
+
+        if (showCard) {
+          card.style.display = 'block';
+          setTimeout(() => {
+            card.style.opacity = '1';
+            card.style.transform = 'translateY(0)';
+          }, 10);
+        } else {
+          card.style.opacity = '0';
+          card.style.transform = 'translateY(20px)';
+          setTimeout(() => {
+            card.style.display = 'none';
+          }, 300);
+        }
+      }
+    });
+  }
+
+  filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const category = button.getAttribute('data-filter');
+      if (category) filterProducts(category);
+    });
+  });
+
+  subfilterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const subcategory = button.getAttribute('data-subfilter');
+      if (subcategory) filterProducts('cctv', subcategory);
+    });
+  });
+
+  // Initialize with all products shown
+  filterProducts('all');
+</script>
+
+<style>
+  .group:hover .group-hover\:scale-110 {
+    transform: scale(1.1);
+  }
+
+  .group:hover .group-hover\:opacity-100 {
+    opacity: 1;
+  }
+
+  [data-category] {
+    transition: all 0.3s ease-in-out;
+  }
+</style>

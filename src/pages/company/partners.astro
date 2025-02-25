@@ -1,0 +1,116 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const partners = {
+  premium: [
+    { name: 'TechCorp', logo: 'https://img.freepik.com/free-vector/abstract-company-logo_53876-120501.jpg' },
+    { name: 'InnoSys', logo: 'https://img.freepik.com/free-vector/abstract-logo-design_23-2148886675.jpg' },
+    { name: 'GlobalTech', logo: 'https://img.freepik.com/free-vector/elegant-circle-logo-icon_126523-971.jpg' },
+  ],
+  certified: [
+    { name: 'DataFlow', logo: 'https://img.freepik.com/free-vector/gradient-technology-logo_52683-8581.jpg' },
+    { name: 'SecureNet', logo: 'https://img.freepik.com/free-vector/abstract-logo-flame-shape_1043-44.jpg' },
+    { name: 'CloudServe', logo: 'https://img.freepik.com/free-vector/abstract-company-logo-with-colorful-design_1043-47.jpg' },
+  ]
+};
+
+const stats = [
+  { number: '150+', label: 'Global Partners' },
+  { number: '45', label: 'Countries' },
+  { number: '24/7', label: 'Support' },
+  { number: '98%', label: 'Satisfaction Rate' }
+];
+---
+
+<Layout title="Our Partners | Lovosis">
+  <main class="overflow-hidden">
+    {/* Hero Section */}
+    <section class="relative py-24 bg-gradient-to-br from-gray-900 to-gray-800 overflow-hidden">
+      <div class="container mx-auto px-4 relative z-10">
+        <div class="max-w-3xl mx-auto text-center">
+          <h1 class="text-5xl font-bold text-white mb-6">
+            Our Trusted <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">Partners</span>
+          </h1>
+          <p class="text-xl text-gray-300">
+            Building a global ecosystem of innovation and excellence through strategic partnerships
+          </p>
+        </div>
+      </div>
+      
+      {/* Decorative Elements */}
+      <div class="absolute -top-24 -right-24 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl"></div>
+      <div class="absolute -bottom-24 -left-24 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl"></div>
+    </section>
+
+    {/* Stats Section */}
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+          {stats.map(stat => (
+            <div class="text-center">
+              <h3 class="text-4xl font-bold text-gray-900 mb-2">{stat.number}</h3>
+              <p class="text-gray-600">{stat.label}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    {/* Premium Partners */}
+    <section class="py-20 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">Premium Partners</h2>
+          <div class="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto"></div>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          {partners.premium.map(partner => (
+            <div class="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-500 transform hover:-translate-y-1">
+              <div class="h-32 flex items-center justify-center mb-6">
+                <img src={partner.logo} alt={partner.name} class="max-h-full max-w-[80%] object-contain filter grayscale group-hover:grayscale-0 transition-all duration-500" />
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900 text-center">{partner.name}</h3>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    {/* Certified Partners */}
+    <section class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">Certified Partners</h2>
+          <div class="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto"></div>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          {partners.certified.map(partner => (
+            <div class="group bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-500">
+              <div class="h-32 flex items-center justify-center mb-6">
+                <img src={partner.logo} alt={partner.name} class="max-h-full max-w-[80%] object-contain filter grayscale group-hover:grayscale-0 transition-all duration-500" />
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900 text-center">{partner.name}</h3>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    {/* CTA Section */}
+    <section class="py-20 bg-gradient-to-br from-gray-900 to-gray-800">
+      <div class="container mx-auto px-4">
+        <div class="max-w-3xl mx-auto text-center">
+          <h2 class="text-3xl font-bold text-white mb-6">Become a Partner</h2>
+          <p class="text-gray-300 mb-8">
+            Join our partner network and unlock new opportunities for growth and innovation
+          </p>
+          <a href="/contact" class="inline-block bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold py-4 px-8 rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:-translate-y-0.5">
+            Contact Us Today
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>
