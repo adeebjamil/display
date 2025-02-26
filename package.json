@@ -6,7 +6,8 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "install": "npm install --legacy-peer-deps"
   },
   "dependencies": {
     "@astrojs/image": "^0.18.0",
