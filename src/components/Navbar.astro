@@ -7,23 +7,49 @@ import img4 from '../assets/Navbar/img4.jpg';
 import img5 from '../assets/Navbar/img5.jpg';
 ---
 
-<nav class="fixed top-0 left-0 right-0 w-full z-50 bg-white dark:bg-gray-900 shadow-lg transition-transform duration-300 ">
-  <!-- Updated gradient to blue -->
+<style>
+  .mobile-menu-enter {
+    transform: translateX(100%);
+  }
+  .mobile-menu-enter-active {
+    transform: translateX(0);
+    transition: transform 300ms ease-in-out;
+  }
+  .mobile-menu-exit {
+    transform: translateX(0);
+  }
+  .mobile-menu-exit-active {
+    transform: translateX(100%);
+    transition: transform 300ms ease-in-out;
+  }
+</style>
+
+<nav class="fixed top-0 left-0 right-0 w-full z-50 bg-white dark:bg-gray-900 shadow-lg transition-transform duration-300">
+  <!-- Gradient header -->
   <div class="w-full bg-gradient-to-r from-purple-600 to-blue-800 text-white py-2">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-end items-center space-x-4 ">
-      <!-- Removed search and language sections -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-end items-center space-x-4">
     </div>
   </div>
 
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex justify-between h-16">
-      <!-- Logo section -->
-      <a href="/" class="flex items-center -ml-4 sm:-ml-6 lg:-ml-8">
-        <img src={logo.src} alt="Company Logo" class="h-16 w-auto sm:h-16"/>
+    <div class="flex justify-between items-center h-16">
+      <!-- Logo -->
+      <a href="/" class="flex items-center">
+        <img src={logo.src} alt="Company Logo" class="h-12 w-auto"/>
       </a>
 
-      <!-- Main Navigation - Updated with centering -->
-      <div class="hidden lg:flex lg:items-center lg:space-x-8 absolute left-1/2 transform -translate-x-1/2">
+      <!-- Mobile menu button -->
+      <button 
+        id="mobile-menu-button"
+        class="lg:hidden p-2 rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-100"
+      >
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+
+      <!-- Desktop Navigation -->
+      <div class="hidden lg:flex lg:items-center lg:space-x-8">
         <!-- Products Dropdown -->
         <div class="relative group">
           <button class="flex items-center px-3 py-2 text-xl text-gray-600 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 font-bold">
@@ -119,6 +145,191 @@ import img5 from '../assets/Navbar/img5.jpg';
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Menu Overlay -->
+  <div 
+    id="mobile-menu-overlay"
+    class="fixed inset-0 bg-black bg-opacity-50 z-40 opacity-0 pointer-events-none transition-opacity duration-300 lg:hidden"
+  ></div>
+
+  <!-- Mobile Menu Panel -->
+  <div
+    id="mobile-menu"
+    class="fixed top-0 right-0 w-[80%] max-w-sm h-full bg-gradient-to-b from-white to-gray-50 dark:from-gray-900 dark:to-gray-800 z-50 transform translate-x-full transition-all duration-300 ease-in-out lg:hidden overflow-hidden"
+  >
+    <div class="h-full overflow-y-auto">
+      <!-- Mobile Menu Header -->
+      <div class="bg-gradient-to-r from-purple-600 to-blue-800 p-6">
+        <div class="flex justify-between items-center">
+          <img src={logo.src} alt="Company Logo" class="h-8 w-auto"/>
+          <button id="close-mobile-menu" class="p-2 text-white hover:text-gray-200 transition-colors">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Menu Content -->
+      <div class="py-6 px-4">
+        {['products', 'solutions', 'support', 'company'].map((section) => (
+          <div class="mb-4">
+            <button 
+              id={`mobile-${section}-button`}
+              class="flex items-center justify-between w-full p-4 rounded-lg bg-white dark:bg-gray-800 shadow-sm hover:shadow-md transition-all duration-200"
+            >
+              <span class="text-lg font-semibold capitalize text-gray-800 dark:text-gray-200">
+                {section}
+              </span>
+              <svg class="w-5 h-5 text-gray-600 dark:text-gray-400 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </button>
+            <div id={`mobile-${section}-menu`} class="hidden mt-2">
+              <div class="ml-4 p-4 space-y-3 border-l-2 border-blue-500">
+                {section === 'products' && (
+                  <>
+                    <a href="/Products/interactive-display" class="block text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                      <span class="flex items-center gap-2">
+                        <span class="w-2 h-2 bg-blue-500 rounded-full"></span>
+                        Interactive Display
+                      </span>
+                    </a>
+                    <a href="/Products/led-display" class="block text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                      <span class="flex items-center gap-2">
+                        <span class="w-2 h-2 bg-blue-500 rounded-full"></span>
+                        LED Display
+                      </span>
+                    </a>
+                    <a href="/Products/lcd-video" class="block text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                      <span class="flex items-center gap-2">
+                        <span class="w-2 h-2 bg-blue-500 rounded-full"></span>
+                        LCD Video
+                      </span>
+                    </a>
+                    <a href="/Products/wall-controller" class="block text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                      <span class="flex items-center gap-2">
+                        <span class="w-2 h-2 bg-blue-500 rounded-full"></span>
+                      Wall Controller
+                      </span>
+                    </a>
+                    <a href="/Products/monitors-video" class="block text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                      <span class="flex items-center gap-2">
+                        <span class="w-2 h-2 bg-blue-500 rounded-full"></span>
+                        Monitors Video
+                      </span>
+                    </a>
+                    <a href="/Products/conferencing-products" class="block text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                      <span class="flex items-center gap-2">
+                        <span class="w-2 h-2 bg-blue-500 rounded-full"></span>
+                        Conferencing Products
+                      </span>
+                    </a>
+                    <a href="/Products/Overview" class="block text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                      <span class="flex items-center gap-2">
+                        <span class="w-2 h-2 bg-blue-500 rounded-full"></span>
+                        Overview
+                      </span>
+                    </a>
+                  </>
+                )}
+                {section === 'solutions' && (
+                  <>
+                    <a href="/solutions/retail" class="block text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                      <span class="flex items-center gap-2">
+                        <span class="w-2 h-2 bg-green-500 rounded-full"></span>
+                        Retail
+                      </span>
+                    </a>
+                    <a href="/solutions/corporate" class="block text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                      <span class="flex items-center gap-2">
+                        <span class="w-2 h-2 bg-green-500 rounded-full"></span>
+                        Corporate
+                      </span>
+                    </a>
+                    <a href="/solutions/education" class="block text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                      <span class="flex items-center gap-2">
+                        <span class="w-2 h-2 bg-green-500 rounded-full"></span>
+                        Education
+                      </span>
+                    </a>
+                    <a href="/solutions/control-room" class="block text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                      <span class="flex items-center gap-2">
+                        <span class="w-2 h-2 bg-green-500 rounded-full"></span>
+                        Control Room
+                      </span>
+                    </a>
+                    <a href="/solutions/dooh-airport" class="block text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                      <span class="flex items-center gap-2">
+                        <span class="w-2 h-2 bg-green-500 rounded-full"></span>
+                        DOOH Airport
+                      </span>
+                    </a>
+                  </>
+                )}
+                {section === 'support' && (
+                  <>
+                    <a href="/support/download-center" class="block text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                      <span class="flex items-center gap-2">
+                        <span class="w-2 h-2 bg-purple-500 rounded-full"></span>
+                        Download Center
+                      </span>
+                    </a>
+                    <a href="/support/how-to" class="block text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                      <span class="flex items-center gap-2">
+                        <span class="w-2 h-2 bg-purple-500 rounded-full"></span>
+                        How To
+                      </span>
+                    </a>
+                  </>
+                )}
+                {section === 'company' && (
+                  <>
+                    <a href="/company/about-us" class="block text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                      <span class="flex items-center gap-2">
+                        <span class="w-2 h-2 bg-orange-500 rounded-full"></span>
+                        About Us
+                      </span>
+                    </a>
+                    <a href="/company/contact-us" class="block text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                      <span class="flex items-center gap-2">
+                        <span class="w-2 h-2 bg-orange-500 rounded-full"></span>
+                        Contact Us
+                      </span>
+                    </a>
+                    <a href="/company/partners" class="block text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                      <span class="flex items-center gap-2">
+                        <span class="w-2 h-2 bg-orange-500 rounded-full"></span>
+                        Partners
+                      </span>
+                    </a>
+                  </>
+                )}
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <!-- Quick Actions -->
+      <div class="absolute bottom-0 left-0 right-0 p-4 bg-white dark:bg-gray-800 border-t dark:border-gray-700">
+        <div class="grid grid-cols-2 gap-4">
+          <a href="tel:+1234567890" class="flex items-center justify-center gap-2 p-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h18M3 12h18M3 19h18"/>
+            </svg>
+            <span>Contact</span>
+          </a>
+          <button class="flex items-center justify-center gap-2 p-3 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+            </svg>
+            <span>Search</span>
+          </button>
         </div>
       </div>
     </div>
@@ -268,6 +479,42 @@ import img5 from '../assets/Navbar/img5.jpg';
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && !searchModal?.classList.contains('hidden')) {
       toggleSearch();
+    }
+  });
+
+  // Add mobile menu toggle functionality for all sections
+  ['products', 'solutions', 'support', 'company'].forEach(section => {
+    const button = document.getElementById(`mobile-${section}-button`);
+    const menu = document.getElementById(`mobile-${section}-menu`);
+    
+    if (button && menu) {
+      button.addEventListener('click', () => {
+        // Toggle the menu visibility
+        menu.classList.toggle('hidden');
+        
+        // Rotate the icon
+        const icon = button.querySelector('svg');
+        if (icon) {
+          icon.classList.toggle('rotate-180');
+        }
+        
+        // Close other menus
+        ['products', 'solutions', 'support', 'company'].forEach(otherSection => {
+          if (otherSection !== section) {
+            const otherMenu = document.getElementById(`mobile-${otherSection}-menu`);
+            const otherButton = document.getElementById(`mobile-${otherSection}-button`);
+            if (otherMenu) {
+              otherMenu.classList.add('hidden');
+            }
+            if (otherButton) {
+              const otherIcon = otherButton.querySelector('svg');
+              if (otherIcon) {
+                otherIcon.classList.remove('rotate-180');
+              }
+            }
+          }
+        });
+      });
     }
   });
 </script>
