@@ -1,8 +1,54 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+// SEO-optimized title and description
+const title = "Control Room Display Solutions | LED Video Walls & LCD Monitoring Systems | Lovosis Display"
+const description = "Professional control room solutions featuring advanced LED video walls, LCD monitoring displays, and digital visualization systems. Enhance your command center with high-resolution screens for security, utility, and traffic management operations."
+
+// Schema markup for better search engine understanding
+const sd = {
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Lovosis Control Room Display Solutions",
+  "description": "Professional monitoring and visualization systems using advanced LED displays and LCD screens for command centers and control rooms",
+  "brand": {
+    "@type": "Brand",
+    "name": "Lovosis Display"
+  },
+  "category": "Professional Display Systems",
+  "image": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?ixlib=rb-4.0.3",
+  "offers": {
+    "@type": "AggregateOffer",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock"
+  },
+  "subjectOf": [
+    {
+      "@type": "Article",
+      "name": "Modern Control Room Design with LED Display Technology",
+      "url": "https://lovosisdisplay.com/blog/modern-control-room-design-with-led-display-technology"
+    }
+  ],
+  "isRelatedTo": [
+    {
+      "@type": "Product",
+      "name": "LED Video Wall Systems",
+      "description": "High-resolution LED display panels for control room video walls"
+    },
+    {
+      "@type": "Product",
+      "name": "LCD Monitoring Screens",
+      "description": "Professional LCD display screens for continuous operation in control centers"
+    },
+    {
+      "@type": "Product",
+      "name": "Control Room Management Software",
+      "description": "Integrated display control solutions for multi-screen environments"
+    }
+  ]
+}
 ---
 
-<Layout title="Control Room Solutions | Lovosis">
+<Layout title={title} description={description} sd={sd}>
   <main class="overflow-hidden">
     <!-- Hero Section with Parallax -->
     <section class="relative min-h-screen flex items-center justify-center overflow-hidden">

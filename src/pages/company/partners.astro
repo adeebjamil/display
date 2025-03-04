@@ -1,5 +1,51 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+// SEO Optimized Title and Description
+const title = "Display Technology Partners | LED & LCD Manufacturers | Lovosis Display"
+const description = "Explore Lovosis Display's strategic partnerships with leading LED display, LCD screen, educational board, and digital billboard manufacturers. Our global network ensures cutting-edge display technology solutions."
+
+// Schema Markup for Partners Page
+const sd = {
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  "name": "Lovosis Display Technology Partners",
+  "description": "Strategic partnerships with leading display technology manufacturers and solution providers",
+  "mainEntity": {
+    "@type": "Organization",
+    "name": "Lovosis Display",
+    "url": "https://lovosisDisplay.com",
+    "knowsAbout": ["LED Displays", "LCD Screens", "Educational Display Boards", "Digital Billboards"],
+    "member": [
+      {
+        "@type": "OrganizationRole",
+        "member": {
+          "@type": "Organization",
+          "name": "Samsung Display",
+          "description": "Premium LED and LCD display panel manufacturer"
+        },
+        "roleName": "Premium Display Partner"
+      },
+      {
+        "@type": "OrganizationRole",
+        "member": {
+          "@type": "Organization",
+          "name": "LG Commercial Display",
+          "description": "Professional display solutions provider"
+        },
+        "roleName": "Premium Display Partner"
+      },
+      {
+        "@type": "OrganizationRole",
+        "member": {
+          "@type": "Organization",
+          "name": "NovaStar",
+          "description": "LED display controller technology"
+        },
+        "roleName": "Certified Technology Partner"
+      }
+    ]
+  }
+}
 
 const partners = {
   premium: [
@@ -22,7 +68,7 @@ const stats = [
 ];
 ---
 
-<Layout title="Our Partners | Lovosis">
+<Layout title={title} description={description} sd={sd}>
   <main class="overflow-hidden">
     {/* Hero Section */}
     <section class="relative py-24 bg-gradient-to-br from-gray-900 to-gray-800 overflow-hidden">

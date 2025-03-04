@@ -1,5 +1,37 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+// SEO-optimized title and description
+const title = "Video Conferencing Display Solutions | LED & LCD Professional Displays"
+const description = "Premium video conferencing solutions featuring advanced LED and LCD display technology. High-resolution screens, educational board integration, and digital signage compatibility for professional meeting environments."
+
+// Schema markup for product page
+const sd = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Video Conferencing Display Solutions",
+  "description": "Professional video conferencing products with high-quality display technology",
+  "offers": {
+    "@type": "AggregateOffer",
+    "availability": "https://schema.org/InStock",
+    "offerCount": "7"
+  },
+  "itemListElement": [
+    {
+      "@type": "Product",
+      "name": "Unear A20 All-In-One Video Conference Camera",
+      "image": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800",
+      "description": "Professional 4K display conferencing system with AI-powered features and LED display compatibility",
+      "brand": {
+        "@type": "Brand",
+        "name": "Lovosis Display"
+      },
+      "offers": {
+        "@type": "Offer",
+        "availability": "https://schema.org/InStock"
+      }
+    }
+  ]
+}
 
 const highlights = [
   {
@@ -76,7 +108,7 @@ const products = [
 ];
 ---
 
-<Layout title="Video Conferencing - Dahua Saudi">
+<Layout title={title} description={description} sd={sd}>
   <div class="bg-white" x-data="{ activeSection: '01' }">
     <!-- Header Section -->
     <div class="relative h-[60vh] overflow-hidden">

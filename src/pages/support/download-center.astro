@@ -1,5 +1,30 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+// SEO-optimized title and description
+const title = "Display Technology Downloads | LED, LCD & Interactive Display Resources | Lovosis Display"
+const description = "Access our comprehensive collection of display technology resources including LED display datasheets, LCD video wall manuals, interactive panel guides, and product installation documentation."
+const sd = {
+  "@context": "https://schema.org",
+  "@type": "DataDownload",
+  "name": "Display Technology Resources",
+  "description": "Collection of technical documentation for professional display products including LED panels, LCD video walls, and interactive displays",
+  "encodingFormat": "application/pdf",
+  "contentUrl": "https://lovosisdisplay.com/download-center",
+  "dateModified": "2025-03-04",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lovosis Display",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://lovosisdisplay.com/logo.png"
+    }
+  },
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
 
 type DownloadItem = {
   title: string;
@@ -203,7 +228,7 @@ const categories = Object.keys(downloads);
 const products = Object.keys(downloads.Datasheet);
 ---
 
-<Layout title="Download Center | Lovosis">
+<Layout title={title} description={description} sd={sd}>
   <main class="min-h-screen bg-gray-50 py-12">
     <div class="container mx-auto px-4">
       <h1 class="text-4xl font-bold text-gray-900 mb-8">Download Center</h1>

@@ -1,6 +1,42 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 
+// SEO Optimized Title and Description
+const title = "Contact Lovosis Display | LED & LCD Display Solutions | Request a Quote"
+const description = "Contact Lovosis Display for premium LED displays, LCD screens, educational boards and digital billboards. Get expert consultation, technical support, and customized display solutions for your business needs."
+
+// Schema Markup for Contact Page
+const sd = {
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "name": "Contact Lovosis Display",
+  "description": "Get in touch with Lovosis Display for LED displays, LCD screens, educational boards and digital billboard solutions",
+  "mainEntity": {
+    "@type": "Organization",
+    "name": "Lovosis Display",
+    "url": "https://lovosisDisplay.com",
+    "logo": "https://lovosisDisplay.com/images/logo.png",
+    "contactPoint": [
+      {
+        "@type": "ContactPoint",
+        "telephone": "+91 22 1234 5678",
+        "contactType": "customer service",
+        "areaServed": "Mumbai",
+        "availableLanguage": ["English", "Hindi"]
+      },
+      {
+        "@type": "ContactPoint",
+        "telephone": "+91 11 8765 4321",
+        "contactType": "sales",
+        "areaServed": "Delhi",
+        "availableLanguage": ["English", "Hindi"]
+      }
+    ]
+  }
+}
+
+
+
 const images = {
   hero: "https://img.freepik.com/free-photo/modern-business-center-with-glass-walls_1127-2880.jpg",
   pattern: "https://img.freepik.com/free-vector/abstract-pattern-design_1273-159.jpg"
@@ -29,7 +65,7 @@ const officeLocations = [
 ];
 ---
 
-<Layout title="Contact Us | Lovosis">
+<Layout title={title} description={description} sd={sd}>
   <main class="min-h-screen">
     {/* Hero Section */}
     <section class="relative h-[60vh] overflow-hidden">

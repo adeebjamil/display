@@ -9,12 +9,12 @@ export interface Props {
     title: string;
     publishedTime?: string;
     site?: string;
-  meta?:string;
+    meta?: string;
     sd?: object;
     ogTitle?: string;
     siteName?: string;
     description?: string;
-  lang?:string;
+    lang?: string;
     image?: {
         url: string;
         alt: string;
@@ -24,8 +24,8 @@ export interface Props {
 
 const {
     title,
-  meta,
-  lang="en",
+    meta,
+    lang = "en",
     siteName,
     publishedTime,
     description,
@@ -41,55 +41,55 @@ const {
 <html lang={lang}>
   <head>
     {
-            sd && (
-                <script
-                    is:inline
-                    type="application/ld+json"
-                    set:html={JSON.stringify(sd)}
-                />
-            )
-        }
+        sd && (
+            <script
+                is:inline
+                type="application/ld+json"
+                set:html={JSON.stringify(sd)}
+            />
+        )
+    }
     <SEO
-    title={title ?? "Dahua-Saudi - Top-Rated Authorized CCTV Camera Dealer in Saudi"}
-    description={description ?? "Dahua-Saudi, the leading authorized dealer of CCTV cameras in Saudi Arabia. Offering top-rated security and video surveillance solutions including AI and IP cameras for homes and businesses."}
-    noindex={disableIndexing}
-    nofollow={disableIndexing}
-    openGraph={{
-      basic: {
-        title: title ?? "Dahua-Saudi - Best CCTV Dealer in Saudi",
-        type: "website",
-        image: image?.url ?? "/default-image.jpg",
-      },
-      image: {
-        width: 1200,
-        height: 628,
-        alt: image?.alt ?? "Dahua-Saudi - Best CCTV Cameras in Saudi",
-      },
-      optional: {
-        siteName: siteName ?? "Dahua-Saudi",
-        description: description ?? "Providing trusted and reliable CCTV surveillance solutions with advanced Dahua AI and IP cameras across Saudi Arabia.",
-      },
-      article: {
-        publishedTime: publishedTime ?? new Date().toISOString(),
-      },
-    }}
-    twitter={{
-      card: "summary_large_image",
-      site: site ?? "https://dahua-saudi.com",
-      creator: "@DahuaSaudi",
-      title: title ?? "Dahua-Saudi - Leading CCTV Dealer in Saudi Arabia",
-      description: description ?? "Dahua-Saudi, authorized dealer of Dahua CCTV cameras. Providing top security solutions and surveillance cameras in Saudi.",
-      image: image?.url ?? "/default-twitter-image.jpg",
-      imageAlt: "Dahua-Saudi - CCTV Surveillance Solutions",
-    }}
-  />
+      title={title ?? "Lovosis Display - Premium LED, LCD & Digital Signage Solutions"}
+      description={description ?? "Lovosis Display - Leading distributor of high-quality LED displays, LCD screens, educational boards & digital billboards. Innovative display solutions for businesses & educational institutions."}
+      noindex={disableIndexing}
+      nofollow={disableIndexing}
+      openGraph={{
+        basic: {
+          title: title ?? "Lovosis Display - Commercial LED & LCD Display Solutions",
+          type: "website",
+          image: image?.url ?? "/default-image.jpg",
+        },
+        image: {
+          width: 1200,
+          height: 628,
+          alt: image?.alt ?? "Premium Display Solutions - LED, LCD & Digital Signage",
+        },
+        optional: {
+          siteName: siteName ?? "Lovosis Display",
+          description: description ?? "Top quality LED displays, LCD screens, educational smart boards, and digital billboards from the leading display technology distributor in the region.",
+        },
+        article: {
+          publishedTime: publishedTime ?? new Date().toISOString(),
+        },
+      }}
+      twitter={{
+        card: "summary_large_image",
+        site: site ?? "https://lovosisDisplay.com",
+        creator: "@LovosisDisplay",
+        title: title ?? "Lovosis Display - Premium LED & LCD Solutions",
+        description: description ?? "Discover our extensive range of LED displays, LCD screens, interactive educational boards & digital billboards. Superior quality, competitive prices & expert support.",
+        image: image?.url ?? "/default-twitter-image.jpg",
+        imageAlt: "Lovosis Display - Premium Display Technology",
+      }}
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <meta name="keywords" content="Dahua-Saudi, CCTV cameras, top CCTV dealer, security cameras, AI security, IP cameras, surveillance solutions, video surveillance, best CCTV dealer Saudi, Dahua cameras" />
+    <meta name="keywords" content="LED display, LCD display, educational boards, digital billboards, commercial displays, interactive screens, outdoor LED billboards, indoor LED displays, touch screen displays, video walls, digital signage, display technology distributor" />
     <meta name="robots" content="index, follow" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
-    <title>{title ?? "Dahua-Saudi - Leading Authorized CCTV Camera Dealer in Saudi"}</title>
+    <title>{title ?? "Lovosis Display - Premium LED & LCD Display Solutions | Educational Boards | Digital Billboards"}</title>
   </head>
   <body>
     <LoadingBar />
@@ -100,7 +100,7 @@ const {
     </main>
     <Footer />
     <footer>
-      <p>Looking for more solutions? Visit our partner: <a href="https://lovosis.com" target="_blank">Lovosis Technology PVT LTD</a></p>
+      <p>Looking for more technology solutions? Visit our partner: <a href="https://lovosis.com" target="_blank">Lovosis Technology PVT LTD</a></p>
     </footer>
   </body>
 </html>

@@ -1,5 +1,53 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+// SEO-optimized title and description
+const title = "Video Wall Controllers for LED & LCD Displays | Digital Billboard Management | Lovosis Display"
+const description = "Professional video wall controllers for seamless management of LED displays, LCD video walls, educational display boards, and digital billboards. High-performance multi-screen control with flexible window management."
+
+// Structured data for rich results in search
+const sd = {
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Lovosis Display Video Wall Controller",
+  "description": "Professional video wall control system for managing LED displays, LCD screens, educational boards and digital billboards",
+  "brand": {
+    "@type": "Brand",
+    "name": "Lovosis Display"
+  },
+  "category": "Display Control Systems",
+  "offers": {
+    "@type": "AggregateOffer",
+    "availability": "https://schema.org/InStock",
+    "priceCurrency": "USD",
+    "highPrice": "5000",
+    "lowPrice": "1500",
+    "offerCount": "5"
+  },
+  "image": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2070&auto=format&fit=crop",
+  "isRelatedTo": [
+    {
+      "@type": "Product",
+      "name": "LED Video Wall Displays",
+      "description": "High-definition LED display panels for video walls"
+    },
+    {
+      "@type": "Product",
+      "name": "LCD Video Wall Screens",
+      "description": "Professional LCD display screens for control rooms and information centers"
+    },
+    {
+      "@type": "Product",
+      "name": "Digital Billboard Systems",
+      "description": "Outdoor LED digital billboard displays for advertising"
+    },
+    {
+      "@type": "Product",
+      "name": "Interactive Educational Boards",
+      "description": "Display technology for educational environments and classrooms"
+    }
+  ]
+}
+
 
 const highlights = [
   {
@@ -30,7 +78,7 @@ const highlights = [
 ];
 ---
 
-<Layout title="Wall Controller - Dahua Saudi">
+<Layout title={title} description={description} sd={sd}>
   <div class="bg-white">
     <!-- Header Section -->
     <div class="relative h-[60vh] overflow-hidden">

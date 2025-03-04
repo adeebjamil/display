@@ -1,5 +1,69 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+// SEO-optimized title and description
+const title = "LCD Video Walls | LED Display Solutions | Digital Billboards | Lovosis Display"
+const description = "Premium LCD video wall solutions with ultra-narrow bezels, perfect for control rooms, educational boards, and digital billboard applications. High-resolution LED display technology for immersive visual experiences with wide viewing angles."
+
+// Schema markup for rich results
+const sd = {
+  "@context": "https://schema.org",
+  "@type": "ItemPage",
+  "name": "LCD Video Wall Solutions by Lovosis Display",
+  "description": "Professional LCD and LED display solutions including video walls, educational boards, and digital billboard systems",
+  "mainEntity": {
+    "@type": "ItemList",
+    "itemListElement": [
+      {
+        "@type": "Product",
+        "position": 1,
+        "name": "46\" 1.7mm Bezel Width LCD Video Wall",
+        "description": "Professional LCD video wall with ultra-narrow bezel for control rooms, educational installations and digital signage applications",
+        "model": "MW-A46-B3-E",
+        "image": "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800",
+        "brand": {
+          "@type": "Brand",
+          "name": "Lovosis Display"
+        },
+        "offers": {
+          "@type": "Offer",
+          "availability": "https://schema.org/InStock"
+        }
+      },
+      {
+        "@type": "Product",
+        "position": 2,
+        "name": "55\" 1.7mm Bezel Width LCD Video Wall",
+        "description": "High-performance LCD video wall for professional applications including educational boards and commercial displays",
+        "model": "MW-A55-B3-E",
+        "image": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800",
+        "brand": {
+          "@type": "Brand",
+          "name": "Lovosis Display"
+        },
+        "offers": {
+          "@type": "Offer",
+          "availability": "https://schema.org/InStock"
+        }
+      },
+      {
+        "@type": "Product",
+        "position": 3,
+        "name": "55\" 0.88mm Bezel Width LCD Video Wall",
+        "description": "Ultra-narrow bezel LCD video wall for seamless display, perfect for digital billboards and advertising displays",
+        "model": "MW-A55-B5-E",
+        "image": "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800",
+        "brand": {
+          "@type": "Brand",
+          "name": "Lovosis Display"
+        },
+        "offers": {
+          "@type": "Offer",
+          "availability": "https://schema.org/InStock"
+        }
+      }
+    ]
+  }
+}
 
 const highlights = [
   {
@@ -126,7 +190,7 @@ const products = [
 ];
 ---
 
-<Layout title="LCD Video Wall - Dahua Saudi">
+<Layout title={title} description={description} sd={sd}>
   <div class="bg-white" x-data="{ activeSection: '01' }">
     <!-- Header Section -->
     <div class="relative h-[60vh] overflow-hidden">

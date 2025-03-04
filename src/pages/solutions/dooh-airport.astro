@@ -1,5 +1,51 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+// SEO-optimized title and description targeting display technology keywords
+const title = "Airport Digital Signage Solutions | LED Display Walls & LCD Screens | Digital Billboards"
+const description = "Transform airport communication with high-brightness LED displays, LCD video walls, and digital billboard solutions. Professional DOOH technology for check-in areas, terminals, and gate information displays."
+
+// Structured data for better search visibility
+const sd = {
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Airport Digital Signage Solutions",
+  "description": "Professional LED displays, LCD screens, and digital billboard solutions designed specifically for airport environments",
+  "brand": {
+    "@type": "Brand",
+    "name": "Lovosis Display",
+    "logo": "https://www.lovosisdisplay.com/logo.png"
+  },
+  "category": "Digital Display Technology",
+  "offers": {
+    "@type": "AggregateOffer",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock"
+  },
+  "image": "https://img.freepik.com/free-photo/modern-airport-terminal-with-digital-displays_53876-123995.jpg",
+  "applicationCategory": "Airport Information Systems",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": "Airport Operators"
+  },
+  "isRelatedTo": [
+    {
+      "@type": "Product",
+      "name": "LED Video Wall Display Systems",
+      "description": "High-brightness LED display solutions for airport terminals and concourses"
+    },
+    {
+      "@type": "Product",
+      "name": "LCD Information Screens",
+      "description": "Ultra-narrow bezel LCD display panels for flight information and wayfinding"
+    },
+    {
+      "@type": "Product",
+      "name": "Digital Billboard Systems",
+      "description": "Large format digital advertising displays for airports"
+    }
+  ]
+}
+
 
 const features = [
   {
@@ -48,7 +94,7 @@ const locations = [
 ];
 ---
 
-<Layout title="DOOH Airport Solutions | Lovosis">
+<Layout title={title} description={description} sd={sd}>
   <main class="overflow-hidden bg-white">
     <!-- Hero Section -->
     <section class="relative h-[70vh] bg-white">

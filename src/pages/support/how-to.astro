@@ -1,5 +1,47 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+// SEO-optimized title and description
+const title = "Display Technology Video Guides | LED & LCD Screen Tutorials | Interactive Panel Help"
+const description = "Step-by-step video tutorials for display technology setup and operation. Learn how to use LED displays, LCD monitors, and interactive touchscreens with our comprehensive guides."
+
+// Enhanced structured data for video content
+const sd = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "itemListElement": [
+    {
+      "@type": "VideoObject",
+      "position": 1,
+      "name": "Wireless Screen Sharing Dongle Operation Guide",
+      "description": "Learn how to set up and use the wireless screen sharing dongle for seamless presentations on LED displays and interactive screens.",
+      "thumbnailUrl": "https://img.freepik.com/free-photo/wireless-screen-sharing-device-modern-office_157027-1089.jpg",
+      "uploadDate": "2024-02-15",
+      "contentUrl": "https://www.youtube.com/watch?v=yBDwe-3kvEM",
+      "embedUrl": "https://www.youtube.com/embed/yBDwe-3kvEM"
+    },
+    {
+      "@type": "VideoObject",
+      "position": 2,
+      "name": "Wireless Screen Sharing iOS Operation Guide",
+      "description": "Step-by-step guide for iOS device screen sharing with display monitors and interactive panels.",
+      "thumbnailUrl": "https://img.freepik.com/free-photo/person-using-ios-device-share-screen_157027-1654.jpg",
+      "uploadDate": "2024-02-10",
+      "contentUrl": "https://www.youtube.com/watch?v=4fcpqTdEkAw",
+      "embedUrl": "https://www.youtube.com/embed/4fcpqTdEkAw"
+    },
+    {
+      "@type": "VideoObject",
+      "position": 3,
+      "name": "Operation Guide of the Whiteboard on Smart Interactive Displays",
+      "description": "Master the interactive whiteboard features on your touchscreen display panels.",
+      "thumbnailUrl": "https://images.unsplash.com/photo-1552581234-26160f608093?ixlib=rb-4.0.3",
+      "uploadDate": "2024-01-25",
+      "contentUrl": "https://www.youtube.com/watch?v=PnAZygWsjLw",
+      "embedUrl": "https://www.youtube.com/embed/PnAZygWsjLw"
+    }
+  ]
+}
+
 
 const guides = [
   {
@@ -40,7 +82,7 @@ const guides = [
 ];
 ---
 
-<Layout title="How To Guides | Lovosis">
+<Layout title={title} description={description} sd={sd}>
   <main class="min-h-screen bg-gray-50 py-12">
     <div class="container mx-auto px-4">
       <h1 class="text-4xl font-bold text-gray-900 mb-8">How To Guides</h1>

@@ -1,5 +1,78 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+// SEO-optimized title and description
+const title = "Professional Monitors & Display Solutions | LED, LCD & Educational Screens | Lovosis Display"
+const description = "Explore Lovosis Display's professional monitor range including high-resolution LED displays, LCD screens, educational display boards, and CCTV monitors. Commercial-grade display solutions with 24/7 reliability and superior image quality."
+
+// Schema markup for better SEO
+const sd = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Professional Monitors and Display Solutions",
+  "description": "Collection of professional monitors including CCTV displays, LED screens, LCD displays, and educational screens",
+  "mainEntity": {
+    "@type": "ItemList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "Product",
+          "name": "MW3243-F-V2 43\" 4K LED Monitor",
+          "description": "Professional 43-inch 4K LED display monitor for surveillance and digital signage applications",
+          "image": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800",
+          "category": "Display Monitors",
+          "brand": {
+            "@type": "Brand",
+            "name": "Lovosis Display"
+          },
+          "offers": {
+            "@type": "Offer",
+            "availability": "https://schema.org/InStock"
+          }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "Product",
+          "name": "MW3255-F-V2 55\" 4K LED Monitor",
+          "description": "High-performance 55-inch 4K LED display screen for professional applications and digital billboards",
+          "image": "https://images.unsplash.com/photo-1540575339264-569259387a45?w=800",
+          "category": "Display Monitors",
+          "brand": {
+            "@type": "Brand",
+            "name": "Lovosis Display"
+          },
+          "offers": {
+            "@type": "Offer",
+            "availability": "https://schema.org/InStock"
+          }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@type": "Product",
+          "name": "MW-LC24-E 24\" IT Monitor",
+          "description": "24-inch professional LED display for office and educational applications with excellent visual clarity",
+          "image": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800",
+          "category": "Display Monitors",
+          "brand": {
+            "@type": "Brand",
+            "name": "Lovosis Display"
+          },
+          "offers": {
+            "@type": "Offer",
+            "availability": "https://schema.org/InStock"
+          }
+        }
+      }
+    ]
+  }
+}
 
 const highlights = [
   {
@@ -178,7 +251,7 @@ const categories = [
 ];
 ---
 
-<Layout title="Monitors - Dahua Saudi">
+<Layout title={title} description={description} sd={sd}>
   <div class="bg-white">
     <!-- Header Section -->
     <div class="relative h-[60vh] overflow-hidden">

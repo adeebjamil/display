@@ -1,8 +1,51 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+// SEO-optimized title and description
+const title = "Retail Display Solutions | LED & LCD Video Walls | Digital Signage | Lovosis Display"
+const description = "Transform your retail space with cutting-edge LED displays, LCD video walls, and digital signage solutions. Enhance brand visibility, improve customer engagement, and boost sales with professional retail display technology."
+
+// Structured data for better search visibility
+const sd = {
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Retail Display Solutions",
+  "description": "Professional display technology for retail environments including LED walls, LCD displays, and digital signage systems",
+  "brand": {
+    "@type": "Brand",
+    "name": "Lovosis Display"
+  },
+  "category": "Digital Display Technology",
+  "offers": {
+    "@type": "AggregateOffer",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock"
+  },
+  "image": "https://images.unsplash.com/photo-1567103472667-6898f3a79cf2?ixlib=rb-4.0.3",
+  "audience": {
+    "@type": "BusinessAudience",
+    "audienceType": "Retail businesses"
+  },
+  "isRelatedTo": [
+    {
+      "@type": "Product",
+      "name": "LED Display Walls for Retail",
+      "description": "High-brightness LED display solutions for retail environments"
+    },
+    {
+      "@type": "Product",
+      "name": "LCD Video Walls for Stores",
+      "description": "Ultra-narrow bezel LCD display panels for retail visual merchandising"
+    },
+    {
+      "@type": "Product",
+      "name": "Digital Signage Systems",
+      "description": "Dynamic digital signage solutions for retail advertising and information"
+    }
+  ]
+}
 ---
 
-<Layout title="Retail Solutions | Lovosis">
+<Layout title={title} description={description} sd={sd}>
   <main class="overflow-hidden">
     <!-- Hero Section -->
     <section class="relative h-screen flex items-center justify-center">

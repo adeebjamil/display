@@ -1,8 +1,44 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+// SEO-optimized title and description
+const title = "Corporate Display Solutions | LED, LCD & Interactive Screens | Lovosis Display"
+const description = "Transform your corporate space with professional LED displays, LCD video walls, and interactive screens. Enhance collaboration, convey brand image, and create impressive meeting environments with our cutting-edge display technology."
+
+// Schema markup for rich results
+const sd = {
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Corporate Display Solutions",
+  "description": "Professional display solutions for corporate environments including LED walls, LCD screens, and interactive displays",
+  "brand": {
+    "@type": "Brand",
+    "name": "Lovosis Display"
+  },
+  "category": "Display Technology",
+  "offers": {
+    "@type": "AggregateOffer",
+    "availability": "https://schema.org/InStock"
+  },
+  "image": "https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "lastReviewed": "2025-03-04T09:13:52Z"
+  },
+  "subjectOf": [
+    {
+      "@type": "Article",
+      "name": "Enhancing Corporate Environments with Modern Display Solutions",
+      "author": {
+        "@type": "Person",
+        "name": "Adeeb Jamil"
+      },
+      "datePublished": "2025-01-15"
+    }
+  ]
+}
 ---
 
-<Layout title="Corporate Solutions | Lovosis">
+<Layout title={title} description={description} sd={sd}>
   <main class="overflow-hidden">
     <!-- Hero Section -->
     <section class="relative h-screen flex items-center justify-center">

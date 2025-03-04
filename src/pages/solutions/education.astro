@@ -1,8 +1,52 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+// SEO-optimized title and description focusing on display technology for education
+const title = "Educational Display Solutions | Interactive LED & LCD Boards | Digital Learning Screens | Lovosis Display"
+const description = "Transform classrooms with interactive educational displays, LED touchscreens, and digital learning boards. Enhance student engagement and teaching efficiency with advanced display technology for modern classrooms."
+
+// Structured data for better search visibility
+const sd = {
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Educational Display Solutions",
+  "description": "Interactive display technology for educational environments including LED displays, LCD touchscreens, and digital learning boards",
+  "brand": {
+    "@type": "Brand",
+    "name": "Lovosis Display"
+  },
+  "category": "Educational Technology",
+  "offers": {
+    "@type": "AggregateOffer",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock"
+  },
+  "image": "https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3",
+  "educationalUse": "Classroom Teaching",
+  "audience": {
+    "@type": "EducationalAudience",
+    "educationalRole": "Teacher"
+  },
+  "isRelatedTo": [
+    {
+      "@type": "Product",
+      "name": "Interactive LED Educational Displays",
+      "description": "Touchscreen LED display boards for interactive classroom teaching"
+    },
+    {
+      "@type": "Product",
+      "name": "LCD Educational Screens",
+      "description": "High-resolution LCD panels for educational content display"
+    },
+    {
+      "@type": "Product",
+      "name": "Digital Learning Boards",
+      "description": "Smart educational boards with interactive learning software"
+    }
+  ]
+}
 ---
 
-<Layout title="Education Solutions | Lovosis">
+<Layout title={title} description={description} sd={sd}>
   <main class="overflow-hidden">
     <!-- Hero Section -->
     <section class="relative h-screen flex items-center justify-center">

@@ -1,5 +1,71 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+// SEO-optimized title and description
+const title = "Interactive LED & LCD Displays | Smart Educational Boards | Lovosis Display"
+const description = "Premium interactive LED displays and LCD touchscreens for education and business. Experience smart educational boards with real-time collaboration, digital whiteboard capabilities, and seamless digital billboard integration from Lovosis Display."
+
+// Structured data for better SEO
+const sd = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Interactive Display Solutions by Lovosis Display",
+  "description": "Collection of premium interactive LED displays, LCD touchscreens, and educational smart boards",
+  "url": "https://lovosisDisplay.com/products/interactive-display/",
+  "numberOfItems": 9,
+  "itemListElement": [
+    {
+      "@type": "Product",
+      "position": 1,
+      "name": "U-E Series 65\" Interactive LED Display",
+      "description": "Smart Interactive LED Display with 4K Resolution for classrooms and meeting rooms",
+      "image": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800",
+      "offers": {
+        "@type": "Offer",
+        "price": "4999.00",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock"
+      },
+      "brand": {
+        "@type": "Brand",
+        "name": "Lovosis Display"
+      }
+    },
+    {
+      "@type": "Product",
+      "position": 2,
+      "name": "DeepHub 75\" Interactive Educational Board",
+      "description": "Professional Collaboration Display with touch capabilities for educational institutions",
+      "image": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800",
+      "offers": {
+        "@type": "Offer",
+        "price": "5999.00",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock"
+      },
+      "brand": {
+        "@type": "Brand",
+        "name": "Lovosis Display"
+      }
+    },
+    {
+      "@type": "Product",
+      "position": 3,
+      "name": "Interactive Panel 86\" Digital Billboard Solution",
+      "description": "Enterprise Interactive Solution for large-format digital signage applications",
+      "image": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800",
+      "offers": {
+        "@type": "Offer",
+        "price": "6999.00",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock"
+      },
+      "brand": {
+        "@type": "Brand",
+        "name": "Lovosis Display"
+      }
+    }
+  ]
+}
 
 const highlights = [
   {
@@ -59,7 +125,7 @@ const highlights = [
 ];
 ---
 
-<Layout title="Interactive Displays - Dahua Saudi">
+<Layout title={title} description={description} sd={sd}>
   <div class="bg-white" x-data="{ activeSection: '01' }">
     <!-- Header Image -->
     <div class="relative h-[60vh] overflow-hidden">
