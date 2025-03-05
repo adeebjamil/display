@@ -1,6 +1,5 @@
 ---
 // Import your images
-
 import img1 from '../assets/Carousel/carousel1.png';
 // import img2 from '../assets/Carousel/imag2.jpg';
 // import img3 from '../assets/Carousel/imag3.jpg';
@@ -15,50 +14,90 @@ import img1 from '../assets/Carousel/carousel1.png';
 // import img12 from '../assets/Carousel/imag12.jpg';
 
 const images = [
-  { src: img1.src, alt: 'Slide 1' },
-  // { src: img2.src, alt: 'Slide 2' },
-  // { src: img3.src, alt: 'Slide 3' },
-  // { src: img4.src, alt: 'Slide 4' },
-  // { src: img5.src, alt: 'Slide 5' },
-  // { src: img6.src, alt: 'Slide 6' },
-  // { src: img7.src, alt: 'Slide 7' },
-  // { src: img8.src, alt: 'Slide 8' },
-  // { src: img9.src, alt: 'Slide 9' },
-  // { src: img10.src, alt: 'Slide 10' },
-  // { src: img11.src, alt: 'Slide 11' },
-  // { src: img12.src, alt: 'Slide 12' },
+  { src: img1.src, alt: 'Slide 1', title: 'Innovative Display Solutions', description: 'Transforming spaces with cutting-edge visual technology' },
+  // { src: img2.src, alt: 'Slide 2', title: 'Seamless Integration', description: 'Connect and control your displays with ease' },
+  // { src: img3.src, alt: 'Slide 3', title: 'Crystal Clear Quality', description: 'Experience visuals in stunning detail and clarity' },
+  // Uncomment and add titles/descriptions for other slides as needed
 ];
 ---
 
-<div class="relative overflow-hidden bg-gray-900 h-[700px]">
-  <!-- Carousel container -->
+<div class="relative overflow-hidden bg-gradient-to-b from-gray-900 to-black h-[550px] sm:h-[500px] md:h-[550px] lg:h-[580px] mx-auto rounded-xl shadow-2xl my-6 max-w-[95%] mt-14">
+  <!-- Carousel container with subtle pattern overlay -->
   <div class="carousel-container relative h-full">
+    <!-- Pattern overlay -->
+    <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAxOGMxLjIgMCAyIC44IDIgMnYyYzAgMS4yLS44IDItMiAycy0yLS44LTItMnYtMmMwLTEuMi44LTIgMi0ybTAgMTBjMS4yIDAgMiAuOCAyIDJ2MmMwIDEuMi0uOCAyLTIgMnMtMi0uOC0yLTJ2LTJjMC0xLjIuOC0yIDItMm0tMTAtMTBjMS4yIDAgMiAuOCAyIDJ2MmMwIDEuMi0uOCAyLTIgMnMtMi0uOC0yLTJ2LTJjMC0xLjIuOC0yIDItMm0wIDEwYzEuMiAwIDIgLjggMiAydjJjMCAxLjItLjggMi0yIDJzLTItLjgtMi0ydi0yYzAtMS4yLjgtMiAyLTJtLTEwLTEwYzEuMiAwIDIgLjggMiAydjJjMCAxLjItLjggMi0yIDJzLTItLjgtMi0ydi0yYzAtMS4yLjgtMiAyLTJtMCAxMGMxLjIgMCAyIC44IDIgMnYyYzAgMS4yLS44IDItMiAycy0yLS44LTItMnYtMmMwLTEuMi44LTIgMi0yIiBmaWxsPSIjZmZmIiBmaWxsLW9wYWNpdHk9Ii4wNSIvPjwvZz48L3N2Zz4=')] opacity-30 mix-blend-overlay pointer-events-none"></div>
+    
     {images.map((image, index) => (
-      <div class="carousel-slide absolute inset-0 opacity-0 transition-all duration-1000 ease-in-out transform translate-x-full"
+      <div class="carousel-slide absolute inset-0 opacity-0 transition-all duration-1000 ease-out transform translate-x-full"
            data-index={index}>
-        <!-- Image with gradient overlay -->
-        <div class="relative h-full">
+        <!-- Image container with enhanced effects -->
+        <div class="relative h-full overflow-hidden">
           <img 
             src={image.src} 
             alt={image.alt}
-            class="w-full h-full object-cover object-center"
+            class="w-full h-full object-contain object-center scale-105 transition-transform duration-7000 carousel-image"
           />
-          <div class="absolute inset-0 bg-gradient-to-r from-black/70 to-transparent"></div>
+          
+          <!-- Advanced gradient overlay with texture -->
+          <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent"></div>
+          
+          <!-- Content overlay with animated entry -->
+          <div class="absolute inset-0 flex flex-col justify-center px-8 sm:px-12 md:px-16 lg:px-24 slide-content opacity-0">
+            <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white tracking-tight mb-3 sm:mb-5">{image.title}</h2>
+            <p class="text-lg sm:text-xl text-gray-200 max-w-lg">{image.description}</p>
+            
+            <!-- Animated button -->
+            <div class="mt-6 sm:mt-8">
+              <a href="#learn-more" class="inline-flex items-center px-5 py-2.5 rounded-full bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-medium shadow-lg hover:shadow-blue-500/30 hover:scale-105 transition-all duration-300">
+                Learn More
+                <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     ))}
   </div>
 
-  <!-- Navigation dots -->
-  <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-3">
-    {images.map((_, index) => (
-      <button
-        class="w-3 h-3 rounded-full bg-white/50 hover:bg-white transition-colors duration-200 nav-dot"
-        data-index={index}
-        aria-label={`Go to slide ${index + 1}`}
-      >
-      </button>
-    ))}
+  <!-- Navigation arrows -->
+  <button 
+    class="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/10 backdrop-blur-md flex items-center justify-center text-white hover:bg-white/20 transition-all border border-white/20 opacity-0 group-hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-white/40 nav-prev" 
+    aria-label="Previous slide"
+  >
+    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+    </svg>
+  </button>
+  
+  <button 
+    class="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/10 backdrop-blur-md flex items-center justify-center text-white hover:bg-white/20 transition-all border border-white/20 opacity-0 group-hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-white/40 nav-next" 
+    aria-label="Next slide"
+  >
+    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+    </svg>
+  </button>
+
+  <!-- Enhanced navigation dots with slide counter -->
+  <div class="absolute bottom-6 left-0 right-0 flex items-center justify-center">
+    <div class="flex space-x-2 px-4 py-2 rounded-full bg-black/30 backdrop-blur-md border border-white/10">
+      <span class="text-white/70 text-sm mr-2 slide-counter">1/{images.length}</span>
+      {images.map((_, index) => (
+        <button
+          class="w-2 h-2 rounded-full bg-white/30 hover:bg-white transition-all duration-200 nav-dot hover:scale-125"
+          data-index={index}
+          aria-label={`Go to slide ${index + 1}`}
+        >
+        </button>
+      ))}
+    </div>
+  </div>
+  
+  <!-- Progress bar -->
+  <div class="absolute bottom-0 left-0 right-0 h-1">
+    <div class="h-full bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500 progress-bar w-0 transition-all duration-2000"></div>
   </div>
 </div>
 
@@ -68,26 +107,90 @@ const images = [
   const dots = document.querySelectorAll('.nav-dot');
   const totalSlides = slides.length;
   let autoplayInterval: ReturnType<typeof setInterval> | undefined;
+  const slideCounter = document.querySelector('.slide-counter');
+  const progressBar = document.querySelector('.progress-bar');
+  const prevButton = document.querySelector('.nav-prev');
+  const nextButton = document.querySelector('.nav-next');
+  const carouselContainer = document.querySelector('.carousel-container');
 
-  function updateSlide(newIndex: number) {
-    // Update slides
+  function updateSlide(newIndex: number, direction: 'next' | 'prev' = 'next') {
+    // Update slide counter
+    if (slideCounter) {
+      slideCounter.textContent = `${newIndex + 1}/${totalSlides}`;
+    }
+    
+    // Reset progress bar
+    if (progressBar) {
+      progressBar.classList.remove('w-full');
+      void (progressBar as HTMLElement).offsetWidth; // Force a reflow
+      progressBar.classList.add('w-full');
+    }
+
+    // Update slides with direction-based animation
     slides.forEach((slide, index) => {
-      const slideEl = slide;
+      const slideEl = slide as HTMLElement;
+      const content = slideEl.querySelector('.slide-content') as HTMLElement;
+      const image = slideEl.querySelector('.carousel-image') as HTMLElement;
+      
       if (index === newIndex) {
-        slideEl.classList.remove('opacity-0', 'translate-x-full');
+        // Prepare the incoming slide based on direction
+        if (direction === 'next') {
+          slideEl.classList.remove('translate-x-full');
+          slideEl.classList.add('-translate-x-0');
+        } else {
+          slideEl.classList.remove('-translate-x-full');
+          slideEl.classList.add('translate-x-0');
+        }
+        
+        slideEl.classList.remove('opacity-0');
+        
+        // Animate content with slight delay
+        if (content) {
+          content.classList.remove('opacity-0');
+          content.classList.add('animate-fadeInUp');
+        }
+        
+        // Apply zoom effect to active image
+        if (image) {
+          image.classList.add('scale-105');
+          setTimeout(() => {
+            image.classList.add('scale-100');
+          }, 100);
+        }
       } else {
-        slideEl.classList.add('opacity-0', 'translate-x-full');
+        // Prepare outgoing slide based on direction
+        if (direction === 'next') {
+          slideEl.classList.remove('-translate-x-0', 'translate-x-0');
+          slideEl.classList.add('-translate-x-full');
+        } else {
+          slideEl.classList.remove('-translate-x-0', 'translate-x-0');
+          slideEl.classList.add('translate-x-full');
+        }
+        
+        slideEl.classList.add('opacity-0');
+        
+        // Reset content animation
+        if (content) {
+          content.classList.add('opacity-0');
+          content.classList.remove('animate-fadeInUp');
+        }
+        
+        // Reset image zoom
+        if (image) {
+          image.classList.remove('scale-100');
+          image.classList.add('scale-105');
+        }
       }
     });
 
     // Update dots
     dots.forEach((dot, index) => {
       if (index === newIndex) {
-        dot.classList.add('bg-white');
-        dot.classList.remove('bg-white/50');
+        dot.classList.add('w-4', 'bg-white');
+        dot.classList.remove('bg-white/30', 'w-2');
       } else {
-        dot.classList.remove('bg-white');
-        dot.classList.add('bg-white/50');
+        dot.classList.remove('w-4', 'bg-white');
+        dot.classList.add('bg-white/30', 'w-2');
       }
     });
 
@@ -95,31 +198,92 @@ const images = [
   }
 
   function nextSlide() {
-    updateSlide((currentSlide + 1) % totalSlides);
+    const newIndex = (currentSlide + 1) % totalSlides;
+    updateSlide(newIndex, 'next');
+  }
+
+  function prevSlide() {
+    const newIndex = (currentSlide - 1 + totalSlides) % totalSlides;
+    updateSlide(newIndex, 'prev');
   }
 
   function initCarousel() {
     // Show first slide
-    updateSlide(0);
+    updateSlide(0, 'next');
 
     // Add click events to dots
     dots.forEach((dot, index) => {
       dot.addEventListener('click', () => {
-        updateSlide(index);
+        const direction = index > currentSlide ? 'next' : 'prev';
+        updateSlide(index, direction);
         resetAutoplay();
       });
     });
 
+    // Add click events to navigation buttons
+    prevButton?.addEventListener('click', () => {
+      prevSlide();
+      resetAutoplay();
+    });
+
+    nextButton?.addEventListener('click', () => {
+      nextSlide();
+      resetAutoplay();
+    });
+
     // Start autoplay
     startAutoplay();
+    
+    // Show controls on hover
+    if (carouselContainer) {
+      carouselContainer.addEventListener('mouseenter', () => {
+        prevButton?.classList.remove('opacity-0');
+        nextButton?.classList.remove('opacity-0');
+        prevButton?.classList.add('opacity-100');
+        nextButton?.classList.add('opacity-100');
+      });
+      
+      carouselContainer.addEventListener('mouseleave', () => {
+        prevButton?.classList.add('opacity-0');
+        nextButton?.classList.add('opacity-0');
+        prevButton?.classList.remove('opacity-100');
+        nextButton?.classList.remove('opacity-100');
+      });
+    }
+
+    // Add keyboard navigation
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowLeft') {
+        prevSlide();
+        resetAutoplay();
+      } else if (e.key === 'ArrowRight') {
+        nextSlide();
+        resetAutoplay();
+      }
+    });
   }
 
   function startAutoplay() {
-    autoplayInterval = setInterval(nextSlide, 2000); // Change slide every 3 seconds
+    // Start progress bar animation
+    if (progressBar) {
+      progressBar.classList.remove('w-0');
+      void (progressBar as HTMLElement).offsetWidth; // Force a reflow
+      progressBar.classList.add('w-full');
+    }
+    
+    autoplayInterval = setInterval(nextSlide, 6000); // Change slide every 6 seconds
   }
 
   function resetAutoplay() {
     clearInterval(autoplayInterval);
+    // Reset and restart progress bar
+    if (progressBar) {
+      progressBar.classList.remove('w-full');
+      progressBar.classList.add('w-0');
+      void (progressBar as HTMLElement).offsetWidth; // Force a reflow
+      progressBar.classList.remove('w-0');
+      progressBar.classList.add('w-full');
+    }
     startAutoplay();
   }
 
@@ -127,7 +291,31 @@ const images = [
   document.addEventListener('DOMContentLoaded', initCarousel);
 
   // Pause autoplay when user hovers over carousel
-  const carousel = document.querySelector('.carousel-container');
-  carousel?.addEventListener('mouseenter', () => clearInterval(autoplayInterval));
-  carousel?.addEventListener('mouseleave', startAutoplay);
+  carouselContainer?.addEventListener('mouseenter', () => clearInterval(autoplayInterval));
+  carouselContainer?.addEventListener('mouseleave', startAutoplay);
 </script>
+
+<style>
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-fadeInUp {
+    animation: fadeInUp 0.8s ease-out forwards;
+  }
+  
+  .progress-bar {
+    transition: width 5.8s linear;
+  }
+  
+  .carousel-image {
+    transition: transform 7s ease-out;
+  }
+</style>
