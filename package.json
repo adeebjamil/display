@@ -12,9 +12,10 @@
   "dependencies": {
     "@astrojs/image": "^0.18.0",
     "@astrojs/tailwind": "^5.1.5",
+    "@emailjs/browser": "^4.4.1",
     "@motionone/dom": "^10.18.0",
     "alpinejs": "^3.14.8",
-    "astro": "^2.10.15",
+    "astro": "^5.4.2",
     "astro-icon": "^1.1.5",
     "astro-seo": "^0.8.4",
     "motion": "^12.4.7",

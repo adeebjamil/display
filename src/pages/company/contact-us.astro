@@ -35,8 +35,6 @@ const sd = {
   }
 }
 
-
-
 const images = {
   hero: "https://img.freepik.com/free-photo/modern-business-center-with-glass-walls_1127-2880.jpg",
   pattern: "https://img.freepik.com/free-vector/abstract-pattern-design_1273-159.jpg"
@@ -66,6 +64,9 @@ const officeLocations = [
 ---
 
 <Layout title={title} description={description} sd={sd}>
+  <!-- Email.js Script -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  
   <main class="min-h-screen">
     {/* Hero Section */}
     <section class="relative h-[60vh] overflow-hidden">
@@ -113,30 +114,107 @@ const officeLocations = [
       <div class="container mx-auto px-4">
         <div class="grid lg:grid-cols-2 gap-16">
           {/* Contact Form */}
-          <div class="bg-white rounded-2xl p-8 shadow-lg">
-            <h2 class="text-3xl font-bold text-gray-900 mb-8">Send us a Message</h2>
-            <form class="space-y-6">
-              <div class="grid md:grid-cols-2 gap-6">
-                <div>
-                  <label class="block text-sm font-medium text-gray-700 mb-2">First Name</label>
-                  <input type="text" class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 outline-none transition-all duration-300" />
+          <div class="bg-white rounded-2xl p-8 shadow-lg relative overflow-hidden">
+            {/* Decorative elements */}
+            <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-blue-500 to-purple-500"></div>
+            <div class="absolute -top-16 -right-16 w-32 h-32 bg-purple-100 rounded-full opacity-70"></div>
+            <div class="absolute -bottom-16 -left-16 w-32 h-32 bg-blue-100 rounded-full opacity-70"></div>
+            
+            <h2 class="text-3xl font-bold text-gray-900 mb-2">Send us a Message</h2>
+            <p class="text-gray-600 mb-8">We'd love to hear from you. Fill out the form below.</p>
+            
+            <!-- Success message (hidden by default) -->
+            <div id="success-message" class="hidden bg-green-50 border border-green-200 text-green-800 rounded-lg p-4 mb-6">
+              <div class="flex">
+                <svg class="w-5 h-5 text-green-600 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                </svg>
+                <p>Your message has been sent successfully! We'll get back to you soon.</p>
+              </div>
+            </div>
+            
+            <!-- Error message (hidden by default) -->
+            <div id="error-message" class="hidden bg-red-50 border border-red-200 text-red-800 rounded-lg p-4 mb-6">
+              <div class="flex">
+                <svg class="w-5 h-5 text-red-600 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"></path>
+                </svg>
+                <p id="error-text">Something went wrong. Please try again later.</p>
+              </div>
+            </div>
+            
+            <form id="contact-form" class="space-y-6">
+              <!-- Name Field -->
+              <div class="form-group relative">
+                <div class="flex items-center px-4 py-3 bg-gray-50 rounded-lg mb-2">
+                  <svg class="w-5 h-5 text-gray-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                  </svg>
+                  <input 
+                    type="text" 
+                    id="name" 
+                    name="name" 
+                    placeholder="Your Full Name" 
+                    required 
+                    class="w-full bg-transparent border-none focus:ring-0 text-gray-700 placeholder-gray-400 focus:outline-none"
+                  />
                 </div>
-                <div>
-                  <label class="block text-sm font-medium text-gray-700 mb-2">Last Name</label>
-                  <input type="text" class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 outline-none transition-all duration-300" />
+                <label for="name" class="text-sm font-medium text-gray-600 ml-1">Name</label>
+              </div>
+              
+              <!-- Email Field -->
+              <div class="form-group relative">
+                <div class="flex items-center px-4 py-3 bg-gray-50 rounded-lg mb-2">
+                  <svg class="w-5 h-5 text-gray-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
+                  <input 
+                    type="email" 
+                    id="email" 
+                    name="email" 
+                    placeholder="your.email@example.com" 
+                    required 
+                    class="w-full bg-transparent border-none focus:ring-0 text-gray-700 placeholder-gray-400 focus:outline-none"
+                  />
                 </div>
+                <label for="email" class="text-sm font-medium text-gray-600 ml-1">Email Address</label>
               </div>
-              <div>
-                <label class="block text-sm font-medium text-gray-700 mb-2">Email Address</label>
-                <input type="email" class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 outline-none transition-all duration-300" />
+              
+              <!-- Message Field -->
+              <div class="form-group relative">
+                <div class="flex px-4 py-3 bg-gray-50 rounded-lg mb-2">
+                  <svg class="w-5 h-5 text-gray-400 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+                  </svg>
+                  <textarea 
+                    id="message" 
+                    name="message" 
+                    rows="4" 
+                    placeholder="How can we help you?" 
+                    required
+                    class="w-full bg-transparent border-none focus:ring-0 text-gray-700 placeholder-gray-400 focus:outline-none resize-none"
+                  ></textarea>
+                </div>
+                <label for="message" class="text-sm font-medium text-gray-600 ml-1">Your Message</label>
               </div>
-              <div>
-                <label class="block text-sm font-medium text-gray-700 mb-2">Message</label>
-                <textarea rows="6" class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 outline-none transition-all duration-300"></textarea>
-              </div>
-              <button class="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold py-4 px-8 rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:-translate-y-0.5">
-                Send Message
+              
+              <!-- Submit Button -->
+              <button 
+                type="submit" 
+                class="w-full relative overflow-hidden group bg-gradient-to-r from-blue-500 to-purple-600 text-white font-medium py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-[1.02] hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+              >
+                <span class="relative z-10 flex items-center justify-center">
+                  <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+                  </svg>
+                  <span>Send Message</span>
+                </span>
+                <span class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-yellow-400 to-pink-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
               </button>
+              
+              <p class="text-center text-xs text-gray-500 mt-4">
+                By submitting this form, you agree to our <a href="#" class="text-blue-600 hover:underline">Privacy Policy</a>.
+              </p>
             </form>
           </div>
 
@@ -189,6 +267,39 @@ const officeLocations = [
       </div>
     </section>
   </main>
+
+  <script>
+    // Import EmailJS properly in a client-side script
+    import emailjs from '@emailjs/browser';
+
+    // Initialize EmailJS with your user ID
+    emailjs.init("oDC32FOAXNE1_69yx"); // Replace with your actual User ID
+
+    // Form submission handler
+    const contactForm = document.getElementById('contact-form');
+    if (contactForm) {
+      contactForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+      
+      const serviceID = 'service_r6afk4h'; // Replace with your EmailJS service ID
+      const templateID = 'template_f5wi9og'; // Replace with your EmailJS template ID
+      
+      emailjs.sendForm(serviceID, templateID, this as HTMLFormElement)
+        .then((result) => {
+            console.log('SUCCESS!', result.text);
+            // Show success message
+            document.getElementById('success-message')?.classList.remove('hidden');
+            // Reset form
+            (this as HTMLFormElement).reset();
+        }, (error) => {
+            console.log('FAILED...', error.text);
+            // Show error message
+            document.getElementById('error-message')?.classList.remove('hidden');
+            document.getElementById('error-text')!.textContent = 'Failed to send message. Please try again later.';
+        });
+      });
+    }
+  </script>
 </Layout>
 
 <style>
@@ -213,5 +324,42 @@ const officeLocations = [
 
   .animation-delay-2000 {
     animation-delay: 2s;
+  }
+  
+  /* Form validation and feedback animations */
+  @keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+    20%, 40%, 60%, 80% { transform: translateX(5px); }
+  }
+  
+  .shake {
+    animation: shake 0.5s cubic-bezier(.36,.07,.19,.97) both;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  #success-message, #error-message {
+    animation: fadeIn 0.3s ease-out forwards;
+  }
+  
+  /* Input field focus animation */
+  .form-group:focus-within .bg-gray-50 {
+    background-color: #EFF6FF; /* Light blue background on focus */
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.1);
+  }
+  
+  /* Button hover animation */
+  @keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+  }
+  
+  button[type="submit"]:hover {
+    animation: pulse 2s infinite;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
   }
 </style>
