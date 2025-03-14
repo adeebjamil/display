@@ -37,44 +37,32 @@ const highlights = [
   {
     id: "01",
     title: "Face-detection auto focus technology",
-    content: "Advanced AI-powered face detection ensures crystal clear focus on meeting participants.",
-    image: "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800&auto=format&fit=crop"
+    content: "Enhance your video conferencing experience with face-detection auto-focus technology. This advanced feature automatically identifies and focuses on faces in real-time, ensuring sharp, clear visuals for all participants. Whether in a meeting or presentation, the technology adapts to movement, delivering seamless communication without manual adjustments.",
+    image: "/Conferencing/img1.webp"
   },
   {
     id: "02",
     title: "Light automated correction",
-    content: "Support multiple image algorithm includes HDR, images can automatically adopt to various scenarios. Even in the backlighting scene, we can still ensure the attendees have natural complexion.",
-    image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800&auto=format&fit=crop"
+    content: "Experience optimal video quality with light automated correction technology, which automatically adjusts lighting to enhance clarity in any environment. Whether you're in low light or bright conditions, this feature ensures clear and well-lit visuals for seamless video conferencing.",
+    image: "/Conferencing/img2.webp"
   },
   {
     id: "03",
     title: "AI noise cancelling",
-    content: "Intelligent noise reduction technology for crystal clear audio transmission.",
-    image: "https://images.unsplash.com/photo-1540575339264-569259387a45?w=800&auto=format&fit=crop"
+    content: "AI noise-cancelling technology filters out background noise, ensuring crystal-clear audio during video calls. With intelligent sound isolation, your voice is heard loud and clear, free from distractions like ambient noise or keyboard typing.",
+    image: "/Conferencing/img3.jpg"
   },
   {
     id: "04",
     title: "Face to face communication experience",
-    content: "Lifelike video quality creates an immersive meeting experience.",
-    image: "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800&auto=format&fit=crop"
+    content: "Enjoy an immersive face-to-face communication experience with high-quality video and sound that brings virtual meetings to life. The combination of sharp visuals, auto-focus, and enhanced audio makes remote conversations feel as natural as in-person interactions.",
+    image: "/Conferencing/img4.jpg"
   },
   {
     id: "05",
     title: "Unimagined pickup range",
-    content: "Wide-angle coverage ensures all participants are captured clearly.",
-    image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800&auto=format&fit=crop"
-  },
-  {
-    id: "06",
-    title: "Easy-to-use",
-    content: "Intuitive interface for simple setup and operation.",
-    image: "https://images.unsplash.com/photo-1540575339264-569259387a45?w=800&auto=format&fit=crop"
-  },
-  {
-    id: "07",
-    title: "Intelligent tracking",
-    content: "Smart speaker tracking for dynamic meeting environments.",
-    image: "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800&auto=format&fit=crop"
+    content: "Achieve superior audio capture with an unimagined pickup range that ensures everyone in the room is heard clearly. This advanced technology enhances the microphone's reach, making it ideal for group meetings and large spaces without compromising sound quality.",
+    image: "/Conferencing/img5.jpg"
   }
 ];
 
@@ -82,7 +70,7 @@ const products = [
   {
     id: 'unear-a20',
     name: 'Unear A20',
-    description: 'All-In-One Video Conference Camera',
+    description: 'The Unear A20 is a cutting-edge video conferencing solution designed with face-detection auto-focus, light automated correction, and AI noise-cancelling technology. It provides a superior face-to-face communication experience with an unimagined pickup range, ensuring clear visuals and sound for every participant. Ideal for corporate meetings, remote work, and virtual collaborations, the Unear A20 delivers unmatched performance and reliability.',
     features: [
       'AI Face Detection',
       'HDR Technology',
@@ -103,7 +91,7 @@ const products = [
       'Remote Collaboration',
       'Virtual Events'
     ],
-    image: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800'
+    image: '/Conferencing/Unear A20.jpg'
   }
 ];
 ---
@@ -113,14 +101,14 @@ const products = [
     <!-- Header Section -->
     <div class="relative h-[60vh] overflow-hidden">
       <img
-        src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2070&auto=format&fit=crop"
+        src="/Conferencing/Header.jpg"
         alt="Video Conferencing Header"
         class="w-full h-full object-cover"
       />
       <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
         <h1 class="text-5xl font-bold text-white text-center">
-          Video Conferencing Products
-          <span class="block text-2xl mt-4 font-normal">Advanced solutions for modern collaboration</span>
+          
+          <span class="block text-2xl mt-4 font-normal"></span>
         </h1>
       </div>
     </div>
@@ -160,7 +148,7 @@ const products = [
                   <img
                     src={item.image}
                     alt={item.title}
-                    class="w-full h-full object-cover"
+                    class="w-full h-full object-contain"
                   />
                 </div>
                 <div class="p-8">
@@ -189,7 +177,7 @@ const products = [
               <img 
                 src={product.image} 
                 alt={product.name}
-                class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500"
+                class="w-full h-full object-contain transform hover:scale-105 transition-transform duration-500"
               />
             </div>
 
@@ -230,6 +218,15 @@ const products = [
     <div id="productModal" class="fixed inset-0 bg-black/50 hidden z-50">
       <div class="fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-6xl bg-white rounded-2xl shadow-2xl">
         <div class="relative p-8 max-h-[90vh] overflow-y-auto">
+          <!-- Logo in top left -->
+          <div class="absolute top-6 left-6">
+            <img 
+              src="/logo (1).svg" 
+              alt="Lovosis Display Logo" 
+              class="h-10 w-auto"
+            />
+          </div>
+          
           <!-- Close Button -->
           <button class="close-modal absolute top-6 right-6 text-gray-500 hover:text-gray-700">
             <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -237,7 +234,8 @@ const products = [
             </svg>
           </button>
 
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <!-- Add margin-top to the content for spacing below logo and close button -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mt-10">
             <!-- Left Column -->
             <div class="space-y-6">
               <img id="modalImage" src="" alt="" class="w-full rounded-xl shadow-xl">

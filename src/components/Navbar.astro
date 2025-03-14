@@ -1,10 +1,10 @@
 ---
-import logo from '../assets/Lovosis_logo.png';
-import img1 from '../assets/Navbar/img1.jpg';
-import img2 from '../assets/Navbar/img2.jpg';
-import img3 from '../assets/Navbar/img3.jpg';
-import img4 from '../assets/Navbar/img4.jpg';
-import img5 from '../assets/Navbar/img5.jpg';
+import logo from '/public/logo (1).svg';
+import img1 from '/public/Navbar/img1.jpg';
+import img2 from '/public/Navbar/img2.jpg';
+import img3 from '/public/Navbar/img3.jpg';
+import img4 from '/public/Navbar/img4.jpg';
+// import img5 from '../assets/Navbar/img5.jpg';
 ---
 
 <style>
@@ -121,7 +121,7 @@ import img5 from '../assets/Navbar/img5.jpg';
                   <div class="relative">
                     <div class="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500"></div>
                     <div class="pt-4">
-                      <img src={img1.src} alt="Products" class="w-full h-40 object-cover"/>
+                      <img src={img1.src} alt="Products" class="w-full h-40 object-contain"/>
                       <div class="px-4 py-5 space-y-3">
                         <a href="/Products/interactive-display" class="block text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:translate-x-1 transition-all">Interactive Display</a>
                         <a href="/Products/led-display" class="block text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:translate-x-1 transition-all">LED Display</a>

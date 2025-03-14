@@ -12,36 +12,43 @@ const products: Product[] = [
     id: 1,
     title: "Video Conferencing",
     description: "Video Conferencing Products",
-    image: "https://images.unsplash.com/photo-1598425237654-4fc758e50a93?q=80&w=2069&auto=format&fit=crop",
+    image: "/Product Carousel 6/Video Conferencing.jpeg",
     link: "/products/video-conferencing"
   },
   {
     id: 2,
     title: "LED Display",
     description: "0.9mm pixel pitch mini LED",
-    image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2070&auto=format&fit=crop",
+    image: "/Product Carousel 6/LED Display.png",
     link: "/products/led-display"
   },
   {
     id: 3,
     title: "LCD Video Wall",
     description: "Ultra Narrow Bezel Video Wall",
-    image: "https://img.freepik.com/free-photo/video-wall-display-panel-exhibition_53876-97173.jpg?w=1380&t=st=1708610436",
+    image: "/Product Carousel 6/LCD Video wall.png",
     link: "/products/lcd-video-wall"
   },
   {
     id: 4,
     title: "Monitors",
     description: "LED Monitor",
-    image: "https://images.unsplash.com/photo-1547119957-637f8679db1e?q=80&w=2064&auto=format&fit=crop",
+    image: "/Product Carousel 6/Monitors.png",
     link: "/products/monitors"
   },
   {
     id: 5,
     title: "Controller",
     description: "Professional Video Wall Controller",
-    image: "https://img.freepik.com/free-photo/control-room-power-plant_1359-366.jpg?w=1380&t=st=1708610436",
+    image: "/Product Carousel 6/Controllers.png",
     link: "/products/controller"
+  },
+  {
+    id: 6,
+    title: "Billboard Screen",
+    description: "Buisness Billboard Screen",
+    image: "/Product Carousel 6/educational billboard.png",
+    link: "/products/touch-screen"
   }
 ];
 ---
@@ -62,7 +69,7 @@ const products: Product[] = [
                 <img 
                   src={product.image} 
                   alt={product.title}
-                  class="w-full h-64 object-cover transform transition-transform duration-500 group-hover:scale-110"
+                  class="w-full h-64 object-contain transform transition-transform duration-500 group-hover:scale-110"
                   loading="lazy"
                 />
                 <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>

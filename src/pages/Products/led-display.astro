@@ -94,53 +94,55 @@ const highlights = [
   {
     id: "01",
     title: "XEB Series",
-    content: "Premium indoor LED display with ultra-fine pixel pitch, delivering exceptional visual clarity and brightness for high-end installations.",
-    image: "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800&auto=format&fit=crop"
+    content: "The XEB Series from Lovosis Technology delivers top-tier display performance for both businesses and educational environments. Featuring ultra-clear 4K resolution, a sleek design, and advanced touch capabilities, the XEB Series is built to enhance presentations, collaborations, and interactive experiences. Ideal for boardrooms, classrooms, and digital signage, the XEB Series combines high-performance technology with ease of use, offering seamless integration into any space. With its durable build and cutting-edge visuals, it’s the perfect choice for those seeking a reliable, high-quality display solution.",
+    image: "/LED Displays/XEB Series.png"
   },
   {
     id: "02",
     title: "U Series",
-    content: "Versatile LED solution perfect for retail and corporate environments, featuring seamless connectivity and smart content management.",
-    image: "https://images.freepik.com/free-photo/digital-screen-with-neon-lights_23-2149264110.jpg"
+    content: "The 02 U Series from Lovosis Technology offers versatile display solutions designed for both business and education. Featuring crisp 4K resolution and seamless multi-touch capabilities, this series ensures smooth, real-time interaction. Whether for conference rooms or classrooms, the 02 U Series adapts effortlessly to your needs.",
+    image: "/LED Displays/Uniview U Series.png"
   },
   {
     id: "03",
     title: "FE Series",
-    content: "Fixed exterior LED displays engineered for outdoor durability, offering stunning visuals in any weather condition.",
-    image: "https://images.unsplash.com/photo-1540575339264-569259387a45?w=800&auto=format&fit=crop"
+    content: "The 03 FE Series is a high-performance display solution that delivers ultra-sharp 4K visuals and enhanced color accuracy. Designed for professional use, this series offers long-lasting durability and premium touch responsiveness, making it perfect for advertising, education, or corporate settings.",
+    image: "/LED Displays/Uniview FE Series.png"
   },
   {
     id: "04",
     title: "RE/RL Series",
-    content: "Rental LED displays designed for quick assembly and robust performance in live events and temporary installations.",
-    image: "https://images.freepik.com/free-photo/outdoor-led-screen-building_23-2150911795.jpg"
+    content: "The 04 RE/RL Series by Lovosis Technology brings reliable and cost-efficient display solutions. With a sleek design and efficient power consumption, the RE/RL Series is ideal for digital signage, meeting rooms, and interactive classrooms. It delivers consistent performance with minimal maintenance required.",
+    image: "/LED Displays/Uniview RE_RL Series.png"
   },
   {
     id: "05",
     title: "KE2 Series",
-    content: "Compact LED solutions ideal for control rooms and meeting spaces, with superior color accuracy and viewing angles.",
-    image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800&auto=format&fit=crop"
+    content: "The 05 KE2 Series from Lovosis Technology offers cutting-edge display technology built for maximum engagement. Designed with advanced touch technology and ultra-clear visuals, this series is perfect for collaborative meetings, teaching environments, and digital marketing. The 05 KE2 Series enhances communication and interaction with its intuitive interface and robust build.",
+    image: "/LED Displays/Uniview KE2 Series.png"
   }
 ];
 ---
 
 <Layout title={title} description={description} sd={sd}>
   <div class="bg-white" x-data="{ activeSection: '01' }">
-    <!-- Header Image -->
-    <div class="relative h-[60vh] overflow-hidden">
-      <img
-        src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2070&auto=format&fit=crop"
-        alt="Interactive Display Header"
-        class="w-full h-full object-cover"
-      />
-      <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-        <h1 class="text-5xl font-bold text-white text-center">
-          LED Displays
-          <span class="block text-2xl mt-4 font-normal">Transform your visual experience with our cutting-edge LED display solutions</span>
-        </h1>
+    <!-- Header Section -->
+    <div class="relative h-[60vh] overflow-hidden bg-gray-900">
+      <div class="absolute inset-0 flex items-center justify-center">
+        <img
+          src="/LED Displays/led-video.png"
+          alt="LED Display Solutions"
+          class="w-full h-full object-contain md:object-cover max-h-full"
+          loading="eager"
+          width="1800"
+          height="1000"
+          style="image-rendering: high-quality;"
+        />
+        <!-- Optional subtle pattern overlay -->
+        <div class="absolute inset-0 bg-black opacity-30 mix-blend-multiply"></div>
       </div>
+      
     </div>
-
     <!-- Highlights Section -->
     <div class="max-w-7xl mx-auto px-4 py-16">
       <h2 class="text-3xl font-bold text-center mb-16">
@@ -272,55 +274,55 @@ const highlights = [
               {
                 id: 'xeb-p15',
                 name: 'XEB Series P1.5',
-                description: 'Indoor Fine Pixel LED Display with ultra-high resolution and brilliant color accuracy.',
-                image: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800',
+                description: 'The XEB Series P1.5 from Lovosis Technology delivers ultra-fine pixel pitch for superior clarity and precision, making it ideal for high-end business presentations, control rooms, and premium advertising displays. With its P1.5 pixel pitch, this display offers exceptional image quality, ensuring every detail is rendered sharply and vividly.Engineered for professional environments, the XEB Series P1.5 provides seamless integration and is built for reliable performance with minimal maintenance. Perfect for those looking to elevate their visual communication and content engagement to the next level. Ready to transform your business visuals? Contact us today at Lovosis Technology to learn more about the XEB Series P1.5.',
+                image: '/LED Displays/img1.webp',
                 category: 'xeb',
-                features: ['4K Resolution', 'HDR Support', 'Fine Pixel Pitch'],
+                features: ['ultra-fine pixel pitch display', 'precision display technology', 'seamless integration', 'reliable performance'],
                 price: 'Contact for Price'
               },
               {
                 id: 'xeb-p12',
                 name: 'XEB Series P1.2',
-                description: 'Premium indoor LED display with superior image quality and color reproduction.',
-                image: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800',
+                description: 'The XEB Series P1.2 from Lovosis Technology offers an ultra-high-definition display with a P1.2 pixel pitch, ensuring crystal-clear visuals and precise image detail. Ideal for control rooms, broadcasting, and premium advertising, this display provides unparalleled clarity and smooth operation for professional settings.Built for seamless integration and reliable performance, the XEB Series P1.2 enhances the way you communicate visually, providing vivid color accuracy and long-lasting durability. Want to upgrade your display technology? Contact us at Lovosis Technology to experience the cutting-edge XEB Series P1.2.',
+                image: '/LED Displays/img2.jpeg',
                 category: 'xeb',
-                features: ['8K Resolution', 'High Refresh Rate', 'Wide Color Gamut'],
+                features: ['ultra-high-definition display', 'P1.2 pixel pitch display', 'crystal-clear visuals', 'reliable performance'],
                 price: 'Contact for Price'
               },
               {
                 id: 'xeb-p18',
                 name: 'XEB Series P1.8',
-                description: 'Professional LED display solution for high-end indoor applications.',
-                image: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800',
+                description: 'The XEB Series P1.8 from Lovosis Technology delivers a high-resolution display with a P1.8 pixel pitch, providing sharp visuals and excellent clarity for business presentations, control rooms, and digital advertising. With vivid color accuracy and a seamless viewing experience, this display is perfect for professional settings that demand high-quality image performance.Designed for reliability and long-term use, the XEB Series P1.8 is easy to integrate into any workspace, offering enhanced engagement and communication. Interested in upgrading your visual displays? Contact us at Lovosis Technology to learn more about the advanced XEB Series P1.8.',
+                image: '/LED Displays/img3.jpeg',
                 category: 'xeb',
-                features: ['4K Resolution', 'High Brightness', 'Low Power'],
+                features: ['high-resolution display', 'P1.8 pixel pitch display', 'sharp visuals', 'vivid color accuracy', 'seamless viewing experience'  ],
                 price: 'Contact for Price'
               },
               {
                 id: 'u-p09',
                 name: 'U Series P0.9',
-                description: 'Ultra-fine pixel pitch LED display for premium viewing experience.',
-                image: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800',
+                description: 'The U Series P0.9 from Lovosis Technology offers unmatched clarity with its ultra-fine P0.9 pixel pitch, delivering breathtaking visual precision for high-end control rooms, broadcasting, and premium digital signage. Its ultra-high-definition display ensures that even the smallest details are rendered with sharp accuracy, providing a seamless viewing experience.Engineered for durability and reliable performance, the U Series P0.9 is ideal for environments requiring the highest visual standards. Looking for the best in display technology? Contact us at Lovosis Technology to discover how the U Series P0.9 can elevate your business.',
+                image: '/LED Displays/img4.webp',
                 category: 'cdvu',
-                features: ['Ultra Fine Pitch', 'High Contrast', 'Wide Viewing Angle'],
+                features: ['U Series P0.9', 'ultra-fine pixel pitch', 'high-definition display', 'breathtaking visual precision'],
                 price: 'Contact for Price'
               },
               {
                 id: 'u-p12',
                 name: 'U Series P1.2',
-                description: 'Versatile LED display for corporate and retail environments.',
-                image: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800',
+                description: 'The U Series P1.2 from Lovosis Technology is a precision-engineered display with a P1.2 pixel pitch, offering sharp visuals and excellent clarity for business presentations, control rooms, and premium digital signage. The ultra-high-definition display ensures detailed content visibility, making it ideal for environments that require accurate image representation.Designed for reliability and seamless integration, the U Series P1.2 provides a long-lasting display solution that enhances communication and engagement. Interested in upgrading your visuals? Contact us at Lovosis Technology to learn more about the advanced U Series P1.2.',
+                image: '/LED Displays/img5.jpg',
                 category: 'cdvu',
-                features: ['4K Resolution', 'AI Enhancement', 'Easy Installation'],
+                features: ['U Series P1.2', 'precision display', 'high-definition display', 'accurate image representation'],
                 price: 'Contact for Price'
               },
               {
                 id: 'u-p15',
                 name: 'U Series P1.5',
-                description: 'Professional LED display with advanced features and reliability.',
-                image: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800',
+                description: 'The U Series P1.5 by Lovosis Technology delivers high-quality visuals with its P1.5 pixel pitch, offering outstanding clarity and vivid color accuracy. Perfect for control rooms, meeting spaces, and advertising displays, this display provides clear, crisp visuals for professional environments that demand the best in image quality.Built for durability and smooth operation, the U Series P1.5 offers seamless performance and is a versatile solution for any business.Want to learn more about enhancing your display solutions? Contact us at Lovosis Technology to discover how the U Series P1.5 can improve your communication and visuals.',
+                image: '/LED Displays/img6.jpeg',
                 category: 'cdvu',
-                features: ['High Brightness', 'Wide Viewing Angle', 'HDR Support'],
+                features: ['U Series P1.5', 'high-quality display', 'outstanding clarity', 'seamless performance'],
                 price: 'Contact for Price'
               }
             ].map(product => (
@@ -334,7 +336,7 @@ const highlights = [
                   <img 
                     src={product.image} 
                     alt={product.name}
-                    class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500"
+                    class="w-full h-full object-contain transform hover:scale-105 transition-transform duration-500"
                   />
                   <div class="absolute top-2 right-2">
                     <span class="px-2 py-1 text-xs font-semibold bg-blue-600 text-white rounded-full">
@@ -383,6 +385,15 @@ const highlights = [
     <div id="productModal" class="fixed inset-0 bg-black/50 hidden z-50">
       <div class="fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-6xl bg-white rounded-2xl shadow-2xl">
         <div class="relative p-8 max-h-[90vh] overflow-y-auto">
+          <!-- Logo in top left -->
+          <div class="absolute top-6 left-6">
+            <img 
+              src="/logo (1).svg" 
+              alt="Lovosis Display Logo" 
+              class="h-10 w-auto"
+            />
+          </div>
+          
           <!-- Close Button -->
           <button class="close-modal absolute top-6 right-6 text-gray-500 hover:text-gray-700">
             <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -391,7 +402,7 @@ const highlights = [
           </button>
 
           <!-- Modal Content -->
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mt-10">
             <div>
               <img id="modalImage" src="" alt="" class="w-full rounded-xl shadow-xl mb-6">
               

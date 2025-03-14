@@ -54,25 +54,25 @@ const highlights = [
     id: "01",
     title: "Excellent splicing performance",
     content: "High-performance video wall controller offering seamless splicing and superior image quality across multiple displays.",
-    image: "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800&auto=format&fit=crop"
+    image: "/Wall Controller/img1.jpg"
   },
   {
     id: "02",
     title: "Flexible roaming experience",
     content: "Dynamic window management allowing content to be freely moved and positioned across the entire video wall.",
-    image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800&auto=format&fit=crop"
+    image: "/Wall Controller/img2.jpg"
   },
   {
     id: "03",
     title: "Open windows freely",
     content: "Intuitive multi-window support enabling simultaneous display of various content sources.",
-    image: "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800&auto=format&fit=crop"
+    image: "/Wall Controller/img3.jpg"
   },
   {
     id: "04",
     title: "Picture in picture",
     content: "Advanced PiP functionality allowing overlay of multiple video sources with customizable positioning and sizing.",
-    image: "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800&auto=format&fit=crop",
+    image: "/Wall Controller/img4.jpg",
     subtitle: "Roaming: the window can be dragged to anywhere in the screen."
   }
 ];
@@ -83,7 +83,7 @@ const highlights = [
     <!-- Header Section -->
     <div class="relative h-[60vh] overflow-hidden">
       <img
-        src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2070&auto=format&fit=crop"
+        src="/Wall Controller/Header.jpg"
         alt="Wall Controller Header"
         class="w-full h-full object-cover"
       />
@@ -110,7 +110,7 @@ const highlights = [
                 <img
                   src={item.image}
                   alt={item.title}
-                  class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
+                  class="w-full h-full object-contain transform group-hover:scale-110 transition-transform duration-700"
                 />
                 <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
@@ -188,7 +188,7 @@ const highlights = [
             name: 'ADU Series',
             description: 'High Definition Video Decoder',
             category: 'decoder',
-            image: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800',
+            image: '/Wall Controller/img5.webp',
             features: ['4K Decoding', 'Multiple Protocols', 'Low Latency']
           },
           {
@@ -196,23 +196,15 @@ const highlights = [
             name: 'DC Series',
             description: 'Economic Video Decoder',
             category: 'decoder',
-            image: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800',
+            image: '/Wall Controller/img6.webp',
             features: ['H.265/H.264', 'Multiple Inputs', 'Cost-effective']
-          },
-          {
-            id: 'dc-series-2',
-            name: 'DC Series',
-            description: 'Economic Video Decoder',
-            category: 'decoder',
-            image: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800&auto=format&fit=crop',
-            features: ['Flexible Display', 'Easy Setup', 'Reliable Performance']
           },
           {
             id: 'kb-1100-e',
             name: 'KB-1100-E',
             description: 'Network Keyboard',
             category: 'keyboard',
-            image: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800',
+            image: '/Wall Controller/KB-1100-E.jpg',
             features: ['USB Interface', 'LCD Display', 'Ergonomic Design']
           },
           {
@@ -220,7 +212,15 @@ const highlights = [
             name: 'KB-2100',
             description: 'Network Control Keyboard',
             category: 'keyboard',
-            image: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800&auto=format&fit=crop',
+            image: '/Wall Controller/KB-2100.jpg',
+            features: ['Advanced Control', 'Multiple Protocols', 'Professional Grade']
+          },
+          {
+            id: '',
+            name: 'Video Wall Controller',
+            description: 'Professional video wall control system for managing LED displays, LCD screens, educational boards and digital billboards',
+            category: 'controller',
+            image: '/Wall Controller/video-wall.jpg',
             features: ['Advanced Control', 'Multiple Protocols', 'Professional Grade']
           }
         ].map(product => (
@@ -276,6 +276,15 @@ const highlights = [
     <div id="productModal" class="fixed inset-0 bg-black/50 hidden z-50">
       <div class="fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-6xl bg-white rounded-2xl shadow-2xl">
         <div class="relative p-8 max-h-[90vh] overflow-y-auto">
+          <!-- Logo in top left -->
+          <div class="absolute top-6 left-6">
+            <img 
+              src="/logo (1).svg" 
+              alt="Lovosis Display Logo" 
+              class="h-10 w-auto"
+            />
+          </div>
+          
           <!-- Close Button -->
           <button class="close-modal absolute top-6 right-6 text-gray-500 hover:text-gray-700">
             <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -283,8 +292,8 @@ const highlights = [
             </svg>
           </button>
 
-          <!-- Update the modal grid section -->
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <!-- Update the modal grid section with top margin for spacing -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mt-10">
             <div class="space-y-6">
               <!-- Image Section -->
               <img id="modalImage" src="" alt="" class="w-full rounded-xl shadow-xl">
