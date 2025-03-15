@@ -9,6 +9,7 @@ import Gallery from '../components/Gallery.astro';
 import LogoCloud from '../components/LogoCloud.astro';
 import TeamComponent from '../components/TeamComponent.astro';
 
+
 // Homepage schema markup for better SEO
 const homepageSchema = {
   "@context": "https://schema.org",
@@ -100,6 +101,7 @@ const homepageSchema = {
 ---
 
 <Layout 
+
   title="Lovosis Display | Premium LED & LCD Displays | Digital Billboards | Educational Boards"
   description="Leading distributor of high-quality LED displays, LCD screens, interactive educational boards & digital billboards. Innovative display solutions with superior brightness, resolution and durability."
   sd={homepageSchema}
@@ -110,6 +112,8 @@ const homepageSchema = {
     alt: "Lovosis Display - Premium LED & LCD Display Solutions"
   }}
 >
+
+
   <section class="hero-section">
     <h1 class="visually-hidden">Premium LED Displays, LCD Screens & Educational Board Solutions</h1>
     <Carousel />
@@ -162,6 +166,8 @@ const homepageSchema = {
       <LogoCloud />
     </div>
   </section>
+  
+  
 </Layout>
 
 <style>

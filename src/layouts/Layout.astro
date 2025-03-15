@@ -4,6 +4,7 @@ import Footer from '../components/Footer.astro';
 import { SEO } from 'astro-seo';
 import LoadingBar from '../components/LoadingBar.astro';
 import EquiryButton from '../components/EquiryButton.astro';
+import NewsletterPopUp from '../components/NewsletterPop-up.astro';
 
 export interface Props {
     title: string;
@@ -95,6 +96,11 @@ const {
     <LoadingBar />
     <Navbar />
     <EquiryButton />
+
+    <NewsletterPopUp />
+
+
+    
     <main>
       <slot />
     </main>
