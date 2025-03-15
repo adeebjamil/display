@@ -75,12 +75,7 @@ const stats = [
           </p>
           
           <div class="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in-up" style="animation-delay: 400ms">
-            <a href="#solutions" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-500 text-white rounded-full hover:from-blue-500 hover:to-blue-400 transition-all duration-300 shadow-lg shadow-blue-600/30 font-medium">
-              Explore Solutions
-              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
-              </svg>
-            </a>
+          
             <a href="#request-demo" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/20 text-white rounded-full hover:bg-white/20 transition-colors">
               Request Demo
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -92,9 +87,7 @@ const stats = [
         
         <!-- Scroll Indicator -->
         <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-          <svg class="w-6 h-6 text-white/70" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-          </svg>
+          
         </div>
       </div>
     </section>
@@ -191,7 +184,7 @@ const stats = [
             {
               title: "Command Center Display Walls",
               desc: "Ultra-high resolution LED display walls with perfect color uniformity and seamless panel integration. Create expansive visualization surfaces with up to 8K resolution for comprehensive situational awareness.",
-              img: "/images/solutions/command-center.webp",
+              img: "/Control/img2.jpg",
               alt: "Command Center Display Wall",
               features: ["Bezel-free design", "24/7 operation capability", "4K to 8K resolution", "HDR support"],
               color: "blue"
@@ -199,7 +192,7 @@ const stats = [
             {
               title: "Integrated Control Systems",
               desc: "Unified control interfaces with multi-source input management and intelligent layout control. Our systems seamlessly integrate with existing infrastructure to provide centralized command over all visual information.",
-              img: "/images/solutions/control-system.webp",
+              img: "/Control/img3.jpg",
               alt: "Integrated Control System Interface",
               features: ["Multi-source management", "Remote operation", "Custom layout templates", "AI-assisted monitoring"],
               color: "purple"
@@ -212,7 +205,7 @@ const stats = [
                   <img 
                     src={solution.img}
                     alt={solution.alt}
-                    class="w-full h-64 lg:h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out"
+                    class="w-full h-64 lg:h-full object-contain transform group-hover:scale-105 transition-transform duration-700 ease-out"
                     width="800"
                     height="600"
                     loading="lazy"
@@ -241,12 +234,7 @@ const stats = [
                     </div>
                   </div>
                   
-                  <a href={`/solutions/control-room/${solution.title.toLowerCase().replace(/\s+/g, '-')}`} class={`inline-flex items-center text-${solution.color}-600 hover:text-${solution.color}-700 transition-colors`}>
-                    View Detailed Specifications
-                    <svg class="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
-                    </svg>
-                  </a>
+                 
                 </div>
               </div>
             </div>
@@ -278,7 +266,7 @@ const stats = [
               </svg>
               <blockquote class="text-gray-700 text-lg font-light italic mb-6">{testimonial.quote}</blockquote>
               <div class="flex items-center">
-                <div class="w-12 h-12 bg-gray-100 rounded-full mr-4"></div>
+               
                 <div>
                   <div class="text-gray-800 font-medium">{testimonial.author}</div>
                   <div class="text-gray-500 text-sm">{testimonial.position}, {testimonial.company}</div>
@@ -320,7 +308,7 @@ const stats = [
             Download Catalog
           </a>
           <a 
-            href="#request-demo" 
+            href="/company/contact-us" 
             class="inline-flex items-center px-6 py-3 md:px-8 md:py-4 bg-blue-600 text-white rounded-full font-medium hover:bg-blue-700 transition-colors shadow-sm"
             aria-label="Contact our sales team"
           >

@@ -1,173 +1,487 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-// SEO-optimized title and description targeting display technology keywords
-const title = "Airport Digital Signage Solutions | LED Display Walls & LCD Screens | Digital Billboards"
-const description = "Transform airport communication with high-brightness LED displays, LCD video walls, and digital billboard solutions. Professional DOOH technology for check-in areas, terminals, and gate information displays."
 
-// Structured data for better search visibility
+// SEO-optimized title and description targeting display distribution keywords
+const title = "Airport Display Solutions | Official Distributor of LED & LCD Systems | Lovosis"
+const description = "Authorized distributor of premium digital displays for airports. Offering flight information screens, wayfinding kiosks, and advertising LED walls with nationwide delivery and installation support."
+
+// Product catalog data
+const featuredProducts = [
+  {
+    id: "AP-LED-4K-01",
+    name: "AirView Pro 4K LED Wall",
+    category: "LED Video Wall",
+    description: "High-brightness modular LED wall optimized for main terminal areas and high-traffic zones",
+    price: "$1,200/panel",
+    minOrder: "10 panels",
+    deliveryTime: "2-3 weeks",
+    inStock: true,
+    image: "/images/products/airview-pro-led.webp",
+    specs: [
+      "1.2mm pixel pitch",
+      "4K support with controller",
+      "5000 nits brightness",
+      "IP54 rated for dust protection"
+    ]
+  },
+  {
+    id: "AP-LCD-UNB-02",
+    name: "FlightInfo Ultra LCD",
+    category: "Information Display",
+    description: "Ultra-narrow bezel LCD panels designed for FIDS (Flight Information Display Systems)",
+    price: "$3,200/unit",
+    minOrder: "5 units",
+    deliveryTime: "1-2 weeks",
+    inStock: true,
+    image: "/images/products/flightinfo-ultra.webp",
+    specs: [
+      "55\" 4K UHD display",
+      "0.88mm combined bezel",
+      "Anti-glare coating",
+      "24/7 rated operation"
+    ]
+  },
+  {
+    id: "AP-KSK-TCH-03",
+    name: "NavPoint Wayfinding Kiosk",
+    category: "Interactive Kiosk",
+    description: "Touch-enabled wayfinding kiosk with multi-language support and accessibility features",
+    price: "$4,800/unit",
+    minOrder: "2 units",
+    deliveryTime: "3-4 weeks",
+    inStock: false,
+    backorderTime: "2 weeks",
+    image: "/images/products/navpoint-kiosk.webp",
+    specs: [
+      "55\" 4K touchscreen",
+      "Hardened glass surface",
+      "Integrated PC",
+      "ADA compliant design"
+    ]
+  }
+];
+
+// Airport display categories
+const displayCategories = [
+  {
+    name: "Check-in Area Displays",
+    description: "High-visibility displays for passenger check-in zones",
+    products: [
+      "AirView Status Boards",
+      "CheckPoint Queue Displays",
+      "FlightInfo LCD Arrays"
+    ],
+    image: "/images/categories/checkin-displays.webp"
+  },
+  {
+    name: "Gate Information Displays",
+    description: "Ultra-reliable screens for critical flight information",
+    products: [
+      "GateView Pro Series",
+      "StatusBoard Mini Displays",
+      "Boarding Information Panels"
+    ],
+    image: "/images/categories/gate-displays.webp"
+  },
+  {
+    name: "Baggage Claim Displays",
+    description: "Durable, high-contrast screens for baggage information",
+    products: [
+      "BaggageInfo Wide Displays",
+      "Carousel Status Screens",
+      "Arrival Information Panels"
+    ],
+    image: "/images/categories/baggage-displays.webp"
+  },
+  {
+    name: "Advertising & Wayfinding",
+    description: "Eye-catching digital signage for advertising and navigation",
+    products: [
+      "AdPoint Digital Billboards",
+      "WayMaster Interactive Kiosks",
+      "Terminal Map Displays"
+    ],
+    image: "/images/categories/advertising-displays.webp"
+  }
+];
+
+// Distributor benefits
+const distributorBenefits = [
+  {
+    icon: "truck",
+    title: "Nationwide Distribution",
+    description: "Fast delivery to any airport in the country with white-glove logistics services"
+  },
+  {
+    icon: "shield-check",
+    title: "Extended Warranty",
+    description: "All products come with 3-year distributor warranty and 24/7 technical support"
+  },
+  {
+    icon: "currency-dollar",
+    title: "Volume Pricing",
+    description: "Tiered pricing structure for large-scale airport deployment projects"
+  },
+  {
+    icon: "academic-cap",
+    title: "Certified Technicians",
+    description: "On-site installation and maintenance by airport-certified display specialists"
+  }
+];
+
+// Pricing tiers
+const pricingTiers = [
+  {
+    name: "Standard",
+    description: "For single terminal airports",
+    priceRange: "$10K-50K",
+    features: [
+      "Product selection consultation",
+      "Standard delivery",
+      "1-year warranty",
+      "Email support"
+    ]
+  },
+  {
+    name: "Premium",
+    description: "For medium airports",
+    priceRange: "$50K-200K",
+    features: [
+      "Custom display planning",
+      "Priority delivery",
+      "2-year warranty",
+      "Phone & email support",
+      "Installation service"
+    ],
+    recommended: true
+  },
+  {
+    name: "Enterprise",
+    description: "For major airport hubs",
+    priceRange: "Custom",
+    features: [
+      "Complete digital ecosystem",
+      "Expedited delivery",
+      "5-year warranty",
+      "Dedicated account manager",
+      "Installation & maintenance",
+      "Custom software integration"
+    ]
+  }
+];
+
+// Schema data for SEO
 const sd = {
   "@context": "https://schema.org",
-  "@type": "Product",
-  "name": "Airport Digital Signage Solutions",
-  "description": "Professional LED displays, LCD screens, and digital billboard solutions designed specifically for airport environments",
-  "brand": {
-    "@type": "Brand",
-    "name": "Lovosis Display",
-    "logo": "https://www.lovosisdisplay.com/logo.png"
+  "@type": "Organization",
+  "name": "Lovosis Display Solutions",
+  "description": "Authorized distributor of digital display solutions for airports",
+  "url": "https://www.lovosisdisplay.com",
+  "logo": "https://www.lovosisdisplay.com/logo.png",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "2500 Airport Boulevard",
+    "addressLocality": "Chicago",
+    "addressRegion": "IL",
+    "postalCode": "60666",
+    "addressCountry": "US"
   },
-  "category": "Digital Display Technology",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+1-800-555-0123",
+    "contactType": "sales",
+    "availableLanguage": ["English", "Spanish"]
+  },
   "offers": {
     "@type": "AggregateOffer",
     "priceCurrency": "USD",
-    "availability": "https://schema.org/InStock"
-  },
-  "image": "https://img.freepik.com/free-photo/modern-airport-terminal-with-digital-displays_53876-123995.jpg",
-  "applicationCategory": "Airport Information Systems",
-  "audience": {
-    "@type": "Audience",
-    "audienceType": "Airport Operators"
-  },
-  "isRelatedTo": [
-    {
-      "@type": "Product",
-      "name": "LED Video Wall Display Systems",
-      "description": "High-brightness LED display solutions for airport terminals and concourses"
-    },
-    {
-      "@type": "Product",
-      "name": "LCD Information Screens",
-      "description": "Ultra-narrow bezel LCD display panels for flight information and wayfinding"
-    },
-    {
-      "@type": "Product",
-      "name": "Digital Billboard Systems",
-      "description": "Large format digital advertising displays for airports"
-    }
-  ]
+    "availability": "https://schema.org/InStock",
+    "highPrice": "50000",
+    "lowPrice": "1200"
+  }
 }
 
-
-const features = [
-  {
-    title: "LCD Display Walls",
-    description: "Ultra-thin bezels for seamless information delivery",
-    image: "https://img.freepik.com/free-photo/digital-information-board-airport_53876-129456.jpg",
-    specs: [
-      { icon: "resolution", text: "4K Resolution" },
-      { icon: "brightness", text: "1000+ nits Brightness" },
-      { icon: "bezel", text: "0.88mm Ultra Narrow Bezel" }
-    ],
-    gradient: "from-blue-600 to-cyan-400"
-  },
-  {
-    title: "LED Video Walls",
-    description: "Fine pixel pitch for stunning visual impact",
-    image: "https://img.freepik.com/free-photo/led-wall-display-airport-terminal_53876-125789.jpg",
-    specs: [
-      { icon: "pixel", text: "1.2mm Pixel Pitch" },
-      { icon: "brightness", text: "6000 nits Brightness" },
-      { icon: "contrast", text: "10000:1 Contrast Ratio" }
-    ],
-    gradient: "from-purple-600 to-pink-400"
-  }
-];
-
-const locations = [
-  {
-    title: "Check-in Areas",
-    description: "Flight information and wayfinding displays for seamless passenger flow",
-    image: "https://img.freepik.com/free-photo/check-counter-with-digital-displays_53876-127834.jpg",
-    stats: { displays: "50+", coverage: "100%" }
-  },
-  {
-    title: "Terminal Concourse",
-    description: "Large format LED walls for advertising and passenger engagement",
-    image: "https://img.freepik.com/free-photo/airport-terminal-concourse-led-display_53876-124567.jpg",
-    stats: { displays: "100+", engagement: "85%" }
-  },
-  {
-    title: "Gate Areas",
-    description: "Real-time flight information and targeted advertising displays",
-    image: "https://img.freepik.com/free-photo/gate-information-display-airport_53876-126789.jpg",
-    stats: { displays: "200+", accuracy: "99.9%" }
-  }
-];
+// Icons for each section
+const icons = {
+  truck: `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0" />`,
+  
+  "shield-check": `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />`,
+  
+  "currency-dollar": `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />`,
+  
+  "academic-cap": `<path d="M12 14l9-5-9-5-9 5 9 5z" /><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />`
+}
 ---
 
 <Layout title={title} description={description} sd={sd}>
-  <main class="overflow-hidden bg-white">
+  <main class="bg-white">
     <!-- Hero Section -->
-    <section class="relative h-[70vh] bg-white">
-      <div class="h-full flex flex-col">
-        {/* Header Image */}
-        <div class="relative h-full">
-          <img 
-            src="https://img.freepik.com/free-photo/modern-airport-terminal-with-digital-displays_53876-123995.jpg" 
-            alt="Airport Terminal with Digital Displays"
-            class="w-full h-full object-cover"
-          />
-          <div class="absolute inset-0 bg-gradient-to-r from-gray-900/80 to-gray-900/60"></div>
-          
-          {/* Content Overlay */}
-          <div class="absolute inset-0 flex items-center justify-center">
-            <div class="text-center px-4">
-              <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 animate-fade-up">
-                Revolutionize Airport
-                <span class="bg-gradient-to-r from-blue-400 to-purple-400 text-transparent bg-clip-text">
-                  Visual Communication
-                </span>
-              </h1>
-              <p class="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto mb-12 animate-fade-up animation-delay-200">
-                Transform passenger experience with next-generation digital display solutions
-              </p>
-              <div class="flex flex-wrap justify-center gap-6 animate-fade-up animation-delay-400">
-                <a href="#solutions" class="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full font-semibold hover:scale-105 transition-all">
-                  Explore Solutions
-                </a>
-                <a href="#contact" class="px-8 py-4 bg-white text-gray-900 rounded-full font-semibold hover:bg-gray-100 transition-all">
-                  Schedule Demo
-                </a>
+    <section class="relative bg-white border-b border-gray-200">
+      <div class="container mx-auto px-4 py-12 md:py-24">
+        <div class="flex flex-col md:flex-row items-center">
+          <div class="md:w-1/2 mb-12 md:mb-0 md:pr-12">
+            <div class="inline-block px-4 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold mb-6">
+              OFFICIAL AUTHORIZED DISTRIBUTOR
+            </div>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+              Airport Display <span class="text-blue-600">Distribution Solutions</span>
+            </h1>
+            <p class="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl">
+              The largest selection of flight information displays, wayfinding kiosks, and advertising LED walls specifically designed for airport environments.
+            </p>
+            <div class="flex flex-wrap gap-4">
+              <a href="#products" class="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium transition-colors">
+                Browse Products
+              </a>
+              <a href="#distribution-network" class="px-8 py-3 bg-white border border-gray-300 hover:border-gray-400 text-gray-700 rounded-lg font-medium transition-colors">
+                Distribution Network
+              </a>
+            </div>
+            <div class="mt-8 flex items-center text-gray-500">
+              <span class="flex items-center mr-6">
+                <svg class="w-5 h-5 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                In-stock products
+              </span>
+              <span class="flex items-center">
+                <svg class="w-5 h-5 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                Nationwide delivery
+              </span>
+            </div>
+            <div class="mt-4">
+              <div class="inline-flex items-center px-3 py-1 bg-green-50 text-green-700 rounded-md text-sm">
+                <span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                Authorized distributor for 15+ premium display manufacturers
               </div>
+            </div>
+          </div>
+          <div class="md:w-1/2">
+            <div class="bg-gray-100 p-2 rounded-xl shadow-lg">
+              <img 
+                src="/images/hero-airport-displays.webp" 
+                alt="Airport Display Solutions" 
+                class="w-full rounded-lg"
+                width="600"
+                height="400"
+              />
+            </div>
+            <div class="mt-4 bg-gray-50 rounded-lg p-4 border border-gray-200">
+              <div class="flex items-center mb-2">
+                <span class="w-3 h-3 bg-green-500 rounded-full mr-2"></span>
+                <span class="font-medium text-gray-700">Available for next-day shipping</span>
+              </div>
+              <p class="text-sm text-gray-500">Most products ship directly from our distribution centers with tracking and installation support available.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Display Solutions -->
-    <section id="solutions" class="py-24 bg-white">
+    <!-- Trusted By Section -->
+    <section class="py-12 bg-gray-50">
       <div class="container mx-auto px-4">
-        <div class="max-w-3xl mx-auto text-center mb-20">
-          <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Display Solutions
+        <div class="text-center mb-10">
+          <h2 class="text-xl font-medium text-gray-600">
+            TRUSTED BY MAJOR AIRPORTS ACROSS THE COUNTRY
           </h2>
-          <div class="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto mb-6"></div>
-          <p class="text-xl text-gray-600">
-            State-of-the-art display technology designed for airport environments
+        </div>
+        <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16">
+          <img src="/images/logos/jfk-airport.svg" alt="JFK Airport" class="h-12 opacity-70 hover:opacity-100 transition-opacity" />
+          <img src="/images/logos/lax-airport.svg" alt="LAX Airport" class="h-12 opacity-70 hover:opacity-100 transition-opacity" />
+          <img src="/images/logos/ord-airport.svg" alt="O'Hare Airport" class="h-12 opacity-70 hover:opacity-100 transition-opacity" />
+          <img src="/images/logos/atl-airport.svg" alt="Atlanta Airport" class="h-12 opacity-70 hover:opacity-100 transition-opacity" />
+          <img src="/images/logos/dfw-airport.svg" alt="Dallas Fort Worth Airport" class="h-12 opacity-70 hover:opacity-100 transition-opacity" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section id="products" class="py-16 md:py-24 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <span class="inline-block px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold mb-4">
+            FEATURED PRODUCTS
+          </span>
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+            Best-Selling Airport Displays
+          </h2>
+          <p class="text-gray-600 text-lg max-w-3xl mx-auto">
+            High-quality display solutions engineered specifically for the demanding environment of modern airports
           </p>
         </div>
 
-        <div class="grid lg:grid-cols-2 gap-12">
-          {features.map(feature => (
-            <div class="group relative bg-gray-800 rounded-2xl p-1 overflow-hidden">
-              <div class={`absolute inset-0 bg-gradient-to-br ${feature.gradient} opacity-20 group-hover:opacity-30 transition-opacity`}></div>
-              <div class="relative p-8">
-                <div class="aspect-video rounded-xl overflow-hidden mb-8">
-                  <img 
-                    src={feature.image} 
-                    alt={feature.title}
-                    class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
-                  />
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {featuredProducts.map(product => (
+            <div class="bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+              <div class="relative">
+                <img 
+                  src={product.image} 
+                  alt={product.name}
+                  class="w-full h-64 object-cover"
+                  loading="lazy"
+                />
+                <div class="absolute top-4 right-4">
+                  {product.inStock ? 
+                    <span class="inline-block bg-green-100 text-green-800 text-xs font-semibold px-3 py-1 rounded-full">In Stock</span> :
+                    <span class="inline-block bg-orange-100 text-orange-800 text-xs font-semibold px-3 py-1 rounded-full">Backorder: {product.backorderTime}</span>
+                  }
                 </div>
-                <h3 class="text-2xl font-bold text-white mb-4">{feature.title}</h3>
-                <p class="text-gray-400 mb-8">{feature.description}</p>
-                <div class="grid grid-cols-3 gap-4">
-                  {feature.specs.map(spec => (
-                    <div class="flex items-center space-x-3 p-4 bg-gray-700/50 rounded-lg">
-                      <span class="text-gray-300">{spec.text}</span>
-                    </div>
-                  ))}
+                <div class="absolute bottom-4 left-4 bg-blue-600 text-white text-xs uppercase tracking-wider font-semibold px-2 py-1 rounded">
+                  Official Distributor
                 </div>
+              </div>
+              <div class="p-6">
+                <div class="text-sm text-blue-600 font-medium mb-2">{product.category}</div>
+                <h3 class="text-xl font-bold text-gray-900 mb-2">{product.name}</h3>
+                <p class="text-gray-600 mb-4">{product.description}</p>
+                
+                <div class="mb-6">
+                  <div class="text-lg font-bold text-gray-900 mb-1">{product.price}</div>
+                  <div class="text-sm text-gray-500">
+                    Min Order: {product.minOrder} • Delivery: {product.deliveryTime}
+                  </div>
+                </div>
+                
+                <div class="mb-6">
+                  <h4 class="text-sm font-semibold text-gray-900 mb-2">SPECIFICATIONS</h4>
+                  <ul class="space-y-1">
+                    {product.specs.map(spec => (
+                      <li class="text-sm text-gray-600 flex items-center">
+                        <svg class="w-4 h-4 mr-2 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        {spec}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                
+                <div class="flex gap-2">
+                  <a href={`/products/${product.id}`} class="flex-1 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white text-center rounded-lg font-medium transition-colors">
+                    View Details
+                  </a>
+                  <button class="px-4 py-2 border border-gray-300 hover:border-gray-400 text-gray-700 rounded-lg font-medium transition-colors">
+                    Request Quote
+                  </button>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+        
+        <div class="text-center mt-12">
+          <a href="/products/airport-displays" class="inline-flex items-center px-6 py-3 border border-gray-300 hover:border-gray-400 text-gray-700 rounded-lg font-medium transition-colors">
+            View All Products
+            <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Manufacturers Section (NEW) -->
+    <section class="py-16 md:py-20 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <span class="inline-block px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold mb-4">
+            OUR PARTNERS
+          </span>
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+            Authorized Manufacturer Relationships
+          </h2>
+          <p class="text-gray-600 text-lg max-w-3xl mx-auto">
+            As an official distributor, we maintain direct relationships with the world's leading display manufacturers
+          </p>
+        </div>
+        
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm flex flex-col items-center justify-center">
+            <img src="/images/manufacturers/samsung.svg" alt="Samsung" class="h-12 mb-4" />
+            <span class="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full">
+              Premium Partner
+            </span>
+          </div>
+          <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm flex flex-col items-center justify-center">
+            <img src="/images/manufacturers/lg.svg" alt="LG" class="h-12 mb-4" />
+            <span class="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full">
+              Authorized Distributor
+            </span>
+          </div>
+          <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm flex flex-col items-center justify-center">
+            <img src="/images/manufacturers/nec.svg" alt="NEC" class="h-12 mb-4" />
+            <span class="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full">
+              Certified Reseller
+            </span>
+          </div>
+          <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm flex flex-col items-center justify-center">
+            <img src="/images/manufacturers/panasonic.svg" alt="Panasonic" class="h-12 mb-4" />
+            <span class="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full">
+              Authorized Distributor
+            </span>
+          </div>
+        </div>
+        
+        <div class="text-center mt-10">
+          <a href="/manufacturers" class="inline-flex items-center text-blue-600 hover:text-blue-800">
+            View all manufacturer partnerships
+            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Display Categories Section -->
+    <section class="py-16 md:py-24 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <span class="inline-block px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold mb-4">
+            PRODUCT CATEGORIES
+          </span>
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+            Complete Airport Display Solutions
+          </h2>
+          <p class="text-gray-600 text-lg max-w-3xl mx-auto">
+            Specialized displays for every area of your airport facility
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {displayCategories.map(category => (
+            <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-gray-200">
+              <img 
+                src={category.image} 
+                alt={category.name}
+                class="w-full h-48 object-cover"
+                loading="lazy"
+              />
+              <div class="p-6">
+                <h3 class="text-lg font-bold text-gray-900 mb-3">{category.name}</h3>
+                <p class="text-gray-600 text-sm mb-4">{category.description}</p>
+                <div class="mb-5">
+                  <div class="text-xs font-semibold text-gray-500 mb-2">FEATURED PRODUCTS</div>
+                  <ul class="space-y-1">
+                    {category.products.map(product => (
+                      <li class="text-sm text-gray-600 flex items-center">
+                        <svg class="w-3 h-3 mr-1 text-blue-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                        {product}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <a href={`/categories/${category.name.toLowerCase().replace(/\s+/g, '-')}`} class="text-blue-600 text-sm font-medium hover:text-blue-800 flex items-center">
+                  View Category
+                  <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                  </svg>
+                </a>
               </div>
             </div>
           ))}
@@ -175,42 +489,136 @@ const locations = [
       </div>
     </section>
 
-    <!-- Implementation Showcase -->
-    <section class="py-24 bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900">
+    <!-- Distributor Benefits Section -->
+    <section id="distribution-network" class="py-16 md:py-24 bg-gray-50">
       <div class="container mx-auto px-4">
-        <div class="max-w-3xl mx-auto text-center mb-20">
-          <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
-            Strategic Implementations
+        <div class="text-center mb-16">
+          <span class="inline-block px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold mb-4">
+            WHY CHOOSE US
+          </span>
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+            Premier Airport Display Distributor
           </h2>
-          <div class="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto mb-6"></div>
-          <p class="text-xl text-gray-400">
-            Optimized display placement for maximum impact and efficiency
+          <p class="text-gray-600 text-lg max-w-3xl mx-auto">
+            We provide comprehensive distribution services tailored specifically for airport environments
           </p>
         </div>
 
-        <div class="grid md:grid-cols-3 gap-8">
-          {locations.map(location => (
-            <div class="group bg-gray-800/50 rounded-2xl overflow-hidden backdrop-blur-sm">
-              <div class="relative aspect-video">
-                <img 
-                  src={location.image} 
-                  alt={location.title}
-                  class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
-                />
-                <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {distributorBenefits.map(benefit => (
+            <div class="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-md transition-shadow">
+              <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+                <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <Fragment set:html={icons[benefit.icon as keyof typeof icons]} />
+                </svg>
               </div>
-              <div class="p-8">
-                <h3 class="text-xl font-bold text-white mb-4">{location.title}</h3>
-                <p class="text-gray-400 mb-6">{location.description}</p>
-                <div class="grid grid-cols-2 gap-4">
-                  {Object.entries(location.stats).map(([key, value]) => (
-                    <div class="text-center p-4 bg-gray-700/30 rounded-lg">
-                      <div class="text-2xl font-bold text-white mb-1">{value}</div>
-                      <div class="text-sm text-gray-400 capitalize">{key}</div>
-                    </div>
-                  ))}
+              <h3 class="text-lg font-bold text-gray-900 mb-3">{benefit.title}</h3>
+              <p class="text-gray-600">{benefit.description}</p>
+            </div>
+          ))}
+        </div>
+        
+        <div class="mt-12 text-center">
+          <a href="#contact" class="inline-flex items-center px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium transition-colors">
+            Contact Sales Team
+            <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Distribution Map Section (NEW) -->
+    <section class="py-16 md:py-24 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col lg:flex-row items-center gap-12">
+          <div class="lg:w-1/2">
+            <span class="inline-block px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold mb-4">
+              NATIONWIDE COVERAGE
+            </span>
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+              Comprehensive Distribution Network
+            </h2>
+            <p class="text-gray-600 text-lg mb-6">
+              Our extensive distribution network ensures timely delivery and installation support across the country.
+            </p>
+            <ul class="space-y-4">
+              <li class="flex items-center text-gray-600">
+                <svg class="w-5 h-5 mr-2 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                24/7 customer support
+              </li>
+              <li class="flex items-center text-gray-600">
+                <svg class="w-5 h-5 mr-2 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                On-site installation services
+              </li>
+              <li class="flex items-center text-gray-600">
+                <svg class="w-5 h-5 mr-2 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                Nationwide logistics support
+              </li>
+            </ul>
+          </div>
+          <div class="lg:w-1/2">
+            <img 
+              src="/images/distribution-map.webp" 
+              alt="Distribution Map" 
+              class="w-full rounded-lg shadow-lg"
+              width="600"
+              height="400"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Tiers Section -->
+    <section class="py-16 md:py-24 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <span class="inline-block px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold mb-4">
+            PRICING PLANS
+          </span>
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+            Flexible Pricing for Every Airport
+          </h2>
+          <p class="text-gray-600 text-lg max-w-3xl mx-auto">
+            Choose the plan that best fits your airport's needs and budget
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {pricingTiers.map(tier => (
+            <div class={`bg-white border border-gray-200 rounded-xl p-6 ${tier.recommended ? 'shadow-lg' : ''}`}>
+              {tier.recommended && (
+                <div class="absolute top-0 right-0 bg-blue-600 text-white text-xs font-semibold px-3 py-1 rounded-bl-lg">
+                  Recommended
                 </div>
-              </div>
+              )}
+              <h3 class="text-lg font-bold text-gray-900 mb-3">{tier.name}</h3>
+              <p class="text-gray-600 mb-6">{tier.description}</p>
+              <div class="text-2xl font-bold text-gray-900 mb-4">{tier.priceRange}</div>
+              <ul class="space-y-2 mb-6">
+                {tier.features.map(feature => (
+                  <li class="text-sm text-gray-600 flex items-center">
+                    <svg class="w-4 h-4 mr-2 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    {feature}
+                  </li>
+                ))}
+              </ul>
+              <a href="#contact" class="inline-flex items-center px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium transition-colors">
+                Get Started
+                <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </a>
             </div>
           ))}
         </div>
