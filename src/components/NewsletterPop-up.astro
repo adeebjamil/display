@@ -212,13 +212,11 @@
           `;
         }
         
-        // FIXED: Using all possible parameter variations that EmailJS might expect
+        // KEY FIX: Changed parameter names to use "to" which is likely what EmailJS expects
         // For user email template - this sends thank you to the user
         const userParams = {
-          name: name,
-          email: email,
+          to: email,  // CHANGED: Using "to" instead of "to_email" or "email"
           to_name: name,
-          to_email: email,
           from_name: "Lovosis Display",
           reply_to: "info@lovosisdisplay.com",
           subject: "Welcome to Lovosis Display Newsletter",
@@ -227,11 +225,7 @@
 
         // For admin notification template - this sends user info to admin
         const adminParams = {
-          name: "Admin",
-          email: "adeebjamil0707@gmail.com", 
-          to_name: "Admin",
-          to_email: "adeebjamil0707@gmail.com",
-          recipient: "adeebjamil0707@gmail.com",
+          to: "adeebjamil0707@gmail.com",  // CHANGED: Using "to" instead of other variations
           from_name: "Newsletter Subscription",
           user_name: name,      
           user_email: email,    
@@ -240,7 +234,7 @@
           reply_to: email
         };
         
-        console.log('Trying to send user confirmation email with params:', userParams);
+        console.log('Trying to send admin notification with params:', adminParams);
         
         // First send only the admin notification as that's most important
         emailjs.send('service_gnaft8r', 'template_wjkc7le', adminParams)
