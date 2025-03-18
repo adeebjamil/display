@@ -33,23 +33,23 @@ const logos = [
 ];
 ---
 
-<section class="py-12 bg-white overflow-hidden">
+<section class="py-8 sm:py-12 bg-white overflow-hidden">
   <div class="max-w-7xl mx-auto px-4">
-    <h2 class="text-3xl font-bold text-center text-gray-900 mb-8">
+    <h2 class="text-2xl sm:text-3xl font-bold text-center text-gray-900 mb-6 sm:mb-8">
       Trusted by Industry Leaders
-      <span class="block w-24 h-1 bg-gradient-to-r from-blue-600 to-blue-800 mx-auto mt-4"></span>
+      <span class="block w-16 sm:w-24 h-1 bg-gradient-to-r from-blue-600 to-blue-800 mx-auto mt-3 sm:mt-4"></span>
     </h2>
 
     <div class="relative w-full">
-      <!-- Gradient Overlays -->
-      <div class="absolute left-0 top-0 bottom-0 w-40 bg-gradient-to-r from-white to-transparent z-10"></div>
-      <div class="absolute right-0 top-0 bottom-0 w-40 bg-gradient-to-l from-white to-transparent z-10"></div>
+      <!-- Gradient Overlays - Adjusted for mobile -->
+      <div class="absolute left-0 top-0 bottom-0 w-12 sm:w-40 bg-gradient-to-r from-white to-transparent z-10"></div>
+      <div class="absolute right-0 top-0 bottom-0 w-12 sm:w-40 bg-gradient-to-l from-white to-transparent z-10"></div>
 
       <!-- Logo Scroll Container -->
-      <div class="flex overflow-hidden">
-        <div class="flex animate-scroll space-x-16 py-8">
+      <div class="flex overflow-hidden touch-pan-y">
+        <div class="flex animate-scroll space-x-6 sm:space-x-16 py-4 sm:py-8">
           {logos.map((logo) => (
-            <div class="flex-none w-48 h-24 bg-white rounded-lg shadow-md p-4 transform transition-transform hover:scale-110">
+            <div class="flex-none w-24 sm:w-32 md:w-48 h-16 sm:h-20 md:h-24 bg-white rounded-lg shadow-md p-2 sm:p-4 transform transition-transform hover:scale-110 touch-action-manipulation">
               <img
                 src={logo.image}
                 alt={logo.name}
@@ -60,7 +60,7 @@ const logos = [
           ))}
           {/* Duplicate logos for seamless scrolling */}
           {logos.map((logo) => (
-            <div class="flex-none w-48 h-24 bg-white rounded-lg shadow-md p-4 transform transition-transform hover:scale-110">
+            <div class="flex-none w-24 sm:w-32 md:w-48 h-16 sm:h-20 md:h-24 bg-white rounded-lg shadow-md p-2 sm:p-4 transform transition-transform hover:scale-110 touch-action-manipulation">
               <img
                 src={logo.image}
                 alt={logo.name}
@@ -89,6 +89,13 @@ const logos = [
     animation: scroll 30s linear infinite;
   }
 
+  /* Faster animation on mobile for better experience */
+  @media (max-width: 640px) {
+    .animate-scroll {
+      animation-duration: 20s;
+    }
+  }
+
   .animate-scroll:hover {
     animation-play-state: paused;
   }
@@ -99,13 +106,19 @@ const logos = [
       animation-duration: 80s;
     }
   }
+
+  /* Improve touch behavior on mobile */
+  .touch-action-manipulation {
+    touch-action: manipulation;
+  }
 </style>
 
 <script>
-  // Optional: Pause animation on hover
+  // Handle both mouse and touch interactions
   const scrollContainer = document.querySelector('.animate-scroll') as HTMLElement;
   
   if (scrollContainer) {
+    // Mouse events
     scrollContainer.addEventListener('mouseenter', () => {
       scrollContainer.style.animationPlayState = 'paused';
     });
@@ -113,5 +126,16 @@ const logos = [
     scrollContainer.addEventListener('mouseleave', () => {
       scrollContainer.style.animationPlayState = 'running';
     });
+    
+    // Touch events
+    scrollContainer.addEventListener('touchstart', () => {
+      scrollContainer.style.animationPlayState = 'paused';
+    }, { passive: true });
+
+    scrollContainer.addEventListener('touchend', () => {
+      setTimeout(() => {
+        scrollContainer.style.animationPlayState = 'running';
+      }, 1000); // Resume after 1 second to allow tapping
+    }, { passive: true });
   }
 </script>
