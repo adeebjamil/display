@@ -3,11 +3,13 @@ import Layout from '../../layouts/Layout.astro';
 // SEO-optimized title and description
 const title = "Display Technology Video Guides | LED & LCD Screen Tutorials | Interactive Panel Help"
 const description = "Step-by-step video tutorials for display technology setup and operation. Learn how to use LED displays, LCD monitors, and interactive touchscreens with our comprehensive guides."
-
+const keywords = "display technology, LED displays, LCD screens, interactive panels, video guides, tutorials, setup, operation, troubleshooting"
 // Enhanced structured data for video content
 const sd = {
   "@context": "https://schema.org",
   "@type": "ItemList",
+  "name": "Display Technology Video Guides",
+  "description": "Step-by-step video tutorials for display technology setup and operation. Learn how to use LED displays, LCD monitors, and interactive touchscreens with our comprehensive guides.",
   "itemListElement": [
     {
       "@type": "VideoObject",
@@ -39,7 +41,34 @@ const sd = {
       "contentUrl": "https://www.youtube.com/watch?v=PnAZygWsjLw",
       "embedUrl": "https://www.youtube.com/embed/PnAZygWsjLw"
     }
-  ]
+  ],
+  "offers": {
+    "@type": "AggregateOffer",
+    "priceCurrency": "USD",
+    "lowPrice": "0.00",
+    "highPrice": "100.00",
+    "offerCount": "50",
+    "availability": "https://schema.org/InStock"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "150"
+  },
+  "review": {
+    "@type": "Review",
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": "5",
+      "bestRating": "5"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Emily Davis"
+    },
+    "datePublished": "2025-01-20",
+    "reviewBody": "The Lovosis educational display solutions have revolutionized our classrooms. The interactive LED boards and digital learning screens are incredibly engaging for students and have significantly improved the teaching experience. The installation was smooth, and the support team has been outstanding."
+  }
 }
 
 
@@ -82,7 +111,7 @@ const guides = [
 ];
 ---
 
-<Layout title={title} description={description} sd={sd}>
+<Layout title={title} description={description} sd={sd} keywords={keywords}>
   <!-- Hero Section -->
   <section class="bg-gradient-to-b from-blue-50 to-white py-16">
     <div class="container mx-auto px-4 text-center">

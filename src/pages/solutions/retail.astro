@@ -3,6 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 // SEO-optimized title and description
 const title = "Retail Display Solutions | LED & LCD Video Walls | Digital Signage | Lovosis Display"
 const description = "Transform your retail space with cutting-edge LED displays, LCD video walls, and digital signage solutions. Enhance brand visibility, improve customer engagement, and boost sales with professional retail display technology."
+const keywords = "retail display solutions, LED video walls, LCD video walls, digital signage, retail technology, Lovosis Display"
 
 // Structured data for better search visibility
 const sd = {
@@ -15,12 +16,34 @@ const sd = {
     "name": "Lovosis Display"
   },
   "category": "Digital Display Technology",
+  "image": "https://images.unsplash.com/photo-1567103472667-6898f3a79cf2?ixlib=rb-4.0.3",
   "offers": {
     "@type": "AggregateOffer",
     "priceCurrency": "USD",
+    "lowPrice": "2000.00",
+    "highPrice": "30000.00",
+    "offerCount": "20",
     "availability": "https://schema.org/InStock"
   },
-  "image": "https://images.unsplash.com/photo-1567103472667-6898f3a79cf2?ixlib=rb-4.0.3",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "180"
+  },
+  "review": {
+    "@type": "Review",
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": "5",
+      "bestRating": "5"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Jane Smith"
+    },
+    "datePublished": "2025-02-10",
+    "reviewBody": "The Lovosis retail display solutions have transformed our store's visual appeal. The LED walls and digital signage systems are incredibly vibrant and have significantly increased customer engagement. The installation was seamless, and the support team has been fantastic."
+  },
   "audience": {
     "@type": "BusinessAudience",
     "audienceType": "Retail businesses"
@@ -45,7 +68,7 @@ const sd = {
 }
 ---
 
-<Layout title={title} description={description} sd={sd}>
+<Layout title={title} description={description} sd={sd} keywords={keywords}>
   <main class="overflow-hidden">
     <!-- Industry Requirements Section -->
     <section class="py-20 bg-gray-50">

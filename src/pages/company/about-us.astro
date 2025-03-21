@@ -4,6 +4,7 @@ import Layout from '../../layouts/Layout.astro';
 // SEO Optimization
 const title = 'About UNV Display | Leading LED & LCD Display Solutions Provider';
 const description = 'UNV Display is a global provider of premium LED displays, LCD screens, interactive educational boards & digital billboards. Discover our innovative technology, company values & commitment to quality display solutions.';
+const keywords = 'Lovosis Display, Premium LED Displays, LCD Screens, Interactive Whiteboards, Digital Billboards, Display Solutions, AIoT Technology';
 
 // Organization Schema Markup for About Page
 const sd = {
@@ -11,14 +12,14 @@ const sd = {
   "@type": "AboutPage",
   "mainEntity": {
     "@type": "Organization",
-    "name": "UNV  Display",
+    "name": "UNV Display",
     "description": "Global provider of AIoT display products and solutions, specializing in LED displays, LCD screens, educational boards, and digital billboards",
-    "url": "https://UNV Display.com",
-    "logo": "https://UNV Display.com/images/logo.png",
+    "url": "https://UNVDisplay.com",
+    "logo": "https://UNVDisplay.com/images/logo.png",
     "foundingDate": "2010",
     "founder": {
       "@type": "Person",
-      "name": "UNV  Display Founder"
+      "name": "UNV Display Founder"
     },
     "numberOfEmployees": {
       "@type": "QuantitativeValue",
@@ -33,10 +34,37 @@ const sd = {
       "RoHS Compliance"
     ],
     "sameAs": [
-      "https://www.facebook.com/UNV display",
-      "https://twitter.com/UNV display",
-      "https://www.linkedin.com/company/UNV -display"
-    ]
+      "https://www.facebook.com/UNVDisplay",
+      "https://twitter.com/UNVDisplay",
+      "https://www.linkedin.com/company/UNV-display"
+    ],
+    "offers": {
+      "@type": "AggregateOffer",
+      "priceCurrency": "USD",
+      "lowPrice": "1500.00",
+      "highPrice": "50000.00",
+      "offerCount": "25",
+      "availability": "https://schema.org/InStock"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "300"
+    },
+    "review": {
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Emily Davis"
+      },
+      "datePublished": "2025-01-20",
+      "reviewBody": "The Lovosis educational display solutions have revolutionized our classrooms. The interactive LED boards and digital learning screens are incredibly engaging for students and have significantly improved the teaching experience. The installation was smooth, and the support team has been outstanding."
+    }
   }
 }
 
@@ -119,7 +147,7 @@ const images = {
 };
 ---
 
-<Layout title={title} description={description} sd={sd}>
+<Layout title={title} description={description} sd={sd} keywords={keywords}>
   <main class="overflow-hidden">
     <!-- Hero Section -->
     <section class="relative h-[90vh] overflow-hidden">

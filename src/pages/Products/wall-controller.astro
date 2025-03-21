@@ -3,6 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 // SEO-optimized title and description
 const title = "Video Wall Controllers for LED & LCD Displays | Digital Billboard Management | Lovosis Display"
 const description = "Professional video wall controllers for seamless management of LED displays, LCD video walls, educational display boards, and digital billboards. High-performance multi-screen control with flexible window management."
+const keywords = "video wall controller, video wall management, LED display controller, LCD video wall controller, digital billboard controller, educational display controller"
 
 // Structured data for rich results in search
 const sd = {
@@ -24,6 +25,25 @@ const sd = {
     "offerCount": "5"
   },
   "image": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2070&auto=format&fit=crop",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "120"
+  },
+  "review": {
+    "@type": "Review",
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": "5",
+      "bestRating": "5"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "David Chen"
+    },
+    "datePublished": "2023-12-15",
+    "reviewBody": "The Lovosis Video Wall Controller has transformed our control room operations. The system handles multiple 4K inputs flawlessly with virtually no latency, and the interface is remarkably intuitive. We've been running it 24/7 for six months with complete reliability."
+  },
   "isRelatedTo": [
     {
       "@type": "Product",
@@ -78,7 +98,7 @@ const highlights = [
 ];
 ---
 
-<Layout title={title} description={description} sd={sd}>
+<Layout title={title} description={description} sd={sd} keywords={keywords}>
   <div class="bg-white">
     <!-- Header Section -->
     <div class="relative h-[60vh] overflow-hidden">

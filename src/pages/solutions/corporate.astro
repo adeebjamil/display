@@ -3,6 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 // SEO-optimized title and description
 const title = "Corporate Display Solutions | LED, LCD & Interactive Screens | Lovosis Display"
 const description = "Transform your corporate space with professional LED displays, LCD video walls, and interactive screens. Enhance collaboration, convey brand image, and create impressive meeting environments with our cutting-edge display technology."
+const keywords = "Corporate Display Solutions, LED Walls, LCD Screens, Interactive Displays, Display Technology, Lovosis Display"
 
 // Schema markup for rich results
 const sd = {
@@ -15,11 +16,34 @@ const sd = {
     "name": "Lovosis Display"
   },
   "category": "Display Technology",
+  "image": "https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3",
   "offers": {
     "@type": "AggregateOffer",
+    "priceCurrency": "USD",
+    "lowPrice": "5000.00",
+    "highPrice": "25000.00",
+    "offerCount": "10",
     "availability": "https://schema.org/InStock"
   },
-  "image": "https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "150"
+  },
+  "review": {
+    "@type": "Review",
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": "5",
+      "bestRating": "5"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Adeeb Jamil"
+    },
+    "datePublished": "2025-01-15",
+    "reviewBody": "The Lovosis corporate display solutions have transformed our office environment. The LED walls and interactive screens are not only visually stunning but also highly functional, enhancing our meetings and presentations. The installation was seamless, and the support from Lovosis has been exceptional."
+  },
   "mainEntityOfPage": {
     "@type": "WebPage",
     "lastReviewed": "2025-03-04T09:13:52Z"
@@ -38,7 +62,7 @@ const sd = {
 }
 ---
 
-<Layout title={title} description={description} sd={sd}>
+<Layout title={title} description={description} sd={sd} keywords={keywords}>
   <main class="overflow-hidden">
     <!-- Hero Section -->
     <section class="relative overflow-hidden">

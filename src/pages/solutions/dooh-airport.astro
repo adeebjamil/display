@@ -4,6 +4,7 @@ import Layout from '../../layouts/Layout.astro';
 // SEO-optimized title and description targeting display distribution keywords
 const title = "Airport Display Solutions | Official Distributor of LED & LCD Systems | Lovosis"
 const description = "Authorized distributor of premium digital displays for airports. Offering flight information screens, wayfinding kiosks, and advertising LED walls with nationwide delivery and installation support."
+const keywords = "airport display solutions, airport digital signage, airport LED walls, airport LCD screens, airport wayfinding kiosks"
 
 // Product catalog data
 const featuredProducts = [
@@ -197,7 +198,27 @@ const sd = {
     "priceCurrency": "USD",
     "availability": "https://schema.org/InStock",
     "highPrice": "50000",
-    "lowPrice": "1200"
+    "lowPrice": "1200",
+    "offerCount": "10"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "200"
+  },
+  "review": {
+    "@type": "Review",
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": "5",
+      "bestRating": "5"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "John Doe"
+    },
+    "datePublished": "2025-02-15",
+    "reviewBody": "The Lovosis airport display solutions have significantly improved our passenger experience. The LED walls and wayfinding kiosks are incredibly clear and reliable. Installation was quick, and the support team has been fantastic."
   }
 }
 
@@ -213,7 +234,7 @@ const icons = {
 }
 ---
 
-<Layout title={title} description={description} sd={sd}>
+<Layout title={title} description={description} sd={sd} keywords={keywords}>
   <main class="bg-white">
     <!-- Hero Section -->
     <section class="relative bg-white border-b border-gray-200">

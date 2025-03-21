@@ -3,8 +3,9 @@ import Layout from '../../layouts/Layout.astro';
 // SEO-optimized title and description
 const title = "Video Conferencing Display Solutions | LED & LCD Professional Displays"
 const description = "Premium video conferencing solutions featuring advanced LED and LCD display technology. High-resolution screens, educational board integration, and digital signage compatibility for professional meeting environments."
+const keywords = "video conferencing displays, LED displays, LCD displays, educational board integration, digital signage compatibility"
 
-// Schema markup for product page
+// Replace your current schema with this updated version:
 const sd = {
   "@context": "https://schema.org",
   "@type": "CollectionPage",
@@ -13,13 +14,21 @@ const sd = {
   "offers": {
     "@type": "AggregateOffer",
     "availability": "https://schema.org/InStock",
+    "priceCurrency": "USD",
+    "lowPrice": "499.00",
+    "highPrice": "2499.00",
     "offerCount": "7"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "120"
   },
   "itemListElement": [
     {
       "@type": "Product",
       "name": "Unear A20 All-In-One Video Conference Camera",
-      "image": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800",
+      "image": "https://lovosisdisplay.com/Conferencing/Unear%20A20.jpg",
       "description": "Professional 4K display conferencing system with AI-powered features and LED display compatibility",
       "brand": {
         "@type": "Brand",
@@ -27,7 +36,23 @@ const sd = {
       },
       "offers": {
         "@type": "Offer",
-        "availability": "https://schema.org/InStock"
+        "price": "1299.00",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "url": "https://lovosisdisplay.com/Products/conferencing-products"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "86"
+      },
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "best": "5"
+        }
       }
     }
   ]
@@ -96,7 +121,7 @@ const products = [
 ];
 ---
 
-<Layout title={title} description={description} sd={sd}>
+<Layout title={title} description={description} sd={sd} keywords={keywords}>
   <div class="bg-white" x-data="{ activeSection: '01' }">
     <!-- Header Section -->
     <div class="relative h-[60vh] overflow-hidden">

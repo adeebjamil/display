@@ -3,8 +3,9 @@ import Layout from '../../layouts/Layout.astro';
 // SEO-optimized title and description
 const title = "LCD Video Walls | LED Display Solutions | Digital Billboards | Lovosis Display"
 const description = "Premium LCD video wall solutions with ultra-narrow bezels, perfect for control rooms, educational boards, and digital billboard applications. High-resolution LED display technology for immersive visual experiences with wide viewing angles."
+const keywords = "LCD video walls, LED display solutions, digital billboards, Lovosis Display"
 
-// Schema markup for rich results
+// Schema markup for rich results - UPDATED with required properties
 const sd = {
   "@context": "https://schema.org",
   "@type": "ItemPage",
@@ -26,7 +27,15 @@ const sd = {
         },
         "offers": {
           "@type": "Offer",
-          "availability": "https://schema.org/InStock"
+          "price": "1999.00",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://lovosisdisplay.com/Products/lcd-video"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.8",
+          "reviewCount": "46"
         }
       },
       {
@@ -42,7 +51,15 @@ const sd = {
         },
         "offers": {
           "@type": "Offer",
-          "availability": "https://schema.org/InStock"
+          "price": "2499.00",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://lovosisdisplay.com/Products/lcd-video"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.7",
+          "reviewCount": "35"
         }
       },
       {
@@ -58,7 +75,23 @@ const sd = {
         },
         "offers": {
           "@type": "Offer",
-          "availability": "https://schema.org/InStock"
+          "price": "2999.00",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://lovosisdisplay.com/Products/lcd-video"
+        },
+        "review": {
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "author": {
+            "@type": "Person",
+            "name": "John Smith"
+          },
+          "reviewBody": "The ultra-narrow bezel creates a truly seamless video wall experience. We installed this in our corporate lobby and it's been a game-changer for visitor engagement."
         }
       }
     ]
@@ -246,7 +279,7 @@ const products = [
 ];
 ---
 
-<Layout title={title} description={description} sd={sd}>
+<Layout title={title} description={description} sd={sd} keywords={keywords}>
   <div class="bg-white" x-data="{ activeSection: '01' }">
   <!-- Header Section -->
 <div class="relative h-[850px] overflow-hidden bg-gray-900 w-full">

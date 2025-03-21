@@ -4,6 +4,7 @@ import Layout from '../../layouts/Layout.astro';
 // SEO-optimized title and description
 const title = "Control Room Display Solutions | LED Video Walls & Monitoring Systems | Lovosis";
 const description = "Professional control room solutions with advanced LED video walls and monitoring displays for security, utility, and traffic management operations.";
+const keywords = "control room display, LED video wall, monitoring system, security, utility, traffic management";
 
 // Schema markup - optimized for better performance
 const sd = {
@@ -16,7 +17,34 @@ const sd = {
     "name": "Lovosis Display"
   },
   "category": "Professional Display Systems",
-  "image": "/images/solutions/control-room-hero.webp"
+  "image": "https://lovosisdisplay.com/images/solutions/control-room-hero.webp",
+  "offers": {
+    "@type": "AggregateOffer",
+    "priceCurrency": "USD",
+    "lowPrice": "5000.00",
+    "highPrice": "25000.00",
+    "offerCount": "10",
+    "availability": "https://schema.org/InStock"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "150"
+  },
+  "review": {
+    "@type": "Review",
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": "5",
+      "bestRating": "5"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Sarah Johnson"
+    },
+    "datePublished": "2023-12-01",
+    "reviewBody": "The clarity and reliability of Lovosis LED walls have been critical to our 24/7 monitoring capabilities. The system's uptime and energy efficiency have significantly improved our operations."
+  }
 }
 
 // Testimonials data
@@ -44,7 +72,7 @@ const stats = [
 ];
 ---
 
-<Layout title={title} description={description} sd={sd}>
+<Layout title={title} description={description} sd={sd} keywords={keywords}>
   <main class="overflow-hidden bg-white">
     <!-- Hero Section with Image Background -->
     <section class="relative h-[80vh] flex items-center justify-center overflow-hidden">

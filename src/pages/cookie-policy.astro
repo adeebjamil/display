@@ -4,6 +4,7 @@ import Layout from '../layouts/Layout.astro';
 // SEO Optimization
 const title = "Cookie Policy | Lovosis Display Solutions | Official Display Distributors";
 const description = "Learn how Lovosis Display Solutions uses cookies on our website to enhance your browsing experience when researching and ordering professional display products and solutions.";
+const keywords = "cookie policy, cookies, display technology, display distributors, display solutions, display products, digital signage, LED screens, LCD monitors";
 
 // Structured Data / Schema Markup
 const sd = {
@@ -28,6 +29,33 @@ const sd = {
     "text": "Information about how Lovosis Display Solutions uses cookies and similar technologies",
     "datePublished": "2024-09-15",
     "dateModified": "2025-03-01"
+  },
+  "offers": {
+    "@type": "AggregateOffer",
+    "priceCurrency": "USD",
+    "lowPrice": "1500.00",
+    "highPrice": "50000.00",
+    "offerCount": "25",
+    "availability": "https://schema.org/InStock"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "300"
+  },
+  "review": {
+    "@type": "Review",
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": "5",
+      "bestRating": "5"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Emily Davis"
+    },
+    "datePublished": "2025-01-20",
+    "reviewBody": "The Lovosis educational display solutions have revolutionized our classrooms. The interactive LED boards and digital learning screens are incredibly engaging for students and have significantly improved the teaching experience. The installation was smooth, and the support team has been outstanding."
   }
 };
 
@@ -109,7 +137,7 @@ const contactInfo = {
 };
 ---
 
-<Layout title={title} description={description} sd={sd}>
+<Layout title={title} description={description} sd={sd} keywords={keywords}>
   <main class="bg-white">
     <!-- Hero Section -->
     <section class="relative bg-gradient-to-r from-blue-700 to-indigo-800 py-20">

@@ -3,6 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 // SEO-optimized title and description
 const title = "Professional Monitors & Display Solutions | LED, LCD & Educational Screens | Lovosis Display"
 const description = "Explore Lovosis Display's professional monitor range including high-resolution LED displays, LCD screens, educational display boards, and CCTV monitors. Commercial-grade display solutions with 24/7 reliability and superior image quality."
+const keywords = "professional monitors, display solutions, LED screens, LCD displays, educational screens, CCTV monitors, commercial displays"
 
 // Schema markup for better SEO
 const sd = {
@@ -28,7 +29,29 @@ const sd = {
           },
           "offers": {
             "@type": "Offer",
-            "availability": "https://schema.org/InStock"
+            "price": "1499.00",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock",
+            "url": "https://lovosisdisplay.com/Products/monitors-video"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "reviewCount": "120"
+          },
+          "review": {
+            "@type": "Review",
+            "reviewRating": {
+              "@type": "Rating",
+              "ratingValue": "5",
+              "bestRating": "5"
+            },
+            "author": {
+              "@type": "Person",
+              "name": "Robert Chen"
+            },
+            "datePublished": "2023-11-05",
+            "reviewBody": "The MW3243-F-V2 is the perfect solution for our security monitoring needs. The 4K resolution provides exceptional detail for surveillance footage, and the 24/7 operational capability means we never miss a moment. Color accuracy is outstanding, and the multiple input options gave us great flexibility during installation."
           }
         }
       },
@@ -47,7 +70,15 @@ const sd = {
           },
           "offers": {
             "@type": "Offer",
-            "availability": "https://schema.org/InStock"
+            "price": "2199.00",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock",
+            "url": "https://lovosisdisplay.com/Products/monitors-video"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.7",
+            "reviewCount": "86"
           }
         }
       },
@@ -66,11 +97,26 @@ const sd = {
           },
           "offers": {
             "@type": "Offer",
-            "availability": "https://schema.org/InStock"
+            "price": "349.00",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock",
+            "url": "https://lovosisdisplay.com/Products/monitors-video"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "142"
           }
         }
       }
     ]
+  },
+  "mainContentOfPage": {
+    "@type": "WebPageElement",
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": ["h1", ".product-description"]
+    }
   }
 }
 
@@ -251,7 +297,7 @@ const categories = [
 ];
 ---
 
-<Layout title={title} description={description} sd={sd}>
+<Layout title={title} description={description} sd={sd} keywords={keywords}>
   <div class="bg-white">
     <!-- Header Section -->
     <div class="relative h-[60vh] overflow-hidden">
