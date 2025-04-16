@@ -6,14 +6,15 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro",
-    "install": "npm install --legacy-peer-deps"
+    "astro": "astro"
+   
   },
   "dependencies": {
     "@astrojs/image": "^0.18.0",
     "@astrojs/tailwind": "^5.1.5",
     "@emailjs/browser": "^4.4.1",
     "@motionone/dom": "^10.18.0",
+    "@astrojs/sitemap": "^3.1.4",
     "alpinejs": "^3.14.8",
     "astro": "^5.4.2",
     "astro-icon": "^1.1.5",
