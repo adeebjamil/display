@@ -10,17 +10,17 @@ export async function get() {
     // Main pages
     { url: "/", lastmod: today, priority: "1.0", changefreq: "weekly" },
     { url: "/about", lastmod: today, priority: "0.8", changefreq: "monthly" },
-    { url: "/products", lastmod: today, priority: "0.9", changefreq: "weekly" },
+    { url: "/Products", lastmod: today, priority: "0.9", changefreq: "weekly" },
     { url: "/solutions", lastmod: today, priority: "0.9", changefreq: "weekly" },
     { url: "/company/contact-us", lastmod: today, priority: "0.8", changefreq: "monthly" },
     
     // Product pages
-    { url: "/products/interactive-display", lastmod: today, priority: "0.8", changefreq: "weekly" },
-    { url: "/products/led-display", lastmod: today, priority: "0.8", changefreq: "weekly" },
-    { url: "/products/lcd-video", lastmod: today, priority: "0.8", changefreq: "weekly" },
-    { url: "/products/monitors-video", lastmod: today, priority: "0.8", changefreq: "weekly" },
-    { url: "/products/wall-controller", lastmod: today, priority: "0.8", changefreq: "weekly" },
-    { url: "/products/conferencing-products", lastmod: today, priority: "0.8", changefreq: "weekly" },
+    { url: "/Products/interactive-display", lastmod: today, priority: "0.8", changefreq: "weekly" },
+    { url: "/Products/led-display", lastmod: today, priority: "0.8", changefreq: "weekly" },
+    { url: "/Products/lcd-video", lastmod: today, priority: "0.8", changefreq: "weekly" },
+    { url: "/Products/monitors-video", lastmod: today, priority: "0.8", changefreq: "weekly" },
+    { url: "/Products/wall-controller", lastmod: today, priority: "0.8", changefreq: "weekly" },
+    { url: "/Products/conferencing-products", lastmod: today, priority: "0.8", changefreq: "weekly" },
     
     // Solution pages
     { url: "/solutions/retail", lastmod: today, priority: "0.8", changefreq: "monthly" },
