@@ -360,25 +360,15 @@ const highlights = [
 
                     <!-- Action Button -->
                     <div class="relative">
-                      <button 
+                      <a 
+                        href={`/Product/${product.slug}`} 
                         class="w-full px-6 py-3 bg-blue-600 text-white rounded-xl hover:bg-blue-700 transition-all duration-300 flex items-center justify-center gap-2"
-                        data-product={JSON.stringify(product)}
                       >
                         <span>View More</span>
-                        <svg 
-                          class="w-5 h-5" 
-                          viewBox="0 0 24 24" 
-                          fill="none" 
-                          stroke="currentColor"
-                        >
-                          <path 
-                            stroke-linecap="round" 
-                            stroke-linejoin="round" 
-                            stroke-width="2" 
-                            d="M9 5l7 7-7 7"
-                          />
+                        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                         </svg>
-                      </button>
+                      </a>
                     </div>
                   </div>
                 </div>

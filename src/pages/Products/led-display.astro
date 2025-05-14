@@ -195,11 +195,11 @@ const highlights = [
 
 <Layout title={title} description={description} sd={sd} keywords={keywords}>
   <div class="bg-white" x-data="{ activeSection: '01' }">
-    <!-- Header Section -->
+    <!-- Header Section --> 
     <div class="relative h-[60vh] overflow-hidden bg-gray-900">
       <div class="absolute inset-0 flex items-center justify-center">
         <img
-          src="/LED Displays/led-video.png"
+          src="/LED Displays/led-video.jpg"
           alt="LED Display Solutions"
           class="w-full h-full object-contain md:object-cover max-h-full"
           loading="eager"
@@ -315,19 +315,19 @@ const highlights = [
             <!-- Category Links -->
             <div class="space-y-2 pt-4 border-t border-gray-200">
               <a 
-                href="/products/commercial-display" 
+                href="/solutions/corporate" 
                 class="block px-4 py-2 text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors"
               >
-                Commercial Display
+                Corporate Display
               </a>
               <a 
-                href="/products/rental" 
+                href="/solutions/retail" 
                 class="block px-4 py-2 text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors"
               >
-                Rental
+                Retail
               </a>
               <a 
-                href="/products/dooh" 
+                href="/solutions/dooh-airport" 
                 class="block px-4 py-2 text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors"
               >
                 DOOH
@@ -341,13 +341,12 @@ const highlights = [
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               {
-                id: 'xeb-p15',
+                slug: 'xeb-series-p15',
                 name: 'XEB Series P1.5',
-                description: 'The XEB Series P1.5 from Lovosis Technology delivers ultra-fine pixel pitch for superior clarity and precision, making it ideal for high-end business presentations, control rooms, and premium advertising displays. With its P1.5 pixel pitch, this display offers exceptional image quality, ensuring every detail is rendered sharply and vividly.Engineered for professional environments, the XEB Series P1.5 provides seamless integration and is built for reliable performance with minimal maintenance. Perfect for those looking to elevate their visual communication and content engagement to the next level. Ready to transform your business visuals? Contact us today at Lovosis Technology to learn more about the XEB Series P1.5.',
+                description: 'The XEB Series P1.5 from Lovosis Technology delivers ultra-fine pixel pitch for superior clarity and precision...',
                 image: '/LED Displays/img1.webp',
                 category: 'xeb',
-                features: ['ultra-fine pixel pitch display', 'precision display technology', 'seamless integration', 'reliable performance'],
-                price: 'Contact for Price'
+                features: ["Ultra-fine pixel pitch", "Precision display", "Professional grade", "High brightness", "Vivid colors", "Seamless integration"],
               },
               {
                 id: 'xeb-p12',
@@ -356,7 +355,8 @@ const highlights = [
                 image: '/LED Displays/img2.jpeg',
                 category: 'xeb',
                 features: ['ultra-high-definition display', 'P1.2 pixel pitch display', 'crystal-clear visuals', 'reliable performance'],
-                price: 'Contact for Price'
+                price: 'Contact for Price',
+                slug: 'xeb-series-p12'
               },
               {
                 id: 'xeb-p18',
@@ -365,7 +365,8 @@ const highlights = [
                 image: '/LED Displays/img3.jpeg',
                 category: 'xeb',
                 features: ['high-resolution display', 'P1.8 pixel pitch display', 'sharp visuals', 'vivid color accuracy', 'seamless viewing experience'  ],
-                price: 'Contact for Price'
+                price: 'Contact for Price',
+                slug: 'xeb-series-p18'
               },
               {
                 id: 'u-p09',
@@ -374,7 +375,8 @@ const highlights = [
                 image: '/LED Displays/img4.webp',
                 category: 'cdvu',
                 features: ['U Series P0.9', 'ultra-fine pixel pitch', 'high-definition display', 'breathtaking visual precision'],
-                price: 'Contact for Price'
+                price: 'Contact for Price',
+                slug: 'u-series-p09'
               },
               {
                 id: 'u-p12',
@@ -383,7 +385,8 @@ const highlights = [
                 image: '/LED Displays/img5.jpg',
                 category: 'cdvu',
                 features: ['U Series P1.2', 'precision display', 'high-definition display', 'accurate image representation'],
-                price: 'Contact for Price'
+                price: 'Contact for Price',
+                slug: 'u-series-p12'
               },
               {
                 id: 'u-p15',
@@ -392,7 +395,8 @@ const highlights = [
                 image: '/LED Displays/img6.jpeg',
                 category: 'cdvu',
                 features: ['U Series P1.5', 'high-quality display', 'outstanding clarity', 'seamless performance'],
-                price: 'Contact for Price'
+                price: 'Contact for Price',
+                slug: 'u-series-p15'
               }
             ].map(product => (
               <div 
@@ -428,9 +432,9 @@ const highlights = [
                   </div>
                   
                   <div class="flex items-center justify-center mt-6">
-                    <button 
+                    <a 
+                      href={`/Product/${product.slug}`}
                       class="w-full bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-xl px-6 py-3 hover:from-blue-700 hover:to-blue-800 transform hover:-translate-y-0.5 transition-all duration-200 shadow-lg hover:shadow-xl flex items-center justify-center group relative overflow-hidden"
-                      data-product={JSON.stringify(product)}
                     >
                       <span class="relative z-10 flex items-center gap-2">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -440,7 +444,7 @@ const highlights = [
                         <span class="font-semibold">View Product</span>
                       </span>
                       <div class="absolute inset-0 bg-gradient-to-r from-blue-700 to-blue-800 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-200"></div>
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -811,94 +815,3 @@ const highlights = [
     transform: translateY(20px);
   }
 </style>
-
-<!-- filepath: c:\Users\Adeeb\OneDrive - K L University\Desktop\office\yaay\display2025\src\components\SEO\OutdoorLEDSchema.astro -->
----
-// Import any necessary dependencies here
----
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org/",
-  "@type": "Product",
-  "name": "Outdoor LED Billboards",
-  "description": "Weather-resistant high-brightness LED billboards for outdoor advertising. Features IP65 waterproof rating, 7000+ nit brightness, and remote content management system for effective outdoor digital signage.",
-  "image": "https://lovosisdisplay.com/images/outdoor-led-billboard.jpg",
-  "brand": {
-    "@type": "Brand",
-    "name": "Lovosis Display"
-  },
-  "offers": {
-    "@type": "AggregateOffer",
-    "priceCurrency": "USD",
-    "lowPrice": "5799.00",
-    "highPrice": "25999.00",
-    "offerCount": "6",
-    "availability": "https://schema.org/InStock"
-  },
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.6",
-    "reviewCount": "32"
-  },
-  "review": {
-    "@type": "Review",
-    "reviewRating": {
-      "@type": "Rating",
-      "ratingValue": "5",
-      "bestRating": "5"
-    },
-    "author": {
-      "@type": "Person",
-      "name": "Robert Anderson"
-    },
-    "datePublished": "2023-11-18",
-    "reviewBody": "We've had our outdoor LED billboard through all weather conditions for over a year now. The display remains vibrant even in direct sunlight, and it's survived heavy rain and snow without issues. Excellent product!"
-  }
-}
-</script>
-
-<!-- filepath: c:\Users\Adeeb\OneDrive - K L University\Desktop\office\yaay\display2025\src\components\SEO\CommercialLEDSchema.astro -->
----
-// Import any necessary dependencies here
----
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org/",
-  "@type": "Product",
-  "name": "Commercial LED Video Walls",
-  "description": "High-resolution LED video walls for commercial spaces with superior brightness and contrast. Designed for retail environments, corporate lobbies, and event venues offering seamless viewing experience.",
-  "image": "https://images.unsplash.com/photo-1551844931-cfcfecb3636f?w=800",
-  "brand": {
-    "@type": "Brand",
-    "name": "Lovosis Display"
-  },
-  "offers": {
-    "@type": "Offer",
-    "price": "7999.00",
-    "priceCurrency": "USD",
-    "availability": "https://schema.org/InStock",
-    "url": "https://lovosisdisplay.com/products/led-display/commercial-video-walls"
-  },
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.8",
-    "reviewCount": "42"
-  },
-  "review": {
-    "@type": "Review",
-    "reviewRating": {
-      "@type": "Rating",
-      "ratingValue": "5",
-      "bestRating": "5"
-    },
-    "author": {
-      "@type": "Person",
-      "name": "Jennifer Wilson"
-    },
-    "datePublished": "2023-12-10",
-    "reviewBody": "The commercial LED video wall we installed in our corporate headquarters has been a game-changer. The image quality is exceptional even in our brightly lit lobby, and the seamless design creates a truly immersive experience for visitors."
-  }
-}
-</script>

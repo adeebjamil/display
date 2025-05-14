@@ -493,3 +493,129 @@ const locations = [
     text-decoration: underline;
   }
 </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PoP-Up Modal Code.
+
+
+<!-- Product Modal (SAVE FOR LATER USE) -->
+<div id="productModal" class="fixed inset-0 bg-black/50 hidden z-50">
+  <div class="fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-6xl bg-white rounded-2xl shadow-2xl">
+    <div class="relative p-8 max-h-[90vh] overflow-y-auto">
+      <!-- Logo in top left -->
+      <div class="absolute top-6 left-6">
+        <img 
+          src="/logo (1).svg" 
+          alt="Lovosis Display Logo" 
+          class="h-10 w-auto"
+        />
+      </div>
+      
+      <!-- Close Button -->
+      <button class="close-modal absolute top-6 right-6 text-gray-500 hover:text-gray-700">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+        </svg>
+      </button>
+
+      <!-- Modal Content -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mt-10">
+        <div>
+          <img id="modalImage" src="" alt="" class="w-full rounded-xl shadow-xl mb-6">
+          
+          <!-- Reviews Section -->
+          <div class="bg-gray-50 rounded-xl p-6 mt-6">
+            <div class="flex items-center justify-between mb-4">
+              <h4 class="text-xl font-semibold text-gray-900">Customer Reviews</h4>
+              <div class="flex items-center gap-1">
+                <div class="flex items-center">
+                  {[1, 2, 3, 4, 5].map((star) => (
+                    <svg class="w-6 h-6 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                    </svg>
+                  ))}
+                </div>
+                <span class="text-lg font-bold text-gray-900">4.8</span>
+                <span class="text-gray-600">(124 reviews)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="space-y-8">
+          <div>
+            <h3 id="modalTitle" class="text-4xl font-bold text-gray-900 mb-4"></h3>
+            <p id="modalDescription" class="text-gray-600 text-lg mb-6"></p>
+            
+            <!-- Price with Badge -->
+            <div class="mb-8">
+              <div class="p-4 bg-blue-50 rounded-xl">
+                <p class="text-gray-800 leading-relaxed">
+                  <span class="font-semibold text-blue-600">Powerful collaboration tool</span> with advanced touch precision and 
+                  intelligent interactive features for seamless professional engagement.
+                </p>
+              </div>
+            </div>
+
+            <!-- Features -->
+            <div class="mb-8">
+              <h4 class="text-xl font-semibold text-gray-900 mb-4">Key Features</h4>
+              <div id="modalFeatures" class="space-y-3"></div>
+            </div>
+
+            <!-- Contact Options -->
+            <div class="space-y-4">
+              <h4 class="text-xl font-semibold text-gray-900 mb-4">Contact Us</h4>
+              <div class="grid grid-cols-2 gap-4">
+                <a href="tel:+918409528159" class="flex items-center justify-center gap-2 px-6 py-4 bg-blue-600 text-white rounded-xl hover:bg-blue-700 transition-colors">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                  </svg>
+                  <span class="font-semibold">+91 8409528159</span>
+                </a>
+                <a href="https://wa.me/918409528159" target="_blank" class="flex items-center justify-center gap-2 px-6 py-4 bg-green-500 text-white rounded-xl hover:bg-green-600 transition-colors">
+                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12.012 2c-5.506 0-9.989 4.478-9.99 9.984a9.964 9.964 0 001.333 4.993L2 22l5.233-1.237a9.994 9.994 0 004.779 1.217h.004c5.505 0 9.988-4.478 9.989-9.984 0-2.669-1.037-5.176-2.922-7.062A9.935 9.935 0 0012.012 2z"/>
+                  </svg>
+                  <span class="font-semibold">WhatsApp</span>
+                </a>
+              </div>
+              <a 
+                href="mailto:adeebjamil0707@gmail.com" 
+                class="w-full px-6 py-4 bg-gray-100 text-gray-800 rounded-xl hover:bg-gray-200 transition-colors flex items-center justify-center gap-2"
+              >
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                </svg>
+                <span class="font-semibold">adeebjamil0707@gmail.com</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
