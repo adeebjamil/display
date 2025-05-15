@@ -6,8 +6,7 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro",
-    "install": "npm install --legacy-peer-deps"
+    "astro": "astro"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.4.0",
