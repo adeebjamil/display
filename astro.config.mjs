@@ -6,5 +6,10 @@ import sitemap from '@astrojs/sitemap';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://unv-ledmodules.com',
-  integrations: [tailwind(), sitemap()]
+  integrations: [
+    tailwind(),
+    sitemap({
+      filter: (page) => page.indexOf('/admin') === -1,
+    }),
+  ],
 });
