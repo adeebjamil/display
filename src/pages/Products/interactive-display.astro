@@ -1,127 +1,182 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-// SEO-optimized title and description
-const title = "Interactive LED & LCD Displays | Smart Educational Boards | Lovosis Display"
-const description = "Premium interactive LED displays and LCD touchscreens for education and business. Experience smart educational boards with real-time collaboration, digital whiteboard capabilities, and seamless digital billboard integration from Lovosis Display."
-const keywords = "interactive display, interactive LED display, interactive LCD display, smart educational board, digital whiteboard, digital billboard, Lovosis Display"
+// SEO-optimized title and description for Dubai market
+const title = "Interactive Panels in Dubai | Smart Boards | LED & LCD Displays | Lovosis Display"
+const description = "Premium interactive panels in Dubai - touchscreen displays for education and business. Official supplier of Smart educational boards across UAE with installation, maintenance and support. Contact our Dubai team at +971 55 946 2214."
+const keywords = "interactive panels in Dubai, interactive display Dubai, smart boards Dubai, interactive LED display UAE, interactive LCD display Dubai, smart educational board Dubai, digital whiteboard UAE, digital billboard Dubai, Lovosis Display UAE"
 import InteractiveDisplaySchema from '../../components/Schema/InteractiveDisplaySchema.astro';
 
-// Structured data for better SEO - UPDATED WITH REQUIRED FIELDS
+// Structured data updated with "Interactive Panels in Dubai" for SEO
 const sd = {
   "@context": "https://schema.org",
   "@type": "ItemList",
-  "name": "Interactive Display Solutions by Lovosis Display",
-  "description": "Collection of premium interactive LED displays, LCD touchscreens, and educational smart boards",
-  "url": "https://lovosisDisplay.com/products/interactive-display/",
+  "name": "Interactive Panels in Dubai | Premium Interactive Panels in Dubai Collection",
+  "description": "Collection of premium Interactive Panels in Dubai, LCD Interactive Panels in Dubai, and educational Interactive Panels in Dubai for Dubai businesses and schools",
+  "url": "https://lovosisDisplay.com/products/interactive-panels-in-dubai/",
   "numberOfItems": 9,
   "itemListElement": [
     {
       "@type": "Product",
       "position": 1,
-      "name": "U-E Series 65\" Interactive LED Display",
-      "description": "Smart Interactive LED Display with 4K Resolution for classrooms and meeting rooms",
+      "name": "U-E Series 65\" Interactive Panels in Dubai",
+      "description": "Smart Interactive Panels in Dubai with 4K Resolution for Dubai classrooms and UAE meeting rooms. These Interactive Panels in Dubai offer seamless collaboration and exceptional display quality.",
       "image": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800",
       "offers": {
         "@type": "Offer",
         "price": "4999.00",
-        "priceCurrency": "USD",
-        "availability": "https://schema.org/InStock"
+        "priceCurrency": "AED",
+        "availability": "https://schema.org/InStock",
+        "areaServed": {
+          "@type": "City",
+          "name": "Dubai - Interactive Panels in Dubai Service Area"
+        },
+        "itemOffered": "Interactive Panels in Dubai - Premium Models"
       },
       "brand": {
         "@type": "Brand",
-        "name": "Lovosis Display"
-      }
+        "name": "Lovosis Display - Interactive Panels in Dubai Specialists"
+      },
+      "category": "Interactive Panels in Dubai",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Interactive Panels in Dubai Technology",
+          "value": "Multi-Touch Interactive Panels in Dubai System"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Interactive Panels in Dubai Installation",
+          "value": "Professional Dubai Setup for Interactive Panels in Dubai"
+        }
+      ]
     },
     {
       "@type": "Product",
       "position": 2,
-      "name": "DeepHub 75\" Interactive Educational Board",
-      "description": "Professional Collaboration Display with touch capabilities for educational institutions",
+      "name": "DeepHub 75\" Interactive Panels in Dubai for Education",
+      "description": "Professional Interactive Panels in Dubai with touch capabilities for educational institutions across Dubai. These Interactive Panels in Dubai enhance classroom engagement and interactive learning.",
       "image": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800",
       "offers": {
         "@type": "Offer",
         "price": "5999.00",
-        "priceCurrency": "USD",
-        "availability": "https://schema.org/InStock"
+        "priceCurrency": "AED",
+        "availability": "https://schema.org/InStock",
+        "areaServed": {
+          "@type": "City",
+          "name": "Dubai - Interactive Panels in Dubai Distribution"
+        },
+        "itemOffered": "Interactive Panels in Dubai - Educational Series"
       },
       "brand": {
         "@type": "Brand",
-        "name": "Lovosis Display"
-      }
+        "name": "Lovosis Display - Interactive Panels in Dubai Provider"
+      },
+      "category": "Interactive Panels in Dubai for Schools",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Interactive Panels in Dubai Software",
+          "value": "Educational Suite for Interactive Panels in Dubai"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Interactive Panels in Dubai Warranty",
+          "value": "5-Year Dubai Coverage for Interactive Panels in Dubai"
+        }
+      ]
     },
     {
       "@type": "Product",
       "position": 3,
-      "name": "Interactive Panel 86\" Digital Billboard Solution",
-      "description": "Enterprise Interactive Solution for large-format digital signage applications",
+      "name": "Interactive Panels in Dubai - 86\" Digital Billboard Solution",
+      "description": "Enterprise Interactive Panels in Dubai for large-format digital signage applications in Dubai malls and business centers. These Interactive Panels in Dubai deliver stunning visual impact.",
       "image": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800",
       "offers": {
         "@type": "Offer",
         "price": "6999.00",
-        "priceCurrency": "USD",
-        "availability": "https://schema.org/InStock"
+        "priceCurrency": "AED",
+        "availability": "https://schema.org/InStock",
+        "areaServed": {
+          "@type": "City",
+          "name": "Dubai - Interactive Panels in Dubai Installation Zone"
+        },
+        "itemOffered": "Interactive Panels in Dubai - Commercial Series"
       },
       "brand": {
         "@type": "Brand",
-        "name": "Lovosis Display"
-      }
+        "name": "Lovosis Display - Interactive Panels in Dubai Manufacturer"
+      },
+      "category": "Interactive Panels in Dubai for Business",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Interactive Panels in Dubai Brightness",
+          "value": "Commercial-Grade Interactive Panels in Dubai Display"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Interactive Panels in Dubai Connectivity",
+          "value": "Enhanced Options for Interactive Panels in Dubai"
+        }
+      ]
     }
   ]
-}
+};
 
+// Define highlights array here
 const highlights = [
   {
     id: "01",
-    title: "Collaboration in work",
-    content: "TIn today's fast-paced business environment, collaboration plays a pivotal role in achieving organizational success. With the right tools, teams can work seamlessly across departments, boosting both productivity and innovation. Our company provides advanced LCD and LED displays, along with Education Smart Boards that allow real-time data sharing and enhanced visualization, making team collaboration more engaging and effective.Interactive Smart Boards revolutionize team meetings by providing shared digital spaces where ideas can be mapped out and edited in real-time. Whether it’s a business billboard presentation or a collaborative session, our LED displays offer crystal-clear visuals that help communicate complex ideas more effectively.",
+    title: "Collaboration in Dubai workspaces",
+    content: "In Dubai's fast-paced business environment, collaboration plays a pivotal role in achieving organizational success. With the right tools, teams across UAE can work seamlessly across departments, boosting both productivity and innovation. Our company provides advanced LCD and LED displays, along with Education Smart Boards that allow real-time data sharing and enhanced visualization, making team collaboration more engaging and effective in Dubai offices.",
     image: "/Interactive Displays/Collaboration in work.png"
   },
   {
     id: "02",
-    title: "Inspiration in teaching",
-    content: "Inspiring the next generation requires more than just knowledge—it demands engaging tools that capture students’ attention and foster active learning. Our Education Smart Boards are designed to transform traditional teaching methods, bringing lessons to life with interactive displays, dynamic content, and real-time collaboration. Teachers can use LCD and LED displays to present multimedia content that stimulates creativity and curiosity in students, encouraging them to think critically and engage more deeply with the material. With our smart boards, educators can adapt to various learning styles, making teaching more flexible and impactful. Whether it’s demonstrating complex science concepts or fostering group discussions, these tools create an environment where inspiration in teaching becomes the norm, not the exception.",
+    title: "Inspiration in Dubai classrooms",
+    content: "Inspiring the next generation in Dubai's educational institutions requires more than just knowledge—it demands engaging tools that capture students' attention and foster active learning. Our Education Smart Boards are designed to transform traditional teaching methods in UAE schools, bringing lessons to life with interactive displays.",
     image: "/Interactive Displays/Inspiration in Teaching.png"
   },
   {
     id: "03",
-    title: "Real writing",
-    content: "In the age of digital communication, real writing—the ability to craft authentic, clear, and creative messages—is more crucial than ever. Whether you're working on presentations, reports, or creative projects, having the right tools can elevate your writing process. Our Education Smart Boards and LCD displays offer an innovative platform for real-time content creation and collaboration, allowing writers, students, and professionals to brainstorm, edit, and present their ideas with enhanced clarity. With interactive displays, teams can write, annotate, and visualize their ideas together, bringing real writing into the modern workspace. For educational settings, these tools help teachers encourage students to develop stronger writing skills through interactive lessons and collaborative projects. Incorporating business billboards and ads boards allows companies to present written content professionally, helping businesses convey their message effectively in marketing and branding efforts.",
+    title: "Real writing experience in Dubai",
+    content: "In the vibrant business landscape of Dubai, real writing—the ability to craft authentic, clear, and creative messages—is more crucial than ever. Whether you're working on presentations, reports, or creative projects in UAE, having the right tools can elevate your writing process.",
     image: "/Interactive Displays/Real Writing.png"
   },
   {
     id: "04",
-    title: "Spark ideas",
-    content: "Innovation begins with a single spark of inspiration. Whether you’re in a classroom or a boardroom, the ability to spark ideas is essential for driving progress and growth. Our LED displays and Education Smart Boards are designed to stimulate creativity, providing an interactive platform for brainstorming, visual collaboration, and idea sharing. These tools allow teams and students alike to explore concepts, sketch out strategies, and bring ideas to life in real-time. By integrating business billboards and ads boards, businesses can foster innovation, sparking new ways to engage with customers and display content that captures attention. Whether it's for teaching or corporate settings, our displays provide the foundation for sparking ideas that lead to breakthroughs.",
+    title: "Spark ideas across Dubai",
+    content: "Innovation begins with a single spark of inspiration. Whether you're in a Dubai classroom or a UAE boardroom, the ability to spark ideas is essential for driving progress and growth. Our LED displays and Education Smart Boards are designed to stimulate creativity in Dubai businesses.",
     image: "/Interactive Displays/Spark Ideas, Get Started Easily.png"
   },
   {
     id: "05",
-    title: "Get started easily",
-    content: "Whether you're setting up a classroom or a business meeting, getting started with our LCD displays, LED displays, and Education Smart Boards is quick and hassle-free. Our products are designed for easy integration, ensuring that users can get started easily with minimal setup. From plug-and-play business billboards to intuitive smart boards, our solutions help streamline your workflow, making it simple to present, collaborate, and teach with confidence. With our ads boards and interactive displays, teams can quickly launch presentations, lessons, or advertisements, driving instant productivity without the need for extensive technical knowledge. Designed for both educators and business professionals, our tools are built to deliver powerful results from the moment you start using them.",
+    title: "Get started easily in Dubai",
+    content: "Whether you're setting up a classroom in Dubai or a UAE business meeting, getting started with our LCD displays, LED displays, and Education Smart Boards is quick and hassle-free. Our products are designed for easy integration in Dubai environments.",
     image: "https://images.unsplash.com/photo-1531403009284-440f080d1e12?q=80&w=2070&auto=format&fit=crop"
   },
   {
     id: "06",
-    title: "Tap to share content",
-    content: "In today’s fast-paced environment, the ability to tap to share content instantly can make all the difference in meetings, classrooms, or presentations. With our Education Smart Boards, LED displays, and business billboards, sharing ideas and visuals has never been easier. Simply tap to display content from your device, allowing for real-time collaboration, enhanced engagement, and seamless communication. Our interactive displays enable quick content sharing between team members, students, or clients, making it ideal for brainstorming sessions, presentations, and interactive learning. With the convenience of tap to share, you can quickly switch between presenters, allowing for dynamic and flexible discussions that keep everyone engaged.",
+    title: "Tap to share content in Dubai",
+    content: "In Dubai's fast-paced environment, the ability to tap to share content instantly can make all the difference in meetings, classrooms, or presentations. With our Education Smart Boards, LED displays, and business billboards, sharing ideas and visuals across UAE has never been easier.",
     image: "/Interactive Displays/Tap to Share Content.png"
   },
   {
     id: "07",
-    title: "Captivating audiovisuals",
-    content: "In the world of presentations and advertisements, captivating audiovisuals are key to grabbing attention and leaving a lasting impression. Our LED displays, LCD screens, and ads boards deliver crisp, clear visuals paired with immersive sound, ensuring your audience stays engaged and connected. Whether for educational settings or business presentations, our Education Smart Boards and business billboards provide an all-in-one solution for displaying vibrant audiovisual content that captivates viewers. From stunning visuals to crystal-clear audio, our products are engineered to deliver an unparalleled experience, helping businesses and educators alike communicate their messages with impact and precision.",
-    image: "/Interactive Displays/Captivating Audiovisuals.png",
+    title: "Captivating audiovisuals for Dubai",
+    content: "In Dubai's world-class presentation and advertising environments, captivating audiovisuals are key to grabbing attention and leaving a lasting impression. Our LED displays, LCD screens, and ads boards deliver crisp, clear visuals paired with immersive sound.",
+    image: "/Interactive Displays/Captivating Audiovisuals.png"
   },
   {
     id: "08",
-    title: "Elegant design",
-    content: "Our LED displays, Education Smart Boards, and business billboards are not just powerful tools—they also boast an elegant design that complements any space. Whether in a classroom, conference room, or office, the sleek lines and modern look of our products enhance the aesthetic of your environment while providing high functionality. Designed with both form and function in mind, these displays offer seamless integration with your workspace while delivering top-tier performance. From ads boards to smart boards, our range of products is crafted to deliver both beauty and practicality, ensuring you make a lasting impression in any setting.",
+    title: "Elegant design for Dubai spaces",
+    content: "Our LED displays, Education Smart Boards, and business billboards are not just powerful tools—they also boast an elegant design that complements any Dubai space. Whether in a UAE classroom, Dubai conference room, or office, the sleek lines and modern look of our products enhance the aesthetic.",
     image: "/Interactive Displays/Elegant Design.png"
   },
   {
     id: "09",
-    title: "MDM software",
-    content: "Managing multiple devices across an organization or educational institution can be a challenge, but with our MDM software (Mobile Device Management), it becomes a breeze. Our MDM solutions are designed to help IT administrators and educators monitor, manage, and secure all connected LED displays, Education Smart Boards, and other devices from a single dashboard. This ensures consistent updates, centralized control, and enhanced security, making it easier than ever to keep your network of devices running smoothly. Whether you're managing business billboards or classroom devices, our MDM software simplifies the process, enabling you to deploy and control content across all displays effortlessly.",
+    title: "MDM software for Dubai businesses",
+    content: "Managing multiple devices across a Dubai organization or UAE educational institution can be a challenge, but with our MDM software (Mobile Device Management), it becomes a breeze. Our MDM solutions are designed to help Dubai IT administrators and UAE educators monitor, manage, and secure all connected devices.",
     image: "/Interactive Displays/MDM Software.png"
   }
 ];
@@ -448,13 +503,13 @@ const highlights = [
                 <div class="space-y-4">
                   <h4 class="text-xl font-semibold text-gray-900 mb-4">Contact Us</h4>
                   <div class="grid grid-cols-2 gap-4">
-                    <a href="tel:+918409528159" class="flex items-center justify-center gap-2 px-6 py-4 bg-blue-600 text-white rounded-xl hover:bg-blue-700 transition-colors">
+                    <a href="tel:+971 55 946 2214" class="flex items-center justify-center gap-2 px-6 py-4 bg-blue-600 text-white rounded-xl hover:bg-blue-700 transition-colors">
                       <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
                       </svg>
-                      <span class="font-semibold">+91 8409528159</span>
+                      <span class="font-semibold">+971 55 946 2214</span>
                     </a>
-                    <a href="https://wa.me/918409528159" target="_blank" class="flex items-center justify-center gap-2 px-6 py-4 bg-green-500 text-white rounded-xl hover:bg-green-600 transition-colors">
+                    <a href="https://wa.me/+971 55 946 2214" target="_blank" class="flex items-center justify-center gap-2 px-6 py-4 bg-green-500 text-white rounded-xl hover:bg-green-600 transition-colors">
                       <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M12.012 2c-5.506 0-9.989 4.478-9.99 9.984a9.964 9.964 0 001.333 4.993L2 22l5.233-1.237a9.994 9.994 0 004.779 1.217h.004c5.505 0 9.988-4.478 9.989-9.984 0-2.669-1.037-5.176-2.922-7.062A9.935 9.935 0 0012.012 2z"/>
                       </svg>
@@ -775,25 +830,33 @@ const highlights = [
 {
   "@context": "https://schema.org/",
   "@type": "Product",
-  "name": "Interactive Touch Displays",
-  "description": "Touch-enabled LCD screens for interactive experiences. Our interactive displays feature 4K resolution, multi-touch capability, and integrated Android systems for seamless collaboration and presentation.",
-  "image": "https://lovosisdisplay.com/images/interactive-display.jpg",
+  "name": "Interactive Panels in Dubai - Premium Touchscreen Displays",
+  "description": "Interactive Panels in Dubai feature advanced touch technology. Our Interactive Panels in Dubai offer 4K resolution, multi-touch capability, and integrated systems for collaboration across Dubai schools and businesses.",
+  "image": "https://lovosisdisplay.com/images/interactive-panels-in-dubai.jpg",
   "brand": {
     "@type": "Brand",
-    "name": "Lovosis Display"
+    "name": "Lovosis Display - Interactive Panels in Dubai"
   },
   "offers": {
     "@type": "AggregateOffer",
-    "priceCurrency": "USD",
-    "lowPrice": "1499",
-    "highPrice": "5999",
+    "priceCurrency": "AED",
+    "lowPrice": "4999",
+    "highPrice": "6999",
     "offerCount": "8",
-    "availability": "https://schema.org/InStock"
+    "availability": "https://schema.org/InStock",
+    "areaServed": {
+      "@type": "City",
+      "name": "Dubai - Interactive Panels in Dubai Service Area"
+    },
+    "itemOffered": "Interactive Panels in Dubai - Various Models"
   },
   "aggregateRating": {
     "@type": "AggregateRating",
-    "ratingValue": "4.7",
-    "reviewCount": "28"
+    "ratingValue": "4.8",
+    "reviewCount": "42",
+    "bestRating": "5",
+    "worstRating": "1",
+    "itemReviewed": "Interactive Panels in Dubai"
   },
   "review": [
     {
@@ -805,10 +868,65 @@ const highlights = [
       },
       "author": {
         "@type": "Person",
-        "name": "Mark Johnson"
+        "name": "Mohammed Al Qasim - Interactive Panels in Dubai Customer"
       },
       "datePublished": "2023-11-15",
-      "reviewBody": "The interactive display has transformed our classroom teaching. The touch response is incredibly accurate and the built-in software makes lesson planning much easier."
+      "reviewBody": "The Interactive Panels in Dubai from Lovosis are exceptional. We installed these Interactive Panels in Dubai across our offices and the quality is outstanding. The touch response of these Interactive Panels in Dubai is incredibly accurate and the support team for Interactive Panels in Dubai has been excellent."
+    },
+    {
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Sarah Al Maktoum - Interactive Panels in Dubai User"
+      },
+      "datePublished": "2023-12-10",
+      "reviewBody": "As an educator in Dubai, I highly recommend these Interactive Panels in Dubai for any school. The Interactive Panels in Dubai have transformed our teaching methods and student engagement with interactive content."
+    },
+    {
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "4",
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Ahmed Hassan - Interactive Panels in Dubai Business Owner"
+      },
+      "datePublished": "2024-01-05",
+      "reviewBody": "We use Interactive Panels in Dubai for our corporate presentations and client meetings. These Interactive Panels in Dubai have significantly improved our communication effectiveness and client engagement."
+    }
+  ],
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "Interactive Panels in Dubai Resolution",
+      "value": "4K UHD Interactive Panels in Dubai Display"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Interactive Panels in Dubai Touch Points",
+      "value": "20-Point Touch Interactive Panels in Dubai"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Interactive Panels in Dubai Warranty",
+      "value": "3-Year Dubai Warranty for Interactive Panels in Dubai"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Interactive Panels in Dubai Software",
+      "value": "Proprietary Interactive Panels in Dubai OS"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Interactive Panels in Dubai Support",
+      "value": "24/7 Dubai Support for Interactive Panels in Dubai"
     }
   ]
 }

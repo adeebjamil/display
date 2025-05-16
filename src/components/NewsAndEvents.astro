@@ -5,22 +5,22 @@ const successCases = [
     title: "UNV Smart Interactive Display for Al-Amal International School, Yemen",
     category: "Education",
     description: "Al-Amal International School, established in 1997, is focused on the Kg-Primary-Secondary education in Yemen.",
-    image: "/Success case/1.png",
-    link: "/success-cases/al-amal-school"
+    image: "/Success case/1.png"
+    
   },
   {
     title: "LED Displays Enhancing Visuals at Sheikh Zayed Festival",
     category: "Corporate",
     description: "The Sheikh Zayed Festival, a significant cultural event in Abu Dhabi, brings together Emirati heritage, arts, and traditions for global visitors. To elevate the visual experience during the 2024 festival, UNV LED displays were chosen to create stunning and immersive presentations.",
-    image: "/Success case/2.png",
-    link: "/success-cases/sheikh-zayed-festival"
+    image: "/Success case/2.png"
+    
   },
   {
     title: "UNV LCD Display for the Institute of Technology, Cambodia",
     category: "Corporate",
     description: "The Institute of Technology of Cambodia is a higher education institution in Cambodia. Enrollment is approximately 3,500 undergraduate students and 200 graduate students.",
-    image: "/Success case/3.png",
-    link: "/success-cases/cambodia-tech-institute"
+    image: "/Success case/3.png"
+    
   }
 ];
 ---
@@ -30,8 +30,8 @@ const successCases = [
   
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       {successCases.map((item, index) => (
-        <a 
-          href={item.link}
+        <a
+          
           class="group bg-white shadow-lg rounded-2xl overflow-hidden transform transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/20"
           style={`animation-delay: ${index * 200}ms`}
         >

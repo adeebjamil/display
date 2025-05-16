@@ -1,706 +1,3 @@
-# Astro Starter Kit: Basics
-
-```sh
-npm create astro@latest -- --template basics
-```
-
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
-
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
-
-
-
-
-
-
-
-
-
-
-
-
-
-
----
-import Layout from '../../layouts/Layout.astro';
-// SEO-optimized title and description targeting display technology keywords
-const title = "Airport Digital Signage Solutions | LED Display Walls & LCD Screens | Digital Billboards"
-const description = "Transform airport communication with high-brightness LED displays, LCD video walls, and digital billboard solutions. Professional DOOH technology for check-in areas, terminals, and gate information displays."
-
-// Structured data for better search visibility
-const sd = {
-  "@context": "https://schema.org",
-  "@type": "Product",
-  "name": "Airport Digital Signage Solutions",
-  "description": "Professional LED displays, LCD screens, and digital billboard solutions designed specifically for airport environments",
-  "brand": {
-    "@type": "Brand",
-    "name": "Lovosis Display",
-    "logo": "https://www.lovosisdisplay.com/logo.png"
-  },
-  "category": "Digital Display Technology",
-  "offers": {
-    "@type": "AggregateOffer",
-    "priceCurrency": "USD",
-    "availability": "https://schema.org/InStock"
-  },
-  "image": "https://img.freepik.com/free-photo/modern-airport-terminal-with-digital-displays_53876-123995.jpg",
-  "applicationCategory": "Airport Information Systems",
-  "audience": {
-    "@type": "Audience",
-    "audienceType": "Airport Operators"
-  },
-  "isRelatedTo": [
-    {
-      "@type": "Product",
-      "name": "LED Video Wall Display Systems",
-      "description": "High-brightness LED display solutions for airport terminals and concourses"
-    },
-    {
-      "@type": "Product",
-      "name": "LCD Information Screens",
-      "description": "Ultra-narrow bezel LCD display panels for flight information and wayfinding"
-    },
-    {
-      "@type": "Product",
-      "name": "Digital Billboard Systems",
-      "description": "Large format digital advertising displays for airports"
-    }
-  ]
-}
-
-
-const features = [
-  {
-    title: "LCD Display Walls",
-    description: "Ultra-thin bezels for seamless information delivery",
-    image: "https://img.freepik.com/free-photo/digital-information-board-airport_53876-129456.jpg",
-    specs: [
-      { icon: "resolution", text: "4K Resolution" },
-      { icon: "brightness", text: "1000+ nits Brightness" },
-      { icon: "bezel", text: "0.88mm Ultra Narrow Bezel" }
-    ],
-    gradient: "from-blue-600 to-cyan-400"
-  },
-  {
-    title: "LED Video Walls",
-    description: "Fine pixel pitch for stunning visual impact",
-    image: "https://img.freepik.com/free-photo/led-wall-display-airport-terminal_53876-125789.jpg",
-    specs: [
-      { icon: "pixel", text: "1.2mm Pixel Pitch" },
-      { icon: "brightness", text: "6000 nits Brightness" },
-      { icon: "contrast", text: "10000:1 Contrast Ratio" }
-    ],
-    gradient: "from-purple-600 to-pink-400"
-  }
-];
-
-const locations = [
-  {
-    title: "Check-in Areas",
-    description: "Flight information and wayfinding displays for seamless passenger flow",
-    image: "https://img.freepik.com/free-photo/check-counter-with-digital-displays_53876-127834.jpg",
-    stats: { displays: "50+", coverage: "100%" }
-  },
-  {
-    title: "Terminal Concourse",
-    description: "Large format LED walls for advertising and passenger engagement",
-    image: "https://img.freepik.com/free-photo/airport-terminal-concourse-led-display_53876-124567.jpg",
-    stats: { displays: "100+", engagement: "85%" }
-  },
-  {
-    title: "Gate Areas",
-    description: "Real-time flight information and targeted advertising displays",
-    image: "https://img.freepik.com/free-photo/gate-information-display-airport_53876-126789.jpg",
-    stats: { displays: "200+", accuracy: "99.9%" }
-  }
-];
----
-
-<Layout title={title} description={description} sd={sd}>
-  <main class="overflow-hidden bg-white">
-    <!-- Hero Section -->
-    <section class="relative h-[70vh] bg-white">
-      <div class="h-full flex flex-col">
-        {/* Header Image */}
-        <div class="relative h-full">
-          <img 
-            src="https://img.freepik.com/free-photo/modern-airport-terminal-with-digital-displays_53876-123995.jpg" 
-            alt="Airport Terminal with Digital Displays"
-            class="w-full h-full object-cover"
-          />
-          <div class="absolute inset-0 bg-gradient-to-r from-gray-900/80 to-gray-900/60"></div>
-          
-          {/* Content Overlay */}
-          <div class="absolute inset-0 flex items-center justify-center">
-            <div class="text-center px-4">
-              <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 animate-fade-up">
-                Revolutionize Airport
-                <span class="bg-gradient-to-r from-blue-400 to-purple-400 text-transparent bg-clip-text">
-                  Visual Communication
-                </span>
-              </h1>
-              <p class="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto mb-12 animate-fade-up animation-delay-200">
-                Transform passenger experience with next-generation digital display solutions
-              </p>
-              <div class="flex flex-wrap justify-center gap-6 animate-fade-up animation-delay-400">
-                <a href="#solutions" class="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full font-semibold hover:scale-105 transition-all">
-                  Explore Solutions
-                </a>
-                <a href="#contact" class="px-8 py-4 bg-white text-gray-900 rounded-full font-semibold hover:bg-gray-100 transition-all">
-                  Schedule Demo
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Display Solutions -->
-    <section id="solutions" class="py-24 bg-white">
-      <div class="container mx-auto px-4">
-        <div class="max-w-3xl mx-auto text-center mb-20">
-          <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Display Solutions
-          </h2>
-          <div class="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto mb-6"></div>
-          <p class="text-xl text-gray-600">
-            State-of-the-art display technology designed for airport environments
-          </p>
-        </div>
-
-        <div class="grid lg:grid-cols-2 gap-12">
-          {features.map(feature => (
-            <div class="group relative bg-gray-800 rounded-2xl p-1 overflow-hidden">
-              <div class={`absolute inset-0 bg-gradient-to-br ${feature.gradient} opacity-20 group-hover:opacity-30 transition-opacity`}></div>
-              <div class="relative p-8">
-                <div class="aspect-video rounded-xl overflow-hidden mb-8">
-                  <img 
-                    src={feature.image} 
-                    alt={feature.title}
-                    class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
-                  />
-                </div>
-                <h3 class="text-2xl font-bold text-white mb-4">{feature.title}</h3>
-                <p class="text-gray-400 mb-8">{feature.description}</p>
-                <div class="grid grid-cols-3 gap-4">
-                  {feature.specs.map(spec => (
-                    <div class="flex items-center space-x-3 p-4 bg-gray-700/50 rounded-lg">
-                      <span class="text-gray-300">{spec.text}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-
-    <!-- Implementation Showcase -->
-    <section class="py-24 bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900">
-      <div class="container mx-auto px-4">
-        <div class="max-w-3xl mx-auto text-center mb-20">
-          <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
-            Strategic Implementations
-          </h2>
-          <div class="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto mb-6"></div>
-          <p class="text-xl text-gray-400">
-            Optimized display placement for maximum impact and efficiency
-          </p>
-        </div>
-
-        <div class="grid md:grid-cols-3 gap-8">
-          {locations.map(location => (
-            <div class="group bg-gray-800/50 rounded-2xl overflow-hidden backdrop-blur-sm">
-              <div class="relative aspect-video">
-                <img 
-                  src={location.image} 
-                  alt={location.title}
-                  class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
-                />
-                <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
-              </div>
-              <div class="p-8">
-                <h3 class="text-xl font-bold text-white mb-4">{location.title}</h3>
-                <p class="text-gray-400 mb-6">{location.description}</p>
-                <div class="grid grid-cols-2 gap-4">
-                  {Object.entries(location.stats).map(([key, value]) => (
-                    <div class="text-center p-4 bg-gray-700/30 rounded-lg">
-                      <div class="text-2xl font-bold text-white mb-1">{value}</div>
-                      <div class="text-sm text-gray-400 capitalize">{key}</div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="relative py-24 overflow-hidden">
-      <div class="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600"></div>
-      <div class="absolute inset-0 bg-[url('/patterns/circuit-board.svg')] opacity-10"></div>
-      
-      <div class="relative container mx-auto px-4 text-center">
-        <h2 class="text-4xl md:text-5xl font-bold text-white mb-8">
-          Ready to Transform Your Airport?
-        </h2>
-        <p class="text-xl text-white/80 mb-12 max-w-2xl mx-auto">
-          Download our comprehensive product catalog or schedule a consultation with our experts
-        </p>
-        <div class="flex flex-wrap justify-center gap-6">
-          <a 
-            href="/catalogs/airport-dooh-solutions.pdf" 
-            class="px-8 py-4 bg-white text-blue-600 rounded-full font-semibold hover:bg-gray-100 transition-all flex items-center"
-            download
-          >
-            <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
-            </svg>
-            Download Catalog
-          </a>
-          <a 
-            href="#contact" 
-            class="px-8 py-4 bg-white/10 text-white rounded-full font-semibold backdrop-blur-sm hover:bg-white/20 transition-all flex items-center"
-          >
-            <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
-            </svg>
-            Contact Sales
-          </a>
-        </div>
-      </div>
-    </section>
-  </main>
-</Layout>
-
-<style>
-  @keyframes fadeUp {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-
-  .animate-fade-up {
-    animation: fadeUp 1s ease-out forwards;
-  }
-
-  .animation-delay-200 {
-    animation-delay: 200ms;
-  }
-
-  .animation-delay-400 {
-    animation-delay: 400ms;
-  }
-
-  /* Add smooth scrolling */
-  html {
-    scroll-behavior: smooth;
-  }
-
-  /* Optimize animations for reduced motion preference */
-  @media (prefers-reduced-motion: reduce) {
-    .animate-fade-up {
-      animation: none;
-      opacity: 1;
-    }
-  }
-</style>
-
-
-
-
-
-
-
-
----
-// No need for icon import now
----
-
-<footer class="bg-gradient-to-b from-purple-400 to-blue-500">
-  <!-- Newsletter Section -->
-  <div class="max-w-7xl mx-auto px-4 pt-16 pb-8">
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12 border-b border-gray-700 pb-12">
-      <div class="space-y-4">
-        <h3 class="text-2xl font-bold text-black">Newsletter</h3>
-        <p class="text-gray-800 font-medium">Enter your email address to receive the latest news & products information</p>
-        <form class="flex gap-2">
-          <input 
-            type="email" 
-            placeholder="Enter your email" 
-            class="flex-1 px-4 py-2 rounded-lg bg-gray-800 border border-gray-700 focus:outline-none focus:border-blue-500"
-          />
-          <button class="px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors">
-            Submit
-          </button>
-        </form>
-      </div>
-    </div>
-
-    <!-- Main Footer Links -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-      <!-- Products Column -->
-      <div class="space-y-4">
-        <h4 class="text-lg font-bold text-black">Products</h4>
-        <ul class="space-y-2">
-          <li><a href="/Products/interactive-display" class="text-gray-800 font-medium hover:text-blue-700 transition-colors">Interactive Display</a></li>
-          <li><a href="/Products/led-display" class="text-gray-800 font-medium hover:text-blue-700 transition-colors">LED Display</a></li>
-          <li><a href="/Products/lcd-video" class="text-gray-800 font-medium hover:text-blue-700 transition-colors">LCD Video Wall</a></li>
-          <li><a href="/Products/wall-controller" class="text-gray-800 font-medium hover:text-blue-700 transition-colors">Controller</a></li>
-          <li><a href="/Products/monitors-video" class="text-gray-800 font-medium hover:text-blue-700 transition-colors">Monitors</a></li>
-          <li><a href="/Products/conferencing-products" class="text-gray-800 font-medium hover:text-blue-700 transition-colors">Video Conferencing Products</a></li>
-          <li><a href="/Products/Overview" class="text-gray-800 font-medium hover:text-blue-700 transition-colors">Special</a></li>
-        </ul>
-      </div>
-
-      <!-- Solutions Column -->
-      <div class="space-y-4">
-        <h4 class="text-lg font-bold text-black">Solutions</h4>
-        <ul class="space-y-2">
-          <li><a href="/solutions/retail" class="text-gray-800 font-medium hover:text-blue-700 transition-colors">Retail</a></li>
-          <li><a href="/solutions/corporate" class="text-gray-800 font-medium hover:text-blue-700 transition-colors">Corporate</a></li>
-          <li><a href="/solutions/education" class="text-gray-800 font-medium hover:text-blue-700 transition-colors">Education</a></li>
-          <li><a href="/solutions/control-room" class="text-gray-800 font-medium hover:text-blue-700 transition-colors">Control Room</a></li>
-          <li><a href="/solutions/dooh-airport" class="text-gray-800 font-medium hover:text-blue-700 transition-colors">DOOH Airport</a></li>
-        </ul>
-      </div>
-
-      <!-- Support Column -->
-      <div class="space-y-4">
-        <h4 class="text-lg font-bold text-black">Support</h4>
-        <ul class="space-y-2">
-          <li><a href="/support/download-center" class="text-gray-800 font-medium hover:text-blue-700 transition-colors">Download Center</a></li>
-        </ul>
-      </div>
-
-      <!-- Company Column -->
-      <div class="space-y-4">
-        <h4 class="text-lg font-bold text-black">Company</h4>
-        <ul class="space-y-2">
-          <li><a href="/company/about-us" class="text-gray-800 font-medium hover:text-blue-700 transition-colors">About us</a></li>
-          <li><a href="/company/contact-us" class="text-gray-800 font-medium hover:text-blue-700 transition-colors">Contact us</a></li>
-          <li><a href="/company/partners" class="text-gray-800 font-medium hover:text-blue-700 transition-colors">Partner</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- Social Links & Copyright -->
-    <div class="border-t border-gray-700 pt-8">
-      <div class="flex flex-col md:flex-row justify-between items-center gap-4">
-        <!-- Social Media Icons -->
-        <div class="flex space-x-8">
-          <!-- Facebook -->
-          <a href="#" class="text-gray-800 hover:text-blue-600 transition-colors">
-            <svg class="w-6 h-6 hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/>
-            </svg>
-          </a>
-
-          <!-- Twitter -->
-          <a href="#" class="text-gray-800 hover:text-blue-400 transition-colors">
-            <svg class="w-6 h-6 hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
-            </svg>
-          </a>
-
-          <!-- Instagram -->
-          <a href="#" class="text-gray-800 hover:text-pink-600 transition-colors">
-            <svg class="w-6 h-6 hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
-            </svg>
-          </a>
-
-          <!-- LinkedIn -->
-          <a href="#" class="text-gray-800 hover:text-blue-700 transition-colors">
-            <svg class="w-6 h-6 hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-            </svg>
-          </a>
-
-          <!-- Gmail -->
-          <a href="mailto:your-email@example.com" class="text-gray-800 hover:text-red-600 transition-colors">
-            <svg class="w-6 h-6 hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/>
-            </svg>
-          </a>
-
-          <!-- Message/Chat -->
-          <a href="#" class="text-gray-800 hover:text-green-600 transition-colors">
-            <svg class="w-6 h-6 hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H6l-2 2V4h16v12z"/>
-            </svg>
-          </a>
-        </div>
-
-        <div class="text-center">
-          <p class="text-gray-800 font-medium text-sm">Copyright 2011-2022 Zhejiang Uniview Technologies Co.,Ltd. All rights reserved.</p>
-          <div class="flex justify-center space-x-4 mt-2">
-            <a href="/privacy-policy" class="text-gray-800 hover:text-blue-700 text-sm">Privacy Policy</a>
-            <span class="text-gray-800">|</span>
-            <a href="/cookie-policy" class="text-gray-800 hover:text-blue-700 text-sm">Cookie Policy</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
-
-<style>
-  footer a:hover {
-    text-decoration: underline;
-  }
-</style>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-PoP-Up Modal Code.
-
-
-<!-- Product Modal (SAVE FOR LATER USE) -->
-<div id="productModal" class="fixed inset-0 bg-black/50 hidden z-50">
-  <div class="fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-6xl bg-white rounded-2xl shadow-2xl">
-    <div class="relative p-8 max-h-[90vh] overflow-y-auto">
-      <!-- Logo in top left -->
-      <div class="absolute top-6 left-6">
-        <img 
-          src="/logo (1).svg" 
-          alt="Lovosis Display Logo" 
-          class="h-10 w-auto"
-        />
-      </div>
-      
-      <!-- Close Button -->
-      <button class="close-modal absolute top-6 right-6 text-gray-500 hover:text-gray-700">
-        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
-        </svg>
-      </button>
-
-      <!-- Modal Content -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mt-10">
-        <div>
-          <img id="modalImage" src="" alt="" class="w-full rounded-xl shadow-xl mb-6">
-          
-          <!-- Reviews Section -->
-          <div class="bg-gray-50 rounded-xl p-6 mt-6">
-            <div class="flex items-center justify-between mb-4">
-              <h4 class="text-xl font-semibold text-gray-900">Customer Reviews</h4>
-              <div class="flex items-center gap-1">
-                <div class="flex items-center">
-                  {[1, 2, 3, 4, 5].map((star) => (
-                    <svg class="w-6 h-6 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                    </svg>
-                  ))}
-                </div>
-                <span class="text-lg font-bold text-gray-900">4.8</span>
-                <span class="text-gray-600">(124 reviews)</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="space-y-8">
-          <div>
-            <h3 id="modalTitle" class="text-4xl font-bold text-gray-900 mb-4"></h3>
-            <p id="modalDescription" class="text-gray-600 text-lg mb-6"></p>
-            
-            <!-- Price with Badge -->
-            <div class="mb-8">
-              <div class="p-4 bg-blue-50 rounded-xl">
-                <p class="text-gray-800 leading-relaxed">
-                  <span class="font-semibold text-blue-600">Powerful collaboration tool</span> with advanced touch precision and 
-                  intelligent interactive features for seamless professional engagement.
-                </p>
-              </div>
-            </div>
-
-            <!-- Features -->
-            <div class="mb-8">
-              <h4 class="text-xl font-semibold text-gray-900 mb-4">Key Features</h4>
-              <div id="modalFeatures" class="space-y-3"></div>
-            </div>
-
-            <!-- Contact Options -->
-            <div class="space-y-4">
-              <h4 class="text-xl font-semibold text-gray-900 mb-4">Contact Us</h4>
-              <div class="grid grid-cols-2 gap-4">
-                <a href="tel:+918409528159" class="flex items-center justify-center gap-2 px-6 py-4 bg-blue-600 text-white rounded-xl hover:bg-blue-700 transition-colors">
-                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
-                  </svg>
-                  <span class="font-semibold">+91 8409528159</span>
-                </a>
-                <a href="https://wa.me/918409528159" target="_blank" class="flex items-center justify-center gap-2 px-6 py-4 bg-green-500 text-white rounded-xl hover:bg-green-600 transition-colors">
-                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12.012 2c-5.506 0-9.989 4.478-9.99 9.984a9.964 9.964 0 001.333 4.993L2 22l5.233-1.237a9.994 9.994 0 004.779 1.217h.004c5.505 0 9.988-4.478 9.989-9.984 0-2.669-1.037-5.176-2.922-7.062A9.935 9.935 0 0012.012 2z"/>
-                  </svg>
-                  <span class="font-semibold">WhatsApp</span>
-                </a>
-              </div>
-              <a 
-                href="mailto:adeebjamil0707@gmail.com" 
-                class="w-full px-6 py-4 bg-gray-100 text-gray-800 rounded-xl hover:bg-gray-200 transition-colors flex items-center justify-center gap-2"
-              >
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-                </svg>
-                <span class="font-semibold">adeebjamil0707@gmail.com</span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-interactive-dislayy
 ---
 import Layout from '../../layouts/Layout.astro';
 // SEO-optimized title and description
@@ -1508,14 +805,14 @@ const highlights = [
       },
       "author": {
         "@type": "Person",
-        "viewBody": "The interactive display has transformed our classroom teaching. The touch response is incredibly accurate and the built-in software makes lesson planning much easier."
+        "name": "Mark Johnson"
+      },
+      "datePublished": "2023-11-15",
+      "reviewBody": "The interactive display has transformed our classroom teaching. The touch response is incredibly accurate and the built-in software makes lesson planning much easier."
     }
   ]
 }
-</script>name": "Mark Johnson"
-      },
-      "datePublished": "2023-11-15",
-      "re
+</script>
 
 
 
@@ -1558,21 +855,125 @@ const highlights = [
 
 
 
+---
+const faqs = [
+  {
+    question: "What are the advantages of LED displays over traditional billboards?",
+    answer: "LED displays offer superior brightness, dynamic content capability, real-time updates, energy efficiency, and longer lifespan. They provide better visibility in all lighting conditions, allow for scheduled content changes, and offer significant long-term cost savings through reduced maintenance and power consumption."
+  },
+  {
+    question: "How do your LCD video walls enhance control room operations?",
+    answer: "Our LCD video walls deliver 24/7 reliability, ultra-narrow bezels for seamless viewing, superior color accuracy, and advanced control capabilities. They feature built-in redundancy, multiple input options, and specialized software for efficient control room management and real-time data visualization."
+  },
+  {
+    question: "What makes your digital education boards ideal for classrooms?",
+    answer: "Our interactive education boards feature 4K resolution, anti-glare surfaces, multi-touch capability, and specialized education software. They support wireless screen sharing, come with built-in teaching tools, and offer seamless integration with popular learning management systems."
+  },
+  {
+    question: "What sizes and resolutions are available for outdoor LED billboards?",
+    answer: "We offer outdoor LED billboards in various sizes from 2m² to 100m², with pixel pitches ranging from 4mm to 16mm. All displays feature high brightness (5500-8000 nits), IP65/IP54 weather protection, and automatic brightness adjustment for optimal visibility in any condition."
+  },
+  {
+    question: "How long do your LED displays typically last?",
+    answer: "Our LED displays are built for longevity, with an average lifespan of 100,000 hours (11+ years of continuous operation). They come with comprehensive warranties ranging from 3-5 years and maintain consistent brightness levels throughout their lifecycle with proper maintenance."
+  },
+  {
+    question: "What maintenance is required for LCD video walls?",
+    answer: "LCD video walls require minimal maintenance, including regular cleaning, temperature monitoring, and periodic calibration checks. We provide preventive maintenance schedules, remote monitoring capabilities, and quick-response support to ensure optimal performance."
+  },
+  {
+    question: "Can your displays be integrated with third-party control systems?",
+    answer: "Yes, our displays support various integration protocols including RS232, IP control, and HDMI-CEC. They're compatible with major control systems like Crestron, AMX, and Extron, allowing seamless integration into existing AV infrastructures."
+  }
+];
+---
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<section class="py-20 bg-gray-50">
+  <div class="max-w-4xl mx-auto px-4">
     
+    <div class="space-y-6">
+      {faqs.map((faq, index) => (
+        <div 
+          class="group bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300"
+          x-data="{ open: false }"
+        >
+          <button
+            class="flex justify-between items-center w-full text-left focus:outline-none"
+            @click="open = !open"
+          >
+            <h3 class="text-lg font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">
+              {faq.question}
+            </h3>
+            <span class="ml-6 flex-shrink-0 text-blue-600">
+              <svg 
+                class="w-6 h-6 transform transition-transform duration-300 group-hover:rotate-180"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </span>
+          </button>
+          <div
+            class="mt-4 text-gray-600 hidden group-hover:block transition-all duration-300"
+            x-show="open"
+            x-collapse
+          >
+            <p>{faq.answer}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <div class="mt-12 text-center">
+      <a 
+        href="/company/contact-us"
+        class="inline-flex items-center px-8 py-3 bg-gradient-to-r from-blue-600 to-blue-800 text-white rounded-full font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/25"
+      >
+        Still have questions?
+        <svg class="w-5 h-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+        </svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<script>
+  // Option 1: Import as ESM module
+  import Alpine from 'alpinejs'
+
+  // Option 2: Import specific features
+  import { data, bind } from 'alpinejs'
+
+  declare global {
+    interface Window {
+      Alpine: typeof Alpine;
+    }
+  }
+
+  window.Alpine = Alpine;
+  Alpine.start();
+  // Add Alpine.js for animations
+  document.addEventListener('alpine:init', () => {
+    Alpine.data('collapse', () => ({
+      open: false,
+      toggle() {
+        this.open = !this.open;
+      },
+    }));
+  });
+</script>
+
+<style>
+  /* Optional: Add custom animations */
+  @keyframes slideDown {
+    from { transform: translateY(-10px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+
+  .group:hover .group-hover\:block {
+    animation: slideDown 0.3s ease-out forwards;
+  }
+</style>

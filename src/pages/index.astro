@@ -9,24 +9,35 @@ import Gallery from '../components/Gallery.astro';
 import LogoCloud from '../components/LogoCloud.astro';
 import TeamComponent from '../components/TeamComponent.astro';
 
+// SEO focus keywords for Dubai market
+const keywords = "smart boards in Dubai, interactive panels in Dubai, CCTV monitors in Dubai, keyboards in Dubai, LED displays Dubai, LCD screens UAE, educational boards Dubai, digital billboards Dubai, touch displays UAE, commercial displays Dubai";
 
 // Homepage schema markup for better SEO
 const homepageSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "name": "Lovosis Display",
+  "name": "Lovosis Display Dubai",
   "url": "https://unv-ledmodules.com",
   "logo": "https://unv-ledmodules.com/logo.png",
-  "description": "Leading distributor of premium LED displays, LCD screens, educational boards & digital billboards. Innovative display solutions for businesses & educational institutions.",
-  "telephone": "+[YOUR PHONE NUMBER]",
-  "email": "info@lovosis.com",
+  "description": "Leading distributor of premium LED displays, smart boards, interactive panels, CCTV monitors and keyboards in Dubai & UAE. Innovative display solutions for businesses & educational institutions across Dubai.",
+  "telephone": "+971 50 916 2488",
+  "email": "sales@lovosis.com",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "[YOUR STREET ADDRESS]",
-    "addressLocality": "[CITY]",
-    "addressRegion": "[STATE/PROVINCE]",
-    "postalCode": "[POSTAL CODE]",
-    "addressCountry": "[COUNTRY]"
+    "streetAddress": "Dubai Silicon Oasis",
+    "addressLocality": "Dubai",
+    "addressRegion": "Dubai",
+    "addressCountry": "United Arab Emirates"
+  },
+  "areaServed": {
+    "@type": "GeoCircle",
+    "geoMidpoint": {
+      "@type": "GeoCoordinates",
+      "latitude": "25.2048",
+      "longitude": "55.2708"
+    },
+    "geoRadius": "50000",
+    "description": "Serving all areas across Dubai and UAE"
   },
   "sameAs": [
     "https://www.facebook.com/unv-ledmodules",
@@ -35,7 +46,7 @@ const homepageSchema = {
   ],
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
-    "name": "Display Products",
+    "name": "Display Products in Dubai",
     "itemListElement": [
       {
         "@type": "OfferCatalog",
@@ -45,16 +56,16 @@ const homepageSchema = {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Product",
-              "name": "Commercial LED Video Walls",
-              "description": "High-resolution LED video walls for commercial spaces with superior brightness and contrast"
+              "name": "Commercial LED Video Walls in Dubai",
+              "description": "High-resolution LED video walls for commercial spaces across Dubai with superior brightness and contrast"
             }
           },
           {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Product",
-              "name": "Outdoor LED Billboards",
-              "description": "Weather-resistant high-brightness LED billboards for outdoor advertising"
+              "name": "Outdoor LED Billboards Dubai",
+              "description": "Weather-resistant high-brightness LED billboards for outdoor advertising in Dubai's climate"
             }
           }
         ]
@@ -67,30 +78,52 @@ const homepageSchema = {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Product",
-              "name": "Commercial LCD Screens",
-              "description": "Professional-grade LCD displays for business environments"
+              "name": "CCTV Monitors in Dubai",
+              "description": "Professional-grade CCTV display monitors for security installations across Dubai and UAE"
             }
           },
           {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Product",
-              "name": "Interactive Touch Displays",
-              "description": "Touch-enabled LCD screens for interactive experiences"
+              "name": "Interactive Touch Displays Dubai",
+              "description": "Touch-enabled LCD screens for interactive experiences in Dubai businesses and retail"
             }
           }
         ]
       },
       {
         "@type": "OfferCatalog",
-        "name": "Educational Boards",
+        "name": "Educational Products",
         "itemListElement": [
           {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Product",
-              "name": "Interactive Smart Boards",
-              "description": "Digital educational boards with touch interactivity for modern classrooms"
+              "name": "Smart Boards in Dubai",
+              "description": "Digital educational smart boards with touch interactivity for modern classrooms across Dubai"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "Interactive Panels for Dubai Schools",
+              "description": "Advanced interactive panels designed for educational institutions in Dubai and UAE"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "OfferCatalog",
+        "name": "Computer Peripherals",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "Commercial Keyboards in Dubai",
+              "description": "High-quality keyboards for business and professional use throughout Dubai"
             }
           }
         ]
@@ -101,68 +134,50 @@ const homepageSchema = {
 ---
 
 <Layout 
-
-  title="Lovosis Display | Premium LED & LCD Displays | Digital Billboards | Educational Boards"
-  description="Leading distributor of high-quality LED displays, LCD screens, interactive educational boards & digital billboards. Innovative display solutions with superior brightness, resolution and durability."
+  title="Smart Boards & Interactive Panels in Dubai | LED & LCD Displays | CCTV Monitors | Lovosis Display"
+  description="Dubai's leading distributor of Smart Boards, Interactive Panels, CCTV Monitors and Keyboards. Premium LED & LCD display solutions with installation across Dubai and UAE. Call +971 50 916 2488 for consultation."
+  keywords={keywords}
   sd={homepageSchema}
-  siteName="Lovosis Display"
+  siteName="Lovosis Display Dubai"
   site="https://unv-ledmodules.com"
   image={{
     url: "/images/homepage-hero.jpg",
-    alt: "Lovosis Display - Premium LED & LCD Display Solutions"
+    alt: "Smart Boards and Interactive Panels in Dubai - Lovosis Display Solutions"
   }}
 >
 
 
   <section class="hero-section">
-    <h1 class="visually-hidden">Premium LED Displays, LCD Screens & Educational Board Solutions</h1>
+    <h1 class="visually-hidden">Smart Boards and Interactive Panels in Dubai - Premium Display Solutions</h1>
     <Carousel />
   </section>
   
   <section id="featured-products" class="featured-section">
     <div class="container">
-      <h2 class="section-title">Featured Display Solutions</h2>
-      <p class="section-description">Discover our premium range of LED displays, LCD screens, educational boards, and digital billboards designed for exceptional visual performance.</p>
+      <h2 class="section-title">Featured Display Solutions in Dubai</h2>
+      <p class="section-description">Discover our premium Smart Boards, Interactive Panels, CCTV Monitors and Keyboards available across Dubai and UAE.</p>
       <NewProducts />
-    </div>
-  </section>
-  
-  <section id="product-gallery" class="gallery-section">
-    <div class="container">
-      <h2 class="section-title">Our Display Technology Portfolio</h2>
-      <p class="section-description">Explore our comprehensive collection of high-quality display products for commercial, educational, and advertising applications.</p>
-      <Gallery />
     </div>
   </section>
   
   <section id="faqs" class="faq-section">
     <div class="container">
       <h2 class="section-title">Frequently Asked Questions</h2>
-      <p class="section-description">Get answers to common questions about our LED displays, LCD screens, and other display solutions.</p>
+      <p class="section-description">Get answers to common questions about our Smart Boards, Interactive Panels, and other display solutions available in Dubai.</p>
       <FAQS />
     </div>
   </section>
-  
-  <section id="team" class="team-section">
-    <div class="container">
-      <h2 class="section-title">Our Display Technology Experts</h2>
-      <p class="section-description">Meet our team of specialists dedicated to providing you with the best display solutions.</p>
-      <!-- <TeamComponent /> -->
-    </div>
-  </section>
-  
+
   <section id="news" class="news-section">
     <div class="container">
-      <h2 class="section-title">Latest News & Innovations</h2>
-      <p class="section-description">Stay updated with the latest developments in LED and LCD display technology.</p>
       <NewsAndEvents />
     </div>
   </section>
   
   <section id="partners" class="partners-section">
     <div class="container">
-      <h2 class="section-title"></h2>
-      <p class="section-description"></p>
+      <h2 class="section-title">Our Partners in Dubai</h2>
+      <p class="section-description">Working with Dubai's top businesses and educational institutions</p>
       <LogoCloud />
     </div>
   </section>
