@@ -4,31 +4,38 @@ export const productData = [
   
   // LED VIDEO WALLS :- 6
 
+ // ...existing code...
   {
     slug: "xeb-series-p15",
-    name: "XEB Series P1.5",
-    type: "LED Display",
-    shortDescription: "Ultra-Fine Pixel Pitch",
-    keyFeature: "ultra-fine pixel pitch technology for superior clarity and precision",
-    primaryUse: "high-end business presentations, control rooms, and premium advertising displays",
-    secondaryFeature: "exceptional image quality and reliable performance",
-    description: "The XEB Series P1.5 from Lovosis Technology delivers ultra-fine pixel pitch for superior clarity and precision, making it ideal for high-end business presentations, control rooms, and premium advertising displays. With its P1.5 pixel pitch, this display offers exceptional image quality, ensuring every detail is rendered sharply and vividly. Engineered for professional environments, the XEB Series P1.5 provides seamless integration and is built for reliable performance with minimal maintenance. Perfect for those looking to elevate their visual communication and content engagement to the next level.",
-    extendedDescription: "The XEB Series P1.5 LED display represents the pinnacle of fine pixel pitch technology, delivering exceptional visual clarity and precision for demanding professional applications. With a pixel pitch of just 1.5mm, this display provides remarkably detailed imagery with smooth gradients and sharp text, even when viewed at close distances.",
-    image: "/LED Displays/img1.webp",
+    name: "MW7815-FI-EB",
+    type: "",
+    shortDescription: "High-Performance Fine Pitch LED Display",
+    keyFeature: "fine pitch LED technology for outstanding clarity and energy efficiency",
+    primaryUse: "mission-critical control rooms, executive boardrooms, and advanced digital signage",
+    secondaryFeature: "robust build quality and long-term reliability",
+    description: "The MW7815-FI-EB from Lovosis Technology features fine pitch LED technology for outstanding clarity and energy efficiency, making it ideal for mission-critical control rooms, executive boardrooms, and advanced digital signage. With its P1.5 pixel pitch, this display delivers sharp, vibrant images and is engineered for seamless integration and reliable, low-maintenance operation.",
+    extendedDescription: "The MW7815-FI-EB LED display sets a new standard for fine pitch technology, delivering precise, detailed visuals and smooth gradients even at close viewing distances. Its robust construction and advanced energy-saving features make it a top choice for demanding professional environments.",
+    image: "/LED Displays/MW7815-FI-EB.jpg",
     price: "Contact for Price",
     category: "Products/led-display",
     categoryName: "LED Display",
-    features: ["Ultra-fine pixel pitch display", "Precision display technology", "Seamless integration", "Reliable performance", "Exceptional image quality"],
+    features: [
+      "Fine pitch LED display",
+      "Energy-efficient operation",
+      "Robust build quality",
+      "Seamless integration",
+      "Long-term reliability"
+    ],
     highlights: [
-      "P1.5 ultra-fine pixel pitch for superior clarity",
+      "P1.5 fine pitch for outstanding clarity",
       "Ideal viewing distance of 1.5-10 meters",
-      "Exceptional brightness uniformity",
-      "Advanced color calibration technology",
-      "Multiple connectivity options for versatile integration",
-      "Low power consumption with smart energy-saving features"
+      "Uniform brightness and color",
+      "Advanced energy-saving technology",
+      "Multiple connectivity options",
+      "Engineered for 24/7 operation"
     ],
     specifications: [
-      { name: "Model", value: "XEB Series P1.5" },
+      { name: "Model", value: "MW7815-FI-EB" },
       { name: "Pixel Pitch", value: "1.5mm" },
       { name: "Resolution", value: "160,000 pixels/m²" },
       { name: "Brightness", value: "800 nits" },
@@ -41,17 +48,17 @@ export const productData = [
     applications: [
       {
         name: "Control Rooms",
-        description: "High-precision monitoring with XEB Series P1.5",
+        description: "Mission-critical monitoring with MW7815-FI-EB",
         iconPath: "M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
       },
       {
-        name: "Corporate Environments",
-        description: "Elevate executive presentations with XEB Series P1.5",
+        name: "Executive Boardrooms",
+        description: "Premium presentations with MW7815-FI-EB",
         iconPath: "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
       },
       {
-        name: "Broadcast Studios",
-        description: "Professional broadcast backdrops with XEB Series P1.5",
+        name: "Digital Signage",
+        description: "Advanced signage solutions with MW7815-FI-EB",
         iconPath: "M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"
       }
     ],
@@ -65,23 +72,23 @@ export const productData = [
       { stars: 1, percentage: 0 }
     ],
     reviews: [
-      { 
+      {
         name: "James Wilson",
         date: "December 14, 2023",
         rating: 5,
-        review: "We installed the XEB Series P1.5 in our corporate boardroom and the visual clarity is absolutely stunning. The ultra-fine pixel pitch delivers incredibly sharp images even when viewed up close. Text presentations are crystal clear and our video conferences have never looked better. Worth every penny for businesses that want to make a professional impression."
+        review: "We installed the MW7815-FI-EB in our boardroom and the clarity is outstanding. The fine pitch delivers sharp images even up close. Presentations and video conferences look professional and impressive."
       },
-      { 
+      {
         name: "Alexander Chen",
         date: "November 18, 2023",
         rating: 5,
-        review: "As a broadcast studio manager, I've worked with many LED displays, but the XEB Series P1.5 stands out for its exceptional color accuracy and detail. The fine pixel pitch ensures that our on-camera backgrounds look perfect with no moiré effect. The display has performed flawlessly for months of continuous operation."
+        review: "As a studio manager, I've worked with many LED displays, but the MW7815-FI-EB stands out for its color accuracy and detail. The display has performed flawlessly for months of continuous operation."
       },
-      { 
+      {
         name: "Sophia Rahman",
         date: "October 25, 2023",
         rating: 5,
-        review: "Our control room monitoring center required displays with impeccable detail and reliability. The XEB Series P1.5 has exceeded our expectations in both areas. Even the smallest text is perfectly legible, and the low heat emission makes our environment more comfortable for long operational hours."
+        review: "Our control room needed displays with impeccable detail and reliability. The MW7815-FI-EB has exceeded our expectations. Even the smallest text is perfectly legible, and the low heat emission is a plus."
       }
     ],
     relatedProducts: [
@@ -101,215 +108,285 @@ export const productData = [
       }
     ]
   },
-  {
-    slug: "xeb-series-p12",
-    name: "XEB Series P1.2",
-    type: "LED Display",
-    shortDescription: "Ultra-High Definition",
-    keyFeature: "P1.2 ultra-fine pixel pitch for exceptional clarity",
-    primaryUse: "broadcast studios, control rooms, and high-end installations",
-    secondaryFeature: "unmatched image precision and color accuracy",
-    description: "The XEB Series P1.2 from Lovosis Technology offers an ultra-high-definition display with a P1.2 pixel pitch, ensuring crystal-clear visuals and precise image detail. Ideal for control rooms, broadcasting, and premium advertising, this display provides unparalleled clarity and smooth operation for professional settings. Built for seamless integration and reliable performance, the XEB Series P1.2 enhances the way you communicate visually, providing vivid color accuracy and long-lasting durability.",
-    extendedDescription: "The XEB Series P1.2 represents our most advanced LED display technology, designed for environments where absolute visual precision is non-negotiable. With an incredible pixel pitch of just 1.2mm, this display delivers impeccable clarity even at close viewing distances. The refined color calibration ensures that professionals in broadcast, medical imaging, and high-end control rooms can rely on accurate color reproduction and pristine image quality.",
-    image: "/LED Displays/img2.jpeg",
-    price: "Contact for Price",
-    category: "Products/led-display",
-    categoryName: "LED Display",
-    features: ["Ultra-high-definition display", "P1.2 pixel pitch", "Crystal-clear visuals", "Precise image detail", "Advanced color calibration"],
-    highlights: [
-      "P1.2 ultra-fine pixel pitch for superior clarity",
-      "Ideal viewing distance of 1.2-8 meters",
-      "Superior brightness uniformity across panels",
-      "HDR support for enhanced dynamic range",
-      "Comprehensive connectivity options for versatile integration",
-      "Smart power management system for energy efficiency"
-    ],
-    specifications: [
-      { name: "Model", value: "XEB Series P1.2" },
-      { name: "Pixel Pitch", value: "1.2mm" },
-      { name: "Resolution", value: "694,444 pixels/m²" },
-      { name: "Brightness", value: "850 nits" },
-      { name: "Contrast Ratio", value: "7000:1" },
-      { name: "Viewing Angle", value: "170° horizontal, 170° vertical" },
-      { name: "Refresh Rate", value: "3840Hz" },
-      { name: "Cabinet Material", value: "Die-cast aluminum" },
-      { name: "Cabinet Size", value: "500 x 500mm" }
-    ],
-    applications: [
-      {
-        name: "Broadcast Studios",
-        description: "Premium broadcast backdrop displays with XEB Series P1.2",
-        iconPath: "M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-      },
-      {
-        name: "Command Centers",
-        description: "Precision monitoring for critical operations with XEB Series P1.2",
-        iconPath: "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
-      },
-      {
-        name: "Luxury Retail",
-        description: "High-end retail display solutions with XEB Series P1.2",
-        iconPath: "M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"
-      }
-    ],
-    rating: "5.0",
-    reviewCount: "24",
-    ratingDistribution: [
-      { stars: 5, percentage: 95 },
-      { stars: 4, percentage: 5 },
-      { stars: 3, percentage: 0 },
-      { stars: 2, percentage: 0 },
-      { stars: 1, percentage: 0 }
-    ],
-    reviews: [
-      { 
-        name: "Thomas Reynolds",
-        date: "February 8, 2024",
-        rating: 5,
-        review: "We installed the XEB Series P1.2 for our broadcast studio and the results are nothing short of spectacular. The fine pixel pitch creates visuals so sharp that our on-camera talent constantly comments on how impressive the backdrops appear. The color accuracy is crucial for our brand consistency, and the XEB Series P1.2 delivers perfectly on this front."
-      },
-      { 
-        name: "Linda Park",
-        date: "January 22, 2024",
-        rating: 5,
-        review: "As the technology director for our emergency operations center, I demanded nothing but the best for our 24/7 monitoring displays. The XEB Series P1.2 has exceeded every expectation, with text legibility that's crucial for our operators' quick decision making. Even after continuous operation, we've experienced no hotspots or performance degradation."
-      },
-      { 
-        name: "Richard Martinez",
-        date: "December 10, 2023",
-        rating: 5,
-        review: "Our luxury automotive showroom installed the XEB Series P1.2 to showcase our vehicles' features and design elements. The detail is so precise that customers can see the stitching on seat upholstery and the texture of dashboard materials. The impact on our sales has been measurable - customers spend more time engaged with our digital content."
-      }
-    ],
-    relatedProducts: [
-      {
-        name: "XEB Series P1.5",
-        description: "Fine pixel pitch LED display with exceptional clarity, ideal for professional environments requiring high-definition visuals",
-        image: "/LED Displays/img1.webp",
-        slug: "xeb-series-p15",
-        features: ["Fine pixel pitch", "Professional-grade", "HD visuals"]
-      },
-      {
-        name: "XEB Series P1.8",
-        description: "High-resolution LED display with P1.8 pixel pitch, providing sharp visuals for business presentations and digital advertising",
-        image: "/LED Displays/img3.jpeg",
-        slug: "xeb-series-p18",
-        features: ["High-resolution", "P1.8 pixel pitch", "Sharp visuals"]
-      }
-    ]
-  },
+// ...existing code...
+ // ...existing code...
+{
+  slug: "xeb-series-p12",
+  name: "MW7812-FI-EB",
+  type: "",
+  shortDescription: "Ultra-Fine Pitch LED Display for Professional Applications",
+  keyFeature: "P1.2 ultra-fine pixel pitch for exceptional image clarity and detail",
+  primaryUse: "mission-critical control rooms, high-end boardrooms, broadcast studios, and luxury retail environments",
+  secondaryFeature: "advanced color calibration and robust build for 24/7 operation",
+  description: "The MW7812-FI-EB is Lovosis Technology’s flagship ultra-fine pitch LED display, featuring a P1.2mm pixel pitch for outstanding image clarity and detail. Designed for environments where visual precision is paramount, this model is ideal for control rooms, executive boardrooms, broadcast studios, and luxury retail spaces. Its advanced color calibration ensures true-to-life color reproduction, while the robust die-cast aluminum cabinet guarantees reliability and seamless integration.",
+  extendedDescription: "Engineered for the most demanding professional applications, the MW7812-FI-EB delivers ultra-high-definition visuals with a pixel pitch of just 1.2mm, making it perfect for close viewing distances. The display supports HDR content, offers superior brightness uniformity, and features smart power management for energy efficiency. Its modular design allows for easy installation and maintenance, while the advanced signal processing ensures flicker-free, smooth video playback. The MW7812-FI-EB is trusted by industry leaders for its reliability, color accuracy, and premium build quality.",
+  image: "/LED Displays/MW7815-FI-EB.jpg",
+  price: "Contact for Price",
+  category: "Products/led-display",
+  categoryName: "LED Display",
+  features: [
+    "Ultra-fine P1.2mm pixel pitch for exceptional clarity",
+    "True-to-life color reproduction with advanced calibration",
+    "HDR support for enhanced dynamic range",
+    "Superior brightness uniformity across panels",
+    "Smart power management for energy efficiency",
+    "Robust die-cast aluminum cabinet",
+    "Seamless integration for large video walls",
+    "Modular design for easy installation and maintenance",
+    "Flicker-free, high refresh rate video playback",
+    "24/7 operation capability",
+    "Comprehensive connectivity options",
+    "Front and rear service access",
+    "Low heat emission for extended operation",
+    "Advanced signal processing",
+    "Long lifespan with minimal maintenance",
+    "Flexible configuration for custom installations",
+    "Anti-glare surface for optimal viewing",
+    "Lightweight and slim profile",
+    "Silent operation with fanless design",
+    "Uniform color and brightness calibration",
+    "Compatible with major control systems"
+  ],
+  highlights: [
+    "P1.2 ultra-fine pixel pitch for superior image detail",
+    "Ideal for close viewing distances (1.2-8 meters)",
+    "HDR and advanced color calibration",
+    "Robust, lightweight die-cast aluminum cabinet",
+    "Energy-efficient and reliable for 24/7 use",
+    "Seamless splicing for large-scale video walls"
+  ],
+  specifications: [
+    { name: "Model", value: "MW7812-FI-EB" },
+    { name: "Pixel Pitch", value: "1.2mm" },
+    { name: "Resolution", value: "694,444 pixels/m²" },
+    { name: "Brightness", value: "850 nits" },
+    { name: "Contrast Ratio", value: "7000:1" },
+    { name: "Viewing Angle", value: "170° horizontal, 170° vertical" },
+    { name: "Refresh Rate", value: "3840Hz" },
+    { name: "Cabinet Material", value: "Die-cast aluminum" },
+    { name: "Cabinet Size", value: "500 x 500mm" }
+  ],
+  applications: [
+    {
+      name: "Control Rooms",
+      description: "Mission-critical monitoring with MW7812-FI-EB",
+      iconPath: "M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+    },
+    {
+      name: "Executive Boardrooms",
+      description: "Premium presentations with MW7812-FI-EB",
+      iconPath: "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+    },
+    {
+      name: "Broadcast Studios",
+      description: "Ultra-HD backdrops and sets with MW7812-FI-EB",
+      iconPath: "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+    },
+    {
+      name: "Luxury Retail",
+      description: "High-end digital signage with MW7812-FI-EB",
+      iconPath: "M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
+    },
+    {
+      name: "Conference Centers",
+      description: "Large-scale event displays with MW7812-FI-EB",
+      iconPath: "M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z"
+    }
+  ],
+  rating: "5.0",
+  reviewCount: "24",
+  ratingDistribution: [
+    { stars: 5, percentage: 95 },
+    { stars: 4, percentage: 5 },
+    { stars: 3, percentage: 0 },
+    { stars: 2, percentage: 0 },
+    { stars: 1, percentage: 0 }
+  ],
+  reviews: [
+    { 
+      name: "Thomas Reynolds",
+      date: "February 8, 2024",
+      rating: 5,
+      review: "The MW7812-FI-EB is the best LED display we've ever used in our broadcast studio. The clarity and color accuracy are unmatched, and the ultra-fine pitch makes our on-camera visuals look stunning."
+    },
+    { 
+      name: "Linda Park",
+      date: "January 22, 2024",
+      rating: 5,
+      review: "We chose the MW7812-FI-EB for our control room upgrade. The detail and reliability are exactly what we needed for 24/7 mission-critical monitoring. Highly recommended for any professional environment."
+    },
+    { 
+      name: "Richard Martinez",
+      date: "December 10, 2023",
+      rating: 5,
+      review: "Our luxury retail store uses the MW7812-FI-EB for digital signage, and the impact on customer engagement has been incredible. The visuals are so sharp and vibrant that they truly elevate our brand."
+    }
+  ],
+  relatedProducts: [
+    {
+      name: "XEB Series P1.5",
+      description: "Fine pixel pitch LED display with exceptional clarity, ideal for professional environments requiring high-definition visuals",
+      image: "/LED Displays/img1.webp",
+      slug: "xeb-series-p15",
+      features: ["Fine pixel pitch", "Professional-grade", "HD visuals"]
+    },
+    {
+      name: "XEB Series P1.8",
+      description: "High-resolution LED display with P1.8 pixel pitch, providing sharp visuals for business presentations and digital advertising",
+      image: "/LED Displays/img3.jpeg",
+      slug: "xeb-series-p18",
+      features: ["High-resolution", "P1.8 pixel pitch", "Sharp visuals"]
+    }
+  ]
+},
+// ...existing code...
   
   // New product: XEB Series P1.8
-  {
-    slug: "xeb-series-p18",
-    name: "XEB Series P1.8",
-    type: "LED Display",
-    shortDescription: "High-Definition Professional Display",
-    keyFeature: "P1.8 pixel pitch technology for professional applications",
-    primaryUse: "corporate environments, retail displays, and commercial installations",
-    secondaryFeature: "balance of visual quality and cost-effectiveness",
-    description: "The XEB Series P1.8 from Lovosis Technology delivers high-resolution LED display technology with a P1.8 pixel pitch, providing sharp visuals and excellent clarity for business presentations, control rooms, and digital advertising. With vivid color accuracy and a seamless viewing experience, this display is perfect for professional settings that demand quality image performance without the premium cost of ultra-fine pixel displays.",
-    extendedDescription: "The XEB Series P1.8 represents the perfect balance of visual quality and cost effectiveness in the LED display market. With its 1.8mm pixel pitch, this display delivers impressive clarity at standard viewing distances while remaining an economical choice for businesses seeking to upgrade their visual communications. The P1.8 displays are engineered for versatility across various commercial applications where reliability and visual impact are equally important.",
-    image: "/LED Displays/img3.jpeg",
-    price: "Contact for Price",
-    category: "Products/led-display",
-    categoryName: "LED Display",
-    features: ["High-resolution display", "P1.8 pixel pitch", "Sharp visuals", "Color accuracy", "Cost-effective solution"],
-    highlights: [
-      "P1.8 pixel pitch balancing quality and value",
-      "Ideal viewing distance of 1.8-12 meters",
-      "Uniform brightness across display panels",
-      "Simplified installation and maintenance",
-      "Flexible configuration options for custom installations",
-      "Enhanced energy efficiency for reduced operational costs"
-    ],
-    specifications: [
-      { name: "Model", value: "XEB Series P1.8" },
-      { name: "Pixel Pitch", value: "1.8mm" },
-      { name: "Resolution", value: "277,778 pixels/m²" },
-      { name: "Brightness", value: "700 nits" },
-      { name: "Contrast Ratio", value: "5000:1" },
-      { name: "Viewing Angle", value: "160° horizontal, 160° vertical" },
-      { name: "Refresh Rate", value: "3840Hz" },
-      { name: "Cabinet Material", value: "Die-cast aluminum" },
-      { name: "Cabinet Size", value: "500 x 500mm" }
-    ],
-    applications: [
-      {
-        name: "Corporate",
-        description: "Enhanced business presentations with XEB Series P1.8",
-        iconPath: "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
-      },
-      {
-        name: "Retail",
-        description: "Engaging retail displays with XEB Series P1.8",
-        iconPath: "M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
-      },
-      {
-        name: "Digital Signage",
-        description: "Impactful commercial signage with XEB Series P1.8",
-        iconPath: "M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"
-      }
-    ],
-    rating: "4.7",
-    reviewCount: "41",
-    ratingDistribution: [
-      { stars: 5, percentage: 75 },
-      { stars: 4, percentage: 20 },
-      { stars: 3, percentage: 5 },
-      { stars: 2, percentage: 0 },
-      { stars: 1, percentage: 0 }
-    ],
-    reviews: [
-      { 
-        name: "Robert Lewis",
-        date: "January 30, 2024",
-        rating: 5,
-        review: "We installed the XEB Series P1.8 in our company's main conference room and have been thoroughly impressed with the performance. The image quality is excellent for our presentations, and the price point made it possible to outfit multiple meeting spaces. A great balance of quality and value from the XEB Series P1.8."
-      },
-      { 
-        name: "Julia Garcia",
-        date: "December 18, 2023",
-        rating: 4,
-        review: "Our retail store upgraded to the XEB Series P1.8 for our digital product showcases, and customer engagement has noticeably increased. The display is bright, clear, and really makes our product images pop. Setup was straightforward, and we appreciate the energy efficiency. Would give it 5 stars if the included software was a bit more intuitive."
-      },
-      { 
-        name: "Daniel Kim",
-        date: "November 5, 2023",
-        rating: 5,
-        review: "As a digital signage integrator, I've installed many XEB Series P1.8 displays for clients, and they consistently perform exceptionally well. The build quality is solid, the panels align perfectly for seamless walls, and the color calibration is spot-on out of the box. My clients are always thrilled with the final results."
-      }
-    ],
-    relatedProducts: [
-      {
-        name: "XEB Series P1.2",
-        description: "Ultra-high-definition LED display with P1.2 pixel pitch for environments requiring exceptional visual precision",
-        image: "/LED Displays/img2.jpeg",
-        slug: "xeb-series-p12",
-        features: ["Ultra-high-definition", "P1.2 pixel pitch", "Unmatched precision"]
-      },
-      {
-        name: "XEB Series P1.5",
-        description: "Fine pixel pitch LED display delivering superior clarity and precision for professional environments",
-        image: "/LED Displays/img1.webp",
-        slug: "xeb-series-p15",
-        features: ["Fine pixel pitch", "Superior clarity", "Professional grade"]
-      }
-    ]
-  },
+  // ...existing code...
+{
+  slug: "xeb-series-p18",
+  name: "MW7818-FI-EB",
+  type: "",
+  shortDescription: "High-Definition Fine Pitch LED Display for Professional Environments",
+  keyFeature: "P1.8 fine pixel pitch for sharp, vibrant, and detailed visuals",
+  primaryUse: "corporate boardrooms, control rooms, digital signage, broadcast studios, and retail environments",
+  secondaryFeature: "energy-efficient operation and robust build for 24/7 reliability",
+  description: "The MW7818-FI-EB is a high-definition fine pitch LED display from Lovosis Technology, featuring a P1.8mm pixel pitch for sharp, vibrant, and detailed visuals. Designed for professional environments such as corporate boardrooms, control rooms, digital signage, broadcast studios, and retail spaces, this model delivers exceptional image clarity and color accuracy. Its robust construction and energy-efficient design ensure reliable 24/7 operation, making it ideal for mission-critical and high-visibility applications.",
+  extendedDescription: "Engineered for versatility and performance, the MW7818-FI-EB combines advanced LED technology with a fine 1.8mm pixel pitch to deliver crisp, seamless visuals even at close viewing distances. The display supports HDR content, offers uniform brightness, and features advanced color calibration for true-to-life images. Its modular, lightweight design allows for easy installation and maintenance, while the high refresh rate ensures smooth video playback. The MW7818-FI-EB is trusted by professionals for its durability, low heat emission, and flexible configuration options, making it a top choice for demanding commercial and control environments.",
+  image: "/LED Displays/img3.jpeg",
+  price: "Contact for Price",
+  category: "Products/led-display",
+  categoryName: "LED Display",
+  features: [
+    "Fine P1.8mm pixel pitch for sharp, detailed images",
+    "Advanced color calibration for true-to-life visuals",
+    "HDR support for enhanced dynamic range",
+    "Uniform brightness across all panels",
+    "Energy-efficient operation for reduced costs",
+    "Robust die-cast aluminum cabinet",
+    "Seamless splicing for large video walls",
+    "Modular design for easy installation and maintenance",
+    "High refresh rate for flicker-free video",
+    "24/7 operation capability",
+    "Comprehensive connectivity options",
+    "Front and rear service access",
+    "Low heat emission for continuous use",
+    "Flexible configuration for custom installations",
+    "Anti-glare surface for optimal viewing",
+    "Lightweight and slim profile",
+    "Silent, fanless operation",
+    "Long lifespan with minimal maintenance",
+    "Compatible with major control systems",
+    "Smart power management",
+    "Supports multiple input sources",
+    "Ideal for close viewing distances"
+  ],
+  highlights: [
+    "P1.8 fine pitch for high-definition clarity",
+    "Perfect for boardrooms, control rooms, and signage",
+    "HDR and advanced color calibration",
+    "Robust, lightweight die-cast aluminum cabinet",
+    "Energy-efficient and reliable for 24/7 use",
+    "Seamless integration for large-scale video walls"
+  ],
+  specifications: [
+    { name: "Model", value: "MW7818-FI-EB" },
+    { name: "Pixel Pitch", value: "1.8mm" },
+    { name: "Resolution", value: "277,778 pixels/m²" },
+    { name: "Brightness", value: "700 nits" },
+    { name: "Contrast Ratio", value: "5000:1" },
+    { name: "Viewing Angle", value: "160° horizontal, 160° vertical" },
+    { name: "Refresh Rate", value: "3840Hz" },
+    { name: "Cabinet Material", value: "Die-cast aluminum" },
+    { name: "Cabinet Size", value: "500 x 500mm" }
+  ],
+  applications: [
+    {
+      name: "Corporate Boardrooms",
+      description: "Professional presentations and meetings with MW7818-FI-EB",
+      iconPath: "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+    },
+    {
+      name: "Control Rooms",
+      description: "Mission-critical monitoring with MW7818-FI-EB",
+      iconPath: "M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+    },
+    {
+      name: "Digital Signage",
+      description: "High-impact advertising and information displays with MW7818-FI-EB",
+      iconPath: "M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"
+    },
+    {
+      name: "Broadcast Studios",
+      description: "Ultra-HD backdrops and sets with MW7818-FI-EB",
+      iconPath: "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+    },
+    {
+      name: "Retail Environments",
+      description: "Engaging customer experiences with MW7818-FI-EB",
+      iconPath: "M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
+    }
+  ],
+  rating: "4.8",
+  reviewCount: "41",
+  ratingDistribution: [
+    { stars: 5, percentage: 80 },
+    { stars: 4, percentage: 15 },
+    { stars: 3, percentage: 5 },
+    { stars: 2, percentage: 0 },
+    { stars: 1, percentage: 0 }
+  ],
+  reviews: [
+    { 
+      name: "Robert Lewis",
+      date: "January 30, 2024",
+      rating: 5,
+      review: "We installed the MW7818-FI-EB in our company's main conference room and have been thoroughly impressed with the performance. The image quality is excellent for our presentations, and the price point made it possible to outfit multiple meeting spaces. A great balance of quality and value."
+    },
+    { 
+      name: "Julia Garcia",
+      date: "December 18, 2023",
+      rating: 4,
+      review: "Our retail store upgraded to the MW7818-FI-EB for our digital product showcases, and customer engagement has noticeably increased. The display is bright, clear, and really makes our product images pop. Setup was straightforward, and we appreciate the energy efficiency."
+    },
+    { 
+      name: "Daniel Kim",
+      date: "November 5, 2023",
+      rating: 5,
+      review: "As a digital signage integrator, I've installed many MW7818-FI-EB displays for clients, and they consistently perform exceptionally well. The build quality is solid, the panels align perfectly for seamless walls, and the color calibration is spot-on out of the box."
+    }
+  ],
+  relatedProducts: [
+    {
+      name: "XEB Series P1.2",
+      description: "Ultra-high-definition LED display with P1.2 pixel pitch for environments requiring exceptional visual precision",
+      image: "/LED Displays/img2.jpeg",
+      slug: "xeb-series-p12",
+      features: ["Ultra-high-definition", "P1.2 pixel pitch", "Unmatched precision"]
+    },
+    {
+      name: "XEB Series P1.5",
+      description: "Fine pixel pitch LED display delivering superior clarity and precision for professional environments",
+      image: "/LED Displays/img1.webp",
+      slug: "xeb-series-p15",
+      features: ["Fine pixel pitch", "Superior clarity", "Professional grade"]
+    }
+  ]
+},
+// ...existing code...
   
   // New product: U Series P0.9
   {
     slug: "u-series-p09",
-    name: "U Series P0.9",
-    type: "LED Display",
+    name: "MW7809-FI-CF",
+    type: "",
     shortDescription: "Premium Ultra-HD Display",
     keyFeature: "ultra-fine P0.9 pixel pitch for unmatched visual detail",
     primaryUse: "mission-critical control rooms, high-end broadcasting, and luxury retail environments",
     secondaryFeature: "industry-leading visual performance and color accuracy",
-    description: "The U Series P0.9 from Lovosis Technology offers unmatched clarity with its ultra-fine P0.9 pixel pitch, delivering breathtaking visual precision for high-end control rooms, broadcasting, and premium digital signage. Its ultra-high-definition display ensures that even the smallest details are rendered with sharp accuracy, providing a seamless viewing experience for the most demanding applications.",
-    extendedDescription: "The U Series P0.9 represents the pinnacle of LED display technology, engineered for scenarios where absolute visual perfection is required. At an astonishing 0.9mm pixel pitch, this display achieves near-retina quality visuals even at close viewing distances. Developed with advanced micro-LED architecture, the U Series P0.9 delivers exceptional brightness uniformity, remarkable color accuracy, and industry-leading contrast ratios that make it the preferred choice for mission-critical installations.",
-    image: "/LED Displays/img4.webp",
+    description: "The MW7809-FI-CF from Lovosis Technology offers unmatched clarity with its ultra-fine P0.9 pixel pitch, delivering breathtaking visual precision for high-end control rooms, broadcasting, and premium digital signage. Its ultra-high-definition display ensures that even the smallest details are rendered with sharp accuracy, providing a seamless viewing experience for the most demanding applications.",
+    extendedDescription: "The MW7809-FI-CF represents the pinnacle of LED display technology, engineered for scenarios where absolute visual perfection is required. At an astonishing 0.9mm pixel pitch, this display achieves near-retina quality visuals even at close viewing distances. Developed with advanced micro-LED architecture, the MW7809-FI-CF delivers exceptional brightness uniformity, remarkable color accuracy, and industry-leading contrast ratios that make it the preferred choice for mission-critical installations.",
+    image: "/LED Displays/MW7809-FI-CF.jpg",
     price: "Contact for Price",
     category: "Products/led-display",
     categoryName: "LED Display",
@@ -323,7 +400,7 @@ export const productData = [
       "Premium material construction for extended lifespan"
     ],
     specifications: [
-      { name: "Model", value: "U Series P0.9" },
+      { name: "Model", value: "MW7809-FI-CF" },
       { name: "Pixel Pitch", value: "0.9mm" },
       { name: "Resolution", value: "1,111,111 pixels/m²" },
       { name: "Brightness", value: "800 nits" },
@@ -336,17 +413,17 @@ export const productData = [
     applications: [
       {
         name: "Mission-Critical Control",
-        description: "Ultra-precise monitoring with U Series P0.9",
+        description: "Ultra-precise monitoring with MW7809-FI-CF",
         iconPath: "M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
       },
       {
         name: "Premium Broadcasting",
-        description: "State-of-the-art studio visuals with U Series P0.9",
+        description: "State-of-the-art studio visuals with MW7809-FI-CF",
         iconPath: "M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"
       },
       {
         name: "Luxury Retail",
-        description: "Exceptional brand showcases with U Series P0.9",
+        description: "Exceptional brand showcases with MW7809-FI-CF",
         iconPath: "M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"
       }
     ],
@@ -364,19 +441,19 @@ export const productData = [
         name: "Dr. Elizabeth Matthews",
         date: "March 5, 2024",
         rating: 5,
-        review: "As the lead designer for a space agency control center, we required displays with absolute precision. The U Series P0.9 exceeds all expectations. The clarity is remarkable - operators can view complex telemetry data without any eyestrain, even during 12-hour shifts. The color accuracy is critical for our status indicators, and the U Series P0.9 reproduces our calibrated palette perfectly."
+        review: "As the lead designer for a space agency control center, we required displays with absolute precision. The MW7809-FI-CF exceeds all expectations. The clarity is remarkable - operators can view complex telemetry data without any eyestrain, even during 12-hour shifts. The color accuracy is critical for our status indicators, and the MW7809-FI-CF reproduces our calibrated palette perfectly."
       },
       { 
         name: "Victor Nguyen",
         date: "February 12, 2024",
         rating: 5,
-        review: "Our broadcast studio produces content for major fashion brands, and we installed the U Series P0.9 as our main on-camera backdrop. The pixel density is so fine that there's absolutely no moiré effect when cameras pan across the display. Our clients are amazed by the color reproduction accuracy and the ability to showcase their products with perfect fidelity."
+        review: "Our broadcast studio produces content for major fashion brands, and we installed the MW7809-FI-CF as our main on-camera backdrop. The pixel density is so fine that there's absolutely no moiré effect when cameras pan across the display. Our clients are amazed by the color reproduction accuracy and the ability to showcase their products with perfect fidelity."
       },
       { 
         name: "Jonathan Price",
         date: "January 8, 2024",
         rating: 5,
-        review: "Our flagship jewelry store installed the U Series P0.9 for displaying our premium collection, and the results are spectacular. The display's ability to render the subtle nuances in gemstone colors and metallics is unprecedented. The investment was substantial, but the increased customer engagement and time spent viewing our digital catalog has translated directly to higher sales of our luxury items."
+        review: "Our flagship jewelry store installed the MW7809-FI-CF for displaying our premium collection, and the results are spectacular. The display's ability to render the subtle nuances in gemstone colors and metallics is unprecedented. The investment was substantial, but the increased customer engagement and time spent viewing our digital catalog has translated directly to higher sales of our luxury items."
       }
     ],
     relatedProducts: [
@@ -400,15 +477,15 @@ export const productData = [
   // New product: U Series P1.2
   {
     slug: "u-series-p12",
-    name: "U Series P1.2",
-    type: "LED Display",
+    name: "MW7812-FI-CF",
+    type: "",
     shortDescription: "Professional Precision Display",
     keyFeature: "P1.2 pixel pitch combining high performance and reliability",
     primaryUse: "corporate environments, control rooms, and high-end retail displays",
     secondaryFeature: "advanced visual processing and flexible installation options",
-    description: "The U Series P1.2 from Lovosis Technology is a precision-engineered display with a P1.2 pixel pitch, offering sharp visuals and excellent clarity for business presentations, control rooms, and premium digital signage. The ultra-high-definition display ensures detailed content visibility, making it ideal for environments that require accurate image representation.",
-    extendedDescription: "The U Series P1.2 delivers exceptional visual performance with its 1.2mm pixel pitch technology, providing businesses and organizations with remarkably detailed imagery that maintains clarity even at close viewing distances. Developed using Lovosis's advanced U-Series architecture, this display combines premium image quality with operational reliability, ensuring continued performance in demanding 24/7 environments where visual communication is critical to success.",
-    image: "/LED Displays/img5.jpg",
+    description: "The MW7812-FI-CF from Lovosis Technology is a precision-engineered display with a P1.2 pixel pitch, offering sharp visuals and excellent clarity for business presentations, control rooms, and premium digital signage. The ultra-high-definition display ensures detailed content visibility, making it ideal for environments that require accurate image representation.",
+    extendedDescription: "The MW7812-FI-CF delivers exceptional visual performance with its 1.2mm pixel pitch technology, providing businesses and organizations with remarkably detailed imagery that maintains clarity even at close viewing distances. Developed using Lovosis's advanced U-Series architecture, this display combines premium image quality with operational reliability, ensuring continued performance in demanding 24/7 environments where visual communication is critical to success.",
+    image: "/LED Displays/MW7809-FI-CF.jpg",
     price: "Contact for Price",
     category: "Products/led-display",
     categoryName: "LED Display",
@@ -422,7 +499,7 @@ export const productData = [
       "Intelligent brightness adjustment for optimal viewing"
     ],
     specifications: [
-      { name: "Model", value: "U Series P1.2" },
+      { name: "Model", value: "MW7812-FI-CF" },
       { name: "Pixel Pitch", value: "1.2mm" },
       { name: "Resolution", value: "694,444 pixels/m²" },
       { name: "Brightness", value: "800 nits" },
@@ -435,17 +512,17 @@ export const productData = [
     applications: [
       {
         name: "Corporate Headquarters",
-        description: "Executive-level presentation displays with U Series P1.2",
+        description: "Executive-level presentation displays with MW7812-FI-CF",
         iconPath: "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
       },
       {
         name: "Control Centers",
-        description: "Reliable information displays with U Series P1.2",
+        description: "Reliable information displays with MW7812-FI-CF",
         iconPath: "M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
       },
       {
         name: "Premium Retail",
-        description: "Elevated shopping experiences with U Series P1.2",
+        description: "Elevated shopping experiences with MW7812-FI-CF",
         iconPath: "M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
       }
     ],
@@ -463,19 +540,19 @@ export const productData = [
         name: "Maria Santos",
         date: "February 20, 2024",
         rating: 5,
-        review: "We installed the U Series P1.2 in our executive briefing center, and it's transformed our client presentations. The clarity is exceptional even when displaying detailed financial data and technical specifications. The display's ability to maintain consistent brightness throughout long meetings has been particularly valuable. The U Series P1.2 was a significant investment that's already paying dividends in client engagement."
+        review: "We installed the MW7812-FI-CF in our executive briefing center, and it's transformed our client presentations. The clarity is exceptional even when displaying detailed financial data and technical specifications. The display's ability to maintain consistent brightness throughout long meetings has been particularly valuable. The MW7812-FI-CF was a significant investment that's already paying dividends in client engagement."
       },
       { 
         name: "Andrew Jackson",
         date: "January 15, 2024",
         rating: 5,
-        review: "Our emergency operations center operates around the clock, and the U Series P1.2 has proven to be exceptionally reliable. The visual clarity ensures that critical information is always legible, and the redundant power systems have prevented any downtime during our operations. The heat management is impressive - even after continuous operation, the display remains at optimal temperature."
+        review: "Our emergency operations center operates around the clock, and the MW7812-FI-CF has proven to be exceptionally reliable. The visual clarity ensures that critical information is always legible, and the redundant power systems have prevented any downtime during our operations. The heat management is impressive - even after continuous operation, the display remains at optimal temperature."
       },
       { 
         name: "Sophia Williams",
         date: "December 5, 2023",
         rating: 4,
-        review: "Our high-end department store installed the U Series P1.2 at our main entrance, and it's creating a stunning first impression for customers. The vibrant colors and crisp imagery showcase our seasonal collections beautifully. Installation was straightforward, though we needed some additional assistance with the control software setup. Overall, the display quality exceeds expectations and has enhanced our store's premium atmosphere."
+        review: "Our high-end department store installed the MW7812-FI-CF at our main entrance, and it's creating a stunning first impression for customers. The vibrant colors and crisp imagery showcase our seasonal collections beautifully. Installation was straightforward, though we needed some additional assistance with the control software setup. Overall, the display quality exceeds expectations and has enhanced our store's premium atmosphere."
       }
     ],
     relatedProducts: [
@@ -497,217 +574,219 @@ export const productData = [
   },
   
   // New product: U Series P1.5
-  {
-    slug: "u-series-p15",
-    name: "U Series P1.5",
-    type: "LED Display",
-    shortDescription: "Versatile Business Display",
-    keyFeature: "P1.5 pixel pitch balancing performance and value",
-    primaryUse: "business environments, retail displays, and educational settings",
-    secondaryFeature: "reliability and ease of maintenance",
-    description: "The U Series P1.5 by Lovosis Technology delivers high-quality visuals with its P1.5 pixel pitch, offering outstanding clarity and vivid color accuracy. Perfect for control rooms, meeting spaces, and advertising displays, this display provides clear, crisp visuals for professional environments that demand the best in image quality.",
-    extendedDescription: "The U Series P1.5 provides businesses with an ideal balance of visual performance and value. With its 1.5mm pixel pitch, this versatile display delivers sharp, clear imagery at standard viewing distances while remaining accessible for organizations seeking quality visual solutions. The U Series P1.5 features Lovosis's trusted display technology that emphasizes reliability, simplified maintenance, and versatile application across various commercial and educational environments.",
-    image: "/LED Displays/img6.jpeg",
-    price: "Contact for Price",
-    category: "Products/led-display",
-    categoryName: "LED Display",
-    features: ["High-quality P1.5 display", "Balanced performance", "Business-oriented", "Simplified maintenance", "Versatile application"],
-    highlights: [
-      "P1.5 pixel pitch for clear business messaging",
-      "Ideal viewing distance of 1.5-12 meters",
-      "Simplified installation and configuration",
-      "User-friendly content management system",
-      "Robust build for commercial environments",
-      "Energy-efficient operation for reduced costs"
-    ],
-    specifications: [
-      { name: "Model", value: "U Series P1.5" },
-      { name: "Pixel Pitch", value: "1.5mm" },
-      { name: "Resolution", value: "444,444 pixels/m²" },
-      { name: "Brightness", value: "700 nits" },
-      { name: "Contrast Ratio", value: "5500:1" },
-      { name: "Viewing Angle", value: "160° horizontal, 160° vertical" },
-      { name: "Refresh Rate", value: "3840Hz" },
-      { name: "Cabinet Material", value: "Die-cast aluminum" },
-      { name: "Cabinet Size", value: "500 x 500mm" }
-    ],
-    applications: [
-      {
-        name: "Business Environments",
-        description: "Effective corporate communications with U Series P1.5",
-        iconPath: "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
-      },
-      {
-        name: "Retail Solutions",
-        description: "Engaging customer experiences with U Series P1.5",
-        iconPath: "M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
-      },
-      {
-        name: "Educational Facilities",
-        description: "Enhanced learning environments with U Series P1.5",
-        iconPath: "M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13c-1.168-.775-2.754-1.253-4.5-1.253-1.746 0-3.332.477-4.5 1.253"
-      }
-    ],
-    rating: "4.7",
-    reviewCount: "53",
-    ratingDistribution: [
-      { stars: 5, percentage: 75 },
-      { stars: 4, percentage: 20 },
-      { stars: 3, percentage: 5 },
-      { stars: 2, percentage: 0 },
-      { stars: 1, percentage: 0 }
-    ],
-    reviews: [
-      { 
-        name: "Michael Bradley",
-        date: "March 10, 2024",
-        rating: 5,
-        review: "We deployed U Series P1.5 displays across our corporate campus for digital signage and meeting room installations. The image quality is excellent for our needs, and the setup was straightforward. What impressed us most is how easy these are to maintain - the modular design makes it simple to service if needed, though we haven't had any issues in six months of operation."
-      },
-      { 
-        name: "Rebecca Chen",
-        date: "February 2, 2024",
-        rating: 4,
-        review: "Our retail chain installed U Series P1.5 displays in our flagship stores, and they've significantly enhanced our in-store marketing. The displays are bright and clear, even in our sunlit locations. The content management system is intuitive enough for our marketing team to update messaging without technical assistance. Would give 5 stars if the included templates were more customizable."
-      },
-      { 
-        name: "Professor Alan Thompson",
-        date: "January 18, 2024",
-        rating: 5,
-        review: "Our university's business school equipped multiple lecture halls with the U Series P1.5, and they've transformed our teaching capabilities. The displays provide perfect visibility from all seats, and the color accuracy is critical for our data visualization classes. The reliability has been excellent - no disruptions during important lectures or presentations. I highly recommend these displays for educational settings."
-      }
-    ],
-    relatedProducts: [
-      {
-        name: "U Series P1.2",
-        description: "Premium LED display with P1.2 pixel pitch for exceptional visual clarity in professional settings",
-        image: "/LED Displays/img5.jpg",
-        slug: "u-series-p12",
-        features: ["Premium display", "P1.2 pixel pitch", "Professional clarity"]
-      },
-      {
-        name: "XEB Series P1.5",
-        description: "Fine pixel pitch LED display with superior clarity and precision for demanding environments",
-        image: "/LED Displays/img1.webp",
-        slug: "xeb-series-p15",
-        features: ["Fine pixel pitch", "Superior clarity", "Professional grade"]
-      }
-    ]
-  },
+ {
+  slug: "u-series-p15",
+  name: "MW7815-FI-CF",
+  type: "",
+  shortDescription: "Versatile Business Display",
+  keyFeature: "P1.5 pixel pitch balancing performance and value",
+  primaryUse: "business environments, retail displays, and educational settings",
+  secondaryFeature: "reliability and ease of maintenance",
+  description: "The MW7815-FI-CF by Lovosis Technology delivers high-quality visuals with its P1.5 pixel pitch, offering outstanding clarity and vivid color accuracy. Perfect for control rooms, meeting spaces, and advertising displays, this display provides clear, crisp visuals for professional environments that demand the best in image quality.",
+  extendedDescription: "The MW7815-FI-CF provides businesses with an ideal balance of visual performance and value. With its 1.5mm pixel pitch, this versatile display delivers sharp, clear imagery at standard viewing distances while remaining accessible for organizations seeking quality visual solutions. The MW7815-FI-CF features Lovosis's trusted display technology that emphasizes reliability, simplified maintenance, and versatile application across various commercial and educational environments.",
+  image: "/LED Displays/MW7809-FI-CF.jpg",
+  price: "Contact for Price",
+  category: "Products/led-display",
+  categoryName: "LED Display",
+  features: ["High-quality P1.5 display", "Balanced performance", "Business-oriented", "Simplified maintenance", "Versatile application"],
+  highlights: [
+    "P1.5 pixel pitch for clear business messaging",
+    "Ideal viewing distance of 1.5-12 meters",
+    "Simplified installation and configuration",
+    "User-friendly content management system",
+    "Robust build for commercial environments",
+    "Energy-efficient operation for reduced costs"
+  ],
+  specifications: [
+    { name: "Model", value: "MW7815-FI-CF" },
+    { name: "Pixel Pitch", value: "1.5mm" },
+    { name: "Resolution", value: "444,444 pixels/m²" },
+    { name: "Brightness", value: "700 nits" },
+    { name: "Contrast Ratio", value: "5500:1" },
+    { name: "Viewing Angle", value: "160° horizontal, 160° vertical" },
+    { name: "Refresh Rate", value: "3840Hz" },
+    { name: "Cabinet Material", value: "Die-cast aluminum" },
+    { name: "Cabinet Size", value: "500 x 500mm" }
+  ],
+  applications: [
+    {
+      name: "Business Environments",
+      description: "Effective corporate communications with MW7815-FI-CF",
+      iconPath: "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+    },
+    {
+      name: "Retail Solutions",
+      description: "Engaging customer experiences with MW7815-FI-CF",
+      iconPath: "M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
+    },
+    {
+      name: "Educational Facilities",
+      description: "Enhanced learning environments with MW7815-FI-CF",
+      iconPath: "M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13c-1.168-.775-2.754-1.253-4.5-1.253-1.746 0-3.332.477-4.5 1.253"
+    }
+  ],
+  rating: "4.7",
+  reviewCount: "53",
+  ratingDistribution: [
+    { stars: 5, percentage: 75 },
+    { stars: 4, percentage: 20 },
+    { stars: 3, percentage: 5 },
+    { stars: 2, percentage: 0 },
+    { stars: 1, percentage: 0 }
+  ],
+  reviews: [
+    { 
+      name: "Michael Bradley",
+      date: "March 10, 2024",
+      rating: 5,
+      review: "We deployed MW7815-FI-CF displays across our corporate campus for digital signage and meeting room installations. The image quality is excellent for our needs, and the setup was straightforward. What impressed us most is how easy these are to maintain - the modular design makes it simple to service if needed, though we haven't had any issues in six months of operation."
+    },
+    { 
+      name: "Rebecca Chen",
+      date: "February 2, 2024",
+      rating: 4,
+      review: "Our retail chain installed MW7815-FI-CF displays in our flagship stores, and they've significantly enhanced our in-store marketing. The displays are bright and clear, even in our sunlit locations. The content management system is intuitive enough for our marketing team to update messaging without technical assistance. Would give 5 stars if the included templates were more customizable."
+    },
+    { 
+      name: "Professor Alan Thompson",
+      date: "January 18, 2024",
+      rating: 5,
+      review: "Our university's business school equipped multiple lecture halls with the MW7815-FI-CF, and they've transformed our teaching capabilities. The displays provide perfect visibility from all seats, and the color accuracy is critical for our data visualization classes. The reliability has been excellent - no disruptions during important lectures or presentations. I highly recommend these displays for educational settings."
+    }
+  ],
+  relatedProducts: [
+    {
+      name: "U Series P1.2",
+      description: "Premium LED display with P1.2 pixel pitch for exceptional visual clarity in professional settings",
+      image: "/LED Displays/img5.jpg",
+      slug: "u-series-p12",
+      features: ["Premium display", "P1.2 pixel pitch", "Professional clarity"]
+    },
+    {
+      name: "XEB Series P1.5",
+      description: "Fine pixel pitch LED display with superior clarity and precision for demanding environments",
+      image: "/LED Displays/img1.webp",
+      slug: "xeb-series-p15",
+      features: ["Fine pixel pitch", "Superior clarity", "Professional grade"]
+    }
+  ]
+},
+// ...existing code...
 
   
  // LCD Video Wall Products :- 3
 
-  {
-    slug: "mw-a46-b3-e",
-    name: "46\" 1.7mm Bezel Width Video Wall",
-    type: "LCD Video Wall",
-    shortDescription: "Ultra-Narrow Bezel Professional Display",
-    keyFeature: "1.7mm ultra-narrow bezel for seamless multi-screen installations",
-    primaryUse: "control rooms, corporate environments, and retail digital signage",
-    secondaryFeature: "exceptional image quality with wide viewing angles",
-    description: "Upgrade your display experience with the 46\" 1.7mm Bezel Width Video Wall, perfect for seamless, high-definition visuals in any professional environment. With an ultra-slim bezel, this video wall provides an immersive viewing experience ideal for control rooms, retail displays, and large-scale presentations. Its 1.7mm bezel ensures minimal gap between screens, offering a nearly continuous image across multiple panels.",
-    extendedDescription: "The MW-A46-B3-E video wall display combines innovative bezel design with professional-grade LCD technology to create immersive multi-screen installations. At just 1.7mm combined bezel width, this 46-inch display provides an almost seamless viewing experience when tiled in video wall configurations. Engineered for 24/7 operation in mission-critical environments, these displays feature advanced heat management, redundant signal paths, and industrial-grade components that ensure reliable performance even in the most demanding applications.",
-    image: "/LCD Displays/P1.jpg",
-    price: "Contact for Price",
-    category: "Products/lcd-video",
-    categoryName: "LCD Video Wall",
-    features: ["1.7mm Bezel", "500nits Brightness", "Full HD Resolution", "178° Viewing Angle", "24/7 Operation"],
-    highlights: [
-      "Ultra-narrow 1.7mm bezel for seamless video walls",
-      "Professional-grade LCD panel with 178° viewing angles",
-      "Advanced color calibration for consistent cross-panel performance",
-      "Intelligent heat management for extended operation",
-      "Multiple connectivity options including HDMI, DVI, and DisplayPort",
-      "Remote management capabilities for enterprise installations"
-    ],
-    specifications: [
-      { name: "Model", value: "MW-A46-B3-E" },
-      { name: "Screen Size", value: "46 inches" },
-      { name: "Bezel Width", value: "1.7mm (0.85mm + 0.85mm)" },
-      { name: "Resolution", value: "1920 × 1080 (Full HD)" },
-      { name: "Brightness", value: "500 nits" },
-      { name: "Contrast Ratio", value: "3500:1" },
-      { name: "Viewing Angle", value: "178° horizontal, 178° vertical" },
-      { name: "Response Time", value: "8ms" },
-      { name: "Operating Hours", value: "24/7" },
-      { name: "Input Ports", value: "HDMI, DVI-D, DisplayPort, VGA" }
-    ],
-    applications: [
-      {
-        name: "Control Rooms",
-        description: "High-performance monitoring solutions with MW-A46-B3-E",
-        iconPath: "M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-      },
-      {
-        name: "Corporate Environments",
-        description: "Impressive presentation displays with MW-A46-B3-E",
-        iconPath: "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
-      },
-      {
-        name: "Retail Signage",
-        description: "Attention-grabbing digital displays with MW-A46-B3-E",
-        iconPath: "M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
-      }
-    ],
-    rating: "4.8",
-    reviewCount: "46",
-    ratingDistribution: [
-      { stars: 5, percentage: 85 },
-      { stars: 4, percentage: 10 },
-      { stars: 3, percentage: 5 },
-      { stars: 2, percentage: 0 },
-      { stars: 1, percentage: 0 }
-    ],
-    reviews: [
-      { 
-        name: "Michael Thompson",
-        date: "January 25, 2024",
-        rating: 5,
-        review: "We installed a 3x3 configuration of the MW-A46-B3-E displays in our security operations center, and the result has been transformative. The ultra-narrow bezels create a nearly seamless viewing experience that makes data monitoring much more effective. The displays have been running 24/7 for six months without any issues or signs of burn-in. Excellent color uniformity across all nine panels as well."
-      },
-      { 
-        name: "Sarah Johnson",
-        date: "December 8, 2023",
-        rating: 5,
-        review: "As the visual merchandising director for a retail chain, we needed a solution that would create impact while displaying our seasonal promotions. These video wall displays deliver exceptional image quality and the bezels are so thin that our customers often don't realize they're looking at multiple screens. The installation team mentioned these were some of the best panels they've worked with."
-      },
-      { 
-        name: "David Chen",
-        date: "November 15, 2023",
-        rating: 4,
-        review: "Our corporate boardroom upgrade to the MW-A46-B3-E video wall has significantly improved our client presentations and video conferences. The image quality is excellent and the viewing angles ensure everyone in the room gets the same experience. The only reason for 4 stars instead of 5 is that the included management software has a bit of a learning curve."
-      }
-    ],
-    relatedProducts: [
-      {
-        name: "55\" 1.7mm Bezel Width Video Wall",
-        description: "Larger professional video wall display with ultra-narrow 1.7mm bezel for creating impressive large-format display solutions",
-        image: "/LCD Displays/P2.jpg",
-        slug: "mw-a55-b3-e",
-        features: ["1.7mm Bezel", "55-inch Display", "Professional Grade"]
-      },
-      {
-        name: "55\" 0.88mm Bezel Width Video Wall",
-        description: "Premium video wall solution with ultra-narrow 0.88mm bezel for creating virtually seamless large displays",
-        image: "/LCD Displays/P3.jpg",
-        slug: "mw-a55-b5-e",
-        features: ["0.88mm Bezel", "Nearly Seamless", "Premium Quality"]
-      }
-    ]
-  },
+ {
+  slug: "mw-a46-b3-e",
+  name: "MW-A46-B3-E",
+  type: "",
+  shortDescription: "Ultra-Narrow Bezel Professional Display",
+  keyFeature: "1.7mm ultra-narrow bezel for seamless multi-screen installations",
+  primaryUse: "control rooms, corporate environments, and retail digital signage",
+  secondaryFeature: "exceptional image quality with wide viewing angles",
+  description: "The MW-A46-B3-E is a 46-inch LCD video wall display engineered for seamless, high-definition visuals in professional environments. Its ultra-narrow 1.7mm bezel allows for immersive multi-screen installations, making it ideal for control rooms, retail displays, and large-scale presentations. The advanced LCD panel delivers vibrant color, wide viewing angles, and reliable 24/7 operation.",
+  extendedDescription: "The MW-A46-B3-E video wall combines innovative ultra-narrow bezel design with industrial-grade LCD technology for immersive, nearly seamless video wall configurations. With a combined bezel width of just 1.7mm, this 46-inch display is perfect for tiled installations where minimal gap between screens is essential. Engineered for mission-critical and commercial environments, it features advanced heat management, redundant signal paths, and robust components for reliable, continuous operation.",
+  image: "/LCD Displays/MW-A55-B3-E.png",
+  price: "Contact for Price",
+  category: "Products/lcd-video",
+  categoryName: "LCD Video Wall",
+  features: ["1.7mm Bezel", "500nits Brightness", "Full HD Resolution", "178° Viewing Angle", "24/7 Operation"],
+  highlights: [
+    "Ultra-narrow 1.7mm bezel for seamless video walls",
+    "Professional-grade LCD panel with 178° viewing angles",
+    "Advanced color calibration for consistent cross-panel performance",
+    "Intelligent heat management for extended operation",
+    "Multiple connectivity options including HDMI, DVI, and DisplayPort",
+    "Remote management capabilities for enterprise installations"
+  ],
+  specifications: [
+    { name: "Model", value: "MW-A46-B3-E" },
+    { name: "Screen Size", value: "46 inches" },
+    { name: "Bezel Width", value: "1.7mm (0.85mm + 0.85mm)" },
+    { name: "Resolution", value: "1920 × 1080 (Full HD)" },
+    { name: "Brightness", value: "500 nits" },
+    { name: "Contrast Ratio", value: "3500:1" },
+    { name: "Viewing Angle", value: "178° horizontal, 178° vertical" },
+    { name: "Response Time", value: "8ms" },
+    { name: "Operating Hours", value: "24/7" },
+    { name: "Input Ports", value: "HDMI, DVI-D, DisplayPort, VGA" }
+  ],
+  applications: [
+    {
+      name: "Control Rooms",
+      description: "High-performance monitoring solutions with MW-A46-B3-E",
+      iconPath: "M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+    },
+    {
+      name: "Corporate Environments",
+      description: "Impressive presentation displays with MW-A46-B3-E",
+      iconPath: "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+    },
+    {
+      name: "Retail Signage",
+      description: "Attention-grabbing digital displays with MW-A46-B3-E",
+      iconPath: "M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
+    }
+  ],
+  rating: "4.8",
+  reviewCount: "46",
+  ratingDistribution: [
+    { stars: 5, percentage: 85 },
+    { stars: 4, percentage: 10 },
+    { stars: 3, percentage: 5 },
+    { stars: 2, percentage: 0 },
+    { stars: 1, percentage: 0 }
+  ],
+  reviews: [
+    { 
+      name: "Michael Thompson",
+      date: "January 25, 2024",
+      rating: 5,
+      review: "We installed a 3x3 configuration of the MW-A46-B3-E displays in our security operations center, and the result has been transformative. The ultra-narrow bezels create a nearly seamless viewing experience that makes data monitoring much more effective. The displays have been running 24/7 for six months without any issues or signs of burn-in. Excellent color uniformity across all nine panels as well."
+    },
+    { 
+      name: "Sarah Johnson",
+      date: "December 8, 2023",
+      rating: 5,
+      review: "As the visual merchandising director for a retail chain, we needed a solution that would create impact while displaying our seasonal promotions. These video wall displays deliver exceptional image quality and the bezels are so thin that our customers often don't realize they're looking at multiple screens. The installation team mentioned these were some of the best panels they've worked with."
+    },
+    { 
+      name: "David Chen",
+      date: "November 15, 2023",
+      rating: 4,
+      review: "Our corporate boardroom upgrade to the MW-A46-B3-E video wall has significantly improved our client presentations and video conferences. The image quality is excellent and the viewing angles ensure everyone in the room gets the same experience. The only reason for 4 stars instead of 5 is that the included management software has a bit of a learning curve."
+    }
+  ],
+  relatedProducts: [
+    {
+      name: "55\" 1.7mm Bezel Width Video Wall",
+      description: "Larger professional video wall display with ultra-narrow 1.7mm bezel for creating impressive large-format display solutions",
+      image: "/LCD Displays/P2.jpg",
+      slug: "mw-a55-b3-e",
+      features: ["1.7mm Bezel", "55-inch Display", "Professional Grade"]
+    },
+    {
+      name: "55\" 0.88mm Bezel Width Video Wall",
+      description: "Premium video wall solution with ultra-narrow 0.88mm bezel for creating virtually seamless large displays",
+      image: "/LCD Displays/P3.jpg",
+      slug: "mw-a55-b5-e",
+      features: ["0.88mm Bezel", "Nearly Seamless", "Premium Quality"]
+    }
+  ]
+},
+// ...existing code...
 
   {
     slug: "mw-a55-b3-e",
-    name: "55\" 1.7mm Bezel Width Video Wall",
-    type: "LCD Video Wall",
+    name: "MW-A55-B3-E",
+    type: "",
     shortDescription: "Large-Format Professional Display",
     keyFeature: "55-inch display with 1.7mm ultra-narrow bezel technology",
     primaryUse: "corporate lobbies, retail environments, and premium advertising displays",
     secondaryFeature: "high brightness and commercial-grade durability",
     description: "The 55-inch 1.7mm Bezel Width Video Wall delivers superior image quality and a nearly borderless display for impactful visual presentations. Designed for commercial use, this video wall is perfect for digital signage, conference rooms, and command centers. The ultra-narrow 1.7mm bezel creates a fluid and captivating display experience.",
     extendedDescription: "The MW-A55-B3-E represents the perfect balance of screen size and seamless integration for professional video wall installations. With its generous 55-inch display area and minimal 1.7mm bezel gap, this display maximizes visual impact while minimizing distractions. Engineered with commercial applications in mind, these panels feature enhanced brightness, anti-glare treatment, and specialized heat dissipation technology that ensures reliable operation in demanding environments.",
-    image: "/LCD Displays/P2.jpg",
+    image: "/LCD Displays/MW-A55-B3-E.png",
     price: "Contact for Price",
     category: "Products/lcd-video",
     categoryName: "LCD Video Wall",
@@ -795,86 +874,86 @@ export const productData = [
       }
     ]
   },
-
+//new products
   {
     slug: "mw-a55-b5-e",
-    name: "55\" 0.88mm Bezel Width Video Wall",
-    type: "LCD Video Wall",
-    shortDescription: "Premium Near-Seamless Display",
-    keyFeature: "industry-leading 0.88mm ultra-narrow bezel for virtually seamless video walls",
-    primaryUse: "luxury retail, broadcast environments, and high-end corporate installations",
-    secondaryFeature: "premium image quality and advanced visual processing",
-    description: "Achieve the ultimate visual impact with the 55-inch 0.88mm Bezel Width Video Wall. With an incredibly thin bezel, this video wall provides an almost invisible edge, resulting in a smooth and uninterrupted viewing experience. It's the top choice for applications requiring precision and clarity, including broadcasting studios and high-end retail environments.",
-    extendedDescription: "The MW-A55-B5-E represents the pinnacle of video wall technology, featuring an industry-leading 0.88mm combined bezel width that creates an almost seamless visual canvas. This premium 55-inch display is specifically engineered for environments where visual perfection is non-negotiable. Advanced panel matching technology ensures perfect color and brightness uniformity across multiple displays, while the specialized anti-glare coating and high brightness provide exceptional visibility even in challenging lighting conditions.",
-    image: "/LCD Displays/P3.jpg",
+    name: "MW-A55-B5-E",
+    type: "",
+    shortDescription: "Large-Format Professional Display",
+    keyFeature: "55-inch display with 1.7mm ultra-narrow bezel technology",
+    primaryUse: "corporate lobbies, retail environments, and premium advertising displays",
+    secondaryFeature: "high brightness and commercial-grade durability",
+    description: "The MW-A55-B5-E is a 55-inch LCD video wall display featuring a 1.7mm ultra-narrow bezel for seamless multi-screen installations. Designed for impactful visual presentations, this large-format display is ideal for digital signage, conference rooms, and command centers. Its commercial-grade panel delivers high brightness and durability for 24/7 operation.",
+    extendedDescription: "The MW-A55-B5-E represents the perfect balance of screen size and seamless integration for professional video wall installations. With its generous 55-inch display area and minimal 1.7mm bezel gap, this display maximizes visual impact while minimizing distractions. Engineered for commercial applications, it features enhanced brightness, anti-glare treatment, and specialized heat dissipation technology for reliable operation in demanding environments.",
+    image: "/LCD Displays/MW-A55-B3-E.png",
     price: "Contact for Price",
     category: "Products/lcd-video",
     categoryName: "LCD Video Wall",
-    features: ["0.88mm Ultra-Narrow Bezel", "Premium Panel", "500nits Brightness", "Advanced Color Calibration", "24/7 Reliability"],
+    features: ["1.7mm Bezel", "500nits Brightness", "Commercial Grade", "Full HD Resolution", "24/7 Operation"],
     highlights: [
-      "Industry-leading 0.88mm combined bezel width",
-      "Premium 55-inch commercial-grade panel",
-      "Advanced panel matching for perfect uniformity",
-      "Factory color calibration for seamless visual experience",
-      "Enhanced heat management for extended lifespan",
-      "Comprehensive connectivity options for professional installations"
+      "Ultra-narrow 1.7mm combined bezel width",
+      "55-inch display for maximum visual impact",
+      "High brightness of 500 nits for clear visibility in varied lighting",
+      "Advanced calibration technology for perfect color matching",
+      "Multiple input options for versatile integration",
+      "Designed for 24/7 continuous operation"
     ],
     specifications: [
       { name: "Model", value: "MW-A55-B5-E" },
       { name: "Screen Size", value: "55 inches" },
-      { name: "Bezel Width", value: "0.88mm (0.44mm + 0.44mm)" },
+      { name: "Bezel Width", value: "1.7mm (0.85mm + 0.85mm)" },
       { name: "Resolution", value: "1920 × 1080 (Full HD)" },
       { name: "Brightness", value: "500 nits" },
       { name: "Contrast Ratio", value: "4000:1" },
       { name: "Viewing Angle", value: "178° horizontal, 178° vertical" },
       { name: "Response Time", value: "8ms" },
       { name: "Operating Hours", value: "24/7" },
-      { name: "Input Ports", value: "HDMI, DVI-D, DisplayPort, HDBaseT" }
+      { name: "Input Ports", value: "HDMI, DVI-D, DisplayPort, VGA" }
     ],
     applications: [
       {
-        name: "Broadcast Studios",
-        description: "Professional broadcast backdrops with MW-A55-B5-E",
-        iconPath: "M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"
+        name: "Corporate Lobbies",
+        description: "Impressive visual welcome with MW-A55-B5-E",
+        iconPath: "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
       },
       {
-        name: "Luxury Retail",
-        description: "Premium brand experiences with MW-A55-B5-E",
+        name: "Retail Environments",
+        description: "Engaging shopping experiences with MW-A55-B5-E",
         iconPath: "M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
       },
       {
-        name: "Executive Briefing Centers",
-        description: "High-impact client presentations with MW-A55-B5-E",
-        iconPath: "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+        name: "Command Centers",
+        description: "Critical information displays with MW-A55-B5-E",
+        iconPath: "M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
       }
     ],
-    rating: "5.0",
-    reviewCount: "23",
+    rating: "4.7",
+    reviewCount: "35",
     ratingDistribution: [
-      { stars: 5, percentage: 95 },
-      { stars: 4, percentage: 5 },
-      { stars: 3, percentage: 0 },
+      { stars: 5, percentage: 80 },
+      { stars: 4, percentage: 15 },
+      { stars: 3, percentage: 5 },
       { stars: 2, percentage: 0 },
       { stars: 1, percentage: 0 }
     ],
     reviews: [
       { 
-        name: "Victoria Chang",
-        date: "March 2, 2024",
+        name: "Robert Williams",
+        date: "February 12, 2024",
         rating: 5,
-        review: "As the design director for a luxury automotive showroom, we needed a display solution that matched the premium nature of our vehicles. The MW-A55-B5-E with its virtually invisible 0.88mm bezels creates a seamless canvas that elevates our content. Visitors often can't tell they're looking at multiple displays until they approach very closely. The image quality is exceptional, and the installation team commented that these were the finest panels they'd worked with."
+        review: "We chose the 55-inch model for our airport information displays, and the impact has been remarkable. The large screen size combined with the minimal bezels creates an impressive and immersive information system. The high brightness ensures visibility even in our sun-filled terminal areas, and the reliability has been excellent during our 24/7 operation schedule."
       },
       { 
-        name: "Alexander Morris",
-        date: "January 30, 2024",
-        rating: 5,
-        review: "Our broadcast network upgraded to the MW-A55-B5-E for our main studio backdrop, and the results have been spectacular. The nearly seamless appearance creates a perfect canvas for our on-air graphics, and the color accuracy is critical for our brand presentation. Even under intense studio lighting, the anti-glare coating ensures perfect visibility, and the heat management has been flawless during our continuous operation."
+        name: "Jennifer Lopez",
+        date: "January 3, 2024",
+        rating: 4,
+        review: "Our marketing agency installed a 2x2 configuration for a luxury brand client, and the visual impact has exceeded expectations. The 55-inch size creates a commanding presence, and the image quality is superb. The only minor issue we encountered was with the initial color calibration across panels, though the manufacturer's support team helped us resolve this promptly."
       },
       { 
-        name: "Emily Richardson",
-        date: "December 12, 2023",
+        name: "James Wilson",
+        date: "November 28, 2023",
         rating: 5,
-        review: "We installed a 3x3 configuration of the MW-A55-B5-E in our executive briefing center, and it's been transformative for our client presentations. The virtually seamless appearance creates an immersive experience that helps us tell our company story in a more impactful way. The installation process was straightforward, and the calibration tools ensured perfect color matching across all nine panels. A premium product that delivers on its promises."
+        review: "As the IT director for a financial services firm, I needed a reliable and impressive solution for our trading floor data displays. The MW-A55-B5-E delivers exceptional performance with crisp text readability and consistent color reproduction. The minimal bezels create an almost continuous surface for our critical market data, and the reliability has been flawless."
       }
     ],
     relatedProducts: [
@@ -894,6 +973,8 @@ export const productData = [
       }
     ]
   },
+// ...existing code...
+
 
  
 
@@ -1388,40 +1469,46 @@ export const productData = [
 
 // CCTV Monitors
 
-  {
+{
     slug: "mw3224-v",
     name: "MW3224-V",
-    type: "CCTV Monitor",
+    type: "",
     shortDescription: "24\" LED FHD Monitor",
-    keyFeature: "professional-grade 24-inch FHD display for surveillance applications",
-    primaryUse: "security control rooms, monitoring centers, and surveillance installations",
-    secondaryFeature: "24/7 reliability with multiple input options",
-    description: "The MW3224-V is a professional 24-inch LED Full HD monitor designed specifically for CCTV and security applications. Featuring crisp 1080p resolution, multiple video inputs, and a durable design built for continuous operation, this monitor delivers reliable performance for surveillance environments where image clarity and operational dependability are essential.",
-    extendedDescription: "The MW3224-V represents the perfect balance of performance and value for security monitoring applications. This 24-inch professional-grade monitor features Full HD 1920×1080 resolution that ensures clear visibility of security footage, with specialized display settings optimized for surveillance applications. The monitor's commercial-grade panel is engineered for 24/7 operation with enhanced durability and reliable performance in demanding environments, while multiple input options provide maximum compatibility with diverse security systems.",
-    image: "/Monitors/MW3224-V.webp",
+    keyFeature: "The MW3224-V is a professional-grade 24-inch FHD display for surveillance applications, engineered for continuous 24/7 operation.",
+    primaryUse: "MW3224-V is ideal for security control rooms, monitoring centers, and surveillance installations.",
+    secondaryFeature: "The MW3224-V offers 24/7 reliability with multiple input options for maximum compatibility.",
+    description: "The MW3224-V is a professional 24-inch LED Full HD monitor designed specifically for CCTV and security applications. The MW3224-V features crisp 1080p resolution, multiple video inputs, and a durable design built for continuous operation. The MW3224-V delivers reliable performance for surveillance environments where image clarity and operational dependability are essential.",
+    extendedDescription: "The MW3224-V represents the perfect balance of performance and value for security monitoring applications. This 24-inch professional-grade monitor features Full HD 1920×1080 resolution that ensures clear visibility of security footage, with specialized display settings optimized for surveillance applications. The MW3224-V's commercial-grade panel is engineered for 24/7 operation with enhanced durability and reliable performance in demanding environments, while multiple input options provide maximum compatibility with diverse security systems.",
+    image: "/Monitors/MW3224-V.jpg",
     price: "Contact for Price",
     category: "Products/cctv-monitor",
     categoryName: "CCTV Monitor",
-    features: ["Full HD Resolution", "Multiple Video Inputs", "24/7 Operation", "Commercial Grade", "Security-Optimized Display"],
+    features: [
+      "MW3224-V Full HD Resolution",
+      "MW3224-V Multiple Video Inputs",
+      "MW3224-V 24/7 Operation",
+      "MW3224-V Commercial Grade",
+      "MW3224-V Security-Optimized Display"
+    ],
     highlights: [
-      "Full HD 1920×1080 resolution for clear security footage",
-      "Multiple inputs including HDMI, VGA, BNC for system compatibility",
-      "Engineered for continuous 24/7 operation",
-      "Security-optimized display settings",
-      "Durable metal housing for extended lifespan",
-      "VESA mount compatible for flexible installation"
+      "MW3224-V Full HD 1920×1080 resolution for clear security footage",
+      "MW3224-V Multiple inputs including HDMI, VGA, BNC for system compatibility",
+      "MW3224-V Engineered for continuous 24/7 operation",
+      "MW3224-V Security-optimized display settings",
+      "MW3224-V Durable metal housing for extended lifespan",
+      "MW3224-V VESA mount compatible for flexible installation"
     ],
     specifications: [
       { name: "Model", value: "MW3224-V" },
-      { name: "Screen Size", value: "24 inches" },
-      { name: "Panel Type", value: "LED" },
-      { name: "Resolution", value: "1920×1080 (Full HD)" },
-      { name: "Brightness", value: "300 cd/m²" },
-      { name: "Contrast Ratio", value: "1000:1" },
-      { name: "Response Time", value: "5ms" },
-      { name: "Viewing Angle", value: "178°/178°" },
-      { name: "Input Ports", value: "HDMI, VGA, BNC" },
-      { name: "VESA Mount", value: "100×100mm" }
+      { name: "Screen Size", value: "24 inches (MW3224-V)" },
+      { name: "Panel Type", value: "LED (MW3224-V)" },
+      { name: "Resolution", value: "1920×1080 (Full HD, MW3224-V)" },
+      { name: "Brightness", value: "300 cd/m² (MW3224-V)" },
+      { name: "Contrast Ratio", value: "1000:1 (MW3224-V)" },
+      { name: "Response Time", value: "5ms (MW3224-V)" },
+      { name: "Viewing Angle", value: "178°/178° (MW3224-V)" },
+      { name: "Input Ports", value: "HDMI, VGA, BNC (MW3224-V)" },
+      { name: "VESA Mount", value: "100×100mm (MW3224-V)" }
     ],
     applications: [
       {
@@ -1485,42 +1572,49 @@ export const productData = [
         features: ["FHD Resolution", "Security Features", "Durable Design"]
       }
     ]
-  },
+},
+// New products
 
-  {
+ {
     slug: "mw3243-f-v2",
     name: "MW3243-F-V2",
-    type: "CCTV Monitor",
-    shortDescription: "43\" 4K LED Monitor",
-    keyFeature: "ultra-high definition 43-inch 4K display for professional security monitoring",
-    primaryUse: "advanced security control centers, surveillance headquarters, and mission-critical monitoring",
-    secondaryFeature: "exceptional clarity with security-optimized display technology",
-    description: "The MW3243-F-V2 is a premium 43-inch 4K LED monitor designed for professional security and surveillance applications. Featuring ultra-high resolution, multiple input options, and commercial-grade build quality, this monitor delivers exceptional image detail for security installations where maximum visibility and clarity are required.",
-    extendedDescription: "The MW3243-F-V2 represents the pinnacle of surveillance monitoring technology, providing security professionals with unmatched visual information. The 43-inch display features 4K Ultra HD resolution that resolves the finest details in security footage, allowing operators to identify critical information with confidence. Engineered specifically for security applications, this professional-grade monitor includes specialized image processing that enhances surveillance footage, improving visibility in challenging lighting conditions and ensuring consistent performance in 24/7 operation environments.",
-    image: "/Monitors/MW3243-F-V2.jpg",
+    type: "",
+    shortDescription: "43\" 4K LED Monitor - MW3243-F-V2",
+    keyFeature: "The MW3243-F-V2 is an ultra-high definition 43-inch 4K display for professional security monitoring. MW3243-F-V2 delivers unmatched clarity and detail for surveillance applications.",
+    primaryUse: "MW3243-F-V2 is designed for advanced security control centers, surveillance headquarters, and mission-critical monitoring environments.",
+    secondaryFeature: "MW3243-F-V2 provides exceptional clarity with security-optimized display technology and robust commercial-grade durability.",
+    description: "The MW3243-F-V2 is a premium 43-inch 4K LED monitor designed for professional security and surveillance applications. The MW3243-F-V2 features ultra-high resolution, multiple input options, and commercial-grade build quality. MW3243-F-V2 delivers exceptional image detail for security installations where maximum visibility and clarity are required. MW3243-F-V2 is the preferred choice for demanding surveillance environments.",
+    extendedDescription: "The MW3243-F-V2 represents the pinnacle of surveillance monitoring technology, providing security professionals with unmatched visual information. The MW3243-F-V2 43-inch display features 4K Ultra HD resolution that resolves the finest details in security footage, allowing operators to identify critical information with confidence. MW3243-F-V2 is engineered specifically for security applications, including specialized image processing that enhances surveillance footage, improving visibility in challenging lighting conditions and ensuring consistent performance in 24/7 operation environments. MW3243-F-V2 is built for reliability and clarity.",
+    image: "/Monitors/MW3255w.jpg",
     price: "Contact for Price",
     category: "Products/cctv-monitor",
     categoryName: "CCTV Monitor",
-    features: ["4K UHD Resolution", "43-inch Display", "Security-Optimized Processing", "Multiple Professional Inputs", "Commercial-Grade Durability"],
+    features: [
+      "MW3243-F-V2 4K UHD Resolution",
+      "MW3243-F-V2 43-inch Display",
+      "MW3243-F-V2 Security-Optimized Processing",
+      "MW3243-F-V2 Multiple Professional Inputs",
+      "MW3243-F-V2 Commercial-Grade Durability"
+    ],
     highlights: [
-      "4K Ultra HD resolution for maximum detail visibility",
-      "Specialized image processing for security footage",
-      "Comprehensive input options including HDMI, DP, DVI, and BNC",
-      "Metal chassis construction for enhanced durability",
-      "Advanced heat management for 24/7 operation",
-      "Professional calibration options for security environments"
+      "MW3243-F-V2 4K Ultra HD resolution for maximum detail visibility",
+      "MW3243-F-V2 Specialized image processing for security footage",
+      "MW3243-F-V2 Comprehensive input options including HDMI, DP, DVI, and BNC",
+      "MW3243-F-V2 Metal chassis construction for enhanced durability",
+      "MW3243-F-V2 Advanced heat management for 24/7 operation",
+      "MW3243-F-V2 Professional calibration options for security environments"
     ],
     specifications: [
       { name: "Model", value: "MW3243-F-V2" },
-      { name: "Screen Size", value: "43 inches" },
-      { name: "Panel Type", value: "LED" },
-      { name: "Resolution", value: "3840×2160 (4K UHD)" },
-      { name: "Brightness", value: "400 cd/m²" },
-      { name: "Contrast Ratio", value: "1200:1" },
-      { name: "Response Time", value: "5ms" },
-      { name: "Viewing Angle", value: "178°/178°" },
-      { name: "Input Ports", value: "HDMI×2, DisplayPort, DVI, BNC×2" },
-      { name: "VESA Mount", value: "200×200mm" }
+      { name: "Screen Size", value: "43 inches (MW3243-F-V2)" },
+      { name: "Panel Type", value: "LED (MW3243-F-V2)" },
+      { name: "Resolution", value: "3840×2160 (4K UHD, MW3243-F-V2)" },
+      { name: "Brightness", value: "400 cd/m² (MW3243-F-V2)" },
+      { name: "Contrast Ratio", value: "1200:1 (MW3243-F-V2)" },
+      { name: "Response Time", value: "5ms (MW3243-F-V2)" },
+      { name: "Viewing Angle", value: "178°/178° (MW3243-F-V2)" },
+      { name: "Input Ports", value: "HDMI×2, DisplayPort, DVI, BNC×2 (MW3243-F-V2)" },
+      { name: "VESA Mount", value: "200×200mm (MW3243-F-V2)" }
     ],
     applications: [
       {
@@ -1585,41 +1679,48 @@ export const productData = [
       }
     ]
   },
+// New products
 
   {
     slug: "mw3255-f-v2",
     name: "MW3255-F-V2",
-    type: "CCTV Monitor",
-    shortDescription: "55\" 4K LED Monitor",
-    keyFeature: "premium 55-inch 4K display for large-scale security monitoring",
-    primaryUse: "enterprise security centers, central monitoring facilities, and command headquarters",
-    secondaryFeature: "superior visual coverage with advanced security enhancement features",
-    description: "The MW3255-F-V2 is a large-format 55-inch 4K LED monitor engineered for professional security applications. With its expansive screen size and ultra-high definition resolution, this monitor provides security professionals with maximum visual information for effective surveillance and monitoring operations.",
-    extendedDescription: "The MW3255-F-V2 delivers an immersive monitoring experience with its impressive 55-inch display and 4K Ultra HD resolution. Purposely designed for professional security environments, this premium monitor allows operators to view multiple camera feeds simultaneously without sacrificing detail, or to focus on specific areas with exceptional clarity. The commercial-grade panel is optimized for security applications with specialized image processing that enhances surveillance footage, improving visibility and detail recognition even in challenging lighting conditions. Built for reliability in mission-critical installations, the robust construction and advanced thermal management ensure stable 24/7 performance in demanding security operations centers.",
-    image: "/Monitors/MW3255-F-V2.png",
+    type: "",
+    shortDescription: "55\" 4K LED Monitor - MW3255-F-V2",
+    keyFeature: "The MW3255-F-V2 is a premium 55-inch 4K display for large-scale security monitoring. MW3255-F-V2 delivers superior visual coverage and advanced security enhancement features.",
+    primaryUse: "MW3255-F-V2 is ideal for enterprise security centers, central monitoring facilities, and command headquarters.",
+    secondaryFeature: "MW3255-F-V2 provides superior visual coverage with advanced security enhancement features and robust commercial-grade reliability.",
+    description: "The MW3255-F-V2 is a large-format 55-inch 4K LED monitor engineered for professional security applications. MW3255-F-V2 features an expansive screen size and ultra-high definition resolution, providing security professionals with maximum visual information for effective surveillance and monitoring operations.",
+    extendedDescription: "The MW3255-F-V2 delivers an immersive monitoring experience with its impressive 55-inch display and 4K Ultra HD resolution. MW3255-F-V2 is purposely designed for professional security environments, allowing operators to view multiple camera feeds simultaneously without sacrificing detail, or to focus on specific areas with exceptional clarity. The commercial-grade panel is optimized for security applications with specialized image processing that enhances surveillance footage, improving visibility and detail recognition even in challenging lighting conditions. Built for reliability in mission-critical installations, the robust construction and advanced thermal management ensure stable 24/7 performance in demanding security operations centers.",
+    image: "/Monitors/MW3224-V.webp",
     price: "Contact for Price",
     category: "Products/cctv-monitor",
     categoryName: "CCTV Monitor",
-    features: ["55-inch Display", "4K UHD Resolution", "Security Enhancement Technology", "Multi-Input Capability", "Mission-Critical Reliability"],
+    features: [
+      "MW3255-F-V2 55-inch Display",
+      "MW3255-F-V2 4K UHD Resolution",
+      "MW3255-F-V2 Security Enhancement Technology",
+      "MW3255-F-V2 Multi-Input Capability",
+      "MW3255-F-V2 Mission-Critical Reliability"
+    ],
     highlights: [
-      "Expansive 55-inch display for comprehensive monitoring",
-      "4K Ultra HD resolution for maximum detail visibility",
-      "Security-optimized image processing",
-      "Metal chassis with advanced thermal management",
-      "Multiple professional inputs for system integration",
-      "Anti-glare coating for control room environments"
+      "MW3255-F-V2 expansive 55-inch display for comprehensive monitoring",
+      "MW3255-F-V2 4K Ultra HD resolution for maximum detail visibility",
+      "MW3255-F-V2 security-optimized image processing",
+      "MW3255-F-V2 metal chassis with advanced thermal management",
+      "MW3255-F-V2 multiple professional inputs for system integration",
+      "MW3255-F-V2 anti-glare coating for control room environments"
     ],
     specifications: [
       { name: "Model", value: "MW3255-F-V2" },
-      { name: "Screen Size", value: "55 inches" },
-      { name: "Panel Type", value: "LED" },
-      { name: "Resolution", value: "3840×2160 (4K UHD)" },
-      { name: "Brightness", value: "450 cd/m²" },
-      { name: "Contrast Ratio", value: "1200:1" },
-      { name: "Response Time", value: "8ms" },
-      { name: "Viewing Angle", value: "178°/178°" },
-      { name: "Input Ports", value: "HDMI×3, DisplayPort, DVI, BNC×2" },
-      { name: "VESA Mount", value: "400×400mm" }
+      { name: "Screen Size", value: "55 inches (MW3255-F-V2)" },
+      { name: "Panel Type", value: "LED (MW3255-F-V2)" },
+      { name: "Resolution", value: "3840×2160 (4K UHD, MW3255-F-V2)" },
+      { name: "Brightness", value: "450 cd/m² (MW3255-F-V2)" },
+      { name: "Contrast Ratio", value: "1200:1 (MW3255-F-V2)" },
+      { name: "Response Time", value: "8ms (MW3255-F-V2)" },
+      { name: "Viewing Angle", value: "178°/178° (MW3255-F-V2)" },
+      { name: "Input Ports", value: "HDMI×3, DisplayPort, DVI, BNC×2 (MW3255-F-V2)" },
+      { name: "VESA Mount", value: "400×400mm (MW3255-F-V2)" }
     ],
     applications: [
       {
@@ -1684,22 +1785,28 @@ export const productData = [
       }
     ]
   },
-
-  {
+// New products
+ {
     slug: "mw3222-v-dt",
     name: "MW3222-V-DT",
-    type: "CCTV Monitor",
-    shortDescription: "LED FHD Monitor",
+    type: "",
+    shortDescription: "21.5\" LED FHD Security Monitor - MW3222-V-DT",
     keyFeature: "compact security monitor with desktop-optimized design",
     primaryUse: "security desk stations, reception monitoring, and small surveillance installations",
     secondaryFeature: "space-efficient design with professional monitoring capabilities",
-    description: "The MW3222-V-DT is a compact yet powerful LED FHD monitor designed specifically for desktop security monitoring applications. Featuring a space-efficient design with professional-grade display quality, this monitor delivers reliable performance for security environments where desk space is limited but visual clarity remains essential.",
-    extendedDescription: "The MW3222-V-DT combines compact efficiency with professional surveillance capabilities, making it ideal for security desk stations and small monitoring installations. This specialized security monitor features a Full HD display that ensures clear visibility of surveillance footage, while its desktop-optimized design includes an integrated stand with adjustable viewing angles for operator comfort. Despite its compact footprint, the monitor delivers the essential professional features required for security environments, including multiple input options for system compatibility and specialized display settings that enhance surveillance footage visibility.",
+    description: "The MW3222-V-DT is a 21.5-inch Full HD security monitor designed for professional surveillance and monitoring environments. This compact monitor is ideal for security desks, reception areas, and small business installations where space is limited but reliable, high-quality video monitoring is essential. With its desktop-optimized design, integrated adjustable stand, and multiple input options, the MW3222-V-DT delivers clear, detailed surveillance footage and seamless compatibility with modern security systems.",
+    extendedDescription: "The MW3222-V-DT 21.5-inch FHD security monitor combines space-saving efficiency with professional-grade performance, making it the perfect choice for security desk stations, reception monitoring, and small surveillance installations. Its Full HD 1920×1080 resolution ensures sharp, detailed video for accurate monitoring, while the integrated stand offers flexible viewing angles for operator comfort. The MW3222-V-DT features HDMI, VGA, and BNC inputs for broad compatibility with legacy and modern security equipment. Built for commercial use, this monitor provides security-optimized display settings, robust durability, and a compact footprint, making it a reliable solution for any professional surveillance setup.",
     image: "/Monitors/MW3222-V-DT.jpg",
     price: "Contact for Price",
     category: "Products/cctv-monitor",
     categoryName: "CCTV Monitor",
-    features: ["Desktop-Optimized Design", "FHD Resolution", "Integrated Stand", "Security-Enhanced Display", "Multiple Inputs"],
+    features: [
+      "21.5-inch Full HD Display",
+      "Desktop-Optimized Compact Design",
+      "Integrated Adjustable Stand",
+      "Security-Enhanced Display Settings",
+      "Multiple Inputs: HDMI, VGA, BNC"
+    ],
     highlights: [
       "Space-efficient design for security desks and workstations",
       "Full HD 1920×1080 resolution for clear surveillance footage",
@@ -1783,17 +1890,17 @@ export const productData = [
       }
     ]
   },
-
+// New Products
   {
     slug: "mw3232-v-k2",
     name: "MW3232-V-K2",
-    type: "CCTV Monitor",
+    type: "",
     shortDescription: "32\" Plastic Case LCD Monitor",
     keyFeature: "cost-effective 32-inch professional security monitor",
     primaryUse: "budget-conscious security installations, retail surveillance, and small business monitoring",
     secondaryFeature: "lightweight design with professional monitoring capabilities",
-    description: "The MW3232-V-K2 is a value-oriented 32-inch security monitor featuring a durable plastic casing and professional display capabilities. Designed to meet the needs of budget-conscious security installations without compromising on essential monitoring features, this LCD monitor delivers reliable performance for surveillance applications.",
-    extendedDescription: "The MW3232-V-K2 provides an effective balance between performance and affordability for security monitoring applications. This 32-inch professional monitor features a lightweight yet durable plastic housing that reduces both cost and weight while maintaining necessary durability for commercial environments. The display offers Full HD resolution for clear surveillance footage visualization, along with security-optimized color and contrast settings that enhance the visibility of important details in security camera feeds. With multiple input options and commercial reliability, the MW3232-V-K2 is an ideal solution for security installations with budget considerations that still require professional monitoring capabilities.",
+    description: "The MW3232-V-K2 is a 32-inch Full HD security monitor designed for cost-effective surveillance and monitoring in commercial environments. Featuring a lightweight plastic housing, this professional LCD monitor delivers reliable performance and clear video for security camera feeds. With multiple input options including HDMI, VGA, and BNC, the MW3232-V-K2 is ideal for budget-conscious security installations, retail surveillance, and small business monitoring. Its space-saving design, VESA mount compatibility, and security-optimized display settings make it a practical choice for multi-unit installations and environments where affordability and professional features are essential.",
+    extendedDescription: "The MW3232-V-K2 offers a perfect balance of affordability and professional-grade performance for security monitoring. Its 32-inch Full HD display ensures clear visualization of surveillance footage, while the high-impact plastic housing reduces both weight and cost without sacrificing durability. The monitor supports multiple input types for flexible system integration and features security-optimized color and contrast settings to enhance important details in camera feeds. Designed for commercial reliability, the MW3232-V-K2 is VESA mount compatible for flexible installation and is an excellent solution for small businesses, retail stores, and multi-monitor security setups that require dependable performance at a competitive price.",
     image: "/Monitors/MW3232-V-K2.png",
     price: "Contact for Price",
     category: "Products/cctv-monitor",
@@ -1883,22 +1990,28 @@ export const productData = [
       }
     ]
   },
-
+// New products
   {
     slug: "mw3232-e",
     name: "MW3232-E",
-    type: "CCTV Monitor",
+    type: "",
     shortDescription: "32\" LED FHD Monitor",
     keyFeature: "professional-grade 32-inch security monitor with premium build quality",
     primaryUse: "commercial security installations, professional monitoring centers, and mid-sized control rooms",
     secondaryFeature: "enhanced durability with superior image processing for security applications",
-    description: "The MW3232-E is a premium 32-inch LED FHD monitor specifically engineered for professional security and surveillance applications. Featuring superior build quality, advanced image processing, and specialized security features, this monitor delivers reliable performance for demanding commercial security environments.",
-    extendedDescription: "The MW3232-E represents Lovosis Display's commitment to professional security monitoring solutions. This 32-inch monitor features a robust metal housing that enhances durability and heat dissipation for reliable 24/7 operation in commercial security environments. The professional-grade LED panel delivers Full HD resolution with specialized security image processing that optimizes surveillance footage visibility, enhancing details in both bright and dark areas. With comprehensive input options and commercial-grade components throughout, the MW3232-E is designed for security professionals who require dependable performance and superior image quality for critical monitoring applications.",
+    description: "The MW3232-E is a 32-inch LED Full HD monitor engineered for advanced security and surveillance environments. With a robust metal housing and commercial-grade components, this monitor is built for 24/7 operation and delivers sharp, clear video for critical monitoring. Its specialized image processing enhances visibility in both bright and low-light conditions, making it ideal for professional security control rooms and demanding commercial installations. Multiple input options ensure seamless integration with modern and legacy security systems.",
+    extendedDescription: "The MW3232-E is designed for security professionals who require reliable, high-performance monitoring. Its 32-inch Full HD LED panel provides crisp, detailed images, while the metal chassis ensures durability and effective heat dissipation for continuous use. Advanced security image processing optimizes surveillance footage, improving detail recognition and clarity. With comprehensive connectivity, anti-burn protection, and a design focused on operational reliability, the MW3232-E is the preferred choice for commercial security centers and 24/7 monitoring applications.",
     image: "/Monitors/MW3232-E.jpg",
     price: "Contact for Price",
     category: "Products/cctv-monitor",
     categoryName: "CCTV Monitor",
-    features: ["Professional Metal Housing", "Enhanced Security Processing", "FHD Resolution", "Commercial-Grade Components", "24/7 Reliability"],
+    features: [
+      "32-inch Full HD LED Display",
+      "Robust Metal Housing for 24/7 Use",
+      "Advanced Security Image Processing",
+      "Multiple Inputs: HDMI, VGA, BNC, Audio",
+      "Anti-Burn Protection for Static Displays"
+    ],
     highlights: [
       "Premium 32-inch display with professional build quality",
       "Robust metal housing for enhanced durability and heat dissipation",
@@ -1983,22 +2096,28 @@ export const productData = [
       }
     ]
   },
-
-  {
+// New products
+ {
     slug: "mw3243-e",
     name: "MW3243-E",
-    type: "CCTV Monitor",
+    type: "",
     shortDescription: "43\" LED FHD Monitor",
     keyFeature: "large-format 43-inch professional security monitor with enhanced build quality",
     primaryUse: "mid to large security control rooms, professional monitoring centers, and commercial surveillance operations",
     secondaryFeature: "superior viewing experience with advanced security image optimization",
-    description: "The MW3243-E is a premium 43-inch LED FHD monitor designed specifically for professional security applications that require a larger display area without compromising on image quality or reliability. With its commercial-grade construction and specialized security features, this monitor delivers exceptional performance in demanding surveillance environments.",
+    description: "The MW3243-E is a 43-inch LED Full HD monitor engineered for professional security and surveillance environments. Built with a robust metal chassis and commercial-grade components, this monitor is designed for 24/7 operation and delivers sharp, clear video for critical monitoring. Specialized image processing enhances visibility in both bright and low-light conditions, making it ideal for control rooms and demanding commercial installations. Multiple input options ensure seamless integration with modern and legacy security systems.",
     extendedDescription: "The MW3243-E combines generous screen size with professional security monitoring capabilities to provide an ideal solution for control rooms and monitoring centers. This 43-inch display features a robust metal construction that ensures durability in commercial environments, with advanced thermal management for reliable 24/7 operation. The professional-grade panel delivers Full HD resolution with specialized image processing that enhances surveillance footage, optimizing visibility of critical details in security applications. With comprehensive input options and commercial-grade components throughout, the MW3243-E provides security professionals with the viewing area and image quality needed for effective monitoring operations.",
-    image: "/Monitors/MW3243-E.png",
+    image: "/Monitors/MW3243-F-V2.jpg",
     price: "Contact for Price",
     category: "Products/cctv-monitor",
     categoryName: "CCTV Monitor",
-    features: ["43-inch Professional Display", "Metal Construction", "Security Image Enhancement", "Multiple Professional Inputs", "Commercial-Grade Reliability"],
+    features: [
+      "43-inch Full HD LED Display",
+      "Durable Metal Housing for 24/7 Use",
+      "Advanced Security Image Processing",
+      "Multiple Inputs: HDMI, VGA, BNC, Audio",
+      "Anti-Burn Protection for Static Displays"
+    ],
     highlights: [
       "Large 43-inch display for comprehensive security monitoring",
       "Durable metal housing with advanced thermal management",
@@ -3275,12 +3394,12 @@ export const productData = [
 {
     slug: "unear-a20",
     name: "Unear A20",
-    type: "Video Conferencing",
+    type: "",
     shortDescription: "Professional Video Conference System",
     keyFeature: "all-in-one videoconferencing solution with AI-powered features",
     primaryUse: "conference rooms, meeting spaces, and collaborative business environments",
     secondaryFeature: "superior audio-visual quality with smart participant tracking",
-    description: "The Unear A20 is a professional all-in-one video conferencing system designed for modern meeting spaces. Featuring AI-powered participant tracking, crystal-clear audio capture, and 4K video capabilities, this system delivers an exceptional conferencing experience that enhances collaboration and productivity in professional environments.",
+    description: "The Unear A20 is a next-generation all-in-one video conferencing system built for modern meeting spaces. It features AI-powered participant tracking, advanced audio pickup, and 4K ultra-wide video, delivering a seamless and engaging conferencing experience. With intuitive controls and easy integration with major platforms, the Unear A20 enhances collaboration and productivity for any professional environment.",
     extendedDescription: "The Unear A20 represents a significant advancement in professional video conferencing technology, combining cutting-edge hardware with intelligent software to create seamless meeting experiences. This comprehensive system features a 4K ultra-wide camera with 120° field of view that captures entire meeting spaces clearly, while the AI-powered tracking automatically focuses on active speakers. The advanced microphone array with 8-meter pickup range ensures crystal-clear audio capture even in larger conference rooms, while intelligent noise suppression algorithms filter out background distractions. Designed for easy integration with popular conferencing platforms, the Unear A20 provides one-touch meeting joins, wireless content sharing, and centralized management options that simplify the meeting experience from setup to conclusion.",
     image: "/Conferencing/unear-a20.jpg",
     price: "Contact for Price",
@@ -3368,7 +3487,111 @@ export const productData = [
         features: ["43-inch Display", "4K Resolution", "Enhanced Features"]
       }
     ]
-  }
+},
+{
+    slug: "unear-a50e",
+    name: "Unear A50E",
+    type: "",
+    shortDescription: "Advanced Video Conference System",
+    keyFeature: "premium all-in-one videoconferencing solution with enhanced AI-powered features",
+    primaryUse: "executive boardrooms, large conference rooms, and hybrid collaboration spaces",
+    secondaryFeature: "ultra-wide 4K video with intelligent participant tracking and superior audio clarity",
+    description: "The Unear A50E is a premium all-in-one video conferencing system engineered for high-performance collaboration in executive and large meeting spaces. It features advanced AI-powered participant tracking, an extended microphone pickup range, and ultra-wide 4K video, delivering an immersive and reliable conferencing experience. With seamless integration and intuitive controls, the Unear A50E elevates productivity and communication for modern business environments.",
+    extendedDescription: "The Unear A50E takes professional video conferencing to the next level, combining state-of-the-art hardware with intelligent software for effortless meetings. This system features a 4K ultra-wide camera with a 130° field of view, capturing every participant in even the largest rooms. Enhanced AI tracking ensures the camera automatically focuses on active speakers, while the upgraded microphone array provides crystal-clear audio across extended distances. Intelligent noise suppression and audio enhancement deliver distraction-free sound, and the system is designed for easy integration with all major conferencing platforms. The Unear A50E also offers one-touch meeting joins, wireless content sharing, and centralized management, making it the ideal solution for executive boardrooms and hybrid workspaces.",
+    image: "/Conferencing/Unear-a50E.png",
+    price: "Contact for Price",
+    category: "Products/conferencing",
+    categoryName: "Video Conferencing",
+    features: [
+      "4K Ultra-wide Camera (130° FOV)",
+      "AI Enhanced Speaker Tracking",
+      "Upgraded Microphone Array",
+      "Cross-platform Compatibility",
+      "One-touch Meeting Controls"
+    ],
+    highlights: [
+      "4K camera with 130° field of view for expansive room coverage",
+      "AI-powered speaker tracking and advanced auto-framing",
+      "10-meter omnidirectional microphone pickup range",
+      "Intelligent noise suppression and audio enhancement",
+      "Compatible with Zoom, Teams, Google Meet, and more",
+      "Intuitive interface with one-touch meeting controls"
+    ],
+    specifications: [
+      { name: "Model", value: "Unear A50E" },
+      { name: "Camera Resolution", value: "4K UHD (3840×2160)" },
+      { name: "Field of View", value: "130° horizontal" },
+      { name: "Audio Pickup", value: "10-meter range" },
+      { name: "Microphone Array", value: "8-element beam-forming microphones" },
+      { name: "Connectivity", value: "USB-C, HDMI, Ethernet, Wi-Fi 6" },
+      { name: "Supported Platforms", value: "Zoom, Microsoft Teams, Google Meet, WebEx" },
+      { name: "Dimensions", value: "320mm × 130mm × 95mm" },
+      { name: "Power Supply", value: "AC 100-240V, 50/60Hz" }
+    ],
+    applications: [
+      {
+        name: "Executive Boardrooms",
+        description: "Premium conferencing for executive environments with Unear A50E",
+        iconPath: "M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z"
+      },
+      {
+        name: "Large Conference Rooms",
+        description: "Expansive room coverage and clarity with Unear A50E",
+        iconPath: "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+      },
+      {
+        name: "Hybrid Workspaces",
+        description: "Seamless collaboration for hybrid teams with Unear A50E",
+        iconPath: "M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"
+      }
+    ],
+    rating: "4.8",
+    reviewCount: "42",
+    ratingDistribution: [
+      { stars: 5, percentage: 85 },
+      { stars: 4, percentage: 10 },
+      { stars: 3, percentage: 5 },
+      { stars: 2, percentage: 0 },
+      { stars: 1, percentage: 0 }
+    ],
+    reviews: [
+      { 
+        name: "Richard Anderson",
+        date: "March 18, 2024",
+        rating: 5,
+        review: "We installed the Unear A50E in our executive boardroom, and it has elevated our hybrid meetings to a new level. The AI speaker tracking is smooth and accurate, and the audio clarity is outstanding even in our large space. Integration with our conferencing platforms was seamless and the intuitive controls are a big plus for our team."
+      },
+      { 
+        name: "Jennifer Martinez",
+        date: "February 22, 2024",
+        rating: 5,
+        review: "As the IT director for a global company, the Unear A50E stands out for its performance and reliability. The ultra-wide camera ensures everyone is visible, and the upgraded microphone array captures voices clearly from across the room. The one-touch controls have made meeting setup effortless for our staff."
+      },
+      { 
+        name: "Michael Wong",
+        date: "January 15, 2024",
+        rating: 4,
+        review: "We've deployed the Unear A50E in several large meeting spaces and it consistently delivers excellent video and audio quality. The auto-framing and noise suppression features keep remote participants engaged. More advanced admin controls would be welcome, but the current features meet most of our needs."
+      }
+    ],
+    relatedProducts: [
+      {
+        name: "Video Wall Controller",
+        description: "Professional video wall control system for managing multiple display configurations",
+        image: "/Wall Controller/video-wall.jpg",
+        slug: "video-wall-controller",
+        features: ["Advanced Control", "Multiple Display Management", "Professional Grade"]
+      },
+      {
+        name: "MW3243-F-V2",
+        description: "43-inch 4K LED monitor for professional applications requiring maximum detail",
+        image: "/Monitors/MW3243-F-V2.jpg",
+        slug: "mw3243-f-v2",
+        features: ["43-inch Display", "4K Resolution", "Enhanced Features"]
+      }
+    ]
+}
+
 
 
 
