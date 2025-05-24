@@ -773,8 +773,7 @@ export const productData = [
       features: ["0.88mm Bezel", "Nearly Seamless", "Premium Quality"]
     }
   ]
-},
-// ...existing code...
+ },
 
   {
     slug: "mw-a55-b3-e",
@@ -973,9 +972,305 @@ export const productData = [
       }
     ]
   },
+// New Products
+{
+    slug: "mw-a46-b1-e",
+    name: "MW-A46-B1-E",
+    type: "",
+    shortDescription: "Professional 46-inch Video Wall Display",
+    keyFeature: "46-inch display with 3.5mm ultra-narrow bezel for seamless video wall installations",
+    primaryUse: "control rooms, retail signage, collaborative spaces, and professional environments",
+    secondaryFeature: "high brightness, commercial-grade durability, and wide viewing angles",
+    description: "The MW-A46-B1-E is a 46-inch LCD video wall display featuring a slim 3.5mm bezel for minimal screen gap, delivering a unified and immersive display. Designed for professional environments, this video wall is ideal for control rooms, retail signage, and collaborative spaces where clarity and reliability are essential.",
+    extendedDescription: "The MW-A46-B1-E provides seamless large-scale visuals with its 46-inch display and ultra-narrow 3.5mm bezel, making it perfect for tiled video wall installations. Engineered for commercial use, it offers high brightness, anti-glare treatment, and robust heat dissipation for reliable 24/7 operation. The wide 178° viewing angle ensures clear visibility from any position, while multiple input options allow for versatile integration in demanding environments.",
+    image: "/LCD Displays/MW-A55-B1-E.webp",
+    price: "Contact for Price",
+    category: "Products/lcd-video",
+    categoryName: "LCD Video Wall",
+    features: ["3.5mm Bezel", "500nits Brightness", "Commercial Grade", "Full HD Resolution", "178° Viewing Angle", "24/7 Operation"],
+    highlights: [
+      "Ultra-narrow 3.5mm combined bezel width for seamless video walls",
+      "46-inch display for impactful visual presentations",
+      "High brightness of 500 nits for clear visibility in various lighting",
+      "Wide 178° viewing angle for consistent image quality",
+      "Multiple input options for flexible integration",
+      "Engineered for 24/7 continuous operation"
+    ],
+    specifications: [
+      { name: "Model", value: "MW-A46-B1-E" },
+      { name: "Screen Size", value: "46 inches" },
+      { name: "Bezel Width", value: "3.5mm (combined)" },
+      { name: "Resolution", value: "1920 × 1080 (Full HD)" },
+      { name: "Brightness", value: "500 nits" },
+      { name: "Contrast Ratio", value: "3500:1" },
+      { name: "Viewing Angle", value: "178° horizontal, 178° vertical" },
+      { name: "Response Time", value: "8ms" },
+      { name: "Operating Hours", value: "24/7" },
+      { name: "Input Ports", value: "HDMI, DVI-D, DisplayPort, VGA" }
+    ],
+    applications: [
+      {
+        name: "Control Rooms",
+        description: "Seamless monitoring and data visualization with MW-A46-B1-E",
+        iconPath: "M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+      },
+      {
+        name: "Retail Signage",
+        description: "Immersive digital displays for retail environments with MW-A46-B1-E",
+        iconPath: "M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
+      },
+      {
+        name: "Collaborative Spaces",
+        description: "Unified large-format visuals for professional collaboration with MW-A46-B1-E",
+        iconPath: "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+      }
+    ],
+    rating: "4.7",
+    reviewCount: "35",
+    ratingDistribution: [
+      { stars: 5, percentage: 80 },
+      { stars: 4, percentage: 15 },
+      { stars: 3, percentage: 5 },
+      { stars: 2, percentage: 0 },
+      { stars: 1, percentage: 0 }
+    ],
+    reviews: [
+      { 
+        name: "Robert Williams",
+        date: "February 12, 2024",
+        rating: 5,
+        review: "We installed the 46-inch model for our control room video wall, and the seamless appearance is impressive. The slim bezels and high brightness make data visualization clear and effective, even in a brightly lit environment. Reliability has been excellent for 24/7 operation."
+      },
+      { 
+        name: "Jennifer Lopez",
+        date: "January 3, 2024",
+        rating: 4,
+        review: "Our retail store uses a 2x2 configuration of the MW-A46-B1-E for digital signage. The image quality is sharp, and the narrow bezels create a unified look. Setup was straightforward, and the displays have performed well since installation."
+      },
+      { 
+        name: "James Wilson",
+        date: "November 28, 2023",
+        rating: 5,
+        review: "As an AV integrator, I recommend the MW-A46-B1-E for collaborative spaces and control rooms. The wide viewing angle and robust build make it a reliable choice for demanding environments. The multiple input options are a plus for flexible integration."
+      }
+    ],
+    relatedProducts: [
+      {
+        name: "46\" 1.7mm Bezel Width Video Wall",
+        description: "Compact professional video wall display with ultra-narrow 1.7mm bezel for versatile installation options",
+        image: "/LCD Displays/P1.jpg",
+        slug: "mw-a46-b3-e",
+        features: ["1.7mm Bezel", "46-inch Display", "Versatile Installation"]
+      },
+      {
+        name: "55\" 1.7mm Bezel Width Video Wall",
+        description: "Large-format professional video wall with ultra-narrow 1.7mm bezel for creating impressive display solutions",
+        image: "/LCD Displays/P2.jpg",
+        slug: "mw-a55-b3-e",
+        features: ["1.7mm Bezel", "55-inch Display", "Professional Grade"]
+      }
+    ]
+},
+//New products
+{
+  slug: "mw-a46-b5-e2",
+  name: "MW-A46-B5-E2",
+  type: "",
+  shortDescription: "46\" 0.88mm Bezel Width Video Wall",
+  keyFeature: "0.88mm ultra-narrow bezel for nearly seamless multi-screen installations",
+  primaryUse: "broadcast studios, high-end retail, control rooms, and precision display environments",
+  secondaryFeature: "high brightness, commercial-grade durability, and wide viewing angles",
+  description: "Achieve the ultimate visual impact with the 46 inch 0.88mm Bezel Width Video Wall. With an incredibly thin bezel, this video wall provides an almost invisible edge, resulting in a smooth and uninterrupted viewing experience. It’s the top choice for applications requiring precision and clarity, including broadcasting studios and high-end retail environments.",
+  extendedDescription: "The MW-A46-B5-E2 is engineered for environments where seamless visuals and precision are paramount. Its ultra-narrow 0.88mm bezel creates a virtually continuous display surface, ideal for tiled video wall installations in control rooms, broadcast studios, and luxury retail. The commercial-grade panel delivers high brightness, anti-glare performance, and robust heat dissipation for reliable 24/7 operation. Multiple input options and a wide 178° viewing angle ensure flexible integration and consistent image quality from any position.",
+  image: "/LCD Displays/P3.jpg",
+  price: "Contact for Price",
+  category: "Products/lcd-video",
+  categoryName: "LCD Video Wall",
+  features: ["0.88mm Bezel", "500nits Brightness", "Full HD Resolution", "178° Viewing Angle", "24/7 Operation"],
+  highlights: [
+    "Ultra-narrow 0.88mm bezel for nearly seamless video walls",
+    "46-inch display for impactful visual presentations",
+    "High brightness of 500 nits for clear visibility in various lighting",
+    "Wide 178° viewing angle for consistent image quality",
+    "Multiple input options for flexible integration",
+    "Engineered for 24/7 continuous operation"
+  ],
+  specifications: [
+    { name: "Model", value: "MW-A46-B5-E2" },
+    { name: "Screen Size", value: "46 inches" },
+    { name: "Bezel Width", value: "0.88mm (combined)" },
+    { name: "Resolution", value: "1920 × 1080 (Full HD)" },
+    { name: "Brightness", value: "500 nits" },
+    { name: "Contrast Ratio", value: "3500:1" },
+    { name: "Viewing Angle", value: "178° horizontal, 178° vertical" },
+    { name: "Response Time", value: "8ms" },
+    { name: "Operating Hours", value: "24/7" },
+    { name: "Input Ports", value: "HDMI, DVI-D, DisplayPort, VGA" }
+  ],
+  applications: [
+    {
+      name: "Broadcast Studios",
+      description: "Precision visuals for broadcast environments with MW-A46-B5-E2",
+      iconPath: "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+    },
+    {
+      name: "High-End Retail",
+      description: "Luxury retail displays with MW-A46-B5-E2",
+      iconPath: "M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
+    },
+    {
+      name: "Control Rooms",
+      description: "Seamless monitoring and data visualization with MW-A46-B5-E2",
+      iconPath: "M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+    }
+  ],
+  rating: "4.7",
+  reviewCount: "35",
+  ratingDistribution: [
+    { stars: 5, percentage: 80 },
+    { stars: 4, percentage: 15 },
+    { stars: 3, percentage: 5 },
+    { stars: 2, percentage: 0 },
+    { stars: 1, percentage: 0 }
+  ],
+  reviews: [
+    { 
+      name: "Robert Williams",
+      date: "February 12, 2024",
+      rating: 5,
+      review: "We installed the 46-inch 0.88mm bezel model for our broadcast studio, and the seamless appearance is outstanding. The ultra-thin bezels and high brightness make our content look flawless on camera, and the reliability has been excellent for continuous operation."
+    },
+    { 
+      name: "Jennifer Lopez",
+      date: "January 3, 2024",
+      rating: 4,
+      review: "Our luxury retail client uses a 2x2 configuration of the MW-A46-B5-E2 for digital signage. The image quality is sharp, and the nearly invisible bezels create a premium look. Setup was straightforward, and the displays have performed well since installation."
+    },
+    { 
+      name: "James Wilson",
+      date: "November 28, 2023",
+      rating: 5,
+      review: "As an AV integrator, I recommend the MW-A46-B5-E2 for control rooms and broadcast environments. The wide viewing angle and robust build make it a reliable choice for demanding applications. The multiple input options are a plus for flexible integration."
+    }
+  ],
+  relatedProducts: [
+    {
+      name: "46\" 1.7mm Bezel Width Video Wall",
+      description: "Compact professional video wall display with ultra-narrow 1.7mm bezel for versatile installation options",
+      image: "/LCD Displays/P1.jpg",
+      slug: "mw-a46-b3-e",
+      features: ["1.7mm Bezel", "46-inch Display", "Versatile Installation"]
+    },
+    {
+      name: "55\" 1.7mm Bezel Width Video Wall",
+      description: "Large-format professional video wall with ultra-narrow 1.7mm bezel for creating impressive display solutions",
+      image: "/LCD Displays/P2.jpg",
+      slug: "mw-a55-b3-e",
+      features: ["1.7mm Bezel", "55-inch Display", "Professional Grade"]
+    }
+  ]
+},
+//New products
+{
+  slug: "mw-a55-b1-e",
+  name: "MW-A55-B1-E", 
+  type: "",
+  shortDescription: "55\" 3.5mm Bezel Width Video Wall",
+  keyFeature: "3.5mm bezel design for professional multi-screen installations",
+  primaryUse: "control rooms, retail environments, and professional display applications",
+  secondaryFeature: "high brightness, commercial durability, and wide viewing angles",
+  description: "Experience impressive large-format visualization with the 55 inch 3.5mm Bezel Width Video Wall. Designed for professional environments, this video wall delivers exceptional image quality with its 3.5mm bezel gap, creating a near-seamless display perfect for corporate lobbies, retail environments, and monitoring centers. Its robust construction ensures reliable 24/7 operation.",
+  extendedDescription: "The MW-A55-B1-E is engineered for professional display environments where reliability and visual impact are essential. Its 3.5mm bezel design creates an effectively continuous display surface ideal for video wall installations. The commercial-grade panel delivers high brightness, anti-glare performance, and robust heat dissipation for reliable 24/7 operation. Multiple input options and a wide 178° viewing angle ensure flexible integration and consistent image quality from any position.",
+  image: "/LCD Displays/MW-A55-B1-E.webp",
+  price: "Contact for Price",
+  category: "Products/lcd-video",
+  categoryName: "LCD Video Wall",
+  features: ["3.5mm Bezel", "500nits Brightness", "Full HD Resolution", "178° Viewing Angle", "24/7 Operation"],
+  highlights: [
+    "Professional 3.5mm bezel for seamless video walls",
+    "55-inch display for large-format presentations",
+    "High brightness of 500 nits for clear visibility",
+    "Wide 178° viewing angle for consistent image quality",
+    "Multiple input options for flexible integration",
+    "Engineered for 24/7 continuous operation"
+  ],
+  specifications: [
+    { name: "Model", value: "MW-A55-B1-E" },
+    { name: "Screen Size", value: "55 inches" },
+    { name: "Bezel Width", value: "3.5mm (combined)" },
+    { name: "Resolution", value: "1920 × 1080 (Full HD)" },
+    { name: "Brightness", value: "500 nits" },
+    { name: "Contrast Ratio", value: "3500:1" },
+    { name: "Viewing Angle", value: "178° horizontal, 178° vertical" },
+    { name: "Response Time", value: "8ms" },
+    { name: "Operating Hours", value: "24/7" },
+    { name: "Input Ports", value: "HDMI, DVI-D, DisplayPort, VGA" }
+  ],
+  applications: [
+    {
+      name: "Control Rooms",
+      description: "Professional monitoring displays with MW-A55-B1-E",
+      iconPath: "M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+    },
+    {
+      name: "Retail Environments",
+      description: "Engaging retail displays with MW-A55-B1-E",
+      iconPath: "M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
+    },
+    {
+      name: "Corporate Lobbies",
+      description: "Impressive visual presentations with MW-A55-B1-E",
+      iconPath: "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+    }
+  ],
+  rating: "4.7",
+  reviewCount: "35",
+  ratingDistribution: [
+    { stars: 5, percentage: 80 },
+    { stars: 4, percentage: 15 },
+    { stars: 3, percentage: 5 },
+    { stars: 2, percentage: 0 },
+    { stars: 1, percentage: 0 }
+  ],
+  reviews: [
+    { 
+      name: "Robert Williams",
+      date: "February 12, 2024",
+      rating: 5,
+      review: "We installed a 2x2 configuration of the MW-A55-B1-E in our corporate lobby, and the impact is impressive. The 55-inch size combined with the professional bezel creates an engaging display that draws attention. The brightness and image quality are excellent, and the system has been running reliably 24/7."
+    },
+    { 
+      name: "Jennifer Lopez",
+      date: "January 3, 2024",
+      rating: 4,
+      review: "Our retail space uses the MW-A55-B1-E for digital signage, and it has exceeded expectations. The image quality is sharp, and the 3.5mm bezel provides a clean, professional look. Installation was straightforward, and performance has been consistent."
+    },
+    { 
+      name: "James Wilson",
+      date: "November 28, 2023",
+      rating: 5,
+      review: "As an AV integrator, I frequently recommend the MW-A55-B1-E for professional installations. The wide viewing angle and robust construction make it ideal for high-traffic areas. The multiple input options provide excellent flexibility for different system configurations."
+    }
+  ],
+  relatedProducts: [
+    {
+      name: "46\" 3.5mm Bezel Width Video Wall",
+      description: "Professional video wall display with 3.5mm bezel for versatile installation options",
+      image: "/LCD Displays/MW-A46-B1-E.png",
+      slug: "mw-a46-b1-e",
+      features: ["3.5mm Bezel", "46-inch Display", "Professional Grade"]
+    },
+    {
+      name: "55\" 0.88mm Bezel Width Video Wall",
+      description: "Premium video wall solution with ultra-narrow 0.88mm bezel for creating virtually seamless displays",
+      image: "/LCD Displays/P3.jpg",
+      slug: "mw-a55-b5-e",
+      features: ["0.88mm Bezel", "55-inch Display", "Premium Quality"]
+    }
+  ]
+},
+
 // ...existing code...
-
-
  
 
 // Wall Controller Products :- 5
