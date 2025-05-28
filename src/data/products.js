@@ -4,31 +4,38 @@ export const productData = [
   
   // LED VIDEO WALLS :- 6
 
+ // ...existing code...
   {
     slug: "xeb-series-p15",
-    name: "XEB Series P1.5",
-    type: "LED Display",
-    shortDescription: "Ultra-Fine Pixel Pitch",
-    keyFeature: "ultra-fine pixel pitch technology for superior clarity and precision",
-    primaryUse: "high-end business presentations, control rooms, and premium advertising displays",
-    secondaryFeature: "exceptional image quality and reliable performance",
-    description: "The XEB Series P1.5 from Lovosis Technology delivers ultra-fine pixel pitch for superior clarity and precision, making it ideal for high-end business presentations, control rooms, and premium advertising displays. With its P1.5 pixel pitch, this display offers exceptional image quality, ensuring every detail is rendered sharply and vividly. Engineered for professional environments, the XEB Series P1.5 provides seamless integration and is built for reliable performance with minimal maintenance. Perfect for those looking to elevate their visual communication and content engagement to the next level.",
-    extendedDescription: "The XEB Series P1.5 LED display represents the pinnacle of fine pixel pitch technology, delivering exceptional visual clarity and precision for demanding professional applications. With a pixel pitch of just 1.5mm, this display provides remarkably detailed imagery with smooth gradients and sharp text, even when viewed at close distances.",
-    image: "/LED Displays/img1.webp",
-    price: "Contact for Price",
+    name: "MW7815-FI-EB",
+    type: "",
+    shortDescription: "High-Performance Fine Pitch LED Display",
+    keyFeature: "fine pitch LED technology for outstanding clarity and energy efficiency",
+    primaryUse: "mission-critical control rooms, executive boardrooms, and advanced digital signage",
+    secondaryFeature: "robust build quality and long-term reliability",
+    description: "The MW7815-FI-EB from Lovosis Technology features fine pitch LED technology for outstanding clarity and energy efficiency, making it ideal for mission-critical control rooms, executive boardrooms, and advanced digital signage. With its P1.5 pixel pitch, this display delivers sharp, vibrant images and is engineered for seamless integration and reliable, low-maintenance operation.",
+    extendedDescription: "The MW7815-FI-EB LED display sets a new standard for fine pitch technology, delivering precise, detailed visuals and smooth gradients even at close viewing distances. Its robust construction and advanced energy-saving features make it a top choice for demanding professional environments.",
+    image: "/LED Displays/MW7815-FI-EB.jpg",
+    price: "1000",
     category: "Products/led-display",
     categoryName: "LED Display",
-    features: ["Ultra-fine pixel pitch display", "Precision display technology", "Seamless integration", "Reliable performance", "Exceptional image quality"],
+    features: [
+      "Fine pitch LED display",
+      "Energy-efficient operation",
+      "Robust build quality",
+      "Seamless integration",
+      "Long-term reliability"
+    ],
     highlights: [
-      "P1.5 ultra-fine pixel pitch for superior clarity",
+      "P1.5 fine pitch for outstanding clarity",
       "Ideal viewing distance of 1.5-10 meters",
-      "Exceptional brightness uniformity",
-      "Advanced color calibration technology",
-      "Multiple connectivity options for versatile integration",
-      "Low power consumption with smart energy-saving features"
+      "Uniform brightness and color",
+      "Advanced energy-saving technology",
+      "Multiple connectivity options",
+      "Engineered for 24/7 operation"
     ],
     specifications: [
-      { name: "Model", value: "XEB Series P1.5" },
+      { name: "Model", value: "MW7815-FI-EB" },
       { name: "Pixel Pitch", value: "1.5mm" },
       { name: "Resolution", value: "160,000 pixels/m²" },
       { name: "Brightness", value: "800 nits" },
@@ -41,17 +48,17 @@ export const productData = [
     applications: [
       {
         name: "Control Rooms",
-        description: "High-precision monitoring with XEB Series P1.5",
+        description: "Mission-critical monitoring with MW7815-FI-EB",
         iconPath: "M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
       },
       {
-        name: "Corporate Environments",
-        description: "Elevate executive presentations with XEB Series P1.5",
+        name: "Executive Boardrooms",
+        description: "Premium presentations with MW7815-FI-EB",
         iconPath: "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
       },
       {
-        name: "Broadcast Studios",
-        description: "Professional broadcast backdrops with XEB Series P1.5",
+        name: "Digital Signage",
+        description: "Advanced signage solutions with MW7815-FI-EB",
         iconPath: "M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"
       }
     ],
@@ -65,23 +72,23 @@ export const productData = [
       { stars: 1, percentage: 0 }
     ],
     reviews: [
-      { 
+      {
         name: "James Wilson",
         date: "December 14, 2023",
         rating: 5,
-        review: "We installed the XEB Series P1.5 in our corporate boardroom and the visual clarity is absolutely stunning. The ultra-fine pixel pitch delivers incredibly sharp images even when viewed up close. Text presentations are crystal clear and our video conferences have never looked better. Worth every penny for businesses that want to make a professional impression."
+        review: "We installed the MW7815-FI-EB in our boardroom and the clarity is outstanding. The fine pitch delivers sharp images even up close. Presentations and video conferences look professional and impressive."
       },
-      { 
+      {
         name: "Alexander Chen",
         date: "November 18, 2023",
         rating: 5,
-        review: "As a broadcast studio manager, I've worked with many LED displays, but the XEB Series P1.5 stands out for its exceptional color accuracy and detail. The fine pixel pitch ensures that our on-camera backgrounds look perfect with no moiré effect. The display has performed flawlessly for months of continuous operation."
+        review: "As a studio manager, I've worked with many LED displays, but the MW7815-FI-EB stands out for its color accuracy and detail. The display has performed flawlessly for months of continuous operation."
       },
-      { 
+      {
         name: "Sophia Rahman",
         date: "October 25, 2023",
         rating: 5,
-        review: "Our control room monitoring center required displays with impeccable detail and reliability. The XEB Series P1.5 has exceeded our expectations in both areas. Even the smallest text is perfectly legible, and the low heat emission makes our environment more comfortable for long operational hours."
+        review: "Our control room needed displays with impeccable detail and reliability. The MW7815-FI-EB has exceeded our expectations. Even the smallest text is perfectly legible, and the low heat emission is a plus."
       }
     ],
     relatedProducts: [
@@ -101,216 +108,286 @@ export const productData = [
       }
     ]
   },
-  {
-    slug: "xeb-series-p12",
-    name: "XEB Series P1.2",
-    type: "LED Display",
-    shortDescription: "Ultra-High Definition",
-    keyFeature: "P1.2 ultra-fine pixel pitch for exceptional clarity",
-    primaryUse: "broadcast studios, control rooms, and high-end installations",
-    secondaryFeature: "unmatched image precision and color accuracy",
-    description: "The XEB Series P1.2 from Lovosis Technology offers an ultra-high-definition display with a P1.2 pixel pitch, ensuring crystal-clear visuals and precise image detail. Ideal for control rooms, broadcasting, and premium advertising, this display provides unparalleled clarity and smooth operation for professional settings. Built for seamless integration and reliable performance, the XEB Series P1.2 enhances the way you communicate visually, providing vivid color accuracy and long-lasting durability.",
-    extendedDescription: "The XEB Series P1.2 represents our most advanced LED display technology, designed for environments where absolute visual precision is non-negotiable. With an incredible pixel pitch of just 1.2mm, this display delivers impeccable clarity even at close viewing distances. The refined color calibration ensures that professionals in broadcast, medical imaging, and high-end control rooms can rely on accurate color reproduction and pristine image quality.",
-    image: "/LED Displays/img2.jpeg",
-    price: "Contact for Price",
-    category: "Products/led-display",
-    categoryName: "LED Display",
-    features: ["Ultra-high-definition display", "P1.2 pixel pitch", "Crystal-clear visuals", "Precise image detail", "Advanced color calibration"],
-    highlights: [
-      "P1.2 ultra-fine pixel pitch for superior clarity",
-      "Ideal viewing distance of 1.2-8 meters",
-      "Superior brightness uniformity across panels",
-      "HDR support for enhanced dynamic range",
-      "Comprehensive connectivity options for versatile integration",
-      "Smart power management system for energy efficiency"
-    ],
-    specifications: [
-      { name: "Model", value: "XEB Series P1.2" },
-      { name: "Pixel Pitch", value: "1.2mm" },
-      { name: "Resolution", value: "694,444 pixels/m²" },
-      { name: "Brightness", value: "850 nits" },
-      { name: "Contrast Ratio", value: "7000:1" },
-      { name: "Viewing Angle", value: "170° horizontal, 170° vertical" },
-      { name: "Refresh Rate", value: "3840Hz" },
-      { name: "Cabinet Material", value: "Die-cast aluminum" },
-      { name: "Cabinet Size", value: "500 x 500mm" }
-    ],
-    applications: [
-      {
-        name: "Broadcast Studios",
-        description: "Premium broadcast backdrop displays with XEB Series P1.2",
-        iconPath: "M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-      },
-      {
-        name: "Command Centers",
-        description: "Precision monitoring for critical operations with XEB Series P1.2",
-        iconPath: "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
-      },
-      {
-        name: "Luxury Retail",
-        description: "High-end retail display solutions with XEB Series P1.2",
-        iconPath: "M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"
-      }
-    ],
-    rating: "5.0",
-    reviewCount: "24",
-    ratingDistribution: [
-      { stars: 5, percentage: 95 },
-      { stars: 4, percentage: 5 },
-      { stars: 3, percentage: 0 },
-      { stars: 2, percentage: 0 },
-      { stars: 1, percentage: 0 }
-    ],
-    reviews: [
-      { 
-        name: "Thomas Reynolds",
-        date: "February 8, 2024",
-        rating: 5,
-        review: "We installed the XEB Series P1.2 for our broadcast studio and the results are nothing short of spectacular. The fine pixel pitch creates visuals so sharp that our on-camera talent constantly comments on how impressive the backdrops appear. The color accuracy is crucial for our brand consistency, and the XEB Series P1.2 delivers perfectly on this front."
-      },
-      { 
-        name: "Linda Park",
-        date: "January 22, 2024",
-        rating: 5,
-        review: "As the technology director for our emergency operations center, I demanded nothing but the best for our 24/7 monitoring displays. The XEB Series P1.2 has exceeded every expectation, with text legibility that's crucial for our operators' quick decision making. Even after continuous operation, we've experienced no hotspots or performance degradation."
-      },
-      { 
-        name: "Richard Martinez",
-        date: "December 10, 2023",
-        rating: 5,
-        review: "Our luxury automotive showroom installed the XEB Series P1.2 to showcase our vehicles' features and design elements. The detail is so precise that customers can see the stitching on seat upholstery and the texture of dashboard materials. The impact on our sales has been measurable - customers spend more time engaged with our digital content."
-      }
-    ],
-    relatedProducts: [
-      {
-        name: "XEB Series P1.5",
-        description: "Fine pixel pitch LED display with exceptional clarity, ideal for professional environments requiring high-definition visuals",
-        image: "/LED Displays/img1.webp",
-        slug: "xeb-series-p15",
-        features: ["Fine pixel pitch", "Professional-grade", "HD visuals"]
-      },
-      {
-        name: "XEB Series P1.8",
-        description: "High-resolution LED display with P1.8 pixel pitch, providing sharp visuals for business presentations and digital advertising",
-        image: "/LED Displays/img3.jpeg",
-        slug: "xeb-series-p18",
-        features: ["High-resolution", "P1.8 pixel pitch", "Sharp visuals"]
-      }
-    ]
-  },
+// ...existing code...
+ // ...existing code...
+{
+  slug: "xeb-series-p12",
+  name: "MW7812-FI-EB",
+  type: "",
+  shortDescription: "Ultra-Fine Pitch LED Display for Professional Applications",
+  keyFeature: "P1.2 ultra-fine pixel pitch for exceptional image clarity and detail",
+  primaryUse: "mission-critical control rooms, high-end boardrooms, broadcast studios, and luxury retail environments",
+  secondaryFeature: "advanced color calibration and robust build for 24/7 operation",
+  description: "The MW7812-FI-EB is Lovosis Technology’s flagship ultra-fine pitch LED display, featuring a P1.2mm pixel pitch for outstanding image clarity and detail. Designed for environments where visual precision is paramount, this model is ideal for control rooms, executive boardrooms, broadcast studios, and luxury retail spaces. Its advanced color calibration ensures true-to-life color reproduction, while the robust die-cast aluminum cabinet guarantees reliability and seamless integration.",
+  extendedDescription: "Engineered for the most demanding professional applications, the MW7812-FI-EB delivers ultra-high-definition visuals with a pixel pitch of just 1.2mm, making it perfect for close viewing distances. The display supports HDR content, offers superior brightness uniformity, and features smart power management for energy efficiency. Its modular design allows for easy installation and maintenance, while the advanced signal processing ensures flicker-free, smooth video playback. The MW7812-FI-EB is trusted by industry leaders for its reliability, color accuracy, and premium build quality.",
+  image: "/LED Displays/MW7815-FI-EB.jpg",
+  price: " 1000",
+  category: "Products/led-display",
+  categoryName: "LED Display",
+  features: [
+    "Ultra-fine P1.2mm pixel pitch for exceptional clarity",
+    "True-to-life color reproduction with advanced calibration",
+    "HDR support for enhanced dynamic range",
+    "Superior brightness uniformity across panels",
+    "Smart power management for energy efficiency",
+    "Robust die-cast aluminum cabinet",
+    "Seamless integration for large video walls",
+    "Modular design for easy installation and maintenance",
+    "Flicker-free, high refresh rate video playback",
+    "24/7 operation capability",
+    "Comprehensive connectivity options",
+    "Front and rear service access",
+    "Low heat emission for extended operation",
+    "Advanced signal processing",
+    "Long lifespan with minimal maintenance",
+    "Flexible configuration for custom installations",
+    "Anti-glare surface for optimal viewing",
+    "Lightweight and slim profile",
+    "Silent operation with fanless design",
+    "Uniform color and brightness calibration",
+    "Compatible with major control systems"
+  ],
+  highlights: [
+    "P1.2 ultra-fine pixel pitch for superior image detail",
+    "Ideal for close viewing distances (1.2-8 meters)",
+    "HDR and advanced color calibration",
+    "Robust, lightweight die-cast aluminum cabinet",
+    "Energy-efficient and reliable for 24/7 use",
+    "Seamless splicing for large-scale video walls"
+  ],
+  specifications: [
+    { name: "Model", value: "MW7812-FI-EB" },
+    { name: "Pixel Pitch", value: "1.2mm" },
+    { name: "Resolution", value: "694,444 pixels/m²" },
+    { name: "Brightness", value: "850 nits" },
+    { name: "Contrast Ratio", value: "7000:1" },
+    { name: "Viewing Angle", value: "170° horizontal, 170° vertical" },
+    { name: "Refresh Rate", value: "3840Hz" },
+    { name: "Cabinet Material", value: "Die-cast aluminum" },
+    { name: "Cabinet Size", value: "500 x 500mm" }
+  ],
+  applications: [
+    {
+      name: "Control Rooms",
+      description: "Mission-critical monitoring with MW7812-FI-EB",
+      iconPath: "M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+    },
+    {
+      name: "Executive Boardrooms",
+      description: "Premium presentations with MW7812-FI-EB",
+      iconPath: "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+    },
+    {
+      name: "Broadcast Studios",
+      description: "Ultra-HD backdrops and sets with MW7812-FI-EB",
+      iconPath: "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+    },
+    {
+      name: "Luxury Retail",
+      description: "High-end digital signage with MW7812-FI-EB",
+      iconPath: "M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
+    },
+    {
+      name: "Conference Centers",
+      description: "Large-scale event displays with MW7812-FI-EB",
+      iconPath: "M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z"
+    }
+  ],
+  rating: "5.0",
+  reviewCount: "24",
+  ratingDistribution: [
+    { stars: 5, percentage: 95 },
+    { stars: 4, percentage: 5 },
+    { stars: 3, percentage: 0 },
+    { stars: 2, percentage: 0 },
+    { stars: 1, percentage: 0 }
+  ],
+  reviews: [
+    { 
+      name: "Thomas Reynolds",
+      date: "February 8, 2024",
+      rating: 5,
+      review: "The MW7812-FI-EB is the best LED display we've ever used in our broadcast studio. The clarity and color accuracy are unmatched, and the ultra-fine pitch makes our on-camera visuals look stunning."
+    },
+    { 
+      name: "Linda Park",
+      date: "January 22, 2024",
+      rating: 5,
+      review: "We chose the MW7812-FI-EB for our control room upgrade. The detail and reliability are exactly what we needed for 24/7 mission-critical monitoring. Highly recommended for any professional environment."
+    },
+    { 
+      name: "Richard Martinez",
+      date: "December 10, 2023",
+      rating: 5,
+      review: "Our luxury retail store uses the MW7812-FI-EB for digital signage, and the impact on customer engagement has been incredible. The visuals are so sharp and vibrant that they truly elevate our brand."
+    }
+  ],
+  relatedProducts: [
+    {
+      name: "XEB Series P1.5",
+      description: "Fine pixel pitch LED display with exceptional clarity, ideal for professional environments requiring high-definition visuals",
+      image: "/LED Displays/img1.webp",
+      slug: "xeb-series-p15",
+      features: ["Fine pixel pitch", "Professional-grade", "HD visuals"]
+    },
+    {
+      name: "XEB Series P1.8",
+      description: "High-resolution LED display with P1.8 pixel pitch, providing sharp visuals for business presentations and digital advertising",
+      image: "/LED Displays/img3.jpeg",
+      slug: "xeb-series-p18",
+      features: ["High-resolution", "P1.8 pixel pitch", "Sharp visuals"]
+    }
+  ]
+},
+// ...existing code...
   
   // New product: XEB Series P1.8
-  {
-    slug: "xeb-series-p18",
-    name: "XEB Series P1.8",
-    type: "LED Display",
-    shortDescription: "High-Definition Professional Display",
-    keyFeature: "P1.8 pixel pitch technology for professional applications",
-    primaryUse: "corporate environments, retail displays, and commercial installations",
-    secondaryFeature: "balance of visual quality and cost-effectiveness",
-    description: "The XEB Series P1.8 from Lovosis Technology delivers high-resolution LED display technology with a P1.8 pixel pitch, providing sharp visuals and excellent clarity for business presentations, control rooms, and digital advertising. With vivid color accuracy and a seamless viewing experience, this display is perfect for professional settings that demand quality image performance without the premium cost of ultra-fine pixel displays.",
-    extendedDescription: "The XEB Series P1.8 represents the perfect balance of visual quality and cost effectiveness in the LED display market. With its 1.8mm pixel pitch, this display delivers impressive clarity at standard viewing distances while remaining an economical choice for businesses seeking to upgrade their visual communications. The P1.8 displays are engineered for versatility across various commercial applications where reliability and visual impact are equally important.",
-    image: "/LED Displays/img3.jpeg",
-    price: "Contact for Price",
-    category: "Products/led-display",
-    categoryName: "LED Display",
-    features: ["High-resolution display", "P1.8 pixel pitch", "Sharp visuals", "Color accuracy", "Cost-effective solution"],
-    highlights: [
-      "P1.8 pixel pitch balancing quality and value",
-      "Ideal viewing distance of 1.8-12 meters",
-      "Uniform brightness across display panels",
-      "Simplified installation and maintenance",
-      "Flexible configuration options for custom installations",
-      "Enhanced energy efficiency for reduced operational costs"
-    ],
-    specifications: [
-      { name: "Model", value: "XEB Series P1.8" },
-      { name: "Pixel Pitch", value: "1.8mm" },
-      { name: "Resolution", value: "277,778 pixels/m²" },
-      { name: "Brightness", value: "700 nits" },
-      { name: "Contrast Ratio", value: "5000:1" },
-      { name: "Viewing Angle", value: "160° horizontal, 160° vertical" },
-      { name: "Refresh Rate", value: "3840Hz" },
-      { name: "Cabinet Material", value: "Die-cast aluminum" },
-      { name: "Cabinet Size", value: "500 x 500mm" }
-    ],
-    applications: [
-      {
-        name: "Corporate",
-        description: "Enhanced business presentations with XEB Series P1.8",
-        iconPath: "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
-      },
-      {
-        name: "Retail",
-        description: "Engaging retail displays with XEB Series P1.8",
-        iconPath: "M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
-      },
-      {
-        name: "Digital Signage",
-        description: "Impactful commercial signage with XEB Series P1.8",
-        iconPath: "M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"
-      }
-    ],
-    rating: "4.7",
-    reviewCount: "41",
-    ratingDistribution: [
-      { stars: 5, percentage: 75 },
-      { stars: 4, percentage: 20 },
-      { stars: 3, percentage: 5 },
-      { stars: 2, percentage: 0 },
-      { stars: 1, percentage: 0 }
-    ],
-    reviews: [
-      { 
-        name: "Robert Lewis",
-        date: "January 30, 2024",
-        rating: 5,
-        review: "We installed the XEB Series P1.8 in our company's main conference room and have been thoroughly impressed with the performance. The image quality is excellent for our presentations, and the price point made it possible to outfit multiple meeting spaces. A great balance of quality and value from the XEB Series P1.8."
-      },
-      { 
-        name: "Julia Garcia",
-        date: "December 18, 2023",
-        rating: 4,
-        review: "Our retail store upgraded to the XEB Series P1.8 for our digital product showcases, and customer engagement has noticeably increased. The display is bright, clear, and really makes our product images pop. Setup was straightforward, and we appreciate the energy efficiency. Would give it 5 stars if the included software was a bit more intuitive."
-      },
-      { 
-        name: "Daniel Kim",
-        date: "November 5, 2023",
-        rating: 5,
-        review: "As a digital signage integrator, I've installed many XEB Series P1.8 displays for clients, and they consistently perform exceptionally well. The build quality is solid, the panels align perfectly for seamless walls, and the color calibration is spot-on out of the box. My clients are always thrilled with the final results."
-      }
-    ],
-    relatedProducts: [
-      {
-        name: "XEB Series P1.2",
-        description: "Ultra-high-definition LED display with P1.2 pixel pitch for environments requiring exceptional visual precision",
-        image: "/LED Displays/img2.jpeg",
-        slug: "xeb-series-p12",
-        features: ["Ultra-high-definition", "P1.2 pixel pitch", "Unmatched precision"]
-      },
-      {
-        name: "XEB Series P1.5",
-        description: "Fine pixel pitch LED display delivering superior clarity and precision for professional environments",
-        image: "/LED Displays/img1.webp",
-        slug: "xeb-series-p15",
-        features: ["Fine pixel pitch", "Superior clarity", "Professional grade"]
-      }
-    ]
-  },
+  // ...existing code...
+{
+  slug: "xeb-series-p18",
+  name: "MW7818-FI-EB",
+  type: "",
+  shortDescription: "High-Definition Fine Pitch LED Display for Professional Environments",
+  keyFeature: "P1.8 fine pixel pitch for sharp, vibrant, and detailed visuals",
+  primaryUse: "corporate boardrooms, control rooms, digital signage, broadcast studios, and retail environments",
+  secondaryFeature: "energy-efficient operation and robust build for 24/7 reliability",
+  description: "The MW7818-FI-EB is a high-definition fine pitch LED display from Lovosis Technology, featuring a P1.8mm pixel pitch for sharp, vibrant, and detailed visuals. Designed for professional environments such as corporate boardrooms, control rooms, digital signage, broadcast studios, and retail spaces, this model delivers exceptional image clarity and color accuracy. Its robust construction and energy-efficient design ensure reliable 24/7 operation, making it ideal for mission-critical and high-visibility applications.",
+  extendedDescription: "Engineered for versatility and performance, the MW7818-FI-EB combines advanced LED technology with a fine 1.8mm pixel pitch to deliver crisp, seamless visuals even at close viewing distances. The display supports HDR content, offers uniform brightness, and features advanced color calibration for true-to-life images. Its modular, lightweight design allows for easy installation and maintenance, while the high refresh rate ensures smooth video playback. The MW7818-FI-EB is trusted by professionals for its durability, low heat emission, and flexible configuration options, making it a top choice for demanding commercial and control environments.",
+  image: "/LED Displays/img3.jpeg",
+  price: "1000",
+  category: "Products/led-display",
+  categoryName: "LED Display",
+  features: [
+    "Fine P1.8mm pixel pitch for sharp, detailed images",
+    "Advanced color calibration for true-to-life visuals",
+    "HDR support for enhanced dynamic range",
+    "Uniform brightness across all panels",
+    "Energy-efficient operation for reduced costs",
+    "Robust die-cast aluminum cabinet",
+    "Seamless splicing for large video walls",
+    "Modular design for easy installation and maintenance",
+    "High refresh rate for flicker-free video",
+    "24/7 operation capability",
+    "Comprehensive connectivity options",
+    "Front and rear service access",
+    "Low heat emission for continuous use",
+    "Flexible configuration for custom installations",
+    "Anti-glare surface for optimal viewing",
+    "Lightweight and slim profile",
+    "Silent, fanless operation",
+    "Long lifespan with minimal maintenance",
+    "Compatible with major control systems",
+    "Smart power management",
+    "Supports multiple input sources",
+    "Ideal for close viewing distances"
+  ],
+  highlights: [
+    "P1.8 fine pitch for high-definition clarity",
+    "Perfect for boardrooms, control rooms, and signage",
+    "HDR and advanced color calibration",
+    "Robust, lightweight die-cast aluminum cabinet",
+    "Energy-efficient and reliable for 24/7 use",
+    "Seamless integration for large-scale video walls"
+  ],
+  specifications: [
+    { name: "Model", value: "MW7818-FI-EB" },
+    { name: "Pixel Pitch", value: "1.8mm" },
+    { name: "Resolution", value: "277,778 pixels/m²" },
+    { name: "Brightness", value: "700 nits" },
+    { name: "Contrast Ratio", value: "5000:1" },
+    { name: "Viewing Angle", value: "160° horizontal, 160° vertical" },
+    { name: "Refresh Rate", value: "3840Hz" },
+    { name: "Cabinet Material", value: "Die-cast aluminum" },
+    { name: "Cabinet Size", value: "500 x 500mm" }
+  ],
+  applications: [
+    {
+      name: "Corporate Boardrooms",
+      description: "Professional presentations and meetings with MW7818-FI-EB",
+      iconPath: "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+    },
+    {
+      name: "Control Rooms",
+      description: "Mission-critical monitoring with MW7818-FI-EB",
+      iconPath: "M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+    },
+    {
+      name: "Digital Signage",
+      description: "High-impact advertising and information displays with MW7818-FI-EB",
+      iconPath: "M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"
+    },
+    {
+      name: "Broadcast Studios",
+      description: "Ultra-HD backdrops and sets with MW7818-FI-EB",
+      iconPath: "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+    },
+    {
+      name: "Retail Environments",
+      description: "Engaging customer experiences with MW7818-FI-EB",
+      iconPath: "M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
+    }
+  ],
+  rating: "4.8",
+  reviewCount: "41",
+  ratingDistribution: [
+    { stars: 5, percentage: 80 },
+    { stars: 4, percentage: 15 },
+    { stars: 3, percentage: 5 },
+    { stars: 2, percentage: 0 },
+    { stars: 1, percentage: 0 }
+  ],
+  reviews: [
+    { 
+      name: "Robert Lewis",
+      date: "January 30, 2024",
+      rating: 5,
+      review: "We installed the MW7818-FI-EB in our company's main conference room and have been thoroughly impressed with the performance. The image quality is excellent for our presentations, and the price point made it possible to outfit multiple meeting spaces. A great balance of quality and value."
+    },
+    { 
+      name: "Julia Garcia",
+      date: "December 18, 2023",
+      rating: 4,
+      review: "Our retail store upgraded to the MW7818-FI-EB for our digital product showcases, and customer engagement has noticeably increased. The display is bright, clear, and really makes our product images pop. Setup was straightforward, and we appreciate the energy efficiency."
+    },
+    { 
+      name: "Daniel Kim",
+      date: "November 5, 2023",
+      rating: 5,
+      review: "As a digital signage integrator, I've installed many MW7818-FI-EB displays for clients, and they consistently perform exceptionally well. The build quality is solid, the panels align perfectly for seamless walls, and the color calibration is spot-on out of the box."
+    }
+  ],
+  relatedProducts: [
+    {
+      name: "XEB Series P1.2",
+      description: "Ultra-high-definition LED display with P1.2 pixel pitch for environments requiring exceptional visual precision",
+      image: "/LED Displays/img2.jpeg",
+      slug: "xeb-series-p12",
+      features: ["Ultra-high-definition", "P1.2 pixel pitch", "Unmatched precision"]
+    },
+    {
+      name: "XEB Series P1.5",
+      description: "Fine pixel pitch LED display delivering superior clarity and precision for professional environments",
+      image: "/LED Displays/img1.webp",
+      slug: "xeb-series-p15",
+      features: ["Fine pixel pitch", "Superior clarity", "Professional grade"]
+    }
+  ]
+},
+// ...existing code...
   
   // New product: U Series P0.9
   {
     slug: "u-series-p09",
-    name: "U Series P0.9",
-    type: "LED Display",
+    name: "MW7809-FI-CF",
+    type: "",
     shortDescription: "Premium Ultra-HD Display",
     keyFeature: "ultra-fine P0.9 pixel pitch for unmatched visual detail",
     primaryUse: "mission-critical control rooms, high-end broadcasting, and luxury retail environments",
     secondaryFeature: "industry-leading visual performance and color accuracy",
-    description: "The U Series P0.9 from Lovosis Technology offers unmatched clarity with its ultra-fine P0.9 pixel pitch, delivering breathtaking visual precision for high-end control rooms, broadcasting, and premium digital signage. Its ultra-high-definition display ensures that even the smallest details are rendered with sharp accuracy, providing a seamless viewing experience for the most demanding applications.",
-    extendedDescription: "The U Series P0.9 represents the pinnacle of LED display technology, engineered for scenarios where absolute visual perfection is required. At an astonishing 0.9mm pixel pitch, this display achieves near-retina quality visuals even at close viewing distances. Developed with advanced micro-LED architecture, the U Series P0.9 delivers exceptional brightness uniformity, remarkable color accuracy, and industry-leading contrast ratios that make it the preferred choice for mission-critical installations.",
-    image: "/LED Displays/img4.webp",
-    price: "Contact for Price",
+    description: "The MW7809-FI-CF from Lovosis Technology offers unmatched clarity with its ultra-fine P0.9 pixel pitch, delivering breathtaking visual precision for high-end control rooms, broadcasting, and premium digital signage. Its ultra-high-definition display ensures that even the smallest details are rendered with sharp accuracy, providing a seamless viewing experience for the most demanding applications.",
+    extendedDescription: "The MW7809-FI-CF represents the pinnacle of LED display technology, engineered for scenarios where absolute visual perfection is required. At an astonishing 0.9mm pixel pitch, this display achieves near-retina quality visuals even at close viewing distances. Developed with advanced micro-LED architecture, the MW7809-FI-CF delivers exceptional brightness uniformity, remarkable color accuracy, and industry-leading contrast ratios that make it the preferred choice for mission-critical installations.",
+    image: "/LED Displays/MW7809-FI-CF.jpg",
+    price: "1000",
     category: "Products/led-display",
     categoryName: "LED Display",
     features: ["Ultra-fine P0.9 pixel pitch", "Micro-LED architecture", "Near-retina visual quality", "Superior color accuracy", "Premium build quality"],
@@ -323,7 +400,7 @@ export const productData = [
       "Premium material construction for extended lifespan"
     ],
     specifications: [
-      { name: "Model", value: "U Series P0.9" },
+      { name: "Model", value: "MW7809-FI-CF" },
       { name: "Pixel Pitch", value: "0.9mm" },
       { name: "Resolution", value: "1,111,111 pixels/m²" },
       { name: "Brightness", value: "800 nits" },
@@ -336,17 +413,17 @@ export const productData = [
     applications: [
       {
         name: "Mission-Critical Control",
-        description: "Ultra-precise monitoring with U Series P0.9",
+        description: "Ultra-precise monitoring with MW7809-FI-CF",
         iconPath: "M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
       },
       {
         name: "Premium Broadcasting",
-        description: "State-of-the-art studio visuals with U Series P0.9",
+        description: "State-of-the-art studio visuals with MW7809-FI-CF",
         iconPath: "M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"
       },
       {
         name: "Luxury Retail",
-        description: "Exceptional brand showcases with U Series P0.9",
+        description: "Exceptional brand showcases with MW7809-FI-CF",
         iconPath: "M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"
       }
     ],
@@ -364,19 +441,19 @@ export const productData = [
         name: "Dr. Elizabeth Matthews",
         date: "March 5, 2024",
         rating: 5,
-        review: "As the lead designer for a space agency control center, we required displays with absolute precision. The U Series P0.9 exceeds all expectations. The clarity is remarkable - operators can view complex telemetry data without any eyestrain, even during 12-hour shifts. The color accuracy is critical for our status indicators, and the U Series P0.9 reproduces our calibrated palette perfectly."
+        review: "As the lead designer for a space agency control center, we required displays with absolute precision. The MW7809-FI-CF exceeds all expectations. The clarity is remarkable - operators can view complex telemetry data without any eyestrain, even during 12-hour shifts. The color accuracy is critical for our status indicators, and the MW7809-FI-CF reproduces our calibrated palette perfectly."
       },
       { 
         name: "Victor Nguyen",
         date: "February 12, 2024",
         rating: 5,
-        review: "Our broadcast studio produces content for major fashion brands, and we installed the U Series P0.9 as our main on-camera backdrop. The pixel density is so fine that there's absolutely no moiré effect when cameras pan across the display. Our clients are amazed by the color reproduction accuracy and the ability to showcase their products with perfect fidelity."
+        review: "Our broadcast studio produces content for major fashion brands, and we installed the MW7809-FI-CF as our main on-camera backdrop. The pixel density is so fine that there's absolutely no moiré effect when cameras pan across the display. Our clients are amazed by the color reproduction accuracy and the ability to showcase their products with perfect fidelity."
       },
       { 
         name: "Jonathan Price",
         date: "January 8, 2024",
         rating: 5,
-        review: "Our flagship jewelry store installed the U Series P0.9 for displaying our premium collection, and the results are spectacular. The display's ability to render the subtle nuances in gemstone colors and metallics is unprecedented. The investment was substantial, but the increased customer engagement and time spent viewing our digital catalog has translated directly to higher sales of our luxury items."
+        review: "Our flagship jewelry store installed the MW7809-FI-CF for displaying our premium collection, and the results are spectacular. The display's ability to render the subtle nuances in gemstone colors and metallics is unprecedented. The investment was substantial, but the increased customer engagement and time spent viewing our digital catalog has translated directly to higher sales of our luxury items."
       }
     ],
     relatedProducts: [
@@ -400,16 +477,16 @@ export const productData = [
   // New product: U Series P1.2
   {
     slug: "u-series-p12",
-    name: "U Series P1.2",
-    type: "LED Display",
+    name: "MW7812-FI-CF",
+    type: "",
     shortDescription: "Professional Precision Display",
     keyFeature: "P1.2 pixel pitch combining high performance and reliability",
     primaryUse: "corporate environments, control rooms, and high-end retail displays",
     secondaryFeature: "advanced visual processing and flexible installation options",
-    description: "The U Series P1.2 from Lovosis Technology is a precision-engineered display with a P1.2 pixel pitch, offering sharp visuals and excellent clarity for business presentations, control rooms, and premium digital signage. The ultra-high-definition display ensures detailed content visibility, making it ideal for environments that require accurate image representation.",
-    extendedDescription: "The U Series P1.2 delivers exceptional visual performance with its 1.2mm pixel pitch technology, providing businesses and organizations with remarkably detailed imagery that maintains clarity even at close viewing distances. Developed using Lovosis's advanced U-Series architecture, this display combines premium image quality with operational reliability, ensuring continued performance in demanding 24/7 environments where visual communication is critical to success.",
-    image: "/LED Displays/img5.jpg",
-    price: "Contact for Price",
+    description: "The MW7812-FI-CF from Lovosis Technology is a precision-engineered display with a P1.2 pixel pitch, offering sharp visuals and excellent clarity for business presentations, control rooms, and premium digital signage. The ultra-high-definition display ensures detailed content visibility, making it ideal for environments that require accurate image representation.",
+    extendedDescription: "The MW7812-FI-CF delivers exceptional visual performance with its 1.2mm pixel pitch technology, providing businesses and organizations with remarkably detailed imagery that maintains clarity even at close viewing distances. Developed using Lovosis's advanced U-Series architecture, this display combines premium image quality with operational reliability, ensuring continued performance in demanding 24/7 environments where visual communication is critical to success.",
+    image: "/LED Displays/MW7809-FI-CF.jpg",
+    price: "1000",
     category: "Products/led-display",
     categoryName: "LED Display",
     features: ["Professional P1.2 pixel pitch", "Advanced image processing", "High reliability design", "Flexible installation", "24/7 operation capability"],
@@ -422,7 +499,7 @@ export const productData = [
       "Intelligent brightness adjustment for optimal viewing"
     ],
     specifications: [
-      { name: "Model", value: "U Series P1.2" },
+      { name: "Model", value: "MW7812-FI-CF" },
       { name: "Pixel Pitch", value: "1.2mm" },
       { name: "Resolution", value: "694,444 pixels/m²" },
       { name: "Brightness", value: "800 nits" },
@@ -435,17 +512,17 @@ export const productData = [
     applications: [
       {
         name: "Corporate Headquarters",
-        description: "Executive-level presentation displays with U Series P1.2",
+        description: "Executive-level presentation displays with MW7812-FI-CF",
         iconPath: "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
       },
       {
         name: "Control Centers",
-        description: "Reliable information displays with U Series P1.2",
+        description: "Reliable information displays with MW7812-FI-CF",
         iconPath: "M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
       },
       {
         name: "Premium Retail",
-        description: "Elevated shopping experiences with U Series P1.2",
+        description: "Elevated shopping experiences with MW7812-FI-CF",
         iconPath: "M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
       }
     ],
@@ -463,19 +540,19 @@ export const productData = [
         name: "Maria Santos",
         date: "February 20, 2024",
         rating: 5,
-        review: "We installed the U Series P1.2 in our executive briefing center, and it's transformed our client presentations. The clarity is exceptional even when displaying detailed financial data and technical specifications. The display's ability to maintain consistent brightness throughout long meetings has been particularly valuable. The U Series P1.2 was a significant investment that's already paying dividends in client engagement."
+        review: "We installed the MW7812-FI-CF in our executive briefing center, and it's transformed our client presentations. The clarity is exceptional even when displaying detailed financial data and technical specifications. The display's ability to maintain consistent brightness throughout long meetings has been particularly valuable. The MW7812-FI-CF was a significant investment that's already paying dividends in client engagement."
       },
       { 
         name: "Andrew Jackson",
         date: "January 15, 2024",
         rating: 5,
-        review: "Our emergency operations center operates around the clock, and the U Series P1.2 has proven to be exceptionally reliable. The visual clarity ensures that critical information is always legible, and the redundant power systems have prevented any downtime during our operations. The heat management is impressive - even after continuous operation, the display remains at optimal temperature."
+        review: "Our emergency operations center operates around the clock, and the MW7812-FI-CF has proven to be exceptionally reliable. The visual clarity ensures that critical information is always legible, and the redundant power systems have prevented any downtime during our operations. The heat management is impressive - even after continuous operation, the display remains at optimal temperature."
       },
       { 
         name: "Sophia Williams",
         date: "December 5, 2023",
         rating: 4,
-        review: "Our high-end department store installed the U Series P1.2 at our main entrance, and it's creating a stunning first impression for customers. The vibrant colors and crisp imagery showcase our seasonal collections beautifully. Installation was straightforward, though we needed some additional assistance with the control software setup. Overall, the display quality exceeds expectations and has enhanced our store's premium atmosphere."
+        review: "Our high-end department store installed the MW7812-FI-CF at our main entrance, and it's creating a stunning first impression for customers. The vibrant colors and crisp imagery showcase our seasonal collections beautifully. Installation was straightforward, though we needed some additional assistance with the control software setup. Overall, the display quality exceeds expectations and has enhanced our store's premium atmosphere."
       }
     ],
     relatedProducts: [
@@ -497,218 +574,219 @@ export const productData = [
   },
   
   // New product: U Series P1.5
-  {
-    slug: "u-series-p15",
-    name: "U Series P1.5",
-    type: "LED Display",
-    shortDescription: "Versatile Business Display",
-    keyFeature: "P1.5 pixel pitch balancing performance and value",
-    primaryUse: "business environments, retail displays, and educational settings",
-    secondaryFeature: "reliability and ease of maintenance",
-    description: "The U Series P1.5 by Lovosis Technology delivers high-quality visuals with its P1.5 pixel pitch, offering outstanding clarity and vivid color accuracy. Perfect for control rooms, meeting spaces, and advertising displays, this display provides clear, crisp visuals for professional environments that demand the best in image quality.",
-    extendedDescription: "The U Series P1.5 provides businesses with an ideal balance of visual performance and value. With its 1.5mm pixel pitch, this versatile display delivers sharp, clear imagery at standard viewing distances while remaining accessible for organizations seeking quality visual solutions. The U Series P1.5 features Lovosis's trusted display technology that emphasizes reliability, simplified maintenance, and versatile application across various commercial and educational environments.",
-    image: "/LED Displays/img6.jpeg",
-    price: "Contact for Price",
-    category: "Products/led-display",
-    categoryName: "LED Display",
-    features: ["High-quality P1.5 display", "Balanced performance", "Business-oriented", "Simplified maintenance", "Versatile application"],
-    highlights: [
-      "P1.5 pixel pitch for clear business messaging",
-      "Ideal viewing distance of 1.5-12 meters",
-      "Simplified installation and configuration",
-      "User-friendly content management system",
-      "Robust build for commercial environments",
-      "Energy-efficient operation for reduced costs"
-    ],
-    specifications: [
-      { name: "Model", value: "U Series P1.5" },
-      { name: "Pixel Pitch", value: "1.5mm" },
-      { name: "Resolution", value: "444,444 pixels/m²" },
-      { name: "Brightness", value: "700 nits" },
-      { name: "Contrast Ratio", value: "5500:1" },
-      { name: "Viewing Angle", value: "160° horizontal, 160° vertical" },
-      { name: "Refresh Rate", value: "3840Hz" },
-      { name: "Cabinet Material", value: "Die-cast aluminum" },
-      { name: "Cabinet Size", value: "500 x 500mm" }
-    ],
-    applications: [
-      {
-        name: "Business Environments",
-        description: "Effective corporate communications with U Series P1.5",
-        iconPath: "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
-      },
-      {
-        name: "Retail Solutions",
-        description: "Engaging customer experiences with U Series P1.5",
-        iconPath: "M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
-      },
-      {
-        name: "Educational Facilities",
-        description: "Enhanced learning environments with U Series P1.5",
-        iconPath: "M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13c-1.168-.775-2.754-1.253-4.5-1.253-1.746 0-3.332.477-4.5 1.253"
-      }
-    ],
-    rating: "4.7",
-    reviewCount: "53",
-    ratingDistribution: [
-      { stars: 5, percentage: 75 },
-      { stars: 4, percentage: 20 },
-      { stars: 3, percentage: 5 },
-      { stars: 2, percentage: 0 },
-      { stars: 1, percentage: 0 }
-    ],
-    reviews: [
-      { 
-        name: "Michael Bradley",
-        date: "March 10, 2024",
-        rating: 5,
-        review: "We deployed U Series P1.5 displays across our corporate campus for digital signage and meeting room installations. The image quality is excellent for our needs, and the setup was straightforward. What impressed us most is how easy these are to maintain - the modular design makes it simple to service if needed, though we haven't had any issues in six months of operation."
-      },
-      { 
-        name: "Rebecca Chen",
-        date: "February 2, 2024",
-        rating: 4,
-        review: "Our retail chain installed U Series P1.5 displays in our flagship stores, and they've significantly enhanced our in-store marketing. The displays are bright and clear, even in our sunlit locations. The content management system is intuitive enough for our marketing team to update messaging without technical assistance. Would give 5 stars if the included templates were more customizable."
-      },
-      { 
-        name: "Professor Alan Thompson",
-        date: "January 18, 2024",
-        rating: 5,
-        review: "Our university's business school equipped multiple lecture halls with the U Series P1.5, and they've transformed our teaching capabilities. The displays provide perfect visibility from all seats, and the color accuracy is critical for our data visualization classes. The reliability has been excellent - no disruptions during important lectures or presentations. I highly recommend these displays for educational settings."
-      }
-    ],
-    relatedProducts: [
-      {
-        name: "U Series P1.2",
-        description: "Premium LED display with P1.2 pixel pitch for exceptional visual clarity in professional settings",
-        image: "/LED Displays/img5.jpg",
-        slug: "u-series-p12",
-        features: ["Premium display", "P1.2 pixel pitch", "Professional clarity"]
-      },
-      {
-        name: "XEB Series P1.5",
-        description: "Fine pixel pitch LED display with superior clarity and precision for demanding environments",
-        image: "/LED Displays/img1.webp",
-        slug: "xeb-series-p15",
-        features: ["Fine pixel pitch", "Superior clarity", "Professional grade"]
-      }
-    ]
-  },
+ {
+  slug: "u-series-p15",
+  name: "MW7815-FI-CF",
+  type: "",
+  shortDescription: "Versatile Business Display",
+  keyFeature: "P1.5 pixel pitch balancing performance and value",
+  primaryUse: "business environments, retail displays, and educational settings",
+  secondaryFeature: "reliability and ease of maintenance",
+  description: "The MW7815-FI-CF by Lovosis Technology delivers high-quality visuals with its P1.5 pixel pitch, offering outstanding clarity and vivid color accuracy. Perfect for control rooms, meeting spaces, and advertising displays, this display provides clear, crisp visuals for professional environments that demand the best in image quality.",
+  extendedDescription: "The MW7815-FI-CF provides businesses with an ideal balance of visual performance and value. With its 1.5mm pixel pitch, this versatile display delivers sharp, clear imagery at standard viewing distances while remaining accessible for organizations seeking quality visual solutions. The MW7815-FI-CF features Lovosis's trusted display technology that emphasizes reliability, simplified maintenance, and versatile application across various commercial and educational environments.",
+  image: "/LED Displays/MW7809-FI-CF.jpg",
+  price: "1000",
+  category: "Products/led-display",
+  categoryName: "LED Display",
+  features: ["High-quality P1.5 display", "Balanced performance", "Business-oriented", "Simplified maintenance", "Versatile application"],
+  highlights: [
+    "P1.5 pixel pitch for clear business messaging",
+    "Ideal viewing distance of 1.5-12 meters",
+    "Simplified installation and configuration",
+    "User-friendly content management system",
+    "Robust build for commercial environments",
+    "Energy-efficient operation for reduced costs"
+  ],
+  specifications: [
+    { name: "Model", value: "MW7815-FI-CF" },
+    { name: "Pixel Pitch", value: "1.5mm" },
+    { name: "Resolution", value: "444,444 pixels/m²" },
+    { name: "Brightness", value: "700 nits" },
+    { name: "Contrast Ratio", value: "5500:1" },
+    { name: "Viewing Angle", value: "160° horizontal, 160° vertical" },
+    { name: "Refresh Rate", value: "3840Hz" },
+    { name: "Cabinet Material", value: "Die-cast aluminum" },
+    { name: "Cabinet Size", value: "500 x 500mm" }
+  ],
+  applications: [
+    {
+      name: "Business Environments",
+      description: "Effective corporate communications with MW7815-FI-CF",
+      iconPath: "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+    },
+    {
+      name: "Retail Solutions",
+      description: "Engaging customer experiences with MW7815-FI-CF",
+      iconPath: "M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
+    },
+    {
+      name: "Educational Facilities",
+      description: "Enhanced learning environments with MW7815-FI-CF",
+      iconPath: "M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13c-1.168-.775-2.754-1.253-4.5-1.253-1.746 0-3.332.477-4.5 1.253"
+    }
+  ],
+  rating: "4.7",
+  reviewCount: "53",
+  ratingDistribution: [
+    { stars: 5, percentage: 75 },
+    { stars: 4, percentage: 20 },
+    { stars: 3, percentage: 5 },
+    { stars: 2, percentage: 0 },
+    { stars: 1, percentage: 0 }
+  ],
+  reviews: [
+    { 
+      name: "Michael Bradley",
+      date: "March 10, 2024",
+      rating: 5,
+      review: "We deployed MW7815-FI-CF displays across our corporate campus for digital signage and meeting room installations. The image quality is excellent for our needs, and the setup was straightforward. What impressed us most is how easy these are to maintain - the modular design makes it simple to service if needed, though we haven't had any issues in six months of operation."
+    },
+    { 
+      name: "Rebecca Chen",
+      date: "February 2, 2024",
+      rating: 4,
+      review: "Our retail chain installed MW7815-FI-CF displays in our flagship stores, and they've significantly enhanced our in-store marketing. The displays are bright and clear, even in our sunlit locations. The content management system is intuitive enough for our marketing team to update messaging without technical assistance. Would give 5 stars if the included templates were more customizable."
+    },
+    { 
+      name: "Professor Alan Thompson",
+      date: "January 18, 2024",
+      rating: 5,
+      review: "Our university's business school equipped multiple lecture halls with the MW7815-FI-CF, and they've transformed our teaching capabilities. The displays provide perfect visibility from all seats, and the color accuracy is critical for our data visualization classes. The reliability has been excellent - no disruptions during important lectures or presentations. I highly recommend these displays for educational settings."
+    }
+  ],
+  relatedProducts: [
+    {
+      name: "U Series P1.2",
+      description: "Premium LED display with P1.2 pixel pitch for exceptional visual clarity in professional settings",
+      image: "/LED Displays/img5.jpg",
+      slug: "u-series-p12",
+      features: ["Premium display", "P1.2 pixel pitch", "Professional clarity"]
+    },
+    {
+      name: "XEB Series P1.5",
+      description: "Fine pixel pitch LED display with superior clarity and precision for demanding environments",
+      image: "/LED Displays/img1.webp",
+      slug: "xeb-series-p15",
+      features: ["Fine pixel pitch", "Superior clarity", "Professional grade"]
+    }
+  ]
+},
+// ...existing code...
 
   
  // LCD Video Wall Products :- 3
 
-  {
-    slug: "mw-a46-b3-e",
-    name: "46\" 1.7mm Bezel Width Video Wall",
-    type: "LCD Video Wall",
-    shortDescription: "Ultra-Narrow Bezel Professional Display",
-    keyFeature: "1.7mm ultra-narrow bezel for seamless multi-screen installations",
-    primaryUse: "control rooms, corporate environments, and retail digital signage",
-    secondaryFeature: "exceptional image quality with wide viewing angles",
-    description: "Upgrade your display experience with the 46\" 1.7mm Bezel Width Video Wall, perfect for seamless, high-definition visuals in any professional environment. With an ultra-slim bezel, this video wall provides an immersive viewing experience ideal for control rooms, retail displays, and large-scale presentations. Its 1.7mm bezel ensures minimal gap between screens, offering a nearly continuous image across multiple panels.",
-    extendedDescription: "The MW-A46-B3-E video wall display combines innovative bezel design with professional-grade LCD technology to create immersive multi-screen installations. At just 1.7mm combined bezel width, this 46-inch display provides an almost seamless viewing experience when tiled in video wall configurations. Engineered for 24/7 operation in mission-critical environments, these displays feature advanced heat management, redundant signal paths, and industrial-grade components that ensure reliable performance even in the most demanding applications.",
-    image: "/LCD Displays/P1.jpg",
-    price: "Contact for Price",
-    category: "Products/lcd-video",
-    categoryName: "LCD Video Wall",
-    features: ["1.7mm Bezel", "500nits Brightness", "Full HD Resolution", "178° Viewing Angle", "24/7 Operation"],
-    highlights: [
-      "Ultra-narrow 1.7mm bezel for seamless video walls",
-      "Professional-grade LCD panel with 178° viewing angles",
-      "Advanced color calibration for consistent cross-panel performance",
-      "Intelligent heat management for extended operation",
-      "Multiple connectivity options including HDMI, DVI, and DisplayPort",
-      "Remote management capabilities for enterprise installations"
-    ],
-    specifications: [
-      { name: "Model", value: "MW-A46-B3-E" },
-      { name: "Screen Size", value: "46 inches" },
-      { name: "Bezel Width", value: "1.7mm (0.85mm + 0.85mm)" },
-      { name: "Resolution", value: "1920 × 1080 (Full HD)" },
-      { name: "Brightness", value: "500 nits" },
-      { name: "Contrast Ratio", value: "3500:1" },
-      { name: "Viewing Angle", value: "178° horizontal, 178° vertical" },
-      { name: "Response Time", value: "8ms" },
-      { name: "Operating Hours", value: "24/7" },
-      { name: "Input Ports", value: "HDMI, DVI-D, DisplayPort, VGA" }
-    ],
-    applications: [
-      {
-        name: "Control Rooms",
-        description: "High-performance monitoring solutions with MW-A46-B3-E",
-        iconPath: "M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-      },
-      {
-        name: "Corporate Environments",
-        description: "Impressive presentation displays with MW-A46-B3-E",
-        iconPath: "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
-      },
-      {
-        name: "Retail Signage",
-        description: "Attention-grabbing digital displays with MW-A46-B3-E",
-        iconPath: "M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
-      }
-    ],
-    rating: "4.8",
-    reviewCount: "46",
-    ratingDistribution: [
-      { stars: 5, percentage: 85 },
-      { stars: 4, percentage: 10 },
-      { stars: 3, percentage: 5 },
-      { stars: 2, percentage: 0 },
-      { stars: 1, percentage: 0 }
-    ],
-    reviews: [
-      { 
-        name: "Michael Thompson",
-        date: "January 25, 2024",
-        rating: 5,
-        review: "We installed a 3x3 configuration of the MW-A46-B3-E displays in our security operations center, and the result has been transformative. The ultra-narrow bezels create a nearly seamless viewing experience that makes data monitoring much more effective. The displays have been running 24/7 for six months without any issues or signs of burn-in. Excellent color uniformity across all nine panels as well."
-      },
-      { 
-        name: "Sarah Johnson",
-        date: "December 8, 2023",
-        rating: 5,
-        review: "As the visual merchandising director for a retail chain, we needed a solution that would create impact while displaying our seasonal promotions. These video wall displays deliver exceptional image quality and the bezels are so thin that our customers often don't realize they're looking at multiple screens. The installation team mentioned these were some of the best panels they've worked with."
-      },
-      { 
-        name: "David Chen",
-        date: "November 15, 2023",
-        rating: 4,
-        review: "Our corporate boardroom upgrade to the MW-A46-B3-E video wall has significantly improved our client presentations and video conferences. The image quality is excellent and the viewing angles ensure everyone in the room gets the same experience. The only reason for 4 stars instead of 5 is that the included management software has a bit of a learning curve."
-      }
-    ],
-    relatedProducts: [
-      {
-        name: "55\" 1.7mm Bezel Width Video Wall",
-        description: "Larger professional video wall display with ultra-narrow 1.7mm bezel for creating impressive large-format display solutions",
-        image: "/LCD Displays/P2.jpg",
-        slug: "mw-a55-b3-e",
-        features: ["1.7mm Bezel", "55-inch Display", "Professional Grade"]
-      },
-      {
-        name: "55\" 0.88mm Bezel Width Video Wall",
-        description: "Premium video wall solution with ultra-narrow 0.88mm bezel for creating virtually seamless large displays",
-        image: "/LCD Displays/P3.jpg",
-        slug: "mw-a55-b5-e",
-        features: ["0.88mm Bezel", "Nearly Seamless", "Premium Quality"]
-      }
-    ]
-  },
+{
+  slug: "mw-a46-b3-e",
+  name: "MW-A46-B3-E",
+  type: "",
+  shortDescription: "Ultra-Narrow Bezel Professional Display",
+  keyFeature: "1.7mm ultra-narrow bezel for seamless multi-screen installations",
+  primaryUse: "control rooms, corporate environments, and retail digital signage",
+  secondaryFeature: "exceptional image quality with wide viewing angles",
+  description: "The MW-A46-B3-E is a 46-inch LCD video wall display engineered for seamless, high-definition visuals in professional environments. Its ultra-narrow 1.7mm bezel allows for immersive multi-screen installations, making it ideal for control rooms, retail displays, and large-scale presentations. The advanced LCD panel delivers vibrant color, wide viewing angles, and reliable 24/7 operation.",
+  extendedDescription: "The MW-A46-B3-E video wall combines innovative ultra-narrow bezel design with industrial-grade LCD technology for immersive, nearly seamless video wall configurations. With a combined bezel width of just 1.7mm, this 46-inch display is perfect for tiled installations where minimal gap between screens is essential. Engineered for mission-critical and commercial environments, it features advanced heat management, redundant signal paths, and robust components for reliable, continuous operation.",
+  image: "/LCD Displays/MW-A55-B3-E.png",
+  price: "1000",
+  category: "Products/lcd-video",
+  categoryName: "LCD Video Wall",
+  features: ["1.7mm Bezel", "500nits Brightness", "Full HD Resolution", "178° Viewing Angle", "24/7 Operation"],
+  highlights: [
+    "Ultra-narrow 1.7mm bezel for seamless video walls",
+    "Professional-grade LCD panel with 178° viewing angles",
+    "Advanced color calibration for consistent cross-panel performance",
+    "Intelligent heat management for extended operation",
+    "Multiple connectivity options including HDMI, DVI, and DisplayPort",
+    "Remote management capabilities for enterprise installations"
+  ],
+  specifications: [
+    { name: "Model", value: "MW-A46-B3-E" },
+    { name: "Screen Size", value: "46 inches" },
+    { name: "Bezel Width", value: "1.7mm (0.85mm + 0.85mm)" },
+    { name: "Resolution", value: "1920 × 1080 (Full HD)" },
+    { name: "Brightness", value: "500 nits" },
+    { name: "Contrast Ratio", value: "3500:1" },
+    { name: "Viewing Angle", value: "178° horizontal, 178° vertical" },
+    { name: "Response Time", value: "8ms" },
+    { name: "Operating Hours", value: "24/7" },
+    { name: "Input Ports", value: "HDMI, DVI-D, DisplayPort, VGA" }
+  ],
+  applications: [
+    {
+      name: "Control Rooms",
+      description: "High-performance monitoring solutions with MW-A46-B3-E",
+      iconPath: "M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+    },
+    {
+      name: "Corporate Environments",
+      description: "Impressive presentation displays with MW-A46-B3-E",
+      iconPath: "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+    },
+    {
+      name: "Retail Signage",
+      description: "Attention-grabbing digital displays with MW-A46-B3-E",
+      iconPath: "M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
+    }
+  ],
+  rating: "4.8",
+  reviewCount: "46",
+  ratingDistribution: [
+    { stars: 5, percentage: 85 },
+    { stars: 4, percentage: 10 },
+    { stars: 3, percentage: 5 },
+    { stars: 2, percentage: 0 },
+    { stars: 1, percentage: 0 }
+  ],
+  reviews: [
+    { 
+      name: "Michael Thompson",
+      date: "January 25, 2024",
+      rating: 5,
+      review: "We installed a 3x3 configuration of the MW-A46-B3-E displays in our security operations center, and the result has been transformative. The ultra-narrow bezels create a nearly seamless viewing experience that makes data monitoring much more effective. The displays have been running 24/7 for six months without any issues or signs of burn-in. Excellent color uniformity across all nine panels as well."
+    },
+    { 
+      name: "Sarah Johnson",
+      date: "December 8, 2023",
+      rating: 5,
+      review: "As the visual merchandising director for a retail chain, we needed a solution that would create impact while displaying our seasonal promotions. These video wall displays deliver exceptional image quality and the bezels are so thin that our customers often don't realize they're looking at multiple screens. The installation team mentioned these were some of the best panels they've worked with."
+    },
+    { 
+      name: "David Chen",
+      date: "November 15, 2023",
+      rating: 4,
+      review: "Our corporate boardroom upgrade to the MW-A46-B3-E video wall has significantly improved our client presentations and video conferences. The image quality is excellent and the viewing angles ensure everyone in the room gets the same experience. The only reason for 4 stars instead of 5 is that the included management software has a bit of a learning curve."
+    }
+  ],
+  relatedProducts: [
+    {
+      name: "55\" 1.7mm Bezel Width Video Wall",
+      description: "Larger professional video wall display with ultra-narrow 1.7mm bezel for creating impressive large-format display solutions",
+      image: "/LCD Displays/P2.jpg",
+      slug: "mw-a55-b3-e",
+      features: ["1.7mm Bezel", "55-inch Display", "Professional Grade"]
+    },
+    {
+      name: "55\" 0.88mm Bezel Width Video Wall",
+      description: "Premium video wall solution with ultra-narrow 0.88mm bezel for creating virtually seamless large displays",
+      image: "/LCD Displays/P3.jpg",
+      slug: "mw-a55-b5-e",
+      features: ["0.88mm Bezel", "Nearly Seamless", "Premium Quality"]
+    }
+  ]
+},
 
-  {
+{
     slug: "mw-a55-b3-e",
-    name: "55\" 1.7mm Bezel Width Video Wall",
-    type: "LCD Video Wall",
+    name: "MW-A55-B3-E",
+    type: "",
     shortDescription: "Large-Format Professional Display",
     keyFeature: "55-inch display with 1.7mm ultra-narrow bezel technology",
     primaryUse: "corporate lobbies, retail environments, and premium advertising displays",
     secondaryFeature: "high brightness and commercial-grade durability",
     description: "The 55-inch 1.7mm Bezel Width Video Wall delivers superior image quality and a nearly borderless display for impactful visual presentations. Designed for commercial use, this video wall is perfect for digital signage, conference rooms, and command centers. The ultra-narrow 1.7mm bezel creates a fluid and captivating display experience.",
     extendedDescription: "The MW-A55-B3-E represents the perfect balance of screen size and seamless integration for professional video wall installations. With its generous 55-inch display area and minimal 1.7mm bezel gap, this display maximizes visual impact while minimizing distractions. Engineered with commercial applications in mind, these panels feature enhanced brightness, anti-glare treatment, and specialized heat dissipation technology that ensures reliable operation in demanding environments.",
-    image: "/LCD Displays/P2.jpg",
-    price: "Contact for Price",
+    image: "/LCD Displays/MW-A55-B3-E.png",
+    price: "1000",
     category: "Products/lcd-video",
     categoryName: "LCD Video Wall",
     features: ["1.7mm Bezel", "500nits Brightness", "Commercial Grade", "Full HD Resolution", "24/7 Operation"],
@@ -794,87 +872,87 @@ export const productData = [
         features: ["0.88mm Bezel", "Nearly Seamless", "Premium Quality"]
       }
     ]
-  },
-
-  {
+},
+//new products
+{
     slug: "mw-a55-b5-e",
-    name: "55\" 0.88mm Bezel Width Video Wall",
-    type: "LCD Video Wall",
-    shortDescription: "Premium Near-Seamless Display",
-    keyFeature: "industry-leading 0.88mm ultra-narrow bezel for virtually seamless video walls",
-    primaryUse: "luxury retail, broadcast environments, and high-end corporate installations",
-    secondaryFeature: "premium image quality and advanced visual processing",
-    description: "Achieve the ultimate visual impact with the 55-inch 0.88mm Bezel Width Video Wall. With an incredibly thin bezel, this video wall provides an almost invisible edge, resulting in a smooth and uninterrupted viewing experience. It's the top choice for applications requiring precision and clarity, including broadcasting studios and high-end retail environments.",
-    extendedDescription: "The MW-A55-B5-E represents the pinnacle of video wall technology, featuring an industry-leading 0.88mm combined bezel width that creates an almost seamless visual canvas. This premium 55-inch display is specifically engineered for environments where visual perfection is non-negotiable. Advanced panel matching technology ensures perfect color and brightness uniformity across multiple displays, while the specialized anti-glare coating and high brightness provide exceptional visibility even in challenging lighting conditions.",
-    image: "/LCD Displays/P3.jpg",
-    price: "Contact for Price",
+    name: "MW-A55-B5-E",
+    type: "",
+    shortDescription: "Large-Format Professional Display",
+    keyFeature: "55-inch display with 1.7mm ultra-narrow bezel technology",
+    primaryUse: "corporate lobbies, retail environments, and premium advertising displays",
+    secondaryFeature: "high brightness and commercial-grade durability",
+    description: "The MW-A55-B5-E is a 55-inch LCD video wall display featuring a 1.7mm ultra-narrow bezel for seamless multi-screen installations. Designed for impactful visual presentations, this large-format display is ideal for digital signage, conference rooms, and command centers. Its commercial-grade panel delivers high brightness and durability for 24/7 operation.",
+    extendedDescription: "The MW-A55-B5-E represents the perfect balance of screen size and seamless integration for professional video wall installations. With its generous 55-inch display area and minimal 1.7mm bezel gap, this display maximizes visual impact while minimizing distractions. Engineered for commercial applications, it features enhanced brightness, anti-glare treatment, and specialized heat dissipation technology for reliable operation in demanding environments.",
+    image: "/LCD Displays/MW-A55-B3-E.png",
+    price: "1000",
     category: "Products/lcd-video",
     categoryName: "LCD Video Wall",
-    features: ["0.88mm Ultra-Narrow Bezel", "Premium Panel", "500nits Brightness", "Advanced Color Calibration", "24/7 Reliability"],
+    features: ["1.7mm Bezel", "500nits Brightness", "Commercial Grade", "Full HD Resolution", "24/7 Operation"],
     highlights: [
-      "Industry-leading 0.88mm combined bezel width",
-      "Premium 55-inch commercial-grade panel",
-      "Advanced panel matching for perfect uniformity",
-      "Factory color calibration for seamless visual experience",
-      "Enhanced heat management for extended lifespan",
-      "Comprehensive connectivity options for professional installations"
+      "Ultra-narrow 1.7mm combined bezel width",
+      "55-inch display for maximum visual impact",
+      "High brightness of 500 nits for clear visibility in varied lighting",
+      "Advanced calibration technology for perfect color matching",
+      "Multiple input options for versatile integration",
+      "Designed for 24/7 continuous operation"
     ],
     specifications: [
       { name: "Model", value: "MW-A55-B5-E" },
       { name: "Screen Size", value: "55 inches" },
-      { name: "Bezel Width", value: "0.88mm (0.44mm + 0.44mm)" },
+      { name: "Bezel Width", value: "1.7mm (0.85mm + 0.85mm)" },
       { name: "Resolution", value: "1920 × 1080 (Full HD)" },
       { name: "Brightness", value: "500 nits" },
       { name: "Contrast Ratio", value: "4000:1" },
       { name: "Viewing Angle", value: "178° horizontal, 178° vertical" },
       { name: "Response Time", value: "8ms" },
       { name: "Operating Hours", value: "24/7" },
-      { name: "Input Ports", value: "HDMI, DVI-D, DisplayPort, HDBaseT" }
+      { name: "Input Ports", value: "HDMI, DVI-D, DisplayPort, VGA" }
     ],
     applications: [
       {
-        name: "Broadcast Studios",
-        description: "Professional broadcast backdrops with MW-A55-B5-E",
-        iconPath: "M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"
+        name: "Corporate Lobbies",
+        description: "Impressive visual welcome with MW-A55-B5-E",
+        iconPath: "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
       },
       {
-        name: "Luxury Retail",
-        description: "Premium brand experiences with MW-A55-B5-E",
+        name: "Retail Environments",
+        description: "Engaging shopping experiences with MW-A55-B5-E",
         iconPath: "M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
       },
       {
-        name: "Executive Briefing Centers",
-        description: "High-impact client presentations with MW-A55-B5-E",
-        iconPath: "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+        name: "Command Centers",
+        description: "Critical information displays with MW-A55-B5-E",
+        iconPath: "M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
       }
     ],
-    rating: "5.0",
-    reviewCount: "23",
+    rating: "4.7",
+    reviewCount: "35",
     ratingDistribution: [
-      { stars: 5, percentage: 95 },
-      { stars: 4, percentage: 5 },
-      { stars: 3, percentage: 0 },
+      { stars: 5, percentage: 80 },
+      { stars: 4, percentage: 15 },
+      { stars: 3, percentage: 5 },
       { stars: 2, percentage: 0 },
       { stars: 1, percentage: 0 }
     ],
     reviews: [
       { 
-        name: "Victoria Chang",
-        date: "March 2, 2024",
+        name: "Robert Williams",
+        date: "February 12, 2024",
         rating: 5,
-        review: "As the design director for a luxury automotive showroom, we needed a display solution that matched the premium nature of our vehicles. The MW-A55-B5-E with its virtually invisible 0.88mm bezels creates a seamless canvas that elevates our content. Visitors often can't tell they're looking at multiple displays until they approach very closely. The image quality is exceptional, and the installation team commented that these were the finest panels they'd worked with."
+        review: "We chose the 55-inch model for our airport information displays, and the impact has been remarkable. The large screen size combined with the minimal bezels creates an impressive and immersive information system. The high brightness ensures visibility even in our sun-filled terminal areas, and the reliability has been excellent during our 24/7 operation schedule."
       },
       { 
-        name: "Alexander Morris",
-        date: "January 30, 2024",
-        rating: 5,
-        review: "Our broadcast network upgraded to the MW-A55-B5-E for our main studio backdrop, and the results have been spectacular. The nearly seamless appearance creates a perfect canvas for our on-air graphics, and the color accuracy is critical for our brand presentation. Even under intense studio lighting, the anti-glare coating ensures perfect visibility, and the heat management has been flawless during our continuous operation."
+        name: "Jennifer Lopez",
+        date: "January 3, 2024",
+        rating: 4,
+        review: "Our marketing agency installed a 2x2 configuration for a luxury brand client, and the visual impact has exceeded expectations. The 55-inch size creates a commanding presence, and the image quality is superb. The only minor issue we encountered was with the initial color calibration across panels, though the manufacturer's support team helped us resolve this promptly."
       },
       { 
-        name: "Emily Richardson",
-        date: "December 12, 2023",
+        name: "James Wilson",
+        date: "November 28, 2023",
         rating: 5,
-        review: "We installed a 3x3 configuration of the MW-A55-B5-E in our executive briefing center, and it's been transformative for our client presentations. The virtually seamless appearance creates an immersive experience that helps us tell our company story in a more impactful way. The installation process was straightforward, and the calibration tools ensured perfect color matching across all nine panels. A premium product that delivers on its promises."
+        review: "As the IT director for a financial services firm, I needed a reliable and impressive solution for our trading floor data displays. The MW-A55-B5-E delivers exceptional performance with crisp text readability and consistent color reproduction. The minimal bezels create an almost continuous surface for our critical market data, and the reliability has been flawless."
       }
     ],
     relatedProducts: [
@@ -893,258 +971,62 @@ export const productData = [
         features: ["1.7mm Bezel", "55-inch Display", "Professional Grade"]
       }
     ]
-  },
-
- 
-
-// Wall Controller Products :- 5
-  {
-    slug: "adu-series",
-    name: "ADU Series",
-    type: "Video Decoder",
-    shortDescription: "High Definition Video Decoder",
-    keyFeature: "advanced 4K decoding with multiple protocol support",
-    primaryUse: "control rooms, security centers, and command centers",
-    secondaryFeature: "low latency performance for critical operations",
-    description: "The ADU Series High Definition Video Decoder delivers exceptional decoding capabilities for professional control room environments. Supporting 4K resolution and multiple protocols, this decoder ensures smooth video processing with minimal latency, making it ideal for mission-critical monitoring applications.",
-    extendedDescription: "The ADU Series represents Lovosis Display's premium video decoder solution, engineered for environments where visual quality and processing reliability are paramount. This advanced decoder supports H.265/H.264 video compression standards with remarkable efficiency, enabling crystal-clear 4K video playback across complex multi-screen deployments. Its architecture is optimized for low-latency performance, ensuring that critical visual information is displayed without delay in time-sensitive control environments.",
-    image: "/Wall Controller/img5.webp",
-    price: "Contact for Price",
-    category: "Products/wall-controller",
-    categoryName: "Wall Controller",
-    features: ["4K Decoding", "Multiple Protocols", "Low Latency", "H.265/H.264 Support", "Network Control"],
+},
+// New Products
+{
+    slug: "mw-a46-b1-e",
+    name: "MW-A46-B1-E",
+    type: "",
+    shortDescription: "Professional 46-inch Video Wall Display",
+    keyFeature: "46-inch display with 3.5mm ultra-narrow bezel for seamless video wall installations",
+    primaryUse: "control rooms, retail signage, collaborative spaces, and professional environments",
+    secondaryFeature: "high brightness, commercial-grade durability, and wide viewing angles",
+    description: "The MW-A46-B1-E is a 46-inch LCD video wall display featuring a slim 3.5mm bezel for minimal screen gap, delivering a unified and immersive display. Designed for professional environments, this video wall is ideal for control rooms, retail signage, and collaborative spaces where clarity and reliability are essential.",
+    extendedDescription: "The MW-A46-B1-E provides seamless large-scale visuals with its 46-inch display and ultra-narrow 3.5mm bezel, making it perfect for tiled video wall installations. Engineered for commercial use, it offers high brightness, anti-glare treatment, and robust heat dissipation for reliable 24/7 operation. The wide 178° viewing angle ensures clear visibility from any position, while multiple input options allow for versatile integration in demanding environments.",
+    image: "/LCD Displays/MW-A55-B1-E.webp",
+    price: "1000",
+    category: "Products/lcd-video",
+    categoryName: "LCD Video Wall",
+    features: ["3.5mm Bezel", "500nits Brightness", "Commercial Grade", "Full HD Resolution", "178° Viewing Angle", "24/7 Operation"],
     highlights: [
-      "High-performance 4K video decoding",
-      "Ultra-low latency (<100ms)",
-      "Support for multiple industry protocols",
-      "Seamless integration with control systems",
-      "Reliable 24/7 operation capability",
-      "Comprehensive signal processing capabilities"
+      "Ultra-narrow 3.5mm combined bezel width for seamless video walls",
+      "46-inch display for impactful visual presentations",
+      "High brightness of 500 nits for clear visibility in various lighting",
+      "Wide 178° viewing angle for consistent image quality",
+      "Multiple input options for flexible integration",
+      "Engineered for 24/7 continuous operation"
     ],
     specifications: [
-      { name: "Model", value: "ADU Series" },
-      { name: "Video Input", value: "Multiple HD inputs" },
-      { name: "Resolution", value: "Up to 4K (3840×2160)" },
-      { name: "Decoding", value: "H.265/H.264" },
-      { name: "Latency", value: "<100ms" },
-      { name: "Network Interface", value: "RJ45 Gigabit Ethernet" },
-      { name: "Control Interface", value: "RS232/RS485" },
-      { name: "Power Supply", value: "DC 12V" },
-      { name: "Operating Temperature", value: "-10°C ~ +55°C" }
+      { name: "Model", value: "MW-A46-B1-E" },
+      { name: "Screen Size", value: "46 inches" },
+      { name: "Bezel Width", value: "3.5mm (combined)" },
+      { name: "Resolution", value: "1920 × 1080 (Full HD)" },
+      { name: "Brightness", value: "500 nits" },
+      { name: "Contrast Ratio", value: "3500:1" },
+      { name: "Viewing Angle", value: "178° horizontal, 178° vertical" },
+      { name: "Response Time", value: "8ms" },
+      { name: "Operating Hours", value: "24/7" },
+      { name: "Input Ports", value: "HDMI, DVI-D, DisplayPort, VGA" }
     ],
     applications: [
       {
         name: "Control Rooms",
-        description: "High-performance video processing for control rooms",
+        description: "Seamless monitoring and data visualization with MW-A46-B1-E",
         iconPath: "M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
       },
       {
-        name: "Security Centers",
-        description: "Real-time surveillance monitoring with ADU Series",
-        iconPath: "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
-      },
-      {
-        name: "Command Centers",
-        description: "Mission-critical video processing with ADU Series",
-        iconPath: "M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z"
-      }
-    ],
-    rating: "4.9",
-    reviewCount: "42",
-    ratingDistribution: [
-      { stars: 5, percentage: 90 },
-      { stars: 4, percentage: 8 },
-      { stars: 3, percentage: 2 },
-      { stars: 2, percentage: 0 },
-      { stars: 1, percentage: 0 }
-    ],
-    reviews: [
-      { 
-        name: "Michael Chen",
-        date: "February 28, 2024",
-        rating: 5,
-        review: "We deployed the ADU Series decoders in our airport security control center, and the performance has been outstanding. The 4K decoding capability ensures we can see every detail clearly, and the low latency is critical for our real-time monitoring needs. The system has been running 24/7 for months without any issues."
-      },
-      { 
-        name: "Sarah Johnson",
-        date: "January 15, 2024",
-        rating: 5,
-        review: "As the system integrator for a major transit authority, I've installed numerous video decoders, and the ADU Series stands out for its exceptional reliability and image quality. The multiple protocol support made integration with our existing systems straightforward, and our clients are extremely satisfied with the crisp, responsive video display."
-      },
-      { 
-        name: "Robert Williams",
-        date: "December 3, 2023",
-        rating: 4,
-        review: "Our emergency operations center relies on the ADU Series decoders for critical situation monitoring. The low latency performance is excellent, ensuring our team has access to real-time video feeds when making time-sensitive decisions. The only minor criticism is that the configuration software could be more intuitive, but once set up, these units perform flawlessly."
-      }
-    ],
-    relatedProducts: [
-      {
-        name: "DC Series",
-        description: "Economic video decoder solution with H.265/H.264 support and multiple input options",
-        image: "/Wall Controller/img6.webp",
-        slug: "dc-series",
-        features: ["H.265/H.264", "Multiple Inputs", "Cost-effective"]
-      },
-      {
-        name: "Video Wall Controller",
-        description: "Professional video wall control system for managing LED displays and LCD screens",
-        image: "/Wall Controller/video-wall.jpg",
-        slug: "video-wall-controller",
-        features: ["Advanced Control", "Multiple Display Management", "Professional Grade"]
-      }
-    ]
-  },
-
-  {
-    slug: "dc-series",
-    name: "DC Series",
-    type: "Video Decoder",
-    shortDescription: "Economic Video Decoder",
-    keyFeature: "cost-effective H.265/H.264 decoding solution",
-    primaryUse: "commercial displays, retail environments, and digital signage",
-    secondaryFeature: "multiple input options for versatile deployment",
-    description: "The DC Series Economic Video Decoder offers reliable video decoding capabilities at an accessible price point, making it perfect for commercial applications that require good performance without premium features. Supporting H.265/H.264 video standards and featuring multiple inputs, this decoder delivers dependable operation for various display installations.",
-    extendedDescription: "The DC Series represents Lovosis Display's value-oriented video decoder option, designed for commercial environments where cost-effectiveness is as important as reliable performance. This decoder supports industry-standard H.265/H.264 compression formats, providing efficient video processing for everyday applications. With its straightforward setup and multiple input options, the DC Series makes professional-quality video display accessible to organizations with budget considerations while maintaining the essential functionality needed for commercial installations.",
-    image: "/Wall Controller/img6.webp",
-    price: "Contact for Price",
-    category: "Products/wall-controller",
-    categoryName: "Wall Controller",
-    features: ["H.265/H.264 Support", "Multiple Inputs", "Cost-effective", "Commercial-grade", "Reliable Performance"],
-    highlights: [
-      "Budget-friendly H.265/H.264 decoding",
-      "Support for multiple input sources",
-      "Easy integration with existing systems",
-      "Simplified setup and configuration",
-      "Stable performance for commercial applications",
-      "Energy-efficient operation"
-    ],
-    specifications: [
-      { name: "Model", value: "DC Series" },
-      { name: "Video Input", value: "HDMI, VGA, DVI-D" },
-      { name: "Resolution", value: "Up to 1080p Full HD" },
-      { name: "Decoding", value: "H.265/H.264" },
-      { name: "Network Interface", value: "RJ45 Ethernet" },
-      { name: "Control Interface", value: "RS232" },
-      { name: "Power Supply", value: "DC 12V" },
-      { name: "Operating Temperature", value: "0°C ~ +50°C" }
-    ],
-    applications: [
-      {
-        name: "Digital Signage",
-        description: "Reliable video processing for digital signage",
-        iconPath: "M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-      },
-      {
-        name: "Retail Displays",
-        description: "Cost-effective solutions for retail environments",
+        name: "Retail Signage",
+        description: "Immersive digital displays for retail environments with MW-A46-B1-E",
         iconPath: "M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
       },
       {
-        name: "Corporate Communications",
-        description: "Reliable display processing for business communications",
-        iconPath: "M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
-      }
-    ],
-    rating: "4.6",
-    reviewCount: "53",
-    ratingDistribution: [
-      { stars: 5, percentage: 70 },
-      { stars: 4, percentage: 25 },
-      { stars: 3, percentage: 5 },
-      { stars: 2, percentage: 0 },
-      { stars: 1, percentage: 0 }
-    ],
-    reviews: [
-      { 
-        name: "David Thompson",
-        date: "March 12, 2024",
-        rating: 5,
-        review: "We installed DC Series decoders across our retail chain for digital signage, and they've delivered excellent value. The video quality is more than adequate for our promotional content, and the multiple input options give us flexibility when updating our displays. For commercial applications like ours, these decoders provide the perfect balance of performance and affordability."
-      },
-      { 
-        name: "Jennifer Garcia",
-        date: "February 5, 2024",
-        rating: 4,
-        review: "As the IT manager for a mid-sized company, I needed a cost-effective solution for our conference room displays. The DC Series has performed reliably for six months now, with good image quality and easy setup. It lacks some of the advanced features of premium decoders, but for our everyday business use, it's an excellent choice that didn't break our budget."
-      },
-      { 
-        name: "Richard Lee",
-        date: "January 18, 2024",
-        rating: 5,
-        review: "I've deployed dozens of DC Series decoders for a university campus digital signage network. The H.265 support means we can deliver good quality content without overwhelming our network, and the units have been extremely reliable even in varying environmental conditions. The value proposition is outstanding, and I'll definitely use these again for future installations."
-      }
-    ],
-    relatedProducts: [
-      {
-        name: "ADU Series",
-        description: "Premium high-definition video decoder with 4K resolution support and low latency",
-        image: "/Wall Controller/img5.webp",
-        slug: "adu-series",
-        features: ["4K Decoding", "Multiple Protocols", "Low Latency"]
-      },
-      {
-        name: "KB-1100-E",
-        description: "Network keyboard for intuitive control of video wall systems",
-        image: "/Wall Controller/KB-1100-E.jpg",
-        slug: "kb-1100-e",
-        features: ["USB Interface", "LCD Display", "Ergonomic Design"]
-      }
-    ]
-  },
-
-  {
-    slug: "kb-1100-e",
-    name: "KB-1100-E",
-    type: "Network Keyboard",
-    shortDescription: "Professional Network Keyboard",
-    keyFeature: "intuitive USB interface for streamlined control operations",
-    primaryUse: "security monitoring stations, control rooms, and surveillance centers",
-    secondaryFeature: "built-in LCD display for operational feedback",
-    description: "The KB-1100-E Network Keyboard provides efficient control for video wall systems and security equipment. Featuring an intuitive USB interface, ergonomic design, and built-in LCD display, this professional keyboard streamlines operations for security and monitoring personnel, enhancing workflow efficiency and reducing operator fatigue.",
-    extendedDescription: "The KB-1100-E represents a thoughtful approach to control room ergonomics and efficiency. This specialized network keyboard combines intuitive physical controls with digital feedback systems to create a seamless operator experience. The built-in LCD display provides real-time status information and command confirmation, while the ergonomically designed keypads and joystick enable precise control of connected systems. Developed with input from security professionals, the KB-1100-E optimizes workflow for extended operational periods, reducing fatigue and improving response times in critical monitoring environments.",
-    image: "/Wall Controller/KB-1100-E.jpg",
-    price: "Contact for Price",
-    category: "Products/wall-controller",
-    categoryName: "Wall Controller",
-    features: ["USB Interface", "LCD Display", "Ergonomic Design", "Customizable Keys", "Durability"],
-    highlights: [
-      "Intuitive USB interface for simplified connection",
-      "Integrated LCD display for operational feedback",
-      "Ergonomically designed for extended use sessions",
-      "Customizable function keys for personalized workflows",
-      "Industrial-grade construction for durability",
-      "Compatible with major video management systems"
-    ],
-    specifications: [
-      { name: "Model", value: "KB-1100-E" },
-      { name: "Interface", value: "USB" },
-      { name: "Display", value: "2.8\" LCD Information Screen" },
-      { name: "Controls", value: "3-axis joystick, programmable buttons" },
-      { name: "Power Supply", value: "DC 12V / USB powered" },
-      { name: "Dimensions", value: "380mm × 160mm × 100mm" },
-      { name: "Weight", value: "1.2kg" },
-      { name: "Operating Temperature", value: "0°C ~ +50°C" }
-    ],
-    applications: [
-      {
-        name: "Security Monitoring",
-        description: "Efficient security system control with KB-1100-E",
-        iconPath: "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
-      },
-      {
-        name: "Control Rooms",
-        description: "Streamlined control room operations with KB-1100-E",
-        iconPath: "M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-      },
-      {
-        name: "Video Management",
-        description: "Precise video system control with KB-1100-E",
-        iconPath: "M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"
+        name: "Collaborative Spaces",
+        description: "Unified large-format visuals for professional collaboration with MW-A46-B1-E",
+        iconPath: "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
       }
     ],
     rating: "4.7",
-    reviewCount: "38",
+    reviewCount: "35",
     ratingDistribution: [
       { stars: 5, percentage: 80 },
       { stars: 4, percentage: 15 },
@@ -1154,46 +1036,1460 @@ export const productData = [
     ],
     reviews: [
       { 
-        name: "Thomas Wilson",
-        date: "March 10, 2024",
-        rating: 5,
-        review: "As a security supervisor overseeing multiple camera feeds, the KB-1100-E has dramatically improved our team's efficiency. The ergonomic design reduces hand fatigue during long shifts, and the LCD feedback display eliminates guesswork when executing commands. The USB connectivity made installation simple, and it's been completely reliable since day one."
-      },
-      { 
-        name: "Amanda Rodriguez",
+        name: "Robert Williams",
         date: "February 12, 2024",
-        rating: 4,
-        review: "Our control room uses the KB-1100-E to manage multiple video walls, and it's been a solid performer. The joystick provides precise camera control, and the programmable keys let each operator customize their workflow. My only suggestion would be to make the LCD display slightly larger, but overall it's a well-designed professional keyboard that's improved our operational efficiency."
+        rating: 5,
+        review: "We installed the 46-inch model for our control room video wall, and the seamless appearance is impressive. The slim bezels and high brightness make data visualization clear and effective, even in a brightly lit environment. Reliability has been excellent for 24/7 operation."
       },
       { 
-        name: "Kevin Park",
-        date: "December 28, 2023",
+        name: "Jennifer Lopez",
+        date: "January 3, 2024",
+        rating: 4,
+        review: "Our retail store uses a 2x2 configuration of the MW-A46-B1-E for digital signage. The image quality is sharp, and the narrow bezels create a unified look. Setup was straightforward, and the displays have performed well since installation."
+      },
+      { 
+        name: "James Wilson",
+        date: "November 28, 2023",
         rating: 5,
-        review: "I've installed dozens of security control systems, and the KB-1100-E consistently gets positive feedback from operators. The build quality is excellent - these keyboards stand up to 24/7 use without issues. The USB interface works seamlessly with our video management software, and the customizable keys allow for efficient operation. Definitely a worthwhile investment for any control room."
+        review: "As an AV integrator, I recommend the MW-A46-B1-E for collaborative spaces and control rooms. The wide viewing angle and robust build make it a reliable choice for demanding environments. The multiple input options are a plus for flexible integration."
       }
     ],
     relatedProducts: [
       {
-        name: "KB-2100",
-        description: "Advanced network control keyboard with extended functionality for professional control rooms",
-        image: "/Wall Controller/KB-2100.jpg",
-        slug: "kb-2100",
-        features: ["Advanced Control", "Multiple Protocols", "Professional Grade"]
+        name: "46\" 1.7mm Bezel Width Video Wall",
+        description: "Compact professional video wall display with ultra-narrow 1.7mm bezel for versatile installation options",
+        image: "/LCD Displays/P1.jpg",
+        slug: "mw-a46-b3-e",
+        features: ["1.7mm Bezel", "46-inch Display", "Versatile Installation"]
       },
       {
-        name: "Video Wall Controller",
-        description: "Professional video wall control system for managing multiple display configurations",
-        image: "/Wall Controller/video-wall.jpg",
-        slug: "video-wall-controller",
-        features: ["Advanced Control", "Multiple Display Management", "Professional Grade"]
+        name: "55\" 1.7mm Bezel Width Video Wall",
+        description: "Large-format professional video wall with ultra-narrow 1.7mm bezel for creating impressive display solutions",
+        image: "/LCD Displays/P2.jpg",
+        slug: "mw-a55-b3-e",
+        features: ["1.7mm Bezel", "55-inch Display", "Professional Grade"]
       }
     ]
-  },
+},
+//New products
+{
+  slug: "mw-a46-b5-e2",
+  name: "MW-A46-B5-E2",
+  type: "",
+  shortDescription: "46\" 0.88mm Bezel Width Video Wall",
+  keyFeature: "0.88mm ultra-narrow bezel for nearly seamless multi-screen installations",
+  primaryUse: "broadcast studios, high-end retail, control rooms, and precision display environments",
+  secondaryFeature: "high brightness, commercial-grade durability, and wide viewing angles",
+  description: "Achieve the ultimate visual impact with the 46 inch 0.88mm Bezel Width Video Wall. With an incredibly thin bezel, this video wall provides an almost invisible edge, resulting in a smooth and uninterrupted viewing experience. It’s the top choice for applications requiring precision and clarity, including broadcasting studios and high-end retail environments.",
+  extendedDescription: "The MW-A46-B5-E2 is engineered for environments where seamless visuals and precision are paramount. Its ultra-narrow 0.88mm bezel creates a virtually continuous display surface, ideal for tiled video wall installations in control rooms, broadcast studios, and luxury retail. The commercial-grade panel delivers high brightness, anti-glare performance, and robust heat dissipation for reliable 24/7 operation. Multiple input options and a wide 178° viewing angle ensure flexible integration and consistent image quality from any position.",
+  image: "/LCD Displays/P3.jpg",
+  price: "1000",
+  category: "Products/lcd-video",
+  categoryName: "LCD Video Wall",
+  features: ["0.88mm Bezel", "500nits Brightness", "Full HD Resolution", "178° Viewing Angle", "24/7 Operation"],
+  highlights: [
+    "Ultra-narrow 0.88mm bezel for nearly seamless video walls",
+    "46-inch display for impactful visual presentations",
+    "High brightness of 500 nits for clear visibility in various lighting",
+    "Wide 178° viewing angle for consistent image quality",
+    "Multiple input options for flexible integration",
+    "Engineered for 24/7 continuous operation"
+  ],
+  specifications: [
+    { name: "Model", value: "MW-A46-B5-E2" },
+    { name: "Screen Size", value: "46 inches" },
+    { name: "Bezel Width", value: "0.88mm (combined)" },
+    { name: "Resolution", value: "1920 × 1080 (Full HD)" },
+    { name: "Brightness", value: "500 nits" },
+    { name: "Contrast Ratio", value: "3500:1" },
+    { name: "Viewing Angle", value: "178° horizontal, 178° vertical" },
+    { name: "Response Time", value: "8ms" },
+    { name: "Operating Hours", value: "24/7" },
+    { name: "Input Ports", value: "HDMI, DVI-D, DisplayPort, VGA" }
+  ],
+  applications: [
+    {
+      name: "Broadcast Studios",
+      description: "Precision visuals for broadcast environments with MW-A46-B5-E2",
+      iconPath: "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+    },
+    {
+      name: "High-End Retail",
+      description: "Luxury retail displays with MW-A46-B5-E2",
+      iconPath: "M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
+    },
+    {
+      name: "Control Rooms",
+      description: "Seamless monitoring and data visualization with MW-A46-B5-E2",
+      iconPath: "M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+    }
+  ],
+  rating: "4.7",
+  reviewCount: "35",
+  ratingDistribution: [
+    { stars: 5, percentage: 80 },
+    { stars: 4, percentage: 15 },
+    { stars: 3, percentage: 5 },
+    { stars: 2, percentage: 0 },
+    { stars: 1, percentage: 0 }
+  ],
+  reviews: [
+    { 
+      name: "Robert Williams",
+      date: "February 12, 2024",
+      rating: 5,
+      review: "We installed the 46-inch 0.88mm bezel model for our broadcast studio, and the seamless appearance is outstanding. The ultra-thin bezels and high brightness make our content look flawless on camera, and the reliability has been excellent for continuous operation."
+    },
+    { 
+      name: "Jennifer Lopez",
+      date: "January 3, 2024",
+      rating: 4,
+      review: "Our luxury retail client uses a 2x2 configuration of the MW-A46-B5-E2 for digital signage. The image quality is sharp, and the nearly invisible bezels create a premium look. Setup was straightforward, and the displays have performed well since installation."
+    },
+    { 
+      name: "James Wilson",
+      date: "November 28, 2023",
+      rating: 5,
+      review: "As an AV integrator, I recommend the MW-A46-B5-E2 for control rooms and broadcast environments. The wide viewing angle and robust build make it a reliable choice for demanding applications. The multiple input options are a plus for flexible integration."
+    }
+  ],
+  relatedProducts: [
+    {
+      name: "46\" 1.7mm Bezel Width Video Wall",
+      description: "Compact professional video wall display with ultra-narrow 1.7mm bezel for versatile installation options",
+      image: "/LCD Displays/P1.jpg",
+      slug: "mw-a46-b3-e",
+      features: ["1.7mm Bezel", "46-inch Display", "Versatile Installation"]
+    },
+    {
+      name: "55\" 1.7mm Bezel Width Video Wall",
+      description: "Large-format professional video wall with ultra-narrow 1.7mm bezel for creating impressive display solutions",
+      image: "/LCD Displays/P2.jpg",
+      slug: "mw-a55-b3-e",
+      features: ["1.7mm Bezel", "55-inch Display", "Professional Grade"]
+    }
+  ]
+},
+//New products
+{
+  slug: "mw-a55-b5-e",
+  name: "MW-A55-B5-E",
+  type: "",
+  shortDescription: "BNVHGCGFCXHMGDGFJGJGDYTD",
+  keyFeature: "0.88mm ultra-narrow bezel for nearly seamless multi-screen installations",
+  primaryUse: "broadcast studios, high-end retail, control rooms, and precision display environments",
+  secondaryFeature: "high brightness, commercial-grade durability, and wide viewing angles",
+  description: "Achieve the ultimate visual impact with the 46 inch 0.88mm Bezel Width Video Wall. With an incredibly thin bezel, this video wall provides an almost invisible edge, resulting in a smooth and uninterrupted viewing experience. It’s the top choice for applications requiring precision and clarity, including broadcasting studios and high-end retail environments.",
+  extendedDescription: "The MW-A46-B5-E2 is engineered for environments where seamless visuals and precision are paramount. Its ultra-narrow 0.88mm bezel creates a virtually continuous display surface, ideal for tiled video wall installations in control rooms, broadcast studios, and luxury retail. The commercial-grade panel delivers high brightness, anti-glare performance, and robust heat dissipation for reliable 24/7 operation. Multiple input options and a wide 178° viewing angle ensure flexible integration and consistent image quality from any position.",
+  image: "/LCD Displays/P3.jpg",
+  price: "1000",
+  category: "Products/lcd-video",
+  categoryName: "LCD Video Wall",
+  features: ["0.88mm Bezel", "500nits Brightness", "Full HD Resolution", "178° Viewing Angle", "24/7 Operation"],
+  highlights: [
+    "Ultra-narrow 0.88mm bezel for nearly seamless video walls",
+    "46-inch display for impactful visual presentations",
+    "High brightness of 500 nits for clear visibility in various lighting",
+    "Wide 178° viewing angle for consistent image quality",
+    "Multiple input options for flexible integration",
+    "Engineered for 24/7 continuous operation"
+  ],
+  specifications: [
+    { name: "Model", value: "MW-A46-B5-E2" },
+    { name: "Screen Size", value: "46 inches" },
+    { name: "Bezel Width", value: "0.88mm (combined)" },
+    { name: "Resolution", value: "1920 × 1080 (Full HD)" },
+    { name: "Brightness", value: "500 nits" },
+    { name: "Contrast Ratio", value: "3500:1" },
+    { name: "Viewing Angle", value: "178° horizontal, 178° vertical" },
+    { name: "Response Time", value: "8ms" },
+    { name: "Operating Hours", value: "24/7" },
+    { name: "Input Ports", value: "HDMI, DVI-D, DisplayPort, VGA" }
+  ],
+  applications: [
+    {
+      name: "Broadcast Studios",
+      description: "Precision visuals for broadcast environments with MW-A46-B5-E2",
+      iconPath: "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+    },
+    {
+      name: "High-End Retail",
+      description: "Luxury retail displays with MW-A46-B5-E2",
+      iconPath: "M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
+    },
+    {
+      name: "Control Rooms",
+      description: "Seamless monitoring and data visualization with MW-A46-B5-E2",
+      iconPath: "M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+    }
+  ],
+  rating: "4.7",
+  reviewCount: "35",
+  ratingDistribution: [
+    { stars: 5, percentage: 80 },
+    { stars: 4, percentage: 15 },
+    { stars: 3, percentage: 5 },
+    { stars: 2, percentage: 0 },
+    { stars: 1, percentage: 0 }
+  ],
+  reviews: [
+    { 
+      name: "Robert Williams",
+      date: "February 12, 2024",
+      rating: 5,
+      review: "We installed the 46-inch 0.88mm bezel model for our broadcast studio, and the seamless appearance is outstanding. The ultra-thin bezels and high brightness make our content look flawless on camera, and the reliability has been excellent for continuous operation."
+    },
+    { 
+      name: "Jennifer Lopez",
+      date: "January 3, 2024",
+      rating: 4,
+      review: "Our luxury retail client uses a 2x2 configuration of the MW-A46-B5-E2 for digital signage. The image quality is sharp, and the nearly invisible bezels create a premium look. Setup was straightforward, and the displays have performed well since installation."
+    },
+    { 
+      name: "James Wilson",
+      date: "November 28, 2023",
+      rating: 5,
+      review: "As an AV integrator, I recommend the MW-A46-B5-E2 for control rooms and broadcast environments. The wide viewing angle and robust build make it a reliable choice for demanding applications. The multiple input options are a plus for flexible integration."
+    }
+  ],
+  relatedProducts: [
+    {
+      name: "46\" 1.7mm Bezel Width Video Wall",
+      description: "Compact professional video wall display with ultra-narrow 1.7mm bezel for versatile installation options",
+      image: "/LCD Displays/P1.jpg",
+      slug: "mw-a46-b3-e",
+      features: ["1.7mm Bezel", "46-inch Display", "Versatile Installation"]
+    },
+    {
+      name: "46\" 0.88mm Bezel Width Video Wall",
+  model: "MW-A46-B5-E2",
+  category: "rnb",
+  description: "Achieve the ultimate visual impact with the 46 inch 0.88mm Bezel Width Video Wall. With an incredibly thin bezel, this video wall provides an almost invisible edge, resulting in a smooth and uninterrupted viewing experience. It’s the top choice for applications requiring precision and clarity, including broadcasting studios and high-end retail environments.",
+  image: "/LCD Displays/P2.jpg",
+  features: ["0.88mm Bezel", "500nits", "1920×1080", "178° Viewing Angle"]
+},
+  ]
+},
 
-  {
+
+
+// Wall Controller Products :- 5
+{
+  "name": "Video Wall Controller",
+  "slug": "video-wall-controller",
+  "type": "",
+  "shortDescription": "Advanced controller for managing video wall displays with precision and flexibility",
+  "keyFeature": "Multi-source input handling with real-time 4K video processing",
+  "primaryUse": "control rooms, broadcasting studios, command centers, and digital signage",
+  "secondaryFeature": "User-friendly software interface with customizable layouts and presets",
+  "description": "The Video Wall Controller is a powerful solution for managing complex video wall installations. With support for multiple video sources, high-resolution outputs, and real-time content manipulation, it offers total control over your display setup. Ideal for critical environments where seamless visuals and reliable control are essential.",
+  "extendedDescription": "This controller supports flexible video inputs including HDMI, DisplayPort, and IP streams, with drag-and-drop layout management. Its robust architecture ensures smooth performance, even in demanding applications. Suitable for 24/7 operations, it enhances visual communication and operational efficiency in a range of professional environments.",
+  "image": "/Wall Controller/video-wall.jpg",
+  "price": "1000",
+  "category": "Products/wall-controller",
+  "categoryName": "Wall Controllers",
+  "features": [
+    "4K Multi-Source Support",
+    "Real-Time Processing",
+    "Flexible Input/Output Configurations",
+    "Drag-and-Drop Layout Interface",
+    "Redundant Power Supply",
+    "24/7 Operation Design"
+  ],
+  "highlights": [
+    "Supports various input types (HDMI, DisplayPort, IP)",
+    "Advanced content scheduling and switching",
+    "Scalable across multiple displays and resolutions",
+    "Web-based control interface for remote management",
+    "Built-in security and failover systems"
+  ],
+  "specifications": [
+    { "name": "Max Resolution", "value": "Up to 4K UHD per output" },
+    { "name": "Inputs", "value": "HDMI, DisplayPort, IP, DVI" },
+    { "name": "Outputs", "value": "HDMI, DisplayPort" },
+    { "name": "Control", "value": "Web UI, RS232, TCP/IP" },
+    { "name": "Power Supply", "value": "Dual Redundant" },
+    { "name": "Chassis", "value": "Rack-mountable, modular design" },
+    { "name": "Operating System", "value": "Embedded Linux" },
+    { "name": "Cooling", "value": "Active fan cooling" }
+  ],
+  "applications": [
+    {
+      "name": "Control Rooms",
+      "description": "Real-time data monitoring and decision-making across multiple displays",
+      "iconPath": "M5 3h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2z"
+    },
+    {
+      "name": "Broadcast Studios",
+      "description": "Manage video feeds and transitions smoothly across studio walls",
+      "iconPath": "M3 5h18v14H3V5z"
+    },
+    {
+      "name": "Digital Signage",
+      "description": "Coordinate dynamic content across commercial video walls",
+      "iconPath": "M4 6h16v12H4V6z"
+    }
+  ],
+  "rating": "4.8",
+  "reviewCount": "18",
+  "ratingDistribution": [
+    { "stars": 5, "percentage": 80 },
+    { "stars": 4, "percentage": 20 },
+    { "stars": 3, "percentage": 0 },
+    { "stars": 2, "percentage": 0 },
+    { "stars": 1, "percentage": 0 }
+  ],
+  "reviews": [
+    {
+      "name": "Rajiv Mehta",
+      "date": "February 15, 2024",
+      "rating": 5,
+      "review": "Superb control system for our command center video wall. Reliable and very intuitive."
+    },
+    {
+      "name": "Sandra Lin",
+      "date": "March 3, 2024",
+      "rating": 4,
+      "review": "Easy to operate and offers smooth performance. A bit of a learning curve initially."
+    }
+  ],
+  "relatedProducts": [
+    {
+      "name": "KB-2100",
+      "description": "Professional Network Keyboard with multi-protocol compatibility and joystick control",
+      "image": "/Wall Controller/KB-2100.jpg",
+      "slug": "kb-2100",
+      "features": ["3-axis Joystick", "LCD Display", "Multi-Device Support"]
+    },
+     {
+            slug: 'dc5504-e-v2',
+            name: 'DC5504-E-V2',
+            description: 'High Performance Video Wall Controller',
+            category: 'decoder',
+            image: '/Wall Controller/DC5504-E-V2.png',
+            features: [
+            'Multi-screen Display',
+            'High Resolution Support', 
+            'Flexible Window Control',
+            'Real-time Processing',
+            'Multi-Stream Decoding',
+            'Supports H.264 & H.265 Codecs',
+          ]
+        },
+  ]
+},
+{
+  slug: "dc5510-e-v2",
+  name: "DC5510-E-V2",
+  type: "Video Decoder",
+  shortDescription: "High Performance Video Decoder - DC5510-E-V2",
+  keyFeature: "DC5510-E-V2 features advanced video processing with multi-screen support",
+  primaryUse: "DC5510-E-V2 is ideal for control rooms, monitoring centers, and professional video wall applications",
+  secondaryFeature: "DC5510-E-V2 provides flexible window control and real-time processing capabilities",
+  description: "The DC5510-E-V2 is a professional-grade video decoder designed for high-performance video wall applications. With its advanced processing capabilities, the DC5510-E-V2 delivers seamless multi-screen display management and flexible window control, making it perfect for control rooms and monitoring centers requiring reliable video processing.",
+  extendedDescription: "The DC5510-E-V2 represents Lovosis Display's commitment to professional video processing solutions. This advanced decoder combines powerful hardware with sophisticated software features, enabling the DC5510-E-V2 to handle complex multi-screen deployments with exceptional reliability. The DC5510-E-V2's architecture supports real-time processing and flexible window management, allowing operators to configure displays according to their specific requirements. With comprehensive protocol support and robust build quality, the DC5510-E-V2 ensures consistent performance in mission-critical environments.",
+  image: "/Wall Controller/DC5510-E-V2.png",
+  price: "1000",
+  category: "Products/wall-controller",
+  categoryName: "Wall Controller",
+  features: [
+    "DC5510-E-V2 Multi-screen Display",
+    "DC5510-E-V2 High Resolution Support",
+    "DC5510-E-V2 Flexible Window Control",
+    "DC5510-E-V2 Real-time Processing",
+    "DC5510-E-V2 Network Management"
+  ],
+  highlights: [
+    "DC5510-E-V2 advanced multi-screen processing",
+    "DC5510-E-V2 flexible window configuration",
+    "DC5510-E-V2 real-time video processing",
+    "DC5510-E-V2 comprehensive protocol support",
+    "DC5510-E-V2 reliable 24/7 operation",
+    "DC5510-E-V2 professional management interface"
+  ],
+  specifications: [
+    { name: "Model", value: "DC5510-E-V2" },
+    { name: "Video Input", value: "Multiple HD/UHD inputs" },
+    { name: "Resolution", value: "Up to 4K (3840×2160)" },
+    { name: "Processing", value: "Real-time video processing" },
+    { name: "Window Control", value: "Flexible multi-window support" },
+    { name: "Network Interface", value: "Dual RJ45 Gigabit Ethernet" },
+    { name: "Control Interface", value: "RS232/RS485" },
+    { name: "Power Supply", value: "AC 100-240V" }
+  ],
+  applications: [
+    {
+      name: "Control Rooms",
+      description: "Professional video processing with DC5510-E-V2",
+      iconPath: "M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+    },
+    {
+      name: "Monitoring Centers",
+      description: "Multi-screen management with DC5510-E-V2",
+      iconPath: "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+    },
+    {
+      name: "Video Wall Systems",
+      description: "Professional display control with DC5510-E-V2",
+      iconPath: "M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z"
+    }
+  ],
+  rating: "4.8",
+  reviewCount: "38",
+  ratingDistribution: [
+    { stars: 5, percentage: 85 },
+    { stars: 4, percentage: 10 },
+    { stars: 3, percentage: 5 },
+    { stars: 2, percentage: 0 },
+    { stars: 1, percentage: 0 }
+  ],
+  reviews: [
+    { 
+      name: "James Wilson",
+      date: "March 15, 2024",
+      rating: 5,
+      review: "The DC5510-E-V2 has transformed our control room operations. The multi-screen management capabilities are exceptional, and the real-time processing ensures smooth video display across our entire video wall. The flexibility in window configuration has greatly improved our monitoring efficiency."
+    },
+    { 
+      name: "Emily Chen",
+      date: "February 20, 2024",
+      rating: 5,
+      review: "As a system integrator, I've installed multiple DC5510-E-V2 units, and they consistently deliver outstanding performance. The setup is straightforward, and the comprehensive protocol support makes integration with existing systems seamless. The reliability is exceptional for 24/7 operations."
+    },
+    { 
+      name: "Michael Thompson",
+      date: "January 10, 2024",
+      rating: 4,
+      review: "The DC5510-E-V2 handles our complex video wall requirements with ease. The window control features provide great flexibility, and the processing power handles multiple high-resolution feeds without issues. Would appreciate more detailed documentation, but the performance is excellent."
+    }
+  ],
+  relatedProducts: [
+   
+    {
+      name: "DMC9000-2U-V3",
+      description: "Compact 2U controller for medium-sized video wall deployments",
+      image: "/Wall Controller/DMC9000-2U-V3.png",
+      slug: "dmc9000-2u-v3",
+      features: ["Modular Expansion", "Multi-Display", "High Stability"]
+    },
+    {
+      name: "Video Wall Controller",
+      description: "Professional video wall management system",
+      image: "/Wall Controller/video-wall.jpg",
+      slug: "video-wall-controller",
+      features: ["Advanced Control", "Multiple Display Management", "Professional Grade"]
+    },
+  ]
+},
+//----------------------------
+{
+  slug: "dc5601",
+  name: "DC5601",
+  type: "",
+  shortDescription: "High Performance Video Wall Controller - DC5601",
+  keyFeature: "DC5601 offers advanced video decoding and seamless multi-display support",
+  primaryUse: "DC5601 is ideal for control rooms, surveillance hubs, and professional video wall applications",
+  secondaryFeature: "DC5601 enables flexible window control with real-time video processing",
+  description: "The DC5601 is a high-performance video wall controller designed for seamless multi-display environments. It delivers smooth video decoding, real-time performance, and flexible window control, making it perfect for mission-critical applications such as control rooms and monitoring centers.",
+  extendedDescription: "The DC5601 represents a new generation of video wall control systems. Built for reliability and performance, this decoder supports advanced multi-screen management with real-time video processing. Its robust architecture ensures uninterrupted operation in demanding environments, while the intuitive control interface allows precise display configuration. With comprehensive protocol compatibility and superior resolution handling, DC5601 is an essential solution for modern video wall deployments.",
+  image: "/Wall Controller/DC5601.png",
+  price: "1000",
+  category: "Products/decoder",
+  categoryName: "Decoder",
+  features: [
+    "DC5601 Multi-screen Display",
+    "DC5601 High Resolution Support",
+    "DC5601 Flexible Window Control",
+    "DC5601 Real-time Processing",
+    "DC5601 Network Video Decoding"
+  ],
+  highlights: [
+    "DC5601 advanced video decoding and display",
+    "DC5601 supports high-resolution multi-screen output",
+    "DC5601 real-time video stream processing",
+    "DC5601 flexible window layout and display management",
+    "DC5601 stable 24/7 operation for mission-critical environments",
+    "DC5601 intuitive control and configuration interface"
+  ],
+  specifications: [
+    { name: "Model", value: "DC5601" },
+    { name: "Video Input", value: "Multiple HD/UHD IP streams" },
+    { name: "Resolution", value: "Up to 4K (3840×2160)" },
+    { name: "Processing", value: "Real-time video decoding and rendering" },
+    { name: "Window Control", value: "Customizable multi-window layouts" },
+    { name: "Network Interface", value: "Dual Gigabit Ethernet (RJ45)" },
+    { name: "Control Interface", value: "RS232/RS485 and Web UI" },
+    { name: "Power Supply", value: "AC 100-240V, 50/60Hz" }
+  ],
+  applications: [
+    {
+      name: "Control Rooms",
+      description: "Seamless multi-screen decoding for control operations",
+      iconPath: "M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+    },
+    {
+      name: "Surveillance Centers",
+      description: "Real-time IP video decoding for live monitoring",
+      iconPath: "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+    },
+    {
+      name: "Video Wall Systems",
+      description: "Professional-grade video wall decoding and management",
+      iconPath: "M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z"
+    }
+  ],
+  rating: "4.7",
+  reviewCount: "22",
+  ratingDistribution: [
+    { stars: 5, percentage: 80 },
+    { stars: 4, percentage: 15 },
+    { stars: 3, percentage: 5 },
+    { stars: 2, percentage: 0 },
+    { stars: 1, percentage: 0 }
+  ],
+  reviews: [
+    {
+      name: "Amit Sharma",
+      date: "April 10, 2024",
+      rating: 5,
+      review: "DC5601 handles our multi-display setup smoothly. It’s reliable and easy to configure, with zero lag during decoding. Perfect for our video wall application in the control room."
+    },
+    {
+      name: "Li Wei",
+      date: "March 5, 2024",
+      rating: 4,
+      review: "Great performance with real-time decoding. The interface is clean, and the system is very responsive. Could use a bit more documentation for advanced features."
+    },
+    {
+      name: "Carlos Mendes",
+      date: "February 17, 2024",
+      rating: 5,
+      review: "We use DC5601 in our surveillance center. It manages multiple streams without a hitch, even in high-resolution. Very stable and worth the investment."
+    }
+  ],
+  relatedProducts: [
+     {
+          slug: 'dmc9000-3u',
+          name: 'DMC9000-3U',
+          description: 'High-Performance Video Wall Controller',
+          category: 'controller',
+          image: '/Wall Controller/DMC9000-3U.png',
+          features: [
+            'Advanced Video Processing',
+            'Flexible I/O Configuration', 'Multi-Display Management',
+            'Extended Display Support','Mission-Critical Reliability'
+          ]
+        },
+    {
+      name: "DC5510-E-V2",
+      description: "Professional-grade multi-screen video decoder",
+      image: "/Wall Controller/DC5510-E-V2.png",
+      slug: "dc5510-e-v2",
+      features: ["Multi-screen Display", "Real-time Processing", "Window Control"]
+    },
+  ]
+},
+//------------------------------
+{
+  "slug": "dc5506-e-v2",
+  "name": "DC5506-E-V2",
+  "type": "",
+  "shortDescription": "High Performance Video Decoder - DC5506-E-V2",
+  "keyFeature": "DC5506-E-V2 delivers efficient real-time video processing and flexible window control",
+  "primaryUse": "Ideal for mission-critical environments like control rooms, security centers, and video walls",
+  "secondaryFeature": "Supports high-resolution feeds and smooth multi-screen output",
+  "description": "The DC5506-E-V2 is a high-performance video decoder designed for professional video wall applications. With advanced video processing capabilities and real-time multi-screen support, the DC5506-E-V2 ensures seamless control and display for mission-critical operations.",
+  "extendedDescription": "DC5506-E-V2 is engineered for reliable and scalable video decoding in environments that demand 24/7 performance. Equipped with robust hardware and advanced software, it supports flexible window management and high-resolution video inputs. This unit is built to integrate with existing infrastructures via standard interfaces and offers comprehensive protocol compatibility for seamless operation.",
+  "image": "/Wall Controller/DC5506-E-V2.png",
+  "price": "1000",
+  "category": "Products/wall-controller",
+  "categoryName": "Wall Controller",
+  "features": [
+    "DC5506-E-V2 Multi-screen Display",
+    "DC5506-E-V2 High Resolution Support",
+    "DC5506-E-V2 Flexible Window Control",
+    "DC5506-E-V2 Real-time Processing",
+    "DC5506-E-V2 Network Management"
+  ],
+  "highlights": [
+    "DC5506-E-V2 advanced decoding for multi-screen setups",
+    "DC5506-E-V2 smooth real-time video display",
+    "DC5506-E-V2 flexible display layout and window positioning",
+    "DC5506-E-V2 robust protocol and network support",
+    "DC5506-E-V2 continuous 24/7 operation",
+    "DC5506-E-V2 user-friendly interface and integration options"
+  ],
+  "specifications": [
+    { "name": "Model", "value": "DC5506-E-V2" },
+    { "name": "Video Input", "value": "Multiple HD/UHD inputs" },
+    { "name": "Resolution", "value": "Up to 4K (3840×2160)" },
+    { "name": "Processing", "value": "Real-time video processing" },
+    { "name": "Window Control", "value": "Flexible multi-window support" },
+    { "name": "Network Interface", "value": "Dual RJ45 Gigabit Ethernet" },
+    { "name": "Control Interface", "value": "RS232/RS485" },
+    { "name": "Power Supply", "value": "AC 100-240V" }
+  ],
+  "applications": [
+    {
+      "name": "Control Rooms",
+      "description": "Reliable multi-screen control and decoding for professional environments",
+      "iconPath": "M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+    },
+    {
+      "name": "Security Centers",
+      "description": "Enhanced surveillance display using DC5506-E-V2 decoding technology",
+      "iconPath": "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+    },
+    {
+      "name": "Video Wall Systems",
+      "description": "Professional-grade decoding and flexible video wall setup",
+      "iconPath": "M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z"
+    }
+  ],
+  "rating": "4.7",
+  "reviewCount": "22",
+  "ratingDistribution": [
+    { "stars": 5, "percentage": 80 },
+    { "stars": 4, "percentage": 15 },
+    { "stars": 3, "percentage": 5 },
+    { "stars": 2, "percentage": 0 },
+    { "stars": 1, "percentage": 0 }
+  ],
+  "reviews": [
+    {
+      "name": "Samantha Lee",
+      "date": "March 5, 2024",
+      "rating": 5,
+      "review": "The DC5506-E-V2 is a solid performer. We use it in our video surveillance hub and it's been running flawlessly. Very smooth operation and great image quality."
+    },
+    {
+      "name": "David Kim",
+      "date": "February 10, 2024",
+      "rating": 5,
+      "review": "Easy to integrate and highly reliable. I especially appreciate the flexibility it offers in configuring screen layouts. Recommended for any control room setup."
+    },
+    {
+      "name": "Rachel Adams",
+      "date": "January 18, 2024",
+      "rating": 4,
+      "review": "Good value for its performance. Would love to see a web-based interface in future updates, but overall it's a very capable unit."
+    }
+  ],
+  "relatedProducts": [
+    {
+      "name": "DC5510-E-V2",
+      "description": "High-performance decoder for video wall systems",
+      "image": "/Wall Controller/DC5510-E-V2.png",
+      "slug": "dc5510-e-v2",
+      "features": ["Multi-screen Support", "Real-time Video Processing", "Flexible Window Management"]
+    },
+
+    {
+            slug: 'adu8806-e',
+            name: 'ADU8806-E',
+            description: 'High Performance Video Wall Controller',
+            category: 'decoder',
+            image: '/Wall Controller/ADU8806-E.jpg',
+            features: [
+              'Multi-screen Display',
+              'High Resolution Support',
+              'Flexible Window Control',
+              'Real-time Processing'
+            ]
+          },
+  ]
+},
+
+{
+  slug: 'dc5510-e-v2',
+  name: 'DC5510-E-V2',
+  type: '',
+  shortDescription: 'High Performance Video Decoder - DC5510-E-V2',
+  keyFeature: 'DC5510-E-V2 features advanced video processing with multi-screen support',
+  primaryUse: 'DC5510-E-V2 is ideal for control rooms, monitoring centers, and professional video wall applications',
+  secondaryFeature: 'DC5510-E-V2 provides flexible window control and real-time processing capabilities',
+  description: 'The DC5510-E-V2 is a professional-grade video decoder designed for high-performance video wall applications. With its advanced processing capabilities, the DC5510-E-V2 delivers seamless multi-screen display management and flexible window control, making it perfect for control rooms and monitoring centers requiring reliable video processing.',
+  extendedDescription: 'The DC5510-E-V2 represents Lovosis Display\'s commitment to professional video processing solutions. This advanced decoder combines powerful hardware with sophisticated software features, enabling the DC5510-E-V2 to handle complex multi-screen deployments with exceptional reliability. The DC5510-E-V2\'s architecture supports real-time processing and flexible window management, allowing operators to configure displays according to their specific requirements. With comprehensive protocol support and robust build quality, the DC5510-E-V2 ensures consistent performance in mission-critical environments.',
+  image: '/Wall Controller/DC5510-E-V2.png',
+  price: '1000',
+  category: 'decoder',
+  categoryName: 'Decoder',
+  features: [
+    'DC5510-E-V2 Multi-screen Display',
+    'DC5510-E-V2 High Resolution Support',
+    'DC5510-E-V2 Flexible Window Control',
+    'DC5510-E-V2 Real-time Processing',
+    'DC5510-E-V2 Network Management'
+  ],
+  highlights: [
+    'DC5510-E-V2 advanced multi-screen processing',
+    'DC5510-E-V2 flexible window configuration',
+    'DC5510-E-V2 real-time video processing',
+    'DC5510-E-V2 comprehensive protocol support',
+    'DC5510-E-V2 reliable 24/7 operation',
+    'DC5510-E-V2 professional management interface'
+  ],
+  specifications: [
+    { name: 'Model', value: 'DC5510-E-V2' },
+    { name: 'Video Input', value: 'Multiple HD/UHD inputs' },
+    { name: 'Resolution', value: 'Up to 4K (3840×2160)' },
+    { name: 'Processing', value: 'Real-time video processing' },
+    { name: 'Window Control', value: 'Flexible multi-window support' },
+    { name: 'Network Interface', value: 'Dual RJ45 Gigabit Ethernet' },
+    { name: 'Control Interface', value: 'RS232/RS485' },
+    { name: 'Power Supply', value: 'AC 100-240V' }
+  ],
+  applications: [
+    {
+      name: 'Control Rooms',
+      description: 'Professional video processing with DC5510-E-V2',
+      iconPath: 'M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z'
+    },
+    {
+      name: 'Monitoring Centers',
+      description: 'Multi-screen management with DC5510-E-V2',
+      iconPath: 'M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z'
+    },
+    {
+      name: 'Video Wall Systems',
+      description: 'Professional display control with DC5510-E-V2',
+      iconPath: 'M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z'
+    }
+  ],
+  rating: '4.8',
+  reviewCount: '38',
+  ratingDistribution: [
+    { stars: 5, percentage: 85 },
+    { stars: 4, percentage: 10 },
+    { stars: 3, percentage: 5 },
+    { stars: 2, percentage: 0 },
+    { stars: 1, percentage: 0 }
+  ],
+  reviews: [
+    {
+      name: 'James Wilson',
+      date: 'March 15, 2024',
+      rating: 5,
+      review: 'The DC5510-E-V2 has transformed our control room operations. The multi-screen management capabilities are exceptional, and the real-time processing ensures smooth video display across our entire video wall. The flexibility in window configuration has greatly improved our monitoring efficiency.'
+    },
+    {
+      name: 'Emily Chen',
+      date: 'February 20, 2024',
+      rating: 5,
+      review: 'As a system integrator, I\'ve installed multiple DC5510-E-V2 units, and they consistently deliver outstanding performance. The setup is straightforward, and the comprehensive protocol support makes integration with existing systems seamless. The reliability is exceptional for 24/7 operations.'
+    },
+    {
+      name: 'Michael Thompson',
+      date: 'January 10, 2024',
+      rating: 4,
+      review: 'The DC5510-E-V2 handles our complex video wall requirements with ease. The window control features provide great flexibility, and the processing power handles multiple high-resolution feeds without issues. Would appreciate more detailed documentation, but the performance is excellent.'
+    }
+  ],
+  relatedProducts: [
+   {
+      name: "DMC9000-2U-V3",
+      description: "Compact 2U controller for medium-sized video wall deployments",
+      image: "/Wall Controller/DMC9000-2U-V3.png",
+      slug: "dmc9000-2u-v3",
+      features: ["Modular Expansion", "Multi-Display", "High Stability"]
+    },
+
+   {
+      slug: 'dc5601',
+      name: 'DC5601',
+      description: 'High Performance Video Wall Controller',
+      category: 'decoder',
+      image: '/Wall Controller/DC5601.png',
+      features: [ 'Multi-screen Display', 'High Resolution Support', 'Flexible Window Control', 'Real-time Processing']
+    },
+  ]
+},
+
+{
+  slug: 'adu8806-e',
+  name: 'ADU8806-E',
+  type: '',
+  shortDescription: 'High Performance Video Decoder - ADU8806-E',
+  keyFeature: 'ADU8806-E features advanced video processing with multi-screen support',
+  primaryUse: 'ADU8806-E is ideal for control rooms, monitoring centers, and professional video wall applications',
+  secondaryFeature: 'ADU8806-E provides flexible window control and real-time processing capabilities',
+  description: 'The ADU8806-E is a professional-grade video decoder designed for high-performance video wall applications. With its advanced processing capabilities, the ADU8806-E delivers seamless multi-screen display management and flexible window control, making it perfect for control rooms and monitoring centers requiring reliable video processing.',
+  extendedDescription: 'The ADU8806-E represents Lovosis Display\'s commitment to professional video processing solutions. This advanced decoder combines powerful hardware with sophisticated software features, enabling the ADU8806-E to handle complex multi-screen deployments with exceptional reliability. Its architecture supports real-time processing and flexible window management, allowing operators to configure displays according to their specific requirements. With comprehensive protocol support and robust build quality, the ADU8806-E ensures consistent performance in mission-critical environments.',
+  image: '/Wall Controller/ADU8806-E.jpg',
+  price: '1000',
+  category: 'decoder',
+  categoryName: 'Decoder',
+  features: [
+    'ADU8806-E Multi-screen Display',
+    'ADU8806-E High Resolution Support',
+    'ADU8806-E Flexible Window Control',
+    'ADU8806-E Real-time Processing',
+    'ADU8806-E Network Management'
+  ],
+  highlights: [
+    'ADU8806-E advanced multi-screen processing',
+    'ADU8806-E flexible window configuration',
+    'ADU8806-E real-time video processing',
+    'ADU8806-E comprehensive protocol support',
+    'ADU8806-E reliable 24/7 operation',
+    'ADU8806-E professional management interface'
+  ],
+  specifications: [
+    { name: 'Model', value: 'ADU8806-E' },
+    { name: 'Video Input', value: 'Multiple HD/UHD inputs' },
+    { name: 'Resolution', value: 'Up to 4K (3840×2160)' },
+    { name: 'Processing', value: 'Real-time video processing' },
+    { name: 'Window Control', value: 'Flexible multi-window support' },
+    { name: 'Network Interface', value: 'Dual RJ45 Gigabit Ethernet' },
+    { name: 'Control Interface', value: 'RS232/RS485' },
+    { name: 'Power Supply', value: 'AC 100-240V' }
+  ],
+  applications: [
+    {
+      name: 'Control Rooms',
+      description: 'Professional video processing with ADU8806-E',
+      iconPath: 'M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z'
+    },
+    {
+      name: 'Monitoring Centers',
+      description: 'Multi-screen management with ADU8806-E',
+      iconPath: 'M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z'
+    },
+    {
+      name: 'Video Wall Systems',
+      description: 'Professional display control with ADU8806-E',
+      iconPath: 'M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z'
+    }
+  ],
+  rating: '4.7',
+  reviewCount: '24',
+  ratingDistribution: [
+    { stars: 5, percentage: 80 },
+    { stars: 4, percentage: 15 },
+    { stars: 3, percentage: 5 },
+    { stars: 2, percentage: 0 },
+    { stars: 1, percentage: 0 }
+  ],
+  reviews: [
+    {
+      name: 'Sarah Johnson',
+      date: 'April 2, 2024',
+      rating: 5,
+      review: 'The ADU8806-E performs flawlessly in our control room setup. Multi-screen management and window control are very intuitive and efficient.'
+    },
+    {
+      name: 'David Lee',
+      date: 'March 12, 2024',
+      rating: 4,
+      review: 'Great video decoder with low latency and excellent resolution support. The network features are a big plus.'
+    }
+  ],
+  relatedProducts: [
+   {
+      name: "DMC9000-2U-V3",
+      description: "Compact 2U controller for medium-sized video wall deployments",
+      image: "/Wall Controller/DMC9000-2U-V3.png",
+      slug: "dmc9000-2u-v3",
+      features: ["Modular Expansion", "Multi-Display", "High Stability"]
+    },
+    
+    {
+      slug: 'dc5510-e-v2',
+      name: 'DC5510-E-V2',
+      description: 'High-performance decoder for video wall systems',
+      category: 'decoder',
+      image: '/Wall Controller/DC5510-E-V2.png',
+      features: ['Multi-screen Support', 'Real-time Video Processing', 'Flexible Window Management']
+    },
+    
+  ]
+},
+//----------------------------
+{
+  slug: 'adu8809-e',
+  name: 'ADU8809-E',
+  type: '',
+  shortDescription: 'High Performance Video Decoder - ADU8809-E',
+  keyFeature: 'ADU8809-E features advanced video processing with multi-screen support',
+  primaryUse: 'ADU8809-E is ideal for control rooms, monitoring centers, and professional video wall applications',
+  secondaryFeature: 'ADU8809-E provides flexible window control and real-time processing capabilities',
+  description: 'The ADU8809-E is a professional-grade video decoder designed for high-performance video wall applications. With its advanced processing capabilities, the ADU8809-E delivers seamless multi-screen display management and flexible window control, making it perfect for control rooms and monitoring centers requiring reliable video processing.',
+  extendedDescription: 'The ADU8809-E represents Lovosis Display\'s commitment to professional video processing solutions. This advanced decoder combines powerful hardware with sophisticated software features, enabling the ADU8809-E to handle complex multi-screen deployments with exceptional reliability. Its architecture supports real-time processing and flexible window management, allowing operators to configure displays according to their specific requirements. With comprehensive protocol support and robust build quality, the ADU8809-E ensures consistent performance in mission-critical environments.',
+  image: '/Wall Controller/ADU8809-E.jpg',
+  price: '1000',
+  category: 'decoder',
+  categoryName: 'Decoder',
+  features: [
+    'ADU8809-E Multi-screen Display',
+    'ADU8809-E High Resolution Support',
+    'ADU8809-E Flexible Window Control',
+    'ADU8809-E Real-time Processing',
+    'ADU8809-E Network Management'
+  ],
+  highlights: [
+    'ADU8809-E advanced multi-screen processing',
+    'ADU8809-E flexible window configuration',
+    'ADU8809-E real-time video processing',
+    'ADU8809-E comprehensive protocol support',
+    'ADU8809-E reliable 24/7 operation',
+    'ADU8809-E professional management interface'
+  ],
+  specifications: [
+    { name: 'Model', value: 'ADU8809-E' },
+    { name: 'Video Input', value: 'Multiple HD/UHD inputs' },
+    { name: 'Resolution', value: 'Up to 4K (3840×2160)' },
+    { name: 'Processing', value: 'Real-time video processing' },
+    { name: 'Window Control', value: 'Flexible multi-window support' },
+    { name: 'Network Interface', value: 'Dual RJ45 Gigabit Ethernet' },
+    { name: 'Control Interface', value: 'RS232/RS485' },
+    { name: 'Power Supply', value: 'AC 100-240V' }
+  ],
+  applications: [
+    {
+      name: 'Control Rooms',
+      description: 'Professional video processing with ADU8809-E',
+      iconPath: 'M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z'
+    },
+    {
+      name: 'Monitoring Centers',
+      description: 'Multi-screen management with ADU8809-E',
+      iconPath: 'M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z'
+    },
+    {
+      name: 'Video Wall Systems',
+      description: 'Professional display control with ADU8809-E',
+      iconPath: 'M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z'
+    }
+  ],
+  rating: '4.7',
+  reviewCount: '18',
+  ratingDistribution: [
+    { stars: 5, percentage: 75 },
+    { stars: 4, percentage: 20 },
+    { stars: 3, percentage: 5 },
+    { stars: 2, percentage: 0 },
+    { stars: 1, percentage: 0 }
+  ],
+  reviews: [
+    {
+      name: 'Mark Wilson',
+      date: 'May 15, 2024',
+      rating: 5,
+      review: 'ADU8809-E exceeded expectations for our multi-screen deployment. Stable and easy to configure.'
+    },
+    {
+      name: 'Emily Davis',
+      date: 'April 20, 2024',
+      rating: 4,
+      review: 'Great video decoder with reliable network management and excellent video quality.'
+    }
+  ],
+  relatedProducts: [
+   {
+      name: "DMC9000-2U-V3",
+      description: "Compact 2U controller for medium-sized video wall deployments",
+      image: "/Wall Controller/DMC9000-2U-V3.png",
+      slug: "dmc9000-2u-v3",
+      features: ["Modular Expansion", "Multi-Display", "High Stability"],
+    },
+     
+    {
+      name: 'Video Wall Controller',
+      description: 'Professional video wall management system',
+      image: '/Wall Controller/video-wall.jpg',
+      slug: 'video-wall-controller',
+      features: ['Advanced Control', 'Multiple Display Management', 'Professional Grade']
+    }
+  ]
+},
+
+//------------------------------
+
+{
+  slug: 'adu8812-e',
+  name: 'ADU8812-E',
+  type: '',
+  shortDescription: 'High Performance Video Decoder - ADU8812-E',
+  keyFeature: 'ADU8812-E offers advanced video decoding with ultra-low latency and multi-format support',
+  primaryUse: 'Ideal for professional video walls, broadcasting, and control rooms',
+  secondaryFeature: 'Supports multiple video inputs and seamless switching with robust network management',
+  description: 'The ADU8812-E is a high-performance video decoder designed for demanding professional video wall applications. It supports a wide range of video formats and resolutions with ultra-low latency, ensuring smooth playback and seamless multi-screen display management.',
+  extendedDescription: 'Lovosis Display\'s ADU8812-E combines cutting-edge decoding technology with a flexible interface to meet the needs of complex video deployments. The decoder supports real-time processing, multiple input sources, and advanced network protocols, providing reliability and ease of integration for mission-critical environments.',
+  image: '/Wall Controller/ADU8812-E.jpg',
+  price: '1000',
+  category: 'decoder',
+  categoryName: 'Decoder',
+  features: [
+    'ADU8812-E Ultra-low Latency Video Decoding',
+    'Supports Multiple Video Formats (HD, UHD, 4K)',
+    'Multi-screen Display Capability',
+    'Flexible Input Source Switching',
+    'Advanced Network Management'
+  ],
+  highlights: [
+    'Ultra-low latency processing',
+    'Multi-format video support',
+    'Reliable 24/7 operation',
+    'Robust network protocol support',
+    'Flexible multi-window control'
+  ],
+  specifications: [
+    { name: 'Model', value: 'ADU8812-E' },
+    { name: 'Video Input', value: 'HDMI, SDI, IP Streams' },
+    { name: 'Resolution', value: 'Up to 4K UHD (3840×2160)' },
+    { name: 'Latency', value: 'Less than 10 ms' },
+    { name: 'Network Interface', value: 'Dual Gigabit Ethernet' },
+    { name: 'Control Interface', value: 'RS232/RS485, Web UI' },
+    { name: 'Power Supply', value: 'AC 100-240V' }
+  ],
+  applications: [
+    {
+      name: 'Broadcasting',
+      description: 'Seamless multi-format decoding for live broadcasts',
+      iconPath: 'M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z'
+    },
+    {
+      name: 'Control Rooms',
+      description: 'Reliable video decoding for control and monitoring',
+      iconPath: 'M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z'
+    },
+    {
+      name: 'Video Wall Systems',
+      description: 'Professional multi-screen management and display control',
+      iconPath: 'M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z'
+    }
+  ],
+  rating: '4.7',
+  reviewCount: '25',
+  ratingDistribution: [
+    { stars: 5, percentage: 80 },
+    { stars: 4, percentage: 15 },
+    { stars: 3, percentage: 5 },
+    { stars: 2, percentage: 0 },
+    { stars: 1, percentage: 0 }
+  ],
+  reviews: [
+    {
+      name: 'Sarah Johnson',
+      date: 'April 10, 2024',
+      rating: 5,
+      review: 'The ADU8812-E delivers exceptional video quality with minimal latency. It handles multiple input formats effortlessly, making our broadcast operations much smoother.'
+    },
+    {
+      name: 'David Lee',
+      date: 'March 8, 2024',
+      rating: 4,
+      review: 'Very reliable decoder with excellent network features. The setup took some time, but the performance is outstanding in control room environments.'
+    }
+  ],
+  relatedProducts: [
+    {
+      name: "DMC9000-2U-V3",
+      description: "Compact 2U controller for medium-sized video wall deployments",
+      image: "/Wall Controller/DMC9000-2U-V3.png",
+      slug: "dmc9000-2u-v3",
+      features: ["Modular Expansion", "Multi-Display", "High Stability"],
+    },
+    {
+      name: 'Video Wall Controller',
+      description: 'Professional video wall management system',
+      image: '/Wall Controller/video-wall.jpg',
+      slug: 'video-wall-controller',
+      features: ['Advanced Control', 'Multiple Display Management', 'Professional Grade']
+    }
+  ]
+},
+//--------------------------------
+{
+  slug: 'adu8815-e',
+  name: 'ADU8815-E',
+  type: '',
+  shortDescription: 'High Efficiency Video Decoder - ADU8815-E',
+  keyFeature: 'ADU8815-E provides ultra-low latency decoding with multi-format support and high reliability',
+  primaryUse: 'Designed for broadcast, control rooms, and professional video wall installations',
+  secondaryFeature: 'Supports seamless multi-input switching and advanced network protocols for stable operation',
+  description: 'The ADU8815-E is a robust video decoder engineered for professional environments requiring reliable and efficient video decoding. It supports a variety of video inputs with low latency and ensures smooth, high-quality video playback across multi-screen setups.',
+  extendedDescription: 'Lovosis Display’s ADU8815-E combines cutting-edge decoding technology with versatile connectivity options. This decoder supports multiple video streams, real-time processing, and flexible window management, making it ideal for mission-critical applications like broadcasting and control rooms.',
+  image: '/Wall Controller/ADU8815-E.jpg',
+  price: '1000',
+  category: 'decoder',
+  categoryName: 'Decoder',
+  features: [
+    'ADU8815-E Ultra-low Latency Decoding',
+    'Multi-format Video Support (HD, UHD, 4K)',
+    'Multi-screen Display and Window Control',
+    'Flexible Input Source Management',
+    'Robust Network and Protocol Support'
+  ],
+  highlights: [
+    'High reliability for 24/7 operation',
+    'Supports multiple simultaneous inputs',
+    'Advanced network management capabilities',
+    'Flexible multi-window configuration',
+    'Optimized for professional video environments'
+  ],
+  specifications: [
+    { name: 'Model', value: 'ADU8815-E' },
+    { name: 'Video Input', value: 'HDMI, SDI, IP Streams' },
+    { name: 'Resolution', value: 'Up to 4K UHD (3840×2160)' },
+    { name: 'Latency', value: 'Less than 10 ms' },
+    { name: 'Network Interface', value: 'Dual Gigabit Ethernet' },
+    { name: 'Control Interface', value: 'RS232/RS485, Web UI' },
+    { name: 'Power Supply', value: 'AC 100-240V' }
+  ],
+  applications: [
+    {
+      name: 'Broadcasting',
+      description: 'Reliable decoding for live broadcast applications',
+      iconPath: 'M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z'
+    },
+    {
+      name: 'Control Rooms',
+      description: 'Stable video decoding and management for control centers',
+      iconPath: 'M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z'
+    },
+    {
+      name: 'Video Wall Systems',
+      description: 'Professional multi-screen video wall management',
+      iconPath: 'M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z'
+    }
+  ],
+  rating: '4.7',
+  reviewCount: '22',
+  ratingDistribution: [
+    { stars: 5, percentage: 78 },
+    { stars: 4, percentage: 17 },
+    { stars: 3, percentage: 5 },
+    { stars: 2, percentage: 0 },
+    { stars: 1, percentage: 0 }
+  ],
+  reviews: [
+    {
+      name: 'Anna Martinez',
+      date: 'May 5, 2024',
+      rating: 5,
+      review: 'ADU8815-E delivers excellent decoding performance with very low latency. The multiple input options make it very versatile for our broadcast needs.'
+    },
+    {
+      name: 'James Carter',
+      date: 'April 12, 2024',
+      rating: 4,
+      review: 'Great decoder overall, very reliable. The network management features are very useful in our control room setup.'
+    }
+  ],
+  relatedProducts: [
+   {
+      name: "DMC9000-2U-V3",
+      description: "Compact 2U controller for medium-sized video wall deployments",
+      image: "/Wall Controller/DMC9000-2U-V3.png",
+      slug: "dmc9000-2u-v3",
+      features: ["Modular Expansion", "Multi-Display", "High Stability"],
+    },
+    {
+      name: 'Video Wall Controller',
+      description: 'Professional video wall management system',
+      image: '/Wall Controller/video-wall.jpg',
+      slug: 'video-wall-controller',
+      features: ['Advanced Control', 'Multiple Display Management', 'Professional Grade']
+    }
+  ]
+},
+
+{
+  slug: 'adu8818-e',
+  name: 'ADU8818-E',
+  type: '',
+  shortDescription: 'Advanced Video Decoder - ADU8818-E',
+  keyFeature: 'ADU8818-E supports high-definition video decoding with flexible input and output configurations',
+  primaryUse: 'Ideal for professional monitoring centers, broadcasting, and video wall systems',
+  secondaryFeature: 'Offers seamless integration with network protocols and supports multi-screen management',
+  description: 'The ADU8818-E is a versatile video decoder designed for demanding professional environments. It features support for multiple video formats and delivers consistent performance with low latency, making it suitable for real-time video processing and multi-screen displays.',
+  extendedDescription: 'Lovosis Display’s ADU8818-E combines robust hardware with advanced software features, including multi-stream decoding and flexible window controls. It ensures stable and high-quality video output across complex video wall installations, broadcast facilities, and control rooms.',
+  image: '/Wall Controller/ADU8818-E.jpg',
+  price: '1000',
+  category: 'decoder',
+  categoryName: 'Decoder',
+  features: [
+    'ADU8818-E Multi-format Video Decoding',
+    'Supports up to 4K UHD Resolution',
+    'Flexible Multi-window Display Control',
+    'Advanced Network Protocol Support',
+    'Low Latency and High Reliability'
+  ],
+  highlights: [
+    'Seamless multi-screen video management',
+    'Robust network and input source handling',
+    'Optimized for 24/7 professional use',
+    'Flexible configuration via Web UI and RS232/RS485',
+    'Wide compatibility with industry standards'
+  ],
+  specifications: [
+    { name: 'Model', value: 'ADU8818-E' },
+    { name: 'Video Input', value: 'HDMI, SDI, IP Stream' },
+    { name: 'Resolution', value: 'Up to 4K UHD (3840×2160)' },
+    { name: 'Latency', value: 'Low latency decoding (<10 ms)' },
+    { name: 'Network Interface', value: 'Dual Gigabit Ethernet' },
+    { name: 'Control Interface', value: 'RS232/RS485, Web Interface' },
+    { name: 'Power Supply', value: 'AC 100-240V' }
+  ],
+  applications: [
+    {
+      name: 'Monitoring Centers',
+      description: 'Efficient video decoding and management for monitoring centers',
+      iconPath: 'M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z'
+    },
+    {
+      name: 'Broadcasting',
+      description: 'Reliable performance for broadcast video decoding',
+      iconPath: 'M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z'
+    },
+    {
+      name: 'Video Wall Systems',
+      description: 'Professional-grade video wall control and display',
+      iconPath: 'M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z'
+    }
+  ],
+  rating: '4.6',
+  reviewCount: '18',
+  ratingDistribution: [
+    { stars: 5, percentage: 75 },
+    { stars: 4, percentage: 15 },
+    { stars: 3, percentage: 10 },
+    { stars: 2, percentage: 0 },
+    { stars: 1, percentage: 0 }
+  ],
+  reviews: [
+    {
+      name: 'Sophia Patel',
+      date: 'April 22, 2024',
+      rating: 5,
+      review: 'ADU8818-E offers excellent video quality and very reliable performance. It’s ideal for our multi-screen monitoring system.'
+    },
+    {
+      name: 'Liam Johnson',
+      date: 'March 30, 2024',
+      rating: 4,
+      review: 'Good decoder with flexible configuration options. Setup was straightforward, and the latency is very low.'
+    }
+  ],
+  relatedProducts: [
+    {
+      name: "DMC9000-2U-V3",
+      description: "Compact 2U controller for medium-sized video wall deployments",
+      image: "/Wall Controller/DMC9000-2U-V3.png",
+      slug: "dmc9000-2u-v3",
+      features: ["Modular Expansion", "Multi-Display", "High Stability"],
+    },
+     {
+      name: "KB-1100-E",
+      description: "Professional Network Keyboard for integrated video wall control",
+      image: "/Wall Controller/KB-1100-E.jpg",
+      slug: "kb-1100-e",
+      features: ["USB Interface", "LCD Display", "Customizable Keys"]
+    },
+  ]
+},
+
+{
+  slug: "dmc9000-2u-v3",
+  name: "DMC9000-2U-V3",
+  type: "",
+  shortDescription: "High-Performance 2U Video Wall Controller",
+  keyFeature: "multi-display output support for dynamic wall configurations",
+  primaryUse: "command centers, control rooms, and corporate AV systems",
+  secondaryFeature: "modular design for flexible expansion",
+  description: "The DMC9000-2U-V3 Video Wall Controller delivers exceptional performance and scalability for complex video wall installations. Designed with a modular architecture, it supports various display outputs, offers reliable 24/7 operation, and simplifies control with intelligent management tools. Ideal for professional environments demanding robust and flexible display solutions.",
+  extendedDescription: "Engineered for high-performance video wall environments, the DMC9000-2U-V3 brings modularity, scalability, and stability together in a compact 2U form factor. Its advanced video processing capabilities enable seamless multi-source integration and synchronized output to multiple screens. Built with robust hardware, the controller ensures uninterrupted 24/7 operation and is easily maintainable through hot-swappable components. It's the go-to solution for modern control rooms and visualization centers.",
+  image: "/Wall Controller/DMC9000-2U-V3.png",
+  price: "1000",
+  category: "Products/wall-controller",
+  categoryName: "Wall Controller",
+  features: ["Modular Design", "Multi-Display Output", "24/7 Operation", "Scalable Architecture", "High Reliability"],
+  highlights: [
+    "Modular design for flexible configuration",
+    "Supports multiple display output standards",
+    "Built for 24/7 continuous operation",
+    "Compact 2U form factor for rack efficiency",
+    "Hot-swappable components for easy maintenance",
+    "Ideal for mission-critical video wall applications"
+  ],
+  specifications: [
+    { name: "Model", value: "DMC9000-2U-V3" },
+    { name: "Form Factor", value: "2U Rackmount" },
+    { name: "Output Support", value: "Up to 16 displays" },
+    { name: "Video Interfaces", value: "HDMI, DVI, DP (varies by module)" },
+    { name: "Control Interface", value: "Web UI, RS232, TCP/IP" },
+    { name: "Power Supply", value: "Redundant AC 100~240V" },
+    { name: "Operating Temperature", value: "0°C ~ +50°C" },
+    { name: "Dimensions", value: "482.6mm × 88mm × 400mm" },
+    { name: "Weight", value: "Approx. 7kg" }
+  ],
+  applications: [
+    {
+      name: "Command Centers",
+      description: "Efficient display control for real-time decision-making",
+      iconPath: "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+    },
+    {
+      name: "Control Rooms",
+      description: "Advanced visual monitoring with modular scalability",
+      iconPath: "M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+    },
+    {
+      name: "Corporate AV",
+      description: "Professional-grade display management for presentations",
+      iconPath: "M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"
+    }
+  ],
+  rating: "4.8",
+  reviewCount: "24",
+  ratingDistribution: [
+    { stars: 5, percentage: 85 },
+    { stars: 4, percentage: 10 },
+    { stars: 3, percentage: 5 },
+    { stars: 2, percentage: 0 },
+    { stars: 1, percentage: 0 }
+  ],
+  reviews: [
+    { 
+      name: "David Chen",
+      date: "April 22, 2024",
+      rating: 5,
+      review: "We upgraded our control room with the DMC9000-2U-V3, and the performance has been excellent. The modular design allowed us to scale our display setup easily. Very reliable under constant use."
+    },
+    { 
+      name: "Samantha Lee",
+      date: "March 18, 2024",
+      rating: 4,
+      review: "Solid video wall controller. Installation was straightforward and it’s been handling multiple 4K feeds flawlessly. Would love to see support for newer control protocols in future updates."
+    },
+    { 
+      name: "Mohammed Ibrahim",
+      date: "February 10, 2024",
+      rating: 5,
+      review: "This controller has been a game-changer in our operations center. It's compact but powerful, and the redundancy features give us peace of mind for 24/7 use."
+    }
+  ],
+  relatedProducts: [
+    {
+      name: 'Video Wall Controller',
+      description: 'Professional video wall management system',
+      image: '/Wall Controller/video-wall.jpg',
+      slug: 'video-wall-controller',
+      features: ['Advanced Control', 'Multiple Display Management', 'Professional Grade']
+    },
+    {
+      name: "KB-1100-E",
+      description: "Professional Network Keyboard for integrated video wall control",
+      image: "/Wall Controller/KB-1100-E.jpg",
+      slug: "kb-1100-e",
+      features: ["USB Interface", "LCD Display", "Customizable Keys"]
+    },
+  ]
+},
+
+{
+  slug: "dmc9000-3u",
+  name: "DMC9000-3U",
+  type: "",
+  shortDescription: "Powerful 3U Video Wall Controller for Large-Scale Displays",
+  keyFeature: "expanded output and processing capabilities in a 3U chassis",
+  primaryUse: "control centers, surveillance rooms, and digital signage",
+  secondaryFeature: "modular slots for flexible input/output configurations",
+  description: "The DMC9000-3U Video Wall Controller is built for demanding environments requiring high-performance video processing and multiple display outputs. Designed with a modular and scalable architecture, it offers outstanding reliability and ease of integration with various AV systems.",
+  extendedDescription: "With its robust 3U design, the DMC9000-3U provides enhanced scalability and processing for enterprise-grade video walls. Supporting a wide array of input/output cards, it allows for tailored configurations to suit specific project needs. The controller delivers ultra-reliable 24/7 operation, advanced signal management, and seamless integration into existing control systems, making it ideal for mission-critical applications.",
+  image: "/Wall Controller/DMC9000-3U.png",
+  price: "1000",
+  category: "Products/wall-controller",
+  categoryName: "Wall Controller",
+  features: ["Flexible I/O Configuration", "3U Rackmount", "High Processing Capacity", "Modular Architecture", "24/7 Operation"],
+  highlights: [
+    "Supports large video wall installations",
+    "Multiple modular slots for I/O customization",
+    "Robust 3U rackmount design",
+    "Advanced signal processing",
+    "Ideal for surveillance and digital command centers",
+    "Web-based remote management"
+  ],
+  specifications: [
+    { name: "Model", value: "DMC9000-3U" },
+    { name: "Form Factor", value: "3U Rackmount" },
+    { name: "Output Capacity", value: "Up to 24 displays" },
+    { name: "Video Interfaces", value: "HDMI, DVI, VGA, DP (depends on modules)" },
+    { name: "Control Interface", value: "Web UI, RS232, TCP/IP" },
+    { name: "Power Supply", value: "Redundant AC 100~240V" },
+    { name: "Operating Temperature", value: "0°C ~ +50°C" },
+    { name: "Dimensions", value: "482.6mm × 132mm × 450mm" },
+    { name: "Weight", value: "Approx. 9kg" }
+  ],
+  applications: [
+    {
+      name: "Surveillance Rooms",
+      description: "Manage and display multiple camera feeds in real time",
+      iconPath: "M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"
+    },
+    {
+      name: "Digital Signage",
+      description: "Effortlessly manage dynamic content across large video walls",
+      iconPath: "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+    },
+    {
+      name: "Control Centers",
+      description: "Reliable display solution for mission-critical operations",
+      iconPath: "M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+    }
+  ],
+  rating: "4.7",
+  reviewCount: "18",
+  ratingDistribution: [
+    { stars: 5, percentage: 80 },
+    { stars: 4, percentage: 15 },
+    { stars: 3, percentage: 5 },
+    { stars: 2, percentage: 0 },
+    { stars: 1, percentage: 0 }
+  ],
+  reviews: [
+    { 
+      name: "Elena Martinez",
+      date: "May 3, 2024",
+      rating: 5,
+      review: "We’ve used the DMC9000-3U for our digital signage setup across multiple retail stores — works flawlessly and handles transitions smoothly. Great support from the team as well."
+    },
+    { 
+      name: "Nikhil Arora",
+      date: "March 21, 2024",
+      rating: 4,
+      review: "Powerful and scalable controller. Took some time to configure custom I/O but once done, it’s been very stable. Definitely worth the investment for large setups."
+    },
+    { 
+      name: "Linda Zhao",
+      date: "January 12, 2024",
+      rating: 5,
+      review: "This unit handles all our security feeds with ease. Very easy to expand and maintain. Highly recommended for critical surveillance environments."
+    }
+  ],
+  relatedProducts: [
+    {
+      name: "DMC9000-2U-V3",
+      description: "Compact 2U controller for medium-sized video wall deployments",
+      image: "/Wall Controller/DMC9000-2U-V3.png",
+      slug: "dmc9000-2u-v3",
+      features: ["Modular Expansion", "Multi-Display", "High Stability"]
+    },
+   {
+      name: "KB-1100-E",
+      description: "Professional Network Keyboard for integrated video wall control",
+      image: "/Wall Controller/KB-1100-E.jpg",
+      slug: "kb-1100-e",
+      features: ["USB Interface", "LCD Display", "Customizable Keys"]
+    },
+  ]
+},
+
+{
     slug: "kb-2100",
     name: "KB-2100",
-    type: "Network Control Keyboard",
+    type: "",
     shortDescription: "Advanced Network Control Keyboard",
     keyFeature: "comprehensive control capabilities with multi-protocol support",
     primaryUse: "professional control rooms, command centers, and broadcast environments",
@@ -1201,7 +2497,7 @@ export const productData = [
     description: "The KB-2100 Network Control Keyboard delivers advanced control capabilities for demanding professional environments. Supporting multiple protocols and featuring a sophisticated control interface, this professional-grade keyboard enables operators to efficiently manage complex display systems and security equipment with precision and comfort.",
     extendedDescription: "The KB-2100 represents the pinnacle of Lovosis Display's control interface technology, designed for mission-critical environments where comprehensive functionality and reliability are essential. This advanced keyboard integrates sophisticated multi-protocol support with ergonomic design principles to create a control solution that enhances operator efficiency and reduces fatigue during extended operational periods. The premium-quality construction ensures dependable performance in 24/7 environments, while the intuitive layout and programmable features allow for customized workflows that optimize system control for specific operational requirements.",
     image: "/Wall Controller/KB-2100.jpg",
-    price: "Contact for Price",
+    price: "1000",
     category: "Products/wall-controller",
     categoryName: "Wall Controller",
     features: ["Advanced Control Interface", "Multiple Protocol Support", "Professional Grade Construction", "Customizable Functions", "Ergonomic Design"],
@@ -1285,143 +2581,254 @@ export const productData = [
         features: ["Advanced Control", "Multiple Display Management", "Professional Grade"]
       }
     ]
-  },
+},
 
-  {
-    slug: "video-wall-controller",
-    name: "Video Wall Controller",
-    type: "Wall Controller",
-    shortDescription: "Professional Video Wall Management System",
-    keyFeature: "comprehensive display management for creating seamless multi-screen installations",
-    primaryUse: "control rooms, digital signage networks, and corporate presentation environments",
-    secondaryFeature: "advanced window management with flexible content positioning",
-    description: "The Lovosis Video Wall Controller provides professional-grade management for LED and LCD video wall systems. With seamless splicing capabilities, flexible window roaming, and Picture-in-Picture functionality, this controller delivers the sophisticated display management needed for mission-critical environments, high-impact digital signage, and corporate presentation systems.",
-    extendedDescription: "The Lovosis Video Wall Controller represents an integrated approach to complex multi-display management, combining powerful hardware with intuitive control software. This professional solution enables pixel-perfect alignment across multiple screens, creating a unified canvas for critical information display. The system's advanced window management allows operators to freely position, scale, and layer content from numerous sources, optimizing situational awareness in command centers or creating dynamic visual experiences for commercial applications. The controller architecture supports redundancy options for mission-critical installations, ensuring continuous operation in environments where display reliability directly impacts operational effectiveness.",
-    image: "/Wall Controller/video-wall.jpg",
-    price: "Contact for Price",
-    category: "Products/wall-controller",
-    categoryName: "Wall Controller",
-    features: ["Seamless Screen Splicing", "Flexible Window Roaming", "Multi-Window Support", "Picture-in-Picture", "Advanced Layout Management"],
-    highlights: [
-      "Excellent splicing performance for continuous display surfaces",
-      "Dynamic window management across multiple screens",
-      "Intuitive multi-window support for various content sources",
-      "Advanced Picture-in-Picture functionality with customizable positioning",
-      "Preset layouts for quick configuration changes",
-      "Comprehensive control options including network and dedicated keyboards"
-    ],
-    specifications: [
-      { name: "Model", value: "Professional Video Wall Controller" },
-      { name: "Input Support", value: "HDMI, DVI, DP, SDI, IP streams" },
-      { name: "Output Support", value: "HDMI, DVI, DP" },
-      { name: "Max Resolution", value: "4K per output" },
-      { name: "Control Interface", value: "Network, RS232, dedicated keyboard" },
-      { name: "Chassis", value: "Industrial-grade rackmount" },
-      { name: "Power Supply", value: "AC 100-240V, 50/60Hz" },
-      { name: "Operating Temperature", value: "0°C ~ +50°C" }
-    ],
-    applications: [
-      {
-        name: "Control Rooms",
-        description: "Mission-critical information display for monitoring centers",
-        iconPath: "M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-      },
-      {
-        name: "Digital Signage",
-        description: "Dynamic multi-screen advertising and information displays",
-        iconPath: "M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
-      },
-      {
-        name: "Corporate Facilities",
-        description: "Professional presentation systems for executive environments",
-        iconPath: "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
-      }
-    ],
-    rating: "4.8",
-    reviewCount: "45",
-    ratingDistribution: [
-      { stars: 5, percentage: 85 },
-      { stars: 4, percentage: 15 },
-      { stars: 3, percentage: 0 },
-      { stars: 2, percentage: 0 },
-      { stars: 1, percentage: 0 }
-    ],
-    reviews: [
-      { 
-        name: "David Chen",
-        date: "March 15, 2024",
-        rating: 5,
-        review: "The Lovosis Video Wall Controller has transformed our control room operations. The system handles multiple 4K inputs flawlessly with virtually no latency, and the interface is remarkably intuitive. The window roaming feature is particularly valuable for our analysts who need to dynamically arrange information across our 3x3 video wall. We've been running it 24/7 for six months with complete reliability."
-      },
-      { 
-        name: "Lisa Martinez",
-        date: "February 8, 2024",
-        rating: 5,
-        review: "As the digital experience manager for a high-end retail brand, I needed a solution that could drive our multi-screen product showcase walls with pixel-perfect quality. The Lovosis controller delivers exceptional image quality across our displays, and the preset layout capability lets our staff quickly change configurations for different promotional events. The Picture-in-Picture functionality has been especially useful for highlighting featured products alongside lifestyle content."
-      },
-      { 
-        name: "Robert Johnson",
-        date: "January 22, 2024",
-        rating: 4,
-        review: "Our emergency management facility relies on this video wall controller for situational awareness during critical incidents. The system's ability to display numerous data sources simultaneously while maintaining visual clarity is impressive. The window management is flexible enough for our dynamic needs, and the hardware has proven reliable during extended operation. The only reason for 4 stars instead of 5 is that the configuration software has a learning curve, though the manufacturer provided excellent training support."
-      }
-    ],
-    relatedProducts: [
-      {
-        name: "ADU Series",
-        description: "High-definition video decoder with 4K resolution support for professional applications",
-        image: "/Wall Controller/img5.webp",
-        slug: "adu-series",
-        features: ["4K Decoding", "Multiple Protocols", "Low Latency"]
-      },
-      {
-        name: "KB-2100",
-        description: "Advanced network control keyboard for comprehensive video wall system management",
-        image: "/Wall Controller/KB-2100.jpg",
-        slug: "kb-2100",
-        features: ["Advanced Control", "Multiple Protocols", "Professional Grade"]
-      }
-    ]
-  },
+{
+  slug: "kb-1100-e",
+  name: "KB-1100-E",
+  type: "",
+  shortDescription: "Professional Network Control Keyboard",
+  keyFeature: "USB interface and LCD display for intuitive control",
+  primaryUse: "Security control rooms, AV installations, and monitoring stations",
+  secondaryFeature: "Ergonomic design with responsive controls",
+  description: "The KB-1100-E is a professional network control keyboard that combines ease of use, robust connectivity, and intuitive interface. Designed for security operations and AV system control, it delivers high-performance results with minimal operator fatigue.",
+  extendedDescription: "The KB-1100-E brings reliable control functionality to professional environments. Featuring a USB interface and integrated LCD display, it supports streamlined operations and simple system integration. Its ergonomic design ensures comfort during extended usage, while the responsive keypad and precise control stick allow for seamless device management. Ideal for facilities requiring durable and user-friendly control solutions.",
+  image: "/Wall Controller/KB-1100-E.jpg",
+  price: "1000",
+  category: "Products/wall-controller",
+  categoryName: "Wall Controller",
+  features: [
+    "USB Interface",
+    "LCD Display",
+    "Ergonomic Design",
+    "Responsive Control Keys",
+    "Durable Build Quality"
+  ],
+  highlights: [
+    "Professional-grade network keyboard with responsive joystick",
+    "Integrated LCD screen for real-time status and control feedback",
+    "Plug-and-play USB connectivity",
+    "Designed for use in 24/7 operations",
+    "Compact, ergonomic layout ideal for desktops or rack consoles"
+  ],
+  specifications: [
+    { name: "Model", value: "KB-1100-E" },
+    { name: "Interface", value: "USB, RS485" },
+    { name: "Display", value: "LCD Display" },
+    { name: "Controls", value: "Joystick, Keypad" },
+    { name: "Power Supply", value: "DC 12V" },
+    { name: "Dimensions", value: "380mm × 160mm × 90mm" },
+    { name: "Weight", value: "1.4kg" },
+    { name: "Operating Temperature", value: "-10°C ~ +50°C" }
+  ],
+  applications: [
+    {
+      name: "Security Operations",
+      description: "Reliable PTZ camera control and monitoring",
+      iconPath: "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+    },
+    {
+      name: "Broadcast Studios",
+      description: "Precise camera switching and scene control",
+      iconPath: "M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"
+    },
+    {
+      name: "Control Centers",
+      description: "Centralized control of AV or security systems",
+      iconPath: "M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z"
+    }
+  ],
+  rating: "4.7",
+  reviewCount: "17",
+  ratingDistribution: [
+    { stars: 5, percentage: 80 },
+    { stars: 4, percentage: 20 },
+    { stars: 3, percentage: 0 },
+    { stars: 2, percentage: 0 },
+    { stars: 1, percentage: 0 }
+  ],
+  reviews: [
+    {
+      name: "Olivia Grant",
+      date: "February 12, 2024",
+      rating: 5,
+      review: "The KB-1100-E has been a great addition to our monitoring station. The LCD provides quick visual feedback, and the joystick is precise. Setup was easy with USB plug-and-play."
+    },
+    {
+      name: "David Park",
+      date: "January 4, 2024",
+      rating: 5,
+      review: "We use the KB-1100-E in our mid-size control room. It’s responsive, ergonomic, and integrates well with our system. Highly recommend for budget-conscious installations."
+    },
+    {
+      name: "Arjun Mehta",
+      date: "November 18, 2023",
+      rating: 4,
+      review: "Solid build and reliable operation. The display is helpful. It would be nice to have backlit keys, but overall, it's an excellent keyboard for the price."
+    }
+  ],
+  relatedProducts: [
+    {
+      name: "KB-2100",
+      description: "Advanced keyboard with multi-protocol support for broadcast and control room applications",
+      image: "/Wall Controller/KB-2100.jpg",
+      slug: "kb-2100",
+      features: ["Multi-Protocol", "Color LCD", "Precision Joystick"]
+    },
+    {
+      name: "Video Wall Controller",
+      description: "High-performance control system for multi-display environments",
+      image: "/Wall Controller/video-wall.jpg",
+      slug: "video-wall-controller",
+      features: ["Scalable Display Output", "Signal Switching", "Real-time Management"]
+    }
+  ]
+},
+
+{
+  "id": "dc5504-e-v2",
+  "name": "DC5504-E-V2",
+  "slug": "dc5504-e-v2",
+  "type": "Decoder and Controller Unit",
+  "shortDescription": "High-performance video decoder and controller for seamless real-time display",
+  "keyFeature": "Supports up to 4K video decoding with ultra-low latency",
+  "primaryUse": "security surveillance, control centers, transportation hubs, and public displays",
+  "secondaryFeature": "Compact design with fanless operation and versatile mounting options",
+  "description": "The DC5504-E-V2 is an advanced video decoder and controller engineered to deliver superior video streaming and display management. Supporting ultra-high-definition decoding and smooth playback, it is perfect for mission-critical video wall and surveillance applications.",
+  "extendedDescription": "Designed for professional video operations, the DC5504-E-V2 supports H.264/H.265 decoding, HDMI output up to 4K, and integrates with IP cameras and video management systems. With industrial-grade reliability and flexible deployment, it ensures 24/7 operation in demanding environments.",
+  "image": "/Wall Controller/DC5510-E-V2.png",
+  "price": "Contact for Price",
+  "category": "Products/wall-controller",
+  "categoryName": "Wall Controllers",
+  "features": [
+    "Supports H.265/H.264 decoding",
+    "4K HDMI Output",
+    "Low Latency Streaming",
+    "Fanless Industrial Design",
+    "Multiple Stream Decoding",
+    "VESA & Rack Mount Options"
+  ],
+  "highlights": [
+    "Decodes multiple IP streams simultaneously",
+    "Compact form factor for flexible installation",
+    "Integrated with major video management software (VMS)",
+    "High-reliability design for 24/7 use",
+    "Supports ONVIF-compatible IP cameras"
+  ],
+  "specifications": [
+    { "name": "Video Output", "value": "1x HDMI (up to 4K)" },
+    { "name": "Decoding Format", "value": "H.264, H.265" },
+    { "name": "Network", "value": "1x RJ45 Ethernet, 10/100/1000 Mbps" },
+    { "name": "Control", "value": "Web Interface, RS232" },
+    { "name": "Power Input", "value": "DC 12V/2A" },
+    { "name": "Mounting", "value": "Wall, Desktop, VESA, Rack" },
+    { "name": "Dimensions", "value": "145mm x 100mm x 30mm" },
+    { "name": "Operating Temp", "value": "0°C to 50°C" }
+  ],
+  "applications": [
+    {
+      "name": "Surveillance Centers",
+      "description": "Decode and display IP camera feeds for live monitoring",
+      "iconPath": "M5 3h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2z"
+    },
+    {
+      "name": "Transportation Hubs",
+      "description": "Real-time video monitoring of transit systems and passenger flows",
+      "iconPath": "M3 5h18v14H3V5z"
+    },
+    {
+      "name": "Public Display Systems",
+      "description": "Stream high-quality video content to digital signage screens",
+      "iconPath": "M4 6h16v12H4V6z"
+    }
+  ],
+  "rating": "4.7",
+  "reviewCount": "12",
+  "ratingDistribution": [
+    { "stars": 5, "percentage": 75 },
+    { "stars": 4, "percentage": 25 },
+    { "stars": 3, "percentage": 0 },
+    { "stars": 2, "percentage": 0 },
+    { "stars": 1, "percentage": 0 }
+  ],
+  "reviews": [
+    {
+      "name": "Amit Khanna",
+      "date": "March 12, 2024",
+      "rating": 5,
+      "review": "Excellent performance for decoding multiple camera streams. Very compact and reliable."
+    },
+    {
+      "name": "Jessica Thomas",
+      "date": "April 1, 2024",
+      "rating": 4,
+      "review": "Works as expected. Setup was smooth, and the fanless design is great for noise-free rooms."
+    }
+  ],
+  "relatedProducts": [
+    {
+      name: "DMC9000-2U-V3",
+      description: "Compact 2U controller for medium-sized video wall deployments",
+      image: "/Wall Controller/DMC9000-2U-V3.png",
+      slug: "dmc9000-2u-v3",
+      features: ["Modular Expansion", "Multi-Display", "High Stability"]
+    },
+    {
+      "name": "KB-2100",
+      "description": "Professional Network Keyboard with multi-protocol compatibility and joystick control",
+      "image": "/Wall Controller/KB-2100.jpg",
+      "slug": "kb-2100",
+      "features": ["3-axis Joystick", "LCD Display", "Multi-Device Support"]
+    },
+  ]
+},
+
+
 
 // Monitor Video  total 19 products
 
 // CCTV Monitors
 
-  {
+{
     slug: "mw3224-v",
     name: "MW3224-V",
-    type: "CCTV Monitor",
+    type: "",
     shortDescription: "24\" LED FHD Monitor",
-    keyFeature: "professional-grade 24-inch FHD display for surveillance applications",
-    primaryUse: "security control rooms, monitoring centers, and surveillance installations",
-    secondaryFeature: "24/7 reliability with multiple input options",
-    description: "The MW3224-V is a professional 24-inch LED Full HD monitor designed specifically for CCTV and security applications. Featuring crisp 1080p resolution, multiple video inputs, and a durable design built for continuous operation, this monitor delivers reliable performance for surveillance environments where image clarity and operational dependability are essential.",
-    extendedDescription: "The MW3224-V represents the perfect balance of performance and value for security monitoring applications. This 24-inch professional-grade monitor features Full HD 1920×1080 resolution that ensures clear visibility of security footage, with specialized display settings optimized for surveillance applications. The monitor's commercial-grade panel is engineered for 24/7 operation with enhanced durability and reliable performance in demanding environments, while multiple input options provide maximum compatibility with diverse security systems.",
-    image: "/Monitors/MW3224-V.webp",
-    price: "Contact for Price",
+    keyFeature: "The MW3224-V is a professional-grade 24-inch FHD display for surveillance applications, engineered for continuous 24/7 operation.",
+    primaryUse: "MW3224-V is ideal for security control rooms, monitoring centers, and surveillance installations.",
+    secondaryFeature: "The MW3224-V offers 24/7 reliability with multiple input options for maximum compatibility.",
+    description: "The MW3224-V is a professional 24-inch LED Full HD monitor designed specifically for CCTV and security applications. The MW3224-V features crisp 1080p resolution, multiple video inputs, and a durable design built for continuous operation. The MW3224-V delivers reliable performance for surveillance environments where image clarity and operational dependability are essential.",
+    extendedDescription: "The MW3224-V represents the perfect balance of performance and value for security monitoring applications. This 24-inch professional-grade monitor features Full HD 1920×1080 resolution that ensures clear visibility of security footage, with specialized display settings optimized for surveillance applications. The MW3224-V's commercial-grade panel is engineered for 24/7 operation with enhanced durability and reliable performance in demanding environments, while multiple input options provide maximum compatibility with diverse security systems.",
+    image: "/Monitors/MW3224-V.jpg",
+    price: "1000",
     category: "Products/cctv-monitor",
     categoryName: "CCTV Monitor",
-    features: ["Full HD Resolution", "Multiple Video Inputs", "24/7 Operation", "Commercial Grade", "Security-Optimized Display"],
+    features: [
+      "MW3224-V Full HD Resolution",
+      "MW3224-V Multiple Video Inputs",
+      "MW3224-V 24/7 Operation",
+      "MW3224-V Commercial Grade",
+      "MW3224-V Security-Optimized Display"
+    ],
     highlights: [
-      "Full HD 1920×1080 resolution for clear security footage",
-      "Multiple inputs including HDMI, VGA, BNC for system compatibility",
-      "Engineered for continuous 24/7 operation",
-      "Security-optimized display settings",
-      "Durable metal housing for extended lifespan",
-      "VESA mount compatible for flexible installation"
+      "MW3224-V Full HD 1920×1080 resolution for clear security footage",
+      "MW3224-V Multiple inputs including HDMI, VGA, BNC for system compatibility",
+      "MW3224-V Engineered for continuous 24/7 operation",
+      "MW3224-V Security-optimized display settings",
+      "MW3224-V Durable metal housing for extended lifespan",
+      "MW3224-V VESA mount compatible for flexible installation"
     ],
     specifications: [
       { name: "Model", value: "MW3224-V" },
-      { name: "Screen Size", value: "24 inches" },
-      { name: "Panel Type", value: "LED" },
-      { name: "Resolution", value: "1920×1080 (Full HD)" },
-      { name: "Brightness", value: "300 cd/m²" },
-      { name: "Contrast Ratio", value: "1000:1" },
-      { name: "Response Time", value: "5ms" },
-      { name: "Viewing Angle", value: "178°/178°" },
-      { name: "Input Ports", value: "HDMI, VGA, BNC" },
-      { name: "VESA Mount", value: "100×100mm" }
+      { name: "Screen Size", value: "24 inches (MW3224-V)" },
+      { name: "Panel Type", value: "LED (MW3224-V)" },
+      { name: "Resolution", value: "1920×1080 (Full HD, MW3224-V)" },
+      { name: "Brightness", value: "300 cd/m² (MW3224-V)" },
+      { name: "Contrast Ratio", value: "1000:1 (MW3224-V)" },
+      { name: "Response Time", value: "5ms (MW3224-V)" },
+      { name: "Viewing Angle", value: "178°/178° (MW3224-V)" },
+      { name: "Input Ports", value: "HDMI, VGA, BNC (MW3224-V)" },
+      { name: "VESA Mount", value: "100×100mm (MW3224-V)" }
     ],
     applications: [
       {
@@ -1485,42 +2892,49 @@ export const productData = [
         features: ["FHD Resolution", "Security Features", "Durable Design"]
       }
     ]
-  },
+},
+// New products
 
-  {
+ {
     slug: "mw3243-f-v2",
     name: "MW3243-F-V2",
-    type: "CCTV Monitor",
-    shortDescription: "43\" 4K LED Monitor",
-    keyFeature: "ultra-high definition 43-inch 4K display for professional security monitoring",
-    primaryUse: "advanced security control centers, surveillance headquarters, and mission-critical monitoring",
-    secondaryFeature: "exceptional clarity with security-optimized display technology",
-    description: "The MW3243-F-V2 is a premium 43-inch 4K LED monitor designed for professional security and surveillance applications. Featuring ultra-high resolution, multiple input options, and commercial-grade build quality, this monitor delivers exceptional image detail for security installations where maximum visibility and clarity are required.",
-    extendedDescription: "The MW3243-F-V2 represents the pinnacle of surveillance monitoring technology, providing security professionals with unmatched visual information. The 43-inch display features 4K Ultra HD resolution that resolves the finest details in security footage, allowing operators to identify critical information with confidence. Engineered specifically for security applications, this professional-grade monitor includes specialized image processing that enhances surveillance footage, improving visibility in challenging lighting conditions and ensuring consistent performance in 24/7 operation environments.",
-    image: "/Monitors/MW3243-F-V2.jpg",
-    price: "Contact for Price",
+    type: "",
+    shortDescription: "43\" 4K LED Monitor - MW3243-F-V2",
+    keyFeature: "The MW3243-F-V2 is an ultra-high definition 43-inch 4K display for professional security monitoring. MW3243-F-V2 delivers unmatched clarity and detail for surveillance applications.",
+    primaryUse: "MW3243-F-V2 is designed for advanced security control centers, surveillance headquarters, and mission-critical monitoring environments.",
+    secondaryFeature: "MW3243-F-V2 provides exceptional clarity with security-optimized display technology and robust commercial-grade durability.",
+    description: "The MW3243-F-V2 is a premium 43-inch 4K LED monitor designed for professional security and surveillance applications. The MW3243-F-V2 features ultra-high resolution, multiple input options, and commercial-grade build quality. MW3243-F-V2 delivers exceptional image detail for security installations where maximum visibility and clarity are required. MW3243-F-V2 is the preferred choice for demanding surveillance environments.",
+    extendedDescription: "The MW3243-F-V2 represents the pinnacle of surveillance monitoring technology, providing security professionals with unmatched visual information. The MW3243-F-V2 43-inch display features 4K Ultra HD resolution that resolves the finest details in security footage, allowing operators to identify critical information with confidence. MW3243-F-V2 is engineered specifically for security applications, including specialized image processing that enhances surveillance footage, improving visibility in challenging lighting conditions and ensuring consistent performance in 24/7 operation environments. MW3243-F-V2 is built for reliability and clarity.",
+    image: "/Monitors/MW3255w.jpg",
+    price: "1000",
     category: "Products/cctv-monitor",
     categoryName: "CCTV Monitor",
-    features: ["4K UHD Resolution", "43-inch Display", "Security-Optimized Processing", "Multiple Professional Inputs", "Commercial-Grade Durability"],
+    features: [
+      "MW3243-F-V2 4K UHD Resolution",
+      "MW3243-F-V2 43-inch Display",
+      "MW3243-F-V2 Security-Optimized Processing",
+      "MW3243-F-V2 Multiple Professional Inputs",
+      "MW3243-F-V2 Commercial-Grade Durability"
+    ],
     highlights: [
-      "4K Ultra HD resolution for maximum detail visibility",
-      "Specialized image processing for security footage",
-      "Comprehensive input options including HDMI, DP, DVI, and BNC",
-      "Metal chassis construction for enhanced durability",
-      "Advanced heat management for 24/7 operation",
-      "Professional calibration options for security environments"
+      "MW3243-F-V2 4K Ultra HD resolution for maximum detail visibility",
+      "MW3243-F-V2 Specialized image processing for security footage",
+      "MW3243-F-V2 Comprehensive input options including HDMI, DP, DVI, and BNC",
+      "MW3243-F-V2 Metal chassis construction for enhanced durability",
+      "MW3243-F-V2 Advanced heat management for 24/7 operation",
+      "MW3243-F-V2 Professional calibration options for security environments"
     ],
     specifications: [
       { name: "Model", value: "MW3243-F-V2" },
-      { name: "Screen Size", value: "43 inches" },
-      { name: "Panel Type", value: "LED" },
-      { name: "Resolution", value: "3840×2160 (4K UHD)" },
-      { name: "Brightness", value: "400 cd/m²" },
-      { name: "Contrast Ratio", value: "1200:1" },
-      { name: "Response Time", value: "5ms" },
-      { name: "Viewing Angle", value: "178°/178°" },
-      { name: "Input Ports", value: "HDMI×2, DisplayPort, DVI, BNC×2" },
-      { name: "VESA Mount", value: "200×200mm" }
+      { name: "Screen Size", value: "43 inches (MW3243-F-V2)" },
+      { name: "Panel Type", value: "LED (MW3243-F-V2)" },
+      { name: "Resolution", value: "3840×2160 (4K UHD, MW3243-F-V2)" },
+      { name: "Brightness", value: "400 cd/m² (MW3243-F-V2)" },
+      { name: "Contrast Ratio", value: "1200:1 (MW3243-F-V2)" },
+      { name: "Response Time", value: "5ms (MW3243-F-V2)" },
+      { name: "Viewing Angle", value: "178°/178° (MW3243-F-V2)" },
+      { name: "Input Ports", value: "HDMI×2, DisplayPort, DVI, BNC×2 (MW3243-F-V2)" },
+      { name: "VESA Mount", value: "200×200mm (MW3243-F-V2)" }
     ],
     applications: [
       {
@@ -1584,42 +2998,49 @@ export const productData = [
         features: ["43-inch Display", "FHD Resolution", "Professional Grade"]
       }
     ]
-  },
+},
+// New products
 
   {
     slug: "mw3255-f-v2",
     name: "MW3255-F-V2",
-    type: "CCTV Monitor",
-    shortDescription: "55\" 4K LED Monitor",
-    keyFeature: "premium 55-inch 4K display for large-scale security monitoring",
-    primaryUse: "enterprise security centers, central monitoring facilities, and command headquarters",
-    secondaryFeature: "superior visual coverage with advanced security enhancement features",
-    description: "The MW3255-F-V2 is a large-format 55-inch 4K LED monitor engineered for professional security applications. With its expansive screen size and ultra-high definition resolution, this monitor provides security professionals with maximum visual information for effective surveillance and monitoring operations.",
-    extendedDescription: "The MW3255-F-V2 delivers an immersive monitoring experience with its impressive 55-inch display and 4K Ultra HD resolution. Purposely designed for professional security environments, this premium monitor allows operators to view multiple camera feeds simultaneously without sacrificing detail, or to focus on specific areas with exceptional clarity. The commercial-grade panel is optimized for security applications with specialized image processing that enhances surveillance footage, improving visibility and detail recognition even in challenging lighting conditions. Built for reliability in mission-critical installations, the robust construction and advanced thermal management ensure stable 24/7 performance in demanding security operations centers.",
-    image: "/Monitors/MW3255-F-V2.png",
-    price: "Contact for Price",
+    type: "",
+    shortDescription: "55\" 4K LED Monitor - MW3255-F-V2",
+    keyFeature: "The MW3255-F-V2 is a premium 55-inch 4K display for large-scale security monitoring. MW3255-F-V2 delivers superior visual coverage and advanced security enhancement features.",
+    primaryUse: "MW3255-F-V2 is ideal for enterprise security centers, central monitoring facilities, and command headquarters.",
+    secondaryFeature: "MW3255-F-V2 provides superior visual coverage with advanced security enhancement features and robust commercial-grade reliability.",
+    description: "The MW3255-F-V2 is a large-format 55-inch 4K LED monitor engineered for professional security applications. MW3255-F-V2 features an expansive screen size and ultra-high definition resolution, providing security professionals with maximum visual information for effective surveillance and monitoring operations.",
+    extendedDescription: "The MW3255-F-V2 delivers an immersive monitoring experience with its impressive 55-inch display and 4K Ultra HD resolution. MW3255-F-V2 is purposely designed for professional security environments, allowing operators to view multiple camera feeds simultaneously without sacrificing detail, or to focus on specific areas with exceptional clarity. The commercial-grade panel is optimized for security applications with specialized image processing that enhances surveillance footage, improving visibility and detail recognition even in challenging lighting conditions. Built for reliability in mission-critical installations, the robust construction and advanced thermal management ensure stable 24/7 performance in demanding security operations centers.",
+    image: "/Monitors/MW3224-V.webp",
+    price: "1000",
     category: "Products/cctv-monitor",
     categoryName: "CCTV Monitor",
-    features: ["55-inch Display", "4K UHD Resolution", "Security Enhancement Technology", "Multi-Input Capability", "Mission-Critical Reliability"],
+    features: [
+      "MW3255-F-V2 55-inch Display",
+      "MW3255-F-V2 4K UHD Resolution",
+      "MW3255-F-V2 Security Enhancement Technology",
+      "MW3255-F-V2 Multi-Input Capability",
+      "MW3255-F-V2 Mission-Critical Reliability"
+    ],
     highlights: [
-      "Expansive 55-inch display for comprehensive monitoring",
-      "4K Ultra HD resolution for maximum detail visibility",
-      "Security-optimized image processing",
-      "Metal chassis with advanced thermal management",
-      "Multiple professional inputs for system integration",
-      "Anti-glare coating for control room environments"
+      "MW3255-F-V2 expansive 55-inch display for comprehensive monitoring",
+      "MW3255-F-V2 4K Ultra HD resolution for maximum detail visibility",
+      "MW3255-F-V2 security-optimized image processing",
+      "MW3255-F-V2 metal chassis with advanced thermal management",
+      "MW3255-F-V2 multiple professional inputs for system integration",
+      "MW3255-F-V2 anti-glare coating for control room environments"
     ],
     specifications: [
       { name: "Model", value: "MW3255-F-V2" },
-      { name: "Screen Size", value: "55 inches" },
-      { name: "Panel Type", value: "LED" },
-      { name: "Resolution", value: "3840×2160 (4K UHD)" },
-      { name: "Brightness", value: "450 cd/m²" },
-      { name: "Contrast Ratio", value: "1200:1" },
-      { name: "Response Time", value: "8ms" },
-      { name: "Viewing Angle", value: "178°/178°" },
-      { name: "Input Ports", value: "HDMI×3, DisplayPort, DVI, BNC×2" },
-      { name: "VESA Mount", value: "400×400mm" }
+      { name: "Screen Size", value: "55 inches (MW3255-F-V2)" },
+      { name: "Panel Type", value: "LED (MW3255-F-V2)" },
+      { name: "Resolution", value: "3840×2160 (4K UHD, MW3255-F-V2)" },
+      { name: "Brightness", value: "450 cd/m² (MW3255-F-V2)" },
+      { name: "Contrast Ratio", value: "1200:1 (MW3255-F-V2)" },
+      { name: "Response Time", value: "8ms (MW3255-F-V2)" },
+      { name: "Viewing Angle", value: "178°/178° (MW3255-F-V2)" },
+      { name: "Input Ports", value: "HDMI×3, DisplayPort, DVI, BNC×2 (MW3255-F-V2)" },
+      { name: "VESA Mount", value: "400×400mm (MW3255-F-V2)" }
     ],
     applications: [
       {
@@ -1684,22 +3105,28 @@ export const productData = [
       }
     ]
   },
-
-  {
+// New products
+ {
     slug: "mw3222-v-dt",
     name: "MW3222-V-DT",
-    type: "CCTV Monitor",
-    shortDescription: "LED FHD Monitor",
+    type: "",
+    shortDescription: "21.5\" LED FHD Security Monitor - MW3222-V-DT",
     keyFeature: "compact security monitor with desktop-optimized design",
     primaryUse: "security desk stations, reception monitoring, and small surveillance installations",
     secondaryFeature: "space-efficient design with professional monitoring capabilities",
-    description: "The MW3222-V-DT is a compact yet powerful LED FHD monitor designed specifically for desktop security monitoring applications. Featuring a space-efficient design with professional-grade display quality, this monitor delivers reliable performance for security environments where desk space is limited but visual clarity remains essential.",
-    extendedDescription: "The MW3222-V-DT combines compact efficiency with professional surveillance capabilities, making it ideal for security desk stations and small monitoring installations. This specialized security monitor features a Full HD display that ensures clear visibility of surveillance footage, while its desktop-optimized design includes an integrated stand with adjustable viewing angles for operator comfort. Despite its compact footprint, the monitor delivers the essential professional features required for security environments, including multiple input options for system compatibility and specialized display settings that enhance surveillance footage visibility.",
+    description: "The MW3222-V-DT is a 21.5-inch Full HD security monitor designed for professional surveillance and monitoring environments. This compact monitor is ideal for security desks, reception areas, and small business installations where space is limited but reliable, high-quality video monitoring is essential. With its desktop-optimized design, integrated adjustable stand, and multiple input options, the MW3222-V-DT delivers clear, detailed surveillance footage and seamless compatibility with modern security systems.",
+    extendedDescription: "The MW3222-V-DT 21.5-inch FHD security monitor combines space-saving efficiency with professional-grade performance, making it the perfect choice for security desk stations, reception monitoring, and small surveillance installations. Its Full HD 1920×1080 resolution ensures sharp, detailed video for accurate monitoring, while the integrated stand offers flexible viewing angles for operator comfort. The MW3222-V-DT features HDMI, VGA, and BNC inputs for broad compatibility with legacy and modern security equipment. Built for commercial use, this monitor provides security-optimized display settings, robust durability, and a compact footprint, making it a reliable solution for any professional surveillance setup.",
     image: "/Monitors/MW3222-V-DT.jpg",
-    price: "Contact for Price",
+    price: "1000",
     category: "Products/cctv-monitor",
     categoryName: "CCTV Monitor",
-    features: ["Desktop-Optimized Design", "FHD Resolution", "Integrated Stand", "Security-Enhanced Display", "Multiple Inputs"],
+    features: [
+      "21.5-inch Full HD Display",
+      "Desktop-Optimized Compact Design",
+      "Integrated Adjustable Stand",
+      "Security-Enhanced Display Settings",
+      "Multiple Inputs: HDMI, VGA, BNC"
+    ],
     highlights: [
       "Space-efficient design for security desks and workstations",
       "Full HD 1920×1080 resolution for clear surveillance footage",
@@ -1783,19 +3210,19 @@ export const productData = [
       }
     ]
   },
-
+// New Products
   {
     slug: "mw3232-v-k2",
     name: "MW3232-V-K2",
-    type: "CCTV Monitor",
+    type: "",
     shortDescription: "32\" Plastic Case LCD Monitor",
     keyFeature: "cost-effective 32-inch professional security monitor",
     primaryUse: "budget-conscious security installations, retail surveillance, and small business monitoring",
     secondaryFeature: "lightweight design with professional monitoring capabilities",
-    description: "The MW3232-V-K2 is a value-oriented 32-inch security monitor featuring a durable plastic casing and professional display capabilities. Designed to meet the needs of budget-conscious security installations without compromising on essential monitoring features, this LCD monitor delivers reliable performance for surveillance applications.",
-    extendedDescription: "The MW3232-V-K2 provides an effective balance between performance and affordability for security monitoring applications. This 32-inch professional monitor features a lightweight yet durable plastic housing that reduces both cost and weight while maintaining necessary durability for commercial environments. The display offers Full HD resolution for clear surveillance footage visualization, along with security-optimized color and contrast settings that enhance the visibility of important details in security camera feeds. With multiple input options and commercial reliability, the MW3232-V-K2 is an ideal solution for security installations with budget considerations that still require professional monitoring capabilities.",
+    description: "The MW3232-V-K2 is a 32-inch Full HD security monitor designed for cost-effective surveillance and monitoring in commercial environments. Featuring a lightweight plastic housing, this professional LCD monitor delivers reliable performance and clear video for security camera feeds. With multiple input options including HDMI, VGA, and BNC, the MW3232-V-K2 is ideal for budget-conscious security installations, retail surveillance, and small business monitoring. Its space-saving design, VESA mount compatibility, and security-optimized display settings make it a practical choice for multi-unit installations and environments where affordability and professional features are essential.",
+    extendedDescription: "The MW3232-V-K2 offers a perfect balance of affordability and professional-grade performance for security monitoring. Its 32-inch Full HD display ensures clear visualization of surveillance footage, while the high-impact plastic housing reduces both weight and cost without sacrificing durability. The monitor supports multiple input types for flexible system integration and features security-optimized color and contrast settings to enhance important details in camera feeds. Designed for commercial reliability, the MW3232-V-K2 is VESA mount compatible for flexible installation and is an excellent solution for small businesses, retail stores, and multi-monitor security setups that require dependable performance at a competitive price.",
     image: "/Monitors/MW3232-V-K2.png",
-    price: "Contact for Price",
+    price: "1000",
     category: "Products/cctv-monitor",
     categoryName: "CCTV Monitor",
     features: ["32-inch Display", "Lightweight Plastic Housing", "Full HD Resolution", "Multiple Security Inputs", "Cost-Effective Design"],
@@ -1883,22 +3310,28 @@ export const productData = [
       }
     ]
   },
-
+// New products
   {
     slug: "mw3232-e",
     name: "MW3232-E",
-    type: "CCTV Monitor",
+    type: "",
     shortDescription: "32\" LED FHD Monitor",
     keyFeature: "professional-grade 32-inch security monitor with premium build quality",
     primaryUse: "commercial security installations, professional monitoring centers, and mid-sized control rooms",
     secondaryFeature: "enhanced durability with superior image processing for security applications",
-    description: "The MW3232-E is a premium 32-inch LED FHD monitor specifically engineered for professional security and surveillance applications. Featuring superior build quality, advanced image processing, and specialized security features, this monitor delivers reliable performance for demanding commercial security environments.",
-    extendedDescription: "The MW3232-E represents Lovosis Display's commitment to professional security monitoring solutions. This 32-inch monitor features a robust metal housing that enhances durability and heat dissipation for reliable 24/7 operation in commercial security environments. The professional-grade LED panel delivers Full HD resolution with specialized security image processing that optimizes surveillance footage visibility, enhancing details in both bright and dark areas. With comprehensive input options and commercial-grade components throughout, the MW3232-E is designed for security professionals who require dependable performance and superior image quality for critical monitoring applications.",
+    description: "The MW3232-E is a 32-inch LED Full HD monitor engineered for advanced security and surveillance environments. With a robust metal housing and commercial-grade components, this monitor is built for 24/7 operation and delivers sharp, clear video for critical monitoring. Its specialized image processing enhances visibility in both bright and low-light conditions, making it ideal for professional security control rooms and demanding commercial installations. Multiple input options ensure seamless integration with modern and legacy security systems.",
+    extendedDescription: "The MW3232-E is designed for security professionals who require reliable, high-performance monitoring. Its 32-inch Full HD LED panel provides crisp, detailed images, while the metal chassis ensures durability and effective heat dissipation for continuous use. Advanced security image processing optimizes surveillance footage, improving detail recognition and clarity. With comprehensive connectivity, anti-burn protection, and a design focused on operational reliability, the MW3232-E is the preferred choice for commercial security centers and 24/7 monitoring applications.",
     image: "/Monitors/MW3232-E.jpg",
-    price: "Contact for Price",
+    price: "1000",
     category: "Products/cctv-monitor",
     categoryName: "CCTV Monitor",
-    features: ["Professional Metal Housing", "Enhanced Security Processing", "FHD Resolution", "Commercial-Grade Components", "24/7 Reliability"],
+    features: [
+      "32-inch Full HD LED Display",
+      "Robust Metal Housing for 24/7 Use",
+      "Advanced Security Image Processing",
+      "Multiple Inputs: HDMI, VGA, BNC, Audio",
+      "Anti-Burn Protection for Static Displays"
+    ],
     highlights: [
       "Premium 32-inch display with professional build quality",
       "Robust metal housing for enhanced durability and heat dissipation",
@@ -1983,22 +3416,28 @@ export const productData = [
       }
     ]
   },
-
-  {
+// New products
+ {
     slug: "mw3243-e",
     name: "MW3243-E",
-    type: "CCTV Monitor",
+    type: "",
     shortDescription: "43\" LED FHD Monitor",
     keyFeature: "large-format 43-inch professional security monitor with enhanced build quality",
     primaryUse: "mid to large security control rooms, professional monitoring centers, and commercial surveillance operations",
     secondaryFeature: "superior viewing experience with advanced security image optimization",
-    description: "The MW3243-E is a premium 43-inch LED FHD monitor designed specifically for professional security applications that require a larger display area without compromising on image quality or reliability. With its commercial-grade construction and specialized security features, this monitor delivers exceptional performance in demanding surveillance environments.",
+    description: "The MW3243-E is a 43-inch LED Full HD monitor engineered for professional security and surveillance environments. Built with a robust metal chassis and commercial-grade components, this monitor is designed for 24/7 operation and delivers sharp, clear video for critical monitoring. Specialized image processing enhances visibility in both bright and low-light conditions, making it ideal for control rooms and demanding commercial installations. Multiple input options ensure seamless integration with modern and legacy security systems.",
     extendedDescription: "The MW3243-E combines generous screen size with professional security monitoring capabilities to provide an ideal solution for control rooms and monitoring centers. This 43-inch display features a robust metal construction that ensures durability in commercial environments, with advanced thermal management for reliable 24/7 operation. The professional-grade panel delivers Full HD resolution with specialized image processing that enhances surveillance footage, optimizing visibility of critical details in security applications. With comprehensive input options and commercial-grade components throughout, the MW3243-E provides security professionals with the viewing area and image quality needed for effective monitoring operations.",
-    image: "/Monitors/MW3243-E.png",
-    price: "Contact for Price",
+    image: "/Monitors/MW3243-F-V2.jpg",
+    price: "1000",
     category: "Products/cctv-monitor",
     categoryName: "CCTV Monitor",
-    features: ["43-inch Professional Display", "Metal Construction", "Security Image Enhancement", "Multiple Professional Inputs", "Commercial-Grade Reliability"],
+    features: [
+      "43-inch Full HD LED Display",
+      "Durable Metal Housing for 24/7 Use",
+      "Advanced Security Image Processing",
+      "Multiple Inputs: HDMI, VGA, BNC, Audio",
+      "Anti-Burn Protection for Static Displays"
+    ],
     highlights: [
       "Large 43-inch display for comprehensive security monitoring",
       "Durable metal housing with advanced thermal management",
@@ -2089,7 +3528,7 @@ export const productData = [
   {
     slug: "mw-lc24",
     name: "MW-LC24",
-    type: "IT Monitor",
+    type: "",
     shortDescription: "24\" IT Monitor",
     keyFeature: "versatile 24-inch display for office and home computing environments",
     primaryUse: "business workstations, office environments, and professional applications",
@@ -2097,7 +3536,7 @@ export const productData = [
     description: "The MW-LC24 is a versatile 24-inch IT monitor designed for professional office environments and home workstations. Featuring Full HD resolution, eye care technology, and ergonomic adjustability, this monitor delivers excellent visual performance and comfort for daily computing tasks.",
     extendedDescription: "The MW-LC24 provides an optimal balance of screen size, visual quality, and ergonomics for business and professional computing environments. This 24-inch display features a Full HD IPS panel that delivers accurate colors and wide viewing angles, ensuring consistent visual performance for office applications, document processing, and light creative work. Designed with user comfort in mind, the monitor includes eye care technology that reduces blue light emission and eliminates flicker, along with an ergonomic stand that allows height, tilt, and pivot adjustments to achieve the perfect viewing position. With multiple connectivity options and a professional aesthetic, the MW-LC24 is an excellent choice for office deployments and professional home workspaces.",
     image: "/Monitors/MW-LC24.jpg",
-    price: "Contact for Price",
+    price: "1000",
     category: "Products/it-monitor",
     categoryName: "IT Monitor",
     features: ["24-inch IPS Display", "Full HD Resolution", "Eye Care Technology", "Ergonomic Stand", "Multiple Connectivity"],
@@ -2188,7 +3627,7 @@ export const productData = [
   {
     slug: "mw-lc22",
     name: "MW-LC22",
-    type: "IT Monitor",
+    type: "",
     shortDescription: "22\" Plastic Shell IT Monitor",
     keyFeature: "compact 22-inch monitor optimized for space-constrained workspaces",
     primaryUse: "small office environments, reception areas, and space-limited workstations",
@@ -2196,7 +3635,7 @@ export const productData = [
     description: "The MW-LC22 is a space-efficient 22-inch IT monitor with a lightweight plastic shell design. Offering Full HD resolution and essential features for business computing, this monitor provides reliable performance for office tasks in a compact form factor that's ideal for space-constrained environments.",
     extendedDescription: "The MW-LC22 delivers effective visual performance for business computing in a compact, space-efficient design. This 22-inch monitor features a Full HD display that provides clear text and detailed graphics for office applications, while its lightweight plastic housing reduces both cost and desk footprint. Designed for practical business use, the monitor includes essential eye care features like flicker-free technology and a blue light filter to maintain user comfort during extended work sessions. With standard connectivity options and a clean, professional aesthetic, the MW-LC22 is an efficient solution for organizations looking to equip space-constrained workspaces with reliable monitors that deliver good performance for everyday business tasks.",
     image: "/Monitors/MW-LC22.png",
-    price: "Contact for Price",
+    price: "1000",
     category: "Products/it-monitor",
     categoryName: "IT Monitor",
     features: ["22-inch Display", "Space-Efficient Design", "Full HD Resolution", "Lightweight Construction", "Business-Essential Features"],
@@ -2288,7 +3727,7 @@ export const productData = [
   {
     slug: "mw-lc22-e",
     name: "MW-LC22-E",
-    type: "IT Monitor",
+    type: "",
     shortDescription: "22\" IT Monitor",
     keyFeature: "enhanced 22-inch display with improved ergonomics and functionality",
     primaryUse: "professional workspaces, small office environments, and productivity-focused setups",
@@ -2296,7 +3735,7 @@ export const productData = [
     description: "The MW-LC22-E is a professional 22-inch IT monitor featuring enhanced ergonomics and visual performance. With its Full HD display, improved eye-care technology, and adjustable stand, this monitor delivers superior comfort and clarity for daily business computing tasks in space-conscious professional environments.",
     extendedDescription: "The MW-LC22-E represents an ergonomic upgrade to the standard MW-LC22 model, delivering enhanced functionality in the same compact footprint. This 22-inch professional monitor maintains the space-efficient design while adding improved visual performance and user comfort features. The Full HD display provides crisp, detailed imagery for business applications, while the enhanced eye-care technology reduces eye strain during extended work sessions. The ergonomically designed stand offers tilt, swivel, and height adjustment capabilities that allow users to achieve optimal viewing positions, improving workplace comfort and productivity. With its combination of compact size and professional-grade features, the MW-LC22-E is an ideal solution for space-conscious workspaces that don't want to compromise on performance or user comfort.",
     image: "/Monitors/MW-LC22-E.jpg",
-    price: "Contact for Price",
+    price: "1000",
     category: "Products/it-monitor",
     categoryName: "IT Monitor",
     features: ["22-inch Display", "Enhanced Ergonomics", "Full HD Resolution", "Advanced Eye Care", "Improved Stand Design"],
@@ -2387,7 +3826,7 @@ export const productData = [
   {
     slug: "mw-lc24-e",
     name: "MW-LC24-E",
-    type: "IT Monitor",
+    type: "",
     shortDescription: "24\" IT Monitor",
     keyFeature: "enhanced 24-inch professional display with superior ergonomics",
     primaryUse: "business workstations, creative professionals, and productivity-focused environments",
@@ -2395,7 +3834,7 @@ export const productData = [
     description: "The MW-LC24-E is an enhanced 24-inch IT monitor designed for professional environments demanding both visual performance and ergonomic comfort. Featuring a premium IPS panel, advanced eye care technology, and a fully adjustable stand, this monitor delivers exceptional image quality while supporting user wellbeing during extended work periods.",
     extendedDescription: "The MW-LC24-E builds upon the foundation of the standard MW-LC24 with significant enhancements to both visual performance and ergonomic comfort. This professional 24-inch monitor features an advanced IPS panel that delivers superior color accuracy and consistency, making it suitable for both standard office applications and color-critical creative work. The enhanced eye care technology includes advanced blue light filtering and flicker elimination that protect users during extended work sessions. Where this model truly excels is in its ergonomic design, featuring a premium stand with comprehensive height, tilt, swivel, and pivot adjustments that allow users to create the perfect viewing position for maximum comfort and productivity. With enhanced connectivity options and a refined professional aesthetic, the MW-LC24-E represents an ideal choice for businesses and professionals who prioritize both performance and staff wellbeing.",
     image: "/Monitors/MW-LC24-E.jpg",
-    price: "Contact for Price",
+    price: "1000",
     category: "Products/it-monitor",
     categoryName: "IT Monitor",
     features: ["24-inch Enhanced IPS Display", "Advanced Eye Care Technology", "Premium Ergonomic Stand", "Superior Color Performance", "Enhanced Connectivity"],
@@ -2486,7 +3925,7 @@ export const productData = [
   {
     slug: "mw-lc27-b",
     name: "MW-LC27-B",
-    type: "IT Monitor",
+    type: "",
     shortDescription: "27\" IT Monitor",
     keyFeature: "professional 27-inch display with wide viewing area",
     primaryUse: "enhanced workspace visibility, data-intensive applications, and professional environments",
@@ -2494,7 +3933,7 @@ export const productData = [
     description: "The MW-LC27-B is a professional 27-inch IT monitor designed to enhance workspace visibility and productivity. With its generous screen size, Full HD resolution, and business-optimized features, this monitor provides the expanded viewing area needed for data-intensive applications, multitasking, and professional content creation.",
     extendedDescription: "The MW-LC27-B delivers an expanded viewing experience while maintaining professional performance for business environments. This 27-inch monitor features a Full HD display that provides ample screen real estate for working with complex spreadsheets, multiple documents, and data-intensive applications. The business-optimized panel ensures excellent clarity and color consistency across the entire screen, while the wide viewing angles maintain image quality when sharing content with colleagues. Designed with professional environments in mind, the monitor includes essential eye care technology to reduce fatigue during extended use, along with multiple connectivity options for versatile workplace integration. The sturdy stand provides stable support with tilt adjustment to achieve comfortable viewing positions. With its combination of expanded viewing area and professional-grade performance, the MW-LC27-B is an excellent choice for workplaces seeking to enhance productivity through improved screen visibility.",
     image: "/Monitors/MW-LC27-B.jpg",
-    price: "Contact for Price",
+    price: "1000",
     category: "Products/it-monitor",
     categoryName: "IT Monitor",
     features: ["27-inch Display", "Enhanced Workspace Visibility", "Business-Optimized Panel", "Eye Care Technology", "Multiple Connectivity Options"],
@@ -2585,7 +4024,7 @@ export const productData = [
   {
     slug: "mw-lc27-e",
     name: "MW-LC27-E",
-    type: "IT Monitor",
+    type: "",
     shortDescription: "27\" IT Monitor",
     keyFeature: "premium 27-inch display with enhanced ergonomics and advanced visual performance",
     primaryUse: "professional creative work, data analysis, and high-end business applications",
@@ -2593,7 +4032,7 @@ export const productData = [
     description: "The MW-LC27-E is a premium 27-inch IT monitor that combines generous screen size with enhanced ergonomics and advanced visual performance. Featuring superior image quality, comprehensive adjustability, and professional-grade connectivity, this monitor delivers an exceptional viewing experience for demanding business and creative applications.",
     extendedDescription: "The MW-LC27-E represents the pinnacle of Lovosis's professional monitor offerings, providing an optimal combination of screen size, ergonomics, and visual performance. This premium 27-inch display features enhanced panel technology that delivers superior color accuracy and contrast, making it suitable for both business applications and professional creative work. The monitor's advanced eye care features include sophisticated blue light filtering and flicker elimination technologies that protect user comfort during extended professional use. What truly distinguishes the MW-LC27-E is its premium ergonomic design, featuring a highly-adaptable stand with precision height, tilt, swivel, and pivot adjustments that enable perfect positioning for any user or task. The enhanced connectivity options, including USB-C with power delivery, simplify cable management and device connection in modern workspaces. For professionals who require both exceptional visual performance and ergonomic comfort in a generous 27-inch format, the MW-LC27-E delivers the ultimate productivity solution.",
     image: "/Monitors/MW-LC27-E.jpg",
-    price: "Contact for Price",
+    price: "1000",
     category: "Products/it-monitor",
     categoryName: "IT Monitor",
     features: ["27-inch Premium Display", "Enhanced Color Performance", "Advanced Ergonomics", "USB-C Connectivity", "Superior Eye Care Technology"],
@@ -2689,7 +4128,7 @@ export const productData = [
  {
     slug: "hb-5043-h",
     name: "HB-5043-H",
-    type: "Monitor Bracket",
+    type: "",
     shortDescription: "4K Monitor Base Bracket",
     keyFeature: "sturdy base bracket designed specifically for 43-inch 4K monitors",
     primaryUse: "security control rooms, professional workstations, and commercial environments",
@@ -2697,7 +4136,7 @@ export const productData = [
     description: "The HB-5043-H is a professional-grade base bracket engineered specifically for 43-inch 4K monitors. With its robust construction and stability-focused design, this bracket provides reliable support for security and professional display installations where both performance and safety are essential.",
     extendedDescription: "The HB-5043-H represents a purpose-built mounting solution for 43-inch 4K monitors in professional environments. This specialized base bracket features heavy-duty construction that ensures maximum stability for larger professional displays, with a weight capacity that safely accommodates modern 4K monitors. The bracket's engineering incorporates a slight tilt functionality that allows users to achieve optimal viewing angles for reduced glare and improved ergonomics. Designed with both security and commercial applications in mind, the bracket includes a secure locking mechanism that prevents accidental movement or tampering. Its professional aesthetic complements control room and commercial environments while maintaining focus on practical functionality and reliable performance.",
     image: "/Monitors/HB-5043-H.jpg",
-    price: "Contact for Price",
+    price: "1000",
     category: "Products/monitor-bracket",
     categoryName: "Monitor Bracket",
     features: ["43-inch Monitor Compatible", "Heavy-duty Construction", "Optimized Viewing Angle", "Security Features", "Professional Design"],
@@ -2786,7 +4225,7 @@ export const productData = [
   {
     slug: "hb-5055-h",
     name: "HB-5055-H",
-    type: "Monitor Bracket",
+    type: "",
     shortDescription: "4K Monitor Base Bracket",
     keyFeature: "heavy-duty base bracket for 55-inch professional monitors",
     primaryUse: "command centers, large-format surveillance, and premium commercial installations",
@@ -2794,7 +4233,7 @@ export const productData = [
     description: "The HB-5055-H is a premium base bracket engineered to support 55-inch 4K monitors in professional environments. Featuring reinforced construction and a stability-focused design, this bracket provides secure mounting for large-format displays in mission-critical and commercial settings.",
     extendedDescription: "The HB-5055-H delivers exceptional stability and support for large 55-inch professional monitors in demanding environments. This specialized base bracket features reinforced heavy-duty construction with a weight capacity that safely accommodates even the heaviest commercial 4K displays. The bracket's precision engineering includes an adjustable tilt functionality that allows users to achieve optimal viewing angles for diverse operational requirements. Designed specifically for mission-critical applications, the bracket incorporates advanced security features including a robust locking system that prevents unauthorized adjustment or accidental movement. Its professional design aesthetic complements high-end control rooms and executive environments while maintaining the rugged functionality required for 24/7 operational settings.",
     image: "/Monitors/HB-5055-H.jpg",
-    price: "Contact for Price",
+    price: "1000",
     category: "Products/monitor-bracket",
     categoryName: "Monitor Bracket",
     features: ["55-inch Monitor Compatible", "Reinforced Construction", "Advanced Security Features", "Precision Tilt Adjustment", "Professional Design"],
@@ -2883,7 +4322,7 @@ export const productData = [
   {
     slug: "hb-4022-e",
     name: "HB-4022-E",
-    type: "Monitor Bracket",
+    type: "",
     shortDescription: "22\" Wall-hanging Mounts",
     keyFeature: "specialized wall mount for 22-inch security and professional displays",
     primaryUse: "security monitoring stations, small control rooms, and space-efficient professional environments",
@@ -2891,7 +4330,7 @@ export const productData = [
     description: "The HB-4022-E is a purpose-designed wall mount bracket for 22-inch professional monitors. Featuring secure mounting capabilities and adjustable positioning, this bracket provides an ideal space-saving solution for security installations and professional environments where desk space is limited.",
     extendedDescription: "The HB-4022-E delivers a practical mounting solution specifically engineered for 22-inch professional and security monitors. This specialized wall bracket features a robust construction that ensures secure and stable mounting of valuable display equipment. The bracket's articulating arm design provides exceptional flexibility with tilt, swivel, and rotation adjustments that allow operators to achieve perfect viewing positions for various tasks and environmental conditions. Designed with security applications in mind, the mount includes anti-theft features and secure locking positions that prevent tampering or unauthorized adjustment. Its space-efficient design makes it ideal for security stations, small control rooms, and professional environments where maximizing workspace is a priority.",
     image: "/Monitors/HB-4022-E.jpg",
-    price: "Contact for Price",
+    price: "1000",
     category: "Products/monitor-bracket",
     categoryName: "Monitor Bracket",
     features: ["22-inch Monitor Compatible", "Articulating Arm Design", "Multi-axis Adjustment", "Security Features", "Space-Saving Solution"],
@@ -2980,7 +4419,7 @@ export const productData = [
   {
     slug: "hb-4032-e",
     name: "HB-4032-E",
-    type: "Monitor Bracket",
+    type: "",
     shortDescription: "12\"-55\" Wall Hanging Mounts",
     keyFeature: "versatile wall mount for medium to large professional displays",
     primaryUse: "security control rooms, monitoring centers, and professional environments",
@@ -2988,7 +4427,7 @@ export const productData = [
     description: "The HB-4032-E is a premium wall-mounting solution for 12\"-55\" professional monitors. Featuring a heavy-duty articulating design and comprehensive adjustment options, this mount provides secure and flexible positioning for medium to large displays in security and professional installations.",
     extendedDescription: "The HB-4032-E delivers exceptional mounting flexibility for a wide range of professional monitor sizes from 12\" to 55\". This versatile wall mount features a professional-grade construction with reinforced components that ensure stability even with larger security and professional displays. The advanced articulating arm system provides comprehensive adjustment options including multi-axis tilt, swivel, and extension capabilities that allow perfect positioning for various viewing scenarios. Designed with security and professional environments in mind, the mount incorporates tamper-resistant hardware and position-locking mechanisms that prevent unauthorized adjustment. Its clean professional appearance complements control room aesthetics while the practical design includes integrated cable management for organized installations.",
     image: "/Monitors/HB-4032-E.jpg",
-    price: "Contact for Price",
+    price: "10000",
     category: "Products/monitor-bracket",
     categoryName: "Monitor Bracket",
     features: ["12\"-55\" Monitor Compatible", "Heavy-Duty Articulating Design", "Multi-Axis Adjustment", "Security Features", "Professional Construction"],
@@ -3077,7 +4516,7 @@ export const productData = [
   {
     slug: "hb-5032-e",
     name: "HB-5032-E",
-    type: "Monitor Bracket",
+    type: "",
     shortDescription: "12\" Desk Mechanical Mounts",
     keyFeature: "compact mechanical desk mount for small professional displays",
     primaryUse: "reception areas, secondary monitoring stations, and space-conscious workspaces",
@@ -3085,7 +4524,7 @@ export const productData = [
     description: "The HB-5032-E is a specialized mechanical desk mount designed for 12\" professional displays. With its compact footprint and precise adjustment capabilities, this mount provides flexible positioning for small monitors in space-conscious professional environments.",
     extendedDescription: "The HB-5032-E offers an optimal mounting solution for smaller 12\" professional displays in space-limited environments. This compact desk mount features a precision-engineered mechanical design that provides stable support while minimizing the desk footprint required. The mount's articulation system enables comprehensive positioning adjustments including height, tilt, swivel, and rotation, allowing users to achieve ideal viewing angles for various tasks and environmental conditions. Crafted with professional environments in mind, the mount combines durable construction with clean aesthetics that complement workplace settings. The thoughtful design includes integrated cable management and tool-free adjustment capabilities that enhance the user experience in daily operations.",
     image: "/Monitors/HB-5032-E.jpg",
-    price: "Contact for Price",
+    price: "1000",
     category: "Products/monitor-bracket",
     categoryName: "Monitor Bracket",
     features: ["12\" Display Compatible", "Compact Footprint", "Mechanical Articulation", "Tool-Free Adjustment", "Professional Design"],
@@ -3174,7 +4613,7 @@ export const productData = [
   {
     slug: "hb-5043-e",
     name: "HB-5043-E",
-    type: "Monitor Bracket",
+    type: "",
     shortDescription: "43\" Desk Mechanical Mounts",
     keyFeature: "heavy-duty mechanical desk mount for large professional displays",
     primaryUse: "control stations, professional workstations, and multimedia environments",
@@ -3182,7 +4621,7 @@ export const productData = [
     description: "The HB-5043-E is a professional-grade mechanical desk mount designed for 43\" displays. Featuring a heavy-duty construction and comprehensive adjustment capabilities, this mount provides stable and flexible positioning for large monitors in demanding professional environments.",
     extendedDescription: "The HB-5043-E represents a premium desk mounting solution for larger 43\" professional displays used in control rooms and specialized workstations. This robust mechanical mount features a reinforced construction with precision-engineered components that ensure stability and reliable support for heavier monitors. The advanced mechanical system provides comprehensive adjustment capabilities including height, reach, tilt, and swivel, allowing users to achieve optimal positioning for various operational requirements. Designed specifically for professional environments, the mount combines industrial-grade durability with thoughtful features including integrated cable management, tension adjustment, and gas-spring assisted movement for effortless operation despite the larger display size.",
     image: "/Monitors/HB-5043-E.jpg",
-    price: "Contact for Price",
+    price: "1000",
     category: "Products/monitor-bracket",
     categoryName: "Monitor Bracket",
     features: ["43\" Display Compatible", "Heavy-Duty Construction", "Advanced Mechanical System", "Comprehensive Adjustment", "Professional-Grade Durability"],
@@ -3268,22 +4707,22 @@ export const productData = [
     ]
   },
   
+
+
 // Confrencing Products
-
-
 
 {
     slug: "unear-a20",
     name: "Unear A20",
-    type: "Video Conferencing",
+    type: "",
     shortDescription: "Professional Video Conference System",
     keyFeature: "all-in-one videoconferencing solution with AI-powered features",
     primaryUse: "conference rooms, meeting spaces, and collaborative business environments",
     secondaryFeature: "superior audio-visual quality with smart participant tracking",
-    description: "The Unear A20 is a professional all-in-one video conferencing system designed for modern meeting spaces. Featuring AI-powered participant tracking, crystal-clear audio capture, and 4K video capabilities, this system delivers an exceptional conferencing experience that enhances collaboration and productivity in professional environments.",
+    description: "The Unear A20 is a next-generation all-in-one video conferencing system built for modern meeting spaces. It features AI-powered participant tracking, advanced audio pickup, and 4K ultra-wide video, delivering a seamless and engaging conferencing experience. With intuitive controls and easy integration with major platforms, the Unear A20 enhances collaboration and productivity for any professional environment.",
     extendedDescription: "The Unear A20 represents a significant advancement in professional video conferencing technology, combining cutting-edge hardware with intelligent software to create seamless meeting experiences. This comprehensive system features a 4K ultra-wide camera with 120° field of view that captures entire meeting spaces clearly, while the AI-powered tracking automatically focuses on active speakers. The advanced microphone array with 8-meter pickup range ensures crystal-clear audio capture even in larger conference rooms, while intelligent noise suppression algorithms filter out background distractions. Designed for easy integration with popular conferencing platforms, the Unear A20 provides one-touch meeting joins, wireless content sharing, and centralized management options that simplify the meeting experience from setup to conclusion.",
     image: "/Conferencing/unear-a20.jpg",
-    price: "Contact for Price",
+    price: "10000",
     category: "Products/conferencing",
     categoryName: "Video Conferencing",
     features: ["4K Ultra-wide Camera", "AI Speaker Tracking", "Advanced Microphone Array", "Cross-platform Compatibility", "One-touch Meeting Controls"],
@@ -3353,12 +4792,323 @@ export const productData = [
       }
     ],
     relatedProducts: [
+     {
+      name: "KB-2100",
+      description: "Professional Network Keyboard with multi-protocol compatibility and joystick control",
+      image: "/Wall Controller/KB-2100.jpg",
+      slug: "kb-2100",
+      features: ["3-axis Joystick", "LCD Display", "Multi-Device Support"]
+    },
       {
-        name: "Video Wall Controller",
-        description: "Professional video wall control system for managing multiple display configurations",
-        image: "/Wall Controller/video-wall.jpg",
-        slug: "video-wall-controller",
-        features: ["Advanced Control", "Multiple Display Management", "Professional Grade"]
+        name: "MW3243-F-V2",
+        description: "43-inch 4K LED monitor for professional applications requiring maximum detail",
+        image: "/Monitors/MW3243-F-V2.jpg",
+        slug: "mw3243-f-v2",
+        features: ["43-inch Display", "4K Resolution", "Enhanced Features"]
+      }
+    ]
+},
+
+{
+  slug: "unear-m20",
+  name: "Unear M20",
+  type: "",
+  shortDescription: "4K AI-Powered Camera for Hybrid Meetings and Education",
+  keyFeature: "smart face detection with adaptive HDR for professional video quality",
+  primaryUse: "medium-sized meeting rooms, online education, and hybrid workspaces",
+  secondaryFeature: "AI noise reduction and auto-framing for seamless video calls",
+  description: "The Unear M20 is a versatile video conferencing solution featuring smart face-detection technology, automatic light optimization, and advanced AI noise reduction. Designed for medium-sized meeting spaces, it delivers crystal-clear audio and video quality with an exceptional pickup range. Perfect for hybrid meetings, educational settings, and professional video conferences, the M20 ensures seamless communication with reliable performance.",
+  extendedDescription: "Equipped with adaptive HDR and auto framing, the Unear M20 intelligently focuses on active speakers and adjusts lighting in real time for lifelike visuals. Its wide-angle lens captures more of the room, while the AI-powered microphone array filters background noise, making conversations crisp and clear. Whether in classrooms, conference rooms, or remote collaboration setups, the M20 delivers consistent performance with plug-and-play simplicity.",
+  image: "/Conferencing/Unear M20.png",
+  price: "1000",
+  category: "Products/conferencing",
+  categoryName: "Video Conferencing",
+  features: [
+    "Smart Face Detection",
+    "Adaptive HDR Technology",
+    "AI Noise Reduction",
+    "4K Ultra HD",
+    "Auto Framing",
+    "Wide-angle Lens"
+  ],
+  highlights: [
+    "Crisp 4K video resolution with auto-light balancing",
+    "AI-powered face detection and framing",
+    "Noise-cancelling microphone array for clear audio",
+    "Wide 110° field of view for full room coverage",
+    "Ideal for hybrid meetings, classrooms, and webinars"
+  ],
+  specifications: [
+    { name: "Resolution", value: "4K Ultra HD" },
+    { name: "Field of View", value: "110° Wide-angle" },
+    { name: "Audio", value: "Advanced Microphone Array" },
+    { name: "Connectivity", value: "USB 3.0 / Type-C" },
+    { name: "Frame Rate", value: "30fps at 4K / 60fps at 1080p" },
+    { name: "Compatibility", value: "Windows, macOS, Zoom, Teams, Meet" },
+    { name: "Power", value: "USB-Powered" },
+    { name: "Mounting Options", value: "Tripod, Monitor Clip, Wall Mount" }
+  ],
+  applications: [
+    {
+      name: "Hybrid Workspaces",
+      description: "Enable clear remote communication in hybrid meeting setups",
+      iconPath: "M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"
+    },
+    {
+      name: "Education",
+      description: "Perfect for interactive online and hybrid learning environments",
+      iconPath: "M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z"
+    },
+    {
+      name: "Remote Conferencing",
+      description: "Reliable high-definition video and audio for remote collaboration",
+      iconPath: "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+    }
+  ],
+  rating: "4.9",
+  reviewCount: "34",
+  ratingDistribution: [
+    { stars: 5, percentage: 85 },
+    { stars: 4, percentage: 15 },
+    { stars: 3, percentage: 0 },
+    { stars: 2, percentage: 0 },
+    { stars: 1, percentage: 0 }
+  ],
+  reviews: [
+    {
+      name: "Ananya Bose",
+      date: "March 10, 2024",
+      rating: 5,
+      review: "Unear M20 delivers exceptional video and audio. We use it daily in our classroom and the face detection makes everything smooth. Truly plug-and-play."
+    },
+    {
+      name: "Daniel Ruiz",
+      date: "April 1, 2024",
+      rating: 4,
+      review: "Very good image quality and noise reduction. Would have loved built-in wireless support, but USB 3.0 works fast."
+    },
+    {
+      name: "Melissa H.",
+      date: "February 8, 2024",
+      rating: 5,
+      review: "We’ve deployed M20s in all of our meeting rooms. Great AI features and hassle-free operation. Makes hybrid meetings smooth and professional."
+    }
+  ],
+  relatedProducts: [
+    {
+        name: "MW3243-F-V2",
+        description: "43-inch 4K LED monitor for professional applications requiring maximum detail",
+        image: "/Monitors/MW3243-F-V2.jpg",
+        slug: "mw3243-f-v2",
+        features: ["43-inch Display", "4K Resolution", "Enhanced Features"]
+      },
+    {
+      name: "KB-2100",
+      description: "Professional Network Keyboard with multi-protocol compatibility and joystick control",
+      image: "/Wall Controller/KB-2100.jpg",
+      slug: "kb-2100",
+      features: ["3-axis Joystick", "LCD Display", "Multi-Device Support"]
+    }
+  ]
+},
+
+{
+  slug: "unear-m31e",
+  name: "Unear M31E",
+  type: "",
+  shortDescription: "Advanced 4K Camera with AI Speaker Tracking and Dual Mics",
+  keyFeature: "AI-powered speaker tracking and smart exposure for dynamic meetings",
+  primaryUse: "conference halls, virtual classrooms, and enterprise webinars",
+  secondaryFeature: "dual microphone array with echo cancellation for superior audio",
+  description: "The Unear M31E is an intelligent video conferencing camera equipped with AI-powered speaker tracking, smart exposure control, and an ultra-wide field of view. With its dual microphone array, echo cancellation, and low-light correction, it’s ideal for large conference rooms, virtual classrooms, and professional online presentations. The M31E offers smooth auto-framing and crystal-clear visuals for a premium video experience.",
+  extendedDescription: "Designed for demanding video conferencing environments, the Unear M31E automatically tracks the active speaker while dynamically adjusting lighting and focus. Its powerful 4K lens captures every detail, while AI-powered noise reduction and echo cancellation ensure conversations stay clear and uninterrupted. With flexible mounting options and broad software compatibility, M31E integrates seamlessly into any conferencing setup.",
+  image: "/Conferencing/Unear M31E.png",
+  price: "1000",
+  category: "Products/conferencing",
+  categoryName: "Video Conferencing",
+  features: [
+    "AI Speaker Tracking",
+    "Smart Exposure & Light Adjustment",
+    "Dual Microphone Array",
+    "4K UHD Resolution",
+    "Auto Framing",
+    "120° Wide-angle Lens"
+  ],
+  highlights: [
+    "AI-powered real-time speaker tracking and framing",
+    "Dual mic array with noise suppression and echo cancellation",
+    "Crystal-clear 4K resolution and dynamic lighting adjustment",
+    "120° ultra-wide field of view for large spaces",
+    "Plug-and-play USB and HDMI connectivity"
+  ],
+  specifications: [
+    { name: "Resolution", value: "4K Ultra HD" },
+    { name: "Field of View", value: "120° Ultra-wide" },
+    { name: "Audio", value: "Dual Microphone Array with Echo Cancellation" },
+    { name: "Connectivity", value: "USB 3.0 / Type-C / HDMI Output" },
+    { name: "Frame Rate", value: "30fps at 4K / 60fps at 1080p" },
+    { name: "Compatibility", value: "Windows, macOS, Zoom, Teams, Meet" },
+    { name: "Power", value: "USB-Powered" },
+    { name: "Mounting Options", value: "Tripod, Monitor Clip, Ceiling Mount" }
+  ],
+  applications: [
+    {
+      name: "Enterprise Webinars",
+      description: "Capture speakers in large rooms with precision and clarity",
+      iconPath: "M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"
+    },
+    {
+      name: "Virtual Classrooms",
+      description: "Ensure students stay engaged with real-time teacher tracking",
+      iconPath: "M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z"
+    },
+    {
+      name: "Boardroom Meetings",
+      description: "Deliver professional video and audio in executive conferences",
+      iconPath: "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+    }
+  ],
+  rating: "4.8",
+  reviewCount: "21",
+  ratingDistribution: [
+    { stars: 5, percentage: 76 },
+    { stars: 4, percentage: 24 },
+    { stars: 3, percentage: 0 },
+    { stars: 2, percentage: 0 },
+    { stars: 1, percentage: 0 }
+  ],
+  reviews: [
+    {
+      name: "Rakesh Menon",
+      date: "May 2, 2024",
+      rating: 5,
+      review: "Flawless camera with smooth AI tracking and audio clarity. Our conference sessions have become more engaging and professional."
+    },
+    {
+      name: "Emily Tran",
+      date: "May 12, 2024",
+      rating: 4,
+      review: "M31E works brilliantly in our hybrid training sessions. Setup was simple and the HDMI output is a bonus. Could use more mounting flexibility."
+    },
+    {
+      name: "Dr. Ashwin Rao",
+      date: "April 18, 2024",
+      rating: 5,
+      review: "Perfect for classroom lectures. The tracking feature keeps the camera focused while I move, and the image quality is stunning."
+    }
+  ],
+  relatedProducts: [
+    {
+      name: "Unear M20",
+      description: "4K AI-Powered Camera for Hybrid Meetings and Education",
+      image: "/Conferencing/Unear M20.png",
+      slug: "unear-m20",
+      features: ["Smart Face Detection", "Auto Framing", "Wide-angle Lens"]
+    },
+    {
+      name: "KB-2100",
+      description: "Professional Network Keyboard with multi-protocol compatibility and joystick control",
+      image: "/Wall Controller/KB-2100.jpg",
+      slug: "kb-2100",
+      features: ["3-axis Joystick", "LCD Display", "Multi-Device Support"]
+    }
+  ]
+},
+
+
+{
+    slug: "unear-a50e",
+    name: "Unear A50E",
+    type: "",
+    shortDescription: "Advanced Video Conference System",
+    keyFeature: "premium all-in-one videoconferencing solution with enhanced AI-powered features",
+    primaryUse: "executive boardrooms, large conference rooms, and hybrid collaboration spaces",
+    secondaryFeature: "ultra-wide 4K video with intelligent participant tracking and superior audio clarity",
+    description: "The Unear A50E is a premium all-in-one video conferencing system engineered for high-performance collaboration in executive and large meeting spaces. It features advanced AI-powered participant tracking, an extended microphone pickup range, and ultra-wide 4K video, delivering an immersive and reliable conferencing experience. With seamless integration and intuitive controls, the Unear A50E elevates productivity and communication for modern business environments.",
+    extendedDescription: "The Unear A50E takes professional video conferencing to the next level, combining state-of-the-art hardware with intelligent software for effortless meetings. This system features a 4K ultra-wide camera with a 130° field of view, capturing every participant in even the largest rooms. Enhanced AI tracking ensures the camera automatically focuses on active speakers, while the upgraded microphone array provides crystal-clear audio across extended distances. Intelligent noise suppression and audio enhancement deliver distraction-free sound, and the system is designed for easy integration with all major conferencing platforms. The Unear A50E also offers one-touch meeting joins, wireless content sharing, and centralized management, making it the ideal solution for executive boardrooms and hybrid workspaces.",
+    image: "/Conferencing/Unear-a50E.png",
+    price: "1000",
+    category: "Products/conferencing",
+    categoryName: "Video Conferencing",
+    features: [
+      "4K Ultra-wide Camera (130° FOV)",
+      "AI Enhanced Speaker Tracking",
+      "Upgraded Microphone Array",
+      "Cross-platform Compatibility",
+      "One-touch Meeting Controls"
+    ],
+    highlights: [
+      "4K camera with 130° field of view for expansive room coverage",
+      "AI-powered speaker tracking and advanced auto-framing",
+      "10-meter omnidirectional microphone pickup range",
+      "Intelligent noise suppression and audio enhancement",
+      "Compatible with Zoom, Teams, Google Meet, and more",
+      "Intuitive interface with one-touch meeting controls"
+    ],
+    specifications: [
+      { name: "Model", value: "Unear A50E" },
+      { name: "Camera Resolution", value: "4K UHD (3840×2160)" },
+      { name: "Field of View", value: "130° horizontal" },
+      { name: "Audio Pickup", value: "10-meter range" },
+      { name: "Microphone Array", value: "8-element beam-forming microphones" },
+      { name: "Connectivity", value: "USB-C, HDMI, Ethernet, Wi-Fi 6" },
+      { name: "Supported Platforms", value: "Zoom, Microsoft Teams, Google Meet, WebEx" },
+      { name: "Dimensions", value: "320mm × 130mm × 95mm" },
+      { name: "Power Supply", value: "AC 100-240V, 50/60Hz" }
+    ],
+    applications: [
+      {
+        name: "Executive Boardrooms",
+        description: "Premium conferencing for executive environments with Unear A50E",
+        iconPath: "M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z"
+      },
+      {
+        name: "Large Conference Rooms",
+        description: "Expansive room coverage and clarity with Unear A50E",
+        iconPath: "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+      },
+      {
+        name: "Hybrid Workspaces",
+        description: "Seamless collaboration for hybrid teams with Unear A50E",
+        iconPath: "M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"
+      }
+    ],
+    rating: "4.8",
+    reviewCount: "42",
+    ratingDistribution: [
+      { stars: 5, percentage: 85 },
+      { stars: 4, percentage: 10 },
+      { stars: 3, percentage: 5 },
+      { stars: 2, percentage: 0 },
+      { stars: 1, percentage: 0 }
+    ],
+    reviews: [
+      { 
+        name: "Richard Anderson",
+        date: "March 18, 2024",
+        rating: 5,
+        review: "We installed the Unear A50E in our executive boardroom, and it has elevated our hybrid meetings to a new level. The AI speaker tracking is smooth and accurate, and the audio clarity is outstanding even in our large space. Integration with our conferencing platforms was seamless and the intuitive controls are a big plus for our team."
+      },
+      { 
+        name: "Jennifer Martinez",
+        date: "February 22, 2024",
+        rating: 5,
+        review: "As the IT director for a global company, the Unear A50E stands out for its performance and reliability. The ultra-wide camera ensures everyone is visible, and the upgraded microphone array captures voices clearly from across the room. The one-touch controls have made meeting setup effortless for our staff."
+      },
+      { 
+        name: "Michael Wong",
+        date: "January 15, 2024",
+        rating: 4,
+        review: "We've deployed the Unear A50E in several large meeting spaces and it consistently delivers excellent video and audio quality. The auto-framing and noise suppression features keep remote participants engaged. More advanced admin controls would be welcome, but the current features meet most of our needs."
+      }
+    ],
+    relatedProducts: [
+      {
+        name: "KB-2100",
+        description: "Professional Network Keyboard with multi-protocol compatibility and joystick control",
+        image: "/Wall Controller/KB-2100.jpg",
+        slug: "kb-2100",
+        features: ["3-axis Joystick", "LCD Display", "Multi-Device Support"]
       },
       {
         name: "MW3243-F-V2",
@@ -3368,9 +5118,6 @@ export const productData = [
         features: ["43-inch Display", "4K Resolution", "Enhanced Features"]
       }
     ]
-  }
+},
 
-
-
-
-];
+]

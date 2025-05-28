@@ -1,0 +1,13 @@
+---
+interface Props {
+  src: string;
+  alt: string;
+  productType?: string;
+  location?: string;
+}
+
+const { src, alt, productType = '', location = 'UAE', ...restProps } = Astro.props;
+const seoAlt = `${alt} - LED modules ${location}, LED module lights Dubai, ${productType}`;
+---
+
+<img src={src} alt={seoAlt} {...restProps} />

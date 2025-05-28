@@ -4,7 +4,6 @@ import { productData } from '../../data/products';
 
 // Get the current slug from Astro params
 export async function getStaticPaths() {
-  // This function generates all valid routes based on your product data
   return productData.map(product => ({
     params: { slug: product.slug },
     props: { product }
@@ -18,37 +17,32 @@ const { product } = Astro.props;
 const title = `${product.name} | ${product.shortDescription} | UNV LED Modules`;
 const description = `Explore the ${product.name} ${product.type} with ${product.keyFeature}. The ${product.name} is ideal for ${product.primaryUse} with ${product.secondaryFeature}.`;
 
-// Enhanced Product schema for better mobile SEO
-const productSchema = {
-  "@context": "https://schema.org/",
-  "@type": "Product",
-  "name": `${product.name} ${product.type}`,
-  "description": product.description,
-  "image": `https://unv-ledmodules.com${product.image}`,
-  "brand": {
-    "@type": "Brand",
-    "name": "Lovosis Display Dubai"
-  },
-  "offers": {
-    "@type": "Offer",
-    "price": product.price.replace('$', ''),
-    "priceCurrency": "AED",
-    "availability": "https://schema.org/InStock",
-    "url": `https://lovosisdisplay.com/Product/${product.slug}`,
-    "areaServed": {
-      "@type": "City",
-      "name": "Dubai"
+// TODO: Add product schema if available, or remove this if not needed
+const productSchema = {};
+
+// Add breadcrumb schema
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://unv-ledmodules.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": product.categoryName,
+      "item": `https://unv-ledmodules.com/${product.category}`
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": product.name,
+      "item": `https://unv-ledmodules.com/Product/${product.slug}`
     }
-  },
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": product.rating,
-    "reviewCount": product.reviewCount
-  },
-  "sameAs": [
-    "https://www.facebook.com/lovosisdisplay",
-    "https://www.instagram.com/lovosisdisplay",
-    "https://twitter.com/lovosisdisplay"
   ]
 };
 ---
@@ -331,6 +325,7 @@ const productSchema = {
     </div>
   </div>
   
-  <!-- Add structured data for SEO -->
+  <!-- Add both schemas -->
   <script type="application/ld+json" set:html={JSON.stringify(productSchema)}></script>
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)}></script>
 </Layout>

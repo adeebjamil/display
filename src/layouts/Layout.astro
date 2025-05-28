@@ -22,6 +22,7 @@ export interface Props {
         alt: string;
     };
     disableIndexing?: boolean;
+    type?: 'website' | 'article' | 'product' | 'organization';
 }
 
 const {
@@ -35,22 +36,104 @@ const {
     sd,
     image,
     disableIndexing = false,
+    type = "website",
 } = Astro.props;
 
+// Default site schema data
+const defaultSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://lovosisDisplay.com/#organization",
+  "name": "Lovosis Display",
+  "url": "https://lovosisDisplay.com",
+  "logo": {
+    "@type": "ImageObject",
+    "url": "https://lovosisDisplay.com/logo.png",
+    "width": 600,
+    "height": 180
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+971 50 000 0000",
+    "contactType": "customer service"
+  },
+  "sameAs": [
+    "https://facebook.com/LovosisDisplay",
+    "https://twitter.com/LovosisDisplay",
+    "https://linkedin.com/company/lovosis-display",
+    "https://instagram.com/LovosisDisplay"
+  ]
+};
+
+// Website schema data
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://lovosisDisplay.com/#website",
+  "url": "https://lovosisDisplay.com",
+  "name": "Lovosis Display",
+  "description": description || "Premium LED, LCD & Digital Signage Solutions",
+  "publisher": {
+    "@id": "https://lovosisDisplay.com/#organization"
+  }
+};
+
+// Create the current page schema
+const pageSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": Astro.url.href,
+  "url": Astro.url.href,
+  "name": title,
+  "description": description,
+  "isPartOf": {
+    "@id": "https://lovosisDisplay.com/#website"
+  },
+  "about": {
+    "@id": "https://lovosisDisplay.com/#organization"
+  }
+};
+
+// Breadcrumb schema
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://lovosisDisplay.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": title,
+      "item": Astro.url.href
+    }
+  ]
+};
+
+// Determine which schemas to include
+let finalSchema;
+
+if (sd) {
+  // If page-specific schema is provided, use that
+  finalSchema = [defaultSchema, websiteSchema, sd];
+} else {
+  // Otherwise use default schemas
+  finalSchema = [defaultSchema, websiteSchema, pageSchema, breadcrumbSchema];
+}
 ---
 
 <!doctype html>
 <html lang={lang}>
   <head>
-    {
-        sd && (
-            <script
-                is:inline
-                type="application/ld+json"
-                set:html={JSON.stringify(sd)}
-            />
-        )
-    }
+    <script
+      is:inline
+      type="application/ld+json"
+      set:html={JSON.stringify(finalSchema)}
+    />
     <SEO
       title={title ?? "Lovosis Display - Premium LED, LCD & Digital Signage Solutions"}
       description={description ?? "Lovosis Display - Leading distributor of high-quality LED displays, LCD screens, educational boards & digital billboards. Innovative display solutions for businesses & educational institutions."}

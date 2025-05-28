@@ -8,9 +8,10 @@ import FAQS from '../components/FAQS.astro';
 import Gallery from '../components/Gallery.astro';
 import LogoCloud from '../components/LogoCloud.astro';
 import TeamComponent from '../components/TeamComponent.astro';
+import { seoConfig } from '../data/seo-config.js';
 
-// SEO focus keywords for Dubai market
-const keywords = "smart boards in Dubai, interactive panels in Dubai, CCTV monitors in Dubai, keyboards in Dubai, LED displays Dubai, LCD screens UAE, educational boards Dubai, digital billboards Dubai, touch displays UAE, commercial displays Dubai";
+// Enhanced keywords with LED module focus
+const keywords = "LED modules UAE, LED module lights Dubai, buy LED modules Dubai, high power LED module supplier UAE, smart boards Dubai, interactive panels Dubai, CCTV monitors Dubai, digital signage UAE, commercial displays Dubai";
 
 // Homepage schema markup for better SEO
 const homepageSchema = {
@@ -134,8 +135,8 @@ const homepageSchema = {
 ---
 
 <Layout 
-  title="Smart Boards & Interactive Panels in Dubai | LED & LCD Displays | CCTV Monitors | Lovosis Display"
-  description="Dubai's leading distributor of Smart Boards, Interactive Panels, CCTV Monitors and Keyboards. Premium LED & LCD display solutions with installation across Dubai and UAE. Call +971 50 916 2488 for consultation."
+  title="LED Modules UAE | Smart Boards Dubai | Interactive Panels & Displays | UNV LED Modules"
+  description="Leading LED module supplier in UAE. Buy premium LED modules Dubai, smart boards, interactive panels & CCTV monitors. High power LED module lights with fast delivery across UAE. Call +971 50 916 2488"
   keywords={keywords}
   sd={homepageSchema}
   siteName="Lovosis Display Dubai"
@@ -145,8 +146,6 @@ const homepageSchema = {
     alt: "Smart Boards and Interactive Panels in Dubai - Lovosis Display Solutions"
   }}
 >
-
-
   <section class="hero-section">
     <h1 class="visually-hidden">Smart Boards and Interactive Panels in Dubai - Premium Display Solutions</h1>
     <Carousel />
@@ -154,16 +153,16 @@ const homepageSchema = {
   
   <section id="featured-products" class="featured-section">
     <div class="container">
-      <h2 class="section-title">Featured Display Solutions in Dubai</h2>
-      <p class="section-description">Discover our premium Smart Boards, Interactive Panels, CCTV Monitors and Keyboards available across Dubai and UAE.</p>
+      <h2 class="section-title">LED Modules UAE & Premium Display Solutions Dubai</h2>
+      <p class="section-description">Discover our high-quality LED modules, LED module lights, Smart Boards, Interactive Panels, and CCTV Monitors available across Dubai and UAE with professional installation.</p>
       <NewProducts />
     </div>
   </section>
   
   <section id="faqs" class="faq-section">
     <div class="container">
-      <h2 class="section-title">Frequently Asked Questions</h2>
-      <p class="section-description">Get answers to common questions about our Smart Boards, Interactive Panels, and other display solutions available in Dubai.</p>
+      <h2 class="section-title">LED Modules UAE - Frequently Asked Questions</h2>
+      <p class="section-description">Get answers about LED modules, LED module lights, smart boards, and display solutions available in Dubai and UAE.</p>
       <FAQS />
     </div>
   </section>
@@ -181,8 +180,6 @@ const homepageSchema = {
       <LogoCloud />
     </div>
   </section>
-  
-  
 </Layout>
 
 <style>
@@ -201,7 +198,7 @@ const homepageSchema = {
   .section-title {
     font-size: 2rem;
     font-weight: 700;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     text-align: center;
   }
   
@@ -209,17 +206,67 @@ const homepageSchema = {
     font-size: 1.1rem;
     text-align: center;
     max-width: 800px;
-    margin: 0 auto 2rem;
+    margin: 0 auto 1.5rem;
     color: #555;
   }
   
   .container {
-    padding: 3rem 1rem;
+    padding: 2rem 1rem;
     max-width: 1200px;
     margin: 0 auto;
   }
   
   section {
-    padding: 2rem 0;
+    padding: 0.5rem 0;
+  }
+  
+  /* Responsive adjustments to eliminate gaps on mobile */
+  @media (max-width: 768px) {
+    .container {
+      padding: 1rem 0.75rem;
+    }
+    
+    section {
+      padding: 0;
+      margin: 0;
+    }
+    
+    .hero-section {
+      margin-bottom: -0.5rem; /* Negative margin to pull content up */
+    }
+    
+    .section-title {
+      font-size: 1.6rem;
+      margin-bottom: 0.25rem;
+    }
+    
+    .section-description {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+    
+    /* Target specific sections to reduce spacing */
+    #featured-products .container,
+    #faqs .container,
+    #news .container,
+    #partners .container {
+      padding-top: 0.75rem;
+      padding-bottom: 0.75rem;
+    }
+  }
+  
+  /* Extra adjustments for very small screens */
+  @media (max-width: 480px) {
+    .container {
+      padding: 0.75rem 0.5rem;
+    }
+    
+    .section-title {
+      margin-bottom: 0.2rem;
+    }
+    
+    .section-description {
+      margin-bottom: 0.75rem;
+    }
   }
 </style>

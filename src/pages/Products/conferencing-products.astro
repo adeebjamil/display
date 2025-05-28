@@ -1,74 +1,22 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 // SEO-optimized title and description
-const title = "Video Conferencing Display Solutions | LED & LCD Professional Displays"
-const description = "Premium video conferencing solutions featuring advanced LED and LCD display technology. High-resolution screens, educational board integration, and digital signage compatibility for professional meeting environments."
-const keywords = "video conferencing displays, LED displays, LCD displays, educational board integration, digital signage compatibility"
+const title = "Video Conferencing UAE | LED Modules Integration | LED Module Lights Dubai | Professional Systems"
+const description = "Video conferencing solutions in UAE with LED modules technology. High power LED module supplier Dubai offering LED module lights enhanced conferencing systems for professional meeting environments across UAE."
+const keywords = "video conferencing UAE, LED modules Dubai, LED module lights UAE, conferencing systems LED modules, professional displays LED modules Dubai, high power LED module supplier UAE"
 
-// Replace your current schema with this updated version:
-const sd = {
-  "@context": "https://schema.org",
-  "@type": "CollectionPage",
-  "name": "Video Conferencing Display Solutions",
-  "description": "Professional video conferencing products with high-quality display technology",
-  "offers": {
-    "@type": "AggregateOffer",
-    "availability": "https://schema.org/InStock",
-    "priceCurrency": "USD",
-    "lowPrice": "499.00",
-    "highPrice": "2499.00",
-    "offerCount": "7"
-  },
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.8",
-    "reviewCount": "120"
-  },
-  "itemListElement": [
-    {
-      "@type": "Product",
-      "name": "Unear A20 All-In-One Video Conference Camera",
-      "image": "/Conferencing/unear-a20.jpg",
-      "description": "Professional 4K display conferencing system with AI-powered features and LED display compatibility",
-      "brand": {
-        "@type": "Brand",
-        "name": "Lovosis Display"
-      },
-      "offers": {
-        "@type": "Offer",
-        "price": "1299.00",
-        "priceCurrency": "USD",
-        "availability": "https://schema.org/InStock",
-        "url": "https://lovosisdisplay.com/Products/conferencing-products"
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "86"
-      },
-      "review": {
-        "@type": "Review",
-        "reviewRating": {
-          "@type": "Rating",
-          "ratingValue": "5",
-          "best": "5"
-        }
-      }
-    }
-  ]
-}
-
+// Update highlights to include LED module benefits
 const highlights = [
   {
     id: "01",
-    title: "Face-detection auto focus technology",
-    content: "Enhance your video conferencing experience with face-detection auto-focus technology. This advanced feature automatically identifies and focuses on faces in real-time, ensuring sharp, clear visuals for all participants. Whether in a meeting or presentation, the technology adapts to movement, delivering seamless communication without manual adjustments.",
+    title: "Face-detection with LED Modules UAE Enhancement",
+    content: "Advanced face-detection technology enhanced by LED modules UAE integration and LED module lights Dubai components. Our high power LED module supplier technology ensures optimal lighting conditions for accurate face detection in professional conferencing environments across UAE.",
     image: "/Conferencing/img1.webp"
   },
   {
     id: "02",
-    title: "Light automated correction",
-    content: "Experience optimal video quality with light automated correction technology, which automatically adjusts lighting to enhance clarity in any environment. Whether you're in low light or bright conditions, this feature ensures clear and well-lit visuals for seamless video conferencing.",
+    title: "Light correction with LED Module Lights Dubai",
+    content: "Experience optimal video quality with automated light correction enhanced by LED module lights Dubai technology. Our LED modules UAE integration with high power LED module supplier components automatically adjusts lighting for crystal-clear video conferencing across UAE environments.",
     image: "/Conferencing/img2.webp"
   },
   {
@@ -117,11 +65,98 @@ const products = [
       'Virtual Events'
     ],
     image: '/Conferencing/unear-a20.jpg'
-  }
+  },
+
+  {
+    id: 'unear-m20',
+    name: 'Unear M20',
+    description: 'The Unear M20 is a versatile video conferencing solution featuring smart face-detection technology, automatic light optimization, and advanced AI noise reduction. Designed for medium-sized meeting spaces, it delivers crystal-clear audio and video quality with an exceptional pickup range. Perfect for hybrid meetings, educational settings, and professional video conferences, the M20 ensures seamless communication with reliable performance.',
+    features: [
+      'Smart Face Detection',
+      'Adaptive HDR Technology',
+      'AI Noise Reduction',
+      '4K Ultra HD',
+      'Auto Framing',
+      'Wide-angle Lens'
+    ],
+    specs: [
+      { label: 'Resolution', value: '4K Ultra HD' },
+      { label: 'Field of View', value: '110° Wide-angle' },
+      { label: 'Audio', value: 'Advanced Microphone Array' },
+      { label: 'Connectivity', value: 'USB 3.0/Type-C' }
+    ],
+    useCases: [
+      'Medium Meeting Rooms',
+      'Educational Facilities',
+      'Remote Teams',
+      'Video Conferencing'
+    ],
+    image: '/Conferencing/Unear M20.png'
+},
+
+// Add this object in the products array after the existing products:
+
+{
+  id: 'unear-m31e',
+  name: 'Unear M31E',
+  description: 'The Unear M31E is a premium video conferencing solution featuring innovative dual-lens technology and advanced AI capabilities. With its primary 4K lens providing expansive room coverage and secondary lens enabling precise speaker focus, it delivers exceptional video quality for large professional spaces. Enhanced with sophisticated AI processing and superior audio performance, the M31E creates immersive meeting experiences ideal for executive environments.',
+  features: [
+    'Dual-lens 4K System',
+    'Advanced AI Tracking',
+    'Enhanced Audio Processing',
+    '120° Coverage',
+    'Multi-point Noise Cancellation',
+    'Precision Auto-Focus'
+  ],
+  specs: [
+    { label: 'Resolution', value: '4K Ultra HD (3840×2160)' },
+    { label: 'Field of View', value: '120° Wide-angle' },
+    { label: 'Audio', value: '12-meter Pickup Range' },
+    { label: 'Connectivity', value: 'USB 3.0, Ethernet, Wi-Fi' }
+  ],
+  useCases: [
+    'Large Conference Rooms',
+    'Training Centers',
+    'Professional Events',
+    'Executive Boardrooms'
+  ],
+  image: '/Conferencing/Unear M31E.png'
+},
+
+  {
+  id: 'unear-a50e',
+  name: 'Unear A50E',
+  description: 'The Unear A50E is an advanced video conferencing solution engineered for high-performance collaboration. Featuring next-gen face-detection auto-focus, adaptive light correction, and enhanced AI noise-cancelling, it ensures every participant is seen and heard with exceptional clarity. With an extended pickup range and ultra-wide 4K visuals, the A50E is perfect for executive boardrooms, large meeting spaces, and hybrid work environments, delivering reliable and immersive communication for every session.',
+  features: [
+    'Next-Gen AI Face Detection',
+    'Enhanced HDR Technology',
+    'Advanced Noise Cancellation',
+    '4K Ultra-wide Resolution',
+    'Smart Auto-Framing & Tracking',
+    'Extra-wide Coverage'
+  ],
+  specs: [
+    { label: 'Resolution', value: '4K Ultra HD' },
+    { label: 'Field of View', value: '130° Ultra-wide' },
+    { label: 'Audio', value: 'Upgraded Microphone Array' },
+    { label: 'Connectivity', value: 'USB 3.1/Type-C, HDMI' }
+  ],
+  useCases: [
+    'Executive Boardrooms',
+    'Large Conference Rooms',
+    'Hybrid Workspaces',
+    'Virtual Training & Events'
+  ],
+  image: '/Conferencing/Unear-a50E.png'
+}
 ];
+
+
+
+
 ---
 
-<Layout title={title} description={description} sd={sd} keywords={keywords}>
+<Layout title={title} description={description}  keywords={keywords}>
   <div class="bg-white" x-data="{ activeSection: '01' }">
     <!-- Header Section -->
     <div class="relative h-[60vh] overflow-hidden">

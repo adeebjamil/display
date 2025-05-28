@@ -7,19 +7,18 @@ export async function get() {
   
   // Define routes
   const pages = [
-    // Main pages
+    // Homepage - highest priority
     { url: "/", lastmod: today, priority: "1.0", changefreq: "weekly" },
-    { url: "/about", lastmod: today, priority: "0.8", changefreq: "monthly" },
-    { url: "/Products", lastmod: today, priority: "0.9", changefreq: "weekly" },
-    { url: "/solutions", lastmod: today, priority: "0.9", changefreq: "weekly" },
-    { url: "/company/contact-us", lastmod: today, priority: "0.8", changefreq: "monthly" },
     
-    // Product pages
-    { url: "/Products/interactive-display", lastmod: today, priority: "0.8", changefreq: "weekly" },
+    // LED Modules pages - high priority
+    { url: "/Products/led-modules", lastmod: today, priority: "0.9", changefreq: "weekly" },
+    { url: "/locations/dubai-led-modules", lastmod: today, priority: "0.9", changefreq: "weekly" },
+    
+    // Product pages with LED module integration
     { url: "/Products/led-display", lastmod: today, priority: "0.8", changefreq: "weekly" },
     { url: "/Products/lcd-video", lastmod: today, priority: "0.8", changefreq: "weekly" },
     { url: "/Products/monitors-video", lastmod: today, priority: "0.8", changefreq: "weekly" },
-    { url: "/Products/wall-controller", lastmod: today, priority: "0.8", changefreq: "weekly" },
+    { url: "/Products/interactive-display", lastmod: today, priority: "0.8", changefreq: "weekly" },
     { url: "/Products/conferencing-products", lastmod: today, priority: "0.8", changefreq: "weekly" },
     
     // Solution pages
