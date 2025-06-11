@@ -2,37 +2,41 @@
 import Layout from '../../layouts/Layout.astro';
 
 // SEO Optimized Title and Description
-const title = "Contact Lovosis Display | LED & LCD Display Solutions | Request a Quote"
-const description = "Contact Lovosis Display for premium LED displays, LCD screens, educational boards and digital billboards. Get expert consultation, technical support, and customized display solutions for your business needs."
-const keywords = "contact us, contact Lovosis Display, LED display solutions, LCD screens, digital billboards, educational boards, request a quote"
+const title = "Contact Lovosis Display | LED & LCD Display Solutions Dubai | Request a Quote UAE"
+const description = "Contact Lovosis Display for premium LED displays, LCD screens, and digital signage solutions in Dubai & UAE. Get expert consultation, technical support, and customized display solutions for your business needs."
+const keywords = "contact Lovosis Display Dubai, LED display solutions UAE, LCD screens Dubai, digital signage solutions UAE, request a quote Dubai"
 
 // Schema Markup for Contact Page
 const sd = {
   "@context": "https://schema.org",
   "@type": "ContactPage",
-  "name": "Contact Lovosis Display",
-  "description": "Get in touch with Lovosis Display for LED displays, LCD screens, educational boards and digital billboard solutions",
+  "name": "Contact Lovosis Display Dubai",
+  "description": "Get in touch with Lovosis Display for LED displays, LCD screens, and digital signage solutions in Dubai and UAE",
   "mainEntity": {
     "@type": "Organization",
-    "name": "Lovosis Display",
-    "url": "https://unv-ledmodules.com",  // Updated from lovosisDisplay.com
-    "logo": "https://unv-ledmodules.com/images/logo.png",  // Updated from lovosisDisplay.com
+    "name": "Lovosis Display UAE",
+    "url": "https://unv-ledmodules.com",
+    "logo": "https://unv-ledmodules.com/images/logo.png",
     "contactPoint": [
-        {
-    city: 'Bengaluru',
-    address: '4-72/2, Swathi building, 3rd Floor, opp Singapura Garden, 1st main, Lakshmipura Main Rd, Abbigere, Bengaluru, Karnataka 560090',
-    phone: '+971 50 916 2488', 
-    email: 'sales@lovosis.com',  // Updated from lovosis.com
-    icon: `<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-    </svg>`
-  }
+      {
+        "@type": "ContactPoint",
+        "telephone": "+971 55 2929644",
+        "contactType": "sales",
+        "areaServed": "UAE",
+        "availableLanguage": ["English", "Arabic"]
+      }
     ],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Baghlaf Building Showroom No.5 Satellite Market, Naif Road",
+      "addressLocality": "Dubai",
+      "addressRegion": "Dubai",
+      "addressCountry": "United Arab Emirates"
+    },
     "offers": {
       "@type": "AggregateOffer",
-      "priceCurrency": "USD",
-      "lowPrice": "1500.00",
+      "priceCurrency": "AED",
+      "lowPrice": "5000.00",
       "highPrice": "50000.00",
       "offerCount": "25",
       "availability": "https://schema.org/InStock"
@@ -51,10 +55,10 @@ const sd = {
       },
       "author": {
         "@type": "Person",
-        "name": "Emily Davis"
+        "name": "Mohammed Al Hashimi"
       },
       "datePublished": "2025-01-20",
-      "reviewBody": "The Lovosis educational display solutions have revolutionized our classrooms. The interactive LED boards and digital learning screens are incredibly engaging for students and have significantly improved the teaching experience. The installation was smooth, and the support team has been outstanding."
+      "reviewBody": "The Lovosis display solutions have revolutionized our Dubai business. The LED displays and digital signage are incredibly eye-catching for customers and have significantly improved our brand visibility. The installation across our UAE locations was smooth, and the Dubai support team has been outstanding."
     }
   }
 }
@@ -66,10 +70,11 @@ const images = {
 
 const officeLocations = [
   {
-    city: 'Bengaluru',
-    address: '4-72/2, Swathi building, 3rd Floor, opp Singapura Garden, 1st main, Lakshmipura Main Rd, Abbigere, Bengaluru, Karnataka 560090',
-    phone: '+91 80 1234 5678',
-    email: 'sales@lovosis.com',  // Updated from lovosis.com
+    city: 'Dubai',
+    address: 'Baghlaf Building Showroom No.5 Satellite Market, Naif Road, Dubai, United Arab Emirates',
+    phone: '+971 55 2929644',
+    alternatePhone: '+971 50 916 2488',
+    email: 'sales@lovosis.com',
     icon: `<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -111,7 +116,7 @@ const officeLocations = [
             Get in <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">Touch</span>
           </h1>
           <p class="text-xl text-gray-300 max-w-2xl">
-            Have questions? We're here to help. Contact our team for support or business inquiries.
+            Have questions about our display solutions in Dubai? We're here to help. Contact our UAE team for support or business inquiries.
           </p>
           
           {/* Decorative Line */}
@@ -136,7 +141,7 @@ const officeLocations = [
             <div class="absolute -bottom-16 -left-16 w-32 h-32 bg-blue-100 rounded-full opacity-70"></div>
             
             <h2 class="text-3xl font-bold text-gray-900 mb-2">Send us a Message</h2>
-            <p class="text-gray-600 mb-8">We'd love to hear from you. Fill out the form below.</p>
+            <p class="text-gray-600 mb-8">We'd love to hear from you. Fill out the form below to discuss your display needs in UAE.</p>
             
             <!-- Success message (hidden by default) -->
             <div id="success-message" class="hidden bg-green-50 border border-green-200 text-green-800 rounded-lg p-4 mb-6">
@@ -205,7 +210,7 @@ const officeLocations = [
                     id="message" 
                     name="message" 
                     rows="4" 
-                    placeholder="How can we help you?" 
+                    placeholder="How can we help you with your display needs in UAE?" 
                     required
                     class="w-full bg-transparent border-none focus:ring-0 text-gray-700 placeholder-gray-400 focus:outline-none resize-none"
                   ></textarea>
@@ -235,7 +240,7 @@ const officeLocations = [
 
           {/* Office Locations */}
           <div class="space-y-8">
-            <h2 class="text-3xl font-bold text-gray-900">Our Offices</h2>
+            <h2 class="text-3xl font-bold text-gray-900">Our Dubai Office</h2>
             <div class="grid gap-8">
               {officeLocations.map(office => (
                 <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
@@ -255,6 +260,12 @@ const officeLocations = [
                         </p>
                         <p class="flex items-center text-gray-600">
                           <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                          </svg>
+                          {office.alternatePhone}
+                        </p>
+                        <p class="flex items-center text-gray-600">
+                          <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                           </svg>
                           {office.email}
@@ -269,12 +280,13 @@ const officeLocations = [
             {/* Map Section */}
             <div class="bg-white rounded-xl overflow-hidden shadow-lg">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3885.856258218772!2d77.5398893!3d13.0606251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae17df7bb7c2e9%3A0xf576247879ca03e8!2sSwathi%20Building%2C%20Lakshmipura%20Main%20Rd%2C%20Abbigere%2C%20Bengaluru%2C%20Karnataka%20560090!5e0!3m2!1sen!2sin!4v1621345678901!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3608.2367123911705!2d55.2997736!3d25.2714774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f432c77ba9f89%3A0x6c225e48f90e7d03!2sSatellite%20Market%20-%20Naif%20Rd%20-%20Deira%20-%20Dubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sus!4v1717403006982!5m2!1sen!2sus"
                 width="100%"
                 height="400"
                 style="border:0;"
                 loading="lazy"
-                class="grayscale"
+                referrerpolicy="no-referrer-when-downgrade"
+                class="grayscale hover:grayscale-0 transition-all duration-500"
               ></iframe>
             </div>
           </div>
@@ -282,13 +294,18 @@ const officeLocations = [
       </div>
     </section>
   </main>
-
   <script>
-    // Import EmailJS properly in a client-side script
-    import emailjs from '@emailjs/browser';
-
+    // Declare emailjs for TypeScript
+    declare const emailjs: any;
+    
+    // Define EmailJS response type
+    interface EmailJSResponseStatus {
+      text: string;
+      status: number;
+    }
+    
     // Initialize EmailJS with your user ID
-    emailjs.init("oDC32FOAXNE1_69yx"); // Replace with your actual User ID
+    emailjs.init("oDC32FOAXNE1_69yx"); 
 
     // Form submission handler
     const contactForm = document.getElementById('contact-form');
@@ -296,17 +313,17 @@ const officeLocations = [
       contactForm.addEventListener('submit', function(event) {
         event.preventDefault();
       
-      const serviceID = 'service_r6afk4h'; // Replace with your EmailJS service ID
-      const templateID = 'template_f5wi9og'; // Replace with your EmailJS template ID
+      const serviceID = 'service_r6afk4h';
+      const templateID = 'template_f5wi9og';
       
       emailjs.sendForm(serviceID, templateID, this as HTMLFormElement)
-        .then((result) => {
+        .then((result: EmailJSResponseStatus) => {
             console.log('SUCCESS!', result.text);
             // Show success message
             document.getElementById('success-message')?.classList.remove('hidden');
             // Reset form
             (this as HTMLFormElement).reset();
-        }, (error) => {
+        }, (error: EmailJSResponseStatus) => {
             console.log('FAILED...', error.text);
             // Show error message
             document.getElementById('error-message')?.classList.remove('hidden');
@@ -363,7 +380,7 @@ const officeLocations = [
   
   /* Input field focus animation */
   .form-group:focus-within .bg-gray-50 {
-    background-color: #EFF6FF; /* Light blue background on focus */
+    background-color: #EFF6FF;
     box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.1);
   }
   

@@ -1,29 +1,38 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-// SEO-optimized title and description focusing on display technology for education
-const title = "Educational Display Solutions | Interactive LED & LCD Boards | Digital Learning Screens | Lovosis Display"
-const description = "Transform classrooms with interactive educational displays, LED touchscreens, and digital learning boards. Enhance student engagement and teaching efficiency with advanced display technology for modern classrooms."
-const keywords = "Educational Display Solutions, Interactive LED Boards, LCD Touchscreens, Digital Learning Boards, Classroom Technology, Lovosis Display"
+// SEO-optimized title and description focusing on display technology for education in UAE
+const title = "Educational LED Displays Dubai | Interactive LED Boards UAE | Digital Learning Screens Dubai | Lovosis Display"
+const description = "Transform UAE classrooms with interactive educational LED displays Dubai, LED video walls, and indoor LED touchscreens. Enhance student engagement with high resolution LED displays Dubai. Professional installation across UAE."
+const keywords = "LED display Dubai, Interactive LED Boards UAE, Indoor LED display Dubai, LED video wall Dubai, LED advertising screens UAE, High resolution LED displays Dubai, Educational Display Solutions Dubai, Digital Learning Screens UAE"
 
-// Structured data for better search visibility
+// Structured data for better search visibility with Dubai/UAE focus
 const sd = {
   "@context": "https://schema.org",
   "@type": "Product",
-  "name": "Educational Display Solutions",
-  "description": "Interactive display technology for educational environments including LED displays, LCD touchscreens, and digital learning boards",
+  "name": "Educational LED Display Solutions Dubai",
+  "description": "Interactive LED display technology for educational environments in Dubai & UAE including indoor LED displays, LED video walls, and high resolution digital learning boards",
   "brand": {
     "@type": "Brand",
-    "name": "Lovosis Display"
+    "name": "Lovosis Display UAE"
   },
   "category": "Educational Technology",
   "image": "https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3",
   "offers": {
     "@type": "AggregateOffer",
-    "priceCurrency": "USD",
-    "lowPrice": "1500.00",
-    "highPrice": "10000.00",
+    "priceCurrency": "AED",
+    "lowPrice": "5000.00",
+    "highPrice": "35000.00",
     "offerCount": "15",
-    "availability": "https://schema.org/InStock"
+    "availability": "https://schema.org/InStock",
+    "areaServed": {
+      "@type": "GeoCircle",
+      "geoMidpoint": {
+        "@type": "GeoCoordinates",
+        "latitude": "25.276987",
+        "longitude": "55.296249"
+      },
+      "geoRadius": "200"
+    }
   },
   "aggregateRating": {
     "@type": "AggregateRating",
@@ -39,10 +48,10 @@ const sd = {
     },
     "author": {
       "@type": "Person",
-      "name": "Emily Davis"
+      "name": "Ahmed Al Mansouri"
     },
     "datePublished": "2025-01-20",
-    "reviewBody": "The Lovosis educational display solutions have revolutionized our classrooms. The interactive LED boards and digital learning screens are incredibly engaging for students and have significantly improved the teaching experience. The installation was smooth, and the support team has been outstanding."
+    "reviewBody": "The Lovosis educational LED displays have revolutionized our Dubai classrooms. The interactive LED boards and indoor LED screens are incredibly engaging for students and have significantly improved the teaching experience. The installation across our UAE campuses was smooth, and the Dubai support team has been outstanding."
   },
   "educationalUse": "Classroom Teaching",
   "audience": {
@@ -52,21 +61,40 @@ const sd = {
   "isRelatedTo": [
     {
       "@type": "Product",
-      "name": "Interactive LED Educational Displays",
-      "description": "Touchscreen LED display boards for interactive classroom teaching"
+      "name": "Interactive LED Educational Displays Dubai",
+      "description": "Touchscreen LED display boards for interactive classroom teaching in UAE schools"
     },
     {
       "@type": "Product",
-      "name": "LCD Educational Screens",
-      "description": "High-resolution LCD panels for educational content display"
+      "name": "Indoor LED Video Walls Dubai",
+      "description": "High-resolution LED video walls for educational content display in UAE institutions"
     },
     {
       "@type": "Product",
-      "name": "Digital Learning Boards",
-      "description": "Smart educational boards with interactive learning software"
+      "name": "Digital Learning LED Boards UAE",
+      "description": "Smart educational LED boards with interactive learning software for Dubai schools"
+    }
+  ],
+  "areaServed": [
+    {
+      "@type": "Place",
+      "name": "Dubai, UAE"
+    },
+    {
+      "@type": "Place", 
+      "name": "Abu Dhabi, UAE"
+    },
+    {
+      "@type": "Place",
+      "name": "Sharjah, UAE"
     }
   ]
 }
+
+// UAE locations for SEO
+const locations = [
+  "Dubai", "Abu Dhabi", "Sharjah", "Ajman", "Fujairah", "Ras Al Khaimah", "Umm Al Quwain"
+];
 ---
 
 <Layout title={title} description={description} sd={sd} keywords={keywords}>
@@ -76,7 +104,7 @@ const sd = {
       <div class="absolute inset-0 z-0 overflow-hidden">
         <img 
           src="/Education/Header.jpg" 
-          alt="Education Solutions Hero"
+          alt="Educational LED Displays Dubai - Interactive LED Boards UAE"
           class="w-full h-full object-contain"
           width="1920" 
           height="1080"
@@ -87,13 +115,27 @@ const sd = {
       
       <div class="relative z-10 text-center text-white px-4 py-24 md:py-32">
         <div class="max-w-4xl mx-auto">
+          <div class="inline-flex items-center gap-2 px-4 py-2 bg-blue-500/20 backdrop-blur-sm border border-blue-400/30 rounded-full text-blue-300 text-sm font-medium mb-8">
+            <span class="w-2 h-2 bg-blue-400 rounded-full animate-pulse"></span>
+            LEADING EDUCATIONAL LED DISPLAY PROVIDER IN UAE
+          </div>
+          
           <h1 class="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
-            Education Solutions
+            Educational LED Displays <span class="text-yellow-400">Dubai & UAE</span>
           </h1>
           <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto mb-8"></div>
           <p class="text-xl md:text-2xl max-w-3xl mx-auto animate-fade-in-delayed">
-            Impart knowledge in style
+            Transform your UAE classroom with cutting-edge indoor LED displays and interactive LED video walls
           </p>
+          
+          <!-- Location Badges -->
+          <div class="mt-8 flex flex-wrap justify-center gap-2">
+            {locations.map(location => (
+              <span class="px-3 py-1 bg-white/10 text-white text-xs rounded-full">
+                {location}
+              </span>
+            ))}
+          </div>
         </div>
       </div>
     </section>
@@ -101,7 +143,7 @@ const sd = {
     <!-- Industry Requirements Section -->
     <section class="py-20 bg-gray-50">
       <div class="container mx-auto px-4">
-        <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Industry Requirements</h2>
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">UAE Educational Display Requirements</h2>
         
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <!-- Requirement 1 -->
@@ -111,8 +153,8 @@ const sd = {
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
               </svg>
             </div>
-            <h3 class="text-xl font-semibold text-center mb-4">Simplification of Classroom Environment</h3>
-            <p class="text-gray-600 text-center">It is necessary to completely solve the pain points such as massive classroom equipment, messy wiring and dust hazards.</p>
+            <h3 class="text-xl font-semibold text-center mb-4">Modern UAE Classroom Environment</h3>
+            <p class="text-gray-600 text-center">Dubai schools require solutions that eliminate equipment clutter, messy wiring, and dust hazards with integrated indoor LED display technology.</p>
           </div>
 
           <!-- Requirement 2 -->
@@ -122,8 +164,8 @@ const sd = {
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/>
               </svg>
             </div>
-            <h3 class="text-xl font-semibold text-center mb-4">Improvement of Interactive Experience</h3>
-            <p class="text-gray-600 text-center">Strengthen the display effect, and combine superior educational resources to enhance teacher-student interaction and teaching results.</p>
+            <h3 class="text-xl font-semibold text-center mb-4">Interactive Learning in UAE</h3>
+            <p class="text-gray-600 text-center">UAE educational institutions seek high resolution LED displays that enhance teacher-student interaction and learning outcomes with superior visual quality.</p>
           </div>
 
           <!-- Requirement 3 -->
@@ -133,21 +175,22 @@ const sd = {
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/>
               </svg>
             </div>
-            <h3 class="text-xl font-semibold text-center mb-4">New Challenges of Hybrid Education</h3>
-            <p class="text-gray-600 text-center">The hybrid education mode of online and offline courses puts forward higher requirements for students' participation and learning effectiveness.</p>
+            <h3 class="text-xl font-semibold text-center mb-4">Hybrid Education in Dubai</h3>
+            <p class="text-gray-600 text-center">With UAE's focus on educational innovation, LED video walls in Dubai classrooms must support both in-person and remote learning environments.</p>
           </div>
         </div>
       </div>
     </section>
+    
     <!-- Lovosis Display Solutions Section -->
     <section class="py-20 bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900">
       <div class="container mx-auto px-4">
         <div class="text-center max-w-3xl mx-auto mb-12">
-          <span class="inline-block px-3 py-1 rounded-full bg-blue-500/20 text-blue-300 text-sm font-medium tracking-wider">EDUCATIONAL SOLUTIONS</span>
-          <h2 class="text-3xl md:text-5xl font-bold text-white mt-4 mb-6">What Lovosis Display Offers</h2>
+          <span class="inline-block px-3 py-1 rounded-full bg-blue-500/20 text-blue-300 text-sm font-medium tracking-wider">DUBAI LED DISPLAY SOLUTIONS</span>
+          <h2 class="text-3xl md:text-5xl font-bold text-white mt-4 mb-6">Lovosis LED Displays for UAE Education</h2>
           <div class="w-16 h-0.5 bg-gradient-to-r from-blue-400 to-purple-400 mx-auto mb-6"></div>
           <p class="text-lg text-gray-300">
-            Empowering educators with intelligent, digital classroom solutions designed to enhance teaching and learning experiences.
+            Empowering UAE educators with intelligent, digital classroom solutions featuring high resolution LED displays in Dubai and across the Emirates.
           </p>
         </div>
         
@@ -157,7 +200,7 @@ const sd = {
             <div class="relative h-52 overflow-hidden">
               <img 
                 src="/Education/img1.webp" 
-                alt="Interactive Teaching Display" 
+                alt="Interactive LED Display Dubai for Education" 
                 class="w-full h-full object-cover object-center transition-transform duration-500 hover:scale-105"
                 width="500" 
                 height="300"
@@ -165,7 +208,7 @@ const sd = {
               />
               <div class="absolute inset-0 bg-gradient-to-t from-gray-900/80 via-gray-900/40 to-transparent"></div>
               <div class="absolute bottom-4 left-4">
-                <span class="px-3 py-1 bg-blue-600 text-white text-xs font-medium rounded-full">Interactive Learning</span>
+                <span class="px-3 py-1 bg-blue-600 text-white text-xs font-medium rounded-full">Interactive LED Boards</span>
               </div>
             </div>
             
@@ -177,14 +220,16 @@ const sd = {
                   </svg>
                 </div>
                 <div>
-                  <h3 class="text-xl font-bold text-white">Teacher-Student Engagement</h3>
-                  <p class="mt-3 text-gray-300">InstaHub series delivers exceptional audio-visual performance with seamless integration of educational software resources.</p>
+                  <h3 class="text-xl font-bold text-white">Interactive LED Displays Dubai</h3>
+                  <p class="mt-3 text-gray-300">Our InstaHub series delivers exceptional audio-visual performance with high resolution LED displays for Dubai classrooms, featuring seamless integration with educational software.</p>
                 </div>
               </div>
               
               <div class="mt-5 flex justify-between items-center">
-                <span class="text-sm text-blue-300">Available in multiple sizes</span>
-            
+                <span class="text-sm text-blue-300">Available across UAE</span>
+                <a href="/company/contact-us" class="text-sm text-white bg-blue-600 hover:bg-blue-700 px-3 py-1 rounded-full transition-colors duration-300">
+                  Get UAE Quote
+                </a>
               </div>
             </div>
           </div>
@@ -194,7 +239,7 @@ const sd = {
             <div class="relative h-52 overflow-hidden">
               <img 
                 src="/Education/img2.webp" 
-                alt="Educational Touch Interface" 
+                alt="Indoor LED Display Dubai for Education" 
                 class="w-full h-full object-cover object-center transition-transform duration-500 hover:scale-105"
                 width="500" 
                 height="300"
@@ -202,7 +247,7 @@ const sd = {
               />
               <div class="absolute inset-0 bg-gradient-to-t from-gray-900/80 via-gray-900/40 to-transparent"></div>
               <div class="absolute bottom-4 left-4">
-                <span class="px-3 py-1 bg-purple-600 text-white text-xs font-medium rounded-full">Multi-touch</span>
+                <span class="px-3 py-1 bg-purple-600 text-white text-xs font-medium rounded-full">Indoor LED Displays</span>
               </div>
             </div>
             
@@ -214,24 +259,26 @@ const sd = {
                   </svg>
                 </div>
                 <div>
-                  <h3 class="text-xl font-bold text-white">Intuitive Touch Interface</h3>
-                  <p class="mt-3 text-gray-300">Experience fluid writing, easy modification, and seamless content sharing with our advanced touchscreen displays.</p>
+                  <h3 class="text-xl font-bold text-white">Indoor LED Displays Dubai</h3>
+                  <p class="mt-3 text-gray-300">Experience fluid writing, easy modification, and seamless content sharing with our advanced indoor LED display technology for Dubai educational institutions.</p>
                 </div>
               </div>
               
               <div class="mt-5 flex justify-between items-center">
                 <span class="text-sm text-purple-300">65", 75", 86" options</span>
-                
+                <a href="/company/contact-us" class="text-sm text-white bg-purple-600 hover:bg-purple-700 px-3 py-1 rounded-full transition-colors duration-300">
+                  Get UAE Quote
+                </a>
               </div>
             </div>
           </div>
 
-          <!-- Solution 3: Simplified Classroom -->
+          <!-- Solution 3: LED Video Walls -->
           <div class="bg-white/5 backdrop-blur-sm rounded-xl overflow-hidden shadow-xl border border-white/10 hover:border-green-500/30 hover:shadow-green-500/10 transition-all duration-300">
             <div class="relative h-52 overflow-hidden">
               <img 
                 src="/Education/img3.webp" 
-                alt="Modern Classroom Environment" 
+                alt="LED Video Wall Dubai for Education" 
                 class="w-full h-full object-cover object-center transition-transform duration-500 hover:scale-105"
                 width="500" 
                 height="300"
@@ -239,7 +286,7 @@ const sd = {
               />
               <div class="absolute inset-0 bg-gradient-to-t from-gray-900/80 via-gray-900/40 to-transparent"></div>
               <div class="absolute bottom-4 left-4">
-                <span class="px-3 py-1 bg-green-600 text-white text-xs font-medium rounded-full">All-in-One</span>
+                <span class="px-3 py-1 bg-green-600 text-white text-xs font-medium rounded-full">LED Video Walls</span>
               </div>
             </div>
             
@@ -251,19 +298,357 @@ const sd = {
                   </svg>
                 </div>
                 <div>
-                  <h3 class="text-xl font-bold text-white">Simplified Learning Space</h3>
-                  <p class="mt-3 text-gray-300">Replace multiple devices with one integrated solution, eliminating cable clutter and maximizing classroom space.</p>
+                  <h3 class="text-xl font-bold text-white">LED Video Walls Dubai</h3>
+                  <p class="mt-3 text-gray-300">Replace multiple devices with integrated LED video wall solutions for Dubai schools, eliminating cable clutter and maximizing classroom space across UAE institutions.</p>
                 </div>
               </div>
               
               <div class="mt-5 flex justify-between items-center">
-                <span class="text-sm text-green-300">Wireless connectivity</span>
-               
+                <span class="text-sm text-green-300">Professional UAE installation</span>
+                <a href="/company/contact-us" class="text-sm text-white bg-green-600 hover:bg-green-700 px-3 py-1 rounded-full transition-colors duration-300">
+                  Get UAE Quote
+                </a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- Educational Products Section -->
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <span class="inline-block px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold mb-4">
+            DUBAI EDUCATIONAL DISPLAYS
+          </span>
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+            Complete Range of Educational LED Displays in UAE
+          </h2>
+          <p class="text-gray-600 text-lg max-w-3xl mx-auto">
+            High resolution LED displays for educational institutions across Dubai and UAE
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Product 1 -->
+          <div class="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200">
+            <div class="relative h-64">
+              <img 
+                src="/Education/product1.webp" 
+                alt="Interactive LED Board Dubai" 
+                class="w-full h-full object-contain"
+              />
+              <div class="absolute top-4 right-4">
+                <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Available in UAE</span>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-900 mb-2">Interactive LED Boards Dubai</h3>
+              <p class="text-gray-600 mb-4">Premium touch-enabled LED displays for Dubai classrooms with 4K resolution and multi-touch capability.</p>
+              <ul class="space-y-1 mb-6">
+                <li class="flex items-center text-sm text-gray-600">
+                  <svg class="w-4 h-4 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  High resolution LED display technology
+                </li>
+                <li class="flex items-center text-sm text-gray-600">
+                  <svg class="w-4 h-4 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  Anti-glare screen for UAE classrooms
+                </li>
+                <li class="flex items-center text-sm text-gray-600">
+                  <svg class="w-4 h-4 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  UAE installation and support
+                </li>
+              </ul>
+              <div class="flex items-center justify-between">
+                
+                <a href="/company/contact-us" class="text-blue-600 hover:text-blue-800 font-medium">Request UAE Quote</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200">
+            <div class="relative h-64">
+              <img 
+                src="/Education/product2.webp" 
+                alt="Indoor LED Video Wall Dubai" 
+                class="w-full h-full object-conatin"
+              />
+              <div class="absolute top-4 right-4">
+                <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Popular in UAE</span>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-900 mb-2">LED Video Walls Dubai</h3>
+              <p class="text-gray-600 mb-4">Modular LED video wall systems for Dubai educational institutions, perfect for lecture halls and auditoriums.</p>
+              <ul class="space-y-1 mb-6">
+                <li class="flex items-center text-sm text-gray-600">
+                  <svg class="w-4 h-4 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  Customizable sizes for UAE schools
+                </li>
+                <li class="flex items-center text-sm text-gray-600">
+                  <svg class="w-4 h-4 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  Seamless panel connection
+                </li>
+                <li class="flex items-center text-sm text-gray-600">
+                  <svg class="w-4 h-4 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  Dubai-certified professional installation
+                </li>
+              </ul>
+              <div class="flex items-center justify-between">
+              
+                <a href="/company/contact-us" class="text-blue-600 hover:text-blue-800 font-medium">Request UAE Quote</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 3 -->
+          <div class="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200">
+            <div class="relative h-64">
+              <img 
+                src="/Education/product3.webp" 
+                alt="Outdoor LED Display UAE for Education" 
+                class="w-full h-full object-cover"
+              />
+              <div class="absolute top-4 right-4">
+                <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-full">New in UAE</span>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-900 mb-2">Outdoor LED Displays UAE</h3>
+              <p class="text-gray-600 mb-4">Weather-resistant LED displays for campus notifications, events, and wayfinding across UAE educational institutions.</p>
+              <ul class="space-y-1 mb-6">
+                <li class="flex items-center text-sm text-gray-600">
+                  <svg class="w-4 h-4 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  High brightness for UAE sunlight
+                </li>
+                <li class="flex items-center text-sm text-gray-600">
+                  <svg class="w-4 h-4 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  IP65 weather protection
+                </li>
+                <li class="flex items-center text-sm text-gray-600">
+                  <svg class="w-4 h-4 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  Remote content management
+                </li>
+              </ul>
+              <div class="flex items-center justify-between">
+               
+                <a href="/company/contact-us" class="text-blue-600 hover:text-blue-800 font-medium">Request UAE Quote</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <span class="inline-block px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold mb-4">
+            UAE SUCCESS STORIES
+          </span>
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+            Trusted by Educational Institutions Across UAE
+          </h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+          <!-- Testimonial 1 -->
+          <div class="bg-white p-8 rounded-xl shadow-md border border-gray-100">
+            <div class="flex items-center mb-6">
+              <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                <span class="text-blue-600 font-bold text-xl">A</span>
+              </div>
+              <div>
+                <h4 class="font-bold text-gray-900">Ahmed Al Mansouri</h4>
+                <p class="text-sm text-gray-600">Director of Technology, International School of Dubai</p>
+              </div>
+            </div>
+            <p class="text-gray-700 mb-4">
+              "The high resolution LED displays from Lovosis have transformed our Dubai campus. The interactive LED boards in our classrooms have significantly improved student engagement and learning outcomes."
+            </p>
+            <div class="flex text-yellow-400">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="bg-white p-8 rounded-xl shadow-md border border-gray-100">
+            <div class="flex items-center mb-6">
+              <div class="w-14 h-14 bg-purple-100 rounded-full flex items-center justify-center mr-4">
+                <span class="text-purple-600 font-bold text-xl">F</span>
+              </div>
+              <div>
+                <h4 class="font-bold text-gray-900">Fatima Al Zaabi</h4>
+                <p class="text-sm text-gray-600">Head of Education, Abu Dhabi University</p>
+              </div>
+            </div>
+            <p class="text-gray-700 mb-4">
+              "Our LED video wall installation in our main lecture hall has been a game-changer. The high resolution displays from Lovosis have made presentations more engaging and visible even in our large UAE auditoriums."
+            </p>
+            <div class="flex text-yellow-400">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <span class="inline-block px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold mb-4">
+            FREQUENTLY ASKED QUESTIONS
+          </span>
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+            Common Questions About Educational LED Displays in UAE
+          </h2>
+        </div>
+        
+        <div class="max-w-3xl mx-auto space-y-6">
+          <div class="bg-gray-50 rounded-lg p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-3">What types of LED displays are best for Dubai classrooms?</h3>
+            <p class="text-gray-600">For Dubai classrooms, we recommend high resolution LED displays with anti-glare technology to handle the bright ambient lighting conditions common in UAE. Our indoor LED displays are specifically designed for educational environments with features like low blue light emission and flicker-free operation.</p>
+          </div>
+          
+          <div class="bg-gray-50 rounded-lg p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-3">Do you provide installation for LED video walls in UAE schools?</h3>
+            <p class="text-gray-600">Yes, we provide complete professional installation services for all our LED video walls across UAE educational institutions. Our Dubai-based technicians are certified and experienced in setting up displays in classroom environments, ensuring minimal disruption to your school's operations.</p>
+          </div>
+          
+          <div class="bg-gray-50 rounded-lg p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-3">Are outdoor LED displays suitable for UAE university campuses?</h3>
+            <p class="text-gray-600">Our outdoor LED displays are specifically engineered for UAE's climate, with high brightness (5000+ nits) to ensure visibility in direct sunlight, IP65 weather protection against dust and rain, and cooling systems designed to handle Dubai's high temperatures. They're perfect for campus notifications, event announcements, and wayfinding.</p>
+          </div>
+          
+          <div class="bg-gray-50 rounded-lg p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-3">What warranty do you offer on educational LED displays in Dubai?</h3>
+            <p class="text-gray-600">All our educational LED displays come with a comprehensive 3-year warranty valid throughout the UAE. This includes parts, labor, and on-site service. We also offer extended warranty options and maintenance contracts specifically designed for Dubai educational institutions.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-r from-blue-600 to-purple-600 relative overflow-hidden">
+      
+      <div class="container mx-auto px-4 relative z-10">
+        <div class="max-w-3xl mx-auto text-center text-white">
+          <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Transform Your UAE Educational Spaces?</h2>
+          <p class="text-xl mb-8">Contact our Dubai team today for a personalized consultation and see how our LED display solutions can enhance your teaching environment.</p>
+          <div class="flex flex-wrap justify-center gap-4">
+            <a href="/company/contact-us" class="px-8 py-4 bg-white text-blue-600 hover:bg-gray-100 rounded-lg font-bold transition-colors duration-300 shadow-lg">
+              Get a UAE Quote
+            </a>
+           
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 </Layout>
+
+<!-- FAQ Schema for Rich Snippets -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What types of LED displays are best for Dubai classrooms?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For Dubai classrooms, we recommend high resolution LED displays with anti-glare technology to handle the bright ambient lighting conditions common in UAE. Our indoor LED displays are specifically designed for educational environments with features like low blue light emission and flicker-free operation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you provide installation for LED video walls in UAE schools?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we provide complete professional installation services for all our LED video walls across UAE educational institutions. Our Dubai-based technicians are certified and experienced in setting up displays in classroom environments, ensuring minimal disruption to your school's operations."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are outdoor LED displays suitable for UAE university campuses?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our outdoor LED displays are specifically engineered for UAE's climate, with high brightness (5000+ nits) to ensure visibility in direct sunlight, IP65 weather protection against dust and rain, and cooling systems designed to handle Dubai's high temperatures. They're perfect for campus notifications, event announcements, and wayfinding."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What warranty do you offer on educational LED displays in Dubai?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "All our educational LED displays come with a comprehensive 3-year warranty valid throughout the UAE. This includes parts, labor, and on-site service. We also offer extended warranty options and maintenance contracts specifically designed for Dubai educational institutions."
+      }
+    }
+  ]
+}
+</script>
+
+<!-- Local Business Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Lovosis Display - Educational LED Displays Dubai",
+  "description": "Leading provider of LED display solutions for educational institutions across UAE including LED video walls Dubai, indoor LED displays, and interactive educational screens.",
+  "url": "https://lovosisdisplay.ae",
+  "telephone": "+97143388644",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Business Bay",
+    "addressLocality": "Dubai",
+    "addressCountry": "UAE"
+  },
+  "priceRange": "AED 5000-35000",
+  "areaServed": ["Dubai", "Abu Dhabi", "Sharjah", "UAE"],
+  "image": "https://lovosisdisplay.ae/logo.png"
+}
+</script>
+
+<style>
+  .animate-fade-in {
+    animation: fadeIn 1s ease-out;
+  }
+
+  .animate-fade-in-delayed {
+    animation: fadeIn 1s ease-out 0.5s both;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+</style>

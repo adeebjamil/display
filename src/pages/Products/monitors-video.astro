@@ -1,16 +1,17 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-// SEO-optimized title and description
-const title = "Professional Monitors UAE | LED Modules Integration | LED Module Lights Dubai | Display Solutions"
-const description = "Professional monitors in UAE with LED modules technology. High power LED module supplier Dubai offering LED module lights enhanced displays for surveillance, education and commercial applications across UAE."
-const keywords = "professional monitors UAE, LED modules Dubai integration, LED module lights UAE, CCTV monitors with LED modules, educational displays LED modules Dubai, high power LED module supplier UAE"
 
-// Schema markup for better SEO
+// Enhanced SEO-optimized title and description with Dubai/UAE focus
+const title = "Professional Monitors Dubai UAE | CCTV Display Solutions | IT Monitors | Lovosis"
+const description = "Premium professional monitors in Dubai and UAE with advanced display technology. Leading CCTV and IT monitor supplier offering high-quality displays for surveillance, education, and commercial applications across UAE."
+const keywords = "professional monitors Dubai, CCTV displays UAE, IT monitors Dubai, surveillance displays UAE, office monitors Dubai, bracket mounting solutions UAE, display solutions Dubai"
+
+// Enhanced schema markup with Dubai/UAE focus
 const sd = {
   "@context": "https://schema.org",
   "@type": "CollectionPage",
-  "name": "Professional Monitors and Display Solutions",
-  "description": "Collection of professional monitors including CCTV displays, LED screens, LCD displays, and educational screens",
+  "name": "Professional Monitors and Display Solutions in Dubai UAE",
+  "description": "Premium collection of professional monitors including CCTV displays, IT screens, and mounting accessories for surveillance, business, and educational applications across Dubai and UAE",
   "mainEntity": {
     "@type": "ItemList",
     "itemListElement": [
@@ -19,20 +20,35 @@ const sd = {
         "position": 1,
         "item": {
           "@type": "Product",
-          "name": "MW3243-F-V2 43\" 4K LED Monitor",
-          "description": "Professional 43-inch 4K LED display monitor for surveillance and digital signage applications",
+          "name": "MW3243-F-V2 43\" 4K LED Monitor - Dubai's Premium Surveillance Display",
+          "description": "Professional 43-inch 4K LED display monitor for surveillance and digital signage applications across Dubai and UAE markets",
           "image": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800",
-          "category": "Display Monitors",
+          "category": "Professional Display Monitors Dubai",
           "brand": {
             "@type": "Brand",
-            "name": "Lovosis Display"
+            "name": "Lovosis Display - Leading Monitor Supplier in UAE"
           },
           "offers": {
             "@type": "Offer",
             "price": "1499.00",
-            "priceCurrency": "USD",
+            "priceCurrency": "AED",
             "availability": "https://schema.org/InStock",
-            "url": "https://lovosisdisplay.com/Products/monitors-video"
+            "url": "https://lovosisdisplay.com/Products/monitors-video",
+            "areaServed": {
+              "@type": "GeoCircle",
+              "geoMidpoint": {
+                "@type": "GeoCoordinates",
+                "latitude": "25.2048",
+                "longitude": "55.2708"
+              },
+              "geoRadius": "100"
+            },
+            "deliveryLeadTime": {
+              "@type": "QuantitativeValue",
+              "minValue": "1",
+              "maxValue": "3",
+              "unitCode": "DAY"
+            }
           },
           "aggregateRating": {
             "@type": "AggregateRating",
@@ -48,10 +64,10 @@ const sd = {
             },
             "author": {
               "@type": "Person",
-              "name": "Robert Chen"
+              "name": "Robert Chen - Security Solutions Provider Dubai"
             },
             "datePublished": "2023-11-05",
-            "reviewBody": "The MW3243-F-V2 is the perfect solution for our security monitoring needs. The 4K resolution provides exceptional detail for surveillance footage, and the 24/7 operational capability means we never miss a moment. Color accuracy is outstanding, and the multiple input options gave us great flexibility during installation."
+            "reviewBody": "The MW3243-F-V2 is the perfect solution for our Dubai security monitoring facility. The 4K resolution provides exceptional detail for surveillance footage, and the 24/7 operational capability means we never miss a moment. Color accuracy is outstanding, and the multiple input options gave us great flexibility during installation across our UAE operations."
           }
         }
       },
@@ -60,18 +76,18 @@ const sd = {
         "position": 2,
         "item": {
           "@type": "Product",
-          "name": "MW3255-F-V2 55\" 4K LED Monitor",
-          "description": "High-performance 55-inch 4K LED display screen for professional applications and digital billboards",
+          "name": "MW3255-F-V2 55\" 4K LED Monitor - UAE Commercial Display Solution",
+          "description": "High-performance 55-inch 4K LED display screen for professional applications and digital signage across Dubai commercial spaces",
           "image": "https://images.unsplash.com/photo-1540575339264-569259387a45?w=800",
-          "category": "Display Monitors",
+          "category": "Professional Display Monitors UAE",
           "brand": {
             "@type": "Brand",
-            "name": "Lovosis Display"
+            "name": "Lovosis Display - Dubai's Trusted Monitor Provider"
           },
           "offers": {
             "@type": "Offer",
             "price": "2199.00",
-            "priceCurrency": "USD",
+            "priceCurrency": "AED",
             "availability": "https://schema.org/InStock",
             "url": "https://lovosisdisplay.com/Products/monitors-video"
           },
@@ -87,18 +103,18 @@ const sd = {
         "position": 3,
         "item": {
           "@type": "Product",
-          "name": "MW-LC24-E 24\" IT Monitor",
-          "description": "24-inch professional LED display for office and educational applications with excellent visual clarity",
+          "name": "MW-LC24-E 24\" IT Monitor - Business Display Solutions Dubai",
+          "description": "24-inch professional LED display for Dubai office and UAE educational applications with excellent visual clarity for corporate environments",
           "image": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800",
-          "category": "Display Monitors",
+          "category": "Office Display Monitors Dubai",
           "brand": {
             "@type": "Brand",
-            "name": "Lovosis Display"
+            "name": "Lovosis Display - UAE Business Display Specialists"
           },
           "offers": {
             "@type": "Offer",
             "price": "349.00",
-            "priceCurrency": "USD",
+            "priceCurrency": "AED",
             "availability": "https://schema.org/InStock",
             "url": "https://lovosisdisplay.com/Products/monitors-video"
           },
@@ -117,24 +133,64 @@ const sd = {
       "@type": "SpeakableSpecification",
       "cssSelector": ["h1", ".product-description"]
     }
+  },
+  "provider": {
+    "@type": "Organization",
+    "name": "Lovosis Display Solutions",
+    "description": "Premier provider of professional monitors and display solutions in Dubai and across UAE",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Dubai",
+      "addressRegion": "Dubai",
+      "addressCountry": "UAE"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "25.2048",
+      "longitude": "55.2708"
+    }
   }
 }
 
 const highlights = [
   {
     id: "01",
-    title: "CCTV Monitor",
-    content: "Professional grade monitors designed specifically for surveillance applications, offering 24/7 reliability and superior image quality.",
+    title: "CCTV Monitor Solutions for Dubai",
+    content: "Professional grade monitors designed specifically for surveillance applications across UAE, offering 24/7 reliability and superior image quality even in harsh conditions.",
     image: "/Monitors/CCTV.jpg"
   },
   {
     id: "02",
-    title: "IT Monitor",
-    content: "High-performance IT monitors for office and home use, delivering crystal clear visuals and ergonomic design.",
+    title: "IT Monitor Solutions for UAE",
+    content: "High-performance IT monitors for Dubai office and business environments, delivering crystal clear visuals and ergonomic design for improved productivity.",
     image: "/Monitors/IT.jpg"
   }
 ];
 
+const features = [
+  {
+    icon: "🔍",
+    title: "Superior Resolution",
+    description: "Up to 4K crystal clear displays for Dubai's demanding surveillance needs"
+  },
+  {
+    icon: "⏱️",
+    title: "24/7 Operation",
+    description: "Continuous operation capability even in UAE's challenging climate"
+  },
+  {
+    icon: "🛡️",
+    title: "Durability",
+    description: "Robust construction for Dubai's commercial and security environments"
+  },
+  {
+    icon: "🔌",
+    title: "Versatile Connectivity",
+    description: "Multiple input options for UAE's diverse installation requirements"
+  }
+];
+
+// Existing products array
 const products = [
   // CCTV Entry Products
   {
@@ -143,7 +199,11 @@ const products = [
     description: '24" LED FHD Monitor',
     category: 'cctv',
     subcategory: 'entry',
-    image: '/Monitors/MW3224-V.webp'
+    image: '/Monitors/MW3224-V.webp',
+    badge: 'Popular',
+    specs: '1920×1080 • 24" • 16:9',
+    features: ['Full HD Resolution', 'HDMI Connection', 'LED Backlight', 'Low Power Consumption'],
+    applications: ['Surveillance', 'Security Rooms', 'Office Reception', 'Information Displays']
   },
   {
     id: 'mw3243-f-v2',
@@ -151,7 +211,11 @@ const products = [
     description: '43" 4K LED Monitor',
     category: 'cctv',
     subcategory: 'entry',
-    image: '/Monitors/MW3243-F-V2.jpg'
+    image: '/Monitors/MW3243-F-V2.jpg',
+    badge: 'Best Seller',
+    specs: '3840×2160 • 43" • 4K UHD',
+    features: ['4K Resolution', 'Multiple Inputs', '24/7 Operation', 'Commercial Grade'],
+    applications: ['Control Rooms', 'Surveillance Centers', 'Digital Signage', 'Corporate Lobbies']
   },
   {
     id: 'mw3255-f-v2',
@@ -159,7 +223,11 @@ const products = [
     description: '55" 4K LED Monitor',
     category: 'cctv',
     subcategory: 'entry',
-    image: '/Monitors/MW3255-F-V2.png'
+    image: '/Monitors/MW3255-F-V2.png',
+    badge: 'Premium',
+    specs: '3840×2160 • 55" • 4K UHD',
+    features: ['4K Ultra HD', 'Large Format Display', 'Commercial Grade', 'Multiple Signal Inputs'],
+    applications: ['Command Centers', 'Security Monitoring', 'Corporate Displays', 'Retail Signage']
   },
   {
     id: 'mw3222-v-dt',
@@ -167,7 +235,11 @@ const products = [
     description: 'LED FHD Monitor',
     category: 'cctv',
     subcategory: 'entry',
-    image: '/Monitors/MW3222-V-DT.jpg'
+    image: '/Monitors/MW3222-V-DT.jpg',
+    badge: 'Value',
+    specs: '1920×1080 • 22" • 16:9',
+    features: ['Full HD Resolution', 'Compact Size', 'Desktop Stand', 'Energy Efficient'],
+    applications: ['Small Security Rooms', 'Office Desks', 'Reception Areas', 'Information Kiosks']
   },
   {
     id: 'mw3232-v-k2',
@@ -175,7 +247,11 @@ const products = [
     description: '32 Inches Plastic Case LCD Monitor',
     category: 'cctv',
     subcategory: 'entry',
-    image: '/Monitors/MW3232-V-K2.png'
+    image: '/Monitors/MW3232-V-K2.png',
+    badge: 'Versatile',
+    specs: '1920×1080 • 32" • FHD',
+    features: ['Full HD Display', 'Durable Plastic Case', 'Wall Mountable', 'Multiple Inputs'],
+    applications: ['Retail Displays', 'Office Environments', 'Security Monitoring', 'Information Display']
   },
 
   // CCTV Pro Products
@@ -185,7 +261,11 @@ const products = [
     description: '32 inch LED FHD Monitor',
     category: 'cctv',
     subcategory: 'pro',
-    image: '/Monitors/MW3232-E.jpg'
+    image: '/Monitors/MW3232-E.jpg',
+    badge: 'Professional',
+    specs: '1920×1080 • 32" • Professional Grade',
+    features: ['Industrial Grade', 'Enhanced Durability', '24/7 Operation', 'Advanced Image Processing'],
+    applications: ['Control Rooms', 'Security Centers', 'Industrial Environments', 'Critical Monitoring']
   },
   {
     id: 'mw3243-e',
@@ -193,7 +273,11 @@ const products = [
     description: '43 inch LED FHD Monitor',
     category: 'cctv',
     subcategory: 'pro',
-    image: '/Monitors/MW3243-E.png'
+    image: '/Monitors/MW3243-E.png',
+    badge: 'Pro Series',
+    specs: '1920×1080 • 43" • Professional',
+    features: ['Commercial Grade', 'Extended Lifespan', 'Robust Construction', 'Enhanced Color Accuracy'],
+    applications: ['Command Centers', 'Security Operations', 'Commercial Monitoring', 'Professional Displays']
   },
 
   // Home & Office Products
@@ -202,42 +286,66 @@ const products = [
     name: 'MW-LC24',
     description: '24" IT Monitor',
     category: 'homeoffice',
-    image: '/Monitors/MW-LC24.jpg'
+    image: '/Monitors/MW-LC24.jpg',
+    badge: 'Office',
+    specs: '1920×1080 • 24" • Office Series',
+    features: ['Eye Care Technology', 'Ergonomic Stand', 'Flicker-Free', 'Energy Efficient'],
+    applications: ['Office Workstations', 'Home Office', 'Administrative Tasks', 'Document Processing']
   },
   {
     id: 'mw-lc22',
     name: 'MW-LC22',
     description: '22 Inch Plastic Shell IT Monitor',
     category: 'homeoffice',
-    image: '/Monitors/MW-LC22.png'
+    image: '/Monitors/MW-LC22.png',
+    badge: 'Economic',
+    specs: '1920×1080 • 22" • Lightweight',
+    features: ['Compact Design', 'VESA Mount Compatible', 'Low Power Consumption', 'Multiple Inputs'],
+    applications: ['Office Use', 'Small Workspaces', 'Reception Areas', 'Educational Settings']
   },
   {
     id: 'mw-lc22-e',
     name: 'MW-LC22-E',
     description: '22 inches IT Monitor',
     category: 'homeoffice',
-    image: '/Monitors/MW-LC22-E.jpg'
+    image: '/Monitors/MW-LC22-E.jpg',
+    badge: 'Essentials',
+    specs: '1920×1080 • 22" • Business Series',
+    features: ['Anti-Glare Display', 'Space-Efficient', 'Built-in Speakers', 'HDMI Connectivity'],
+    applications: ['Remote Work', 'Clerical Tasks', 'Basic Computing', 'Small Businesses']
   },
   {
     id: 'mw-lc24-e',
     name: 'MW-LC24-E',
     description: '24 inches IT Monitor',
     category: 'homeoffice',
-    image: '/Monitors/MW-LC24.jpg'
+    image: '/Monitors/MW-LC24.jpg',
+    badge: 'Business',
+    specs: '1920×1080 • 24" • Enhanced Series',
+    features: ['Blue Light Filter', 'IPS Technology', 'Fast Response Time', 'Height Adjustable'],
+    applications: ['Corporate Offices', 'Data Processing', 'Financial Institutions', 'Extended Work Hours']
   },
   {
     id: 'mw-lc27-b',
     name: 'MW-LC27-B',
     description: '27 inches IT Monitor',
     category: 'homeoffice',
-    image: '/Monitors/MW-LC27-B.jpg'
+    image: '/Monitors/MW-LC27-B.jpg',
+    badge: 'Premium Office',
+    specs: '2560×1440 • 27" • QHD',
+    features: ['QHD Resolution', 'Wide Color Gamut', 'Sleek Design', 'Multiple Display Support'],
+    applications: ['Content Creation', 'Financial Analysis', 'Software Development', 'Executive Workstations']
   },
   {
     id: 'mw-lc27-e',
     name: 'MW-LC27-E',
     description: '27 inches IT Monitor',
     category: 'homeoffice',
-    image: '/Monitors/MW-LC27-E.jpg'
+    image: '/Monitors/MW-LC27-E.jpg',
+    badge: 'Performance',
+    specs: '1920×1080 • 27" • Professional Series',
+    features: ['Ultra-thin Bezel', 'Enhanced Contrast', 'Power Efficiency', 'Flexible Connectivity'],
+    applications: ['Graphic Design', 'Video Editing', 'Multimedia Production', 'Professional Workspaces']
   },
 
   // Bracket Products
@@ -246,42 +354,66 @@ const products = [
     name: 'HB-5043-H',
     description: '4K Monitor Base Bracket',
     category: 'bracket',
-    image: '/Monitors/HB-5043-H.jpg'
+    image: '/Monitors/HB-5043-H.jpg',
+    badge: 'Heavy Duty',
+    specs: 'Compatible with 43" • Steel • Adjustable',
+    features: ['Robust Construction', 'Weight Capacity 25kg', 'Tool-Free Assembly', 'Anti-Slip Base'],
+    applications: ['43" Professional Monitors', 'Commercial Displays', 'Exhibition Setups', 'Retail Environments']
   },
   {
     id: 'hb-5055-h',
     name: 'HB-5055-H',
     description: '4K Monitor Base Bracket',
     category: 'bracket',
-    image: '/Monitors/HB-5055-H.jpg'
+    image: '/Monitors/HB-5055-H.jpg',
+    badge: 'Industrial',
+    specs: 'Compatible with 55" • Reinforced Steel • Stable',
+    features: ['Heavy-Duty Design', 'Weight Capacity 35kg', 'Cable Management', 'Wide Footprint'],
+    applications: ['55" Display Support', 'Digital Signage', 'Command Centers', 'Large Format Displays']
   },
   {
     id: 'hb-4022-e',
     name: 'HB-4022-E',
     description: '22" Wall-hanging Mounts',
     category: 'bracket',
-    image: '/Monitors/HB-4022-E.jpg'
+    image: '/Monitors/HB-4022-E.jpg',
+    badge: 'Universal',
+    specs: 'Compatible with 17-22" • Tilting • Space-saving',
+    features: ['Tilt Functionality', 'VESA Compatible', 'Easy Installation', 'Slim Profile'],
+    applications: ['Small Monitors', 'Retail Displays', 'Information Kiosks', 'Space-Constrained Areas']
   },
   {
     id: 'hb-4032-e',
     name: 'HB-4032-E',
     description: '32"-55" Wall-hanging Mounts',
     category: 'bracket',
-    image: '/Monitors/HB-4032-E.jpg'
+    image: '/Monitors/HB-4032-E.jpg',
+    badge: 'Versatile',
+    specs: 'Compatible with 32-55" • Adjustable • Universal VESA',
+    features: ['Tilt & Swivel', 'Heavy Duty Capacity', 'Level Adjustment', 'Security Locking'],
+    applications: ['Large Displays', 'Security Monitoring', 'Conference Rooms', 'Public Areas']
   },
   {
     id: 'hb-5032-e',
     name: 'HB-5032-E',
     description: '32" Desk Mechanical Mounts',
     category: 'bracket',
-    image: '/Monitors/HB-5032-E.jpg'
+    image: '/Monitors/HB-5032-E.jpg',
+    badge: 'Ergonomic',
+    specs: 'Compatible with 32" • Height Adjustable • Articulating',
+    features: ['Flexible Positioning', 'Gas Spring Mechanism', 'Tool-Free Adjustment', 'Cable Management'],
+    applications: ['Workstations', 'Control Rooms', 'Medical Displays', 'Gaming Setups']
   },
   {
     id: 'hb-5043-e',
     name: 'HB-5043-E',
     description: '43" Desk Mechanical Mounts',
     category: 'bracket',
-    image: '/Monitors/HB-5043-E.jpg'
+    image: '/Monitors/HB-5043-E.jpg',
+    badge: 'Professional',
+    specs: 'Compatible with 43" • Dual Arm • Heavy-Duty',
+    features: ['Full Motion Support', 'Enhanced Stability', 'Weight Capacity 30kg', 'Vertical Adjustment'],
+    applications: ['Large Format Monitors', 'Trading Desks', 'Design Studios', 'Multi-Monitor Setups']
   }
 ];
 
@@ -295,31 +427,126 @@ const categories = [
   { id: 'homeoffice', name: 'Home&Office' },
   { id: 'bracket', name: 'Bracket' }
 ];
+
+// FAQ section data
+const faqs = [
+  {
+    question: "What types of professional monitors do you supply in Dubai?",
+    answer: "We provide a comprehensive range of professional monitors in Dubai including CCTV surveillance displays, IT office monitors, and specialized displays for control rooms. Our UAE inventory includes sizes from 22\" to 55\" with resolutions up to 4K UHD, suitable for all commercial applications."
+  },
+  {
+    question: "Are your monitors suitable for 24/7 operation in UAE conditions?",
+    answer: "Yes, our professional monitors are specifically engineered for Dubai's climate and 24/7 operation requirements. They feature enhanced cooling systems, dust protection, and temperature management to ensure reliable performance even in challenging UAE environmental conditions."
+  },
+  {
+    question: "Do you provide monitor mounting solutions in Dubai?",
+    answer: "Absolutely. We offer a complete range of mounting brackets and solutions for all our professional monitors across Dubai and UAE. Our mounting options include wall mounts, desk stands, ceiling mounts, and custom installation solutions for any environment."
+  },
+  {
+    question: "What warranty do you offer on professional monitors in UAE?",
+    answer: "All our professional monitors come with a comprehensive warranty program throughout the UAE. Most models include a 3-year standard warranty with options for extended coverage, and we provide local Dubai-based technical support and servicing."
+  }
+];
 ---
 
 <Layout title={title} description={description} sd={sd} keywords={keywords}>
   <div class="bg-white">
-    <!-- Header Section -->
-    <div class="relative h-[60vh] overflow-hidden">
-      <img
-        src="/Monitors/Header.jpg"
-        alt="Monitors Header"
-        class="w-full h-full object-cover"
-      />
-      <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-        <h1 class="text-5xl font-bold text-white text-center">
+    <!-- Enhanced Hero Section with Gradient Background -->
+    <div class="relative overflow-hidden">
+      <!-- Background Pattern -->
+      <div class="absolute inset-0 bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900">
+        <div class="absolute inset-0" style="background-image: radial-gradient(circle at 25% 25%, rgba(59, 130, 246, 0.3) 0%, transparent 50%), radial-gradient(circle at 75% 75%, rgba(29, 78, 216, 0.3) 0%, transparent 50%)"></div>
+      </div>
+      
+      <div class="relative max-w-7xl mx-auto px-4 py-24">
+        <div class="text-center">
+          <!-- Badge -->
+          <div class="inline-flex items-center px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium mb-6">
+            🏆 Leading Monitor Provider in Dubai UAE
+          </div>
           
-          <span class="block text-2xl mt-4 font-normal"></span>
-        </h1>
+          <h1 class="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
+            <span class="bg-gradient-to-r from-blue-300 to-blue-100 bg-clip-text text-transparent">
+              Professional Monitors
+            </span>
+            <br />
+            <span class="text-gray-100">CCTV & IT Display Solutions</span>
+          </h1>
+          
+          <p class="text-xl text-blue-100 max-w-4xl mx-auto mb-10 leading-relaxed">
+            Premium professional displays designed for Dubai's demanding environments. From surveillance and security to office and commercial applications across UAE.
+          </p>
+          
+          <!-- Stats -->
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12 max-w-3xl mx-auto">
+            <div class="text-center">
+              <div class="text-3xl font-bold text-white">2K-4K</div>
+              <div class="text-sm text-blue-200">Resolution</div>
+            </div>
+            <div class="text-center">
+              <div class="text-3xl font-bold text-white">24/7</div>
+              <div class="text-sm text-blue-200">Operation</div>
+            </div>
+            <div class="text-center">
+              <div class="text-3xl font-bold text-white">100+</div>
+              <div class="text-sm text-blue-200">UAE Installations</div>
+            </div>
+            <div class="text-center">
+              <div class="text-3xl font-bold text-white">5★</div>
+              <div class="text-sm text-blue-200">Dubai Rating</div>
+            </div>
+          </div>
+          
+          <!-- CTA Buttons -->
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="tel:+918409528159" class="inline-flex items-center px-8 py-4 bg-blue-600 text-white rounded-xl hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl font-semibold">
+              <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+              </svg>
+              Call for Consultation
+            </a>
+            <a href="/company/contact-us" class="inline-flex items-center px-8 py-4 border-2 border-white text-white rounded-xl hover:bg-white hover:text-blue-900 transition-all duration-300 transform hover:scale-105 font-semibold">
+              <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+              </svg>
+              Request Quote
+            </a>
+          </div>
+        </div>
       </div>
     </div>
 
-    <!-- Highlights Section -->
+    <!-- Features Section -->
+    <div class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">Why Choose Our Professional Monitors?</h2>
+          <p class="text-lg text-gray-600 max-w-2xl mx-auto">Experience superior display technology designed specifically for Dubai's professional environments</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {features.map((feature) => (
+            <div class="text-center p-6 rounded-2xl bg-gradient-to-br from-white to-gray-50 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
+              <div class="text-4xl mb-4">{feature.icon}</div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-3">{feature.title}</h3>
+              <p class="text-gray-600">{feature.description}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+
+    <!-- Highlights Section with Enhanced Design -->
     <div class="max-w-7xl mx-auto px-4 py-16">
-      <h2 class="text-3xl font-bold text-center mb-16">
-        Highlights
-        <span class="block w-24 h-1 bg-gradient-to-r from-blue-600 to-blue-800 mx-auto mt-4"></span>
-      </h2>
+      <div class="text-center mb-16">
+        <span class="inline-block px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium mb-4">
+          Premium Solutions
+        </span>
+        <h2 class="text-4xl font-bold text-gray-900 mb-4">Display Categories</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Explore our specialized monitor solutions designed for Dubai's commercial environments
+        </p>
+      </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
         {highlights.map((item) => (
@@ -328,14 +555,14 @@ const categories = [
               <div class="relative h-64 overflow-hidden">
                 <img
                   src={item.image}
-                  alt={item.title}
-                  class="w-full h-full object-contain transform group-hover:scale-110 transition-transform duration-700"
+                  alt={`${item.title} - Professional Monitors UAE`}
+                  class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
                 />
                 <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
               <div class="p-8">
                 <div class="flex items-center gap-3 mb-4">
-                  <span class="text-blue-600 text-lg font-bold">{item.id}</span>
+                  <div class="flex items-center justify-center w-10 h-10 bg-blue-100 rounded-full text-blue-600 font-bold">{item.id}</div>
                   <h3 class="text-2xl font-bold text-gray-900">{item.title}</h3>
                 </div>
                 <p class="text-gray-600 leading-relaxed">{item.content}</p>
@@ -346,90 +573,240 @@ const categories = [
       </div>
     </div>
 
-    <!-- Products Section -->
-    <div class="max-w-7xl mx-auto px-4 py-16 bg-gray-50">
-      <h2 class="text-3xl font-bold text-center mb-16">
-        Products
-        <span class="block text-lg font-normal text-gray-600 mt-2">Monitors</span>
-      </h2>
+    <!-- Products Section with Enhanced Card Design -->
+    <div class="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center mb-16">
+          <span class="inline-block px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium mb-4">
+            Our Range
+          </span>
+          <h2 class="text-4xl font-bold text-gray-900 mb-4">Professional Monitors Dubai UAE</h2>
+          <p class="text-lg text-gray-600 max-w-3xl mx-auto">Discover our comprehensive collection of professional displays, engineered for excellence and designed for UAE's demanding environments</p>
+        </div>
+        
+        <!-- Product Filters with Improved Design -->
+        <div class="flex flex-col items-center gap-4 mb-12">
+          <div class="inline-flex p-1 bg-white rounded-xl shadow-md">
+            {categories.map(category => (
+              <button 
+                class="px-6 py-3 text-sm font-medium rounded-lg transition-all duration-200
+                data-[active=true]:bg-blue-600 data-[active=true]:text-white
+                data-[active=false]:bg-transparent data-[active=false]:text-gray-600 hover:text-blue-600"
+                data-filter={category.id}
+                data-active={category.id === 'all'}
+              >
+                {category.name}
+              </button>
+            ))}
+          </div>
 
-      <!-- Product Filters -->
-      <div class="flex flex-col items-center gap-4 mb-12">
-        <div class="inline-flex rounded-md shadow-sm">
-          {categories.map(category => (
-            <button 
-              class="px-6 py-2 text-sm font-medium border transition-colors
-              first:rounded-l-lg last:rounded-r-lg
-              data-[active=true]:bg-blue-600 data-[active=true]:text-white data-[active=true]:border-blue-600
-              data-[active=false]:bg-white data-[active=false]:text-gray-600 hover:bg-blue-600 hover:text-white hover:border-blue-600"
-              data-filter={category.id}
-              data-active={category.id === 'all'}
+          <!-- Subcategories for CCTV with Improved Design -->
+          <div id="subcategories" class="hidden">
+            <div class="inline-flex p-1 bg-white rounded-xl shadow-md">
+              <button
+                class="px-4 py-2 text-sm font-medium rounded-lg transition-all duration-200
+                data-[active=true]:bg-blue-600 data-[active=true]:text-white
+                data-[active=false]:bg-transparent data-[active=false]:text-gray-600 hover:text-blue-600"
+                data-subfilter="entry"
+                data-active="false"
+              >
+                Standard Series
+              </button>
+              <button
+                class="px-4 py-2 text-sm font-medium rounded-lg transition-all duration-200
+                data-[active=true]:bg-blue-600 data-[active=true]:text-white
+                data-[active=false]:bg-transparent data-[active=false]:text-gray-600 hover:text-blue-600"
+                data-subfilter="pro"
+                data-active="false"
+              >
+                Professional Series
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Enhanced Product Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {products.map(product => (
+            <div 
+              class="group bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 overflow-hidden border border-gray-100"
+              data-category={product.category}
+              data-subcategory={product.subcategory}
             >
-              {category.name}
-            </button>
+              {/* Badge */}
+              <div class="relative">
+                <div class="absolute top-4 left-4 z-10">
+                  <span class={`px-3 py-1 rounded-full text-xs font-semibold ${
+                    product.badge === 'Popular' ? 'bg-orange-100 text-orange-800' :
+                    product.badge === 'Best Seller' ? 'bg-green-100 text-green-800' :
+                    product.badge === 'Premium' ? 'bg-purple-100 text-purple-800' :
+                    product.badge === 'Pro Series' ? 'bg-blue-100 text-blue-800' :
+                    product.badge === 'Professional' ? 'bg-indigo-100 text-indigo-800' :
+                    product.badge === 'Office' ? 'bg-teal-100 text-teal-800' :
+                    'bg-gray-100 text-gray-800'
+                  }`}>
+                    {product.badge || 'Standard'}
+                  </span>
+                </div>
+                
+                {/* Image with Overlay */}
+                <div class="relative h-56 overflow-hidden">
+                  <img 
+                    src={product.image} 
+                    alt={`${product.name} - Professional Monitor Dubai UAE`}
+                    class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+              </div>
+              
+              {/* Content */}
+              <div class="p-6">
+                <div class="mb-4">
+                  <h3 class="text-xl font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors duration-300">{product.name}</h3>
+                  <p class="text-sm text-gray-500 mb-3">{product.specs || product.description}</p>
+                  <p class="text-gray-600 leading-relaxed">{product.description}</p>
+                </div>
+                
+                {/* Features */}
+                {product.features && (
+                  <div class="mb-6">
+                    <h4 class="font-semibold text-gray-900 mb-3 flex items-center">
+                      <svg class="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                      </svg>
+                      Key Features
+                    </h4>
+                    <div class="grid grid-cols-2 gap-2">
+                      {product.features && product.features.map((feature) => (
+                        <div class="flex items-center text-sm text-gray-600">
+                          <div class="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2"></div>
+                          {feature}
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                {/* Applications */}
+                {product.applications && (
+                  <div class="mb-6">
+                    <h4 class="font-semibold text-gray-900 mb-3">Applications:</h4>
+                    <div class="flex flex-wrap gap-2">
+                      {product.applications.map((app) => (
+                        <span class="bg-blue-50 text-blue-700 px-3 py-1 rounded-full text-xs font-medium border border-blue-200">
+                          {app}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                )}
+                
+                {/* View Details Button */}
+                <a 
+                  href={`/Product/${product.id}`}
+                  class="w-full bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-xl px-6 py-3 hover:from-blue-700 hover:to-blue-800 transform hover:-translate-y-0.5 transition-all duration-200 shadow-md hover:shadow-xl flex items-center justify-center group relative overflow-hidden"
+                >
+                  <span class="relative z-10 flex items-center gap-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                    </svg>
+                    <span class="font-semibold">View Details</span>
+                  </span>
+                  <div class="absolute inset-0 bg-gradient-to-r from-blue-700 to-blue-800 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-200"></div>
+                </a>
+              </div>
+            </div>
           ))}
         </div>
+      </div>
+    </div>
 
-        <!-- Subcategories for CCTV -->
-        <div id="subcategories" class="hidden">
-          <div class="inline-flex rounded-md shadow-sm">
-            <button
-              class="px-4 py-1 text-sm font-medium border rounded-l-lg transition-colors"
-              data-subfilter="entry"
-            >
-              Entry
-            </button>
-            <button
-              class="px-4 py-1 text-sm font-medium border-t border-b border-r rounded-r-lg transition-colors"
-              data-subfilter="pro"
-            >
-              Pro
-            </button>
-          </div>
+    <!-- FAQ Section Enhanced -->
+    <div class="py-20 bg-white">
+      <div class="max-w-4xl mx-auto px-4">
+        <div class="text-center mb-16">
+          <span class="inline-block px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium mb-4">
+            FAQs
+          </span>
+          <h2 class="text-4xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
+          <p class="text-lg text-gray-600">Get expert answers about our professional monitors and services in Dubai</p>
+        </div>
+        
+        <div class="space-y-6">
+          {faqs.map((faq, index) => (
+            <div class="bg-gradient-to-br from-white to-gray-50 rounded-2xl shadow-lg p-8 border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+              <h3 class="text-xl font-semibold text-gray-900 mb-4 flex items-center">
+                <span class="bg-blue-100 text-blue-600 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold mr-4">
+                  {index + 1}
+                </span>
+                {faq.question}
+              </h3>
+              <p class="text-gray-600 leading-relaxed pl-12">{faq.answer}</p>
+            </div>
+          ))}
         </div>
       </div>
+    </div>
 
-      <!-- Product Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {products.map(product => (
-          <div 
-            class="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:-translate-y-1"
-            data-category={product.category}
-            data-subcategory={product.subcategory}
-          >
-            <div class="relative h-48 overflow-hidden">
-              <img 
-                src={product.image} 
-                alt={product.name}
-                class="w-full h-full object-contain transform hover:scale-105 transition-transform duration-500"
-              />
-            </div>
-
-            <div class="p-6">
-              <h3 class="text-xl font-bold text-gray-900 mb-2">{product.name}</h3>
-              <p class="text-gray-600 mb-6">{product.description}</p>
-              
-              <a 
-                href={`/Product/${product.id}`}
-                class="w-full bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-xl px-6 py-3 hover:from-blue-700 hover:to-blue-800 transform hover:-translate-y-0.5 transition-all duration-200 shadow-lg hover:shadow-xl flex items-center justify-center group relative overflow-hidden"
-              >
-                <span class="relative z-10 flex items-center gap-2">
-                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
-                  </svg>
-                  <span class="font-semibold">View Details</span>
-                </span>
-                <div class="absolute inset-0 bg-gradient-to-r from-blue-700 to-blue-800 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-200"></div>
-              </a>
-            </div>
+    <!-- Contact Section Enhanced -->
+    <div class="relative py-20 overflow-hidden">
+      <!-- Background -->
+      <div class="absolute inset-0 bg-gradient-to-r from-blue-600 via-blue-700 to-purple-700">
+        <div class="absolute inset-0" style="background-image: radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.3) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(147, 51, 234, 0.3) 0%, transparent 50%)"></div>
+      </div>
+      
+      <div class="relative max-w-6xl mx-auto px-4 text-center">
+        <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">Ready to Enhance Your Displays?</h2>
+        <p class="text-xl text-blue-100 mb-12 max-w-3xl mx-auto leading-relaxed">
+          Contact our professional monitors specialists for expert consultation and competitive quotes across Dubai and UAE. Experience the difference with our premium display solutions.
+        </p>
+        
+        <!-- Contact Methods -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+          <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
+            <div class="text-3xl mb-3">📞</div>
+            <h3 class="text-lg font-semibold text-white mb-2">Call Us</h3>
+            <p class="text-blue-100 text-sm">Expert consultation & quotes</p>
           </div>
-        ))}
+          <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
+            <div class="text-3xl mb-3">💬</div>
+            <h3 class="text-lg font-semibold text-white mb-2">WhatsApp</h3>
+            <p class="text-blue-100 text-sm">Technical support 24/7</p>
+          </div>
+          <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
+            <div class="text-3xl mb-3">📧</div>
+            <h3 class="text-lg font-semibold text-white mb-2">Email Quote</h3>
+            <p class="text-blue-100 text-sm">Detailed specifications</p>
+          </div>
+        </div>
+        
+        <div class="flex flex-col sm:flex-row gap-6 justify-center">
+          <a href="tel:+918409528159" class="inline-flex items-center px-8 py-4 bg-white text-blue-600 rounded-2xl hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 font-semibold shadow-xl">
+            <svg class="w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+            </svg>
+            Call +971 55 2929644
+          </a>
+          <a href="https://wa.me/918409528159" class="inline-flex items-center px-8 py-4 bg-green-600 text-white rounded-2xl hover:bg-green-700 transition-all duration-300 transform hover:scale-105 font-semibold shadow-xl">
+            <svg class="w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"></path>
+            </svg>
+            WhatsApp Us
+          </a>
+          <a href="/company/contact-us" class="inline-flex items-center px-8 py-4 border-2 border-white text-white rounded-2xl hover:bg-white hover:text-blue-600 transition-all duration-300 transform hover:scale-105 font-semibold">
+            <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+            </svg>
+            Get Detailed Quote
+          </a>
+        </div>
       </div>
     </div>
   </div>
 
-  <!-- Product Modal -->
+  <!-- Product Modal (unchanged) -->
   <div id="productModal" class="fixed inset-0 bg-black/50 hidden z-50">
     <div class="fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-6xl bg-white rounded-2xl shadow-2xl">
       <div class="relative p-8 max-h-[90vh] overflow-y-auto">
@@ -449,8 +826,9 @@ const categories = [
           </svg>
         </button>
 
-        <!-- Add margin-top to the content for spacing below the logo -->
+        <!-- Content with existing structure -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mt-10">
+          <!-- Left side content -->
           <div class="space-y-6">
             <!-- Image Section -->
             <img id="modalImage" src="" alt="" class="w-full rounded-xl shadow-xl">
@@ -464,7 +842,7 @@ const categories = [
                     {[1, 2, 3, 4, 5].map((star) => (
                       <svg class="w-6 h-6 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
                         <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                      </svg>
+                  </svg>
                     ))}
                   </div>
                   <span class="text-lg font-bold text-gray-900">4.8</span>
@@ -522,162 +900,17 @@ const categories = [
       </div>
     </div>
   </div>
-</div>
 </Layout>
-
-<script>
-  const filterButtons = document.querySelectorAll('[data-filter]');
-  const subfilterButtons = document.querySelectorAll('[data-subfilter]');
-  const productCards = document.querySelectorAll('[data-category]');
-  const subcategoriesDiv = document.getElementById('subcategories');
-
-  function filterProducts(category: string | undefined, subcategory: string | null = null) {
-    // Update button states
-    filterButtons.forEach(btn => {
-      if (btn instanceof HTMLElement) {
-        const isActive = btn.dataset.filter === category;
-        btn.dataset.active = isActive.toString();
-      }
-    });
-
-    // Show/hide subcategories
-    if (subcategoriesDiv) {
-      subcategoriesDiv.style.display = category === 'cctv' ? 'block' : 'none';
-    }
-
-    // Filter products
-    productCards.forEach(card => {
-      if (card instanceof HTMLElement) {
-        const showCard = category === 'all' || 
-          (card.dataset.category === category && 
-           (!subcategory || card.dataset.subcategory === subcategory));
-
-        if (showCard) {
-          card.style.display = 'block';
-          setTimeout(() => {
-            card.style.opacity = '1';
-            card.style.transform = 'translateY(0)';
-          }, 10);
-        } else {
-          card.style.opacity = '0';
-          card.style.transform = 'translateY(20px)';
-          setTimeout(() => {
-            card.style.display = 'none';
-          }, 300);
-        }
-      }
-    });
-  }
-
-  filterButtons.forEach(button => {
-    button.addEventListener('click', () => {
-      const category = button.getAttribute('data-filter');
-      if (category) filterProducts(category);
-    });
-  });
-
-  subfilterButtons.forEach(button => {
-    button.addEventListener('click', () => {
-      const subcategory = button.getAttribute('data-subfilter');
-      if (subcategory) filterProducts('cctv', subcategory);
-    });
-  });
-
-  // Initialize with all products shown
-  filterProducts('all');
-
-  // Add this to your existing script section
-  function showProductDetails(product: {
-    image: string;
-    name: string;
-    description: string;
-    features: string[];
-    category: string;
-  }) {
-    const modal = document.getElementById('productModal');
-    const modalImage = document.getElementById('modalImage') as HTMLImageElement;
-    const modalTitle = document.getElementById('modalTitle');
-    const modalDescription = document.getElementById('modalDescription');
-    const modalFeatures = document.getElementById('modalFeatures');
-    const modalSpecs = document.getElementById('modalSpecs');
-
-    if (modal && modalImage && modalTitle && modalDescription && modalFeatures && modalSpecs) {
-      modalImage.src = product.image;
-      modalImage.alt = product.name;
-      modalTitle.textContent = product.name;
-      modalDescription.textContent = `${product.description} - Professional grade display solution offering superior image quality and reliable performance.`;
-      
-      modalFeatures.innerHTML = product.features
-        .map(feature => `
-          <div class="flex items-center gap-2">
-            <svg class="w-5 h-5 text-blue-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-            </svg>
-            <span class="text-gray-700">${feature}</span>
-          </div>
-        `)
-        .join('');
-
-      const specs = [
-        { label: 'Display Type', value: 'LED/LCD' },
-        { label: 'Resolution', value: 'Up to 4K' },
-        { label: 'Operation', value: '24/7' },
-        { label: 'Input Interface', value: 'HDMI, VGA, DVI' }
-      ];
-
-      modalSpecs.innerHTML = specs
-        .map(spec => `
-          <div class="flex flex-col">
-            <span class="text-sm font-medium text-gray-500">${spec.label}</span>
-            <span class="text-base font-semibold text-gray-900">${spec.value}</span>
-          </div>
-        `)
-        .join('');
-
-      modal.classList.remove('hidden');
-      document.body.style.overflow = 'hidden';
-    }
-  }
-
-  // Add click handlers for products
-  document.querySelectorAll('[data-product]').forEach(button => {
-    button.addEventListener('click', () => {
-      const product = JSON.parse((button as HTMLElement).dataset.product || '{}');
-      showProductDetails(product);
-    });
-  });
-
-  // Modal close functionality
-  const modal = document.getElementById('productModal');
-  const closeBtn = document.querySelector('.close-modal');
-
-  if (modal && closeBtn) {
-    const closeModal = () => {
-      modal.classList.add('hidden');
-      document.body.style.overflow = 'auto';
-    };
-
-    closeBtn.addEventListener('click', closeModal);
-    modal.addEventListener('click', (e) => {
-      if (e.target === modal) closeModal();
-    });
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
-        closeModal();
-      }
-    });
-  }
-</script>
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
   "@type": "Organization",
-  "name": "Interactive Display Monitors Distributer in Dubai",
-  "alternateName": "Interactive Display Distributer in UAE",
+  "name": "Professional Monitor Distributor in Dubai",
+  "alternateName": "CCTV & IT Display Solutions in UAE",
   "url": "https://www.lovosisdisplay.com/",
   "logo": "https://www.lovosisdisplay.com/logo.png",
-  "description": "Official Interactive Display Monitors Distributer in Dubai and trusted Interactive Display Distributer in UAE, providing premium display solutions for businesses and educational institutions across the Emirates.",
+  "description": "Official professional monitor distributor in Dubai and trusted display solution provider across UAE, offering premium surveillance, IT and commercial displays for businesses in the Emirates.",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Business Bay",
@@ -688,30 +921,156 @@ const categories = [
   "contactPoint": {
     "@type": "ContactPoint",
     "telephone": "+971-4-123-4567",
-    "contactType": "Customer Service",
+    "contactType": "Sales Department",
     "contactOption": "TollFree",
     "areaServed": "UAE",
     "availableLanguage": ["English", "Arabic"]
   },
   "sameAs": [
-    "https://www.facebook.com/InteractiveDisplayMonitorsDistributerinDubai",
-    "https://www.instagram.com/InteractiveDisplayDistributerinUAE"
+    "https://www.facebook.com/ProfessionalMonitorDistributorinDubai",
+    "https://www.instagram.com/CCTVDisplaySolutionsinUAE"
   ],
-  "subOrganization": {
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://www.lovosisdisplay.com/search?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  },
+  "department": {
     "@type": "Organization",
-    "name": "Interactive Display Distributer in UAE Technical Support",
-    "description": "Technical support division of Interactive Display Monitors Distributer in Dubai",
+    "name": "CCTV Monitor Technical Support Dubai",
+    "description": "Technical support division for professional display systems in UAE",
     "contactPoint": {
       "@type": "ContactPoint",
       "telephone": "+971-4-123-4569",
       "contactType": "Technical Support",
       "areaServed": "UAE"
     }
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Professional Monitors Catalog Dubai",
+    "itemListElement": [
+      {
+        "@type": "OfferCatalog",
+        "name": "CCTV Monitors Dubai",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "Professional Surveillance Displays UAE"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "OfferCatalog",
+        "name": "IT Monitors UAE",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "Office Display Solutions Dubai"
+            }
+          }
+        ]
+      }
+    ]
   }
 }
 </script>
 
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const filterButtons = document.querySelectorAll('[data-filter]');
+    const subfilterButtons = document.querySelectorAll('[data-subfilter]');
+    const productCards = document.querySelectorAll('[data-category]');
+    const subcategoriesDiv = document.getElementById('subcategories');
+
+    function filterProducts(category: string, subcategory: string | null = null) {
+      // Update button states
+      filterButtons.forEach(btn => {
+        if (btn instanceof HTMLElement) {
+          const isActive = btn.dataset.filter === category;
+          btn.dataset.active = isActive.toString();
+        }
+      });
+
+      // Update subfilter button states
+      if (subcategory) {
+        subfilterButtons.forEach(btn => {
+          if (btn instanceof HTMLElement) {
+            const isActive = btn.dataset.subfilter === subcategory;
+            btn.dataset.active = isActive.toString();
+          }
+        });
+      }
+
+      // Show/hide subcategories
+      if (subcategoriesDiv) {
+        subcategoriesDiv.style.display = category === 'cctv' ? 'block' : 'none';
+      }
+
+      // Filter products - key part that shows/hides products
+      productCards.forEach(card => {
+        if (card instanceof HTMLElement) {
+          const showCard = category === 'all' || 
+            (card.dataset.category === category && 
+             (!subcategory || card.dataset.subcategory === subcategory));
+
+          if (showCard) {
+            card.style.display = 'block';
+            setTimeout(() => {
+              card.style.opacity = '1';
+              card.style.transform = 'translateY(0)';
+            }, 10);
+          } else {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            setTimeout(() => {
+              card.style.display = 'none';
+            }, 300);
+          }
+        }
+      });
+    }
+
+    filterButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const category = button.getAttribute('data-filter');
+        if (category) filterProducts(category);
+      });
+    });
+
+    subfilterButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const subcategory = button.getAttribute('data-subfilter');
+        if (subcategory) filterProducts('cctv', subcategory);
+      });
+    });
+
+    // Initialize with all products shown
+    filterProducts('all');
+  });
+</script>
+
 <style>
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-fade-in-up {
+    animation: fadeInUp 0.6s ease-out forwards;
+  }
+  
   .group:hover .group-hover\:scale-110 {
     transform: scale(1.1);
   }

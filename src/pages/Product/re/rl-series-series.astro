@@ -1,0 +1,814 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+
+// Product data
+const product = {
+  name: "RE/RL Series LED Display",
+  tagline: "Versatile LED Display Solutions Dubai",
+  description: "The RE/RL Series from Lovosis Technology provides flexible and integrated display solutions for businesses across UAE. With lightweight cabinets, quick installation features, and versatile mounting options, these adaptable LED displays deliver exceptional visual communication for retail environments, corporate settings, and custom installations throughout Dubai. Ideal for businesses seeking cost-effective yet professional digital signage and video wall solutions with minimal setup complexity.",
+  image: "/LED Displays/img5.jpg",
+  features: [
+    "Lightweight aluminum cabinet design",
+    "Quick-lock installation system",
+    "Multiple mounting options (wall, ceiling, stand)",
+    "Front or rear service access",
+    "Interactive touch capability option",
+    "Curved installation support",
+    "Seamless multi-panel configuration",
+    "Built-in scaling and content management",
+    "UAE energy efficiency rated",
+    "Dubai Green Building compatible"
+  ],
+  specifications: [
+    { name: "Pixel Pitch", value: "P2.5 / P3 / P4 options" },
+    { name: "Panel Resolution", value: "160×160 pixels per cabinet" },
+    { name: "Panel Size", value: "500mm × 500mm or 500mm × 1000mm" },
+    { name: "Panel Weight", value: "≤ 8kg per 500mm × 500mm panel" },
+    { name: "Brightness", value: "800-1200 nits" },
+    { name: "Refresh Rate", value: "≥3840Hz" },
+    { name: "Viewing Angle", value: "160°" },
+    { name: "IP Rating", value: "IP30 (indoor use)" },
+    { name: "Installation", value: "Front or rear service options" },
+    { name: "Control System", value: "Novastar / Colorlight / ArKaos" }
+  ],
+  applications: [
+    "Dubai Retail Environments",
+    "UAE Corporate Lobbies",
+    "Dubai Exhibition Stands",
+    "UAE Meeting Room Displays",
+    "Dubai Restaurant Menu Boards",
+    "UAE Banking Hall Displays",
+    "Dubai Shopping Mall Signage",
+    "UAE Hotel Information Systems"
+  ]
+};
+
+// Related products
+const relatedProducts = [
+  {
+    name: "XEB Series",
+    description: "Premium indoor LED display solution with fine pixel pitch technology for corporate and retail environments across Dubai and UAE",
+    image: "/LED Displays/XEB Series.png",
+    slug: "xeb-series-series",
+    features: ["Fine pixel pitch", "High brightness", "Seamless connection", "Premium quality"]
+  },
+  {
+    name: "U Series",
+    description: "Ultra-fine pixel pitch LED display with P0.9 technology for luxury retail and premium corporate installations in Dubai",
+    image: "/LED Displays/img4.webp",
+    slug: "u-series-series",
+    features: ["Ultra-fine P0.9", "High-definition", "Premium quality", "Luxury retail"]
+  },
+  {
+    name: "FE Series Outdoor",
+    description: "Weather-resistant outdoor LED display designed for Dubai's harsh climate with high brightness and durability",
+    image: "/LED Displays/Uniview FE Series.png",
+    slug: "fe-series-series",
+    features: ["Weather-proof", "High brightness", "UV resistant", "Dubai climate ready"]
+  }
+];
+
+// SEO-optimized title, description and keywords with Dubai/UAE focus
+const title = "RE/RL Series LED Display Solutions Dubai | Digital Signage UAE | Visual Communication Systems | Lovosis"
+const description = "RE/RL Series LED Display Solutions in Dubai offering versatile digital signage and video wall systems for UAE businesses. Lightweight, flexible installation options for corporate environments, retail spaces and custom applications across Dubai."
+const keywords = "RE/RL Series LED display solutions Dubai, digital signage solutions UAE, video wall solutions Dubai, corporate display solutions UAE, visual communication solutions Dubai, integrated LED solutions UAE, interactive display solutions Dubai"
+
+// Enhanced schema markup for SEO
+const productSchema = {
+  "@context": "https://schema.org/",
+  "@type": "Product",
+  "name": "RE/RL Series LED Display Solutions Dubai",
+  "image": `https://lovosisdisplay.ae${product.image}`,
+  "description": "Versatile LED display solutions with lightweight design and flexible installation options for UAE businesses. Integrated digital signage systems for corporate environments and retail spaces across Dubai.",
+  "brand": {
+    "@type": "Brand",
+    "name": "Lovosis Display Dubai"
+  },
+  "offers": {
+    "@type": "Offer",
+    "url": "https://lovosisdisplay.ae/Product/re-rl-series-series",
+    "priceCurrency": "AED",
+    "priceValidUntil": "2026-06-01",
+    "availability": "https://schema.org/InStock",
+    "areaServed": {
+      "@type": "GeoCircle",
+      "geoMidpoint": {
+        "@type": "GeoCoordinates",
+        "latitude": "25.276987",
+        "longitude": "55.296249"
+      },
+      "geoRadius": "200"
+    },
+    "seller": {
+      "@type": "Organization",
+      "name": "Lovosis Display Dubai - LED Solutions Provider UAE"
+    }
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.7",
+    "reviewCount": "39",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "review": {
+    "@type": "Review",
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": "5",
+      "bestRating": "5"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Rashid Al Maktoum"
+    },
+    "datePublished": "2025-02-20",
+    "reviewBody": "We deployed the RE Series LED display solution throughout our Dubai retail chain. The installation was incredibly quick and the flexibility of the system allowed us to create custom configurations for each location. The visual communication quality is excellent and Lovosis provided great support throughout the UAE rollout."
+  }
+};
+
+// FAQ data for schema and content
+const faqs = [
+  {
+    question: "What makes the RE/RL Series ideal for retail display solutions in Dubai?",
+    answer: "The RE/RL Series offers Dubai retailers exceptional flexibility with its lightweight design, quick installation, and adaptable mounting options. These digital signage solutions can be easily reconfigured for seasonal displays, feature front-service access for minimal disruption in busy UAE retail environments, and deliver bright, vivid visuals that enhance customer engagement across shopping locations in Dubai."
+  },
+  {
+    question: "Can RE/RL Series displays be used for interactive solutions in UAE corporate environments?",
+    answer: "Yes, the RE/RL Series offers optional interactive touch overlay solutions specifically designed for UAE corporate environments. These interactive display solutions can transform standard LED walls into touch-enabled surfaces for presentations, collaborative workspaces, and information kiosks, enhancing visual communication across Dubai offices and meeting spaces."
+  },
+  {
+    question: "How quickly can RE/RL Series video wall solutions be installed in Dubai locations?",
+    answer: "Thanks to the RE/RL Series' innovative quick-lock system and lightweight design, these video wall solutions can typically be installed in Dubai locations within 1-2 days depending on size. The system is engineered for rapid deployment across UAE businesses, with pre-configured mounting options and simplified cabling that dramatically reduces installation time compared to traditional LED displays."
+  },
+  {
+    question: "What custom display solutions are possible with the RE/RL Series in UAE?",
+    answer: "The RE/RL Series supports extensive customization for UAE installations including curved surfaces, irregular shapes, ceiling-suspended configurations, and multi-faced displays. Our Dubai design team can create custom display solutions that integrate seamlessly with your architectural elements, brand identity, and specific visual communication requirements throughout UAE facilities."
+  },
+  {
+    question: "How does the RE/RL Series integrate with existing AV systems in Dubai corporate environments?",
+    answer: "The RE/RL Series features comprehensive integration capabilities with existing AV infrastructure in Dubai corporate environments. These integrated LED solutions support all standard video inputs, can be controlled via common protocols used in UAE businesses, and include compatibility with third-party control systems, making them ideal digital signage solutions for corporate settings across Dubai."
+  }
+];
+---
+
+<Layout title={title} description={description} keywords={keywords} sd={productSchema}>
+  <div class="bg-white">
+    <!-- Breadcrumb -->
+    <div class="bg-gray-100 py-4">
+      <div class="container mx-auto px-4">
+        <div class="flex items-center text-sm text-gray-600">
+          <a href="/" class="hover:text-green-600">Home</a>
+          <svg class="w-3 h-3 mx-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+          <a href="/Products/led-display" class="hover:text-green-600">LED Displays</a>
+          <svg class="w-3 h-3 mx-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+          <span class="font-medium text-gray-900">RE/RL Series LED Display Solutions Dubai</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product Hero Section -->
+    <section class="py-16">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <!-- Product Image -->
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden p-6">
+            <img 
+              src={product.image} 
+              alt="RE/RL Series LED Display Solutions Dubai - Digital Signage UAE"
+              class="w-full h-auto object-contain"
+            />
+            
+            <!-- Product Badge -->
+            <div class="mt-6 inline-flex items-center px-4 py-2 bg-green-100 text-green-800 rounded-full text-sm font-medium">
+              Versatile Digital Signage Solutions UAE
+            </div>
+            
+            <!-- Product Review Summary -->
+            <div class="mt-8 border-t pt-6">
+              <div class="flex items-center justify-between">
+                <h3 class="text-lg font-semibold text-gray-900">Customer Rating</h3>
+                <div class="flex items-center gap-1">
+                  <div class="flex">
+                    {[1, 2, 3, 4, 5].map((star) => (
+                      <svg class="w-5 h-5 text-yellow-400" fill={star <= 4.7 ? "currentColor" : "none"} viewBox="0 0 20 20">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                      </svg>
+                    ))}
+                  </div>
+                  <span class="text-lg font-bold">4.7</span>
+                  <span class="text-gray-600">(39 reviews)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product Info -->
+          <div class="space-y-8">
+            <div>
+              <h1 class="text-4xl font-bold text-gray-900 mb-4">{product.name}</h1>
+              <h2 class="text-xl text-gray-600 mb-6">{product.tagline}</h2>
+              <p class="text-gray-700 leading-relaxed mb-8">{product.description}</p>
+              
+              <!-- Key Features -->
+              <div class="mb-8">
+                <h3 class="text-xl font-semibold text-gray-900 mb-4">Key Features</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                  {product.features.map(feature => (
+                    <div class="flex items-center gap-2">
+                      <svg class="w-5 h-5 text-green-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                      </svg>
+                      <span class="text-gray-700">{feature}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <!-- CTA Section -->
+              <div class="bg-green-50 rounded-xl p-8 space-y-5">
+                <h3 class="text-xl font-semibold text-gray-900">Request Information</h3>
+                <p class="text-gray-600">Get detailed specifications and pricing for RE/RL Series LED Display Solutions in Dubai</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <a href="tel:+971509162488" class="flex items-center justify-center gap-2 px-6 py-4 bg-green-600 text-white rounded-xl hover:bg-green-700 transition-colors">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                    </svg>
+                    <span class="font-semibold">Call Dubai Expert</span>
+                  </a>
+                  <a href="https://wa.me/971509162488" target="_blank" class="flex items-center justify-center gap-2 px-6 py-4 bg-green-600 text-white rounded-xl hover:bg-green-700 transition-colors">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M12.012 2c-5.506 0-9.989 4.478-9.99 9.984a9.964 9.964 0 001.333 4.993L2 22l5.233-1.237a9.994 9.994 0 004.779 1.217h.004c5.505 0 9.988-4.478 9.989-9.984 0-2.669-1.037-5.176-2.922-7.062A9.935 9.935 0 0012.012 2z"/>
+                    </svg>
+                    <span class="font-semibold">WhatsApp</span>
+                  </a>
+                </div>
+                <a href="/company/contact-us" class="flex items-center justify-center gap-2 w-full px-6 py-4 border border-green-600 text-green-600 rounded-xl hover:bg-green-50 transition-colors">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                  </svg>
+                  <span class="font-semibold">Request Custom Solution Proposal</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 1: LED Display Solutions Dubai -->
+    <section class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto text-center mb-16">
+          <h2 class="text-3xl font-bold mb-6">LED Display Solutions Dubai</h2>
+          <p class="text-lg text-gray-600">Discover how RE/RL Series transforms visual communication across Dubai businesses with versatile LED display solutions that adapt to your specific requirements.</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Solution 1 -->
+          <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
+            <div class="h-14 w-14 bg-green-100 rounded-full flex items-center justify-center mb-6 text-green-600">
+              <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-4">Video Wall Solutions</h3>
+            <p class="text-gray-600 mb-4">Create stunning large-format displays with seamless RE/RL Series video walls that deliver impact for Dubai corporate lobbies and retail environments.</p>
+            <ul class="space-y-2">
+              <li class="flex items-center">
+                <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span class="text-gray-700">Seamless panel connections</span>
+              </li>
+              <li class="flex items-center">
+                <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span class="text-gray-700">Custom configurations</span>
+              </li>
+              <li class="flex items-center">
+                <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span class="text-gray-700">Multi-source display options</span>
+              </li>
+            </ul>
+          </div>
+          
+          <!-- Solution 2 -->
+          <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
+            <div class="h-14 w-14 bg-green-100 rounded-full flex items-center justify-center mb-6 text-green-600">
+              <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-4">Digital Signage Solutions</h3>
+            <p class="text-gray-600 mb-4">Transform Dubai retail spaces with dynamic digital signage that enhances customer engagement and showcases products with impact.</p>
+            <ul class="space-y-2">
+              <li class="flex items-center">
+                <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span class="text-gray-700">Dynamic content management</span>
+              </li>
+              <li class="flex items-center">
+                <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span class="text-gray-700">Scheduled promotions</span>
+              </li>
+              <li class="flex items-center">
+                <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span class="text-gray-700">Social media integration</span>
+              </li>
+            </ul>
+          </div>
+          
+          <!-- Solution 3 -->
+          <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
+            <div class="h-14 w-14 bg-green-100 rounded-full flex items-center justify-center mb-6 text-green-600">
+              <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-4">Corporate Display Solutions</h3>
+            <p class="text-gray-600 mb-4">Enhance UAE corporate environments with professional LED displays that elevate presentations and brand communications.</p>
+            <ul class="space-y-2">
+              <li class="flex items-center">
+                <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span class="text-gray-700">Boardroom integration</span>
+              </li>
+              <li class="flex items-center">
+                <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span class="text-gray-700">Multi-format compatibility</span>
+              </li>
+              <li class="flex items-center">
+                <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span class="text-gray-700">Brand customization</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- Specifications Table -->
+        <div class="mt-16 max-w-4xl mx-auto bg-white rounded-xl shadow-md overflow-hidden">
+          <div class="p-8">
+            <h3 class="text-xl font-bold mb-6">RE/RL Series Technical Specifications</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {product.specifications.map(spec => (
+                <div class="border-b pb-4">
+                  <h3 class="text-sm font-medium text-gray-500 mb-1">{spec.name}</h3>
+                  <p class="text-lg font-semibold text-gray-900">{spec.value}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- SECTION 2: Interactive Display Solutions UAE -->
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto text-center mb-16">
+          <h2 class="text-3xl font-bold mb-6">Interactive Display Solutions UAE</h2>
+          <p class="text-lg text-gray-600">Transform standard displays into engaging interactive experiences with RE/RL Series touch-enabled solutions for UAE businesses.</p>
+        </div>
+        
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+          <div>
+            <img 
+              src="/new/interactive-display.jpg" 
+              alt="Interactive LED Display Solutions UAE - Touch Screen Capabilities"
+              class="rounded-xl shadow-lg w-full"
+            />
+          </div>
+          
+          <div class="space-y-6">
+            <h3 class="text-2xl font-bold">Touch-Enabled Visual Communication</h3>
+            <p class="text-gray-700">RE/RL Series offers optional interactive touch overlay technology that transforms standard LED walls into powerful tools for engagement and collaboration across UAE businesses.</p>
+            
+            <div class="space-y-4">
+              <div class="flex items-start">
+                <div class="flex-shrink-0 h-10 w-10 bg-green-100 rounded-full flex items-center justify-center text-green-600 mt-1">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122" />
+                  </svg>
+                </div>
+                <div class="ml-4">
+                  <h4 class="text-lg font-semibold">Multi-Touch Capability</h4>
+                  <p class="text-gray-600">Up to 40 simultaneous touch points with gesture recognition for collaborative work environments in Dubai offices.</p>
+                </div>
+              </div>
+              
+              <div class="flex items-start">
+                <div class="flex-shrink-0 h-10 w-10 bg-green-100 rounded-full flex items-center justify-center text-green-600 mt-1">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                  </svg>
+                </div>
+                <div class="ml-4">
+                  <h4 class="text-lg font-semibold">Interactive Software Integration</h4>
+                  <p class="text-gray-600">Compatible with major interactive platforms and custom UAE business applications for seamless workflow integration.</p>
+                </div>
+              </div>
+              
+              <div class="flex items-start">
+                <div class="flex-shrink-0 h-10 w-10 bg-green-100 rounded-full flex items-center justify-center text-green-600 mt-1">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                  </svg>
+                </div>
+                <div class="ml-4">
+                  <h4 class="text-lg font-semibold">Interactive Retail Applications</h4>
+                  <p class="text-gray-600">Transform Dubai shopping experiences with product configurators, virtual try-ons, and interactive brand experiences.</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="pt-4">
+              <a href="/solutions/interactive-display" class="inline-flex items-center text-green-600 font-semibold hover:text-green-700">
+                Explore Interactive Solutions
+                <svg class="w-5 h-5 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Interactive Applications -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="bg-green-50 rounded-xl p-6">
+            <div class="h-12 w-12 bg-green-100 rounded-full flex items-center justify-center mb-4 text-green-600">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z" />
+              </svg>
+            </div>
+            <h4 class="text-xl font-bold mb-2">Corporate Presentations</h4>
+            <p class="text-gray-700">Interactive control of presentations, data visualization, and collaborative annotation for Dubai business meetings.</p>
+          </div>
+          
+          <div class="bg-green-50 rounded-xl p-6">
+            <div class="h-12 w-12 bg-green-100 rounded-full flex items-center justify-center mb-4 text-green-600">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+            </div>
+            <h4 class="text-xl font-bold mb-2">Retail Product Exploration</h4>
+            <p class="text-gray-700">Interactive product catalogs and customization tools for UAE retail environments that boost engagement.</p>
+          </div>
+          
+          <div class="bg-green-50 rounded-xl p-6">
+            <div class="h-12 w-12 bg-green-100 rounded-full flex items-center justify-center mb-4 text-green-600">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+              </svg>
+            </div>
+            <h4 class="text-xl font-bold mb-2">Wayfinding & Information</h4>
+            <p class="text-gray-700">Interactive maps and information displays for Dubai malls, hotels, and public spaces throughout UAE.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- SECTION 3: Custom Display Solutions UAE -->
+    <section class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto text-center mb-16">
+          <h2 class="text-3xl font-bold mb-6">Custom Display Solutions UAE</h2>
+          <p class="text-lg text-gray-600">Create unique visual experiences with RE/RL Series flexible configuration options tailored to your UAE business environment.</p>
+        </div>
+        
+        <!-- Custom Solutions Showcase -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
+          <!-- Solution 1 -->
+          <div class="bg-white rounded-xl shadow-md overflow-hidden group hover:shadow-lg transition-shadow">
+            <div class="relative h-64 overflow-hidden">
+              <img 
+                src="/new/curved-display.jpg" 
+                alt="Curved LED Display Solutions Dubai" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-60"></div>
+              <div class="absolute bottom-0 left-0 p-6">
+                <h3 class="text-xl font-bold text-white">Curved Video Walls</h3>
+                <p class="text-gray-200">Create immersive environments with curved LED installations</p>
+              </div>
+            </div>
+            <div class="p-6">
+              <p class="text-gray-600 mb-4">RE/RL Series flexible cabinets can be configured into curved displays with multiple radius options, creating immersive visual environments for Dubai retail and corporate spaces.</p>
+              <div class="space-y-2">
+                <div class="flex items-center">
+                  <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span class="text-gray-700">Concave or convex configurations</span>
+                </div>
+                <div class="flex items-center">
+                  <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span class="text-gray-700">Seamless visual continuity</span>
+                </div>
+                <div class="flex items-center">
+                  <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span class="text-gray-700">Multiple radius options</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Solution 2 -->
+          <div class="bg-white rounded-xl shadow-md overflow-hidden group hover:shadow-lg transition-shadow">
+            <div class="relative h-64 overflow-hidden">
+              <img 
+                src="/new/modular-display.jpg" 
+                alt="Modular LED Display Solutions UAE" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-60"></div>
+              <div class="absolute bottom-0 left-0 p-6">
+                <h3 class="text-xl font-bold text-white">Creative Modular Layouts</h3>
+                <p class="text-gray-200">Design unique display configurations for maximum impact</p>
+              </div>
+            </div>
+            <div class="p-6">
+              <p class="text-gray-600 mb-4">Leverage RE/RL Series modular design to create custom layouts and non-standard display configurations that match your UAE business branding and space requirements.</p>
+              <div class="space-y-2">
+                <div class="flex items-center">
+                  <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span class="text-gray-700">Irregular shapes and patterns</span>
+                </div>
+                <div class="flex items-center">
+                  <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span class="text-gray-700">Brand-shaped displays</span>
+                </div>
+                <div class="flex items-center">
+                  <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span class="text-gray-700">Multi-level installations</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Design Process -->
+        <div class="max-w-4xl mx-auto">
+          <h3 class="text-2xl font-bold text-center mb-10">Our Custom Solution Design Process</h3>
+          
+          <div class="relative">
+            <!-- Process Line -->
+            <div class="hidden md:block absolute top-1/2 left-0 w-full h-1 bg-green-200 -translate-y-1/2"></div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 relative">
+              <!-- Step 1 -->
+              <div class="flex flex-col items-center text-center relative z-10">
+                <div class="w-16 h-16 bg-white rounded-full border-4 border-green-500 flex items-center justify-center mb-4">
+                  <span class="text-xl font-bold text-green-600">1</span>
+                </div>
+                <h4 class="text-lg font-bold mb-2">Consultation</h4>
+                <p class="text-gray-600">Understanding your Dubai business needs and display requirements</p>
+              </div>
+              
+              <!-- Step 2 -->
+              <div class="flex flex-col items-center text-center relative z-10">
+                <div class="w-16 h-16 bg-white rounded-full border-4 border-green-500 flex items-center justify-center mb-4">
+                  <span class="text-xl font-bold text-green-600">2</span>
+                </div>
+                <h4 class="text-lg font-bold mb-2">Design</h4>
+                <p class="text-gray-600">Creating custom 3D visualizations for your UAE space</p>
+              </div>
+              
+              <!-- Step 3 -->
+              <div class="flex flex-col items-center text-center relative z-10">
+                <div class="w-16 h-16 bg-white rounded-full border-4 border-green-500 flex items-center justify-center mb-4">
+                  <span class="text-xl font-bold text-green-600">3</span>
+                </div>
+                <h4 class="text-lg font-bold mb-2">Engineering</h4>
+                <p class="text-gray-600">Developing technical solutions for your custom configuration</p>
+              </div>
+              
+              <!-- Step 4 -->
+              <div class="flex flex-col items-center text-center relative z-10">
+                <div class="w-16 h-16 bg-white rounded-full border-4 border-green-500 flex items-center justify-center mb-4">
+                  <span class="text-xl font-bold text-green-600">4</span>
+                </div>
+                <h4 class="text-lg font-bold mb-2">Implementation</h4>
+                <p class="text-gray-600">Professional installation and setup across Dubai locations</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-white" id="faq">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">Frequently Asked Questions</h2>
+        
+        <div class="max-w-3xl mx-auto space-y-6">
+          {faqs.map(faq => (
+            <div class="bg-gray-50 rounded-lg p-6 hover:shadow-md transition-shadow">
+              <h3 class="text-xl font-bold text-gray-900 mb-3">{faq.question}</h3>
+              <p class="text-gray-600">{faq.answer}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- Related Products -->
+    <section class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">Related LED Display Products in UAE</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {relatedProducts.map(related => (
+            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+              <div class="h-48 overflow-hidden">
+                <img 
+                  src={related.image} 
+                  alt={`${related.name} - LED Display in UAE`}
+                  class="w-full h-full object-contain"
+                />
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-semibold text-gray-900 mb-2">{related.name}</h3>
+                <p class="text-gray-600 mb-4 line-clamp-2">{related.description}</p>
+                
+                <div class="flex flex-wrap gap-2 mb-6">
+                  {related.features.slice(0, 3).map(feature => (
+                    <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-50 text-green-700">
+                      {feature}
+                    </span>
+                  ))}
+                </div>
+                
+                <a 
+                  href={`/Product/${related.slug}`}
+                  class="w-full block text-center px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors"
+                >
+                  View Details
+                </a>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+ 
+  </div>
+</Layout>
+
+<!-- FAQ Schema for Rich Snippets -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What makes the RE/RL Series ideal for retail display solutions in Dubai?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The RE/RL Series offers Dubai retailers exceptional flexibility with its lightweight design, quick installation, and adaptable mounting options. These digital signage solutions can be easily reconfigured for seasonal displays, feature front-service access for minimal disruption in busy UAE retail environments, and deliver bright, vivid visuals that enhance customer engagement across shopping locations in Dubai."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can RE/RL Series displays be used for interactive solutions in UAE corporate environments?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, the RE/RL Series offers optional interactive touch overlay solutions specifically designed for UAE corporate environments. These interactive display solutions can transform standard LED walls into touch-enabled surfaces for presentations, collaborative workspaces, and information kiosks, enhancing visual communication across Dubai offices and meeting spaces."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How quickly can RE/RL Series video wall solutions be installed in Dubai locations?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Thanks to the RE/RL Series' innovative quick-lock system and lightweight design, these video wall solutions can typically be installed in Dubai locations within 1-2 days depending on size. The system is engineered for rapid deployment across UAE businesses, with pre-configured mounting options and simplified cabling that dramatically reduces installation time compared to traditional LED displays."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What custom display solutions are possible with the RE/RL Series in UAE?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The RE/RL Series supports extensive customization for UAE installations including curved surfaces, irregular shapes, ceiling-suspended configurations, and multi-faced displays. Our Dubai design team can create custom display solutions that integrate seamlessly with your architectural elements, brand identity, and specific visual communication requirements throughout UAE facilities."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does the RE/RL Series integrate with existing AV systems in Dubai corporate environments?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The RE/RL Series features comprehensive integration capabilities with existing AV infrastructure in Dubai corporate environments. These integrated LED solutions support all standard video inputs, can be controlled via common protocols used in UAE businesses, and include compatibility with third-party control systems, making them ideal digital signage solutions for corporate settings across Dubai."
+      }
+    }
+  ]
+}
+</script>
+
+<!-- Product Reviews Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "RE/RL Series LED Display Solutions Dubai",
+  "image": "https://lovosisdisplay.ae/LED Displays/img5.jpg",
+  "description": "Versatile LED display solutions with lightweight design and flexible installation options for UAE businesses. Integrated digital signage systems for corporate environments and retail spaces across Dubai.",
+  "brand": {
+    "@type": "Brand",
+    "name": "Lovosis Display"
+  },
+  "review": [
+    {
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Rashid Al Maktoum"
+      },
+      "datePublished": "2025-02-20",
+      "reviewBody": "We deployed the RE Series LED display solution throughout our Dubai retail chain. The installation was incredibly quick and the flexibility of the system allowed us to create custom configurations for each location."
+    },
+    {
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "4",
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Fatima Al Mansouri"
+      },
+      "datePublished": "2025-01-12",
+      "reviewBody": "The interactive capabilities of our RE Series installation have transformed our Dubai corporate training center. The touch-enabled video wall has made presentations more engaging and interactive."
+    }
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.7",
+    "reviewCount": "39",
+    "bestRating": "5",
+    "worstRating": "1"
+  }
+}
+</script>
+
+<!-- Local Business Schema for Dubai Location -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Lovosis Display - LED Display Solutions Dubai",
+  "description": "Leading provider of RE/RL Series LED display solutions in Dubai & UAE. Versatile digital signage and video wall systems for retail, corporate and custom applications.",
+  "url": "https://lovosisdisplay.ae",
+  "telephone": "+971509162488",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Baghlaf Building Showroom No.5 Satellite Market, Naif Road",
+    "addressLocality": "Dubai",
+    "addressRegion": "Dubai",
+    "addressCountry": "United Arab Emirates"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "25.276987",
+    "longitude": "55.296249"
+  },
+  "priceRange": "AED 15000-100000",
+  "areaServed": ["Dubai", "Abu Dhabi", "Sharjah", "UAE"],
+  "image": "https://lovosisdisplay.ae/logo.png"
+}
+</script>

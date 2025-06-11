@@ -1,0 +1,568 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+// Product data
+const product = {
+  name: "U Series LED Display",
+  tagline: "Ultra-Fine Pixel Pitch LED Panel in Dubai",
+  description: "The U Series from Lovosis Technology represents the pinnacle of LED display precision with revolutionary micro-LED architecture. Featuring ultra-fine pixel pitch options as small as P0.9, the U Series delivers unprecedented visual clarity and color accuracy for premium installations across UAE. Engineered specifically for Dubai's high-end corporate environments, luxury retail displays, and mission-critical control rooms, these advanced LED panels offer exceptional image quality with perfect uniformity, superior contrast ratios, and seamless display integration.",
+  image: "/LED Displays/img4.webp",
+  features: [
+    "Ultra-fine pixel pitch (P0.9, P1.2, P1.5)",
+    "Exceptional brightness uniformity (≥98%)",
+    "Superior contrast ratio (8000:1)",
+    "HDR10+ certified visual performance",
+    "Wide color gamut (145% sRGB)",
+    "Advanced calibration technology",
+    "Zero moiré effect for camera recording",
+    "Low heat emission for Dubai environments",
+    "Low power consumption design",
+    "UAE dust protection technology"
+  ],
+  specifications: [
+    { name: "Pixel Pitch", value: "P0.9 / P1.2 / P1.5 options" },
+    { name: "Panel Resolution", value: "256×256 pixels per cabinet" },
+    { name: "Panel Size", value: "500mm × 500mm" },
+    { name: "Brightness", value: "800 nits" },
+    { name: "Refresh Rate", value: "≥7680Hz" },
+    { name: "Viewing Angle", value: "170° wide angle" },
+    { name: "IP Rating", value: "IP50 (front) / IP30 (rear)" },
+    { name: "Lifespan", value: "100,000+ hours" },
+    { name: "Working Temperature", value: "-10°C ~ 45°C (optimal for UAE)" },
+    { name: "Control System", value: "NovaStar / Brompton / Colorlight" }
+  ],
+  applications: [
+    "Luxury Retail in Dubai Mall",
+    "UAE Executive Boardrooms",
+    "Dubai Command & Control Centers",
+    "UAE Broadcast Studios",
+    "High-end Museums in Dubai",
+    "Flagship Brand Stores UAE",
+    "Financial Trading Floors Dubai",
+    "Premium Hospitality in UAE"
+  ]
+};
+
+// Related products
+const relatedProducts = [
+  {
+    name: "XEB Series",
+    description: "Premium indoor LED display solution with fine pixel pitch technology for corporate and retail environments across Dubai and UAE",
+    image: "/LED Displays/XEB Series.png",
+    slug: "xeb-series-series",
+    features: ["Fine pixel pitch", "High brightness", "Seamless connection", "Premium quality"]
+  }
+];
+
+// SEO-optimized title, description and keywords with Dubai/UAE focus
+const title = "U Series Ultra-Fine Pixel LED Panel Dubai | P0.9 LED Display UAE | Premium LED Wall | Lovosis"
+const description = "U Series Ultra-Fine Pixel LED Panel in Dubai featuring micro-LED P0.9 technology. Premium LED displays in UAE with superior image quality. Professional LED video walls for luxury retail and corporate environments across Dubai."
+const keywords = "U Series LED Panel Dubai, P0.9 LED display UAE, ultra-fine pixel LED Dubai, micro-LED technology UAE, premium LED video wall Dubai, luxury retail displays UAE, high-resolution LED screen Dubai"
+
+// Enhanced schema markup for SEO
+const productSchema = {
+  "@context": "https://schema.org/",
+  "@type": "Product",
+  "name": "U Series Ultra-Fine Pixel LED Panel in Dubai",
+  "image": `https://lovosisdisplay.ae${product.image}`,
+  "description": "U Series Ultra-Fine Pixel LED Panel in Dubai featuring micro-LED P0.9 technology. Premium LED displays in UAE with superior image quality. Professional LED video walls for luxury retail and corporate environments.",
+  "brand": {
+    "@type": "Brand",
+    "name": "Lovosis Display Dubai"
+  },
+  "offers": {
+    "@type": "Offer",
+    "url": "https://lovosisdisplay.ae/Product/u-series-series",
+    "priceCurrency": "AED",
+    "priceValidUntil": "2026-06-01",
+    "availability": "https://schema.org/InStock",
+    "areaServed": {
+      "@type": "GeoCircle",
+      "geoMidpoint": {
+        "@type": "GeoCoordinates",
+        "latitude": "25.276987",
+        "longitude": "55.296249"
+      },
+      "geoRadius": "200"
+    },
+    "seller": {
+      "@type": "Organization",
+      "name": "Lovosis Display Dubai - Premium LED Panel UAE Specialist"
+    }
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "37",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "review": {
+    "@type": "Review",
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": "5",
+      "bestRating": "5"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Ahmed Al Falasi"
+    },
+    "datePublished": "2025-03-10",
+    "reviewBody": "We installed the U Series LED Panel with P0.9 pixel pitch in our Dubai luxury retail showroom, and the results are spectacular. The ultra-fine pixel technology delivers incredibly crisp visuals that showcase our products with perfect clarity and color reproduction. Lovosis provided exceptional service from consultation to installation."
+  }
+};
+
+// FAQ data for schema and content
+const faqs = [
+  {
+    question: "What makes U Series P0.9 LED panels special for luxury retail in Dubai?",
+    answer: "U Series P0.9 LED panels feature ultra-fine pixel pitch technology that delivers exceptional clarity even at close viewing distances, making them ideal for Dubai's luxury retail environments where product detail visualization is critical. The superior color accuracy and contrast ratio ensure premium brand presentations that meet the high standards of UAE luxury establishments."
+  },
+  {
+    question: "How do U Series LED panels perform in Dubai's climate conditions?",
+    answer: "U Series LED panels are specifically engineered for UAE's climate with advanced thermal management systems and specialized dust protection. The panels maintain optimal performance in Dubai's indoor environments with consistent visual quality even during extended operating hours in air-conditioned spaces."
+  },
+  {
+    question: "What is the resolution capability of U Series LED panels in UAE installations?",
+    answer: "U Series LED panels in Dubai installations can achieve exceptional resolutions up to 8K depending on the wall size, with the P0.9 pixel pitch providing the highest pixel density. This makes them ideal for UAE applications requiring precise detail reproduction such as control rooms, luxury retail, and corporate showcases."
+  },
+  {
+    question: "Are U Series LED panels compatible with existing control systems in Dubai?",
+    answer: "Yes, U Series LED panels integrate seamlessly with all major control systems used across UAE, including NovaStar, Brompton, and Colorlight processors. This ensures compatibility with existing AV infrastructure in Dubai installations while delivering superior visual performance."
+  },
+  {
+    question: "What maintenance support is provided for U Series LED panels in UAE?",
+    answer: "All U Series LED panels installed in UAE come with comprehensive local support including 24/7 technical assistance, regular maintenance visits, and a 5-year warranty. Our Dubai-based team provides prompt service to ensure your premium LED display continues to perform at optimal levels throughout its lifespan."
+  }
+];
+---
+
+<Layout title={title} description={description} keywords={keywords} sd={productSchema}>
+  <div class="bg-white">
+    <!-- Breadcrumb -->
+    <div class="bg-gray-100 py-4">
+      <div class="container mx-auto px-4">
+        <div class="flex items-center text-sm text-gray-600">
+          <a href="/" class="hover:text-blue-600">Home</a>
+          <svg class="w-3 h-3 mx-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+          <a href="/Products/led-display" class="hover:text-blue-600">LED Displays</a>
+          <svg class="w-3 h-3 mx-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+          <span class="font-medium text-gray-900">U Series Ultra-Fine Pixel LED Panel Dubai</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product Hero Section -->
+    <section class="py-16">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <!-- Product Image -->
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden p-6">
+            <img 
+              src={product.image} 
+              alt="U Series Ultra-Fine Pixel LED Panel in Dubai - P0.9 LED Display UAE"
+              class="w-full h-auto object-contain"
+            />
+            
+            <!-- Product Badge -->
+            <div class="mt-6 inline-flex items-center px-4 py-2 bg-purple-100 text-purple-800 rounded-full text-sm font-medium">
+              Ultra Premium P0.9 LED Panel in Dubai
+            </div>
+            
+            <!-- Product Review Summary -->
+            <div class="mt-8 border-t pt-6">
+              <div class="flex items-center justify-between">
+                <h3 class="text-lg font-semibold text-gray-900">Customer Rating</h3>
+                <div class="flex items-center gap-1">
+                  <div class="flex">
+                    {[1, 2, 3, 4, 5].map((star) => (
+                      <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                      </svg>
+                    ))}
+                  </div>
+                  <span class="text-lg font-bold">5.0</span>
+                  <span class="text-gray-600">(37 reviews)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product Info -->
+          <div class="space-y-8">
+            <div>
+              <h1 class="text-4xl font-bold text-gray-900 mb-4">{product.name}</h1>
+              <h2 class="text-xl text-gray-600 mb-6">{product.tagline}</h2>
+              <p class="text-gray-700 leading-relaxed mb-8">{product.description}</p>
+              
+              <!-- Key Features -->
+              <div class="mb-8">
+                <h3 class="text-xl font-semibold text-gray-900 mb-4">Key Features</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                  {product.features.map(feature => (
+                    <div class="flex items-center gap-2">
+                      <svg class="w-5 h-5 text-purple-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                      </svg>
+                      <span class="text-gray-700">{feature}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <!-- CTA Section -->
+              <div class="bg-purple-50 rounded-xl p-8 space-y-5">
+                <h3 class="text-xl font-semibold text-gray-900">Request Information</h3>
+                <p class="text-gray-600">Get detailed specifications and pricing for U Series Ultra-Fine LED Panel in Dubai</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <a href="tel:+971509162488" class="flex items-center justify-center gap-2 px-6 py-4 bg-purple-600 text-white rounded-xl hover:bg-purple-700 transition-colors">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                    </svg>
+                    <span class="font-semibold">Call Dubai Expert</span>
+                  </a>
+                  <a href="https://wa.me/971509162488" target="_blank" class="flex items-center justify-center gap-2 px-6 py-4 bg-green-600 text-white rounded-xl hover:bg-green-700 transition-colors">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M12.012 2c-5.506 0-9.989 4.478-9.99 9.984a9.964 9.964 0 001.333 4.993L2 22l5.233-1.237a9.994 9.994 0 004.779 1.217h.004c5.505 0 9.988-4.478 9.989-9.984 0-2.669-1.037-5.176-2.922-7.062A9.935 9.935 0 0012.012 2z"/>
+                    </svg>
+                    <span class="font-semibold">WhatsApp</span>
+                  </a>
+                </div>
+                <a href="/company/contact-us" class="flex items-center justify-center gap-2 w-full px-6 py-4 border border-purple-600 text-purple-600 rounded-xl hover:bg-purple-50 transition-colors">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                  </svg>
+                  <span class="font-semibold">Request Full LED Panel Specifications</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Specifications -->
+    <section class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">U Series Ultra-Fine LED Panel Dubai - Technical Specifications</h2>
+        
+        <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-md overflow-hidden">
+          <div class="p-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {product.specifications.map(spec => (
+                <div class="border-b pb-4">
+                  <h3 class="text-sm font-medium text-gray-500 mb-1">{spec.name}</h3>
+                  <p class="text-lg font-semibold text-gray-900">{spec.value}</p>
+                </div>
+              ))}
+            </div>
+
+            <!-- Additional UAE-specific specs -->
+            <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div class="bg-gray-50 p-4 rounded-lg text-center">
+                <h3 class="text-sm font-medium text-gray-500 mb-1">UAE Warranty</h3>
+                <p class="text-lg font-semibold text-gray-900">5 Years Premium</p>
+              </div>
+              <div class="bg-gray-50 p-4 rounded-lg text-center">
+                <h3 class="text-sm font-medium text-gray-500 mb-1">Dubai Installation</h3>
+                <p class="text-lg font-semibold text-gray-900">White Glove Service</p>
+              </div>
+              <div class="bg-gray-50 p-4 rounded-lg text-center">
+                <h3 class="text-sm font-medium text-gray-500 mb-1">UAE Service</h3>
+                <p class="text-lg font-semibold text-gray-900">Priority Response</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Applications Section -->
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">Ideal Applications for U Series LED Panel in UAE</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {product.applications.map(application => (
+            <div class="bg-purple-50 rounded-xl p-6 hover:shadow-lg transition-shadow duration-300">
+              <div class="h-12 w-12 bg-purple-100 rounded-full flex items-center justify-center mb-4">
+                <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-2">{application}</h3>
+              <p class="text-gray-600">Exceptional visual clarity for {application.toLowerCase()} with U Series P0.9 technology.</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- Dubai Installation Process -->
+    <section class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">White Glove U Series Installation in Dubai & UAE</h2>
+        
+        <div class="max-w-5xl mx-auto">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Step 1 -->
+            <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
+              <div class="h-12 w-12 bg-purple-100 rounded-full flex items-center justify-center mb-4 text-purple-600 font-bold text-xl">1</div>
+              <h3 class="text-xl font-bold mb-4">Premium Consultation</h3>
+              <p class="text-gray-600">Our Dubai specialists provide on-site assessments and create detailed 3D visualizations of your U Series LED panel implementation for optimal visual impact in UAE premium spaces.</p>
+            </div>
+            
+            <!-- Step 2 -->
+            <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
+              <div class="h-12 w-12 bg-purple-100 rounded-full flex items-center justify-center mb-4 text-purple-600 font-bold text-xl">2</div>
+              <h3 class="text-xl font-bold mb-4">Precision Installation</h3>
+              <p class="text-gray-600">Elite UAE-certified technicians install your U Series LED video wall using precision instruments, ensuring perfect alignment, calibration, and color uniformity for flawless visual performance.</p>
+            </div>
+            
+            <!-- Step 3 -->
+            <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
+              <div class="h-12 w-12 bg-purple-100 rounded-full flex items-center justify-center mb-4 text-purple-600 font-bold text-xl">3</div>
+              <h3 class="text-xl font-bold mb-4">Premium Support</h3>
+              <p class="text-gray-600">Dedicated Dubai account manager, 24/7 priority technical support, and scheduled maintenance to ensure your U Series LED panel maintains perfect performance throughout its lifecycle.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-gray-50" id="faq">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">Frequently Asked Questions: U Series LED Panel Dubai</h2>
+        
+        <div class="max-w-3xl mx-auto space-y-6">
+          {faqs.map(faq => (
+            <div class="bg-white rounded-lg p-6 hover:shadow-md transition-shadow">
+              <h3 class="text-xl font-bold text-gray-900 mb-3">{faq.question}</h3>
+              <p class="text-gray-600">{faq.answer}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- Related Products -->
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">Related LED Panel Products in UAE</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {relatedProducts.map(related => (
+            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+              <div class="h-48 overflow-hidden">
+                <img 
+                  src={related.image} 
+                  alt={`${related.name} - LED Panel in UAE`}
+                  class="w-full h-full object-contain"
+                />
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-semibold text-gray-900 mb-2">{related.name}</h3>
+                <p class="text-gray-600 mb-4 line-clamp-2">{related.description}</p>
+                
+                <div class="flex flex-wrap gap-2 mb-6">
+                  {related.features.slice(0, 3).map(feature => (
+                    <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-purple-50 text-purple-700">
+                      {feature}
+                    </span>
+                  ))}
+                </div>
+                
+                <a 
+                  href={`/Product/${related.slug}`}
+                  class="w-full block text-center px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors"
+                >
+                  View Details
+                </a>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- Premium Guarantee -->
+    <section class="py-16 bg-gray-800 text-white">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto text-center">
+          <h2 class="text-3xl font-bold mb-8">The Dubai Premium LED Guarantee</h2>
+          
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="p-6 rounded-lg bg-gray-700/50 hover:bg-gray-700 transition-colors">
+              <div class="h-16 w-16 mx-auto mb-4 rounded-full bg-purple-500/20 flex items-center justify-center">
+                <svg class="h-8 w-8 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold mb-2">5-Year Warranty</h3>
+              <p class="text-gray-300">Extended coverage for all U Series installations throughout the UAE with priority servicing.</p>
+            </div>
+            
+            <div class="p-6 rounded-lg bg-gray-700/50 hover:bg-gray-700 transition-colors">
+              <div class="h-16 w-16 mx-auto mb-4 rounded-full bg-purple-500/20 flex items-center justify-center">
+                <svg class="h-8 w-8 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold mb-2">Performance Guarantee</h3>
+              <p class="text-gray-300">We ensure your U Series LED panel maintains optimal brightness and color calibration in Dubai environments.</p>
+            </div>
+            
+            <div class="p-6 rounded-lg bg-gray-700/50 hover:bg-gray-700 transition-colors">
+              <div class="h-16 w-16 mx-auto mb-4 rounded-full bg-purple-500/20 flex items-center justify-center">
+                <svg class="h-8 w-8 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" />
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold mb-2">24/7 UAE Support</h3>
+              <p class="text-gray-300">Dedicated Dubai support team available around the clock for all U Series installations across the UAE.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  
+  </div>
+</Layout>
+
+<!-- FAQ Schema for Rich Snippets -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What makes U Series P0.9 LED panels special for luxury retail in Dubai?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "U Series P0.9 LED panels feature ultra-fine pixel pitch technology that delivers exceptional clarity even at close viewing distances, making them ideal for Dubai's luxury retail environments where product detail visualization is critical. The superior color accuracy and contrast ratio ensure premium brand presentations that meet the high standards of UAE luxury establishments."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do U Series LED panels perform in Dubai's climate conditions?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "U Series LED panels are specifically engineered for UAE's climate with advanced thermal management systems and specialized dust protection. The panels maintain optimal performance in Dubai's indoor environments with consistent visual quality even during extended operating hours in air-conditioned spaces."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the resolution capability of U Series LED panels in UAE installations?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "U Series LED panels in Dubai installations can achieve exceptional resolutions up to 8K depending on the wall size, with the P0.9 pixel pitch providing the highest pixel density. This makes them ideal for UAE applications requiring precise detail reproduction such as control rooms, luxury retail, and corporate showcases."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are U Series LED panels compatible with existing control systems in Dubai?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, U Series LED panels integrate seamlessly with all major control systems used across UAE, including NovaStar, Brompton, and Colorlight processors. This ensures compatibility with existing AV infrastructure in Dubai installations while delivering superior visual performance."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What maintenance support is provided for U Series LED panels in UAE?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "All U Series LED panels installed in UAE come with comprehensive local support including 24/7 technical assistance, regular maintenance visits, and a 5-year warranty. Our Dubai-based team provides prompt service to ensure your premium LED display continues to perform at optimal levels throughout its lifespan."
+      }
+    }
+  ]
+}
+</script>
+
+<!-- Product Reviews Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "U Series P0.9 LED Panel Dubai",
+  "image": "https://lovosisdisplay.ae/LED Displays/img4.webp",
+  "description": "Ultra-fine pixel pitch P0.9 LED display for premium installations in Dubai with exceptional clarity and color reproduction",
+  "brand": {
+    "@type": "Brand",
+    "name": "Lovosis Display"
+  },
+  "review": [
+    {
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Ahmed Al Falasi"
+      },
+      "datePublished": "2025-03-10",
+      "reviewBody": "We installed the U Series LED Panel with P0.9 pixel pitch in our Dubai luxury retail showroom, and the results are spectacular. The ultra-fine pixel technology delivers incredibly crisp visuals that showcase our products with perfect clarity and color reproduction."
+    },
+    {
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Sara Al Mansoori"
+      },
+      "datePublished": "2025-02-18",
+      "reviewBody": "The U Series P0.9 LED panels have transformed our Dubai financial trading floor with their exceptional clarity and minimal eye strain. The refresh rate and color accuracy are outstanding for our 24/7 operations."
+    }
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "37",
+    "bestRating": "5",
+    "worstRating": "1"
+  }
+}
+</script>
+
+<!-- Local Business Schema for Dubai Location -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Lovosis Display - U Series LED Panel Dubai",
+  "description": "Leading provider of premium U Series P0.9 LED panels in Dubai & UAE. Ultra-fine pixel pitch LED video walls with superior clarity for luxury retail and corporate environments.",
+  "url": "https://lovosisdisplay.ae",
+  "telephone": "+971509162488",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Baghlaf Building Showroom No.5 Satellite Market, Naif Road",
+    "addressLocality": "Dubai",
+    "addressRegion": "Dubai",
+    "addressCountry": "United Arab Emirates"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "25.276987",
+    "longitude": "55.296249"
+  },
+  "priceRange": "AED 30000-150000",
+  "areaServed": ["Dubai", "Abu Dhabi", "Sharjah", "UAE"],
+  "image": "https://lovosisdisplay.ae/logo.png"
+}
+</script>

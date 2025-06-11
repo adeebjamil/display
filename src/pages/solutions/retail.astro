@@ -1,29 +1,43 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-// SEO-optimized title and description
-const title = "Retail Display Solutions | LED & LCD Video Walls | Digital Signage | Lovosis Display"
-const description = "Transform your retail space with cutting-edge LED displays, LCD video walls, and digital signage solutions. Enhance brand visibility, improve customer engagement, and boost sales with professional retail display technology."
-const keywords = "retail display solutions, LED video walls, LCD video walls, digital signage, retail technology, Lovosis Display"
+// SEO-optimized title and description for Dubai/UAE market
+const title = "Retail LED Display Solutions Dubai | Video Wall Solutions Dubai | Digital Signage UAE"
+const description = "Transform your Dubai retail space with cutting-edge LED display solutions & interactive display solutions in UAE. Premium video wall solutions Dubai & digital signage solutions UAE. Professional installation across Emirates."
+const keywords = "LED display solutions Dubai, interactive display solutions UAE, video wall solutions Dubai, digital signage solutions UAE, corporate display solutions Dubai, custom display solutions UAE, visual communication solutions Dubai, integrated LED solutions UAE"
 
-// Structured data for better search visibility
+// UAE locations for SEO
+const locations = [
+  "Dubai", "Abu Dhabi", "Sharjah", "Ajman", "Fujairah", "Ras Al Khaimah", "Umm Al Quwain"
+];
+
+// Structured data for better search visibility with Dubai/UAE focus
 const sd = {
   "@context": "https://schema.org",
   "@type": "Product",
-  "name": "Retail Display Solutions",
-  "description": "Professional display technology for retail environments including LED walls, LCD displays, and digital signage systems",
+  "name": "Retail LED Display Solutions Dubai",
+  "description": "Professional display technology for Dubai retail environments including LED walls, video wall solutions, and digital signage systems across UAE",
   "brand": {
     "@type": "Brand",
-    "name": "Lovosis Display"
+    "name": "Lovosis Display UAE"
   },
   "category": "Digital Display Technology",
   "image": "https://images.unsplash.com/photo-1567103472667-6898f3a79cf2?ixlib=rb-4.0.3",
   "offers": {
     "@type": "AggregateOffer",
-    "priceCurrency": "USD",
-    "lowPrice": "2000.00",
-    "highPrice": "30000.00",
+    "priceCurrency": "AED",
+    "lowPrice": "7000.00",
+    "highPrice": "110000.00",
     "offerCount": "20",
-    "availability": "https://schema.org/InStock"
+    "availability": "https://schema.org/InStock",
+    "areaServed": {
+      "@type": "GeoCircle",
+      "geoMidpoint": {
+        "@type": "GeoCoordinates",
+        "latitude": "25.276987",
+        "longitude": "55.296249"
+      },
+      "geoRadius": "200"
+    }
   },
   "aggregateRating": {
     "@type": "AggregateRating",
@@ -39,30 +53,44 @@ const sd = {
     },
     "author": {
       "@type": "Person",
-      "name": "Jane Smith"
+      "name": "Mohammed Al Faisal"
     },
     "datePublished": "2025-02-10",
-    "reviewBody": "The Lovosis retail display solutions have transformed our store's visual appeal. The LED walls and digital signage systems are incredibly vibrant and have significantly increased customer engagement. The installation was seamless, and the support team has been fantastic."
+    "reviewBody": "The Lovosis retail LED display solutions have transformed our Dubai store's visual appeal. The video wall solutions and digital signage systems are incredibly vibrant and have significantly increased customer engagement. The installation across our UAE locations was seamless, and the Dubai support team has been fantastic."
   },
   "audience": {
     "@type": "BusinessAudience",
-    "audienceType": "Retail businesses"
+    "audienceType": "Retail businesses in UAE"
   },
   "isRelatedTo": [
     {
       "@type": "Product",
-      "name": "LED Display Walls for Retail",
-      "description": "High-brightness LED display solutions for retail environments"
+      "name": "LED Display Solutions for Dubai Retail",
+      "description": "High-brightness LED display solutions for Dubai retail environments"
     },
     {
       "@type": "Product",
-      "name": "LCD Video Walls for Stores",
-      "description": "Ultra-narrow bezel LCD display panels for retail visual merchandising"
+      "name": "Video Wall Solutions Dubai",
+      "description": "Ultra-narrow bezel display panels for Dubai retail visual merchandising"
     },
     {
       "@type": "Product",
-      "name": "Digital Signage Systems",
-      "description": "Dynamic digital signage solutions for retail advertising and information"
+      "name": "Digital Signage Solutions UAE",
+      "description": "Dynamic digital signage solutions for UAE retail advertising and information"
+    }
+  ],
+  "areaServed": [
+    {
+      "@type": "Place",
+      "name": "Dubai, UAE"
+    },
+    {
+      "@type": "Place", 
+      "name": "Abu Dhabi, UAE"
+    },
+    {
+      "@type": "Place",
+      "name": "Sharjah, UAE"
     }
   ]
 }
@@ -70,10 +98,72 @@ const sd = {
 
 <Layout title={title} description={description} sd={sd} keywords={keywords}>
   <main class="overflow-hidden">
+    <!-- Hero Section -->
+    <section class="relative min-h-[80vh] flex items-center">
+      <div class="absolute inset-0 z-0">
+        <img 
+          src="/retail/hero-bg.jpg" 
+          alt="Retail LED Display Solutions Dubai" 
+          class="w-full h-full object-cover"
+          width="1920" 
+          height="1080"
+          fetchpriority="high"
+        />
+        <div class="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-black/70"></div>
+      </div>
+      
+      <div class="container mx-auto px-4 relative z-10">
+        <div class="max-w-3xl">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/20 backdrop-blur-sm border border-blue-400/20 mb-6">
+            <span class="h-2 w-2 bg-blue-400 rounded-full animate-pulse"></span>
+            <span class="text-blue-100 text-sm font-medium tracking-wide">PREMIUM DISPLAY SOLUTIONS IN UAE</span>
+          </div>
+          
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
+            Transform Your Retail Space With <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">Dubai LED Display Solutions</span>
+          </h1>
+          
+          <p class="text-xl text-blue-50 mb-10 leading-relaxed">
+            Elevate customer experiences with cutting-edge video wall solutions Dubai and interactive display solutions UAE. Professional installation across Emirates.
+          </p>
+          
+          <div class="flex flex-wrap gap-4">
+            <a 
+              href="/company/contact-us" 
+              class="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors duration-300 flex items-center group"
+            >
+              Get UAE Quote
+              <svg class="w-5 h-5 ml-2 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+              </svg>
+            </a>
+            <a 
+              href="#solutions" 
+              class="px-8 py-4 bg-transparent border border-white/30 hover:bg-white/10 text-white font-medium rounded-lg transition-colors duration-300 flex items-center group"
+            >
+              View Solutions
+              <svg class="w-5 h-5 ml-2 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Location Badges -->
+          <div class="mt-8 flex flex-wrap gap-2">
+            {locations.map(location => (
+              <span class="px-3 py-1 bg-white/10 text-white text-xs rounded-full">
+                {location}
+              </span>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Industry Requirements Section -->
-    <section class="py-20 bg-gray-50">
+    <section class="py-20 bg-gray-50" id="requirements">
       <div class="container mx-auto px-4">
-        <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Industry Requirements</h2>
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Dubai Retail Display Requirements</h2>
         
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <!-- Requirement Card 1 -->
@@ -84,8 +174,8 @@ const sd = {
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
               </svg>
             </div>
-            <h3 class="text-xl font-semibold text-center mb-4">Product Visibility</h3>
-            <p class="text-gray-600 text-center">Good commodities deserve more attention. Showcase your products effectively to attract potential customers.</p>
+            <h3 class="text-xl font-semibold text-center mb-4">Premium Product Visibility in UAE</h3>
+            <p class="text-gray-600 text-center">Quality merchandise deserves premium presentation in Dubai retail environments. Our LED display solutions Dubai showcase products effectively to attract UAE customers.</p>
           </div>
 
           <!-- Requirement Card 2 -->
@@ -95,8 +185,8 @@ const sd = {
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
               </svg>
             </div>
-            <h3 class="text-xl font-semibold text-center mb-4">Brand Recognition</h3>
-            <p class="text-gray-600 text-center">Increase brand exposure frequency to boost customer repurchase rates and loyalty.</p>
+            <h3 class="text-xl font-semibold text-center mb-4">UAE Brand Recognition</h3>
+            <p class="text-gray-600 text-center">Increase brand exposure in Dubai malls and retail centers using custom display solutions UAE that boost customer loyalty and repeat purchases.</p>
           </div>
 
           <!-- Requirement Card 3 -->
@@ -106,19 +196,22 @@ const sd = {
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
               </svg>
             </div>
-            <h3 class="text-xl font-semibold text-center mb-4">Information Accessibility</h3>
-            <p class="text-gray-600 text-center">Provide easy access to important mall information, promotions, and safety instructions.</p>
+            <h3 class="text-xl font-semibold text-center mb-4">Dubai Information Accessibility</h3>
+            <p class="text-gray-600 text-center">Provide easy access to important mall information in Dubai, promotions, and safety instructions using digital signage solutions UAE.</p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Product Offerings Section -->
-    <section class="py-20 bg-gradient-to-br from-gray-900 to-blue-900">
+    <section id="solutions" class="py-20 bg-gradient-to-br from-gray-900 to-blue-900">
       <div class="container mx-auto px-4">
         <div class="flex flex-col items-center justify-center mb-16">
-          <span class="text-blue-400 font-medium text-sm uppercase tracking-wider mb-3">Our Solutions</span>
-          <h2 class="text-4xl md:text-5xl font-bold text-center text-white">What Lovosis Display Offers</h2>
+          <span class="text-blue-400 font-medium text-sm uppercase tracking-wider mb-3">UAE DISPLAY SOLUTIONS</span>
+          <h2 class="text-4xl md:text-5xl font-bold text-center text-white">Dubai Video Wall & LED Display Solutions</h2>
+          <p class="text-xl text-blue-100 mt-6 max-w-3xl text-center">
+            Discover our premium range of visual communication solutions Dubai and integrated LED solutions UAE for modern retail environments
+          </p>
         </div>
         
         <div class="relative max-w-5xl mx-auto">
@@ -132,16 +225,16 @@ const sd = {
                     <div class="aspect-square md:h-full">
                       <img 
                         src="/retail/img1.jpg"
-                        alt="Digital Display Wall" 
+                        alt="Video Wall Solutions Dubai for Retail" 
                         class="w-full h-full object-cover"
-                        loading="lazy",
+                        loading="lazy"
                         fetchpriority="high"
                       >
                     </div>
                     <!-- Category Badge -->
                     <div class="absolute top-4 left-4">
                       <span class="px-3 py-1.5 bg-blue-600 text-white text-sm font-medium rounded-full shadow-lg">
-                        Commercial Display
+                        Corporate Display Solutions Dubai
                       </span>
                     </div>
                   </div>
@@ -149,10 +242,10 @@ const sd = {
                   <!-- Content Side -->
                   <div class="p-8 flex-1 flex flex-col justify-between">
                     <div>
-                      <h3 class="text-2xl font-bold text-gray-800">Next-Gen LCD Walls</h3>
+                      <h3 class="text-2xl font-bold text-gray-800">Premium Video Wall Solutions Dubai</h3>
                       <div class="w-12 h-1 bg-blue-600 my-4"></div>
                       <p class="text-gray-600">
-                        Next-Gen LCD Walls offer crystal-clear visuals with ultra-thin bezels and high-resolution displays, perfect for corporate offices, control rooms, and retail environments. These cutting-edge LCD video walls provide seamless integration and advanced display technology, delivering an immersive viewing experience with unmatched clarity and reliability. 
+                        Our next-generation video wall solutions Dubai offer crystal-clear visuals with ultra-thin bezels and high-resolution displays, perfect for Dubai retail environments, corporate offices, and control rooms. These cutting-edge display systems provide seamless integration and advanced technology, delivering an immersive viewing experience with unmatched clarity across UAE installations.
                       </p>
                     </div>
                     
@@ -163,16 +256,25 @@ const sd = {
                           <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                           </svg>
-                          0.88mm Clarity
+                          0.88mm Ultra-Thin Bezels
                         </span>
                         <span class="px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium flex items-center">
                           <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                           </svg>
-                          4K Resolution
+                          4K Dubai Standard
                         </span>
                       </div>
-                     
+                      
+                      <div class="flex items-center gap-4">
+                        <span class="text-gray-600 font-medium">From AED 22,000</span>
+                        <a href="/company/contact-us" class="px-5 py-2 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors duration-300 inline-flex items-center">
+                          UAE Quote
+                          <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                          </svg>
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -186,7 +288,7 @@ const sd = {
                     <div class="aspect-square md:h-full">
                       <img 
                         src="/retail/img3.jpg"
-                        alt="LED Display" 
+                        alt="LED Display Solutions Dubai for Retail" 
                         class="w-full h-full object-cover"
                         loading="lazy"
                       >
@@ -194,7 +296,7 @@ const sd = {
                     <!-- Category Badge -->
                     <div class="absolute top-4 left-4">
                       <span class="px-3 py-1.5 bg-purple-600 text-white text-sm font-medium rounded-full shadow-lg">
-                        Brand Experience
+                        Visual Communication Solutions Dubai
                       </span>
                     </div>
                   </div>
@@ -202,10 +304,10 @@ const sd = {
                   <!-- Content Side -->
                   <div class="p-8 flex-1 flex flex-col justify-between">
                     <div>
-                      <h3 class="text-2xl font-bold text-gray-800">LED Story Walls</h3>
+                      <h3 class="text-2xl font-bold text-gray-800">Integrated LED Solutions UAE</h3>
                       <div class="w-12 h-1 bg-purple-600 my-4"></div>
                       <p class="text-gray-600">
-                        LED Story Walls bring storytelling to life with dynamic visuals and vibrant colors, perfect for marketing, events, and brand experiences. These large-scale, customizable LED displays captivate audiences, delivering engaging content with energy-efficient technology and high brightness.
+                        Our integrated LED solutions UAE bring storytelling to life with dynamic visuals and vibrant colors, perfect for Dubai retail marketing, events, and brand experiences. These large-scale, custom display solutions UAE captivate audiences across Emirates, delivering engaging content with energy-efficient technology and high brightness levels optimized for UAE lighting conditions.
                       </p>
                     </div>
                     
@@ -216,16 +318,25 @@ const sd = {
                           <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                           </svg>
-                          Fine Pixel
+                          Fine Pixel for Dubai Standards
                         </span>
                         <span class="px-4 py-2 bg-purple-100 text-purple-800 rounded-full text-sm font-medium flex items-center">
                           <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                           </svg>
-                          High Brightness
+                          UAE-Optimized Brightness
                         </span>
                       </div>
-                     
+                      
+                      <div class="flex items-center gap-4">
+                        <span class="text-gray-600 font-medium">From AED 35,000</span>
+                        <a href="/company/contact-us" class="px-5 py-2 bg-purple-600 hover:bg-purple-700 text-white font-medium rounded-lg transition-colors duration-300 inline-flex items-center">
+                          UAE Quote
+                          <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                          </svg>
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -239,7 +350,7 @@ const sd = {
                     <div class="aspect-square md:h-full">
                       <img 
                         src="/retail/img2.jpg"
-                        alt="Safety Display" 
+                        alt="Digital Signage Solutions UAE for Retail" 
                         class="w-full h-full object-cover"
                         loading="lazy"
                       >
@@ -247,7 +358,7 @@ const sd = {
                     <!-- Category Badge -->
                     <div class="absolute top-4 left-4">
                       <span class="px-3 py-1.5 bg-red-600 text-white text-sm font-medium rounded-full shadow-lg">
-                        Safety Information
+                        Digital Signage Solutions UAE
                       </span>
                     </div>
                   </div>
@@ -255,10 +366,10 @@ const sd = {
                   <!-- Content Side -->
                   <div class="p-8 flex-1 flex flex-col justify-between">
                     <div>
-                      <h3 class="text-2xl font-bold text-gray-800">Emergency Displays</h3>
+                      <h3 class="text-2xl font-bold text-gray-800">Interactive Display Solutions UAE</h3>
                       <div class="w-12 h-1 bg-red-600 my-4"></div>
                       <p class="text-gray-600">
-                        Emergency Displays are vital for safety, providing real-time alerts and essential information in critical situations. These high-visibility screens are designed for quick response environments like hospitals, airports, and public spaces, ensuring reliable communication when every second counts.
+                        Our interactive display solutions UAE are vital for modern Dubai retail environments, providing real-time customer engagement and essential information in an intuitive format. These high-visibility digital signage solutions UAE are designed for Dubai malls, retail stores, and public spaces, ensuring reliable communication and customer interaction across Emirates.
                       </p>
                     </div>
                     
@@ -269,16 +380,25 @@ const sd = {
                           <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                           </svg>
-                          Real-Time Updates
+                          UAE-Certified Touchscreens
                         </span>
                         <span class="px-4 py-2 bg-red-100 text-red-800 rounded-full text-sm font-medium flex items-center">
                           <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                           </svg>
-                          High Visibility
+                          Dubai Mall Integration
                         </span>
                       </div>
-                     
+                      
+                      <div class="flex items-center gap-4">
+                        <span class="text-gray-600 font-medium">From AED 18,000</span>
+                        <a href="/company/contact-us" class="px-5 py-2 bg-red-600 hover:bg-red-700 text-white font-medium rounded-lg transition-colors duration-300 inline-flex items-center">
+                          UAE Quote
+                          <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                          </svg>
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -315,9 +435,211 @@ const sd = {
         </div>
       </div>
     </section>
+
+    <!-- Featured Projects Section -->
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <span class="inline-block px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold mb-4">
+            FEATURED UAE PROJECTS
+          </span>
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+            Our Work Across Dubai & UAE
+          </h2>
+          <p class="text-gray-600 text-lg max-w-3xl mx-auto">
+            Explore our custom display solutions UAE implemented in premier retail locations
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Project 1 -->
+          <div class="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200">
+            <div class="relative h-64">
+              <img 
+                src="/retail/project1.webp" 
+                alt="Dubai Mall LED Display Solution" 
+                class="w-full h-full object-cover"
+              />
+              <div class="absolute top-4 right-4">
+                <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Dubai Mall</span>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-900 mb-2">Dubai Mall LED Display Installation</h3>
+              <p class="text-gray-600 mb-4">Massive video wall solutions Dubai for the fashion district with integrated content management and real-time updates.</p>
+              <div class="flex items-center gap-2 flex-wrap mb-4">
+                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-xs rounded-full">LED Display Solutions</span>
+                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-xs rounded-full">Custom Content</span>
+              </div>
+             
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200">
+            <div class="relative h-64">
+              <img 
+                src="/retail/project2.webp" 
+                alt="Abu Dhabi Retail Digital Signage Solutions UAE" 
+                class="w-full h-full object-cover"
+              />
+              <div class="absolute top-4 right-4">
+                <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Abu Dhabi</span>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-900 mb-2">Yas Mall Interactive Display Network</h3>
+              <p class="text-gray-600 mb-4">Interactive display solutions UAE deployed throughout Yas Mall with wayfinding and promotional capabilities.</p>
+              <div class="flex items-center gap-2 flex-wrap mb-4">
+                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-xs rounded-full">Touch Technology</span>
+                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-xs rounded-full">Digital Signage</span>
+              </div>
+             
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200">
+            <div class="relative h-64">
+              <img 
+                src="/retail/project3.webp" 
+                alt="Dubai Corporate Display Solutions" 
+                class="w-full h-full object-cover"
+              />
+              <div class="absolute top-4 right-4">
+                <span class="bg-purple-100 text-purple-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Dubai Marina</span>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-900 mb-2">Marina Mall Video Wall Implementation</h3>
+              <p class="text-gray-600 mb-4">Custom video wall solutions Dubai designed for the central atrium with synchronized visual content across multiple zones.</p>
+              <div class="flex items-center gap-2 flex-wrap mb-4">
+                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-xs rounded-full">Video Walls</span>
+                <span class="px-3 py-1 bg-gray-100 text-gray-800 text-xs rounded-full">Content Sync</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <span class="inline-block px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold mb-4">
+            CLIENT SUCCESS STORIES
+          </span>
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+            Trusted by Leading UAE Retailers
+          </h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+          <!-- Testimonial 1 -->
+          <div class="bg-white p-8 rounded-xl shadow-md border border-gray-100">
+            <div class="flex items-center mb-6">
+              <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                <span class="text-blue-600 font-bold text-xl">M</span>
+              </div>
+              <div>
+                <h4 class="font-bold text-gray-900">Mohammed Al Faisal</h4>
+                <p class="text-sm text-gray-600">Marketing Director, Premier Dubai Retail Group</p>
+              </div>
+            </div>
+            <p class="text-gray-700 mb-4">
+              "The LED display solutions Dubai from Lovosis have transformed our retail spaces. The video wall installations in our Dubai Mall location have significantly increased customer engagement and dwell time. The quality and reliability of their integrated LED solutions UAE have been outstanding."
+            </p>
+            <div class="flex text-yellow-400">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="bg-white p-8 rounded-xl shadow-md border border-gray-100">
+            <div class="flex items-center mb-6">
+              <div class="w-14 h-14 bg-purple-100 rounded-full flex items-center justify-center mr-4">
+                <span class="text-purple-600 font-bold text-xl">S</span>
+              </div>
+              <div>
+                <h4 class="font-bold text-gray-900">Sara Al Zaabi</h4>
+                <p class="text-sm text-gray-600">Operations Manager, Abu Dhabi Retail Company</p>
+              </div>
+            </div>
+            <p class="text-gray-700 mb-4">
+              "The digital signage solutions UAE provided by Lovosis have revolutionized how we communicate with customers. The interactive display solutions throughout our Abu Dhabi locations have improved customer navigation and increased promotion awareness. Their custom display solutions UAE team was professional from design to installation."
+            </p>
+            <div class="flex text-yellow-400">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <span class="inline-block px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold mb-4">
+            FREQUENTLY ASKED QUESTIONS
+          </span>
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+            Common Questions About Retail Display Solutions in UAE
+          </h2>
+        </div>
+        
+        <div class="max-w-3xl mx-auto space-y-6">
+          <div class="bg-gray-50 rounded-lg p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-3">What types of LED display solutions are best for Dubai retail environments?</h3>
+            <p class="text-gray-600">For Dubai retail environments, we recommend high-brightness (1000+ nits) fine-pixel LED displays that can handle the bright ambient lighting conditions common in UAE malls. Our LED display solutions Dubai are specifically designed with anti-glare technology and wide viewing angles for maximum visibility in retail settings.</p>
+          </div>
+          
+          <div class="bg-gray-50 rounded-lg p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-3">Do you provide installation for video wall solutions across Dubai?</h3>
+            <p class="text-gray-600">Yes, we provide comprehensive installation services for all our video wall solutions Dubai. Our UAE-certified technicians are experienced in retail environments and follow all safety protocols required by Dubai municipalities. We handle everything from structural assessment to final calibration and content setup.</p>
+          </div>
+          
+          <div class="bg-gray-50 rounded-lg p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-3">What maintenance services do you offer for digital signage solutions UAE?</h3>
+            <p class="text-gray-600">Our digital signage solutions UAE come with comprehensive maintenance packages including regular preventive maintenance, emergency repair services, and remote monitoring. We offer flexible service level agreements tailored to the specific needs of UAE retail businesses, with response times as quick as 4 hours for Dubai locations.</p>
+          </div>
+          
+          <div class="bg-gray-50 rounded-lg p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-3">Can your interactive display solutions integrate with existing UAE retail systems?</h3>
+            <p class="text-gray-600">Our interactive display solutions UAE are designed for seamless integration with popular retail management systems used across Emirates. We provide custom API development to connect with inventory management, CRM, and POS systems commonly used in Dubai retail environments. Our integration specialists ensure smooth data flow between your existing systems and new displays.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-r from-blue-600 to-purple-600 relative overflow-hidden">
+      <div class="absolute inset-0 opacity-10">
+      </div>
+      <div class="container mx-auto px-4 relative z-10">
+        <div class="max-w-3xl mx-auto text-center text-white">
+          <h2 class="text-3xl md:text-4xl font-bold mb-6">Transform Your UAE Retail Space Today</h2>
+          <p class="text-xl mb-8">Contact our Dubai team for a personalized consultation and see how our display solutions can enhance your retail environment across Emirates.</p>
+          <div class="flex flex-wrap justify-center gap-4">
+            <a href="/company/contact-us" class="px-8 py-4 bg-white text-blue-600 hover:bg-gray-100 rounded-lg font-bold transition-colors duration-300 shadow-lg">
+              Get a UAE Quote
+            </a>
+          
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 </Layout>
 
+<!-- Carousel Script -->
 <script>
   // Form handling
   function setupFormHandling() {
@@ -454,6 +776,69 @@ const sd = {
     setupFormHandling();
     setupCarousel();
   });
+</script>
+
+<!-- FAQ Schema for Rich Snippets -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What types of LED display solutions are best for Dubai retail environments?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For Dubai retail environments, we recommend high-brightness (1000+ nits) fine-pixel LED displays that can handle the bright ambient lighting conditions common in UAE malls. Our LED display solutions Dubai are specifically designed with anti-glare technology and wide viewing angles for maximum visibility in retail settings."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you provide installation for video wall solutions across Dubai?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we provide comprehensive installation services for all our video wall solutions Dubai. Our UAE-certified technicians are experienced in retail environments and follow all safety protocols required by Dubai municipalities. We handle everything from structural assessment to final calibration and content setup."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What maintenance services do you offer for digital signage solutions UAE?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our digital signage solutions UAE come with comprehensive maintenance packages including regular preventive maintenance, emergency repair services, and remote monitoring. We offer flexible service level agreements tailored to the specific needs of UAE retail businesses, with response times as quick as 4 hours for Dubai locations."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can your interactive display solutions integrate with existing UAE retail systems?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our interactive display solutions UAE are designed for seamless integration with popular retail management systems used across Emirates. We provide custom API development to connect with inventory management, CRM, and POS systems commonly used in Dubai retail environments. Our integration specialists ensure smooth data flow between your existing systems and new displays."
+      }
+    }
+  ]
+}
+</script>
+
+<!-- Local Business Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Lovosis Display - Retail Display Solutions Dubai",
+  "description": "Leading provider of LED display solutions Dubai, video wall solutions Dubai, and digital signage solutions UAE for retail environments.",
+  "url": "https://lovosisdisplay.ae",
+  "telephone": "+97143388644",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Business Bay",
+    "addressLocality": "Dubai",
+    "addressCountry": "UAE"
+  },
+  "priceRange": "AED 7000-110000",
+  "areaServed": ["Dubai", "Abu Dhabi", "Sharjah", "UAE"],
+  "image": "https://lovosisdisplay.ae/logo.png"
+}
 </script>
 
 <style>

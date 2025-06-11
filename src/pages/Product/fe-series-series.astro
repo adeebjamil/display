@@ -1,0 +1,624 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+// Product data
+const product = {
+  name: "FE Series Outdoor LED Display",
+  tagline: "Weather-Resistant LED Panel for Dubai Climate",
+  description: "The FE Series from Lovosis Technology delivers exceptional outdoor performance in Dubai's challenging climate conditions. Engineered specifically for UAE's extreme heat, sand, and high UV exposure, these robust LED displays maintain outstanding visual clarity and brightness even in direct sunlight. With IP65/IP54 protection rating, high brightness up to 7000 nits, and advanced cooling systems, the FE Series ensures reliable 24/7 operation for outdoor advertising, stadium displays, and architectural installations throughout Dubai and the UAE.",
+  image: "/LED Displays/Uniview FE Series.png",
+  features: [
+    "High brightness (5000-7000 nits) for Dubai sunlight",
+    "IP65/IP54 weather protection rating",
+    "Heat-resistant components (operates at -20°C to 60°C)",
+    "Anti-UV cabinet materials for UAE climate",
+    "Sand and dust protection technology",
+    "Advanced cooling system for Dubai heat",
+    "Smart brightness adjustment for day/night",
+    "Anti-corrosion coating for coastal environments",
+    "Humidity-resistant electronics (0-99% RH)",
+    "Energy-efficient design for UAE regulations"
+  ],
+  specifications: [
+    { name: "Pixel Pitch", value: "P4 / P6 / P8 / P10 options" },
+    { name: "Brightness", value: "5000-7000 nits" },
+    { name: "Panel Resolution", value: "160×160 pixels per cabinet" },
+    { name: "Cabinet Size", value: "960mm × 960mm" },
+    { name: "IP Rating", value: "IP65 (front) / IP54 (rear)" },
+    { name: "Viewing Angle", value: "140° horizontal / 70° vertical" },
+    { name: "Refresh Rate", value: "≥1920Hz" },
+    { name: "Operating Temperature", value: "-20°C ~ 60°C (Dubai optimized)" },
+    { name: "Lifespan", value: "100,000+ hours" },
+    { name: "Control System", value: "Novastar / Colorlight" }
+  ],
+  applications: [
+    "Dubai Outdoor Advertising",
+    "UAE Stadium Displays",
+    "Dubai Mall Exterior",
+    "Roadside Digital Billboards UAE",
+    "Architectural Facades in Dubai",
+    "Event Displays for UAE",
+    "Retail Storefront Displays Dubai",
+    "Transportation Hub Signage UAE"
+  ]
+};
+
+// Related products
+const relatedProducts = [
+  {
+    name: "XEB Series",
+    description: "Premium indoor LED display solution with fine pixel pitch technology for corporate and retail environments across Dubai and UAE",
+    image: "/LED Displays/XEB Series.png",
+    slug: "xeb-series-series",
+    features: ["Fine pixel pitch", "High brightness", "Seamless connection", "Premium quality"]
+  },
+  {
+    name: "U Series",
+    description: "Ultra-fine pixel pitch LED display with P0.9 technology for luxury retail and premium corporate installations in Dubai",
+    image: "/LED Displays/img4.webp",
+    slug: "u-series-series",
+    features: ["Ultra-fine P0.9", "High-definition", "Premium quality", "Luxury retail"]
+  }
+];
+
+// SEO-optimized title, description and keywords with Dubai/UAE focus
+const title = "FE Series Outdoor LED Display Dubai | Weather-Resistant LED Screen UAE | Sunlight Readable Signage | Lovosis"
+const description = "FE Series Outdoor LED Display in Dubai featuring weather-resistant technology for UAE's extreme climate. High brightness LED screens visible in direct sunlight. Durable outdoor LED signage for advertising and architectural applications across Dubai."
+const keywords = "FE Series outdoor LED display Dubai, weather-resistant LED screen UAE, high brightness LED billboard Dubai, outdoor digital signage UAE, IP65 LED display Dubai, sunlight readable LED wall UAE, outdoor advertising screen Dubai"
+
+// Enhanced schema markup for SEO
+const productSchema = {
+  "@context": "https://schema.org/",
+  "@type": "Product",
+  "name": "FE Series Outdoor LED Display in Dubai",
+  "image": `https://lovosisdisplay.ae${product.image}`,
+  "description": "Weather-resistant outdoor LED display for Dubai's extreme climate. High brightness panels visible in direct sunlight with IP65 protection for durability in UAE conditions.",
+  "brand": {
+    "@type": "Brand",
+    "name": "Lovosis Display Dubai"
+  },
+  "offers": {
+    "@type": "Offer",
+    "url": "https://lovosisdisplay.ae/Product/fe-series-series",
+    "priceCurrency": "AED",
+    "priceValidUntil": "2026-06-01",
+    "availability": "https://schema.org/InStock",
+    "areaServed": {
+      "@type": "GeoCircle",
+      "geoMidpoint": {
+        "@type": "GeoCoordinates",
+        "latitude": "25.276987",
+        "longitude": "55.296249"
+      },
+      "geoRadius": "200"
+    },
+    "seller": {
+      "@type": "Organization",
+      "name": "Lovosis Display Dubai - Outdoor LED Screen UAE Specialist"
+    }
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "45",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "review": {
+    "@type": "Review",
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": "5",
+      "bestRating": "5"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Khalid Al Ameri"
+    },
+    "datePublished": "2025-01-15",
+    "reviewBody": "We installed the FE Series outdoor LED display at our Dubai retail complex entrance, and it has performed flawlessly through summer heat and sandstorms. The brightness is exceptional even in direct sunlight, and Lovosis' installation team ensured everything was properly sealed against the elements. Highly recommended for UAE outdoor applications."
+  }
+};
+
+// FAQ data for schema and content
+const faqs = [
+  {
+    question: "How does the FE Series perform in Dubai's extreme summer heat?",
+    answer: "The FE Series is specifically engineered for Dubai's extreme temperatures with specialized heat-resistant components that operate reliably at up to 60°C. The advanced cooling system, thermal management design, and high-grade materials prevent overheating and ensure consistent performance even during UAE's hottest summer months."
+  },
+  {
+    question: "Is the FE Series LED display visible in Dubai's bright sunlight?",
+    answer: "Yes, the FE Series features high brightness levels of 5000-7000 nits specifically calibrated for UAE's intense sunlight conditions. This exceptional brightness combined with anti-glare technology ensures content remains clearly visible even in direct desert sunlight, making it ideal for outdoor advertising across Dubai."
+  },
+  {
+    question: "How does the FE Series protect against UAE's sand and dust?",
+    answer: "The FE Series features IP65/IP54 protection ratings with specialized gaskets, sealed components, and a completely enclosed design that prevents sand, dust, and small particles from entering the display. The cabinets are specially designed with Dubai's environmental conditions in mind, ensuring long-term reliability in dusty and sandy conditions."
+  },
+  {
+    question: "What warranty and support is available for outdoor LED displays in UAE?",
+    answer: "All FE Series outdoor LED displays come with a 3-year comprehensive warranty throughout UAE. Our Dubai-based service team provides preventative maintenance, emergency support, and regular cleaning services specifically designed for outdoor installations. Extended warranty options of up to 5 years are available for UAE clients."
+  },
+  {
+    question: "How energy-efficient are FE Series LED displays for Dubai installations?",
+    answer: "FE Series displays incorporate smart energy management systems that comply with UAE's green building standards. Features include automatic brightness adjustment based on ambient light, scheduled operation modes, and high-efficiency power supplies that reduce consumption by up to 30% compared to standard outdoor displays, helping Dubai businesses meet sustainability targets."
+  }
+];
+---
+
+<Layout title={title} description={description} keywords={keywords} sd={productSchema}>
+  <div class="bg-white">
+    <!-- Breadcrumb -->
+    <div class="bg-gray-100 py-4">
+      <div class="container mx-auto px-4">
+        <div class="flex items-center text-sm text-gray-600">
+          <a href="/" class="hover:text-amber-600">Home</a>
+          <svg class="w-3 h-3 mx-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+          <a href="/Products/led-display" class="hover:text-amber-600">LED Displays</a>
+          <svg class="w-3 h-3 mx-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+          <span class="font-medium text-gray-900">FE Series Outdoor LED Display Dubai</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product Hero Section -->
+    <section class="py-16">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <!-- Product Image -->
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden p-6">
+            <img 
+              src={product.image} 
+              alt="FE Series Outdoor LED Display in Dubai - Weather-Resistant LED Screen UAE"
+              class="w-full h-auto object-contain"
+            />
+            
+            <!-- Product Badge -->
+            <div class="mt-6 inline-flex items-center px-4 py-2 bg-amber-100 text-amber-800 rounded-full text-sm font-medium">
+              Dubai Weather-Resistant Outdoor LED
+            </div>
+            
+            <!-- Product Review Summary -->
+            <div class="mt-8 border-t pt-6">
+              <div class="flex items-center justify-between">
+                <h3 class="text-lg font-semibold text-gray-900">Customer Rating</h3>
+                <div class="flex items-center gap-1">
+                  <div class="flex">
+                    {[1, 2, 3, 4, 5].map((star) => (
+                      <svg class="w-5 h-5 text-yellow-400" fill={star <= 4.8 ? "currentColor" : "none"} viewBox="0 0 20 20">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                      </svg>
+                    ))}
+                  </div>
+                  <span class="text-lg font-bold">4.8</span>
+                  <span class="text-gray-600">(45 reviews)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product Info -->
+          <div class="space-y-8">
+            <div>
+              <h1 class="text-4xl font-bold text-gray-900 mb-4">{product.name}</h1>
+              <h2 class="text-xl text-gray-600 mb-6">{product.tagline}</h2>
+              <p class="text-gray-700 leading-relaxed mb-8">{product.description}</p>
+              
+              <!-- Key Features -->
+              <div class="mb-8">
+                <h3 class="text-xl font-semibold text-gray-900 mb-4">Key Features</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                  {product.features.map(feature => (
+                    <div class="flex items-center gap-2">
+                      <svg class="w-5 h-5 text-amber-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                      </svg>
+                      <span class="text-gray-700">{feature}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+      
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Specifications -->
+    <section class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">FE Series Outdoor LED Display Dubai - Technical Specifications</h2>
+        
+        <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-md overflow-hidden">
+          <div class="p-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {product.specifications.map(spec => (
+                <div class="border-b pb-4">
+                  <h3 class="text-sm font-medium text-gray-500 mb-1">{spec.name}</h3>
+                  <p class="text-lg font-semibold text-gray-900">{spec.value}</p>
+                </div>
+              ))}
+            </div>
+
+            <!-- Additional UAE-specific specs -->
+            <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div class="bg-gray-50 p-4 rounded-lg text-center">
+                <h3 class="text-sm font-medium text-gray-500 mb-1">UAE Warranty</h3>
+                <p class="text-lg font-semibold text-gray-900">3 Years Outdoor</p>
+              </div>
+              <div class="bg-gray-50 p-4 rounded-lg text-center">
+                <h3 class="text-sm font-medium text-gray-500 mb-1">Dubai Installation</h3>
+                <p class="text-lg font-semibold text-gray-900">Professional Outdoor Setup</p>
+              </div>
+              <div class="bg-gray-50 p-4 rounded-lg text-center">
+                <h3 class="text-sm font-medium text-gray-500 mb-1">UAE Maintenance</h3>
+                <p class="text-lg font-semibold text-gray-900">Quarterly Service Included</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Weather Resistance Features -->
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-16">Built for Dubai's Harsh Climate</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Feature 1 -->
+          <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow">
+            <div class="w-16 h-16 rounded-full bg-amber-100 flex items-center justify-center mb-6 mx-auto">
+              <svg class="w-8 h-8 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-center mb-3">Heat Resistance</h3>
+            <p class="text-gray-600 text-center">Specially designed thermal management system withstands Dubai's extreme temperatures up to 60°C without performance degradation.</p>
+          </div>
+          
+          <!-- Feature 2 -->
+          <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow">
+            <div class="w-16 h-16 rounded-full bg-amber-100 flex items-center justify-center mb-6 mx-auto">
+              <svg class="w-8 h-8 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-center mb-3">Dust & Sand Protection</h3>
+            <p class="text-gray-600 text-center">IP65 rated enclosure prevents sand, dust and small particles from entering the display, ensuring reliability in UAE's desert environment.</p>
+          </div>
+          
+          <!-- Feature 3 -->
+          <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow">
+            <div class="w-16 h-16 rounded-full bg-amber-100 flex items-center justify-center mb-6 mx-auto">
+              <svg class="w-8 h-8 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-center mb-3">High Brightness</h3>
+            <p class="text-gray-600 text-center">5000-7000 nits brightness ensures perfect visibility even in Dubai's intense direct sunlight throughout the day.</p>
+          </div>
+          
+          <!-- Feature 4 -->
+          <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow">
+            <div class="w-16 h-16 rounded-full bg-amber-100 flex items-center justify-center mb-6 mx-auto">
+              <svg class="w-8 h-8 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-center mb-3">Wind Resistance</h3>
+            <p class="text-gray-600 text-center">Engineered to withstand UAE's strong winds up to 60km/h with reinforced cabinet design and specialized mounting systems.</p>
+          </div>
+          
+          <!-- Feature 5 -->
+          <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow">
+            <div class="w-16 h-16 rounded-full bg-amber-100 flex items-center justify-center mb-6 mx-auto">
+              <svg class="w-8 h-8 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-center mb-3">Anti-Corrosion</h3>
+            <p class="text-gray-600 text-center">Special anti-corrosion treatment protects against Dubai's coastal air and high humidity levels, extending display lifespan.</p>
+          </div>
+          
+          <!-- Feature 6 -->
+          <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow">
+            <div class="w-16 h-16 rounded-full bg-amber-100 flex items-center justify-center mb-6 mx-auto">
+              <svg class="w-8 h-8 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-center mb-3">Water Resistance</h3>
+            <p class="text-gray-600 text-center">Fully waterproof design protects against occasional UAE rain and regular cleaning, with specialized drainage systems.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Applications Section -->
+    <section class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">Ideal Applications for FE Series LED Display in UAE</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {product.applications.map(application => (
+            <div class="bg-amber-50 rounded-xl p-6 hover:shadow-lg transition-shadow duration-300">
+              <div class="h-12 w-12 bg-amber-100 rounded-full flex items-center justify-center mb-4">
+                <svg class="w-6 h-6 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-2">{application}</h3>
+              <p class="text-gray-600">Weather-resistant performance for {application.toLowerCase()} with FE Series technology.</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- Dubai Installation Process -->
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">Professional Outdoor Installation in Dubai & UAE</h2>
+        
+        <div class="max-w-5xl mx-auto">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Step 1 -->
+            <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
+              <div class="h-12 w-12 bg-amber-100 rounded-full flex items-center justify-center mb-4 text-amber-600 font-bold text-xl">1</div>
+              <h3 class="text-xl font-bold mb-4">Site Assessment</h3>
+              <p class="text-gray-600">Our Dubai engineers conduct thorough site surveys, analyzing sun exposure, wind patterns, and structural requirements to recommend the optimal FE Series configuration for your UAE location.</p>
+            </div>
+            
+            <!-- Step 2 -->
+            <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
+              <div class="h-12 w-12 bg-amber-100 rounded-full flex items-center justify-center mb-4 text-amber-600 font-bold text-xl">2</div>
+              <h3 class="text-xl font-bold mb-4">Climate-Ready Installation</h3>
+              <p class="text-gray-600">UAE-certified technicians install your FE Series display using weather-resistant mounting systems, specialized sealing techniques, and proper electrical protection for Dubai's outdoor environment.</p>
+            </div>
+            
+            <!-- Step 3 -->
+            <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
+              <div class="h-12 w-12 bg-amber-100 rounded-full flex items-center justify-center mb-4 text-amber-600 font-bold text-xl">3</div>
+              <h3 class="text-xl font-bold mb-4">Maintenance Program</h3>
+              <p class="text-gray-600">Comprehensive quarterly maintenance service included with all Dubai installations, featuring specialized cleaning, weatherproofing inspection, and performance optimization for UAE climate conditions.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-white" id="faq">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">Frequently Asked Questions: FE Series Outdoor LED Display Dubai</h2>
+        
+        <div class="max-w-3xl mx-auto space-y-6">
+          {faqs.map(faq => (
+            <div class="bg-gray-50 rounded-lg p-6 hover:shadow-md transition-shadow">
+              <h3 class="text-xl font-bold text-gray-900 mb-3">{faq.question}</h3>
+              <p class="text-gray-600">{faq.answer}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+     <!-- Related Products -->
+    <section class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">Related LED Panel Products in UAE</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {relatedProducts.map(related => (
+            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+              <div class="h-48 overflow-hidden">
+                <img 
+                  src={related.image} 
+                  alt={`${related.name} - LED Panel in UAE`}
+                  class="w-full h-full object-contain"
+                />
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-semibold text-gray-900 mb-2">{related.name}</h3>
+                <p class="text-gray-600 mb-4 line-clamp-2">{related.description}</p>
+                
+                <div class="flex flex-wrap gap-2 mb-6">
+                  {related.features.slice(0, 3).map(feature => (
+                    <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700">
+                      {feature}
+                    </span>
+                  ))}
+                </div>
+                
+                <a 
+                  href={`/Product/${related.slug}`}
+                  class="w-full block text-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+                >
+                  View Details
+                </a>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- Weather Guarantee -->
+    <section class="py-16 bg-gray-800 text-white">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto text-center">
+          <h2 class="text-3xl font-bold mb-8">The Dubai Weather Guarantee</h2>
+          
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="p-6 rounded-lg bg-gray-700/50 hover:bg-gray-700 transition-colors">
+              <div class="h-16 w-16 mx-auto mb-4 rounded-full bg-amber-500/20 flex items-center justify-center">
+                <svg class="h-8 w-8 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold mb-2">3-Year Weather Warranty</h3>
+              <p class="text-gray-300">Comprehensive coverage against UAE's harsh weather conditions with quarterly maintenance included.</p>
+            </div>
+            
+            <div class="p-6 rounded-lg bg-gray-700/50 hover:bg-gray-700 transition-colors">
+              <div class="h-16 w-16 mx-auto mb-4 rounded-full bg-amber-500/20 flex items-center justify-center">
+                <svg class="h-8 w-8 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold mb-2">Brightness Guarantee</h3>
+              <p class="text-gray-300">We ensure your FE Series maintains optimal brightness levels in Dubai's direct sunlight conditions.</p>
+            </div>
+            
+            <div class="p-6 rounded-lg bg-gray-700/50 hover:bg-gray-700 transition-colors">
+              <div class="h-16 w-16 mx-auto mb-4 rounded-full bg-amber-500/20 flex items-center justify-center">
+                <svg class="h-8 w-8 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" />
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold mb-2">24/7 Dubai Support</h3>
+              <p class="text-gray-300">Emergency support team in UAE available around the clock for outdoor display issues with 4-hour response time.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   
+  </div>
+</Layout>
+
+<!-- FAQ Schema for Rich Snippets -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How does the FE Series perform in Dubai's extreme summer heat?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The FE Series is specifically engineered for Dubai's extreme temperatures with specialized heat-resistant components that operate reliably at up to 60°C. The advanced cooling system, thermal management design, and high-grade materials prevent overheating and ensure consistent performance even during UAE's hottest summer months."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is the FE Series LED display visible in Dubai's bright sunlight?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, the FE Series features high brightness levels of 5000-7000 nits specifically calibrated for UAE's intense sunlight conditions. This exceptional brightness combined with anti-glare technology ensures content remains clearly visible even in direct desert sunlight, making it ideal for outdoor advertising across Dubai."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does the FE Series protect against UAE's sand and dust?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The FE Series features IP65/IP54 protection ratings with specialized gaskets, sealed components, and a completely enclosed design that prevents sand, dust, and small particles from entering the display. The cabinets are specially designed with Dubai's environmental conditions in mind, ensuring long-term reliability in dusty and sandy conditions."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What warranty and support is available for outdoor LED displays in UAE?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "All FE Series outdoor LED displays come with a 3-year comprehensive warranty throughout UAE. Our Dubai-based service team provides preventative maintenance, emergency support, and regular cleaning services specifically designed for outdoor installations. Extended warranty options of up to 5 years are available for UAE clients."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How energy-efficient are FE Series LED displays for Dubai installations?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "FE Series displays incorporate smart energy management systems that comply with UAE's green building standards. Features include automatic brightness adjustment based on ambient light, scheduled operation modes, and high-efficiency power supplies that reduce consumption by up to 30% compared to standard outdoor displays, helping Dubai businesses meet sustainability targets."
+      }
+    }
+  ]
+}
+</script>
+
+<!-- Product Reviews Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "FE Series Outdoor LED Display Dubai",
+  "image": "https://lovosisdisplay.ae/LED Displays/Uniview FE Series.png",
+  "description": "Weather-resistant outdoor LED display for Dubai's extreme climate. High brightness panels visible in direct sunlight with IP65 protection for durability in UAE conditions.",
+  "brand": {
+    "@type": "Brand",
+    "name": "Lovosis Display"
+  },
+  "review": [
+    {
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Khalid Al Ameri"
+      },
+      "datePublished": "2025-01-15",
+      "reviewBody": "We installed the FE Series outdoor LED display at our Dubai retail complex entrance, and it has performed flawlessly through summer heat and sandstorms. The brightness is exceptional even in direct sunlight."
+    },
+    {
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "4",
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Mohammed Al Qasimi"
+      },
+      "datePublished": "2024-12-05",
+      "reviewBody": "The FE Series outdoor display has been an excellent investment for our UAE billboard network. The displays remain visible even during the brightest times of day, and have withstood Dubai's summer heat admirably."
+    }
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "45",
+    "bestRating": "5",
+    "worstRating": "1"
+  }
+}
+</script>
+
+<!-- Local Business Schema for Dubai Location -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Lovosis Display - Outdoor LED Display Dubai",
+  "description": "Leading provider of weather-resistant FE Series LED displays in Dubai & UAE. High brightness outdoor LED screens with superior durability for advertising, architectural and stadium applications.",
+  "url": "https://lovosisdisplay.ae",
+  "telephone": "+971509162488",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Baghlaf Building Showroom No.5 Satellite Market, Naif Road",
+    "addressLocality": "Dubai",
+    "addressRegion": "Dubai",
+    "addressCountry": "United Arab Emirates"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "25.276987",
+    "longitude": "55.296249"
+  },
+  "priceRange": "AED 50000-250000",
+  "areaServed": ["Dubai", "Abu Dhabi", "Sharjah", "UAE"],
+  "image": "https://lovosisdisplay.ae/logo.png"
+}
+</script>
