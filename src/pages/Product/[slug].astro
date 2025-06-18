@@ -2,7 +2,6 @@
 import Layout from '../../layouts/Layout.astro';
 import { productData } from '../../data/products';
 
-// Get the current slug from Astro params
 export async function getStaticPaths() {
   return productData.map(product => ({
     params: { slug: product.slug },
@@ -10,17 +9,40 @@ export async function getStaticPaths() {
   }));
 }
 
-// The product is now available as a prop
 const { product } = Astro.props;
 
-// SEO-optimized title and description with product name
-const title = `${product.name} | ${product.shortDescription} | UNV LED Modules`;
-const description = `Explore the ${product.name} ${product.type} with ${product.keyFeature}. The ${product.name} is ideal for ${product.primaryUse} with ${product.secondaryFeature}.`;
+// Natural, clean SEO titles and descriptions
+const title = `${product.name} | ${product.type} | Best Price UAE`;
+const description = `${product.name} ${product.type} with warranty and support. ${product.shortDescription}. Free delivery across UAE.`;
 
-// TODO: Add product schema if available, or remove this if not needed
-const productSchema = {};
+// Clean product schema
+const productSchema = {
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": product.name,
+  "description": product.description,
+  "brand": {
+    "@type": "Brand",
+    "name": "UNV"
+  },
+  "category": product.type,
+  "image": `https://unv-ledmodules.com${product.image}`,
+  "offers": {
+    "@type": "Offer",
+    "availability": "https://schema.org/InStock",
+    "priceCurrency": "AED",
+    "seller": {
+      "@type": "Organization",
+      "name": "UNV LED Modules"
+    }
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": product.rating,
+    "reviewCount": product.reviewCount
+  }
+};
 
-// Add breadcrumb schema
 const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
@@ -48,238 +70,287 @@ const breadcrumbSchema = {
 ---
 
 <Layout title={title} description={description}>
-  <div class="bg-white">
-    <!-- Breadcrumb with keyword -->
-    <div class="bg-gray-100 py-4">
-      <div class="max-w-7xl mx-auto px-4">
-        <div class="flex text-sm text-gray-600">
-          <a href="/" class="hover:text-blue-600">Home</a>
-          <span class="mx-2">/</span>
-          <a href={`/${product.category}`} class="hover:text-blue-600">{product.categoryName}</a>
-          <span class="mx-2">/</span>
-          <span class="text-gray-900 font-medium">{product.name}</span>
-        </div>
+  <div class="bg-white min-h-screen">
+    <!-- Breadcrumbs with proper spacing -->
+    <div class="bg-gray-50 border-b border-gray-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+        <nav class="flex" aria-label="Breadcrumb">
+          <ol class="flex items-center space-x-2 text-sm">
+            <li>
+              <a href="/" class="text-gray-500 hover:text-gray-700 transition-colors">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"/>
+                </svg>
+                <span class="sr-only">Home</span>
+              </a>
+            </li>
+            <li>
+              <div class="flex items-center">
+                <svg class="w-4 h-4 text-gray-400 mx-2" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <a href={`/${product.category}`} class="text-gray-500 hover:text-gray-700 transition-colors">
+                  {product.categoryName}
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="flex items-center">
+                <svg class="w-4 h-4 text-gray-400 mx-2" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span class="text-gray-900 font-medium">{product.name}</span>
+              </div>
+            </li>
+          </ol>
+        </nav>
       </div>
     </div>
 
-    <!-- Product Hero Section with enhanced keyword usage -->
-    <div class="max-w-7xl mx-auto px-4 py-12">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-        <!-- Product Images with enhanced alt text -->
-        <div>
-          <div class="bg-gray-50 rounded-2xl p-8 flex items-center justify-center">
-            <img 
-              src={product.image} 
-              alt={`${product.name} ${product.type} with ${product.keyFeature}`} 
-              class="w-full object-contain max-h-[500px] rounded-lg shadow-lg"
-            />
-          </div>
-        </div>
-        
-        <!-- Product Info with keyword placement -->
-        <div class="space-y-8">
-          <div>
-            <h1 class="text-4xl font-bold text-gray-900 mb-4">{product.name} {product.type}</h1>
-            <div class="flex items-center mb-6">
-              <div class="flex items-center mr-4">
-                {[1, 2, 3, 4, 5].map(() => (
-                  <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                  </svg>
-                ))}
-              </div>
-              <span class="text-gray-600">{product.rating} ({product.reviewCount} reviews for the {product.name})</span>
+    <!-- Product hero with proper spacing -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Add top spacing -->
+      <div class="py-8 lg:py-16">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
+          <!-- Product image with better spacing -->
+          <div class="order-2 lg:order-1">
+            <div class="bg-gray-50 rounded-2xl p-6 lg:p-12 flex items-center justify-center min-h-[400px] lg:min-h-[500px]">
+              <img 
+                src={product.image} 
+                alt={`${product.name} ${product.type}`} 
+                class="w-full h-auto object-contain max-h-[350px] lg:max-h-[450px] rounded-lg shadow-lg"
+                title={product.name}
+              />
             </div>
-            
-            <p class="text-gray-600 text-lg mb-8">{product.description}</p>
           </div>
           
-          <!-- Features Badges -->
-          <div class="flex flex-wrap gap-3 mb-8">
-            {product.features.map(feature => (
-              <span class="inline-flex items-center px-4 py-2 bg-blue-50 text-blue-700 rounded-full text-sm font-medium">
-                <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                </svg>
-                {feature}
-              </span>
-            ))}
-          </div>
-
-          <!-- Mobile-optimized contact buttons -->
-          <div class="space-y-4 pt-6 border-t border-gray-200">
-            <h4 class="text-xl font-semibold text-gray-900 mb-4">Request Information about {product.name}</h4>
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <a href="tel:+971509162488" class="flex items-center justify-center gap-2 px-6 py-4 bg-blue-600 text-white rounded-xl hover:bg-blue-700 transition-colors">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
-                </svg>
-                <span class="font-semibold">+971 50 916 2488</span>
-              </a>
-              <a href="https://wa.me/971509162488" target="_blank" class="flex items-center justify-center gap-2 px-6 py-4 bg-green-500 text-white rounded-xl hover:bg-green-600 transition-colors">
-                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12.012 2c-5.506 0-9.989 4.478-9.99 9.984a9.964 9.964 0 001.333 4.993L2 22l5.233-1.237a9.994 9.994 0 004.779 1.217h.004c5.505 0 9.988-4.478 9.989-9.984 0-2.669-1.037-5.176-2.922-7.062A9.935 9.935 0 0012.012 2z"/>
-                </svg>
-                <span class="font-semibold">WhatsApp</span>
-              </a>
+          <!-- Product info with better spacing -->
+          <div class="order-1 lg:order-2 space-y-6 lg:space-y-8">
+            <!-- Header section -->
+            <div class="space-y-4">
+              <!-- H1 with proper spacing -->
+              <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
+                {product.name}
+              </h1>
+              
+              <!-- H2 with proper spacing -->
+              <h2 class="text-lg sm:text-xl lg:text-2xl text-gray-600 font-medium">
+                {product.type} | Best Price UAE
+              </h2>
+              
+              <!-- Rating with spacing -->
+              <div class="flex items-center space-x-4 py-2">
+                <div class="flex items-center space-x-1">
+                  {[1, 2, 3, 4, 5].map(() => (
+                    <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                    </svg>
+                  ))}
+                </div>
+                <span class="text-gray-600 text-sm lg:text-base">
+                  {product.rating} ({product.reviewCount} reviews)
+                </span>
+              </div>
             </div>
-            <a 
-              href="mailto:sales@lovosis.com" 
-              class="w-full px-6 py-4 bg-gray-100 text-gray-800 rounded-xl hover:bg-gray-200 transition-colors flex items-center justify-center gap-2"
-            >
-              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-              </svg>
-              <span class="font-semibold">sales@lovosis.com</span>
-            </a>
+            
+            <!-- Description with proper spacing -->
+            <div class="prose prose-gray max-w-none">
+              <p class="text-gray-600 text-base lg:text-lg leading-relaxed">
+                {product.description}
+              </p>
+            </div>
+            
+            <!-- Features with better spacing -->
+            <div class="space-y-4">
+              <h3 class="text-lg font-semibold text-gray-900">Key Features</h3>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                {product.features.slice(0, 6).map(feature => (
+                  <div class="flex items-center space-x-3 p-3 bg-blue-50 rounded-lg">
+                    <div class="flex-shrink-0">
+                      <svg class="w-5 h-5 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                      </svg>
+                    </div>
+                    <span class="text-sm text-gray-700 font-medium">
+                      {feature.replace(/MW\d+-\w+(-\w+)?\s*/, '').replace(/Dubai|UAE|Middle East/gi, '').trim()}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <!-- Contact section with better spacing -->
+            <div class="space-y-6 pt-8 border-t border-gray-200">
+              <div class="space-y-2">
+                <h3 class="text-xl font-bold text-gray-900">
+                  Get Quote
+                </h3>
+                <p class="text-sm text-gray-600">Free delivery across UAE</p>
+              </div>
+              
+              <div class="space-y-4">
+                <!-- Phone and WhatsApp in grid -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <a 
+                    href="tel:+971509162488" 
+                    class="flex items-center justify-center space-x-3 px-6 py-4 bg-blue-600 text-white rounded-xl hover:bg-blue-700 transition-all duration-200 shadow-lg hover:shadow-xl"
+                  >
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                    </svg>
+                    <span class="font-semibold text-sm lg:text-base">Call +971 50 916 2488</span>
+                  </a>
+                  
+                  <a 
+                    href="https://wa.me/971509162488" 
+                    target="_blank" 
+                    class="flex items-center justify-center space-x-3 px-6 py-4 bg-green-500 text-white rounded-xl hover:bg-green-600 transition-all duration-200 shadow-lg hover:shadow-xl"
+                  >
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M12.012 2c-5.506 0-9.989 4.478-9.99 9.984a9.964 9.964 0 001.333 4.993L2 22l5.233-1.237a9.994 9.994 0 004.779 1.217h.004c5.505 0 9.988-4.478 9.989-9.984 0-2.669-1.037-5.176-2.922-7.062A9.935 9.935 0 0012.012 2z"/>
+                    </svg>
+                    <span class="font-semibold text-sm lg:text-base">WhatsApp</span>
+                  </a>
+                </div>
+                
+                <!-- Email button full width -->
+                <a 
+                  href="mailto:sales@lovosis.com" 
+                  class="w-full flex items-center justify-center space-x-3 px-6 py-4 bg-gray-100 text-gray-800 rounded-xl hover:bg-gray-200 transition-all duration-200 border border-gray-300"
+                >
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                  </svg>
+                  <span class="font-semibold text-sm lg:text-base">Email Quote</span>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
     
-    <!-- Product Detail Tabs -->
-    <div class="max-w-7xl mx-auto px-4 py-12 border-t border-gray-200" x-data="{ activeTab: 'description' }">
-      <!-- Mobile-friendly tab navigation -->
-      <div class="flex justify-center mb-8 overflow-x-auto py-2 -mx-4 px-4">
-        <div class="inline-flex border border-gray-300 rounded-md overflow-hidden">
-          <button 
-            @click="activeTab = 'description'" 
-            :class="activeTab === 'description' ? 'bg-gray-100 text-gray-900' : 'bg-white text-gray-700'" 
-            class="px-4 py-3 sm:px-6 font-medium text-base sm:text-lg focus:outline-none transition-colors"
-          >
-            Description
-          </button>
-          <button 
-            @click="activeTab = 'specifications'" 
-            :class="activeTab === 'specifications' ? 'bg-gray-100 text-gray-900' : 'bg-white text-gray-700'" 
-            class="px-4 py-3 sm:px-6 font-medium text-base sm:text-lg focus:outline-none transition-colors border-l border-r border-gray-300"
-          >
-            Specs
-          </button>
-          <button 
-            @click="activeTab = 'reviews'" 
-            :class="activeTab === 'reviews' ? 'bg-gray-100 text-gray-900' : 'bg-white text-gray-700'" 
-            class="px-4 py-3 sm:px-6 font-medium text-base sm:text-lg focus:outline-none transition-colors"
-          >
-            Reviews
-          </button>
-        </div>
-      </div>
-      
-      <!-- Tab Content -->
-      <div class="py-8">
-        <!-- Description Tab -->
-        <div x-show="activeTab === 'description'" class="space-y-6">
-          <h3 class="text-2xl font-bold text-gray-900">{product.name} Product Highlights</h3>
-          <p class="text-gray-600 leading-relaxed">
-            {product.extendedDescription}
-          </p>
-          
-          <div class="grid md:grid-cols-2 gap-6 mt-8">
-            {product.highlights.map(highlight => (
-              <div class="flex items-start space-x-3">
-                <svg class="w-6 h-6 text-blue-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                </svg>
-                <span class="text-gray-600">{highlight}</span>
-              </div>
-            ))}
-          </div>
-          
-          <div class="mt-8">
-            <h4 class="text-xl font-semibold mb-4">{product.name} Applications</h4>
-            <div class="grid md:grid-cols-3 gap-4">
-              {product.applications.map(app => (
-                <div class="bg-blue-50 rounded-xl p-4 text-center">
-                  <svg class="w-12 h-12 text-blue-600 mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d={app.iconPath}/>
-                  </svg>
-                  <h5 class="font-medium">{app.name}</h5>
-                  <p class="text-sm text-gray-600 mt-1">{app.description}</p>
-                </div>
-              ))}
-            </div>
+    <!-- Product Detail Tabs with proper spacing -->
+    <div class="bg-gray-50 border-t border-gray-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16" x-data="{ activeTab: 'description' }">
+        <!-- Tab navigation with spacing -->
+        <div class="flex justify-center mb-12">
+          <div class="inline-flex bg-white border border-gray-300 rounded-lg overflow-hidden shadow-sm">
+            <button 
+              @click="activeTab = 'description'" 
+              :class="activeTab === 'description' ? 'bg-blue-600 text-white' : 'bg-white text-gray-700 hover:bg-gray-50'" 
+              class="px-6 py-3 font-medium text-sm lg:text-base focus:outline-none transition-all duration-200"
+            >
+              Details
+            </button>
+            <button 
+              @click="activeTab = 'specifications'" 
+              :class="activeTab === 'specifications' ? 'bg-blue-600 text-white' : 'bg-white text-gray-700 hover:bg-gray-50'" 
+              class="px-6 py-3 font-medium text-sm lg:text-base focus:outline-none transition-all duration-200 border-l border-gray-300"
+            >
+              Specifications
+            </button>
+            <button 
+              @click="activeTab = 'reviews'" 
+              :class="activeTab === 'reviews' ? 'bg-blue-600 text-white' : 'bg-white text-gray-700 hover:bg-gray-50'" 
+              class="px-6 py-3 font-medium text-sm lg:text-base focus:outline-none transition-all duration-200 border-l border-gray-300"
+            >
+              Reviews
+            </button>
           </div>
         </div>
         
-        <!-- Specifications Tab -->
-        <div x-show="activeTab === 'specifications'" class="space-y-6">
-          <h3 class="text-2xl font-bold text-gray-900">{product.name} Technical Specifications</h3>
-          
-          <div class="overflow-x-auto">
-            <table class="min-w-full divide-y divide-gray-200 border border-gray-200 rounded-lg">
-              <tbody class="bg-white divide-y divide-gray-200">
-                {product.specifications.map(spec => (
-                  <tr>
-                    <td class="px-6 py-4 whitespace-nowrap bg-gray-50 w-1/3">
-                      <div class="text-sm font-medium text-gray-900">{spec.name}</div>
-                    </td>
-                    <td class="px-6 py-4 whitespace-nowrap">
-                      <div class="text-sm text-gray-600">{spec.value}</div>
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </div>
-        
-        <!-- Reviews Tab -->
-        <div x-show="activeTab === 'reviews'" class="space-y-6">
-          <h3 class="text-2xl font-bold text-gray-900">{product.name} Customer Reviews</h3>
-          
-          <!-- Overall Rating Summary -->
-          <div class="flex flex-col md:flex-row md:items-center border-b border-gray-200 pb-8 mb-8">
-            <div class="flex flex-col items-center md:w-1/4">
-              <div class="text-5xl font-bold text-gray-900">{product.rating}</div>
-              <div class="flex items-center mt-2">
-                {[1, 2, 3, 4, 5].map(i => (
-                  <svg class="w-6 h-6 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                  </svg>
-                ))}
+        <!-- Tab Content with proper spacing -->
+        <div class="bg-white rounded-lg shadow-sm p-6 lg:p-12">
+          <!-- Description Tab -->
+          <div x-show="activeTab === 'description'" class="space-y-8">
+            <div>
+              <h3 class="text-2xl lg:text-3xl font-bold text-gray-900 mb-6">
+                Product Details
+              </h3>
+              <div class="prose prose-gray prose-lg max-w-none">
+                <p class="text-gray-600 leading-relaxed">
+                  {product.extendedDescription || product.description}
+                </p>
               </div>
-              <div class="text-sm text-gray-600 mt-1">Based on {product.reviewCount} reviews of {product.name}</div>
             </div>
             
-            <div class="mt-6 md:mt-0 md:w-3/4 md:pl-10">
-              {product.ratingDistribution.map(rating => {
-                return (
-                  <div class="flex items-center mb-2">
-                    <div class="flex items-center mr-4 w-16">
-                      <span class="text-sm mr-1">{rating.stars}</span>
-                      <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+            {product.highlights && (
+              <div>
+                <h4 class="text-xl font-semibold text-gray-900 mb-6">Key Highlights</h4>
+                <div class="grid md:grid-cols-2 gap-6">
+                  {product.highlights.slice(0, 6).map(highlight => (
+                    <div class="flex items-start space-x-4 p-4 bg-gray-50 rounded-lg">
+                      <div class="flex-shrink-0 mt-1">
+                        <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                        </svg>
+                      </div>
+                      <span class="text-gray-700">
+                        {highlight.replace(/MW\d+-\w+(-\w+)?\s*/, '').replace(/Dubai|UAE|Middle East/gi, '').trim()}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {product.applications && (
+              <div>
+                <h4 class="text-xl font-semibold text-gray-900 mb-6">Applications</h4>
+                <div class="grid md:grid-cols-3 gap-6">
+                  {product.applications.map(app => (
+                    <div class="bg-blue-50 rounded-xl p-6 text-center">
+                      <svg class="w-12 h-12 text-blue-600 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
                       </svg>
+                      <h5 class="font-semibold text-gray-900 mb-2">{app.name}</h5>
+                      <p class="text-sm text-gray-600">{app.description}</p>
                     </div>
-                    <div class="w-full bg-gray-200 rounded-full h-2.5">
-                      <div class="bg-yellow-400 h-2.5 rounded-full" style={`width: ${rating.percentage}%`}></div>
-                    </div>
-                    <span class="text-sm text-gray-600 ml-4 w-12">{rating.percentage}%</span>
-                  </div>
-                )
-              })}
-            </div>
+                  ))}
+                </div>
+              </div>
+            )}
           </div>
           
-          <!-- Sample Reviews -->
-          <div class="space-y-8">
-            {product.reviews.map(review => (
-              <div class="border-b border-gray-200 pb-6">
-                <div class="flex items-center mb-2">
-                  <div class="flex items-center mr-4">
-                    {[1, 2, 3, 4, 5].map(i => (
-                      <svg class={`w-5 h-5 ${i <= review.rating ? 'text-yellow-400' : 'text-gray-300'}`} fill="currentColor" viewBox="0 0 20 20">
-                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                      </svg>
+          <!-- Specifications Tab -->
+          <div x-show="activeTab === 'specifications'" class="space-y-8">
+            <h3 class="text-2xl lg:text-3xl font-bold text-gray-900">
+              Technical Specifications
+            </h3>
+            
+            {product.specifications && (
+              <div class="overflow-hidden shadow ring-1 ring-black ring-opacity-5 md:rounded-lg">
+                <table class="min-w-full divide-y divide-gray-300">
+                  <tbody class="bg-white divide-y divide-gray-200">
+                    {product.specifications.map((spec, index) => (
+                      <tr class={index % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
+                        <td class="px-6 py-4 text-sm font-medium text-gray-900 w-1/3">
+                          {spec.name}
+                        </td>
+                        <td class="px-6 py-4 text-sm text-gray-600">
+                          {spec.value}
+                        </td>
+                      </tr>
                     ))}
-                  </div>
-                  <h4 class="font-medium text-gray-900">{review.name}</h4>
-                  <span class="text-sm text-gray-500 ml-4">{review.date}</span>
-                </div>
-                <p class="text-gray-600">{review.review}</p>
+                  </tbody>
+                </table>
               </div>
-            ))}
+            )}
+          </div>
+          
+          <!-- Reviews Tab -->
+          <div x-show="activeTab === 'reviews'" class="space-y-8">
+            <h3 class="text-2xl lg:text-3xl font-bold text-gray-900">
+              Customer Reviews
+            </h3>
+            
+            <div class="text-center py-12">
+              <svg class="w-16 h-16 text-gray-300 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"/>
+              </svg>
+              <p class="text-gray-500">Reviews coming soon...</p>
+            </div>
           </div>
         </div>
       </div>
@@ -325,7 +396,7 @@ const breadcrumbSchema = {
     </div>
   </div>
   
-  <!-- Add both schemas -->
+  <!-- Schema markup -->
   <script type="application/ld+json" set:html={JSON.stringify(productSchema)}></script>
   <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)}></script>
 </Layout>
